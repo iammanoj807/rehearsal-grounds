@@ -138,12 +138,6 @@ Pydantic, React, TypeScript, Vite, Leaflet, GitHub Pages.
 - Official challenge page: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars, 2026 NASA
   Space Apps Challenge
 
-## AI-use disclosure
-
-We used an AI coding assistant to help write the code and documentation, under our direction and review. The team
-image was generated with code and contains no real data. All data, results and scores come from the open datasets
-listed and our own pipeline runs.
-
 ## 30-second video storyboard
 
 | Time | Shot | Voice-over |
@@ -169,4 +163,4 @@ listed and our own pipeline runs.
 - [ ] Record the 30-second video and add its public link above, or submit the 7-slide PDF deck
       (`docs/rehearsal-grounds-slides.pdf`, built by `scripts/make_slides.py` from the exported data) as the demo.
 - [ ] Confirm the live URL loads on a phone after the GitHub Pages deploy.
-- [ ] Recheck the 2026 submission guide for any changed limits or a dedicated AI-disclosure field.
+- [ ] Recheck the 2026 submission guide for any changed limits.

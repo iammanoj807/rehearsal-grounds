@@ -24,7 +24,7 @@ Locations that Analog the Permanent Moon Base Locations and Mars*.
 3. **Terrain fingerprint.** 20 rotation-invariant features a geologist can read: relief, hypsometric integral,
    slope statistics and histogram at 60 m and 120 m, roughness, ruggedness, curvature and a bowl-versus-dome
    index. A pretrained ResNet-18 adds a 64-d image embedding of each patch (hillshade, slope and detrended height
-   channels). No model is trained and no language model is used in scoring.
+   channels). No model is trained.
 4. **Search.** Earth patches with more than 20% trees, crops or buildings (ESA WorldCover), more than 5% water, or
    under 5 m of relief are excluded, which leaves 49,147 candidates. Every candidate is scored against every target
    patch:

@@ -85,7 +85,7 @@ def main(out: Path) -> None:
 <li><b>Fingerprint</b>20 rotation-invariant terrain features plus a ResNet-18 image embedding</li>
 <li><b>Masked search</b>{meta["n_searchable"]:,} Earth patches after WorldCover masks; S = 60% terrain + 40% image</li>
 <li><b>Explain and validate</b>Feature bars, NASA POWER climate, novelty, tests suited; crater benchmark</li></ol>
-<p class="note">Offline Python pipeline → static JSON → React site on GitHub Pages. No language model in scoring.</p></section>''',
+<p class="note">Offline Python pipeline → static JSON → React site on GitHub Pages.</p></section>''',
         # 5 Example
         f'''<section><h2>Example: Malapert massif → {e(top["region_name"])}</h2><div class="ex">
 <figure class="moonp"><img src="{img(top["images"]["target_hillshade"])}" alt=""><figcaption>Moon target patch, 3.84 km</figcaption></figure>
@@ -109,7 +109,7 @@ def main(out: Path) -> None:
 <li><b>Next:</b> Gale crater and a lunar pit target, finer Earth DEMs in the best regions, LRO Diviner temperatures.</li></ul></div>
 <div class="credits"><p><b>Data</b></p><p>NASA LRO LOLA (GSFC PGDA, Barker et al. 2021) · USGS Mars 2020 CTX DTM (Fergason et al. 2020) · ESA Copernicus DEM GLO-30 · ESA WorldCover 2021 · NASA POWER · NASA GIBS · PASSC Earth Impact Database</p>
 <p><b>Try it</b><br>iammanoj807.github.io/rehearsal-grounds<br>github.com/iammanoj807/rehearsal-grounds</p>
-<p class="small">AI use: an AI coding assistant helped write the code and documentation under our direction; all numbers come from our pipeline runs.</p></div></div></section>''',
+</div></div></section>''',
     ]
     css = """
 @page{size:1280px 720px;margin:0}*{box-sizing:border-box}body{margin:0;font:22px/1.4 system-ui,sans-serif;color:#1E2126;background:#F7F5F0}
