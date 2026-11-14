@@ -1,7 +1,7 @@
 {
  "target_id": "moon_site23_malapert",
- "generated_at": "2026-11-14T13:31:39+00:00",
- "config_hash": "933cf45527a4d04c8eeec6b50b71315ff61df829f0c01c96e78d3408d738a614",
+ "generated_at": "2026-11-14T15:50:52+00:00",
+ "config_hash": "a3dab7a1123399ac5368fccf552d0c6f8416ff18bd3a32ae8ccc8bfb4cdab1d0",
  "sigma": 0.639906113184995,
  "n_candidates": 49147,
  "n_target_patches": 81,
@@ -49,8 +49,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 16.95,
+    "t2m_min_c": 7.42,
+    "t2m_max_c": 27.33,
+    "t2m_range_c": 5.57,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 71.32,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 60.07769747374675,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.18 here vs -0.19 on the Moon target",
     "Roughness (bar 97/100): plane-fit spread 62.5 m here vs 78.9 m; ruggedness index 8.3 m here vs 7.9 m on the Moon target",
@@ -58,6 +77,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (89/100)",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -66,7 +86,8 @@
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
     "Steep-slope operations (crew or rover work on slopes like the target's)",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1568_160.png",
@@ -111,8 +132,27 @@
     "hypsometric_integral": 0.593967854976654
    },
    "target_patch_id": "moon_site23_malapert:128:192",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 18.18,
+    "t2m_min_c": 7.96,
+    "t2m_max_c": 28.49,
+    "t2m_range_c": 7.19,
+    "precip_mm_per_day": 4.97,
+    "rh_pct": 83.01,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.5402276919163009,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.45977230808369907,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "HI-SEAS habitat, Mauna Loa, Hawaiʻi",
+    "distance_km": 35.88040793423568,
+    "source_url": "https://en.wikipedia.org/wiki/HI-SEAS"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 456 m here vs 548 m on the Moon target",
     "Roughness (bar 99/100): plane-fit spread 58.2 m here vs 67.7 m; ruggedness index 8.0 m here vs 8.1 m on the Moon target",
@@ -120,6 +160,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (89/100)",
+    "Vegetation, cropland or buildings cover 46% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.97 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -172,8 +214,27 @@
     "hypsometric_integral": 0.42479121685028076
    },
    "target_patch_id": "moon_site23_malapert:256:192",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 20.9,
+    "t2m_min_c": 12.75,
+    "t2m_max_c": 28.67,
+    "t2m_range_c": 5.2,
+    "precip_mm_per_day": 4.41,
+    "rh_pct": 82.05,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.0735574478901881,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9264425521098119,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Mauna Kea, Hawaiʻi",
+    "distance_km": 8.708309688131102,
+    "source_url": "https://en.wikipedia.org/wiki/Mauna_Kea"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 960 m here vs 1061 m on the Moon target",
     "Roughness (bar 99/100): plane-fit spread 40.6 m here vs 39.1 m; ruggedness index 13.9 m here vs 13.1 m on the Moon target",
@@ -181,6 +242,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is shape (90/100)",
+    "Vegetation, cropland or buildings cover 93% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.41 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -234,8 +297,27 @@
     "hypsometric_integral": 0.5139997601509094
    },
    "target_patch_id": "moon_site23_malapert:192:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 20.9,
+    "t2m_min_c": 12.75,
+    "t2m_max_c": 28.67,
+    "t2m_range_c": 5.2,
+    "precip_mm_per_day": 4.41,
+    "rh_pct": 82.05,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.2655792954343126,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.7344207045656874,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Mauna Kea, Hawaiʻi",
+    "distance_km": 6.5424428937715176,
+    "source_url": "https://en.wikipedia.org/wiki/Mauna_Kea"
+   },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 30.5 m here vs 30.9 m; ruggedness index 14.8 m here vs 15.3 m on the Moon target",
     "Relief (bar 99/100): height range (5th-95th pct) 1107 m here vs 1118 m on the Moon target",
@@ -243,6 +325,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (86/100)",
+    "Vegetation, cropland or buildings cover 73% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.41 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -296,8 +380,27 @@
     "hypsometric_integral": 0.6354016065597534
    },
    "target_patch_id": "moon_site23_malapert:128:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -4.32,
+    "t2m_min_c": -25.86,
+    "t2m_max_c": 8.83,
+    "t2m_range_c": 3.93,
+    "precip_mm_per_day": 7.76,
+    "rh_pct": 97.0,
+    "solar_kwh_m2_day": 2.9798,
+    "bare_fraction": 0.0,
+    "snow_ice_fraction": 1.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 59.61940174381449,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 481 m here vs 411 m on the Moon target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.15 here vs -0.15 on the Moon target",
@@ -305,6 +408,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (76/100)",
+    "Rain and snow: 7.76 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -312,7 +416,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_1536_128.png",
@@ -357,8 +462,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 15.48,
+    "t2m_min_c": -4.47,
+    "t2m_max_c": 32.89,
+    "t2m_range_c": 16.96,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 33.38,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 42.70347713381682,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 279 m here vs 330 m on the Moon target",
     "Shape (bar 95/100): bowl index (+ bowl, - dome) -0.15 here vs -0.19 on the Moon target",
@@ -366,13 +490,15 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 75/100): median 7.0° here vs 9.3°; 90th percentile 14.7° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1376_384.png",
@@ -417,8 +543,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 16.95,
+    "t2m_min_c": 7.42,
+    "t2m_max_c": 27.33,
+    "t2m_range_c": 5.57,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 71.32,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 49.22267281147523,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 285 m here vs 330 m on the Moon target",
     "Shape (bar 93/100): bowl index (+ bowl, - dome) -0.23 here vs -0.19 on the Moon target",
@@ -426,6 +571,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (88/100)",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -434,7 +580,8 @@
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
     "Steep-slope operations (crew or rover work on slopes like the target's)",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1312_160.png",
@@ -479,8 +626,27 @@
     "hypsometric_integral": 0.593967854976654
    },
    "target_patch_id": "moon_site23_malapert:128:192",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 18.18,
+    "t2m_min_c": 7.96,
+    "t2m_max_c": 28.49,
+    "t2m_range_c": 7.19,
+    "precip_mm_per_day": 4.97,
+    "rh_pct": 83.01,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.01888712241653418,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9811128775834658,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Mauna Kea, Hawaiʻi",
+    "distance_km": 10.209740697456965,
+    "source_url": "https://en.wikipedia.org/wiki/Mauna_Kea"
+   },
    "strong_match": [
     "Shape (bar 97/100): bowl index (+ bowl, - dome) -0.15 here vs -0.14 on the Moon target",
     "Relief (bar 93/100): height range (5th-95th pct) 546 m here vs 548 m on the Moon target",
@@ -488,6 +654,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (83/100)",
+    "Vegetation, cropland or buildings cover 98% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.97 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -540,8 +708,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 1.57,
+    "t2m_min_c": -18.16,
+    "t2m_max_c": 21.18,
+    "t2m_range_c": 14.89,
+    "precip_mm_per_day": 0.43,
+    "rh_pct": 30.96,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 246.43216149998017,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 367 m here vs 330 m on the Moon target",
     "Roughness (bar 98/100): plane-fit spread 65.6 m here vs 78.9 m; ruggedness index 8.4 m here vs 7.9 m on the Moon target",
@@ -549,6 +736,7 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 71/100): median 8.7° here vs 9.3°; 90th percentile 19.7° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.43 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -600,8 +788,27 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 1.57,
+    "t2m_min_c": -18.16,
+    "t2m_max_c": 21.18,
+    "t2m_range_c": 14.89,
+    "precip_mm_per_day": 0.43,
+    "rh_pct": 30.96,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 0.999202704426585,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0007654037504783774,
+    "water_fraction": 0.00003189182293659906,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 247.53811807919976,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 98/100): height range (5th-95th pct) 490 m here vs 378 m on the Moon target",
     "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.13 here vs -0.13 on the Moon target",
@@ -609,6 +816,7 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 74/100): median 9.0° here vs 9.6°; 90th percentile 17.9° here vs 15.5° on the Moon target",
+    "Rain and snow: 0.43 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -660,8 +868,27 @@
     "hypsometric_integral": 0.6354016065597534
    },
    "target_patch_id": "moon_site23_malapert:128:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -25.14,
+    "t2m_min_c": -48.31,
+    "t2m_max_c": -1.71,
+    "t2m_range_c": 5.18,
+    "precip_mm_per_day": 0.24,
+    "rh_pct": 79.56,
+    "solar_kwh_m2_day": 2.8985,
+    "bare_fraction": null,
+    "snow_ice_fraction": null,
+    "vegetation_fraction": null,
+    "water_fraction": null,
+    "worldcover_available": false,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "McMurdo Dry Valleys, Antarctica",
+    "distance_km": 63.45576507558135,
+    "source_url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 393 m here vs 411 m on the Moon target",
     "Roughness (bar 97/100): plane-fit spread 54.6 m here vs 57.1 m; ruggedness index 6.4 m here vs 7.7 m on the Moon target",
@@ -669,13 +896,15 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 72/100): median 8.0° here vs 9.2°; 90th percentile 11.9° here vs 15.3° on the Moon target",
+    "Rain and snow: 0.24 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1536_1568.png",
@@ -720,8 +949,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -26.3,
+    "t2m_min_c": -50.04,
+    "t2m_max_c": -2.7,
+    "t2m_range_c": 5.36,
+    "precip_mm_per_day": 0.24,
+    "rh_pct": 80.04,
+    "solar_kwh_m2_day": 2.9993,
+    "bare_fraction": null,
+    "snow_ice_fraction": null,
+    "vegetation_fraction": null,
+    "water_fraction": null,
+    "worldcover_available": false,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "McMurdo Dry Valleys, Antarctica",
+    "distance_km": 48.64001015624617,
+    "source_url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys"
+   },
    "strong_match": [
     "Roughness (bar 99/100): plane-fit spread 72.0 m here vs 78.9 m; ruggedness index 8.6 m here vs 7.9 m on the Moon target",
     "Relief (bar 98/100): height range (5th-95th pct) 481 m here vs 330 m on the Moon target",
@@ -729,6 +977,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (78/100)",
+    "Rain and snow: 0.24 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -736,7 +985,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1408_1344.png",
@@ -781,8 +1031,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 15.48,
+    "t2m_min_c": -4.47,
+    "t2m_max_c": 32.89,
+    "t2m_range_c": 16.96,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 33.38,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 0.9999048344118767,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00009516558812333461,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 55.130997820238015,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Relief (bar 96/100): height range (5th-95th pct) 371 m here vs 330 m on the Moon target",
     "Roughness (bar 94/100): plane-fit spread 55.6 m here vs 78.9 m; ruggedness index 7.0 m here vs 7.9 m on the Moon target",
@@ -790,13 +1059,15 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 72/100): median 7.0° here vs 9.3°; 90th percentile 15.4° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1600_352.png",
@@ -841,14 +1112,34 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 1.57,
+    "t2m_min_c": -18.16,
+    "t2m_max_c": 21.18,
+    "t2m_range_c": 14.89,
+    "precip_mm_per_day": 0.43,
+    "rh_pct": 30.96,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 0.9994891769363387,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0005108230636613244,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 235.30238164335495,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 349 m here vs 330 m on the Moon target",
     "Roughness (bar 92/100): plane-fit spread 51.6 m here vs 78.9 m; ruggedness index 9.1 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (81/100)",
+    "Rain and snow: 0.43 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -901,8 +1192,27 @@
     "hypsometric_integral": 0.3953525722026825
    },
    "target_patch_id": "moon_site23_malapert:256:0",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -27.23,
+    "t2m_min_c": -52.01,
+    "t2m_max_c": -3.79,
+    "t2m_range_c": 5.61,
+    "precip_mm_per_day": 0.22,
+    "rh_pct": 79.0,
+    "solar_kwh_m2_day": 2.9993,
+    "bare_fraction": null,
+    "snow_ice_fraction": null,
+    "vegetation_fraction": null,
+    "water_fraction": null,
+    "worldcover_available": false,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "McMurdo Dry Valleys, Antarctica",
+    "distance_km": 10.820395753653981,
+    "source_url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 788 m here vs 875 m on the Moon target",
     "Roughness (bar 98/100): plane-fit spread 48.1 m here vs 44.5 m; ruggedness index 10.5 m here vs 11.8 m on the Moon target",
@@ -910,13 +1220,15 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 70/100): median 13.3° here vs 13.7°; 90th percentile 18.8° here vs 20.2° on the Moon target",
+    "Rain and snow: 0.22 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_928_672.png",
@@ -961,8 +1273,27 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 17.07,
+    "t2m_min_c": -0.64,
+    "t2m_max_c": 32.93,
+    "t2m_range_c": 14.74,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 44.09,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 0.9999363381716323,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00006366182836771072,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 5.565861227728931,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.13 here vs -0.13 on the Moon target",
     "Roughness (bar 93/100): plane-fit spread 56.4 m here vs 81.6 m; ruggedness index 7.1 m here vs 7.9 m on the Moon target",
@@ -970,6 +1301,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (75/100)",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -977,7 +1309,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_736_736.png",
@@ -1022,21 +1355,43 @@
     "hypsometric_integral": 0.7135422229766846
    },
    "target_patch_id": "moon_site23_malapert:160:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -14.98,
+    "t2m_min_c": -49.69,
+    "t2m_max_c": 16.92,
+    "t2m_range_c": 5.11,
+    "precip_mm_per_day": 0.92,
+    "rh_pct": 94.3,
+    "solar_kwh_m2_day": 2.3086,
+    "bare_fraction": 0.5225711481844946,
+    "snow_ice_fraction": 0.09214916584887144,
+    "vegetation_fraction": 0.38485443245011447,
+    "water_fraction": 0.00042525351651946354,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Haughton crater, Devon Island",
+    "distance_km": 58.808217300707135,
+    "source_url": "https://en.wikipedia.org/wiki/Haughton_impact_crater"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.24 here vs -0.23 on the Moon target",
     "Relief (bar 96/100): height range (5th-95th pct) 207 m here vs 336 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (76/100)",
+    "Vegetation, cropland or buildings cover 38% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 0.92 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/haughton_1600_1376.png",
@@ -1081,8 +1436,27 @@
     "hypsometric_integral": 0.4976641535758972
    },
    "target_patch_id": "moon_site23_malapert:96:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 20.9,
+    "t2m_min_c": 12.75,
+    "t2m_max_c": 28.67,
+    "t2m_range_c": 5.2,
+    "precip_mm_per_day": 4.41,
+    "rh_pct": 82.05,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 1.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Mauna Kea, Hawaiʻi",
+    "distance_km": 12.32074890961502,
+    "source_url": "https://en.wikipedia.org/wiki/Mauna_Kea"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 627 m here vs 688 m on the Moon target",
     "Shape (bar 97/100): bowl index (+ bowl, - dome) -0.01 here vs -0.01 on the Moon target",
@@ -1090,6 +1464,8 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 67/100): median 10.1° here vs 12.0°; 90th percentile 14.0° here vs 15.4° on the Moon target",
+    "Vegetation, cropland or buildings cover 100% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.41 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1141,8 +1517,27 @@
     "hypsometric_integral": 0.6354016065597534
    },
    "target_patch_id": "moon_site23_malapert:128:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -3.07,
+    "t2m_min_c": -23.6,
+    "t2m_max_c": 12.19,
+    "t2m_range_c": 4.17,
+    "precip_mm_per_day": 2.36,
+    "rh_pct": 94.7,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.597960347121049,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.3969405206815734,
+    "water_fraction": 0.005099132197377589,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 36.069868839099705,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.18 here vs -0.15 on the Moon target",
     "Relief (bar 97/100): height range (5th-95th pct) 268 m here vs 411 m on the Moon target",
@@ -1150,13 +1545,17 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 63/100): median 5.2° here vs 9.2°; 90th percentile 13.5° here vs 15.3° on the Moon target",
+    "Vegetation, cropland or buildings cover 40% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 2.36 mm per day on average (NASA POWER)",
+    "Open water covers 1% of the 2 km surroundings",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_544_256.png",
@@ -1201,14 +1600,35 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 3.69,
+    "t2m_min_c": -15.12,
+    "t2m_max_c": 23.13,
+    "t2m_range_c": 17.47,
+    "precip_mm_per_day": 1.32,
+    "rh_pct": 33.81,
+    "solar_kwh_m2_day": 6.882,
+    "bare_fraction": 0.936320904528997,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.06367909547100299,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 243.15179828709583,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 275 m here vs 330 m on the Moon target",
     "Roughness (bar 96/100): plane-fit spread 58.8 m here vs 78.9 m; ruggedness index 8.2 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (80/100)",
+    "Vegetation, cropland or buildings cover 6% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 1.32 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1261,8 +1681,27 @@
     "hypsometric_integral": 0.7135422229766846
    },
    "target_patch_id": "moon_site23_malapert:160:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 24.2,
+    "t2m_min_c": -5.45,
+    "t2m_max_c": 48.54,
+    "t2m_range_c": 15.11,
+    "precip_mm_per_day": 0.19,
+    "rh_pct": 22.84,
+    "solar_kwh_m2_day": 5.9496,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 3282.7588518886782,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Roughness (bar 91/100): plane-fit spread 51.4 m here vs 82.3 m; ruggedness index 7.9 m here vs 7.6 m on the Moon target",
     "Relief (bar 90/100): height range (5th-95th pct) 182 m here vs 336 m on the Moon target",
@@ -1270,6 +1709,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (81/100)",
+    "Rain and snow: 0.19 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1278,7 +1718,8 @@
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
     "Steep-slope operations (crew or rover work on slopes like the target's)",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/lut_576_1504.png",
@@ -1323,8 +1764,27 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 19.21,
+    "t2m_min_c": -5.71,
+    "t2m_max_c": 46.72,
+    "t2m_range_c": 14.73,
+    "precip_mm_per_day": 0.38,
+    "rh_pct": 31.09,
+    "solar_kwh_m2_day": 5.7024,
+    "bare_fraction": 0.04808182513382615,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9519181748661738,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Death Valley, California",
+    "distance_km": 20.632112104615185,
+    "source_url": "https://en.wikipedia.org/wiki/Death_Valley"
+   },
    "strong_match": [
     "Relief (bar 97/100): height range (5th-95th pct) 314 m here vs 378 m on the Moon target",
     "Roughness (bar 92/100): plane-fit spread 51.5 m here vs 81.6 m; ruggedness index 8.0 m here vs 7.9 m on the Moon target",
@@ -1332,6 +1792,8 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 72/100): median 8.0° here vs 9.6°; 90th percentile 15.7° here vs 15.5° on the Moon target",
+    "Vegetation, cropland or buildings cover 95% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 0.38 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1383,20 +1845,41 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 15.48,
+    "t2m_min_c": -4.47,
+    "t2m_max_c": 32.89,
+    "t2m_range_c": 16.96,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 33.38,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 24.08997853664609,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.19 here vs -0.19 on the Moon target",
     "Relief (bar 97/100): height range (5th-95th pct) 232 m here vs 330 m on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 67/100): median 6.7° here vs 9.3°; 90th percentile 13.4° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1152_608.png",
@@ -1441,8 +1924,27 @@
     "hypsometric_integral": 0.4976641535758972
    },
    "target_patch_id": "moon_site23_malapert:96:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 18.18,
+    "t2m_min_c": 7.96,
+    "t2m_max_c": 28.49,
+    "t2m_range_c": 7.19,
+    "precip_mm_per_day": 4.97,
+    "rh_pct": 83.01,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.03467397539677481,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9653260246032251,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Kīlauea, Hawaiʻi",
+    "distance_km": 25.462048702944536,
+    "source_url": "https://en.wikipedia.org/wiki/K%C4%ABlauea"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 664 m here vs 688 m on the Moon target",
     "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.03 here vs -0.01 on the Moon target",
@@ -1450,6 +1952,8 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 61/100): median 9.8° here vs 12.0°; 90th percentile 13.8° here vs 15.4° on the Moon target",
+    "Vegetation, cropland or buildings cover 97% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.97 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1501,14 +2005,34 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 1.57,
+    "t2m_min_c": -18.16,
+    "t2m_max_c": 21.18,
+    "t2m_range_c": 14.89,
+    "precip_mm_per_day": 0.43,
+    "rh_pct": 30.96,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 236.8061887886468,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 98/100): height range (5th-95th pct) 273 m here vs 330 m on the Moon target",
     "Roughness (bar 89/100): plane-fit spread 46.1 m here vs 78.9 m; ruggedness index 8.7 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is shape (81/100)",
+    "Rain and snow: 0.43 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1561,8 +2085,27 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 2.13,
+    "t2m_min_c": -17.95,
+    "t2m_max_c": 22.27,
+    "t2m_range_c": 14.96,
+    "precip_mm_per_day": 0.66,
+    "rh_pct": 31.77,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 0.9414082358922217,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.05859176410777834,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 173.41098193229843,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 366 m here vs 378 m on the Moon target",
     "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.15 here vs -0.13 on the Moon target",
@@ -1570,6 +2113,8 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 60/100): median 7.5° here vs 9.6°; 90th percentile 12.6° here vs 15.5° on the Moon target",
+    "Vegetation, cropland or buildings cover 6% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 0.66 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1621,8 +2166,27 @@
     "hypsometric_integral": 0.7135422229766846
    },
    "target_patch_id": "moon_site23_malapert:160:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -2.71,
+    "t2m_min_c": -37.61,
+    "t2m_max_c": 21.94,
+    "t2m_range_c": 14.5,
+    "precip_mm_per_day": 1.73,
+    "rh_pct": 61.3,
+    "solar_kwh_m2_day": 5.9498,
+    "bare_fraction": 0.47915475055608514,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.5194153161741341,
+    "water_fraction": 0.0014299332697807435,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 1308.7247673925626,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Relief (bar 95/100): height range (5th-95th pct) 215 m here vs 336 m on the Moon target",
     "Roughness (bar 95/100): plane-fit spread 61.7 m here vs 82.3 m; ruggedness index 8.8 m here vs 7.6 m on the Moon target"
@@ -1630,6 +2194,8 @@
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (83/100)",
     "Image embedding bar 75/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Vegetation, cropland or buildings cover 52% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 1.73 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1637,7 +2203,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Steep-slope operations (crew or rover work on slopes like the target's)"
+    "Steep-slope operations (crew or rover work on slopes like the target's)",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/upper_mustang_480_1120.png",
@@ -1682,8 +2249,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 17.46,
+    "t2m_min_c": 9.85,
+    "t2m_max_c": 25.99,
+    "t2m_range_c": 4.35,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 77.44,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 38.48696800807395,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 311 m here vs 330 m on the Moon target",
     "Roughness (bar 91/100): plane-fit spread 49.0 m here vs 78.9 m; ruggedness index 8.8 m here vs 7.9 m on the Moon target",
@@ -1691,13 +2277,15 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 74/100): median 9.2° here vs 9.3°; 90th percentile 19.1° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_768_160.png",
@@ -1742,8 +2330,27 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -1.27,
+    "t2m_min_c": -24.33,
+    "t2m_max_c": 18.68,
+    "t2m_range_c": 5.18,
+    "precip_mm_per_day": 3.21,
+    "rh_pct": 92.61,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.37913021587261625,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.6208697841273837,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 46.22872240010773,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 372 m here vs 378 m on the Moon target",
     "Roughness (bar 91/100): plane-fit spread 50.9 m here vs 81.6 m; ruggedness index 7.4 m here vs 7.9 m on the Moon target"
@@ -1751,13 +2358,16 @@
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (75/100)",
     "Image embedding bar 74/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Vegetation, cropland or buildings cover 62% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 3.21 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_224_288.png",
@@ -1802,14 +2412,35 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 19.36,
+    "t2m_min_c": -5.84,
+    "t2m_max_c": 46.64,
+    "t2m_range_c": 14.75,
+    "precip_mm_per_day": 0.43,
+    "rh_pct": 31.53,
+    "solar_kwh_m2_day": 5.7024,
+    "bare_fraction": 0.764030612244898,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.23596938775510204,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Death Valley, California",
+    "distance_km": 33.43860163205343,
+    "source_url": "https://en.wikipedia.org/wiki/Death_Valley"
+   },
    "strong_match": [
     "Relief (bar 98/100): height range (5th-95th pct) 284 m here vs 330 m on the Moon target",
     "Roughness (bar 88/100): plane-fit spread 44.5 m here vs 78.9 m; ruggedness index 7.5 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (76/100)",
+    "Vegetation, cropland or buildings cover 24% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 0.43 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1861,8 +2492,27 @@
     "hypsometric_integral": 0.4976641535758972
    },
    "target_patch_id": "moon_site23_malapert:96:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 20.9,
+    "t2m_min_c": 12.75,
+    "t2m_max_c": 28.67,
+    "t2m_range_c": 5.2,
+    "precip_mm_per_day": 4.41,
+    "rh_pct": 82.05,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.07184620273276136,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9281537972672387,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Mauna Kea, Hawaiʻi",
+    "distance_km": 11.976045535896052,
+    "source_url": "https://en.wikipedia.org/wiki/Mauna_Kea"
+   },
    "strong_match": [
     "Relief (bar 96/100): height range (5th-95th pct) 584 m here vs 688 m on the Moon target",
     "Roughness (bar 88/100): plane-fit spread 32.2 m here vs 57.5 m; ruggedness index 9.0 m here vs 9.6 m on the Moon target",
@@ -1870,6 +2520,8 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 74/100): median 10.6° here vs 12.0°; 90th percentile 14.8° here vs 15.4° on the Moon target",
+    "Vegetation, cropland or buildings cover 93% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 4.41 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1921,8 +2573,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 2.13,
+    "t2m_min_c": -17.95,
+    "t2m_max_c": 22.27,
+    "t2m_range_c": 14.96,
+    "precip_mm_per_day": 0.66,
+    "rh_pct": 31.77,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 0.9998089171974522,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0001910828025477707,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 222.30870742206628,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 319 m here vs 330 m on the Moon target",
     "Roughness (bar 91/100): plane-fit spread 49.2 m here vs 78.9 m; ruggedness index 8.9 m here vs 7.9 m on the Moon target"
@@ -1930,6 +2601,7 @@
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (80/100)",
     "Image embedding bar 66/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Rain and snow: 0.66 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -1981,14 +2653,34 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 1.57,
+    "t2m_min_c": -18.16,
+    "t2m_max_c": 21.18,
+    "t2m_range_c": 14.89,
+    "precip_mm_per_day": 0.43,
+    "rh_pct": 30.96,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 232.6129882680601,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Roughness (bar 96/100): plane-fit spread 60.4 m here vs 81.6 m; ruggedness index 8.5 m here vs 7.9 m on the Moon target",
     "Shape (bar 92/100): bowl index (+ bowl, - dome) -0.13 here vs -0.13 on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 73/100): median 9.1° here vs 9.6°; 90th percentile 17.9° here vs 15.5° on the Moon target",
+    "Rain and snow: 0.43 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2039,20 +2731,42 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -14.76,
+    "t2m_min_c": -49.32,
+    "t2m_max_c": 17.32,
+    "t2m_range_c": 5.12,
+    "precip_mm_per_day": 0.89,
+    "rh_pct": 94.26,
+    "solar_kwh_m2_day": 2.3155,
+    "bare_fraction": 0.9069355980184005,
+    "snow_ice_fraction": 0.018818760856977416,
+    "vegetation_fraction": 0.07260503120375732,
+    "water_fraction": 0.001640609920864698,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Haughton crater, Devon Island",
+    "distance_km": 34.35814226335957,
+    "source_url": "https://en.wikipedia.org/wiki/Haughton_impact_crater"
+   },
    "strong_match": [
     "Relief (bar 96/100): height range (5th-95th pct) 293 m here vs 330 m on the Moon target",
     "Shape (bar 96/100): bowl index (+ bowl, - dome) -0.19 here vs -0.19 on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 68/100): median 6.5° here vs 9.3°; 90th percentile 16.4° here vs 16.5° on the Moon target",
+    "Vegetation, cropland or buildings cover 7% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 0.89 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/haughton_1120_1280.png",
@@ -2097,14 +2811,34 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 2.13,
+    "t2m_min_c": -17.95,
+    "t2m_max_c": 22.27,
+    "t2m_range_c": 14.96,
+    "precip_mm_per_day": 0.66,
+    "rh_pct": 31.77,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 197.77552944823935,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 97/100): height range (5th-95th pct) 225 m here vs 378 m on the Moon target",
     "Roughness (bar 93/100): plane-fit spread 57.6 m here vs 81.6 m; ruggedness index 6.7 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 70/100): median 7.3° here vs 9.6°; 90th percentile 14.2° here vs 15.5° on the Moon target",
+    "Rain and snow: 0.66 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2155,21 +2889,43 @@
     "hypsometric_integral": 0.4580013155937195
    },
    "target_patch_id": "moon_site23_malapert:256:64",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -2.71,
+    "t2m_min_c": -37.61,
+    "t2m_max_c": 21.94,
+    "t2m_range_c": 14.5,
+    "precip_mm_per_day": 1.73,
+    "rh_pct": 61.3,
+    "solar_kwh_m2_day": 5.9498,
+    "bare_fraction": 0.18264593908629442,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.8173540609137055,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 1288.1231672343329,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 68.1 m here vs 70.8 m; ruggedness index 12.0 m here vs 12.0 m on the Moon target",
     "Relief (bar 96/100): height range (5th-95th pct) 476 m here vs 843 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (79/100)",
+    "Vegetation, cropland or buildings cover 82% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 1.73 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/upper_mustang_160_1280.png",
@@ -2214,14 +2970,34 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 3.45,
+    "t2m_min_c": -16.78,
+    "t2m_max_c": 23.91,
+    "t2m_range_c": 15.83,
+    "precip_mm_per_day": 1.04,
+    "rh_pct": 32.41,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 207.43589874723608,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 97/100): height range (5th-95th pct) 286 m here vs 330 m on the Moon target",
     "Roughness (bar 97/100): plane-fit spread 63.6 m here vs 78.9 m; ruggedness index 8.6 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is shape (81/100)",
+    "Rain and snow: 1.04 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2274,21 +3050,42 @@
     "hypsometric_integral": 0.4580013155937195
    },
    "target_patch_id": "moon_site23_malapert:256:64",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 15.48,
+    "t2m_min_c": -4.47,
+    "t2m_max_c": 32.89,
+    "t2m_range_c": 16.96,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 33.38,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 37.00535064544788,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Roughness (bar 97/100): plane-fit spread 88.6 m here vs 70.8 m; ruggedness index 12.4 m here vs 12.0 m on the Moon target",
     "Relief (bar 93/100): height range (5th-95th pct) 739 m here vs 843 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (79/100)",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1408_704.png",
@@ -2333,8 +3130,27 @@
     "hypsometric_integral": 0.6354016065597534
    },
    "target_patch_id": "moon_site23_malapert:128:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 21.3,
+    "t2m_min_c": 15.34,
+    "t2m_max_c": 29.05,
+    "t2m_range_c": 3.71,
+    "precip_mm_per_day": 6.3,
+    "rh_pct": 83.25,
+    "solar_kwh_m2_day": 5.28,
+    "bare_fraction": 0.967044875063743,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.03295512493625701,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Kīlauea, Hawaiʻi",
+    "distance_km": 22.974808002652004,
+    "source_url": "https://en.wikipedia.org/wiki/K%C4%ABlauea"
+   },
    "strong_match": [
     "Relief (bar 97/100): height range (5th-95th pct) 495 m here vs 411 m on the Moon target",
     "Shape (bar 90/100): bowl index (+ bowl, - dome) -0.08 here vs -0.15 on the Moon target"
@@ -2342,6 +3158,8 @@
    "breaks_down": [
     "Weakest terrain match. Slope (bar 73/100): median 7.1° here vs 9.2°; 90th percentile 13.3° here vs 15.3° on the Moon target",
     "Image embedding bar 74/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Vegetation, cropland or buildings cover 3% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 6.30 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2392,20 +3210,42 @@
     "hypsometric_integral": 0.6354016065597534
    },
    "target_patch_id": "moon_site23_malapert:128:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -1.27,
+    "t2m_min_c": -24.33,
+    "t2m_max_c": 18.68,
+    "t2m_range_c": 5.18,
+    "precip_mm_per_day": 3.21,
+    "rh_pct": 92.61,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.18496457458147847,
+    "snow_ice_fraction": 0.00012539971158066337,
+    "vegetation_fraction": 0.8149100257069408,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 54.31193349262593,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Roughness (bar 99/100): plane-fit spread 54.1 m here vs 57.1 m; ruggedness index 7.4 m here vs 7.7 m on the Moon target",
     "Shape (bar 95/100): bowl index (+ bowl, - dome) -0.10 here vs -0.15 on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 69/100): median 8.7° here vs 9.2°; 90th percentile 18.1° here vs 15.3° on the Moon target",
+    "Vegetation, cropland or buildings cover 81% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 3.21 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_32_320.png",
@@ -2450,8 +3290,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -2.31,
+    "t2m_min_c": -24.59,
+    "t2m_max_c": 11.94,
+    "t2m_range_c": 4.43,
+    "precip_mm_per_day": 2.56,
+    "rh_pct": 93.82,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.9569396142902308,
+    "snow_ice_fraction": 0.0007271577616187164,
+    "vegetation_fraction": 0.04233322794815049,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 22.362817890749234,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Roughness (bar 98/100): plane-fit spread 67.9 m here vs 78.9 m; ruggedness index 7.0 m here vs 7.9 m on the Moon target",
     "Relief (bar 93/100): height range (5th-95th pct) 410 m here vs 330 m on the Moon target",
@@ -2459,13 +3318,16 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 65/100): median 8.4° here vs 9.3°; 90th percentile 12.5° here vs 16.5° on the Moon target",
+    "Vegetation, cropland or buildings cover 4% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 2.56 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_480_992.png",
@@ -2510,20 +3372,41 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -4.49,
+    "t2m_min_c": -24.84,
+    "t2m_max_c": 9.02,
+    "t2m_range_c": 3.96,
+    "precip_mm_per_day": 8.03,
+    "rh_pct": 97.37,
+    "solar_kwh_m2_day": 2.9798,
+    "bare_fraction": 0.0,
+    "snow_ice_fraction": 1.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 42.09927775281114,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 384 m here vs 330 m on the Moon target",
     "Shape (bar 94/100): bowl index (+ bowl, - dome) -0.22 here vs -0.19 on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 65/100): median 7.2° here vs 9.3°; 90th percentile 12.3° here vs 16.5° on the Moon target",
+    "Rain and snow: 8.03 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_1504_768.png",
@@ -2568,8 +3451,27 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 17.07,
+    "t2m_min_c": -0.64,
+    "t2m_max_c": 32.93,
+    "t2m_range_c": 14.74,
+    "precip_mm_per_day": 0.02,
+    "rh_pct": 44.09,
+    "solar_kwh_m2_day": 5.9551,
+    "bare_fraction": 0.9994911912484895,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.000508808751510526,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Yungay, Atacama Desert",
+    "distance_km": 11.226712148432544,
+    "source_url": "https://doi.org/10.1594/PANGAEA.929560"
+   },
    "strong_match": [
     "Roughness (bar 93/100): plane-fit spread 53.9 m here vs 81.6 m; ruggedness index 8.4 m here vs 7.9 m on the Moon target",
     "Shape (bar 90/100): bowl index (+ bowl, - dome) -0.10 here vs -0.13 on the Moon target",
@@ -2577,6 +3479,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (76/100)",
+    "Rain and snow: 0.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2584,7 +3487,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_896_640.png",
@@ -2629,20 +3533,41 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.02,
+    "t2m_min_c": -3.94,
+    "t2m_max_c": 41.97,
+    "t2m_range_c": 16.65,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 21.25,
+    "solar_kwh_m2_day": 6.6209,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3134.31116754842,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 95/100): height range (5th-95th pct) 191 m here vs 330 m on the Moon target",
     "Roughness (bar 94/100): plane-fit spread 57.2 m here vs 78.9 m; ruggedness index 6.9 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 74/100): median 7.3° here vs 9.3°; 90th percentile 17.3° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/tibesti_768_640.png",
@@ -2687,21 +3612,42 @@
     "hypsometric_integral": 0.634351372718811
    },
    "target_patch_id": "moon_site23_malapert:64:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -27.23,
+    "t2m_min_c": -52.01,
+    "t2m_max_c": -3.79,
+    "t2m_range_c": 5.61,
+    "precip_mm_per_day": 0.22,
+    "rh_pct": 79.0,
+    "solar_kwh_m2_day": 2.9993,
+    "bare_fraction": null,
+    "snow_ice_fraction": null,
+    "vegetation_fraction": null,
+    "water_fraction": null,
+    "worldcover_available": false,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "McMurdo Dry Valleys, Antarctica",
+    "distance_km": 29.08903803304847,
+    "source_url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys"
+   },
    "strong_match": [
     "Shape (bar 92/100): bowl index (+ bowl, - dome) -0.04 here vs -0.02 on the Moon target",
     "Roughness (bar 91/100): plane-fit spread 47.4 m here vs 76.9 m; ruggedness index 11.0 m here vs 11.1 m on the Moon target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (76/100)",
+    "Rain and snow: 0.22 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1248_608.png",
@@ -2746,14 +3692,34 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 3.69,
+    "t2m_min_c": -15.12,
+    "t2m_max_c": 23.13,
+    "t2m_range_c": 17.47,
+    "precip_mm_per_day": 1.32,
+    "rh_pct": 33.81,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 0.9980936646120607,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0019063353879392514,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 230.18641875344548,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 95/100): height range (5th-95th pct) 238 m here vs 330 m on the Moon target",
     "Shape (bar 94/100): bowl index (+ bowl, - dome) -0.17 here vs -0.19 on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 67/100): median 7.0° here vs 9.3°; 90th percentile 13.1° here vs 16.5° on the Moon target",
+    "Rain and snow: 1.32 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2804,8 +3770,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 19.1,
+    "t2m_min_c": -6.16,
+    "t2m_max_c": 46.22,
+    "t2m_range_c": 14.65,
+    "precip_mm_per_day": 0.34,
+    "rh_pct": 29.33,
+    "solar_kwh_m2_day": 5.712,
+    "bare_fraction": 0.7636409832941625,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.2363590167058375,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Death Valley, California",
+    "distance_km": 34.71918985012611,
+    "source_url": "https://en.wikipedia.org/wiki/Death_Valley"
+   },
    "strong_match": [
     "Relief (bar 93/100): height range (5th-95th pct) 252 m here vs 330 m on the Moon target",
     "Roughness (bar 90/100): plane-fit spread 47.6 m here vs 78.9 m; ruggedness index 7.7 m here vs 7.9 m on the Moon target",
@@ -2813,6 +3798,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (77/100)",
+    "Vegetation, cropland or buildings cover 24% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 0.34 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2865,8 +3852,27 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -18.66,
+    "t2m_min_c": -39.51,
+    "t2m_max_c": 0.88,
+    "t2m_range_c": 4.19,
+    "precip_mm_per_day": 0.32,
+    "rh_pct": 77.72,
+    "solar_kwh_m2_day": 2.9993,
+    "bare_fraction": null,
+    "snow_ice_fraction": null,
+    "vegetation_fraction": null,
+    "water_fraction": null,
+    "worldcover_available": false,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "McMurdo Dry Valleys, Antarctica",
+    "distance_km": 29.76134126726461,
+    "source_url": "https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys"
+   },
    "strong_match": [
     "Roughness (bar 98/100): plane-fit spread 67.7 m here vs 78.9 m; ruggedness index 7.3 m here vs 7.9 m on the Moon target",
     "Relief (bar 98/100): height range (5th-95th pct) 386 m here vs 330 m on the Moon target",
@@ -2874,13 +3880,15 @@
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 57/100): median 7.7° here vs 9.3°; 90th percentile 15.5° here vs 16.5° on the Moon target",
+    "Rain and snow: 0.32 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_320_928.png",
@@ -2925,14 +3933,35 @@
     "hypsometric_integral": 0.5543588995933533
    },
    "target_patch_id": "moon_site23_malapert:128:160",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 3.69,
+    "t2m_min_c": -15.12,
+    "t2m_max_c": 23.13,
+    "t2m_range_c": 17.47,
+    "precip_mm_per_day": 1.32,
+    "rh_pct": 33.81,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 0.9803510110644792,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.019648988935520792,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 246.8149107354514,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 96/100): height range (5th-95th pct) 210 m here vs 378 m on the Moon target",
     "Roughness (bar 90/100): plane-fit spread 53.2 m here vs 81.6 m; ruggedness index 9.7 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Slope (bar 73/100): median 10.6° here vs 9.6°; 90th percentile 18.5° here vs 15.5° on the Moon target",
+    "Vegetation, cropland or buildings cover 2% of the 2 km surroundings (none on the Moon)",
+    "Rain and snow: 1.32 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
@@ -2983,21 +4012,42 @@
     "hypsometric_integral": 0.5831978917121887
    },
    "target_patch_id": "moon_site23_malapert:128:128",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.02,
+    "t2m_min_c": -3.94,
+    "t2m_max_c": 41.97,
+    "t2m_range_c": 16.65,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 21.25,
+    "solar_kwh_m2_day": 6.6209,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3128.730784209893,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 97/100): height range (5th-95th pct) 198 m here vs 330 m on the Moon target",
     "Roughness (bar 94/100): plane-fit spread 53.9 m here vs 78.9 m; ruggedness index 8.2 m here vs 7.9 m on the Moon target"
    ],
    "breaks_down": [
     "Weakest terrain match. Shape (bar 73/100): bowl index (+ bowl, - dome) -0.26 here vs -0.19 on the Moon target",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
     "Vacuum: the Moon has no atmosphere; Earth's air carries heat, sound and dust in ways the Moon cannot.",
     "Radiation and light: Earth's atmosphere and magnetic field block most space radiation, and polar lighting with permanent shadows cannot be reproduced."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Steep-slope operations (crew or rover work on slopes like the target's)"
+    "Steep-slope operations (crew or rover work on slopes like the target's)",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/tibesti_704_480.png",

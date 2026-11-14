@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T13:32:37+00:00",
+ "generated_at": "2026-11-14T16:02:07+00:00",
  "datasets": [
   {
    "id": "lola_site_dems",
@@ -54,7 +54,7 @@
    "licence": "NASA open data",
    "attribution": "These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth Science/Applied Science Program.",
    "citation": null,
-   "downloaded": null
+   "downloaded": "2026-11-14T15:53:13+00:00"
   },
   {
    "id": "nasa_gibs",

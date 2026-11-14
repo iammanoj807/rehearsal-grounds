@@ -373,6 +373,10 @@ main:focus {
 .result-meta {
   font-size: 0.82rem;
 }
+.region-set {
+  display: block;
+  color: var(--muted);
+}
 .result-score {
   font-family: var(--heading);
   font-weight: 700;
@@ -687,6 +691,16 @@ main:focus {
 }
 .checks {
   padding-left: 1.2em;
+}
+.finding {
+  border-left: 4px solid var(--sienna);
+  padding: 4px 0 4px 12px;
+  max-width: 70ch;
+}
+.revision {
+  border: 1px dashed var(--line);
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
 .leaflet-container {

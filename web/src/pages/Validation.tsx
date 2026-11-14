@@ -14,14 +14,19 @@ interface CraterRow {
   region_id: string
   diameter_km: number
   n_queries: number
+  n_positive_patches: number
   auc: Record<string, number>
   first_hit_rank: Record<string, number>
 }
 interface V1 {
   description: string
   index: string
+  combined_note: string
+  finding: string
+  revision_note: string
   n_craters: number
   n_query_patches: number
+  n_positive_patches: number
   n_negatives: number
   rankers: RankerRow[]
   per_crater: CraterRow[]
@@ -108,6 +113,8 @@ export default function ValidationPage() {
   const d = v.data
   const v1 = d.v1_crater_retrieval
   const combined = v1.rankers.find((r) => r.id === 'combined')
+  const embedding = v1.rankers.find((r) => r.id === 'embedding')
+  const features = v1.rankers.find((r) => r.id === 'features')
   return (
     <article className="page narrow validation">
       <h1>How we tested the method</h1>
@@ -115,31 +122,43 @@ export default function ValidationPage() {
         The headline test asks a question with clean ground truth: given one impact crater on Earth, do the fingerprints
         find the other impact craters, on other continents, among {v1.n_negatives.toLocaleString('en-GB')} patches that are
         not craters?
-        {combined && (
+        {combined && embedding && features && (
           <>
-            {' '}With the combined score the mean ROC AUC is <strong>{combined.mean_auc.toFixed(3)}</strong> (0.5 is chance).
+            {' '}With the combined score the mean ROC AUC is <strong>{combined.mean_auc.toFixed(3)}</strong> (0.5 is
+            chance); the image embedding alone reaches {embedding.mean_auc.toFixed(3)} and puts another crater in the
+            top 10 for {(embedding.hit_at_10 * 100).toFixed(0)}% of queries, while the 20 terrain features alone reach{' '}
+            {features.mean_auc.toFixed(3)}.
           </>
         )}
+      </p>
+      <p className="finding">
+        <strong>What this tells us.</strong> {v1.finding}
       </p>
 
       <section aria-labelledby="v1">
         <h2 id="v1">V1 · Crater retrieval benchmark</h2>
         <p>{v1.description}</p>
-        <RankerTable rows={v1.rankers} caption={`${v1.n_craters} craters, ${v1.n_query_patches} query patches. ${v1.index}`} />
+        <RankerTable
+          rows={v1.rankers}
+          caption={`${v1.n_craters} query craters, ${v1.n_positive_patches} crater-containing grid patches, ${v1.n_negatives.toLocaleString('en-GB')} negatives. ${v1.index}`}
+        />
+        <p className="small muted">{v1.combined_note}</p>
         <p className="small muted">
           ROC AUC: chance that a crater patch from another region outranks a non-crater patch. Reciprocal rank: 1 / rank
           of the first other-crater patch. Hit rate @k: share of queries with another crater in the top k.
         </p>
+        <div className="table-scroll">
         <table className="metric-table">
-          <caption>Per crater (combined score unless stated)</caption>
+          <caption>Per query crater</caption>
           <thead>
             <tr>
               <th scope="col">Query crater</th>
               <th scope="col">Diameter</th>
-              <th scope="col">AUC combined</th>
+              <th scope="col">Grid patches containing it</th>
               <th scope="col">AUC features</th>
               <th scope="col">AUC embedding</th>
-              <th scope="col">First other-crater rank</th>
+              <th scope="col">AUC combined</th>
+              <th scope="col">First other-crater rank (embedding)</th>
             </tr>
           </thead>
           <tbody>
@@ -147,15 +166,20 @@ export default function ValidationPage() {
               <tr key={c.crater}>
                 <th scope="row">{c.crater}</th>
                 <td>{fmt(c.diameter_km, 2, ' km')}</td>
-                <td>{fmt(c.auc.combined, 3)}</td>
+                <td>{c.n_positive_patches}</td>
                 <td>{fmt(c.auc.features, 3)}</td>
                 <td>{fmt(c.auc.embedding, 3)}</td>
-                <td>{c.first_hit_rank.combined?.toLocaleString('en-GB') ?? '–'}</td>
+                <td>{fmt(c.auc.combined, 3)}</td>
+                <td>{c.first_hit_rank.embedding?.toLocaleString('en-GB') ?? '–'}</td>
               </tr>
             ))}
           </tbody>
         </table>
+        </div>
         {v1.masked && <RankerTable rows={v1.masked.rankers} caption={v1.masked.description} />}
+        <p className="small revision">
+          <strong>Revision.</strong> {v1.revision_note}
+        </p>
       </section>
 
       <section aria-labelledby="v2">

@@ -1,0 +1,156 @@
+# Catalogue of known Moon/Mars analog and astronaut-training sites, used for
+# the novelty flag (distance from a candidate site to the nearest entry).
+#
+# Two kinds of entry:
+# * basis: source_text - the cited article itself states the analog or
+#   training use; the sentence is quoted in `evidence` (Wikipedia, retrieved
+#   2026-11-14; coordinates from the article's GeoData).
+# * basis: project_list - the project brief's list of well-studied analogs
+#   (the validation set in config/regions.yaml); coordinates as cited there.
+#
+# The catalogue is points, not areas, and it is not complete: a site flagged
+# "less studied" may still have been studied. The threshold is novelty_km in
+# pipeline.yaml.
+
+analogs:
+  - id: meteor_crater
+    name: Meteor Crater, Arizona
+    lat: 35.02805556
+    lon: -111.02333333
+    source_url: https://en.wikipedia.org/wiki/Meteor_Crater
+    basis: source_text
+    evidence: "During the 1960s and 1970s, NASA astronauts trained in the crater to prepare for the Apollo missions to the Moon, and ongoing field training for astronauts continues to this day."
+  - id: kilauea
+    name: Kīlauea, Hawaiʻi
+    lat: 19.42109747
+    lon: -155.28676243
+    source_url: https://en.wikipedia.org/wiki/K%C4%ABlauea
+    basis: source_text
+    evidence: "NASA used the area to train Apollo Astronauts in recognizing volcanic features, planning traverses, collecting samples and taking photographs."
+  - id: hi_seas
+    name: HI-SEAS habitat, Mauna Loa, Hawaiʻi
+    lat: 19.602378
+    lon: -155.487192
+    source_url: https://en.wikipedia.org/wiki/HI-SEAS
+    basis: source_text
+    evidence: "The Hawaii Space Exploration Analog and Simulation (HI-SEAS) is an analog habitat for human spaceflight to Mars"
+  - id: askja
+    name: Askja, Iceland
+    lat: 65.033
+    lon: -16.783
+    source_url: https://en.wikipedia.org/wiki/Askja
+    basis: source_text
+    evidence: "The area was used by NASA during training for the Apollo program to prepare astronauts for the lunar missions."
+  - id: haughton
+    name: Haughton crater, Devon Island
+    lat: 75.38333333
+    lon: -89.66666667
+    source_url: https://en.wikipedia.org/wiki/Haughton_impact_crater
+    basis: source_text
+    evidence: "Because Haughton's geology and climatology are as close to Mars-like as can be had on Earth, Haughton and its environs have been dubbed by scientists working there as \"Mars on Earth\"."
+  - id: fmars
+    name: Flashline Mars Arctic Research Station, Devon Island
+    lat: 75.43131944
+    lon: -89.82338611
+    source_url: https://en.wikipedia.org/wiki/Flashline_Mars_Arctic_Research_Station
+    basis: source_text
+    evidence: "The station is located on Devon Island, a Mars analog environment and polar desert"
+  - id: axel_heiberg
+    name: Axel Heiberg Island, Nunavut
+    lat: 79.75
+    lon: -91.0
+    source_url: https://en.wikipedia.org/wiki/Axel_Heiberg_Island
+    basis: source_text
+    evidence: "Over the last 10-15 years, it has served as a significant Mars analogue for astrobiology investigations"
+  - id: mcmurdo_dry_valleys
+    name: McMurdo Dry Valleys, Antarctica
+    lat: -77.46666667
+    lon: 162.51666667
+    source_url: https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys
+    basis: source_text
+    evidence: "The valleys' hyper-arid, cold-desert climate was soon identified as a high-fidelity terrestrial analogue for the environment of Mars"
+  - id: atacama_desert
+    name: Atacama Desert, Chile
+    lat: -24.5
+    lon: -69.25
+    source_url: https://en.wikipedia.org/wiki/Atacama_Desert
+    basis: source_text
+    evidence: "The area has been used as an experimentation site for Mars expedition simulations due to its similarities to the Martian environment."
+  - id: ries
+    name: Nördlinger Ries, Germany
+    lat: 48.88333333
+    lon: 10.56666667
+    source_url: https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries
+    basis: source_text
+    evidence: "Nördlinger Ries is an easily accessible, large impact crater, making it a convenient analog for lunar craters."
+  - id: craters_of_the_moon
+    name: Craters of the Moon, Idaho
+    lat: 43.46167
+    lon: -113.56271
+    source_url: https://en.wikipedia.org/wiki/Craters_of_the_Moon_National_Monument_and_Preserve
+    basis: source_text
+    evidence: "Apollo astronauts Alan Shepard, Edgar Mitchell, Eugene Cernan, and Joe Engle performed part of their training at Craters of the Moon Lava Field by learning to look for and collect good rock specimens in an unfamiliar and harsh environment."
+  - id: sudbury
+    name: Sudbury Basin, Ontario
+    lat: 46.6
+    lon: -81.18333333
+    source_url: https://en.wikipedia.org/wiki/Sudbury_Basin
+    basis: source_text
+    evidence: "NASA used the site to train the Apollo astronauts in recognizing rocks formed as the result of a very large impact, such as breccias."
+  - id: pavilion_lake
+    name: Pavilion Lake, British Columbia
+    lat: 50.86677
+    lon: -121.74191
+    source_url: https://en.wikipedia.org/wiki/Pavilion_Lake
+    basis: source_text
+    evidence: "The Pavilion Lake Research Project has used the site to help train Canadian Space Agency astronauts."
+  - id: qaidam
+    name: Qaidam Basin, China
+    lat: 37.26666667
+    lon: 94.45
+    source_url: https://en.wikipedia.org/wiki/Qaidam_Basin
+    basis: source_text
+    evidence: "The aridity, salinity, wide diurnal and seasonal temperature swings, and relatively high ultraviolet radiation has led to Qaidam being studied by the China Geological Survey as a Mars analogue for use in testing spectroscopy and equipment for China's 2020 Mars [mission] ..."
+  # ---- Project brief: well-studied analogs (validation set) ----
+  - id: sp_crater
+    name: SP Crater, Arizona
+    lat: 35.5822254
+    lon: -111.6318207
+    source_url: https://en.wikipedia.org/wiki/S_P_Crater
+    basis: project_list
+  - id: atacama_yungay
+    name: Yungay, Atacama Desert
+    lat: -24.10
+    lon: -70.01
+    source_url: https://doi.org/10.1594/PANGAEA.929560
+    basis: project_list
+  - id: death_valley
+    name: Death Valley, California
+    lat: 36.24694444
+    lon: -116.81694444
+    source_url: https://en.wikipedia.org/wiki/Death_Valley
+    basis: project_list
+  - id: mauna_kea
+    name: Mauna Kea, Hawaiʻi
+    lat: 19.82055556
+    lon: -155.46805556
+    source_url: https://en.wikipedia.org/wiki/Mauna_Kea
+    basis: project_list
+  - id: lanzarote_timanfaya
+    name: Lanzarote (Timanfaya)
+    lat: 28.99416667
+    lon: -13.79333333
+    source_url: https://en.wikipedia.org/wiki/Timanfaya_National_Park
+    basis: project_list
+  - id: bockfjorden
+    name: Bockfjorden, Svalbard
+    lat: 79.469
+    lon: 13.3287
+    source_url: https://en.wikipedia.org/wiki/Bockfjorden
+    basis: project_list
+  - id: hanksville
+    name: Mars Desert Research Station, Utah
+    lat: 38.40645833
+    lon: -110.79190278
+    source_url: https://en.wikipedia.org/wiki/Mars_Desert_Research_Station
+    basis: project_list

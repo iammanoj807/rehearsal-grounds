@@ -1,7 +1,7 @@
 {
  "target_id": "mars_jezero",
- "generated_at": "2026-11-14T13:31:39+00:00",
- "config_hash": "933cf45527a4d04c8eeec6b50b71315ff61df829f0c01c96e78d3408d738a614",
+ "generated_at": "2026-11-14T15:50:52+00:00",
+ "config_hash": "a3dab7a1123399ac5368fccf552d0c6f8416ff18bd3a32ae8ccc8bfb4cdab1d0",
  "sigma": 0.1677508133865667,
  "n_candidates": 49147,
  "n_target_patches": 196,
@@ -49,8 +49,27 @@
     "hypsometric_integral": 0.5510073900222778
    },
    "target_patch_id": "mars_jezero:256:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -0.77,
+    "t2m_min_c": -24.55,
+    "t2m_max_c": 18.75,
+    "t2m_range_c": 5.18,
+    "precip_mm_per_day": 2.73,
+    "rh_pct": 92.19,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.9037810383747178,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.09621896162528217,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 48.86757414463048,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.05 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 42 m here vs 33 m on the Mars target",
@@ -58,6 +77,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Vegetation, cropland or buildings cover 10% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 2.73 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -65,7 +86,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_64_1152.png",
@@ -110,8 +132,27 @@
     "hypsometric_integral": 0.5510073900222778
    },
    "target_patch_id": "mars_jezero:256:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 0.99971322967117,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0002867703288299771,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3645.9924531444854,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.05 on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 5.1 m here vs 4.6 m; ruggedness index 1.2 m here vs 1.2 m on the Mars target",
@@ -119,6 +160,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (99/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -126,7 +168,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1088_1248.png",
@@ -171,8 +214,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 25.22,
+    "t2m_min_c": -3.02,
+    "t2m_max_c": 47.03,
+    "t2m_range_c": 16.18,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 23.77,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9982513035736996,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0017486964263003942,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3581.248205757526,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 3.9 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 42 m here vs 39 m on the Mars target",
@@ -180,6 +242,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -187,7 +250,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_608_96.png",
@@ -232,8 +296,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 25.22,
+    "t2m_min_c": -3.02,
+    "t2m_max_c": 47.03,
+    "t2m_range_c": 16.18,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 23.77,
+    "solar_kwh_m2_day": 6.354,
+    "bare_fraction": 0.9999365562745844,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0000634437254155564,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3560.893211267275,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 38 m here vs 41 m on the Mars target",
     "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
@@ -241,6 +324,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -248,7 +332,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_64_256.png",
@@ -293,8 +378,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 2.98,
+    "t2m_min_c": -16.4,
+    "t2m_max_c": 22.05,
+    "t2m_range_c": 17.13,
+    "precip_mm_per_day": 0.73,
+    "rh_pct": 31.46,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 259.5987242759092,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 42 m here vs 41 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.06 on the Mars target",
@@ -302,6 +406,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Rain and snow: 0.73 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -354,8 +459,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 24.06,
+    "t2m_min_c": -6.53,
+    "t2m_max_c": 45.37,
+    "t2m_range_c": 16.76,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.62,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 0.9966969446738233,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0033030553261767133,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3614.901619377038,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 38 m here vs 39 m on the Mars target",
     "Roughness (bar 100/100): plane-fit spread 3.7 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
@@ -363,6 +487,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -370,7 +495,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_288_1440.png",
@@ -415,8 +541,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 26.12,
+    "t2m_min_c": -1.78,
+    "t2m_max_c": 47.83,
+    "t2m_range_c": 16.0,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.0,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9997768426421831,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00022315735781688344,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3615.175517189412,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 46 m here vs 41 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
@@ -424,6 +569,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -431,7 +577,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1216_224.png",
@@ -476,21 +623,42 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 24.92,
+    "t2m_min_c": -1.33,
+    "t2m_max_c": 44.46,
+    "t2m_range_c": 14.35,
+    "precip_mm_per_day": 0.24,
+    "rh_pct": 19.26,
+    "solar_kwh_m2_day": 6.3499,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 1987.347685430371,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 39 m here vs 41 m on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 5.0 m here vs 5.4 m; ruggedness index 1.5 m here vs 1.3 m on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.24 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/ahaggar_256_288.png",
@@ -535,8 +703,27 @@
     "hypsometric_integral": 0.5878861546516418
    },
    "target_patch_id": "mars_jezero:288:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 12.66,
+    "t2m_min_c": -18.61,
+    "t2m_max_c": 41.76,
+    "t2m_range_c": 13.72,
+    "precip_mm_per_day": 0.63,
+    "rh_pct": 42.01,
+    "solar_kwh_m2_day": 5.2874,
+    "bare_fraction": 0.99974641815646,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00025358184354000256,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Mars Desert Research Station, Utah",
+    "distance_km": 54.861923975981995,
+    "source_url": "https://en.wikipedia.org/wiki/Mars_Desert_Research_Station"
+   },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.07 here vs -0.07 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 58 m here vs 51 m on the Mars target",
@@ -544,6 +731,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.63 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -596,21 +784,43 @@
     "hypsometric_integral": 0.5894836187362671
    },
    "target_patch_id": "mars_jezero:320:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -2.31,
+    "t2m_min_c": -24.59,
+    "t2m_max_c": 11.94,
+    "t2m_range_c": 4.43,
+    "precip_mm_per_day": 2.56,
+    "rh_pct": 93.82,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.9860979462875198,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.012890995260663507,
+    "water_fraction": 0.0010110584518167457,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 41.98504409941572,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 58 m here vs 55 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.07 on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 2.56 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_448_1408.png",
@@ -655,8 +865,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.29,
+    "t2m_min_c": -6.18,
+    "t2m_max_c": 43.21,
+    "t2m_range_c": 16.07,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 26.45,
+    "solar_kwh_m2_day": 6.1678,
+    "bare_fraction": 0.9918755950491908,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.008124404950809266,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3586.944259889323,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 44 m here vs 39 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.05 on the Mars target",
@@ -664,6 +893,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -671,7 +902,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_96_928.png",
@@ -716,8 +948,27 @@
     "hypsometric_integral": 0.5894836187362671
    },
    "target_patch_id": "mars_jezero:320:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -3.07,
+    "t2m_min_c": -23.6,
+    "t2m_max_c": 12.19,
+    "t2m_range_c": 4.17,
+    "precip_mm_per_day": 2.36,
+    "rh_pct": 94.7,
+    "solar_kwh_m2_day": 2.9798,
+    "bare_fraction": 0.9999679261017385,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.000032073898261594714,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 43.71641086508766,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.07 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 45 m here vs 55 m on the Mars target",
@@ -725,6 +976,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Rain and snow: 2.36 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -732,7 +984,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_1152_160.png",
@@ -777,8 +1030,27 @@
     "hypsometric_integral": 0.5294704437255859
    },
    "target_patch_id": "mars_jezero:32:320",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 21.91,
+    "t2m_min_c": -0.39,
+    "t2m_max_c": 42.56,
+    "t2m_range_c": 15.95,
+    "precip_mm_per_day": 0.19,
+    "rh_pct": 30.46,
+    "solar_kwh_m2_day": 6.6499,
+    "bare_fraction": 0.9146263910969793,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.08537360890302066,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 6763.411109774043,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 89 m here vs 88 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.06 on the Mars target",
@@ -786,6 +1058,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Vegetation, cropland or buildings cover 9% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 0.19 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -793,7 +1067,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/namib_960_1472.png",
@@ -838,8 +1113,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 25.06,
+    "t2m_min_c": -0.23,
+    "t2m_max_c": 43.54,
+    "t2m_range_c": 14.23,
+    "precip_mm_per_day": 0.3,
+    "rh_pct": 19.03,
+    "solar_kwh_m2_day": 6.3499,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 1992.5076550197973,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 31 m here vs 39 m on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 4.4 m here vs 3.8 m; ruggedness index 1.5 m here vs 1.4 m on the Mars target",
@@ -847,6 +1141,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is shape (98/100)",
+    "Rain and snow: 0.30 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -854,7 +1149,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/ahaggar_1056_64.png",
@@ -899,8 +1195,27 @@
     "hypsometric_integral": 0.5510073900222778
    },
    "target_patch_id": "mars_jezero:256:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 25.22,
+    "t2m_min_c": -3.02,
+    "t2m_max_c": 47.03,
+    "t2m_range_c": 16.18,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 23.77,
+    "solar_kwh_m2_day": 6.354,
+    "bare_fraction": 0.9989201549895191,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0010798450104808487,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3570.4775701562066,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 4.7 m here vs 4.6 m; ruggedness index 1.2 m here vs 1.2 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.05 on the Mars target",
@@ -908,6 +1223,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is relief (98/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -915,7 +1231,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_288_224.png",
@@ -960,8 +1277,27 @@
     "hypsometric_integral": 0.3687199056148529
    },
    "target_patch_id": "mars_jezero:288:224",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 13.57,
+    "t2m_min_c": -15.48,
+    "t2m_max_c": 40.87,
+    "t2m_range_c": 14.86,
+    "precip_mm_per_day": 0.76,
+    "rh_pct": 41.94,
+    "solar_kwh_m2_day": 5.5637,
+    "bare_fraction": 0.9936178319679939,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.006382168032006096,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "SP Crater, Arizona",
+    "distance_km": 46.370239981877184,
+    "source_url": "https://en.wikipedia.org/wiki/S_P_Crater"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.12 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 57 m here vs 62 m on the Mars target",
@@ -969,6 +1305,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 0.76 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1021,8 +1359,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 25.22,
+    "t2m_min_c": -3.02,
+    "t2m_max_c": 47.03,
+    "t2m_range_c": 16.18,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 23.77,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9938044099891974,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.006195590010802567,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3567.7719229317154,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 3.8 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 50 m here vs 39 m on the Mars target",
@@ -1030,6 +1387,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1037,7 +1396,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_352_64.png",
@@ -1082,8 +1442,27 @@
     "hypsometric_integral": 0.3687199056148529
    },
    "target_patch_id": "mars_jezero:288:224",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.29,
+    "t2m_min_c": -6.18,
+    "t2m_max_c": 43.21,
+    "t2m_range_c": 16.07,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 26.45,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3611.8239794637534,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Roughness (bar 99/100): plane-fit spread 7.2 m here vs 7.7 m; ruggedness index 1.7 m here vs 1.7 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.13 here vs 0.12 on the Mars target",
@@ -1091,6 +1470,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1098,7 +1478,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_544_1024.png",
@@ -1143,14 +1524,34 @@
     "hypsometric_integral": 0.5118603706359863
    },
    "target_patch_id": "mars_jezero:160:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 33.03,
+    "t2m_min_c": 16.81,
+    "t2m_max_c": 46.94,
+    "t2m_range_c": 12.49,
+    "precip_mm_per_day": 0.75,
+    "rh_pct": 41.16,
+    "solar_kwh_m2_day": 5.957,
+    "bare_fraction": 0.9999363503277958,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00006364967220418815,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 4731.5295737078995,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.02 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 34 m on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Rain and snow: 0.75 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1202,8 +1603,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3640.5124223606726,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
     "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 2.6° here vs 2.6° on the Mars target",
@@ -1211,6 +1631,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1218,7 +1639,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1408_672.png",
@@ -1263,8 +1685,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9999362407549095,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00006375924509053813,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3622.0576580438756,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 52 m here vs 41 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.06 on the Mars target",
@@ -1272,6 +1713,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1279,7 +1721,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1216_416.png",
@@ -1324,21 +1767,42 @@
     "hypsometric_integral": 0.4742199778556824
    },
    "target_patch_id": "mars_jezero:160:352",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.29,
+    "t2m_min_c": -6.18,
+    "t2m_max_c": 43.21,
+    "t2m_range_c": 16.07,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 26.45,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 0.9998729028978139,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00012709710218607016,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3612.053443868544,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Roughness (bar 99/100): plane-fit spread 4.0 m here vs 4.4 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.04 on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_352_1280.png",
@@ -1383,8 +1847,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 19.34,
+    "t2m_min_c": -0.2,
+    "t2m_max_c": 42.99,
+    "t2m_range_c": 16.08,
+    "precip_mm_per_day": 0.19,
+    "rh_pct": 44.5,
+    "solar_kwh_m2_day": 6.4855,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 7047.886639935291,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 40 m here vs 41 m on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.4 m; ruggedness index 1.2 m here vs 1.3 m on the Mars target",
@@ -1392,6 +1875,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.19 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1399,7 +1883,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/crater_roter_kamm_96_128.png",
@@ -1444,8 +1929,27 @@
     "hypsometric_integral": 0.4227742552757263
    },
    "target_patch_id": "mars_jezero:64:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 20.31,
+    "t2m_min_c": 4.09,
+    "t2m_max_c": 42.99,
+    "t2m_range_c": 12.65,
+    "precip_mm_per_day": 0.13,
+    "rh_pct": 48.44,
+    "solar_kwh_m2_day": 5.7773,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 6732.299590928622,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 60 m here vs 63 m on the Mars target",
     "Roughness (bar 100/100): plane-fit spread 11.9 m here vs 11.5 m; ruggedness index 2.5 m here vs 2.5 m on the Mars target",
@@ -1453,6 +1957,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (93/100)",
+    "Rain and snow: 0.13 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1460,7 +1965,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/namib_1024_288.png",
@@ -1505,8 +2011,27 @@
     "hypsometric_integral": 0.4742199778556824
    },
    "target_patch_id": "mars_jezero:160:352",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 26.12,
+    "t2m_min_c": -1.78,
+    "t2m_max_c": 47.83,
+    "t2m_range_c": 16.0,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.0,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9979639880384297,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0019405739008716675,
+    "water_fraction": 0.0000954380606986066,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3594.7132960605877,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.04 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 32 m here vs 32 m on the Mars target",
@@ -1514,6 +2039,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1521,7 +2047,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_768_256.png",
@@ -1566,8 +2093,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.29,
+    "t2m_min_c": -6.18,
+    "t2m_max_c": 43.21,
+    "t2m_range_c": 16.07,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 26.45,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9956148713060057,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.004289799809342231,
+    "water_fraction": 0.00009532888465204957,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3585.1096344935754,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.05 on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 3.8 m here vs 3.8 m; ruggedness index 1.2 m here vs 1.4 m on the Mars target",
@@ -1575,6 +2121,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1582,7 +2129,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_448_416.png",
@@ -1627,21 +2175,42 @@
     "hypsometric_integral": 0.5968107581138611
    },
    "target_patch_id": "mars_jezero:192:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.29,
+    "t2m_min_c": -6.18,
+    "t2m_max_c": 43.21,
+    "t2m_range_c": 16.07,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 26.45,
+    "solar_kwh_m2_day": 6.1678,
+    "bare_fraction": 0.9990482233502538,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0009200507614213198,
+    "water_fraction": 0.0000317258883248731,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3594.8297930418908,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 6.2 m here vs 5.7 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_64_1184.png",
@@ -1686,8 +2255,27 @@
     "hypsometric_integral": 0.5187016129493713
    },
    "target_patch_id": "mars_jezero:224:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 25.22,
+    "t2m_min_c": -3.02,
+    "t2m_max_c": 47.03,
+    "t2m_range_c": 16.18,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 23.77,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9983471074380166,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.001652892561983471,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3582.3958088106992,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.03 here vs 0.03 on the Mars target",
     "Slope (bar 99/100): median 1.3° here vs 1.3°; 90th percentile 2.6° here vs 2.7° on the Mars target",
@@ -1695,6 +2283,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (97/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1702,7 +2291,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_512_256.png",
@@ -1747,8 +2337,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 13.57,
+    "t2m_min_c": -15.48,
+    "t2m_max_c": 40.87,
+    "t2m_range_c": 14.86,
+    "precip_mm_per_day": 0.76,
+    "rh_pct": 41.94,
+    "solar_kwh_m2_day": 5.5637,
+    "bare_fraction": 0.9931119857795836,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.006888014220416455,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "SP Crater, Arizona",
+    "distance_km": 31.536801824602215,
+    "source_url": "https://en.wikipedia.org/wiki/S_P_Crater"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 46 m here vs 41 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
@@ -1756,6 +2365,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 0.76 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1808,8 +2419,27 @@
     "hypsometric_integral": 0.5187016129493713
    },
    "target_patch_id": "mars_jezero:224:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.61,
+    "t2m_min_c": -6.5,
+    "t2m_max_c": 47.28,
+    "t2m_range_c": 15.72,
+    "precip_mm_per_day": 0.21,
+    "rh_pct": 24.7,
+    "solar_kwh_m2_day": 5.9496,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 3300.982469333505,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.03 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 42 m on the Mars target",
@@ -1817,6 +2447,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.21 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1824,7 +2455,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/lut_160_992.png",
@@ -1869,8 +2501,27 @@
     "hypsometric_integral": 0.4227742552757263
    },
    "target_patch_id": "mars_jezero:64:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 4.56,
+    "t2m_min_c": -24.13,
+    "t2m_max_c": 33.03,
+    "t2m_range_c": 12.44,
+    "precip_mm_per_day": 0.24,
+    "rh_pct": 29.46,
+    "solar_kwh_m2_day": 5.4329,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 39.37974728772259,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 56 m here vs 63 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.00 here vs 0.00 on the Mars target",
@@ -1878,6 +2529,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (94/100)",
+    "Rain and snow: 0.24 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -1885,7 +2537,9 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/qaidam_352_1280.png",
@@ -1930,8 +2584,27 @@
     "hypsometric_integral": 0.5510073900222778
    },
    "target_patch_id": "mars_jezero:256:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -2.84,
+    "t2m_min_c": -23.83,
+    "t2m_max_c": 10.31,
+    "t2m_range_c": 4.1,
+    "precip_mm_per_day": 2.36,
+    "rh_pct": 94.09,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.5810998735777497,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.41890012642225033,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 23.25767228447641,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 34 m here vs 33 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.05 on the Mars target"
@@ -1939,13 +2612,16 @@
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
     "Image embedding bar 65/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Vegetation, cropland or buildings cover 42% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 2.36 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_448_640.png",
@@ -1990,8 +2666,27 @@
     "hypsometric_integral": 0.5118603706359863
    },
    "target_patch_id": "mars_jezero:160:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 26.12,
+    "t2m_min_c": -1.78,
+    "t2m_max_c": 47.83,
+    "t2m_range_c": 16.0,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.0,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.996358597576695,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0036414024233049755,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3604.0748701076195,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.02 here vs -0.02 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 34 m here vs 34 m on the Mars target",
@@ -1999,6 +2694,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2006,7 +2702,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1152_0.png",
@@ -2051,8 +2748,27 @@
     "hypsometric_integral": 0.5349811911582947
    },
    "target_patch_id": "mars_jezero:128:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 11.97,
+    "t2m_min_c": -22.05,
+    "t2m_max_c": 38.79,
+    "t2m_range_c": 14.74,
+    "precip_mm_per_day": 1.09,
+    "rh_pct": 47.3,
+    "solar_kwh_m2_day": 5.6599,
+    "bare_fraction": 0.0020371867421180275,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9979628132578819,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Meteor Crater, Arizona",
+    "distance_km": 59.0915269767806,
+    "source_url": "https://en.wikipedia.org/wiki/Meteor_Crater"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 43 m here vs 39 m on the Mars target",
     "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.03 here vs -0.05 on the Mars target",
@@ -2060,6 +2776,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Vegetation, cropland or buildings cover 100% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 1.09 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2067,7 +2785,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/meteor_crater_1600_1376.png",
@@ -2112,21 +2831,42 @@
     "hypsometric_integral": 0.5894836187362671
    },
    "target_patch_id": "mars_jezero:320:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 24.26,
+    "t2m_min_c": -5.99,
+    "t2m_max_c": 44.87,
+    "t2m_range_c": 16.37,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.57,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3652.994181413184,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 52 m here vs 55 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.09 here vs -0.07 on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1088_1440.png",
@@ -2171,8 +2911,27 @@
     "hypsometric_integral": 0.4397399127483368
    },
    "target_patch_id": "mars_jezero:160:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 0.9989783538726773,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0007981610369708192,
+    "water_fraction": 0.0002234850903518294,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3670.1929015949463,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 34 m here vs 33 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.10 on the Mars target",
@@ -2180,6 +2939,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2187,7 +2947,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1472_1408.png",
@@ -2232,21 +2993,42 @@
     "hypsometric_integral": 0.5510073900222778
    },
    "target_patch_id": "mars_jezero:256:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 18.29,
+    "t2m_min_c": 3.65,
+    "t2m_max_c": 40.65,
+    "t2m_range_c": 13.01,
+    "precip_mm_per_day": 0.18,
+    "rh_pct": 58.04,
+    "solar_kwh_m2_day": 6.0302,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 7101.044240053417,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 36 m here vs 33 m on the Mars target",
     "Slope (bar 99/100): median 1.3° here vs 1.2°; 90th percentile 2.5° here vs 2.5° on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (97/100)",
+    "Rain and snow: 0.18 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/crater_roter_kamm_928_448.png",
@@ -2291,8 +3073,27 @@
     "hypsometric_integral": 0.5968107581138611
    },
    "target_patch_id": "mars_jezero:192:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 11.36,
+    "t2m_min_c": -22.36,
+    "t2m_max_c": 37.83,
+    "t2m_range_c": 14.49,
+    "precip_mm_per_day": 1.14,
+    "rh_pct": 47.71,
+    "solar_kwh_m2_day": 5.5637,
+    "bare_fraction": 0.4189163437718351,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.5810836562281649,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Meteor Crater, Arizona",
+    "distance_km": 21.266917888887576,
+    "source_url": "https://en.wikipedia.org/wiki/Meteor_Crater"
+   },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.7 m; ruggedness index 1.4 m here vs 1.3 m on the Mars target",
@@ -2300,6 +3101,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (99/100)",
+    "Vegetation, cropland or buildings cover 58% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 1.14 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2307,7 +3110,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/meteor_crater_448_800.png",
@@ -2352,8 +3156,27 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 19.34,
+    "t2m_min_c": -0.2,
+    "t2m_max_c": 42.99,
+    "t2m_range_c": 16.08,
+    "precip_mm_per_day": 0.19,
+    "rh_pct": 44.5,
+    "solar_kwh_m2_day": 6.4855,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 7060.790267454496,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.06 on the Mars target",
@@ -2361,6 +3184,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (97/100)",
+    "Rain and snow: 0.19 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2368,7 +3192,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/crater_roter_kamm_288_224.png",
@@ -2413,8 +3238,27 @@
     "hypsometric_integral": 0.5510073900222778
    },
    "target_patch_id": "mars_jezero:256:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 5.86,
+    "t2m_min_c": -24.0,
+    "t2m_max_c": 34.76,
+    "t2m_range_c": 13.27,
+    "precip_mm_per_day": 0.17,
+    "rh_pct": 28.26,
+    "solar_kwh_m2_day": 5.4329,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 43.109609538717436,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 32 m here vs 33 m on the Mars target",
     "Slope (bar 99/100): median 1.2° here vs 1.2°; 90th percentile 2.4° here vs 2.5° on the Mars target",
@@ -2422,6 +3266,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is shape (97/100)",
+    "Rain and snow: 0.17 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2429,7 +3274,9 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/qaidam_160_480.png",
@@ -2474,21 +3321,42 @@
     "hypsometric_integral": 0.5251647233963013
    },
    "target_patch_id": "mars_jezero:192:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.998249299719888,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0017188693659281895,
+    "water_fraction": 0.00003183091418385536,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3607.4071948716155,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (94/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_864_480.png",
@@ -2533,8 +3401,27 @@
     "hypsometric_integral": 0.42140617966651917
    },
    "target_patch_id": "mars_jezero:320:224",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9999681427206116,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00003185727938834024,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3625.882340819883,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 93 m here vs 74 m on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 9.5 m here vs 9.1 m; ruggedness index 2.1 m here vs 1.9 m on the Mars target",
@@ -2542,6 +3429,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2549,7 +3437,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1056_736.png",
@@ -2594,8 +3483,27 @@
     "hypsometric_integral": 0.5968107581138611
    },
    "target_patch_id": "mars_jezero:192:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 5.94,
+    "t2m_min_c": -24.59,
+    "t2m_max_c": 35.53,
+    "t2m_range_c": 14.17,
+    "precip_mm_per_day": 0.15,
+    "rh_pct": 28.69,
+    "solar_kwh_m2_day": 5.4329,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Qaidam Basin, China",
+    "distance_km": 57.22844244758801,
+    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 42 m here vs 39 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.11 here vs -0.09 on the Mars target"
@@ -2603,13 +3511,16 @@
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
     "Image embedding bar 70/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Rain and snow: 0.15 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/qaidam_96_160.png",
@@ -2654,8 +3565,27 @@
     "hypsometric_integral": 0.3687199056148529
    },
    "target_patch_id": "mars_jezero:288:224",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.29,
+    "t2m_min_c": -6.18,
+    "t2m_max_c": 43.21,
+    "t2m_range_c": 16.07,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 26.45,
+    "solar_kwh_m2_day": 6.354,
+    "bare_fraction": 0.9987940336401142,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0012059663598857505,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3578.743689709547,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 67 m here vs 62 m on the Mars target",
     "Roughness (bar 100/100): plane-fit spread 7.5 m here vs 7.7 m; ruggedness index 1.7 m here vs 1.7 m on the Mars target",
@@ -2663,6 +3593,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2670,7 +3601,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_96_704.png",
@@ -2715,21 +3647,42 @@
     "hypsometric_integral": 0.4397399127483368
    },
    "target_patch_id": "mars_jezero:160:416",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 26.12,
+    "t2m_min_c": -1.78,
+    "t2m_max_c": 47.83,
+    "t2m_range_c": 16.0,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.0,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9973773428004862,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.002622657199513849,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3590.1508325132386,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 31 m here vs 33 m on the Mars target",
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.10 on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_864_0.png",
@@ -2774,8 +3727,27 @@
     "hypsometric_integral": 0.47383058071136475
    },
    "target_patch_id": "mars_jezero:160:288",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 10.17,
+    "t2m_min_c": -21.21,
+    "t2m_max_c": 37.0,
+    "t2m_range_c": 14.18,
+    "precip_mm_per_day": 1.02,
+    "rh_pct": 47.94,
+    "solar_kwh_m2_day": 5.543,
+    "bare_fraction": 0.003018172575930868,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.9969818274240692,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "SP Crater, Arizona",
+    "distance_km": 49.259739953009735,
+    "source_url": "https://en.wikipedia.org/wiki/S_P_Crater"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.02 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 41 m here vs 37 m on the Mars target",
@@ -2783,6 +3755,8 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Vegetation, cropland or buildings cover 100% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 1.02 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2790,7 +3764,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/sp_crater_512_32.png",
@@ -2835,8 +3810,27 @@
     "hypsometric_integral": 0.3383171260356903
    },
    "target_patch_id": "mars_jezero:128:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": -0.96,
+    "t2m_min_c": -24.61,
+    "t2m_max_c": 18.16,
+    "t2m_range_c": 5.11,
+    "precip_mm_per_day": 2.72,
+    "rh_pct": 91.76,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.9987731991192199,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0012268008807801195,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 35.054895950774004,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 39 m here vs 43 m on the Mars target",
     "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 3.4° here vs 3.1° on the Mars target",
@@ -2844,6 +3838,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Rain and snow: 2.72 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2851,7 +3846,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_224_704.png",
@@ -2896,8 +3892,27 @@
     "hypsometric_integral": 0.5968107581138611
    },
    "target_patch_id": "mars_jezero:192:384",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.1536,
+    "bare_fraction": 0.9997766860205449,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00022331397945511388,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Nördlinger Ries, Germany",
+    "distance_km": 3653.231959803624,
+    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+   },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
     "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.7 m; ruggedness index 1.1 m here vs 1.3 m on the Mars target",
@@ -2905,6 +3920,7 @@
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2912,7 +3928,8 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/harrat_khaybar_1312_1152.png",
@@ -2957,21 +3974,42 @@
     "hypsometric_integral": 0.4496612250804901
    },
    "target_patch_id": "mars_jezero:96:256",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 20.31,
+    "t2m_min_c": 4.09,
+    "t2m_max_c": 42.99,
+    "t2m_range_c": 12.65,
+    "precip_mm_per_day": 0.13,
+    "rh_pct": 48.44,
+    "solar_kwh_m2_day": 6.6499,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 6745.13037540179,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.03 here vs -0.03 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 66 m here vs 73 m on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.13 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
    ],
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
     "earth_hillshade": "img/patches/namib_1056_672.png",
@@ -3016,14 +4054,34 @@
     "hypsometric_integral": 0.42140617966651917
    },
    "target_patch_id": "mars_jezero:320:224",
-   "environment": null,
-   "novelty": null,
+   "environment": {
+    "t2m_mean_c": 2.13,
+    "t2m_min_c": -17.95,
+    "t2m_max_c": 22.27,
+    "t2m_range_c": 14.96,
+    "precip_mm_per_day": 0.66,
+    "rh_pct": 31.77,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "nearest_known_analog": "Atacama Desert, Chile",
+    "distance_km": 226.17236789642038,
+    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+   },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.11 here vs 0.11 on the Mars target",
     "Relief (bar 99/100): height range (5th-95th pct) 74 m here vs 74 m on the Mars target"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Rain and snow: 0.66 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."

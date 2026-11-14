@@ -4,7 +4,7 @@ import ScoreBars from '../components/ScoreBars.tsx'
 import SiteInset from '../components/SiteInset.tsx'
 import { bodyLabel, dataUrl, fmt, latLon, pct, useJson } from '../data.ts'
 import type { Match, Results, Target, Terrain } from '../types.ts'
-import { NoveltyBadge } from './Explore.tsx'
+import { NoveltyBadge, regionSetLabel } from './Explore.tsx'
 
 const TERRAIN_ROWS: { key: keyof Terrain; label: string; unit: string; digits: number }[] = [
   { key: 'relief_m', label: 'Relief (5th–95th percentile height)', unit: ' m', digits: 0 },
@@ -117,6 +117,7 @@ export default function SitePage() {
               </>
             )}
           </p>
+          <p className="small muted">{regionSetLabel(m.region_set)}</p>
         </div>
         <div className="score-block" aria-label={`similarity score ${m.score.toFixed(1)} out of 100`}>
           <span className="score-number">{m.score.toFixed(1)}</span>

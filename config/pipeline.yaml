@@ -8,6 +8,8 @@ mask_max_water: 0.05            # WorldCover class 80
 min_relief_m: 5           # drop near-flat patches (sea, lakes, salt pans) from the analog search
 top_k_sites: 50
 nms_km: 10                # keep matches at least 10 km apart
+novelty_km: 50            # within this distance of a catalogued analog -> well studied
+env_radius_km: 2          # land-cover fractions around each site
 weights: {morph: 0.6, embed: 0.4}
 seed: 42
 

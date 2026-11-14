@@ -14,6 +14,12 @@ const FILTERS: { id: Filter; label: string }[] = [
 const SHOWN = 20
 const DEFAULT_TARGET = 'moon_site23_malapert'
 
+export function regionSetLabel(set: string): string {
+  if (set === 'well_studied') return 'Region: a well-studied analog area'
+  if (set === 'discovery') return 'Region: discovery candidate'
+  return 'Region: crater benchmark tile'
+}
+
 export function NoveltyBadge({ m }: { m: Match }) {
   if (!m.novelty) return <span className="badge badge-pending">novelty pending</span>
   return m.novelty.status === 'less_studied' ? (
@@ -176,7 +182,13 @@ export default function Explore() {
                     <span className="result-name">{m.region_name}</span>
                     <span className="result-meta">
                       <NoveltyBadge m={m} />
-                      {m.novelty && <span className="muted"> {fmt(m.novelty.distance_km, 0)} km from a catalogued analog</span>}
+                      {m.novelty && (
+                        <span className="muted">
+                          {' '}
+                          {fmt(m.novelty.distance_km, 0)} km from {m.novelty.nearest_known_analog}
+                        </span>
+                      )}
+                      <span className="region-set">{regionSetLabel(m.region_set)}</span>
                     </span>
                   </span>
                   <span className="result-score" aria-label={`similarity score ${m.score.toFixed(1)}`}>
@@ -194,7 +206,8 @@ export default function Explore() {
         <div className="map-panel">
           <WorldMap matches={shown} selected={selected} onSelect={(id) => select(id)} fitKey={`${targetId}|${filter}`} />
           <p className="map-legend small">
-            <span className="pin pin-less_studied legend-pin">1</span> less studied{' '}
+            <span className="pin pin-less_studied legend-pin">1</span> less studied (more than 50 km from any
+            catalogued analog){' '}
             <span className="pin pin-well_studied legend-pin">1</span> well studied · numbers are ranks
           </p>
         </div>

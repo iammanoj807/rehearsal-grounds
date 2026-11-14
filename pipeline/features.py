@@ -115,16 +115,19 @@ def _radius_grid(shape: tuple[int, int]) -> np.ndarray:
     return np.hypot(rows - rc, cols - cc)
 
 
-def bowl_index(z: np.ndarray, relief: float | None = None, inner_px: float = 16.0) -> float:
+def bowl_index(z: np.ndarray, relief: float | None = None, inner_px: float | None = None) -> float:
     """(mean z of the outer ring - mean z of the central disk) / relief.
 
-    The central disk has radius ``inner_px`` (16 px = 960 m at 60 m). The outer
-    ring is the band from 1.5x that radius out to the inscribed circle. The
-    index is positive for bowls (craters) and negative for domes and cones.
+    The central disk has radius ``inner_px``, by default a quarter of the patch
+    width (16 px = 960 m for the 64 px, 60 m patches). The outer ring is the
+    band from 1.5x that radius out to the inscribed circle. The index is
+    positive for bowls (craters) and negative for domes and cones.
     """
     rel = relief_m(z) if relief is None else relief
     if rel < 1e-6:
         return 0.0
+    if inner_px is None:
+        inner_px = min(z.shape) / 4.0
     radius = _radius_grid(z.shape)
     outer_max = min(z.shape) / 2.0
     disk = radius <= inner_px

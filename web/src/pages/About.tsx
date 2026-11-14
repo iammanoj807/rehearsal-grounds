@@ -50,6 +50,10 @@ export default function About() {
         roughness and shape groups. σ is the median distance from the target’s patches to their nearest Earth patch,
         so the score adapts to how unusual the target is. It is a similarity score, not an accuracy or a certification.
       </p>
+      <p>
+        Our crater test shows a division of labour: at 60 m the image embedding does most of the landform recognition,
+        and the terrain numbers explain each match in units a geologist can check. See the Validation page.
+      </p>
 
       <h2>What Earth cannot reproduce</h2>
       <ul>
