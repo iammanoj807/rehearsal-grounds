@@ -2041,10 +2041,11 @@
     }
    ],
    "best_months": [
-    1,
-    12
+    2,
+    4,
+    9
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
   },
   {
    "rank": 10,
@@ -3174,10 +3175,11 @@
     }
    ],
    "best_months": [
-    1,
-    12
+    2,
+    4,
+    9
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
   },
   {
    "rank": 15,
@@ -4081,10 +4083,11 @@
     }
    ],
    "best_months": [
-    1,
-    12
+    2,
+    4,
+    9
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
   },
   {
    "rank": 19,
@@ -5662,9 +5665,7 @@
     }
    ],
    "best_months": [
-    1,
-    2,
-    12
+    2
    ],
    "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
   },
@@ -6338,10 +6339,11 @@
     }
    ],
    "best_months": [
-    1,
-    12
+    2,
+    4,
+    9
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
   },
   {
    "rank": 29,
@@ -7692,9 +7694,7 @@
     }
    ],
    "best_months": [
-    1,
-    2,
-    12
+    2
    ],
    "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
   },
@@ -8820,10 +8820,11 @@
     }
    ],
    "best_months": [
-    1,
-    12
+    2,
+    4,
+    9
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
   },
   {
    "rank": 40,

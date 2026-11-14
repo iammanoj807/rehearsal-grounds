@@ -42,6 +42,14 @@ def test_best_months_skip_months_outside_the_temperature_band() -> None:
     assert "high at most 35" in rule
 
 
+def test_best_months_never_suggest_a_month_without_low_sun() -> None:
+    low = [0.0] * 11 + [2.0]
+    months, _ = lighting_step.best_months(_cal(low, [0.1] * 12), RULES, "low_sun_h")
+    assert months == [12]
+    none, rule = lighting_step.best_months(_cal([0.0] * 12, [0.1] * 12), RULES, "low_sun_h")
+    assert none == [] and "no month" in rule
+
+
 def test_rank_of_counts_strictly_better_scores() -> None:
     scores = np.array([90.0, 80.0, 80.0, 70.0])
     assert usual.rank_of(90.0, scores) == 1

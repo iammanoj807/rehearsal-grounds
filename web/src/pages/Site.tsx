@@ -197,7 +197,9 @@ export default function SitePage() {
               <p className="small muted center">
                 Low sun: light from the north-west at {target.sun_band.preview_elevation_deg.toFixed(1)}°, the middle of
                 {' '}{target.name}’s noon Sun band ({target.sun_band.low_deg.toFixed(1)}–{target.sun_band.high_deg.toFixed(1)}°).
-                Cast shadows are black; both views share one contrast stretch.
+                Cast shadows are black; both views share one contrast stretch. The previews use each patch’s own
+                surroundings; the lighting score gives the Earth patch the target’s visible surroundings, so a preview
+                can show a few more distant shadows than the score counts.
                 {target.sun_band.preview_elevation_deg < 1.5 &&
                   ' At a Sun this low, most of both patches is in shadow: that is the honest result, not a rendering fault.'}
               </p>

@@ -6,7 +6,7 @@ into the score):
 
 * the region's best patch among searchable patches, its score and its rank among
   all searchable Earth patches (1 = best);
-* the same with the land-cover masks off (every valid Earth grid patch, including
+* the same with the land-cover masks off (every valid Earth patch, including
   vegetated, wet, icy and flat ones), and a flag when the region's best patch is
   one the masks remove.
 
@@ -115,7 +115,8 @@ def main() -> int:
     summary = json.loads((results_dir() / "summary.json").read_text())["targets"]
     regions = [r for r in load_yaml("regions.yaml")["regions"] if r["set"] == "well_studied"]
     field = next((r for r in regions if r.get("field_test")), None)
-    earth_grid = ((m["body"] == "earth") & (m["crater_centre_of"].fillna("") == "")).to_numpy()
+    # Same candidate set as the app's shortlist (step 08): every Earth patch, crater-centred ones included.
+    earth_grid = (m["body"] == "earth").to_numpy()
     e_all = np.flatnonzero(earth_grid)
     searchable = m["search_ok"].to_numpy()[e_all].astype(bool)
     doc: dict[str, Any] = {"field_test": field.get("field_test") if field else None,

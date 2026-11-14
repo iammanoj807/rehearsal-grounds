@@ -181,7 +181,7 @@ Every spoken number comes from the exported data of this run.
 | --- | --- | --- |
 | 0–6 s | JETT5 night-EVA image (NASA, "A Moonlit Moonwalk") or the slide 2 text | "In 2024 NASA rehearsed Artemis III moonwalks in Arizona, some at night, to test the south pole's changing light." |
 | 6–12 s | Screen recording: pick Malapert massif (Artemis III region badge), the map fills | "Pick an Artemis III region. We match its terrain against 43,794 Earth patches at 60 metres." |
-| 12–20 s | Open the top match (Atacama near Yungay, 89.1); swipe the divider; switch to Low sun | "The best match scores 89.1. Under the same low Sun, 4 degrees up, the shadows agree at 93.4." |
+| 12–20 s | Open the top match (Atacama near Yungay, 89.1); swipe the divider; switch to Low sun | "The best match scores 89.1. Under Malapert's low noon Sun, 3 to 5 degrees up, the shadows agree at 93.4." |
 | 20–25 s | Scroll to "When to go" (May, Nov, Dec) and back to "How the usual analog sites compare" | "It suggests the best months, and shows how the usual sites, including the JETT5 area, rank on the same fingerprint." |
 | 25–30 s | Data credits and URL | "Built on NASA, USGS and ESA open data. Try it at iammanoj807.github.io/rehearsal-grounds." |
 

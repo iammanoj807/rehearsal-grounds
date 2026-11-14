@@ -29,7 +29,7 @@ export default function UsualSitesPanel({ data, targetId, matches }: { data: Usu
         <p className="small muted">
           Each well-studied region’s best 3.84 km patch for this target, on the same similarity score, ranked among{' '}
           {rows[0]?.n_candidates.toLocaleString('en-GB')} searchable Earth patches. “Masks off” ranks it among all{' '}
-          {rows[0]?.n_candidates_masks_off.toLocaleString('en-GB')} Earth grid patches, including vegetated, wet, icy and flat ones.
+          {rows[0]?.n_candidates_masks_off.toLocaleString('en-GB')} Earth patches, including vegetated, wet, icy and flat ones.
         </p>
       </div>
       <div className="table-scroll">

@@ -102,6 +102,10 @@ def best_months(calendar: list[dict[str, Any]], rules: dict[str, Any], key: str)
     def dry(c: dict[str, Any]) -> bool:
         return c["precip_mm_per_day"] is not None and c["precip_mm_per_day"] <= limit
 
+    if key == "low_sun_h":  # a month with no low-sun hours is no use for a low-Sun rehearsal
+        calendar = [c for c in calendar if (c["low_sun_h"] or 0.0) > 0.0]
+        if not calendar:
+            return [], "Our rule: no month has any low-sun hours at this site."
     temps = f"mean daily low at least {tmin:g} °C and high at most {tmax:g} °C"
     both = [c for c in calendar if dry(c) and temp_ok(c)]
     warm_enough = [c for c in calendar if temp_ok(c)]
