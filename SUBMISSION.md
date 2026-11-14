@@ -1,0 +1,168 @@
+# Submission text: Rehearsal Grounds
+
+Text for the Space Apps project page. Every number comes from `web/public/data/validation.json`,
+`web/public/data/meta.json` and the results files of the run dated 2026-11-14.
+
+## Title
+
+Rehearsal Grounds: finding where on Earth to rehearse the Moon and Mars
+
+## Team and challenge
+
+- Team: Rehearsal Grounds
+- Member: Manoj Kumar Thapa
+- Challenge: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars (2026 NASA Space Apps
+  Challenge, Universal Event)
+
+## Links
+
+- Demo video (30 s): **[ADD LINK]**
+- Live app: https://iammanoj807.github.io/rehearsal-grounds/
+- Code: https://github.com/iammanoj807/rehearsal-grounds
+
+## High-level summary
+
+Before astronauts and rovers work on the Moon's south pole or in Jezero crater, teams rehearse on Earth. Existing
+analog screening works at tens of kilometres; Rehearsal Grounds works at the scale of a crater rim or lava field. It
+turns NASA LRO LOLA lunar terrain, USGS Mars CTX terrain and ESA Copernicus Earth elevation into 3.84 km terrain
+fingerprints, adds a learned image embedding, and searches 49,147 Earth patches for the closest matches. Each
+candidate gets a scorecard of what matches, where the analogy breaks down, and which tests it suits. The method
+finds impact craters across continents with a mean ROC AUC of 0.976.
+
+## Project details
+
+**What it does.** A field-test planner picks a target, such as the Malapert massif (one of NASA's candidate Artemis
+III landing regions) or the Jezero landing area. The app shows the 50 best-matching Earth sites on a map and in a
+ranked list, each at least 10 km from the next. Every site opens a dossier with:
+
+- the target patch and the Earth patch as hillshades at the same scale;
+- five explanation bars (relief, slope, roughness, shape, image embedding);
+- a terrain table for both patches;
+- NASA POWER climate and ESA WorldCover land cover;
+- a novelty flag (distance to the nearest of 21 catalogued analog and astronaut-training sites);
+- strong-match, breaks-down and tests-suited lines;
+- a downloadable Markdown dossier.
+
+**How it works.**
+
+1. Fetch real terrain models (LOLA 5 m site DEMs, the CTX DTM, Copernicus GLO-30 for 30 Earth regions).
+2. Resample everything to a common 60 m metric grid, warping Mars from equirectangular to an azimuthal equidistant
+   projection centred on Jezero, and cut 3.84 km patches: 65,555 on Earth and 375 on the targets.
+3. Compute 20 rotation-invariant terrain features and a ResNet-18 image embedding per patch.
+4. Remove vegetated, built-up, wet and flat Earth patches with ESA WorldCover. Score every remaining Earth patch
+   against every target patch: 60% terrain fingerprint, 40% image embedding.
+5. Explain each match and add climate, land cover and novelty.
+
+**Why scale matters.** Screening Earth at about 50 km cells can say "the Atacama". At 60 m and 3.84 km patches, the
+answer is a specific slope or ridge that a team can drive, walk and image. Example: the top match for Malapert
+massif is a slope near Yungay in the Atacama, with a 90th-percentile slope of 16.4° against 16.5° on the Moon. It
+scores 85.3 of 100.
+
+**Validation results.**
+
+- **Crater retrieval benchmark.** Seven confirmed impact craters 0.8–3.5 km across, from the PASSC Earth Impact
+  Database. Each crater's patch searches 65,407 grid patches from other regions.
+  - The image embedding reaches a mean ROC AUC of 0.976 and puts another crater in the top 10 for 86% of queries.
+  - The 20 readable terrain features alone reach 0.632, about the same as relief alone (0.629).
+  - Random scores 0.546.
+  - Our first version had a leak, which we found and fixed; the Validation page explains it.
+- **Robustness.** A 90 m rerun keeps the top-20 region ranking (Spearman ρ 0.89, 0.90, 0.94 and 0.74 for the four
+  targets). With ±20% weight changes, 90–96% of top-10 sites stay in the top 10.
+- **Sanity checks.** All four pass.
+- **Rediscovery of known analogs.** Saturated, so it is reported as context only.
+
+**What is new compared with regional screening.**
+
+- Site-scale matching: a 60 m grid and 3.84 km patches.
+- Side-by-side terrain evidence for every match.
+- A per-target terrain coverage figure: Earth has a close match for 73% of Malapert's patches, 69% of Shackleton
+  rim's, and 100% of Connecting ridge's and Jezero's.
+- A benchmark with clean ground truth, plus an honest ablation.
+- Less-studied sites flagged by distance to a sourced catalogue. Examples: Puna de Atacama for Shackleton rim (about
+  200 km from the nearest catalogued analog); Harrat Khaybar for Jezero (more than 3,500 km).
+
+**Limits.**
+
+- Earth cannot reproduce lunar or martian gravity, vacuum or thin CO₂ air, radiation, regolith or polar light.
+- A 60 m grid misses boulders and small craters.
+- The steepest lunar massif faces have no close Earth match.
+- Copernicus DEM is a surface model.
+- The crater benchmark has only seven craters.
+- The novelty catalogue is a set of 21 points, not a census.
+
+**Tools used.** Python, rasterio/GDAL, NumPy, SciPy, pandas, scikit-learn, PyTorch and torchvision (ResNet-18), FAISS,
+Pydantic, React, TypeScript, Vite, Leaflet, GitHub Pages.
+
+**What comes next.**
+
+- More targets: de Gerlache rim, Leibnitz beta plateau, Gale crater, and a lunar pit for the caves consideration.
+- Finer Earth DEMs inside the best regions.
+- LRO Diviner temperatures beside the Earth climate values.
+- Process tags (impact, volcanic, aeolian, glacial).
+- Client-side weight sliders.
+
+## Space agency data
+
+- **NASA LRO LOLA 5 m south-pole site DEMs (GSFC PGDA):** Moon target terrain (Malapert massif, Shackleton rim,
+  Connecting ridge).
+- **USGS Astrogeology Mars 2020 TRN CTX DTM:** Mars target terrain (Jezero landing area).
+- **ESA Copernicus DEM GLO-30:** Earth terrain for all 30 regions.
+- **ESA WorldCover 2021:** vegetation, cropland, built-up and water masks, and the bare and snow-ice shares around
+  each site.
+- **NASA POWER climatology:** temperature, range, precipitation, humidity and sunlight for every candidate site.
+- **NASA GIBS:** Blue Marble and Landsat WELD map tiles in the app.
+
+## References
+
+- Barker, M.K. et al. (2021). Improved LOLA Elevation Maps for South Pole Landing Sites: Error Estimates and Their
+  Impact on Illumination Conditions. Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+- NASA GSFC PGDA, South Pole Landing Site LOLA DEMs: https://pgda.gsfc.nasa.gov/products/78
+- Fergason, R.L. et al. (2020). Mars 2020 Terrain Relative Navigation CTX DTM Mosaic. USGS Astrogeology Science
+  Center. doi:10.5066/P906QQT8
+- Copernicus DEM GLO-30, ESA / European Union: https://registry.opendata.aws/copernicus-dem/
+- Zanaga, D. et al. (2022). ESA WorldCover 10 m 2021 v200. doi:10.5281/zenodo.7254221
+- NASA POWER Project, NASA Langley Research Center: https://power.larc.nasa.gov/
+- NASA Global Imagery Browse Services (GIBS): https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api
+- Earth Impact Database, Planetary and Space Science Centre, University of New Brunswick (read via Internet Archive
+  snapshots; URLs in `config/craters.yaml`)
+- Pfeiffer, M., Amundson, R., Jordan, T.E. (2021). Soil temperature and relative humidity at the Yungay hyperarid
+  site. PANGAEA. doi:10.1594/PANGAEA.929560
+- NASA (28 October 2024). NASA Provides Update on Artemis III Moon Landing Regions:
+  https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+- He, K. et al. (2016). Deep Residual Learning for Image Recognition. CVPR. (torchvision ResNet-18 weights)
+- Wikipedia articles cited per region and per catalogued analog in `config/regions.yaml` and
+  `config/known_analogs.yaml`
+- Official challenge page: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars, 2026 NASA
+  Space Apps Challenge
+
+## AI-use disclosure
+
+We used an AI coding assistant to help write the code and documentation, under our direction and review. The team
+image was generated with code and contains no real data. All data, results and scores come from the open datasets
+listed and our own pipeline runs.
+
+## 30-second video storyboard
+
+| Time | Shot | Voice-over |
+| --- | --- | --- |
+| 0–4 s | Title card with team image | "I'm Manoj, team Rehearsal Grounds, Identify Earth Analogs challenge." |
+| 4–9 s | Malapert massif hillshade | "Before we drive on the lunar south pole, we rehearse on Earth. But where, exactly?" |
+| 9–19 s | Screen recording: pick Malapert, map fills, filter Less studied, open the top match, side-by-side view | "We match NASA lunar terrain against Earth's, patch by patch at 60 metres, and explain every match." |
+| 19–25 s | Validation page | "It finds impact craters across continents with an AUC of 0.98." |
+| 25–30 s | Data credits and URL | "Built on NASA, USGS and ESA open data. Try it at iammanoj807.github.io/rehearsal-grounds." |
+
+## Backup slide deck (7 slides including title)
+
+1. Title: Rehearsal Grounds, team name, Manoj Kumar Thapa, challenge name.
+2. The problem: analog sites are chosen by tradition, and regional screening works at about 50 km.
+3. The idea: match terrain at 60 m, so the answer is a rim or a ridge, not a region.
+4. How it works: the five-stage pipeline.
+5. Example: Malapert massif vs its top Earth match (Atacama near Yungay, 85.3), side by side with the scorecard.
+6. Validation: crater benchmark (AUC 0.976 embedding vs 0.632 features vs 0.546 random), robustness, limits.
+7. Impact and next steps, with data credits.
+
+## Still to do before submitting
+
+- [ ] Record the 30-second video and add its public link above.
+- [ ] Confirm the live URL loads on a phone after the GitHub Pages deploy.
+- [ ] Recheck the 2026 submission guide for any changed limits or a dedicated AI-disclosure field.
