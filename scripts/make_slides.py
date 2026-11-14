@@ -36,12 +36,20 @@ def main(out: Path) -> None:
     v1 = {r["id"]: r for r in val["v1_crater_retrieval"]["rankers"]}
     rho = val["v3_robustness"]["resolution_90m"]["spearman_top20_regions"]
     stay = val["v3_robustness"]["weight_perturbation"]["mean_stay_top10"]
+    split = val["v3_robustness"]["weight_split"]["top10_overlap"]
+    split_vals = [v for per in split.values() for v in per.values()]
     mal = results["moon_site23_malapert"]
     top = mal["matches"][0]
     shack = results["moon_site04_shackleton_rim"]["matches"]
     jez = results["mars_jezero"]["matches"]
-    shack_less = next(m for m in shack if m["novelty"] and m["novelty"]["status"] == "less_studied")
-    jez_less = next(m for m in jez if m["novelty"] and m["novelty"]["status"] == "less_studied")
+    shack_less = next((m for m in shack if m["novelty"] and m["novelty"]["status"] == "less_studied"), None)
+    jez_less = next((m for m in jez if m["novelty"] and m["novelty"]["status"] == "less_studied"), None)
+    outside = []
+    for name, m in (("Shackleton rim", shack_less), ("Jezero", jez_less)):
+        if m is not None:
+            outside.append(f'{html.escape(m["region_name"])} for {name} (#{m["rank"]}, '
+                           f'{m["novelty"]["distance_km"]:,.0f} km from the nearest catalogued analog)')
+    outside_text = "; ".join(outside) if outside else "none in the top 50 for Shackleton rim or Jezero"
     e = html.escape
 
     target_cards = "".join(
@@ -56,8 +64,9 @@ def main(out: Path) -> None:
     )
     rows = "".join(
         f'<tr class="{"hl" if k in ("embedding",) else ""}"><th>{e(v1[k]["label"])}</th>'
-        f'<td>{v1[k]["mean_auc"]:.3f}</td><td>{100 * v1[k]["hit_at_10"]:.0f}%</td></tr>'
-        for k in ("random", "relief_only", "features", "embedding", "combined")
+        f'<td>{v1[k]["mean_auc"]:.3f}</td><td>{v1[k]["mean_auc_hard"]:.3f}</td>'
+        f'<td>{100 * v1[k]["hit_at_10"]:.0f}%</td></tr>'
+        for k in ("random", "features", "embedding", "combined", "combined_moon_sigma")
     )
     rho_vals = list(rho.values())
     stay_vals = list(stay.values())
@@ -96,16 +105,16 @@ def main(out: Path) -> None:
         # 6 Validation
         f'''<section><h2>Validation: does the fingerprint recognise landforms?</h2><div class="two">
 <div><p class="lead">Crater retrieval: 7 PASSC impact craters (0.8-3.5 km) query {val["v1_crater_retrieval"]["n_negatives"]:,} grid patches on other continents.</p>
-<table><thead><tr><th>Ranker</th><th>Mean ROC AUC</th><th>Crater in top 10</th></tr></thead><tbody>{rows}</tbody></table></div>
-<div><ul class="mid"><li>The image embedding recognises craters; the 20 readable features alone do so only weakly, so the app uses both.</li>
+<table><thead><tr><th>Ranker</th><th>AUC</th><th>AUC, hard negatives</th><th>Crater in top 10</th></tr></thead><tbody>{rows}</tbody></table></div>
+<div><ul class="mid"><li>The image embedding recognises craters, also against hard negatives from the other crater tiles; the 20 readable features alone do so only weakly.</li>
 <li>90 m rerun: Spearman ρ {min(rho_vals):.2f}-{max(rho_vals):.2f} for each target's top-20 regions.</li>
-<li>±20% weight changes: {100 * min(stay_vals):.0f}-{100 * max(stay_vals):.0f}% of top-10 sites stay.</li>
+<li>±20% feature-group weights: {100 * min(stay_vals):.0f}-{100 * max(stay_vals):.0f}% of top-10 sites stay; terrain/image split 0.4/0.6 or 0.8/0.2: {100 * min(split_vals):.0f}-{100 * max(split_vals):.0f}%.</li>
 <li>All four sanity checks pass. An early benchmark leak was found, fixed and disclosed.</li>
 <li>Limits: 7 craters, 60 m grid, gravity changes crater shape.</li></ul></div></div></section>''',
         # 7 Impact
         f'''<section><h2>Impact and next steps</h2><div class="two"><div><ul class="mid">
 <li><b>For analog field-test planners:</b> a shortlist of specific sites per target, with evidence and limits.</li>
-<li><b>Less-studied finds:</b> {e(shack_less["region_name"])} for Shackleton rim ({shack_less["novelty"]["distance_km"]:.0f} km from any catalogued analog); {e(jez_less["region_name"])} for Jezero ({jez_less["novelty"]["distance_km"]:,.0f} km).</li>
+<li><b>Outside our analog catalogue:</b> {outside_text}.</li>
 <li><b>Next:</b> Gale crater and a lunar pit target, finer Earth DEMs in the best regions, LRO Diviner temperatures.</li></ul></div>
 <div class="credits"><p><b>Data</b></p><p>NASA LRO LOLA (GSFC PGDA, Barker et al. 2021) · USGS Mars 2020 CTX DTM (Fergason et al. 2020) · ESA Copernicus DEM GLO-30 · ESA WorldCover 2021 · NASA POWER · NASA GIBS · PASSC Earth Impact Database</p>
 <p><b>Try it</b><br>iammanoj807.github.io/rehearsal-grounds<br>github.com/iammanoj807/rehearsal-grounds</p>

@@ -4,9 +4,11 @@ Windows of ``patch_px`` pixels slide by ``stride_px``. A patch is kept when at
 least ``min_valid_fraction`` of its pixels have elevation. For Earth patches
 the WorldCover class shares are stored, plus two flags:
 
-* ``wc_ok``: tree + cropland + built-up share <= ``mask_max_veg_built_crop``
-  and water share <= ``mask_max_water`` (always True where WorldCover has no
-  coverage, i.e. Antarctica, which is flagged by ``wc_available``).
+* ``wc_ok``: vegetation + cropland + built-up share (``WORLDCOVER_VEG_BUILT``:
+  trees, shrubs, grass, crops, built-up, wetland, mangrove, moss) <=
+  ``mask_max_veg_built_crop``, water share <= ``mask_max_water`` and snow/ice
+  share <= ``mask_max_snow_ice`` (always True where WorldCover has no coverage,
+  i.e. Antarctica, which is flagged by ``wc_available``).
 * ``dedupe_ok``: False when the patch also lies inside another region's box
   and is closer to that region's centre (the boxes of nearby regions overlap).
 
@@ -31,7 +33,7 @@ from numpy.lib.stride_tricks import sliding_window_view
 from rasterio.crs import CRS
 from rasterio.warp import transform as warp_transform
 
-from common import RAW_DIR, get_logger, grids_dir, load_config, load_yaml, patches_dir, selected_regions, selected_targets
+from common import RAW_DIR, WORLDCOVER_VEG_BUILT, get_logger, grids_dir, load_config, load_yaml, patches_dir, selected_regions, selected_targets
 from grids import haversine_km, mars_geographic_crs, moon_geographic_crs
 
 log = get_logger("04_patches")
@@ -66,6 +68,13 @@ def class_shares(wc: np.ndarray, rows: np.ndarray, cols: np.ndarray, patch: int)
         hit = wc == code
         out[f"frac_{name}"] = np.array([hit[r:r + patch, c:c + patch].sum() for r, c in zip(rows, cols)]) / denom
     return out
+
+
+def landcover_ok(table: pd.DataFrame, cfg: dict[str, Any]) -> pd.Series:
+    """True where a patch passes the vegetation/built-up, water and snow/ice masks."""
+    veg = sum(table[f"frac_{WORLDCOVER_CLASSES[c]}"] for c in WORLDCOVER_VEG_BUILT)
+    return ((veg <= cfg["mask_max_veg_built_crop"]) & (table["frac_water"] <= cfg["mask_max_water"])
+            & (table["frac_snow_ice"] <= cfg["mask_max_snow_ice"]))
 
 
 def region_boxes() -> dict[str, dict[str, Any]]:
@@ -154,8 +163,7 @@ def cut_source(source_id: str, body: str, cfg: dict[str, Any], boxes: dict[str, 
                 wc = src.read(1)
             for key, values in class_shares(wc, rows, cols, patch).items():
                 table[key] = values
-            veg = table["frac_tree"] + table["frac_crop"] + table["frac_built"]
-            table["wc_ok"] = (veg <= cfg["mask_max_veg_built_crop"]) & (table["frac_water"] <= cfg["mask_max_water"])
+            table["wc_ok"] = landcover_ok(table, cfg)
         else:
             table["wc_ok"] = True
         table["dedupe_ok"] = dedupe_flags(source_id, lats, lons, boxes or {}, active)

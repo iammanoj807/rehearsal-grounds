@@ -9,7 +9,11 @@ For each site in ``work/results/<target>.parquet``:
   centre, read from the fetched ~20 m mosaic: bare ground, snow and ice,
   vegetation/crops/buildings and open water.
 * Novelty: great-circle distance to the nearest entry of
-  ``config/known_analogs.yaml``; within ``novelty_km`` -> ``well_studied``.
+  ``config/known_analogs.yaml``. A site is ``well_studied`` (shown as "Near a
+  known analog") when it lies within ``novelty_km`` of a catalogue entry OR
+  its region belongs to the well-studied set in ``config/regions.yaml``: an
+  analog area such as the Atacama is larger than a single catalogue point.
+  Otherwise it is ``less_studied`` ("Outside our analog catalogue").
 
 Outputs ``work/results/environment.parquet`` and ``novelty.parquet``.
 """
@@ -25,12 +29,12 @@ import pandas as pd
 import rasterio
 from rasterio.windows import from_bounds
 
-from common import CACHE_DIR, RAW_DIR, get_logger, load_config, load_yaml, record_source, results_dir, selected_targets
+from common import CACHE_DIR, RAW_DIR, WORLDCOVER_VEG_BUILT, get_logger, load_config, load_yaml, record_source, results_dir, selected_targets
 from grids import haversine_km
 from power import API, PowerError, annual_values, fetch_climatology
 
 log = get_logger("09_environment")
-VEG_CLASSES = (10, 20, 30, 40, 50, 90, 95, 100)  # trees, shrubs, grass, crops, built-up, wetland, mangrove, moss
+VEG_CLASSES = WORLDCOVER_VEG_BUILT  # trees, shrubs, grass, crops, built-up, wetland, mangrove, moss
 
 
 def worldcover_shares(region_id: str, lat: float, lon: float, radius_km: float) -> dict[str, float] | None:
@@ -62,18 +66,31 @@ def worldcover_shares(region_id: str, lat: float, lon: float, radius_km: float) 
     }
 
 
-def novelty(lat: float, lon: float, catalogue: list[dict[str, Any]], threshold_km: float) -> dict[str, Any]:
-    """Nearest catalogued analog and the resulting status."""
+def novelty(lat: float, lon: float, catalogue: list[dict[str, Any]], threshold_km: float,
+            region_set: str | None = None) -> dict[str, Any]:
+    """Nearest catalogued analog and the resulting status.
+
+    ``basis`` says why a site counts as well studied: ``catalogue_distance``
+    (within ``threshold_km`` of an entry) or ``well_studied_region`` (its region
+    is in the well-studied set although no catalogue point is that close).
+    """
     best = min(catalogue, key=lambda a: haversine_km(lat, lon, a["lat"], a["lon"]))
     dist = haversine_km(lat, lon, best["lat"], best["lon"])
-    return {"status": "well_studied" if dist <= threshold_km else "less_studied",
-            "nearest_known_analog": best["name"], "distance_km": dist, "source_url": best["source_url"]}
+    if dist <= threshold_km:
+        status, basis = "well_studied", "catalogue_distance"
+    elif region_set == "well_studied":
+        status, basis = "well_studied", "well_studied_region"
+    else:
+        status, basis = "less_studied", None
+    return {"status": status, "basis": basis, "nearest_known_analog": best["name"], "distance_km": dist,
+            "source_url": best["source_url"]}
 
 
 def main() -> int:
     """Compute environment and novelty tables for all kept sites."""
     cfg = load_config()
     catalogue = load_yaml("known_analogs.yaml")["analogs"]
+    region_sets = {r["id"]: r["set"] for r in load_yaml("regions.yaml")["regions"]}
     sites = pd.concat([pd.read_parquet(results_dir() / f"{t['id']}.parquet")
                        for t in selected_targets(load_yaml("targets.yaml")["targets"])], ignore_index=True)
     sites = sites.drop_duplicates("site_id")[["site_id", "region_id", "lat", "lon"]]
@@ -95,14 +112,15 @@ def main() -> int:
         rec["worldcover_available"] = wc is not None
         rec.update(wc or {})
         env_rows.append(rec)
-        nov_rows.append({"site_id": s.site_id, **novelty(s.lat, s.lon, catalogue, float(cfg["novelty_km"]))})
+        nov_rows.append({"site_id": s.site_id, **novelty(s.lat, s.lon, catalogue, float(cfg["novelty_km"]),
+                                                           region_sets.get(s.region_id))})
     record_source(url=API, dataset="NASA POWER climatology (point API)", licence="NASA open data",
                   note=f"{len(sites)} sites; responses cached in data/cache/power")
     env = pd.DataFrame(env_rows)
     nov = pd.DataFrame(nov_rows)
     env.to_parquet(results_dir() / "environment.parquet", index=False)
     nov.to_parquet(results_dir() / "novelty.parquet", index=False)
-    log.info("%d sites: %d with climate, %d with land cover; %d less studied, %d well studied",
+    log.info("%d sites: %d with climate, %d with land cover; %d outside the catalogue, %d near a known analog",
              len(env), int(env.get("t2m_mean_c", pd.Series(dtype=float)).notna().sum()),
              int(env["worldcover_available"].sum()), int((nov["status"] == "less_studied").sum()),
              int((nov["status"] == "well_studied").sum()))

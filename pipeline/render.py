@@ -12,21 +12,34 @@ from features import fill_gaps, hillshade
 OUT_PX = 256
 
 
+def shade_array(z: np.ndarray, res: float) -> np.ndarray:
+    """Raw hillshade (0-1) of a patch, gaps filled."""
+    return hillshade(fill_gaps(z), res)
+
+
+def shared_stretch(shades: list[np.ndarray]) -> tuple[float, float]:
+    """One 1st-99th percentile range over the pixels of every given hillshade."""
+    lo, hi = np.percentile(np.concatenate([s.ravel() for s in shades]), [1, 99])
+    return float(lo), float(hi)
+
+
 def hillshade_image(z: np.ndarray, res: float, out_px: int = OUT_PX, scale_bar_m: float = 1000.0,
-                    stretch: bool = True) -> Image.Image:
+                    stretch: bool = True, stretch_range: tuple[float, float] | None = None) -> Image.Image:
     """Greyscale hillshade (azimuth 315, altitude 45, no exaggeration) with a scale bar.
 
-    With ``stretch`` the shading is linearly contrast-stretched between its 1st
-    and 99th percentiles for display. Geometry and features are unaffected; a
+    With ``stretch_range`` the shading is linearly stretched between that fixed
+    (lo, hi) pair, so every image rendered with the same range is directly
+    comparable in brightness. Otherwise, with ``stretch``, each image is
+    stretched between its own 1st and 99th percentiles for display. Geometry and features are unaffected; a
     uniformly steep slope facing the light would otherwise render near-white.
 
     The patch is shaded at its native resolution and enlarged with bilinear
     interpolation, so every image of a ``patch_px`` window covers the same
     ground distance and the scale bar has the same length in every image.
     """
-    shade = hillshade(fill_gaps(z), res)
-    if stretch:
-        lo, hi = np.percentile(shade, [1, 99])
+    shade = shade_array(z, res)
+    if stretch_range is not None or stretch:
+        lo, hi = stretch_range if stretch_range is not None else np.percentile(shade, [1, 99])
         if hi - lo > 1e-6:
             shade = np.clip((shade - lo) / (hi - lo), 0.0, 1.0)
     img = Image.fromarray(np.uint8(np.round(shade * 255)), mode="L").resize((out_px, out_px), Image.BILINEAR)

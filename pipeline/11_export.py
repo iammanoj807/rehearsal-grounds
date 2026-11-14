@@ -7,7 +7,10 @@ Writes into ``web/public/data`` (or the profile's export folder):
 * ``img/targets/<target_id>.png``: overview hillshade of each target;
 * ``img/patches/<patch>.png``: 256 x 256 hillshades of every matched Earth
   patch and best-matching target patch, all at the same scale (3.84 km across,
-  1 km scale bar, azimuth 315, altitude 45, contrast-stretched for display).
+  1 km scale bar, azimuth 315, altitude 45). All patch images share one
+  contrast stretch: the 1st-99th percentile of the hillshade over every
+  exported patch, so brightness compares directly between the Moon or Mars
+  patch and its Earth match. Target overview images keep a per-image stretch.
 
 Every JSON file is validated against the Pydantic models in ``schemas.py``.
 Environment and novelty fields are filled when step 09 has run.
@@ -28,7 +31,7 @@ from PIL import Image
 
 from common import (SOURCES_MD, config_hash, export_dir, get_logger, grids_dir, load_config, load_yaml, now_iso,
                     patches_dir, results_dir, run_dir, selected_regions, selected_targets)
-from render import hillshade_image
+from render import hillshade_image, shade_array, shared_stretch
 from schemas import Dataset, Environment, Images, Match, Novelty, Region, Results, Sources, SubScores, Target, Terrain
 
 log = get_logger("11_export")
@@ -40,6 +43,7 @@ GROUP_TEXT: dict[str, tuple[str, list[tuple[str, str, str, int]]]] = {
     "shape": ("Shape", [("bowl index (+ bowl, - dome)", "bowl_index", "", 2)]),
 }
 WEAK_BAR = 75.0
+NO_LANDCOVER_LINE = "No land-cover data south of 60°S: this patch may be glacier ice; check the imagery."
 EARTH_LIMITS = {
     "moon": [
         "Gravity: Earth's is about six times the Moon's, so rovers, suits and loose soil behave differently.",
@@ -127,6 +131,8 @@ def explain(row: pd.Series, body: str, env: Environment | None, rules: list[dict
             breaks.append(f"Rain and snow: {env.precip_mm_per_day:.2f} mm per day on average (NASA POWER)")
         if env.water_fraction is not None and env.water_fraction > 0.005:
             breaks.append(f"Open water covers {100 * env.water_fraction:.0f}% of the 2 km surroundings")
+    if not bool(row.get("earth_wc_available", True)):
+        breaks.append(NO_LANDCOVER_LINE)
     breaks.extend(EARTH_LIMITS[body])
 
     tests = []
@@ -209,8 +215,18 @@ def main() -> int:
     cache: dict[str, np.ndarray] = {}
     res = float(cfg["resolution_m"])
 
+    # One shared contrast stretch over every patch image that will be exported.
+    all_targets = selected_targets(load_yaml("targets.yaml")["targets"])
+    patch_ids: list[str] = []
+    for target in all_targets:
+        s = pd.read_parquet(results_dir() / f"{target['id']}.parquet")
+        patch_ids += list(s["site_id"]) + list(s["target_patch_id"])
+    patch_ids = list(dict.fromkeys(patch_ids))
+    stretch = shared_stretch([shade_array(load_patch(pid, meta, cache), res) for pid in patch_ids])
+    log.info("shared hillshade stretch over %d patches: %.3f-%.3f", len(patch_ids), *stretch)
+
     targets_out = []
-    for target in selected_targets(load_yaml("targets.yaml")["targets"]):
+    for target in all_targets:
         tid = target["id"]
         sites = pd.read_parquet(results_dir() / f"{tid}.parquet")
         tsum = summary["targets"][tid]
@@ -222,13 +238,15 @@ def main() -> int:
             for kind, pid in (("earth_hillshade", row["site_id"]), ("target_hillshade", row["target_patch_id"])):
                 rel = f"img/patches/{safe_name(pid)}.png"
                 if not (out / rel).exists():
-                    save_png(hillshade_image(load_patch(pid, meta, cache), res), out / rel)
+                    save_png(hillshade_image(load_patch(pid, meta, cache), res, stretch_range=stretch), out / rel)
                 images[kind] = rel
             env = env_for(row["site_id"], env_table)
             novelty = None
             if nov_table is not None and row["site_id"] in nov_table.index:
                 n = nov_table.loc[row["site_id"]]
-                novelty = Novelty(status=n["status"], nearest_known_analog=n["nearest_known_analog"],
+                basis = n.get("basis")
+                novelty = Novelty(status=n["status"], basis=basis if isinstance(basis, str) else None,
+                                  nearest_known_analog=n["nearest_known_analog"],
                                   distance_km=float(n["distance_km"]), source_url=n["source_url"])
             strong, breaks, tests = explain(row, target["body"], env, rules)
             region = regions_cfg[row["region_id"]]
@@ -275,7 +293,8 @@ def main() -> int:
         shutil.copyfile(validation, out / "validation.json")
     meta_out = {"generated_at": now_iso(), "config_hash": config_hash(), "n_earth_patches": int((meta["body"] == "earth").sum()),
                 "n_searchable": int(((meta["body"] == "earth") & meta["search_ok"]).sum()),
-                "resolution_m": res, "patch_px": int(cfg["patch_px"]), "weights": cfg["weights"]}
+                "resolution_m": res, "patch_px": int(cfg["patch_px"]), "weights": cfg["weights"],
+                "hillshade_stretch": [round(stretch[0], 4), round(stretch[1], 4)]}
     (out / "meta.json").write_text(json.dumps(meta_out, indent=1))
     size = sum(p.stat().st_size for p in out.rglob("*") if p.is_file())
     log.info("export complete: %d targets, %d regions, %.1f MB in %s", len(targets_out), len(regions_out), size / 1e6, out)

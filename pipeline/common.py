@@ -33,6 +33,11 @@ WEB_DATA_DIR = ROOT / "web" / "public" / "data"
 
 PROFILES = ("full", "small", "res90")
 
+# ESA WorldCover classes counted as vegetation, cropland or buildings: trees, shrubs,
+# grass, crops, built-up, wetland, mangrove, moss and lichen. Used by the search mask
+# (step 04) and the 2 km land-cover shares in each dossier (step 09).
+WORLDCOVER_VEG_BUILT: tuple[int, ...] = (10, 20, 30, 40, 50, 90, 95, 100)
+
 
 def profile() -> str:
     """Return the active run profile name."""

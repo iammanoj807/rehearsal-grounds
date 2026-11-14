@@ -4,7 +4,7 @@ import ScoreBars from '../components/ScoreBars.tsx'
 import SiteInset from '../components/SiteInset.tsx'
 import { bodyLabel, dataUrl, fmt, latLon, pct, useJson } from '../data.ts'
 import type { Match, Results, Target, Terrain } from '../types.ts'
-import { NoveltyBadge, regionSetLabel } from './Explore.tsx'
+import { NoveltyBadge, noveltyLabel, regionSetLabel } from './Explore.tsx'
 
 const TERRAIN_ROWS: { key: keyof Terrain; label: string; unit: string; digits: number }[] = [
   { key: 'relief_m', label: 'Relief (5th–95th percentile height)', unit: ' m', digits: 0 },
@@ -24,7 +24,7 @@ function dossierMarkdown(t: Target, m: Match): string {
     `- Earth site: ${m.region_name}, ${latLon(m.lat, m.lon)}`,
     `- Similarity score (0-100): ${m.score.toFixed(1)}`,
     m.novelty
-      ? `- Novelty: ${m.novelty.status.replace('_', ' ')}; nearest catalogued analog ${m.novelty.nearest_known_analog}, ${m.novelty.distance_km.toFixed(0)} km`
+      ? `- Novelty: ${noveltyLabel(m.novelty.status)}${m.novelty.basis === 'well_studied_region' ? ' (in a well-studied analog region)' : ''}; nearest catalogued analog ${m.novelty.nearest_known_analog}, ${m.novelty.distance_km.toFixed(0)} km`
       : '- Novelty: not computed',
     '',
     '## Explanation bars (percentile vs random Earth patch pairs)',
@@ -112,6 +112,7 @@ export default function SitePage() {
             {latLon(m.lat, m.lon)} · <NoveltyBadge m={m} />
             {m.novelty && (
               <>
+                {m.novelty.basis === 'well_studied_region' && ' (in a well-studied analog region)'}
                 {' '}nearest catalogued analog: <a href={m.novelty.source_url}>{m.novelty.nearest_known_analog}</a>,{' '}
                 {m.novelty.distance_km.toFixed(0)} km
               </>
@@ -150,8 +151,9 @@ export default function SitePage() {
         </figure>
       </section>
       <p className="small muted center">
-        Both views: 3.84 km across on a 60 m grid, light from the north-west at 45°, no vertical exaggeration, contrast
-        stretched for display. Scale bars are 1 km.
+        Both views: 3.84 km across on a 60 m grid, light from the north-west at 45°, no vertical exaggeration. Every
+        patch image uses the same contrast stretch, so brightness and texture compare directly between the two views.
+        Scale bars are 1 km.
       </p>
 
       <div className="site-grid">

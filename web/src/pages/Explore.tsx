@@ -8,8 +8,8 @@ import type { Match, Results, SubScores, Target } from '../types.ts'
 type Filter = 'all' | 'less_studied' | 'well_studied'
 const FILTERS: { id: Filter; label: string }[] = [
   { id: 'all', label: 'All' },
-  { id: 'less_studied', label: 'Less studied' },
-  { id: 'well_studied', label: 'Well studied' },
+  { id: 'less_studied', label: 'Outside our analog catalogue' },
+  { id: 'well_studied', label: 'Near a known analog' },
 ]
 const SHOWN = 20
 const DEFAULT_TARGET = 'moon_site23_malapert'
@@ -67,12 +67,16 @@ export function regionSetLabel(set: string): string {
   return 'Region: crater benchmark tile'
 }
 
+export function noveltyLabel(status: 'well_studied' | 'less_studied'): string {
+  return status === 'less_studied' ? 'Outside our analog catalogue' : 'Near a known analog'
+}
+
 export function NoveltyBadge({ m }: { m: Match }) {
   if (!m.novelty) return <span className="badge badge-pending">novelty pending</span>
   return m.novelty.status === 'less_studied' ? (
-    <span className="badge badge-less">Less studied</span>
+    <span className="badge badge-less">{noveltyLabel('less_studied')}</span>
   ) : (
-    <span className="badge badge-well">Well studied</span>
+    <span className="badge badge-well">{noveltyLabel('well_studied')}</span>
   )
 }
 
@@ -196,7 +200,7 @@ export default function Explore() {
         <div className="results-panel">
           <div className="results-head">
             <h2>Top candidate analogs</h2>
-            <div className="segmented" role="group" aria-label="Filter by how well studied a site is">
+            <div className="segmented" role="group" aria-label="Filter by distance to a known analog">
               {FILTERS.map((f) => (
                 <button
                   key={f.id}
@@ -261,9 +265,9 @@ export default function Explore() {
         <div className="map-panel">
           <WorldMap matches={shown} selected={selected} onSelect={(id) => select(id)} fitKey={`${targetId}|${filter}`} />
           <p className="map-legend small">
-            <span className="pin pin-less_studied legend-pin">1</span> less studied (more than 50 km from any
-            catalogued analog){' '}
-            <span className="pin pin-well_studied legend-pin">1</span> well studied · numbers are ranks
+            <span className="pin pin-less_studied legend-pin">1</span> outside our analog catalogue (more than 50 km
+            from every catalogued analog and not in a well-studied analog region){' '}
+            <span className="pin pin-well_studied legend-pin">1</span> near a known analog · numbers are ranks
           </p>
         </div>
       </section>

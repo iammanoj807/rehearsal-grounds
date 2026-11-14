@@ -32,8 +32,9 @@ export default function About() {
           image embedding of the shaded relief.
         </li>
         <li>
-          <strong>Search with environment filters.</strong> Earth patches with more than 20% trees, crops or buildings,
-          more than 5% water, or almost no relief are left out. Every remaining patch is scored against every target
+          <strong>Search with environment filters.</strong> Earth patches with more than 20% vegetation (trees, shrubs,
+          grass, moss, wetland), cropland or buildings, more than 5% water, more than 50% snow and ice, or almost no
+          relief are left out. Antarctica has no land-cover data, so its sites carry a warning instead. Every remaining patch is scored against every target
           patch; sites are kept at least 10 km apart.
         </li>
         <li>

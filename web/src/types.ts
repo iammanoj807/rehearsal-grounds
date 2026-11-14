@@ -72,6 +72,7 @@ export interface Environment {
 
 export interface Novelty {
   status: 'well_studied' | 'less_studied'
+  basis?: 'catalogue_distance' | 'well_studied_region' | null
   nearest_known_analog: string
   distance_km: number
   source_url: string

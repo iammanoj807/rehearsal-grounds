@@ -83,6 +83,7 @@ class Environment(Strict):
 
 class Novelty(Strict):
     status: Literal["well_studied", "less_studied"]
+    basis: Optional[Literal["catalogue_distance", "well_studied_region"]] = None
     nearest_known_analog: str
     distance_km: float
     source_url: str

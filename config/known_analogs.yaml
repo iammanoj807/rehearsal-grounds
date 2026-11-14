@@ -111,6 +111,31 @@ analogs:
     source_url: https://en.wikipedia.org/wiki/Qaidam_Basin
     basis: source_text
     evidence: "The aridity, salinity, wide diurnal and seasonal temperature swings, and relatively high ultraviolet radiation has led to Qaidam being studied by the China Geological Survey as a Mars analogue for use in testing spectroscopy and equipment for China's 2020 Mars [mission] ..."
+  # ---- Added after review (2026-11-14): candidates checked for a source that states analog use.
+  # Skipped for lack of such a sentence on Wikipedia: Dhofar (Oman, AMADEE-18), Dallol/Danakil
+  # (Ethiopia; its article cites astrobiology "limits of life" studies, not analog use) and Pilbara.
+  - id: makhtesh_ramon
+    name: Makhtesh Ramon (D-MARS, AMADEE-20), Israel
+    lat: 30.57861111
+    lon: 34.81777778
+    source_url: https://en.wikipedia.org/wiki/D-MARS
+    basis: source_text
+    evidence: "D-MARS is a human analog mission to the planet Mars, taking place in Makhtesh Ramon in the Negev desert in Israel."
+    note: Quote from the D-MARS article; coordinates from the Makhtesh Ramon article (https://en.wikipedia.org/wiki/Makhtesh_Ramon), which has no GeoData in the D-MARS article.
+  - id: salar_de_pajonales
+    name: Salar de Pajonales, Chile
+    lat: -25.14444444
+    lon: -68.82
+    source_url: https://en.wikipedia.org/wiki/Salar_de_Pajonales
+    basis: source_text
+    evidence: "The extreme environmental conditions have drawn comparisons to Mars, and Salar de Pajonales has been used as an analogue for Martian environments."
+  - id: licancabur
+    name: Licancabur, Chile and Bolivia
+    lat: -22.83388889
+    lon: -67.88361111
+    source_url: https://en.wikipedia.org/wiki/Licancabur
+    basis: source_text
+    evidence: "Today it is of interest for research on animal health, remote sensing, telecommunication, and the fact that the environment around Licancabur may be the closest equivalent to Mars that exists on Earth, while current conditions at its lakes resemble those believed to have existed at former lakes on Mars."
   # ---- Project brief: well-studied analogs (validation set) ----
   - id: sp_crater
     name: SP Crater, Arizona

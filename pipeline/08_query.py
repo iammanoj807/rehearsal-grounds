@@ -49,13 +49,17 @@ def candidate_rows(index: Index) -> np.ndarray:
 
 def rank_target(index: Index, target_id: str, cfg: dict[str, Any],
                 group_weights: dict[str, float] | None = None,
-                sigma: float | None = None) -> dict[str, Any]:
-    """Patch scores for one target; returns arrays for downstream use."""
+                sigma: float | None = None,
+                weights: dict[str, float] | None = None) -> dict[str, Any]:
+    """Patch scores for one target; returns arrays for downstream use.
+
+    ``weights`` overrides the morph/embed split (validation only; the app uses the config).
+    """
     m = index.meta
     q_rows = np.flatnonzero((m["source_id"] == target_id).to_numpy())
     e_rows = candidate_rows(index)
     sig = target_sigma(index, q_rows, e_rows, group_weights) if sigma is None else sigma
-    res = score_block(index, q_rows, e_rows, group_weights=group_weights, sigma=sig)
+    res = score_block(index, q_rows, e_rows, group_weights=group_weights, sigma=sig, weights=weights)
     s = res["S"]
     top = np.sort(s, axis=0)[-TOP_N_PER_PATCH:, :]
     patch_score = top.mean(axis=0)

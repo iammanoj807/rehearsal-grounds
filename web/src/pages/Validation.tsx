@@ -8,6 +8,7 @@ interface RankerRow {
   mrr: number
   hit_at_10: number
   hit_at_50: number
+  mean_auc_hard?: number
 }
 interface CraterRow {
   crater: string
@@ -22,6 +23,8 @@ interface V1 {
   description: string
   index: string
   combined_note: string
+  hard_negative_note?: string
+  weights_note?: string
   finding: string
   revision_note: string
   n_craters: number
@@ -46,6 +49,7 @@ interface V2Target {
 interface V3 {
   resolution_90m?: { description: string; spearman_top20_regions: Record<string, number> }
   weight_perturbation?: { description: string; mean_stay_top10: Record<string, number> }
+  weight_split?: { description: string; top10_overlap: Record<string, Record<string, number>> }
 }
 interface Sanity {
   check: string
@@ -71,6 +75,7 @@ function RankerTable({ rows, caption }: { rows: RankerRow[]; caption: string }) 
         <tr>
           <th scope="col">Ranker</th>
           <th scope="col">Mean ROC AUC</th>
+          <th scope="col">AUC, hard negatives</th>
           <th scope="col">Mean reciprocal rank</th>
           <th scope="col">Hit rate @10</th>
           <th scope="col">Hit rate @50</th>
@@ -78,9 +83,10 @@ function RankerTable({ rows, caption }: { rows: RankerRow[]; caption: string }) 
       </thead>
       <tbody>
         {rows.map((r) => (
-          <tr key={r.id} className={r.id === 'combined' ? 'is-headline' : ''}>
+          <tr key={r.id} className={r.id === 'embedding' ? 'is-headline' : ''}>
             <th scope="row">{r.label}</th>
             <td>{fmt(r.mean_auc, 3)}</td>
+            <td>{r.mean_auc_hard === undefined ? '–' : fmt(r.mean_auc_hard, 3)}</td>
             <td>{fmt(r.mrr, 3)}</td>
             <td>{fmt(r.hit_at_10 * 100, 0, '%')}</td>
             <td>{fmt(r.hit_at_50 * 100, 0, '%')}</td>
@@ -112,7 +118,7 @@ export default function ValidationPage() {
   }
   const d = v.data
   const v1 = d.v1_crater_retrieval
-  const combined = v1.rankers.find((r) => r.id === 'combined')
+  const combined = v1.rankers.find((r) => r.id === 'combined_moon_sigma')
   const embedding = v1.rankers.find((r) => r.id === 'embedding')
   const features = v1.rankers.find((r) => r.id === 'features')
   return (
@@ -124,10 +130,14 @@ export default function ValidationPage() {
         not craters?
         {combined && embedding && features && (
           <>
-            {' '}With the combined score the mean ROC AUC is <strong>{combined.mean_auc.toFixed(3)}</strong> (0.5 is
-            chance); the image embedding alone reaches {embedding.mean_auc.toFixed(3)} and puts another crater in the
-            top 10 for {(embedding.hit_at_10 * 100).toFixed(0)}% of queries, while the 20 terrain features alone reach{' '}
-            {features.mean_auc.toFixed(3)}.
+            {' '}The image embedding finds them with a mean ROC AUC of <strong>{embedding.mean_auc.toFixed(3)}</strong>{' '}
+            (0.5 is chance) and puts another crater in the top 10 for {(embedding.hit_at_10 * 100).toFixed(0)}% of
+            queries
+            {embedding.mean_auc_hard !== undefined && (
+              <>; against hard negatives from the other crater tiles it still reaches {embedding.mean_auc_hard.toFixed(3)}</>
+            )}
+            . The 20 terrain features alone reach {features.mean_auc.toFixed(3)}, and the combined score at the Moon
+            targets’ σ, the closest match to how the app ranks, reaches {combined.mean_auc.toFixed(3)}.
           </>
         )}
       </p>
@@ -143,6 +153,12 @@ export default function ValidationPage() {
           caption={`${v1.n_craters} query craters, ${v1.n_positive_patches} crater-containing grid patches, ${v1.n_negatives.toLocaleString('en-GB')} negatives. ${v1.index}`}
         />
         <p className="small muted">{v1.combined_note}</p>
+        {v1.hard_negative_note && <p className="small muted">{v1.hard_negative_note}</p>}
+        {v1.weights_note && (
+          <p className="small">
+            <strong>Why keep 60% terrain features?</strong> {v1.weights_note}
+          </p>
+        )}
         <p className="small muted">
           ROC AUC: chance that a crater patch from another region outranks a non-crater patch. Reciprocal rank: 1 / rank
           of the first other-crater patch. Hit rate @k: share of queries with another crater in the top k.
@@ -230,6 +246,34 @@ export default function ValidationPage() {
                 </li>
               ))}
             </ul>
+          </>
+        )}
+        {d.v3_robustness.weight_split && (
+          <>
+            <p>{d.v3_robustness.weight_split.description}</p>
+            <div className="table-scroll">
+              <table className="metric-table">
+                <caption>Share of the 0.6/0.4 top-10 sites still in the top 10</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Target</th>
+                    {Object.keys(d.v3_robustness.weight_split.top10_overlap).map((k) => (
+                      <th key={k} scope="col">Split {k}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {Object.keys(Object.values(d.v3_robustness.weight_split.top10_overlap)[0] ?? {}).map((tid) => (
+                    <tr key={tid}>
+                      <th scope="row">{d.v2_rediscovery.target_names[tid] ?? tid}</th>
+                      {Object.entries(d.v3_robustness.weight_split!.top10_overlap).map(([k, row]) => (
+                        <td key={k}>{fmt(row[tid] * 100, 0, '%')}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </>
         )}
       </section>

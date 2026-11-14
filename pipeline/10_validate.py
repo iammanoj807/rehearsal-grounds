@@ -7,7 +7,12 @@ crater centre that are not positives are excluded. Each positive is used as a
 query and ranks every patch from the *other* regions; the other craters'
 positives are the relevant items. Reported per ranker: mean ROC AUC, mean
 reciprocal rank of the first other-crater hit, hit rate at 10 and 50.
-Rankers: random, relief-only, features only, embedding only, combined.
+Rankers: random, relief-only, features only, embedding only, combined at the
+Earth-to-Earth sigma, and combined at the Moon-target sigma (the median of the
+five Moon targets' sigma from step 08), which is closer to the app's ranker.
+Hard-negative AUC: the same queries, but negatives are only the non-crater
+patches of the other crater tiles (benchmark tiles and Meteor Crater), so the
+test asks whether a ranker finds craters rather than just dry terrain.
 Primary index: all valid Earth patches (no land-cover masks), because the
 masks remove the lake-filled and farmland craters; the masked index is
 reported too.
@@ -18,7 +23,8 @@ searchable Earth patches, per target.
 V3 robustness: Spearman rank correlation of the top-20 regions between the
 60 m run and the 90 m rerun (``make res90``), and how often each top-10 site
 stays in the top 10 when the four feature-group weights are perturbed by up to
-+/-20 % (50 draws, seed 42).
++/-20 % (50 draws, seed 42). Also the top-10 overlap when the terrain/embedding
+split changes from 0.6/0.4 to 0.4/0.6 and 0.8/0.2 (the app keeps 0.6/0.4).
 
 V4 sanity checks on the real index and synthetic surfaces.
 
@@ -41,6 +47,8 @@ from features import compute_features
 from grids import haversine_km
 from scoring import GROUPS, Index, load_index, score_block
 
+HARD_NEGATIVE_EXTRA = ("meteor_crater",)  # well-studied region that is also a crater tile
+
 log = get_logger("10_validate")
 query = importlib.import_module("08_query")
 
@@ -52,7 +60,9 @@ RANKERS = [
     ("features", "Terrain features only"),
     ("embedding", "Image embedding only"),
     ("combined", "Combined, Earth-to-Earth sigma"),
+    ("combined_moon_sigma", "Combined, Moon-target sigma"),
 ]
+WEIGHT_SPLITS = {"0.4/0.6": {"morph": 0.4, "embed": 0.6}, "0.8/0.2": {"morph": 0.8, "embed": 0.2}}
 
 
 def roc_auc(scores_pos: np.ndarray, scores_neg: np.ndarray) -> float:
@@ -104,7 +114,16 @@ def crater_geometry(index: Index) -> pd.DataFrame:
     return pd.DataFrame({"contains": contains, "dist_km": nearest})
 
 
-def ranker_scores(index: Index, q: int, cand: np.ndarray, ranker: str, rng: np.random.Generator) -> np.ndarray:
+def moon_sigma() -> float:
+    """Median sigma of the Moon targets, from step 08's summary of this run."""
+    from common import results_dir  # noqa: PLC0415
+
+    summary = json.loads((results_dir() / "summary.json").read_text())["targets"]
+    return float(np.median([v["sigma"] for k, v in summary.items() if k.startswith("moon_")]))
+
+
+def ranker_scores(index: Index, q: int, cand: np.ndarray, ranker: str, rng: np.random.Generator,
+                  sigma_moon: float | None = None) -> np.ndarray:
     """Higher-is-more-similar scores of candidates for one query patch."""
     if ranker == "random":
         return rng.random(len(cand))
@@ -113,6 +132,8 @@ def ranker_scores(index: Index, q: int, cand: np.ndarray, ranker: str, rng: np.r
 
         j = FEATURE_NAMES.index("relief_m")
         return -np.abs(index.feats[cand, j] - index.feats[q, j])
+    if ranker == "combined_moon_sigma":
+        return score_block(index, np.array([q]), cand, sigma=sigma_moon)["S"][0]
     res = score_block(index, np.array([q]), cand)
     if ranker == "features":
         return -res["d2"][0]
@@ -121,7 +142,7 @@ def ranker_scores(index: Index, q: int, cand: np.ndarray, ranker: str, rng: np.r
     return res["S"][0]
 
 
-def v1_crater_retrieval(index: Index, masked: bool, rng_seed: int) -> dict[str, Any]:
+def v1_crater_retrieval(index: Index, masked: bool, rng_seed: int, sigma_moon: float) -> dict[str, Any]:
     """Crater retrieval: crater-centred queries against the regular patch grid of other regions.
 
     Queries are the patches centred on each benchmark crater. Candidates are the
@@ -146,6 +167,8 @@ def v1_crater_retrieval(index: Index, masked: bool, rng_seed: int) -> dict[str, 
     q_rows = np.flatnonzero(earth & centred & (m["search_ok"].to_numpy() if masked else True))
     crater_cfg = {c["id"]: c for c in load_yaml("craters.yaml")["craters"]}
     n_pos_by_crater = {cid: int((pos & (contains == cid)).sum()) for cid in crater_cfg}
+    hard_regions = {c["region_id"] for c in crater_cfg.values()} | set(HARD_NEGATIVE_EXTRA)
+    hard_neg = neg & np.isin(regions, sorted(hard_regions))
 
     per_query: list[dict[str, Any]] = []
     for q in q_rows:
@@ -153,13 +176,15 @@ def v1_crater_retrieval(index: Index, masked: bool, rng_seed: int) -> dict[str, 
         is_pos = pos[cand] & (contains[cand] != query_crater[q])
         if not is_pos.any():
             continue
-        rec = {"row": int(q), "crater": query_crater[q]}
+        is_hard = hard_neg[cand]
+        rec = {"row": int(q), "crater": query_crater[q], "n_hard": int(is_hard.sum())}
         for rid, _ in RANKERS:
-            s = ranker_scores(index, q, cand, rid, rng)
+            s = ranker_scores(index, q, cand, rid, rng, sigma_moon)
             order = np.argsort(-s, kind="stable")
             first = int(np.flatnonzero(is_pos[order])[0]) + 1
             rec[rid] = {"auc": roc_auc(s[is_pos], s[~is_pos]), "first_hit_rank": first, "rr": 1.0 / first,
-                        "hit10": float(first <= 10), "hit50": float(first <= 50)}
+                        "hit10": float(first <= 10), "hit50": float(first <= 50),
+                "auc_hard": roc_auc(s[is_pos], s[is_hard]) if is_hard.any() else float("nan")}
         per_query.append(rec)
 
     rankers = [{
@@ -168,7 +193,13 @@ def v1_crater_retrieval(index: Index, masked: bool, rng_seed: int) -> dict[str, 
         "mrr": float(np.mean([r[rid]["rr"] for r in per_query])),
         "hit_at_10": float(np.mean([r[rid]["hit10"] for r in per_query])),
         "hit_at_50": float(np.mean([r[rid]["hit50"] for r in per_query])),
+        "mean_auc_hard": float(np.nanmean([r[rid]["auc_hard"] for r in per_query])),
     } for rid, label in RANKERS]
+    for r in rankers:
+        if r["id"] == "combined_moon_sigma":
+            r["label"] = f"Combined, Moon-target sigma ({sigma_moon:.2f})"
+        elif r["id"] == "combined":
+            r["label"] = f"Combined, Earth-to-Earth sigma ({index.sigma:.2f})"
     per_crater = [{
         "crater": crater_cfg[r["crater"]]["name"], "region_id": crater_cfg[r["crater"]]["region_id"],
         "diameter_km": crater_cfg[r["crater"]]["diameter_km"], "n_queries": 1,
@@ -179,22 +210,30 @@ def v1_crater_retrieval(index: Index, masked: bool, rng_seed: int) -> dict[str, 
     return {
         "n_craters": len(per_crater), "n_query_patches": len(per_query), "n_positive_patches": int(pos.sum()),
         "n_negatives": int(neg.sum()), "rankers": rankers, "per_crater": per_crater,
+        "hard_negatives": {
+            "regions": sorted(hard_regions),
+            "mean_per_query": float(np.mean([r["n_hard"] for r in per_query])) if per_query else 0.0,
+        },
         "positives_by_crater": {crater_cfg[k]["name"]: v for k, v in n_pos_by_crater.items()},
         "craters_missing": sorted(set(crater_cfg) - {r["crater"] for r in per_query}),
     }
 
 
 def finding_text(rankers: list[dict[str, Any]]) -> str:
-    """One-sentence summary of the V1 ablation, written from the computed numbers."""
+    """Summary of the V1 ablation, written from the computed numbers."""
     auc = {r["id"]: r["mean_auc"] for r in rankers}
+    hard = {r["id"]: r["mean_auc_hard"] for r in rankers}
     hit = {r["id"]: r["hit_at_10"] for r in rankers}
     rel = "about the same as" if abs(auc["features"] - auc["relief_only"]) < 0.02 else (
         "above" if auc["features"] > auc["relief_only"] else "below")
     return (f"At 60 m the 20 interpretable terrain features alone recognise 1-3 km craters only weakly "
             f"(AUC {auc['features']:.2f}, {rel} relief alone at {auc['relief_only']:.2f}, random "
             f"{auc['random']:.2f}); the learned image embedding does much better (AUC {auc['embedding']:.2f}, "
-            f"another crater in the top 10 for {100 * hit['embedding']:.0f}% of queries). The app therefore uses "
-            "both: feature values to explain a match in physical units, and the embedding to rank landform shape.")
+            f"another crater in the top 10 for {100 * hit['embedding']:.0f}% of queries). Against hard negatives "
+            f"(non-crater patches from the other crater tiles) the embedding's AUC is {hard['embedding']:.2f} and "
+            f"the features' {hard['features']:.2f}. With the Moon-target sigma the combined score reaches AUC "
+            f"{auc['combined_moon_sigma']:.2f}. The app uses both: feature values to explain a match in physical "
+            "units, and the embedding to rank landform shape.")
 
 
 def v2_rediscovery(index: Index, targets: list[dict[str, Any]], results_dir_path: Any) -> dict[str, Any]:
@@ -280,9 +319,13 @@ def v3_robustness(index: Index, targets: list[dict[str, Any]], cfg: dict[str, An
     rng = np.random.default_rng(int(cfg["seed"]))
     stay: dict[str, float] = {}
     draws = 50
+    split_overlap: dict[str, dict[str, float]] = {k: {} for k in WEIGHT_SPLITS}
     for t in targets:
         base = query.build_sites(index, query.rank_target(index, t["id"], cfg), cfg)
         base_top = set(base["site_id"].head(10))
+        for label, w in WEIGHT_SPLITS.items():
+            alt = query.build_sites(index, query.rank_target(index, t["id"], cfg, weights=w), cfg)
+            split_overlap[label][t["id"]] = len(base_top & set(alt["site_id"].head(10))) / 10.0
         counts = []
         for _ in range(draws):
             gw = {g: float(rng.uniform(0.8, 1.2)) for g in GROUPS}
@@ -294,6 +337,13 @@ def v3_robustness(index: Index, targets: list[dict[str, Any]], cfg: dict[str, An
                        f"factor between 0.8 and 1.2, {draws} times (seed {cfg['seed']}). Shown: the average share "
                        "of the original top-10 sites that stay in the top 10.",
         "mean_stay_top10": stay,
+    }
+    out["weight_split"] = {
+        "description": f"The terrain/embedding split is {cfg['weights']['morph']:.1f}/{cfg['weights']['embed']:.1f} "
+                       "in the app. Each target was reranked with the split changed to 0.4/0.6 and 0.8/0.2. "
+                       "Shown: the share of the original top-10 sites still in the top 10. The app weights are "
+                       "not changed on the basis of this test.",
+        "top10_overlap": split_overlap,
     }
     return out
 
@@ -355,8 +405,11 @@ def main() -> int:
     targets = selected_targets(load_yaml("targets.yaml")["targets"])
     seed = int(cfg["seed"])
     crater_names = {c["id"]: c["name"] for c in load_yaml("craters.yaml")["craters"]}
-    v1 = v1_crater_retrieval(index, masked=False, rng_seed=seed)
-    v1m = v1_crater_retrieval(index, masked=True, rng_seed=seed)
+    sig_moon = moon_sigma()
+    summary = json.loads((results_dir() / "summary.json").read_text())["targets"]
+    moon_sigmas = [v["sigma"] for k, v in summary.items() if k.startswith("moon_")]
+    v1 = v1_crater_retrieval(index, masked=False, rng_seed=seed, sigma_moon=sig_moon)
+    v1m = v1_crater_retrieval(index, masked=True, rng_seed=seed, sigma_moon=sig_moon)
     log.info("V1: %d craters, %d queries; combined AUC %.3f, features %.3f, embedding %.3f",
              v1["n_craters"], v1["n_query_patches"],
              *[next(r["mean_auc"] for r in v1["rankers"] if r["id"] == k) for k in ("combined", "features", "embedding")])
@@ -369,10 +422,20 @@ def main() -> int:
                        "Craters with no positive (rim wider than the window allows at the grid offset) still act "
                        "as queries.",
         "index": "Index: all valid Earth grid patches (land-cover masks off).",
-        "combined_note": f"The combined row uses the Earth-to-Earth sigma ({index.sigma:.3f}), at which the terrain "
-                         "term is close to zero for most crater pairs, so it tracks the embedding. For Moon targets "
-                         "sigma is 0.44-0.71 and the terrain term carries real weight, so this row is not the exact "
-                         "ranker the app uses for them.",
+        "combined_note": f"The Earth-to-Earth combined row uses sigma {index.sigma:.3f}, at which the terrain term is "
+                         "close to zero for most crater pairs, so it tracks the embedding. The app's Moon targets use "
+                         f"sigma {min(moon_sigmas):.2f}-{max(moon_sigmas):.2f}, where the terrain term carries real "
+                         f"weight; the Moon-target row uses their median ({sig_moon:.2f}) and is the closer match to "
+                         "the app's ranker.",
+        "hard_negative_note": "Hard negatives: only the non-crater patches (more than 5 km from any benchmark "
+                              "crater) of the other crater tiles, on average "
+                              f"{v1['hard_negatives']['mean_per_query']:,.0f} per query. These are dry, open "
+                              "landscapes like the craters' own surroundings, so a ranker that only recognised "
+                              "'desert' would score about 0.5 here.",
+        "weights_note": "Why the app still weights terrain features 60%: they carry the slope, relief and "
+                        "roughness values that operations planning needs, and the 0.6/0.4 split was set before "
+                        "this benchmark existed. Changing it now, after seeing these results, would tune the "
+                        "method on its own test set. V3 reports how the top 10 changes under other splits.",
         "finding": finding_text(v1["rankers"]),
         "revision_note": "An earlier version of this test also used the crater-centred patches as the relevant "
                          "candidates. The embedding then ranked another crater first for every query (mean "
@@ -380,9 +443,12 @@ def main() -> int:
                          "has. Candidates are now regular grid patches only; the positive rule above was fixed from "
                          "geometry before this run.",
         "masked": {
-            "description": f"Same test on the masked search index used by the app ({v1m['n_craters']} query craters "
-                           f"survive the masks; removed by the land-cover masks: "
-                           f"{', '.join(crater_names[c] for c in v1m['craters_missing']) or 'none'}).",
+            "description": f"Same test on the masked search index used by the app ({v1m['n_craters']} query "
+                           f"crater{'' if v1m['n_craters'] == 1 else 's'} survive{'s' if v1m['n_craters'] == 1 else ''} "
+                           f"the masks; removed by the land-cover masks: "
+                           f"{', '.join(crater_names[c] for c in v1m['craters_missing']) or 'none'})."
+                           + (" With fewer than three query craters these numbers are not meaningful; they are "
+                              "shown for completeness only." if v1m["n_craters"] < 3 else ""),
             "n_craters": v1m["n_craters"], "rankers": v1m["rankers"],
         },
     })
