@@ -23,7 +23,9 @@ export default function App() {
       <header className="site-header">
         <NavLink to="/" className="wordmark" aria-label="Rehearsal Grounds, home">
           <span className="wordmark-mark" aria-hidden="true" />
-          <span>Rehearsal Grounds</span>
+          <span>
+            Rehearsal <em>Grounds</em>
+          </span>
         </NavLink>
         <nav aria-label="Main">
           <NavLink to="/" end>
@@ -53,6 +55,7 @@ export default function App() {
         </Routes>
       </main>
       <footer className="site-footer">
+        <p className="footer-mark mono">Rehearsal Grounds · Moon ↔ Earth ↔ Mars · 60 m terrain analogs</p>
         <p>
           Rehearsal Grounds · 2026 NASA Space Apps Challenge · Data: NASA (LRO LOLA via PGDA, POWER, GIBS), USGS
           Astrogeology, ESA Copernicus DEM and WorldCover. Scores are similarity scores for candidate analogs, not

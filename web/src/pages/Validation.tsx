@@ -123,6 +123,7 @@ export default function ValidationPage() {
   const features = v1.rankers.find((r) => r.id === 'features')
   return (
     <article className="page narrow validation">
+      <p className="eyebrow">Validation</p>
       <h1>How we tested the method</h1>
       <p className="lede">
         The headline test asks a question with clean ground truth: given one impact crater on Earth, do the fingerprints
@@ -141,6 +142,21 @@ export default function ValidationPage() {
           </>
         )}
       </p>
+      <dl className="stat-row">
+        {[
+          { label: 'Image embedding, crater ROC AUC', value: embedding?.mean_auc },
+          { label: 'Image embedding, hard negatives', value: embedding?.mean_auc_hard },
+          { label: 'Combined score at the Moon σ', value: combined?.mean_auc },
+          { label: 'Terrain features alone', value: features?.mean_auc },
+        ]
+          .filter((s) => s.value !== undefined)
+          .map((s) => (
+            <div className="stat" key={s.label}>
+              <dt className="stat-label">{s.label}</dt>
+              <dd className="stat-value">{s.value!.toFixed(3)}</dd>
+            </div>
+          ))}
+      </dl>
       <p className="finding">
         <strong>What this tells us.</strong> {v1.finding}
       </p>
@@ -155,9 +171,7 @@ export default function ValidationPage() {
         <p className="small muted">{v1.combined_note}</p>
         {v1.hard_negative_note && <p className="small muted">{v1.hard_negative_note}</p>}
         {v1.weights_note && (
-          <p className="small">
-            <strong>Why keep 60% terrain features?</strong> {v1.weights_note}
-          </p>
+          <p className="finding small">{v1.weights_note}</p>
         )}
         <p className="small muted">
           ROC AUC: chance that a crater patch from another region outranks a non-crater patch. Reciprocal rank: 1 / rank

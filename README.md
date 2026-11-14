@@ -9,8 +9,9 @@ matches, where the analogy breaks down, its climate, whether it is near a known 
 **Live app:** https://iammanoj807.github.io/rehearsal-grounds/ · 2026 NASA Space Apps Challenge, *Identify Earth
 Locations that Analog the Permanent Moon Base Locations and Mars*.
 
-![Explore screen: target picker, ranked candidate analogs and world map](docs/screenshot-explore.jpg)
-![Site dossier: Moon target patch beside the matched Earth patch, with explanation bars and terrain values](docs/screenshot-site.jpg)
+![Explore screen: the selected Moon target's terrain in a lens beside the headline question and key numbers](docs/screenshot-hero.jpg)
+![Ranked candidate analogs, a swipe comparison of the Moon patch and its Earth match, and the world map](docs/screenshot-explore.jpg)
+![Site dossier: similarity score and a swipe comparison of the Moon target patch and the matched Earth patch](docs/screenshot-site.jpg)
 
 ## How it works
 

@@ -7,6 +7,7 @@ export default function About() {
   const meta = useJson<Meta>('meta.json')
   return (
     <article className="page narrow about">
+      <p className="eyebrow">About &amp; data</p>
       <h1>About Rehearsal Grounds</h1>
       <p className="lede">
         Before astronauts and rovers work at the Moon’s south pole or in Jezero crater on Mars, teams rehearse on

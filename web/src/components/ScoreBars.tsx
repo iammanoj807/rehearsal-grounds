@@ -7,23 +7,33 @@ const LABELS: { key: keyof SubScores; label: string; hint: string }[] = [
   { key: 'shape', label: 'Shape', hint: 'curvature and bowl index' },
   { key: 'embedding', label: 'Image embedding', hint: 'ResNet-18 view of the shaded relief' },
 ]
+const WEAK = 75
 
-/** Five explanation bars, each with its number so colour is never the only cue. */
-export default function ScoreBars({ scores }: { scores: SubScores }) {
+/**
+ * Five explanation meters. Each prints its number, and a weak bar (under 75) also
+ * says "weak" in text, so colour is never the only cue.
+ */
+export default function ScoreBars({ scores, compact = false }: { scores: SubScores; compact?: boolean }) {
   return (
-    <dl className="bars">
+    <dl className={`bars${compact ? ' bars-compact' : ''}`}>
       {LABELS.map(({ key, label, hint }) => {
         const v = scores[key]
+        const weak = v < WEAK
         return (
-          <div className="bar-row" key={key}>
+          <div className={`bar-row${weak ? ' is-weak' : ''}`} key={key}>
             <dt>
-              {label} <span className="hint">{hint}</span>
+              {label}
+              {!compact && <span className="hint">{hint}</span>}
             </dt>
             <dd>
               <span className="bar-track" aria-hidden="true">
-                <span className={`bar-fill${v < 75 ? ' low' : ''}`} style={{ width: `${Math.max(0, Math.min(100, v))}%` }} />
+                <span className="bar-fill" style={{ width: `${Math.max(0, Math.min(100, v))}%` }} />
+                <span className="bar-tick" style={{ left: `${WEAK}%` }} />
               </span>
-              <span className="bar-value">{v.toFixed(0)}</span>
+              <span className="bar-value">
+                {v.toFixed(0)}
+                {weak && <span className="bar-flag">weak</span>}
+              </span>
             </dd>
           </div>
         )
