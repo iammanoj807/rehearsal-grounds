@@ -1,0 +1,84 @@
+# Moon and Mars target sites.
+#
+# Moon: NASA GSFC PGDA "South Pole Landing Site LOLA DEMs" (product 78),
+# 5 m/pix GeoTIFFs in south polar stereographic metres. Cite Barker et al.
+# 2021, Planetary and Space Science 203, 105119,
+# https://doi.org/10.1016/j.pss.2020.105119. Site names follow PGDA and
+# Mazarico et al. 2011, Icarus 211, 1066-1081.
+# Mars: USGS Astrogeology Mars 2020 TRN CTX DTM mosaic (CC0), cite
+# Fergason et al. 2020, https://doi.org/10.5066/P906QQT8.
+# enabled: false targets are stretch items, switched on after the MVP deploys.
+
+targets:
+  - id: moon_site23_malapert
+    name: Malapert massif
+    body: moon
+    enabled: true
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/products/78
+    description: >-
+      PGDA landing-site DEM Site23, Malapert massif. NASA listed Malapert
+      Massif among nine candidate Artemis III landing regions near the lunar
+      south pole (NASA release, 28 October 2024).
+    description_source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+    data_note: PGDA states Site23 does not yet have error estimates or clones.
+  - id: moon_site04_shackleton_rim
+    name: Shackleton crater rim
+    body: moon
+    enabled: true
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site04/Site04_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/products/78
+    description: >-
+      PGDA landing-site DEM Site04, on the rim of Shackleton crater at the
+      lunar south pole.
+    description_source_url: https://pgda.gsfc.nasa.gov/products/78
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+  - id: moon_site01_connecting_ridge
+    name: Connecting ridge
+    body: moon
+    enabled: true
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site01/Site01_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/products/78
+    description: >-
+      PGDA landing-site DEM Site01, "Connecting ridge", one of the LOLA
+      south pole landing-site DEMs.
+    description_source_url: https://pgda.gsfc.nasa.gov/products/78
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+  - id: mars_jezero
+    name: Jezero crater (landing area and delta)
+    body: mars
+    enabled: true
+    url: https://planetarymaps.usgs.gov/mosaic/mars2020_trn/CTX/JEZ_ctx_B_soc_008_DTM_MOLAtopography_DeltaGeoid_20m_Eqc_latTs0_lon0.tif
+    product_url: https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic
+    description: >-
+      CTX terrain model of the Mars 2020 landing area in Jezero crater, built
+      for Perseverance's terrain-relative navigation. It covers about
+      32 km x 30 km.
+    description_source_url: https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic
+    citation: Fergason, R.L. et al. (2020) Mars 2020 Terrain Relative Navigation CTX DTM Mosaic. USGS Astrogeology Science Center. doi:10.5066/P906QQT8
+    licence: CC0
+  # ---- Stretch targets (enable after the MVP deploys) ----
+  - id: moon_site11_de_gerlache_rim
+    name: de Gerlache crater rim
+    body: moon
+    enabled: false
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Site11_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/products/78
+    description: >-
+      PGDA landing-site DEM Site11, on the rim of de Gerlache crater. NASA
+      listed "de Gerlache Rim 2" among nine candidate Artemis III landing
+      regions (NASA release, 28 October 2024).
+    description_source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+  - id: moon_site20_leibnitz_beta
+    name: Leibnitz beta plateau
+    body: moon
+    enabled: false
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site20/Site20_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/products/78
+    description: >-
+      PGDA landing-site DEM Site20, the Leibnitz beta plateau near the lunar
+      south pole.
+    description_source_url: https://pgda.gsfc.nasa.gov/products/78
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119

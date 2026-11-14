@@ -1,0 +1,232 @@
+# Earth regions indexed by the pipeline.
+#
+# lat/lon is the box centre, copied from the cited source (retrieved 2026-11-14).
+# Wikipedia values come from the article's GeoData coordinates
+# (https://en.wikipedia.org/w/api.php?action=query&prop=coordinates).
+# set: well_studied (validation set), discovery (less-studied candidates),
+#      crater_benchmark (V1 crater retrieval tiles).
+# half_km: optional box half-size; defaults to region_half_km or crater_half_km
+#          in pipeline.yaml.
+
+regions:
+  # ---------------- Well-studied analogs (validation set) ----------------
+  - id: meteor_crater
+    name: Meteor Crater, Arizona
+    country: United States
+    set: well_studied
+    lat: 35.02805556
+    lon: -111.02333333
+    source_url: https://en.wikipedia.org/wiki/Meteor_Crater
+  - id: sp_crater
+    name: SP Crater, San Francisco volcanic field, Arizona
+    country: United States
+    set: well_studied
+    lat: 35.5822254
+    lon: -111.6318207
+    source_url: https://en.wikipedia.org/wiki/S_P_Crater
+    note: Box centred on SP Crater. The Black Point lava flow is not located separately.
+  - id: haughton
+    name: Haughton crater, Devon Island
+    country: Canada
+    set: well_studied
+    lat: 75.38333333
+    lon: -89.66666667
+    source_url: https://en.wikipedia.org/wiki/Haughton_impact_crater
+  - id: atacama_yungay
+    name: Atacama Desert near Yungay
+    country: Chile
+    set: well_studied
+    lat: -24.10
+    lon: -70.01
+    source_url: https://doi.org/10.1594/PANGAEA.929560
+    note: Yungay hyperarid soil site (Pfeiffer, Amundson and Jordan 2021, PANGAEA dataset metadata).
+  - id: death_valley
+    name: Death Valley, California
+    country: United States
+    set: well_studied
+    lat: 36.24694444
+    lon: -116.81694444
+    source_url: https://en.wikipedia.org/wiki/Death_Valley
+  - id: hawaii_kilauea_maunakea
+    name: Kīlauea and Mauna Kea, Hawaiʻi
+    country: United States
+    set: well_studied
+    lat: 19.62082652
+    lon: -155.37740900
+    source_url: https://en.wikipedia.org/wiki/K%C4%ABlauea
+    source_url_2: https://en.wikipedia.org/wiki/Mauna_Kea
+    note: Midpoint of the Kīlauea (19.42109747, -155.28676243) and Mauna Kea (19.82055556, -155.46805556) coordinates; the box covers both.
+  - id: askja
+    name: Askja and the Icelandic highlands
+    country: Iceland
+    set: well_studied
+    lat: 65.033
+    lon: -16.783
+    source_url: https://en.wikipedia.org/wiki/Askja
+  - id: lanzarote_timanfaya
+    name: Lanzarote (Timanfaya lava fields)
+    country: Spain
+    set: well_studied
+    lat: 28.99416667
+    lon: -13.79333333
+    source_url: https://en.wikipedia.org/wiki/Timanfaya_National_Park
+  - id: mcmurdo_dry_valleys
+    name: McMurdo Dry Valleys
+    country: Antarctica
+    set: well_studied
+    lat: -77.46666667
+    lon: 162.51666667
+    source_url: https://en.wikipedia.org/wiki/McMurdo_Dry_Valleys
+  - id: bockfjorden
+    name: Bockfjorden, Svalbard
+    country: Norway
+    set: well_studied
+    lat: 79.469
+    lon: 13.3287
+    source_url: https://en.wikipedia.org/wiki/Bockfjorden
+  - id: hanksville
+    name: Hanksville area (Mars Desert Research Station), Utah
+    country: United States
+    set: well_studied
+    lat: 38.40645833
+    lon: -110.79190278
+    source_url: https://en.wikipedia.org/wiki/Mars_Desert_Research_Station
+  - id: ries
+    name: Ries crater, Bavaria
+    country: Germany
+    set: well_studied
+    lat: 48.88333333
+    lon: 10.56666667
+    source_url: https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries
+
+  # ---------------- Less-studied candidates (discovery set) ----------------
+  - id: tibesti
+    name: Tibesti massif
+    country: Chad
+    set: discovery
+    lat: 21.25
+    lon: 17.75
+    source_url: https://en.wikipedia.org/wiki/Tibesti_Mountains
+  - id: ahaggar
+    name: Ahaggar (Hoggar) mountains
+    country: Algeria
+    set: discovery
+    lat: 23.28888889
+    lon: 5.53361111
+    source_url: https://en.wikipedia.org/wiki/Hoggar_Mountains
+  - id: danakil
+    name: Danakil Depression
+    country: Ethiopia
+    set: discovery
+    lat: 14.2417
+    lon: 40.3
+    source_url: https://en.wikipedia.org/wiki/Danakil_Depression
+  - id: puna_de_atacama
+    name: Puna de Atacama
+    country: Argentina
+    set: discovery
+    lat: -23.46
+    lon: -67.36
+    source_url: https://en.wikipedia.org/wiki/Puna_de_Atacama
+  - id: lut
+    name: Lut Desert
+    country: Iran
+    set: discovery
+    lat: 30.60500001
+    lon: 59.06777779
+    source_url: https://en.wikipedia.org/wiki/Lut_Desert
+  - id: qaidam
+    name: Qaidam Basin
+    country: China
+    set: discovery
+    lat: 37.26666667
+    lon: 94.45
+    source_url: https://en.wikipedia.org/wiki/Qaidam_Basin
+  - id: upper_mustang
+    name: Upper Mustang
+    country: Nepal
+    set: discovery
+    lat: 29.08333333
+    lon: 83.91666667
+    source_url: https://en.wikipedia.org/wiki/Upper_Mustang
+  - id: namib
+    name: Namib desert
+    country: Namibia
+    set: discovery
+    lat: -24.75194444
+    lon: 15.27638889
+    source_url: https://en.wikipedia.org/wiki/Namib
+  - id: pilbara
+    name: Pilbara
+    country: Australia
+    set: discovery
+    lat: -21.0
+    lon: 119.0
+    source_url: https://en.wikipedia.org/wiki/Pilbara
+  - id: harrat_khaybar
+    name: Harrat Khaybar
+    country: Saudi Arabia
+    set: discovery
+    lat: 25.71944444
+    lon: 39.94277778
+    source_url: https://en.wikipedia.org/wiki/Harrat_Khaybar
+  - id: bayuda
+    name: Bayuda volcanic field
+    country: Sudan
+    set: discovery
+    lat: 18.33
+    lon: 32.75
+    source_url: https://en.wikipedia.org/wiki/Bayuda_volcanic_field
+  - id: salar_de_uyuni
+    name: Salar de Uyuni margin
+    country: Bolivia
+    set: discovery
+    lat: -20.133775
+    lon: -67.48913333
+    source_url: https://en.wikipedia.org/wiki/Salar_de_Uyuni
+
+  # ---------------- Crater benchmark tiles (V1) ----------------
+  # Meteor Crater (above) is also a benchmark crater. Crater list and
+  # diameters: config/craters.yaml (PASSC Earth Impact Database).
+  - id: crater_lonar
+    name: Lonar crater
+    country: India
+    set: crater_benchmark
+    lat: 19.975
+    lon: 76.5075
+    source_url: https://en.wikipedia.org/wiki/Lonar_Lake
+  - id: crater_tenoumer
+    name: Tenoumer crater
+    country: Mauritania
+    set: crater_benchmark
+    lat: 22.91805556
+    lon: -10.4075
+    source_url: https://en.wikipedia.org/wiki/Tenoumer_crater
+  - id: crater_wolfe_creek
+    name: Wolfe Creek crater
+    country: Australia
+    set: crater_benchmark
+    lat: -19.17166667
+    lon: 127.79555556
+    source_url: https://en.wikipedia.org/wiki/Wolfe_Creek_Crater
+  - id: crater_pingualuit
+    name: Pingualuit crater
+    country: Canada
+    set: crater_benchmark
+    lat: 61.2775
+    lon: -73.66
+    source_url: https://en.wikipedia.org/wiki/Pingualuit_crater
+  - id: crater_roter_kamm
+    name: Roter Kamm crater
+    country: Namibia
+    set: crater_benchmark
+    lat: -27.76666667
+    lon: 16.28888889
+    source_url: https://en.wikipedia.org/wiki/Roter_Kamm_crater
+  - id: crater_tswaing
+    name: Tswaing crater
+    country: South Africa
+    set: crater_benchmark
+    lat: -25.408486
+    lon: 28.082529
+    source_url: https://en.wikipedia.org/wiki/Tswaing_crater

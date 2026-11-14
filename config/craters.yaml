@@ -1,0 +1,98 @@
+# Benchmark craters for the V1 crater retrieval test.
+#
+# Selection rule (fixed before any benchmark run): every structure in the
+# PASSC Earth Impact Database with diameter 0.8-3.5 km, "Exposed: Y" and an
+# age under 10 Ma (young enough to keep a bowl shape). Exactly seven pass.
+#
+# Name, diameter, age and the arc-minute coordinates come from the PASSC
+# continent tables. passc.net now redirects to a parked page, so the tables
+# were read from Internet Archive snapshots (URLs below, retrieved 2026-11-14).
+# PASSC gives coordinates to the nearest arc-minute (up to ~0.9 km error), so
+# the crater centre uses the Wikipedia GeoData coordinate, which agrees with
+# PASSC to within one arc-minute for all seven.
+
+passc_tables:
+  north_america: http://web.archive.org/web/20260326191918/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/NorthAmerica.html
+  africa: http://web.archive.org/web/20260326191917/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Africa.html
+  asia_russia: http://web.archive.org/web/2026/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/AsiaRussia.html
+  australia: http://web.archive.org/web/20260326191918/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Australia.html
+  diameter_sorted: http://web.archive.org/web/20260209113007/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Diametersort.html
+
+craters:
+  - id: barringer
+    name: Barringer (Meteor Crater)
+    region_id: meteor_crater
+    diameter_km: 1.18
+    age_ma: "0.049 ± 0.003"
+    passc_lat: "N 35° 2'"
+    passc_lon: "W 111° 1'"
+    lat: 35.02805556
+    lon: -111.02333333
+    passc_url: http://web.archive.org/web/20260326191918/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/NorthAmerica.html
+    centre_source_url: https://en.wikipedia.org/wiki/Meteor_Crater
+  - id: new_quebec
+    name: New Quebec (Pingualuit)
+    region_id: crater_pingualuit
+    diameter_km: 3.44
+    age_ma: "1.4 ± 0.1"
+    passc_lat: "N 61° 17'"
+    passc_lon: "W 73° 40'"
+    lat: 61.2775
+    lon: -73.66
+    passc_url: http://web.archive.org/web/20260326191918/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/NorthAmerica.html
+    centre_source_url: https://en.wikipedia.org/wiki/Pingualuit_crater
+  - id: lonar
+    name: Lonar
+    region_id: crater_lonar
+    diameter_km: 1.83
+    age_ma: "0.052 ± 0.006"
+    passc_lat: "N 19° 58'"
+    passc_lon: "E 76° 31'"
+    lat: 19.975
+    lon: 76.5075
+    passc_url: http://web.archive.org/web/2026/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/AsiaRussia.html
+    centre_source_url: https://en.wikipedia.org/wiki/Lonar_Lake
+  - id: roter_kamm
+    name: Roter Kamm
+    region_id: crater_roter_kamm
+    diameter_km: 2.5
+    age_ma: "3.7 ± 0.3"
+    passc_lat: "S 27° 46'"
+    passc_lon: "E 16° 18'"
+    lat: -27.76666667
+    lon: 16.28888889
+    passc_url: http://web.archive.org/web/20260326191917/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Africa.html
+    centre_source_url: https://en.wikipedia.org/wiki/Roter_Kamm_crater
+  - id: tenoumer
+    name: Tenoumer
+    region_id: crater_tenoumer
+    diameter_km: 1.9
+    age_ma: "0.0214 ± 0.0097"
+    passc_lat: "N 22° 55'"
+    passc_lon: "W 10° 24'"
+    lat: 22.91805556
+    lon: -10.4075
+    passc_url: http://web.archive.org/web/20260326191917/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Africa.html
+    centre_source_url: https://en.wikipedia.org/wiki/Tenoumer_crater
+  - id: tswaing
+    name: Tswaing (formerly Pretoria Saltpan)
+    region_id: crater_tswaing
+    diameter_km: 1.13
+    age_ma: "0.220 ± 0.052"
+    passc_lat: "S 25° 24'"
+    passc_lon: "E 28° 5'"
+    lat: -25.408486
+    lon: 28.082529
+    passc_url: http://web.archive.org/web/20260326191917/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Africa.html
+    centre_source_url: https://en.wikipedia.org/wiki/Tswaing_crater
+  - id: wolfe_creek
+    name: Wolfe Creek
+    region_id: crater_wolfe_creek
+    diameter_km: 0.87
+    age_ma: "< 0.3"
+    passc_lat: "S 19° 10'"
+    passc_lon: "E 127° 48'"
+    lat: -19.17166667
+    lon: 127.79555556
+    passc_url: http://web.archive.org/web/20260326191918/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Australia.html
+    centre_source_url: https://en.wikipedia.org/wiki/Wolfe_Creek_Crater
