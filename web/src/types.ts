@@ -20,6 +20,16 @@ export interface Target {
   n_sites: number
   hillshade_png: string
   data_note?: string | null
+  artemis_iii_region?: string | null
+  sun_band?: SunBand | null
+}
+
+export interface SunBand {
+  latitude_deg: number
+  low_deg: number
+  high_deg: number
+  elevations_used: number[]
+  preview_elevation_deg: number
 }
 
 export interface Region {
@@ -34,6 +44,7 @@ export interface Region {
   n_patches: number
   n_searchable: number
   worldcover_available: boolean
+  before_you_go?: { text: string; source_url: string }[] | null
 }
 
 export interface SubScores {
@@ -63,6 +74,8 @@ export interface Environment {
   rh_pct?: number | null
   solar_kwh_m2_day?: number | null
   bare_fraction?: number | null
+  dense_veg_fraction?: number | null
+  sparse_veg_fraction?: number | null
   snow_ice_fraction?: number | null
   vegetation_fraction?: number | null
   water_fraction?: number | null
@@ -99,7 +112,28 @@ export interface Match {
   strong_match: string[]
   breaks_down: string[]
   tests_suited: string[]
-  images: { earth_hillshade: string; target_hillshade: string }
+  images: { earth_hillshade: string; target_hillshade: string; lowsun_earth?: string | null; lowsun_target?: string | null }
+  lighting?: Lighting | null
+  calendar?: MonthCal[] | null
+  best_months?: number[] | null
+  best_months_rule?: string | null
+}
+
+export interface Lighting {
+  similarity: number
+  elevations: number[]
+  shadow: { elevation_deg: number; target: number; earth: number }[]
+  edge_limited_target: boolean
+  edge_limited_earth: boolean
+}
+
+export interface MonthCal {
+  month: number
+  daylight_h: number
+  low_sun_h?: number | null
+  t2m_min_c?: number | null
+  t2m_max_c?: number | null
+  precip_mm_per_day?: number | null
 }
 
 export interface Results {
@@ -142,3 +176,65 @@ export interface Meta {
 
 // validation.json is open-ended; pages read the parts they render.
 export type Validation = Record<string, unknown>
+
+export interface ArtemisCoverage {
+  source_url: string
+  release_date: string
+  regions: string[]
+  covered: string[]
+  n_regions: number
+  n_covered: number
+}
+
+export interface UsualRegion {
+  region_id: string
+  name: string
+  best_score?: number | null
+  rank?: number | null
+  best_patch_id?: string | null
+  n_candidates: number
+  best_score_masks_off: number
+  rank_masks_off: number
+  n_candidates_masks_off: number
+  best_patch_masked: boolean
+  field_test?: string | null
+}
+
+export interface Outranking {
+  rank: number
+  site_id: string
+  region_id: string
+  score: number
+  sub_scores: SubScores
+  closer_groups: string[]
+}
+
+export interface UsualSites {
+  field_test?: { name: string; when: string; where: string; summary: string; source_urls: string[] } | null
+  field_test_region_id?: string | null
+  targets: Record<
+    string,
+    {
+      sigma: number
+      regions: UsualRegion[]
+      field_test?: {
+        region_id: string
+        best_patch_id: string
+        score: number
+        rank: number
+        sub_scores: SubScores
+        outranked_by: Outranking[]
+      } | null
+    }
+  >
+}
+
+export interface LightingInfo {
+  checks: { check: string; passed: boolean; detail: string }[]
+  settings: Record<string, unknown>
+  rules: Record<string, unknown>
+  limits: string[]
+  refraction_note: string
+  refraction_source_url: string
+}
+

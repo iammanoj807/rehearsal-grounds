@@ -3,9 +3,11 @@ import { Link, useSearchParams } from 'react-router-dom'
 import LoadState from '../components/LoadState.tsx'
 import ScoreBars from '../components/ScoreBars.tsx'
 import TerrainTwin from '../components/TerrainTwin.tsx'
+import UsualSitesPanel from '../components/UsualSitesPanel.tsx'
 import WorldMap from '../components/WorldMap.tsx'
 import { bodyLabel, dataUrl, fmt, latLon, useJson } from '../data.ts'
-import type { Match, Meta, Results, SubScores, Target } from '../types.ts'
+import { downloadText, monthNames, toCsv, toGeoJson, toKml } from '../exportShortlist.ts'
+import type { ArtemisCoverage, Match, Meta, Results, SubScores, Target, UsualSites } from '../types.ts'
 
 type Filter = 'all' | 'less_studied' | 'well_studied'
 const FILTERS: { id: Filter; label: string }[] = [
@@ -108,6 +110,7 @@ function TargetPicker({ targets, current, onPick }: { targets: Target[]; current
               {bodyLabel(t.body)} · T{String(i + 1).padStart(2, '0')}
             </span>
             <span className="target-name">{t.name}</span>
+            {t.artemis_iii_region && <span className="artemis-tag">Artemis III region</span>}
           </span>
         </button>
       ))}
@@ -164,6 +167,18 @@ function Preview({ m, target, targetId }: { m: Match; target: Target; targetId: 
       />
       <p className="small muted twin-hint">Drag the divider to compare. Both views: 3.84 km across, same scale and contrast.</p>
       <ScoreBars scores={m.sub_scores} compact />
+      <div className="preview-extra">
+        {m.lighting && (
+          <span className="chip-static">
+            Low-sun shadows <strong>{m.lighting.similarity.toFixed(1)}</strong>/100
+          </span>
+        )}
+        {m.best_months && m.best_months.length > 0 && (
+          <span className="chip-static">
+            Suggested months <strong>{monthNames(m.best_months)}</strong>
+          </span>
+        )}
+      </div>
       <Link className="btn btn-primary" to={`/site/${targetId}/${encodeURIComponent(m.site_id)}`}>
         Open the full dossier <span aria-hidden="true">→</span>
       </Link>
@@ -176,6 +191,8 @@ export default function Explore() {
   const targets = useJson<Target[]>('targets.json')
   const meta = useJson<Meta>('meta.json')
   const validation = useJson<ValidationHead>('validation.json')
+  const artemis = useJson<ArtemisCoverage>('artemis.json')
+  const usual = useJson<UsualSites>('usual_sites.json')
   const targetId = params.get('target') ?? DEFAULT_TARGET
   const filter = (params.get('filter') as Filter) || 'all'
   const results = useJson<Results>(`results/${targetId}.json`)
@@ -186,14 +203,14 @@ export default function Explore() {
 
   const target = targets.data?.find((t) => t.id === targetId) ?? null
   const hasNovelty = !!results.data?.matches.some((m) => m.novelty)
-  const shown = useMemo(() => {
+  const ordered = useMemo(() => {
     const all = results.data?.matches ?? []
     const filtered = filter === 'all' || !hasNovelty ? all : all.filter((m) => m.novelty?.status === filter)
-    const ordered = custom
+    return custom
       ? [...filtered].sort((a, b) => priorityScore(b, weights) - priorityScore(a, weights) || a.rank - b.rank)
       : filtered
-    return ordered.slice(0, SHOWN)
   }, [results.data, filter, hasNovelty, custom, weights])
+  const shown = useMemo(() => ordered.slice(0, SHOWN), [ordered])
   const selectedMatch = shown.find((m) => m.site_id === selected) ?? null
 
   useEffect(() => {
@@ -236,9 +253,9 @@ export default function Explore() {
               <span className="hl-moon">Moon</span> or <span className="hl-mars">Mars</span> site?
             </h1>
             <p className="lede">
-              Pick a target. Rehearsal Grounds compares its terrain, patch by patch on a 60 m grid, with thousands of
-              3.84 km patches of Earth, then explains each candidate analog: what matches, where the analogy breaks
-              down, and what you could test there.
+              Pick a target. Rehearsal Grounds finds where Earth’s terrain matches it, patch by patch on a 60 m grid,
+              and where and when the real Sun casts south-pole-like shadows there. Every candidate analog explains
+              what matches, where the analogy breaks down, and what you could test.
             </p>
             <HeroStats meta={meta.data} targets={targets.data} validation={validation.data} />
           </div>
@@ -271,6 +288,14 @@ export default function Explore() {
         <div className="section-head">
           <p className="eyebrow">Step 1</p>
           <h2>Choose a target</h2>
+          {artemis.data && (
+            <p className="small muted coverage-line">
+              Covers <strong>{artemis.data.n_covered}</strong> of NASA’s {artemis.data.n_regions} Artemis III candidate
+              landing regions ({artemis.data.covered.join(', ')}).{' '}
+              <a href={artemis.data.source_url}>NASA, 28 October 2024</a>. No other PGDA LOLA 5 m site map carries a
+              matching name; Site11 “de Gerlache rim” is left unlabelled because it may not be NASA’s “de Gerlache Rim 2”.
+            </p>
+          )}
         </div>
         <LoadState what="targets" error={targets.error} loading={targets.loading} retry={targets.retry} />
         {targets.data && <TargetPicker targets={targets.data} current={targetId} onPick={(id) => update('target', id)} />}
@@ -281,6 +306,12 @@ export default function Explore() {
               <h3>
                 {target.name} <span className="muted">· {bodyLabel(target.body)}</span>
               </h3>
+              {target.artemis_iii_region && (
+                <p className="artemis-badge">
+                  <a href={artemis.data?.source_url ?? target.description_source_url}>Artemis III candidate region (NASA, Oct 2024)</a>
+                  {target.artemis_iii_region !== target.name && <span className="muted"> · “{target.artemis_iii_region}”</span>}
+                </p>
+              )}
               <p>{target.description}</p>
               <p className="small mono muted">
                 {target.n_patches} patches · 3.84 km · {target.resolution_m} m grid ·{' '}
@@ -301,6 +332,10 @@ export default function Explore() {
               </div>
             )}
           </section>
+        )}
+
+        {usual.data && results.data && (
+          <UsualSitesPanel data={usual.data} targetId={targetId} matches={results.data.matches} />
         )}
 
         <div className="section-head">
@@ -376,6 +411,14 @@ export default function Explore() {
               ))}
             </ol>
             {results.data && shown.length === 0 && <p>No sites match this filter.</p>}
+            {target && ordered.length > 0 && (
+              <div className="export-row">
+                <span className="small muted">Download this shortlist ({ordered.length} sites):</span>
+                <button type="button" className="chip" onClick={() => downloadText(`rehearsal-grounds_${targetId}.csv`, toCsv(target, ordered), 'text/csv')}>CSV</button>
+                <button type="button" className="chip" onClick={() => downloadText(`rehearsal-grounds_${targetId}.geojson`, toGeoJson(target, ordered), 'application/geo+json')}>GeoJSON</button>
+                <button type="button" className="chip" onClick={() => downloadText(`rehearsal-grounds_${targetId}.kml`, toKml(target, ordered), 'application/vnd.google-earth.kml+xml')}>KML</button>
+              </div>
+            )}
           </div>
           <div className="side-panel">
             {selectedMatch && target && <Preview m={selectedMatch} target={target} targetId={targetId} />}

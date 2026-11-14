@@ -1,5 +1,6 @@
 import LoadState from '../components/LoadState.tsx'
 import { fmt, useJson } from '../data.ts'
+import type { LightingInfo } from '../types.ts'
 
 interface RankerRow {
   id: string
@@ -100,6 +101,7 @@ function RankerTable({ rows, caption }: { rows: RankerRow[]; caption: string }) 
 
 export default function ValidationPage() {
   const v = useJson<ValidationFile>('validation.json')
+  const linfo = useJson<LightingInfo>('lighting_info.json')
   if (v.error?.startsWith('404')) {
     return (
       <article className="page narrow">
@@ -302,6 +304,32 @@ export default function ValidationPage() {
           ))}
         </ul>
       </section>
+
+      {linfo.data && (
+        <section aria-labelledby="lighting-checks">
+          <h2 id="lighting-checks">Lighting checks</h2>
+          <p>
+            The low-sun shadow comparison and the Earth Sun hours are checked by the pipeline on cases with known answers.
+            These results are computed in step 09b and read from lighting_info.json.
+          </p>
+          <ul className="checks">
+            {linfo.data.checks.map((c) => (
+              <li key={c.check}>
+                <strong>{c.passed ? 'Pass' : 'Fail'}</strong> · {c.check} <span className="muted">({c.detail})</span>
+              </li>
+            ))}
+          </ul>
+          <h3>Limits of the lighting analog</h3>
+          <ul>
+            {linfo.data.limits.map((l) => (
+              <li key={l}>{l}</li>
+            ))}
+            <li>
+              {linfo.data.refraction_note} <a href={linfo.data.refraction_source_url}>NOAA</a>
+            </li>
+          </ul>
+        </section>
+      )}
 
       <section aria-labelledby="limits">
         <h2 id="limits">Limits</h2>

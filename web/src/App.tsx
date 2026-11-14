@@ -4,6 +4,7 @@ import Explore from './pages/Explore.tsx'
 import SitePage from './pages/Site.tsx'
 import ValidationPage from './pages/Validation.tsx'
 import About from './pages/About.tsx'
+import BriefPage from './pages/Brief.tsx'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -39,6 +40,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Explore />} />
           <Route path="/site/:targetId/:siteId" element={<SitePage />} />
+          <Route path="/brief/:targetId/:siteId" element={<BriefPage />} />
           <Route path="/validation" element={<ValidationPage />} />
           <Route path="/about" element={<About />} />
           <Route

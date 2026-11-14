@@ -10,9 +10,12 @@ export default function About() {
       <p className="eyebrow">About &amp; data</p>
       <h1>About Rehearsal Grounds</h1>
       <p className="lede">
-        Before astronauts and rovers work at the Moon’s south pole or in Jezero crater on Mars, teams rehearse on
-        Earth. Rehearsal Grounds helps an analog field-test planner choose where, by matching terrain at the scale of a
-        crater rim, ridge or lava field (about 60 m), not at the scale of a whole region.
+        In May 2024 NASA’s JETT5 field test rehearsed Artemis III moonwalks in Arizona’s San Francisco Volcanic Field,
+        and ran some of them at night to test a variety of lighting conditions, because the lighting at the lunar south
+        pole is dynamic (<a href="https://www.usgs.gov/centers/astrogeology-science-center/news/artemis-iii-mission-tests-san-francisco-volcanic-field">USGS</a>,{' '}
+        <a href="https://svs.gsfc.nasa.gov/14583">NASA</a>). Rehearsal Grounds answers two questions for an analog
+        field-test planner: where on Earth does the terrain match a specific Moon or Mars site, patch by patch at about
+        60 m; and where and when does the real Sun cast south-pole-like shadows there?
       </p>
 
       <h2>How it works</h2>
@@ -33,15 +36,28 @@ export default function About() {
           image embedding of the shaded relief.
         </li>
         <li>
-          <strong>Search with environment filters.</strong> Earth patches with more than 20% vegetation (trees, shrubs,
-          grass, moss, wetland), cropland or buildings, more than 5% water, more than 50% snow and ice, or almost no
-          relief are left out. Antarctica has no land-cover data, so its sites carry a warning instead. Every remaining patch is scored against every target
+          <strong>Search with environment filters.</strong> Earth patches with more than 20% trees, cropland,
+          buildings, wetland or mangrove are left out; shrub, grass and moss also count where NASA POWER gives more than
+          500 mm of rain a year (the upper bound of semiarid land, USGS), because in drier places that class is mostly bare
+          ground between scattered plants. Patches with more than 5% water, more than 50% snow and ice, or almost no
+          relief are also left out. Antarctica has no land-cover data, so its sites carry a warning instead. Every remaining patch is scored against every target
           patch; sites are kept at least 10 km apart.
         </li>
         <li>
           <strong>Explain and validate.</strong> Each site shows its feature-by-feature comparison, climate from NASA
           POWER, land cover from ESA WorldCover, a novelty flag, and the tests it suits. The method is checked on a
           crater retrieval benchmark (see Validation).
+        </li>
+        <li>
+          <strong>Low-sun lighting.</strong> For the Moon’s south-pole targets the noon Sun stays a few degrees above
+          the horizon all year. For each site we compute the share of the patch in shadow at low Sun elevations, from 36
+          directions, with the body’s curvature, for both the target and the Earth patch, and show a separate lighting
+          similarity and a low-sun preview.
+        </li>
+        <li>
+          <strong>Rehearsal window.</strong> For every Earth site: daylight and low-sun hours on the 15th of each month
+          (NOAA solar-position equations), NASA POWER monthly temperature and rain, and suggested months from a simple,
+          stated rule.
         </li>
       </ol>
 
@@ -51,6 +67,8 @@ export default function About() {
         is exp(−d²/2σ²), where d is the distance between the two fingerprints with equal weight for the relief, slope,
         roughness and shape groups. σ is the median distance from the target’s patches to their nearest Earth patch,
         so the score adapts to how unusual the target is. It is a similarity score, not an accuracy or a certification.
+        The lighting similarity, 100 × (1 − mean difference in shadow share) at the Sun elevations of the target’s band,
+        is a separate number and never changes the similarity score.
       </p>
       <p>
         Our crater test shows a division of labour: at 60 m the image embedding does most of the landform recognition,

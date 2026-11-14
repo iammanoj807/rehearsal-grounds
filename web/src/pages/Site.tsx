@@ -5,7 +5,9 @@ import ScoreBars from '../components/ScoreBars.tsx'
 import SiteInset from '../components/SiteInset.tsx'
 import TerrainTwin from '../components/TerrainTwin.tsx'
 import { bodyLabel, dataUrl, fmt, latLon, pct, useJson } from '../data.ts'
-import type { Match, Results, Target, Terrain } from '../types.ts'
+import { monthNames } from '../exportShortlist.ts'
+import type { LightingInfo, Match, Region, Results, Target, Terrain } from '../types.ts'
+import LightingPanel, { CalendarStrip } from '../components/LightingPanel.tsx'
 import { NoveltyBadge, noveltyLabel, regionSetLabel } from './Explore.tsx'
 
 const TERRAIN_ROWS: { key: keyof Terrain; label: string; unit: string; digits: number }[] = [
@@ -46,6 +48,9 @@ function dossierMarkdown(t: Target, m: Match): string {
         ].join('\n')
       : '- Not available',
     '',
+    m.lighting ? `- Low-sun shadow similarity (separate panel): ${m.lighting.similarity.toFixed(0)}/100` : '- Low-sun shadow similarity: not applicable',
+    m.best_months?.length ? `- Best months (our rules, not safety advice): ${monthNames(m.best_months)}. ${m.best_months_rule ?? ''}` : '',
+    '',
     '## Strong match',
     ...m.strong_match.map((s) => `- ${s}`),
     '',
@@ -80,7 +85,9 @@ export default function SitePage() {
   const prev = idx > 0 ? matches[idx - 1] : null
   const next = idx >= 0 && idx < matches.length - 1 ? matches[idx + 1] : null
   const back = `/?target=${targetId}`
-  const [mode, setMode] = useState<'swipe' | 'side'>('swipe')
+  const [mode, setMode] = useState<'swipe' | 'side' | 'lowsun'>('swipe')
+  const regions = useJson<Region[]>('regions.json')
+  const linfo = useJson<LightingInfo>('lighting_info.json')
 
   if (targets.error || results.error || targets.loading || results.loading) {
     return (
@@ -111,7 +118,12 @@ export default function SitePage() {
         { label: 'Sunlight at the surface', value: fmt(env.solar_kwh_m2_day, 2, ' kWh/m²/day') },
         { label: 'Bare ground within 2 km', value: env.worldcover_available ? pct(env.bare_fraction) : 'no land-cover data' },
         { label: 'Snow and ice within 2 km', value: env.worldcover_available ? pct(env.snow_ice_fraction) : 'no land-cover data' },
-        { label: 'Vegetation, crops or buildings within 2 km', value: env.worldcover_available ? pct(env.vegetation_fraction) : 'no land-cover data' },
+        ...(env.dense_veg_fraction != null && env.sparse_veg_fraction != null
+          ? [
+              { label: 'Trees, crops, buildings or wetland within 2 km', value: env.worldcover_available ? pct(env.dense_veg_fraction) : 'no land-cover data' },
+              { label: 'Shrub, grass or moss within 2 km (WorldCover)', value: env.worldcover_available ? pct(env.sparse_veg_fraction) : 'no land-cover data' },
+            ]
+          : [{ label: 'Vegetation, crops or buildings within 2 km', value: env.worldcover_available ? pct(env.vegetation_fraction) : 'no land-cover data' }]),
       ]
     : []
 
@@ -163,9 +175,34 @@ export default function SitePage() {
               <button type="button" className="chip" aria-pressed={mode === 'side'} onClick={() => setMode('side')}>
                 Side by side
               </button>
+              {m.images.lowsun_earth && m.images.lowsun_target && (
+                <button type="button" className="chip" aria-pressed={mode === 'lowsun'} onClick={() => setMode('lowsun')}>
+                  Low sun
+                </button>
+              )}
             </div>
           </div>
-          {mode === 'swipe' ? (
+          {mode === 'lowsun' && m.images.lowsun_earth && m.images.lowsun_target && target.sun_band ? (
+            <>
+              <TerrainTwin
+                size="lg"
+                targetSrc={dataUrl(m.images.lowsun_target)}
+                earthSrc={dataUrl(m.images.lowsun_earth)}
+                targetAlt={`${target.name} target patch lit by a ${target.sun_band.preview_elevation_deg.toFixed(1)} degree Sun with cast shadows`}
+                earthAlt={`Earth patch in ${m.region_name} lit by the same low Sun with cast shadows`}
+                body={target.body}
+                targetName={target.name}
+                earthName={m.region_name}
+              />
+              <p className="small muted center">
+                Low sun: light from the north-west at {target.sun_band.preview_elevation_deg.toFixed(1)}°, the middle of
+                {' '}{target.name}’s noon Sun band ({target.sun_band.low_deg.toFixed(1)}–{target.sun_band.high_deg.toFixed(1)}°).
+                Cast shadows are black; both views share one contrast stretch.
+                {target.sun_band.preview_elevation_deg < 1.5 &&
+                  ' At a Sun this low, most of both patches is in shadow: that is the honest result, not a rendering fault.'}
+              </p>
+            </>
+          ) : mode === 'swipe' ? (
             <TerrainTwin
               size="lg"
               targetSrc={dataUrl(m.images.target_hillshade)}
@@ -294,6 +331,22 @@ export default function SitePage() {
           </section>
         </div>
 
+        <LightingPanel m={m} target={target} info={linfo.data} />
+        {m.calendar && <CalendarStrip m={m} target={target} info={linfo.data} />}
+
+        <section className="before-you-go card" aria-labelledby="byg">
+          <h2 id="byg">Before you go</h2>
+          <p>
+            Before any field work, check land status and access, permits, safety, and the wishes of local and Indigenous
+            communities.
+          </p>
+          {(regions.data?.find((r) => r.id === m.region_id)?.before_you_go ?? []).map((n) => (
+            <p key={n.source_url} className="small">
+              {n.text} <a href={n.source_url}>Source</a>
+            </p>
+          ))}
+        </section>
+
         <section className="limits" aria-labelledby="limits">
           <h2 id="limits">What Earth cannot reproduce</h2>
           <p>
@@ -305,6 +358,9 @@ export default function SitePage() {
 
         <nav className="site-nav" aria-label="Other candidate sites">
           {prev ? <Link className="btn btn-ghost" to={`/site/${targetId}/${encodeURIComponent(prev.site_id)}`}>← #{prev.rank} {prev.region_name}</Link> : <span />}
+          <Link className="btn btn-ghost" to={`/brief/${targetId}/${encodeURIComponent(m.site_id)}`}>
+            Field-test brief (print)
+          </Link>
           <button type="button" className="btn btn-primary" onClick={() => download(`rehearsal-grounds_${targetId}_rank${m.rank}.md`, dossierMarkdown(target, m))}>
             Download dossier (Markdown)
           </button>

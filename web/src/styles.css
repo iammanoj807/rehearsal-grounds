@@ -1541,6 +1541,311 @@ main:focus {
   margin-bottom: 18px;
 }
 
+/* ---------- Artemis III, usual sites, exports ---------- */
+.coverage-line {
+  margin: 8px 0 0;
+  max-width: 90ch;
+}
+.artemis-tag {
+  align-self: flex-start;
+  margin-top: 4px;
+  font: 600 0.62rem/1.4 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--moon-text);
+  border-radius: 999px;
+  padding: 1px 8px;
+}
+.artemis-badge {
+  margin: -4px 0 10px;
+  font-size: 0.88rem;
+}
+.artemis-badge a {
+  font-weight: 600;
+  color: var(--moon-text);
+}
+.usual {
+  margin-top: 16px;
+}
+.usual-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 20px;
+  align-items: end;
+  margin-bottom: 10px;
+}
+.usual-head h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+.usual-head p {
+  margin: 0;
+}
+.usual-table th .badge-field {
+  margin-left: 8px;
+}
+.badge-field {
+  color: var(--ink);
+  border-color: rgba(138, 134, 230, 0.6);
+  background: rgba(138, 134, 230, 0.14);
+}
+.masked-note {
+  color: var(--warn);
+  font-size: 0.8rem;
+}
+.jett5 {
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.jett5 p {
+  margin: 0 0 6px;
+}
+.jett5 a {
+  margin-left: 2px;
+}
+.outrank {
+  margin: 4px 0 0;
+  padding-left: 1.2em;
+  color: var(--ink-2);
+  font-size: 0.9rem;
+}
+.outrank li {
+  margin-bottom: 4px;
+}
+.export-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 16px 8px;
+}
+.preview-extra {
+  grid-area: hint;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-self: end;
+}
+.preview .twin-hint {
+  display: none;
+}
+.chip-static {
+  display: inline-flex;
+  gap: 6px;
+  align-items: baseline;
+  border: 1px solid var(--line-2);
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+.chip-static strong {
+  color: var(--ink);
+}
+
+/* ---------- lighting & calendar ---------- */
+.lighting,
+.calendar,
+.before-you-go {
+  margin-top: 20px;
+}
+.lighting-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.lighting-head h2,
+.calendar h2,
+.before-you-go h2 {
+  margin-top: 0;
+}
+.lighting-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.lighting-number {
+  font: 600 2.6rem/1 var(--body);
+  color: var(--ink);
+}
+.shadow-table th.in-band {
+  color: var(--moon-text);
+}
+.best-months {
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+.calendar-table th,
+.calendar-table td {
+  text-align: center;
+  padding: 6px 4px;
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+.calendar-table tbody th {
+  text-align: left;
+}
+.calendar-table .is-best {
+  background: rgba(46, 159, 134, 0.14);
+  color: var(--ink);
+}
+.calendar-table thead th.is-best {
+  color: var(--earth-text);
+}
+.cal-bar {
+  display: block;
+  width: 10px;
+  height: 28px;
+  margin: 0 auto 4px;
+  background: var(--meter-track);
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.cal-bar > span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--moon);
+  border-radius: 3px 3px 0 0;
+}
+.before-you-go {
+  border-color: rgba(250, 178, 25, 0.35);
+}
+
+/* ---------- printable field-test brief ---------- */
+.brief-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+.brief-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.brief-sheet {
+  background: #fff;
+  color: #16181b;
+  border-radius: 8px;
+  padding: 28px 32px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.brief-sheet h1,
+.brief-sheet h2,
+.brief-sheet p,
+.brief-sheet li {
+  color: #16181b;
+}
+.brief-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 2px solid #16181b;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+}
+.brief-kicker {
+  font: 600 10px/1.4 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+.brief-head h1 {
+  font-size: 22px;
+  margin: 0 0 4px;
+}
+.brief-head h1 span {
+  font-weight: 500;
+  font-size: 16px;
+}
+.brief-head p {
+  margin: 0;
+}
+.brief-scores {
+  text-align: right;
+}
+.brief-scores strong {
+  font-size: 20px;
+}
+.brief-images {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+.brief-images figure {
+  margin: 0;
+}
+.brief-images img {
+  width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  border: 1px solid #c8c8c8;
+}
+.brief-images figcaption {
+  font-size: 10px;
+  margin-top: 2px;
+}
+.brief-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+}
+.brief-cols h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 12px 0 4px;
+}
+.brief-cols ul {
+  margin: 0;
+  padding-left: 1.1em;
+}
+.brief-fine,
+.brief-foot {
+  font-size: 10px;
+  color: #4a4e55 !important;
+}
+.brief-foot {
+  border-top: 1px solid #c8c8c8;
+  margin-top: 14px;
+  padding-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+  body {
+    background: #fff !important;
+  }
+  .site-header,
+  .site-footer,
+  .no-print,
+  .skip-link {
+    display: none !important;
+  }
+  .brief-wrap {
+    padding: 0;
+    max-width: none;
+  }
+  .brief-sheet {
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
 /* ---------- leaflet on dark ---------- */
 .leaflet-container {
   font: 13px/1.4 var(--body);
@@ -1639,6 +1944,13 @@ main:focus {
 }
 
 @media (max-width: 640px) {
+  .usual-head,
+  .brief-cols {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .brief-images {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .page {
     padding-left: 16px;
     padding-right: 16px;

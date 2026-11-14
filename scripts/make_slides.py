@@ -39,6 +39,12 @@ def main(out: Path) -> None:
     split = val["v3_robustness"]["weight_split"]["top10_overlap"]
     split_vals = [v for per in split.values() for v in per.values()]
     mal = results["moon_site23_malapert"]
+    artemis = load("artemis.json")
+    usual = load("usual_sites.json")
+    linfo = load("lighting_info.json")
+    tmal = next(t for t in targets if t["id"] == "moon_site23_malapert")
+    sp_mal = next(r for r in usual["targets"]["moon_site23_malapert"]["regions"] if r["region_id"] == usual["field_test_region_id"])
+    month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     top = mal["matches"][0]
     shack = results["moon_site04_shackleton_rim"]["matches"]
     jez = results["mars_jezero"]["matches"]
@@ -54,7 +60,7 @@ def main(out: Path) -> None:
 
     target_cards = "".join(
         f'<figure class="tcard {t["body"]}"><img src="{img(t["hillshade_png"])}" alt=""><figcaption>'
-        f'<span>{"Moon" if t["body"] == "moon" else "Mars"}</span>{e(t["name"])}</figcaption></figure>'
+        f'<span>{"Moon" if t["body"] == "moon" else "Mars"}{" · Artemis III" if t.get("artemis_iii_region") else ""}</span>{e(t["name"])}</figcaption></figure>'
         for t in targets
     )
     bars = "".join(
@@ -79,27 +85,30 @@ def main(out: Path) -> None:
 <div class="titlebox"><h1>Rehearsal Grounds</h1><p class="sub">Finding where on Earth to rehearse the Moon and Mars, at 60 m</p>
 <p class="meta">Team: Rehearsal Grounds · Manoj Kumar Thapa<br>Challenge: Identify Earth Locations that Analog the Permanent Moon Base Locations and Mars<br>2026 NASA Space Apps Challenge</p></div></section>''',
         # 2 Problem
-        '''<section><h2>The problem</h2><ul class="big">
-<li>Before crews and rovers work at the lunar south pole or in Jezero crater, teams rehearse on Earth.</li>
-<li>Analog sites are often chosen by tradition and access.</li>
-<li>Regional screening at about 50 km cells can say "the Atacama". It cannot say which slope or ridge to drive, walk and image.</li>
-<li>A planner needs a specific place that matches a specific target, and an honest note of where the analogy breaks down.</li></ul></section>''',
+        f'''<section><h2>The problem: rehearsing the south-pole Moon on Earth</h2><ul class="big">
+<li>In May 2024 NASA's JETT5 test rehearsed Artemis III moonwalks in Arizona's San Francisco Volcanic Field.</li>
+<li>Some EVAs ran at night to test a variety of lighting conditions, because the lighting at the lunar south pole is dynamic.</li>
+<li>Two questions for a planner: <b>where</b> does Earth's terrain match a specific Artemis III site, and <b>where and when</b> does the real Sun cast south-pole-like shadows?</li></ul>
+<p class="note">Sources: USGS Astrogeology (JETT5, 13-17 May 2024); NASA SVS interview with Kelsey Young (JETT5 lighting); NASA image "A Moonlit Moonwalk" (16 May 2024).</p></section>''',
         # 3 Idea
         f'''<section><h2>The idea: match terrain at 60 m</h2><p class="lead">Compare 3.84 km patches of real terrain models, so the answer is a rim, ridge or lava field, not a region.</p>
-<div class="tgrid">{target_cards}</div><p class="note">Six targets: five LOLA south-pole sites (NASA PGDA) and the Jezero landing area (USGS CTX DTM).</p></section>''',
+<div class="tgrid">{target_cards}</div><p class="note note-static">{len(targets)} targets: {sum(t["body"] == "moon" for t in targets)} LOLA south-pole sites (NASA PGDA), covering {artemis["n_covered"]} of NASA's {artemis["n_regions"]} Artemis III candidate regions, and the Jezero landing area (USGS CTX DTM).</p></section>''',
         # 4 Pipeline
         f'''<section><h2>How it works</h2><ol class="pipe">
 <li><b>Real terrain</b>LOLA 5 m (Moon), CTX 20 m (Mars), Copernicus 30 m (Earth, 30 regions)</li>
 <li><b>One 60 m grid</b>Local metric projections; Mars warped to equidistant around Jezero</li>
 <li><b>Fingerprint</b>20 rotation-invariant terrain features plus a ResNet-18 image embedding</li>
 <li><b>Masked search</b>{meta["n_searchable"]:,} Earth patches after WorldCover masks; S = 60% terrain + 40% image</li>
-<li><b>Explain and validate</b>Feature bars, NASA POWER climate, novelty, tests suited; crater benchmark</li></ol>
+<li><b>Explain, light, validate</b>Feature bars; low-Sun shadow analog and Sun hours; NASA POWER months; crater benchmark</li></ol>
 <p class="note">Offline Python pipeline → static JSON → React site on GitHub Pages.</p></section>''',
         # 5 Example
-        f'''<section><h2>Example: Malapert massif → {e(top["region_name"])}</h2><div class="ex">
-<figure class="moonp"><img src="{img(top["images"]["target_hillshade"])}" alt=""><figcaption>Moon target patch, 3.84 km</figcaption></figure>
-<figure class="earthp"><img src="{img(top["images"]["earth_hillshade"])}" alt=""><figcaption>Earth patch, 3.84 km</figcaption></figure>
-<div class="card"><p class="score">{top["score"]:.1f}<span> similarity score (0-100)</span></p>{bars}
+        f'''<section><h2 class="h2s">Artemis III region: Malapert massif → {e(top["region_name"])}</h2><div class="ex ex4">
+<div class="quad"><figure class="moonp"><img src="{img(top["images"]["target_hillshade"])}" alt=""><figcaption>Moon patch</figcaption></figure>
+<figure class="earthp"><img src="{img(top["images"]["earth_hillshade"])}" alt=""><figcaption>Earth patch</figcaption></figure>
+<figure class="moonp"><img src="{img(top["images"]["lowsun_target"])}" alt=""><figcaption>Moon, low sun {tmal["sun_band"]["preview_elevation_deg"]:.1f}°</figcaption></figure>
+<figure class="earthp"><img src="{img(top["images"]["lowsun_earth"])}" alt=""><figcaption>Earth, same low sun</figcaption></figure></div>
+<div class="card"><p class="score">{top["score"]:.1f}<span> similarity score (0-100)</span></p><p class="score2">{top["lighting"]["similarity"]:.1f}<span> low-sun shadow similarity, a separate panel</span></p>{bars}
+<p class="small"><b>Best months:</b> {", ".join(month_names[m - 1] for m in top["best_months"])} (our rule: dry months with the most low-sun hours).</p>
 <p class="small">90th-percentile slope {top["target_terrain"]["slope_p90_deg"]:.1f}° (Moon) vs {top["terrain"]["slope_p90_deg"]:.1f}° (Earth) · relief {top["target_terrain"]["relief_m"]:.0f} m vs {top["terrain"]["relief_m"]:.0f} m</p>
 <p class="small"><b>Breaks down:</b> gravity, vacuum, radiation, polar light; Earth matches {100 * cov_mal:.0f}% of Malapert's patches, but not its steepest faces.</p></div></div></section>''',
         # 6 Validation
@@ -109,11 +118,12 @@ def main(out: Path) -> None:
 <div><ul class="mid"><li>The image embedding recognises craters, also against hard negatives from the other crater tiles; the 20 readable features alone do so only weakly.</li>
 <li>90 m rerun: Spearman ρ {min(rho_vals):.2f}-{max(rho_vals):.2f} for each target's top-20 regions.</li>
 <li>±20% feature-group weights: {100 * min(stay_vals):.0f}-{100 * max(stay_vals):.0f}% of top-10 sites stay; terrain/image split 0.4/0.6 or 0.8/0.2: {100 * min(split_vals):.0f}-{100 * max(split_vals):.0f}%.</li>
-<li>All four sanity checks pass. An early benchmark leak was found, fixed and disclosed.</li>
+<li>All four sanity checks and all {len(linfo["checks"])} lighting checks pass (flat plane, step shadow, curvature, NREL solar position).</li>
 <li>Limits: 7 craters, 60 m grid, gravity changes crater shape.</li></ul></div></div></section>''',
         # 7 Impact
         f'''<section><h2>Impact and next steps</h2><div class="two"><div><ul class="mid">
-<li><b>For analog field-test planners:</b> a shortlist of specific sites per target, with evidence and limits.</li>
+<li><b>For analog field-test planners:</b> a shortlist per target with evidence, limits, best months, and CSV, GeoJSON or KML downloads.</li>
+<li><b>The usual sites, on the same score:</b> for Malapert, the JETT5 area's best searchable patch ranks #{sp_mal["rank"]:,} of {sp_mal["n_candidates"]:,}; with the land-cover masks off it ranks #{sp_mal["rank_masks_off"]:,}.</li>
 <li><b>Outside our analog catalogue:</b> {outside_text}.</li>
 <li><b>Next:</b> Gale crater and a lunar pit target, finer Earth DEMs in the best regions, LRO Diviner temperatures.</li></ul></div>
 <div class="credits"><p><b>Data</b></p><p>NASA LRO LOLA (GSFC PGDA, Barker et al. 2021) · USGS Mars 2020 CTX DTM (Fergason et al. 2020) · ESA Copernicus DEM GLO-30 · ESA WorldCover 2021 · NASA POWER · NASA GIBS · PASSC Earth Impact Database</p>
@@ -130,13 +140,13 @@ h1,h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;margin:0 0 20px;lin
 .titlebox h1{font-size:54px;margin:0}.titlebox .sub{margin:4px 0 10px;font-size:24px}.titlebox .meta{margin:0;font-size:17px;color:#D7D6D1}
 ul.big{font-size:30px;line-height:1.45;padding-left:1em}ul.big li{margin-bottom:18px}ul.mid{font-size:22px;padding-left:1em}ul.mid li{margin-bottom:14px}
 .lead{font-size:26px;max-width:1050px}.note{font-size:18px;color:#555A61;position:absolute;bottom:40px}
-.tgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:24px}.tcard{margin:0;padding:10px;border-radius:6px}.tcard.moon{background:#D7D6D1}.tcard.mars{background:#ead8c9}
-.tcard img{width:100%;aspect-ratio:1;display:block}.tcard figcaption{font-size:16px;font-weight:600;margin-top:6px}.tcard span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#555A61}
+.tgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:16px}.tcard{margin:0;padding:10px;border-radius:6px}.tcard.moon{background:#D7D6D1}.tcard.mars{background:#ead8c9}
+.tcard img{width:100%;height:118px;object-fit:cover;display:block}.tcard figcaption{font-size:16px;font-weight:600;margin-top:6px}.tcard span{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#555A61}
 ol.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:0;list-style:none;counter-reset:s;margin-top:30px}
 ol.pipe li{border:2px solid #1E2126;border-radius:8px;padding:18px;font-size:18px;background:#fff;counter-increment:s;min-height:260px}
 ol.pipe li b{display:block;font-family:'Bricolage Grotesque',sans-serif;font-size:24px;margin-bottom:8px}ol.pipe li b::before{content:counter(s) ". ";color:#7A3D1A}
 .ex{display:grid;grid-template-columns:330px 330px 1fr;gap:20px;align-items:start}.ex figure{margin:0;padding:12px;border-radius:6px}.moonp{background:#D7D6D1}.earthp{background:#E4C49D}
-.ex img{width:100%;display:block}.ex figcaption{font-size:15px;font-weight:600;margin-top:6px}.card{font-size:18px}.score{font:700 54px/1 'Bricolage Grotesque',sans-serif;margin:0 0 12px}.score span{font:400 16px system-ui;color:#555A61}
+.ex img{width:100%;display:block}.ex4{grid-template-columns:450px 1fr}.h2s{font-size:34px}.note-static{position:static;margin-top:14px}.quad{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quad figure{padding:8px}.quad figcaption{font-size:13px}.score2{font:700 34px/1 'Bricolage Grotesque',sans-serif;margin:0 0 10px}.score2 span{font:400 15px system-ui;color:#555A61}.ex figcaption{font-size:15px;font-weight:600;margin-top:6px}.card{font-size:18px}.score{font:700 54px/1 'Bricolage Grotesque',sans-serif;margin:0 0 12px}.score span{font:400 16px system-ui;color:#555A61}
 .bar{display:grid;grid-template-columns:150px 1fr 36px;gap:8px;align-items:center;margin:6px 0}.bar i{height:12px;background:#e7e4dc;border:1px solid #c9c6bd}.bar b{display:block;height:100%;background:#4A4E55}.bar em{font-style:normal;font-weight:700;text-align:right}
 .small{font-size:16px;color:#333}.two{display:grid;grid-template-columns:1.05fr 1fr;gap:40px}
 table{border-collapse:collapse;width:100%;font-size:20px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #c9c6bd}thead th{border-bottom:2px solid #1E2126;font-size:16px}tr.hl{background:#fff;font-weight:700}
