@@ -71,3 +71,17 @@ def test_shared_stretch_keeps_brightness_comparable() -> None:
     a = np.asarray(hillshade_image(gentle, 60.0, stretch_range=rng).convert("L"))[:200, 100:]
     b = np.asarray(hillshade_image(steep, 60.0, stretch_range=rng).convert("L"))[:200, 100:]
     assert abs(float(a.mean()) - float(b.mean())) > 20  # different slopes stay different
+
+
+def test_sparse_cover_counts_only_in_humid_climates() -> None:
+    cfg = load_config()
+    arid = _shares(grass=0.6, shrub=0.2, bare=0.2).assign(precip_mm_yr=300.0)
+    humid = _shares(grass=0.6, shrub=0.2, bare=0.2).assign(precip_mm_yr=800.0)
+    unknown = _shares(grass=0.6, shrub=0.2, bare=0.2)  # no precipitation value: treated as humid
+    assert patches.landcover_ok(arid, cfg).iloc[0]
+    assert not patches.landcover_ok(humid, cfg).iloc[0]
+    assert not patches.landcover_ok(unknown, cfg).iloc[0]
+    # Dense cover counts whatever the climate.
+    for name in ("tree", "crop", "built", "wetland", "mangrove"):
+        dry = _shares(**{name: 0.5, "bare": 0.5}).assign(precip_mm_yr=100.0)
+        assert not patches.landcover_ok(dry, cfg).iloc[0], name

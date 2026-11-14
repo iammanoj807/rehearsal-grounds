@@ -4,11 +4,14 @@ Windows of ``patch_px`` pixels slide by ``stride_px``. A patch is kept when at
 least ``min_valid_fraction`` of its pixels have elevation. For Earth patches
 the WorldCover class shares are stored, plus two flags:
 
-* ``wc_ok``: vegetation + cropland + built-up share (``WORLDCOVER_VEG_BUILT``:
-  trees, shrubs, grass, crops, built-up, wetland, mangrove, moss) <=
-  ``mask_max_veg_built_crop``, water share <= ``mask_max_water`` and snow/ice
-  share <= ``mask_max_snow_ice`` (always True where WorldCover has no coverage,
-  i.e. Antarctica, which is flagged by ``wc_available``).
+* ``wc_ok``: vegetation + cropland + built-up share <= ``mask_max_veg_built_crop``,
+  water share <= ``mask_max_water`` and snow/ice share <= ``mask_max_snow_ice``
+  (always True where WorldCover has no coverage, i.e. Antarctica, which is
+  flagged by ``wc_available``). Dense cover (trees, crops, built-up, wetland,
+  mangrove) always counts. Sparse cover (shrub, grass, moss and lichen) counts
+  only where NASA POWER annual precipitation (``precip_mm_yr``, nearest cell of
+  the regional 0.5 degree grid) exceeds ``mask_sparse_veg_humid_mm``: in arid and
+  semiarid land that class is mostly bare ground between scattered plants.
 * ``dedupe_ok``: False when the patch also lies inside another region's box
   and is closer to that region's centre (the boxes of nearby regions overlap).
 
@@ -33,8 +36,10 @@ from numpy.lib.stride_tricks import sliding_window_view
 from rasterio.crs import CRS
 from rasterio.warp import transform as warp_transform
 
-from common import RAW_DIR, WORLDCOVER_VEG_BUILT, get_logger, grids_dir, load_config, load_yaml, patches_dir, selected_regions, selected_targets
+from common import CACHE_DIR, RAW_DIR, WORLDCOVER_DENSE, WORLDCOVER_SPARSE, get_logger, record_source, grids_dir, load_config, load_yaml, patches_dir, selected_regions, selected_targets
 from grids import haversine_km, mars_geographic_crs, moon_geographic_crs
+from precip import API as POWER_REGIONAL_API
+from precip import fetch_regional, grid_cells, nearest_annual_mm
 
 log = get_logger("04_patches")
 
@@ -70,11 +75,31 @@ def class_shares(wc: np.ndarray, rows: np.ndarray, cols: np.ndarray, patch: int)
     return out
 
 
+def counted_vegetation(table: pd.DataFrame, cfg: dict[str, Any]) -> pd.Series:
+    """Vegetation/crop/built-up share that counts toward the mask (climate-aware).
+
+    A patch without a precipitation value is treated as humid, so its sparse cover counts.
+    """
+    dense = sum(table[f"frac_{WORLDCOVER_CLASSES[c]}"] for c in WORLDCOVER_DENSE)
+    sparse = sum(table[f"frac_{WORLDCOVER_CLASSES[c]}"] for c in WORLDCOVER_SPARSE)
+    precip = table["precip_mm_yr"] if "precip_mm_yr" in table else pd.Series(np.nan, index=table.index)
+    humid = ~(precip <= float(cfg["mask_sparse_veg_humid_mm"]))
+    return dense + sparse.where(humid, 0.0)
+
+
 def landcover_ok(table: pd.DataFrame, cfg: dict[str, Any]) -> pd.Series:
     """True where a patch passes the vegetation/built-up, water and snow/ice masks."""
-    veg = sum(table[f"frac_{WORLDCOVER_CLASSES[c]}"] for c in WORLDCOVER_VEG_BUILT)
+    veg = counted_vegetation(table, cfg)
     return ((veg <= cfg["mask_max_veg_built_crop"]) & (table["frac_water"] <= cfg["mask_max_water"])
             & (table["frac_snow_ice"] <= cfg["mask_max_snow_ice"]))
+
+
+def patch_precip(region_id: str, lats: np.ndarray, lons: np.ndarray, boxes: dict[str, dict[str, Any]]) -> np.ndarray:
+    """Annual precipitation (mm/yr) at each patch centre from the POWER regional grid."""
+    if region_id not in boxes or len(lats) == 0:
+        return np.full(len(lats), np.nan)
+    data = fetch_regional(region_id, boxes[region_id]["bounds"], CACHE_DIR / "power_regional")
+    return nearest_annual_mm(lats, lons, grid_cells(data))
 
 
 def region_boxes() -> dict[str, dict[str, Any]]:
@@ -163,6 +188,7 @@ def cut_source(source_id: str, body: str, cfg: dict[str, Any], boxes: dict[str, 
                 wc = src.read(1)
             for key, values in class_shares(wc, rows, cols, patch).items():
                 table[key] = values
+            table["precip_mm_yr"] = patch_precip(source_id, lats, lons, boxes or {})
             table["wc_ok"] = landcover_ok(table, cfg)
         else:
             table["wc_ok"] = True
@@ -194,6 +220,8 @@ def main() -> int:
         summary.append((source_id, body, len(table), n_mask, n_crater))
         log.info("%s (%s): %d patches, %d pass land-cover masks, %d crater-centred", source_id, body,
                  len(table), n_mask, n_crater)
+    record_source(url=POWER_REGIONAL_API, dataset="NASA POWER regional climatology (PRECTOTCORR)",
+                  licence="NASA open data", note="one request per Earth region; cached in data/cache/power_regional")
     total = sum(s[2] for s in summary if s[1] == "earth")
     log.info("total: %d Earth patches, %d target patches", total, sum(s[2] for s in summary if s[1] != "earth"))
     return 0

@@ -3,7 +3,9 @@ resolution_m: 60          # common grid for every body
 patch_px: 64              # 64 x 60 m = 3.84 km window
 stride_px: 32             # 50% overlap
 min_valid_fraction: 0.95  # drop patches with more nodata
-mask_max_veg_built_crop: 0.20   # share of WorldCover classes 10,20,30,40,50,90,95,100 (vegetation, crops, built-up)
+mask_max_veg_built_crop: 0.20   # share of WorldCover 10,40,50,90,95 (trees, crops, built-up, wetland, mangrove),
+                                # plus 20,30,100 (shrub, grass, moss) where annual rainfall > mask_sparse_veg_humid_mm
+mask_sparse_veg_humid_mm: 500   # mm/yr; upper bound of semiarid rainfall (USGS desert primer, Meigs classification)
 mask_max_snow_ice: 0.50        # WorldCover class 70 (snow and ice)
 mask_max_water: 0.05            # WorldCover class 80
 min_relief_m: 5           # drop near-flat patches (sea, lakes, salt pans) from the analog search

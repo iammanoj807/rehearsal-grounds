@@ -37,6 +37,10 @@ PROFILES = ("full", "small", "res90")
 # grass, crops, built-up, wetland, mangrove, moss and lichen. Used by the search mask
 # (step 04) and the 2 km land-cover shares in each dossier (step 09).
 WORLDCOVER_VEG_BUILT: tuple[int, ...] = (10, 20, 30, 40, 50, 90, 95, 100)
+# For the search mask these split in two: dense cover always counts; sparse cover
+# (shrub, grass, moss and lichen) counts only outside arid and semiarid climates.
+WORLDCOVER_DENSE: tuple[int, ...] = (10, 40, 50, 90, 95)
+WORLDCOVER_SPARSE: tuple[int, ...] = (20, 30, 100)
 
 
 def profile() -> str:
