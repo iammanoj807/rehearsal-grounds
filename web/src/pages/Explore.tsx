@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import LoadState from '../components/LoadState.tsx'
 import WorldMap from '../components/WorldMap.tsx'
 import { bodyLabel, dataUrl, fmt, useJson } from '../data.ts'
-import type { Match, Results, Target } from '../types.ts'
+import type { Match, Results, SubScores, Target } from '../types.ts'
 
 type Filter = 'all' | 'less_studied' | 'well_studied'
 const FILTERS: { id: Filter; label: string }[] = [
@@ -13,6 +13,53 @@ const FILTERS: { id: Filter; label: string }[] = [
 ]
 const SHOWN = 20
 const DEFAULT_TARGET = 'moon_site23_malapert'
+const PRIORITY_KEYS: { key: keyof SubScores; label: string }[] = [
+  { key: 'relief', label: 'Relief' },
+  { key: 'slope', label: 'Slope' },
+  { key: 'roughness', label: 'Roughness' },
+  { key: 'shape', label: 'Shape' },
+  { key: 'embedding', label: 'Image look-alike' },
+]
+const EQUAL: Record<keyof SubScores, number> = { relief: 1, slope: 1, roughness: 1, shape: 1, embedding: 1 }
+
+/** Weighted mean of the explanation bars with the planner's own weights. */
+function priorityScore(m: Match, w: Record<keyof SubScores, number>): number {
+  const total = PRIORITY_KEYS.reduce((a, { key }) => a + w[key], 0)
+  if (total === 0) return 0
+  return PRIORITY_KEYS.reduce((a, { key }) => a + w[key] * m.sub_scores[key], 0) / total
+}
+
+function PriorityPanel({ weights, onChange }: { weights: Record<keyof SubScores, number>; onChange: (w: Record<keyof SubScores, number>) => void }) {
+  return (
+    <details className="priorities">
+      <summary>Re-rank the shortlist by your priorities</summary>
+      <p className="small muted">
+        Weights apply to the explanation bars of the 50 shortlisted sites (0 = ignore, 3 = most important). The
+        similarity search itself is unchanged; this only reorders its shortlist.
+      </p>
+      <div className="priority-grid">
+        {PRIORITY_KEYS.map(({ key, label }) => (
+          <label key={key}>
+            <span>
+              {label} <strong>{weights[key]}</strong>
+            </span>
+            <input
+              type="range"
+              min={0}
+              max={3}
+              step={1}
+              value={weights[key]}
+              onChange={(e) => onChange({ ...weights, [key]: Number(e.target.value) })}
+            />
+          </label>
+        ))}
+      </div>
+      <button type="button" onClick={() => onChange(EQUAL)}>
+        Reset to similarity ranking
+      </button>
+    </details>
+  )
+}
 
 export function regionSetLabel(set: string): string {
   if (set === 'well_studied') return 'Region: a well-studied analog area'
@@ -58,6 +105,8 @@ export default function Explore() {
   const filter = (params.get('filter') as Filter) || 'all'
   const results = useJson<Results>(`results/${targetId}.json`)
   const [selected, setSelected] = useState<string | null>(null)
+  const [weights, setWeights] = useState<Record<keyof SubScores, number>>(EQUAL)
+  const custom = PRIORITY_KEYS.some(({ key }) => weights[key] !== 1)
   const itemRefs = useRef<Map<string, HTMLButtonElement>>(new Map())
 
   const target = targets.data?.find((t) => t.id === targetId) ?? null
@@ -65,8 +114,11 @@ export default function Explore() {
   const shown = useMemo(() => {
     const all = results.data?.matches ?? []
     const filtered = filter === 'all' || !hasNovelty ? all : all.filter((m) => m.novelty?.status === filter)
-    return filtered.slice(0, SHOWN)
-  }, [results.data, filter, hasNovelty])
+    const ordered = custom
+      ? [...filtered].sort((a, b) => priorityScore(b, weights) - priorityScore(a, weights) || a.rank - b.rank)
+      : filtered
+    return ordered.slice(0, SHOWN)
+  }, [results.data, filter, hasNovelty, custom, weights])
 
   useEffect(() => {
     setSelected(shown[0]?.site_id ?? null)
@@ -158,9 +210,11 @@ export default function Explore() {
               ))}
             </div>
           </div>
+          <PriorityPanel weights={weights} onChange={setWeights} />
           <p className="small muted">
             Similarity score (0–100) · showing {shown.length} of {results.data?.matches.length ?? 0} sites kept at
-            least 10 km apart. Use ↑ ↓ to move through the list.
+            least 10 km apart{custom ? ', reordered by your priorities (numbers are the original ranks)' : ''}. Use ↑ ↓
+            to move through the list.
           </p>
           <LoadState what="results" error={results.error} loading={results.loading} retry={results.retry} />
           <ol className="results-list" onKeyDown={onListKey}>
@@ -193,6 +247,7 @@ export default function Explore() {
                   </span>
                   <span className="result-score" aria-label={`similarity score ${m.score.toFixed(1)}`}>
                     {m.score.toFixed(1)}
+                    {custom && <span className="priority-score">priority {priorityScore(m, weights).toFixed(0)}</span>}
                   </span>
                 </button>
                 <Link className="result-open" to={`/site/${targetId}/${encodeURIComponent(m.site_id)}`}>

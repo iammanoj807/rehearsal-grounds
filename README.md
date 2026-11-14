@@ -14,13 +14,13 @@ Locations that Analog the Permanent Moon Base Locations and Mars*.
 
 ## How it works
 
-1. **Real terrain models.** NASA LRO LOLA 5 m/pix site DEMs for three lunar south-pole sites (Malapert massif,
-   Shackleton rim, Connecting ridge), the USGS Mars 2020 CTX DTM of the Jezero landing area, and ESA Copernicus DEM
+1. **Real terrain models.** NASA LRO LOLA 5 m/pix site DEMs for five lunar south-pole sites (Malapert massif,
+   Shackleton rim, Connecting ridge, de Gerlache rim, Leibnitz beta plateau), the USGS Mars 2020 CTX DTM of the Jezero landing area, and ESA Copernicus DEM
    GLO-30 for 30 Earth regions: 12 well-studied analogs, 12 less-studied candidates and 6 crater benchmark tiles.
 2. **One common grid.** Everything is resampled to 60 m: Earth to local UTM, the Moon in its polar stereographic
    metres, and Mars warped from equirectangular to an azimuthal equidistant projection centred on Jezero (otherwise
    east-west slopes at 18° N are stretched by 5%). The grids are cut into 64 × 64 px (3.84 km) patches with 50%
-   overlap: 65,555 on Earth, 375 on the targets.
+   overlap: 65,555 on Earth, 473 on the six targets.
 3. **Terrain fingerprint.** 20 rotation-invariant features a geologist can read: relief, hypsometric integral,
    slope statistics and histogram at 60 m and 120 m, roughness, ruggedness, curvature and a bowl-versus-dome
    index. A pretrained ResNet-18 adds a 64-d image embedding of each patch (hillshade, slope and detrended height
@@ -60,9 +60,9 @@ Validation page documents that fix.
 **V2, rediscovery.** Known analog regions rank in the top 1% for every target, but so do the discovery regions, so
 this measure does not separate the two sets. It is reported as context only.
 
-**V3, robustness.** The 90 m rerun gives Spearman ρ of 0.89, 0.90, 0.94 and 0.74 for the top-20 regions (Malapert,
-Shackleton rim, Connecting ridge, Jezero). With ±20% feature-group weight perturbations, 90–96% of top-10 sites stay
-in the top 10.
+**V3, robustness.** The 90 m rerun gives Spearman ρ between 0.74 (Jezero) and 0.94 (Connecting ridge) for the
+top-20 regions of the six targets. With ±20% feature-group weight perturbations, 90–97% of top-10 sites stay in
+the top 10.
 
 **V4, sanity checks.** All four pass: self-match = 100, 90° rotation keeps its own top match, flat plane = slope 0,
 gradient 0.1 = 5.71°.
@@ -112,7 +112,7 @@ Wikipedia and PANGAEA coordinates. See [`DATA_LICENSES.md`](DATA_LICENSES.md) fo
 - A 60 m grid cannot see boulders or small craters. The LOLA site maps are largely interpolated between laser tracks.
 - Copernicus DEM is a surface model, so vegetation and lakes distort it. Land-cover masks remove the worst cases.
 - The steepest target slopes have no close Earth match: Earth has a close terrain match for 73% of Malapert's
-  patches and 69% of Shackleton rim's.
+  patches and 69% of Shackleton rim's (96–100% for the other four targets).
 - The novelty catalogue is a set of points (21 sites), not a complete census of analog research.
 - Crater benchmark: seven craters, so the metrics carry wide uncertainty.
 

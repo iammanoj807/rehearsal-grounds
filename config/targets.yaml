@@ -7,7 +7,7 @@
 # Mazarico et al. 2011, Icarus 211, 1066-1081.
 # Mars: USGS Astrogeology Mars 2020 TRN CTX DTM mosaic (CC0), cite
 # Fergason et al. 2020, https://doi.org/10.5066/P906QQT8.
-# enabled: false targets are stretch items, switched on after the MVP deploys.
+# The two last targets were stretch items, switched on after the MVP was complete.
 
 targets:
   - id: moon_site23_malapert
@@ -62,23 +62,22 @@ targets:
   - id: moon_site11_de_gerlache_rim
     name: de Gerlache crater rim
     body: moon
-    enabled: false
+    enabled: true
     url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Site11_final_adj_5mpp_surf.tif
     product_url: https://pgda.gsfc.nasa.gov/products/78
     description: >-
-      PGDA landing-site DEM Site11, on the rim of de Gerlache crater. NASA
-      listed "de Gerlache Rim 2" among nine candidate Artemis III landing
-      regions (NASA release, 28 October 2024).
-    description_source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+      PGDA landing-site DEM Site11, "de Gerlache rim", one of the LOLA
+      south pole landing-site DEMs.
+    description_source_url: https://pgda.gsfc.nasa.gov/products/78
     citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
   - id: moon_site20_leibnitz_beta
     name: Leibnitz beta plateau
     body: moon
-    enabled: false
+    enabled: true
     url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site20/Site20_final_adj_5mpp_surf.tif
     product_url: https://pgda.gsfc.nasa.gov/products/78
     description: >-
-      PGDA landing-site DEM Site20, the Leibnitz beta plateau near the lunar
-      south pole.
+      PGDA landing-site DEM Site20, "Leibnitz beta plateau", one of the LOLA
+      south pole landing-site DEMs.
     description_source_url: https://pgda.gsfc.nasa.gov/products/78
     citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119

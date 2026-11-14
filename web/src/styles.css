@@ -382,6 +382,43 @@ main:focus {
   font-weight: 700;
   font-size: 1.25rem;
 }
+.priority-score {
+  display: block;
+  font: 600 0.72rem/1.2 var(--body);
+  color: var(--sienna);
+  text-align: right;
+}
+.priorities {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  background: #fff;
+}
+.priorities summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px 16px;
+  margin: 8px 0;
+}
+.priority-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+.priority-grid input {
+  accent-color: var(--sienna);
+}
+.priorities button {
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
 .result-open {
   display: flex;
   align-items: center;
@@ -744,7 +781,44 @@ main:focus {
   .score-block {
     align-items: flex-start;
   }
-  .result-open {
+  .priority-score {
+  display: block;
+  font: 600 0.72rem/1.2 var(--body);
+  color: var(--sienna);
+  text-align: right;
+}
+.priorities {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  background: #fff;
+}
+.priorities summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px 16px;
+  margin: 8px 0;
+}
+.priority-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+.priority-grid input {
+  accent-color: var(--sienna);
+}
+.priorities button {
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+.result-open {
     padding: 0 8px;
   }
 }

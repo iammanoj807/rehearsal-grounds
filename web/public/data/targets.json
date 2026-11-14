@@ -74,5 +74,43 @@
   "n_sites": 50,
   "hillshade_png": "img/targets/mars_jezero.png",
   "data_note": null
+ },
+ {
+  "id": "moon_site11_de_gerlache_rim",
+  "name": "de Gerlache crater rim",
+  "body": "moon",
+  "description": "PGDA landing-site DEM Site11, \"de Gerlache rim\", one of the LOLA south pole landing-site DEMs.",
+  "description_source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "data_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site11/Site11_final_adj_5mpp_surf.tif",
+  "citation": "Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",
+  "resolution_m": 60.0,
+  "n_patches": 49,
+  "centre_lat": -88.66362845423687,
+  "centre_lon": -67.684605362941,
+  "extent_km": 15.96,
+  "sigma": 0.561008041957069,
+  "n_sites": 50,
+  "hillshade_png": "img/targets/moon_site11_de_gerlache_rim.png",
+  "data_note": null
+ },
+ {
+  "id": "moon_site20_leibnitz_beta",
+  "name": "Leibnitz beta plateau",
+  "body": "moon",
+  "description": "PGDA landing-site DEM Site20, \"Leibnitz beta plateau\", one of the LOLA south pole landing-site DEMs.",
+  "description_source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "source_url": "https://pgda.gsfc.nasa.gov/products/78",
+  "data_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site20/Site20_final_adj_5mpp_surf.tif",
+  "citation": "Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",
+  "resolution_m": 60.0,
+  "n_patches": 49,
+  "centre_lat": -85.4213947618764,
+  "centre_lon": 31.56099133879923,
+  "extent_km": 15.96,
+  "sigma": 0.48184630835995595,
+  "n_sites": 50,
+  "hillshade_png": "img/targets/moon_site20_leibnitz_beta.png",
+  "data_note": null
  }
 ]

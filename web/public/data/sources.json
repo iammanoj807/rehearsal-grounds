@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-14T16:02:07+00:00",
+ "generated_at": "2026-11-14T16:15:32+00:00",
  "datasets": [
   {
    "id": "lola_site_dems",
    "name": "LOLA 5 m/pix south pole landing-site DEMs",
    "agency": "NASA GSFC Planetary Geology, Geophysics and Geochemistry Lab (PGDA)",
    "url": "https://pgda.gsfc.nasa.gov/products/78",
-   "used_for": "Moon target terrain (Malapert massif, Shackleton rim, Connecting ridge)",
+   "used_for": "Moon target terrain (Malapert massif, Shackleton rim, Connecting ridge, de Gerlache rim, Leibnitz beta plateau)",
    "licence": "NASA open data",
    "attribution": "LOLA data: NASA GSFC PGDA, Barker et al. (2021)",
    "citation": "Barker, M.K. et al. (2021). Improved LOLA Elevation Maps for South Pole Landing Sites: Error Estimates and Their Impact on Illumination Conditions. Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",

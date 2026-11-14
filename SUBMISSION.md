@@ -31,7 +31,7 @@ finds impact craters across continents with a mean ROC AUC of 0.976.
 
 ## Project details
 
-**What it does.** A field-test planner picks a target, such as the Malapert massif (one of NASA's candidate Artemis
+**What it does.** A field-test planner picks one of six targets, such as the Malapert massif (one of NASA's candidate Artemis
 III landing regions) or the Jezero landing area. The app shows the 50 best-matching Earth sites on a map and in a
 ranked list, each at least 10 km from the next. Every site opens a dossier with:
 
@@ -47,7 +47,7 @@ ranked list, each at least 10 km from the next. Every site opens a dossier with:
 
 1. Fetch real terrain models (LOLA 5 m site DEMs, the CTX DTM, Copernicus GLO-30 for 30 Earth regions).
 2. Resample everything to a common 60 m metric grid, warping Mars from equirectangular to an azimuthal equidistant
-   projection centred on Jezero, and cut 3.84 km patches: 65,555 on Earth and 375 on the targets.
+   projection centred on Jezero, and cut 3.84 km patches: 65,555 on Earth and 473 on the six targets.
 3. Compute 20 rotation-invariant terrain features and a ResNet-18 image embedding per patch.
 4. Remove vegetated, built-up, wet and flat Earth patches with ESA WorldCover. Score every remaining Earth patch
    against every target patch: 60% terrain fingerprint, 40% image embedding.
@@ -66,8 +66,8 @@ scores 85.3 of 100.
   - The 20 readable terrain features alone reach 0.632, about the same as relief alone (0.629).
   - Random scores 0.546.
   - Our first version had a leak, which we found and fixed; the Validation page explains it.
-- **Robustness.** A 90 m rerun keeps the top-20 region ranking (Spearman ρ 0.89, 0.90, 0.94 and 0.74 for the four
-  targets). With ±20% weight changes, 90–96% of top-10 sites stay in the top 10.
+- **Robustness.** A 90 m rerun keeps the top-20 region ranking (Spearman ρ 0.74–0.94 across the six targets).
+  With ±20% weight changes, 90–97% of top-10 sites stay in the top 10.
 - **Sanity checks.** All four pass.
 - **Rediscovery of known analogs.** Saturated, so it is reported as context only.
 
@@ -76,7 +76,7 @@ scores 85.3 of 100.
 - Site-scale matching: a 60 m grid and 3.84 km patches.
 - Side-by-side terrain evidence for every match.
 - A per-target terrain coverage figure: Earth has a close match for 73% of Malapert's patches, 69% of Shackleton
-  rim's, and 100% of Connecting ridge's and Jezero's.
+  rim's, 96% of de Gerlache rim's and Leibnitz beta's, and 100% of Connecting ridge's and Jezero's.
 - A benchmark with clean ground truth, plus an honest ablation.
 - Less-studied sites flagged by distance to a sourced catalogue. Examples: Puna de Atacama for Shackleton rim (about
   200 km from the nearest catalogued analog); Harrat Khaybar for Jezero (more than 3,500 km).
@@ -95,7 +95,7 @@ Pydantic, React, TypeScript, Vite, Leaflet, GitHub Pages.
 
 **What comes next.**
 
-- More targets: de Gerlache rim, Leibnitz beta plateau, Gale crater, and a lunar pit for the caves consideration.
+- More targets: Gale crater, other Artemis candidate regions, and a lunar pit for the caves consideration.
 - Finer Earth DEMs inside the best regions.
 - LRO Diviner temperatures beside the Earth climate values.
 - Process tags (impact, volcanic, aeolian, glacial).
@@ -104,7 +104,7 @@ Pydantic, React, TypeScript, Vite, Leaflet, GitHub Pages.
 ## Space agency data
 
 - **NASA LRO LOLA 5 m south-pole site DEMs (GSFC PGDA):** Moon target terrain (Malapert massif, Shackleton rim,
-  Connecting ridge).
+  Connecting ridge, de Gerlache rim, Leibnitz beta plateau).
 - **USGS Astrogeology Mars 2020 TRN CTX DTM:** Mars target terrain (Jezero landing area).
 - **ESA Copernicus DEM GLO-30:** Earth terrain for all 30 regions.
 - **ESA WorldCover 2021:** vegetation, cropland, built-up and water masks, and the bare and snow-ice shares around
