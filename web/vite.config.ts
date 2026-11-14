@@ -1,7 +1,8 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 
-// https://vite.dev/config/
+// Served from https://<user>.github.io/rehearsal-grounds/ on GitHub Pages.
 export default defineConfig({
+  base: '/rehearsal-grounds/',
   plugins: [react()],
 })
