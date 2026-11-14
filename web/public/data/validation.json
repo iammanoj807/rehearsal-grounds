@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-14T18:24:15+00:00",
- "config_hash": "0cbe69f070020b9f9c01e7a299717dbb0544c2fab4d309a0523614005775db55",
+ "generated_at": "2026-11-14T21:42:39+00:00",
+ "config_hash": "c8d09b9ca5bcc9be1c86a932d767433c1e8a4c3788f0ab0b0eee499c6eeec6e3",
  "v1_crater_retrieval": {
   "n_craters": 7,
   "n_query_patches": 7,
@@ -54,12 +54,12 @@
    },
    {
     "id": "combined_moon_sigma",
-    "label": "Combined, Moon-target sigma (0.71)",
-    "mean_auc": 0.8847828261378146,
-    "mrr": 0.019360885041331957,
-    "hit_at_10": 0.0,
-    "hit_at_50": 0.2857142857142857,
-    "mean_auc_hard": 0.8417305200401793
+    "label": "Combined, Moon-target sigma (0.68)",
+    "mean_auc": 0.8893546368166124,
+    "mrr": 0.02263811675673804,
+    "hit_at_10": 0.14285714285714285,
+    "hit_at_50": 0.42857142857142855,
+    "mean_auc_hard": 0.8477840278346964
    }
   ],
   "per_crater": [
@@ -75,7 +75,7 @@
      "features": 0.709421151985279,
      "embedding": 0.9996446644140928,
      "combined": 0.9996446644140928,
-     "combined_moon_sigma": 0.9977680483510208
+     "combined_moon_sigma": 0.9982360126271038
     },
     "first_hit_rank": {
      "random": 2988,
@@ -83,7 +83,7 @@
      "features": 882,
      "embedding": 1,
      "combined": 1,
-     "combined_moon_sigma": 60
+     "combined_moon_sigma": 49
     }
    },
    {
@@ -98,7 +98,7 @@
      "features": 0.582864358982305,
      "embedding": 0.9889615420372494,
      "combined": 0.9889615420372494,
-     "combined_moon_sigma": 0.9721559391366327
+     "combined_moon_sigma": 0.9763875546189842
     },
     "first_hit_rank": {
      "random": 4429,
@@ -106,7 +106,7 @@
      "features": 1976,
      "embedding": 1,
      "combined": 1,
-     "combined_moon_sigma": 316
+     "combined_moon_sigma": 264
     }
    },
    {
@@ -121,7 +121,7 @@
      "features": 0.6067428960986644,
      "embedding": 0.9790709925319947,
      "combined": 0.9760032227076942,
-     "combined_moon_sigma": 0.7626847634098727
+     "combined_moon_sigma": 0.7698940224969787
     },
     "first_hit_rank": {
      "random": 9922,
@@ -129,7 +129,7 @@
      "features": 6401,
      "embedding": 179,
      "combined": 313,
-     "combined_moon_sigma": 2841
+     "combined_moon_sigma": 2981
     }
    },
    {
@@ -144,7 +144,7 @@
      "features": 0.7180375985284645,
      "embedding": 0.9804592129233044,
      "combined": 0.9781837338663444,
-     "combined_moon_sigma": 0.8798821532052602
+     "combined_moon_sigma": 0.8855066593178432
     },
     "first_hit_rank": {
      "random": 6067,
@@ -152,7 +152,7 @@
      "features": 3007,
      "embedding": 3,
      "combined": 108,
-     "combined_moon_sigma": 642
+     "combined_moon_sigma": 715
     }
    },
    {
@@ -167,7 +167,7 @@
      "features": 0.4629844573598641,
      "embedding": 0.9403043731811279,
      "combined": 0.9403043731811279,
-     "combined_moon_sigma": 0.9392619992731555
+     "combined_moon_sigma": 0.9396578196355072
     },
     "first_hit_rank": {
      "random": 2271,
@@ -175,7 +175,7 @@
      "features": 14714,
      "embedding": 4,
      "combined": 4,
-     "combined_moon_sigma": 12
+     "combined_moon_sigma": 9
     }
    },
    {
@@ -190,7 +190,7 @@
      "features": 0.5600900385678346,
      "embedding": 0.9489631196842452,
      "combined": 0.9482855766440631,
-     "combined_moon_sigma": 0.716527824340276
+     "combined_moon_sigma": 0.727176941562265
     },
     "first_hit_rank": {
      "random": 6665,
@@ -198,7 +198,7 @@
      "features": 13566,
      "embedding": 1,
      "combined": 3,
-     "combined_moon_sigma": 6712
+     "combined_moon_sigma": 6711
     }
    },
    {
@@ -213,7 +213,7 @@
      "features": 0.7818195099599565,
      "embedding": 0.9976713247550132,
      "combined": 0.9973348621720873,
-     "combined_moon_sigma": 0.9251990552484842
+     "combined_moon_sigma": 0.9286234474576046
     },
     "first_hit_rank": {
      "random": 2907,
@@ -221,7 +221,7 @@
      "features": 2085,
      "embedding": 1,
      "combined": 9,
-     "combined_moon_sigma": 33
+     "combined_moon_sigma": 47
     }
    }
   ],
@@ -249,68 +249,68 @@
   "craters_missing": [],
   "description": "A patch centred on each benchmark crater is the query. It ranks every regular 3.84 km grid patch from the other regions. A grid patch counts as a hit when its window fully contains another benchmark crater's rim (|dx| and |dy| at most 1.92 km minus half the crater diameter); grid patches within 5 km of a crater that do not contain it are left out. Positives per crater: Barringer (Meteor Crater) 1, New Quebec (Pingualuit) 0, Lonar 1, Roter Kamm 0, Tenoumer 1, Tswaing (formerly Pretoria Saltpan) 4, Wolfe Creek 4. Craters with no positive (rim wider than the window allows at the grid offset) still act as queries.",
   "index": "Index: all valid Earth grid patches (land-cover masks off).",
-  "combined_note": "The Earth-to-Earth combined row uses sigma 0.163, at which the terrain term is close to zero for most crater pairs, so it tracks the embedding. The app's Moon targets use sigma 0.46-0.93, where the terrain term carries real weight; the Moon-target row uses their median (0.71) and is the closer match to the app's ranker.",
+  "combined_note": "The Earth-to-Earth combined row uses sigma 0.163, at which the terrain term is close to zero for most crater pairs, so it tracks the embedding. The app's Moon targets use sigma 0.46-0.93, where the terrain term carries real weight; the Moon-target row uses their median (0.68) and is the closer match to the app's ranker.",
   "hard_negative_note": "Hard negatives: only the non-crater patches (more than 5 km from any benchmark crater) of the other crater tiles, on average 6,495 per query. These are non-crater terrain from the same landscapes as the other benchmark craters, so a ranker that only recognised the landscape type would score close to chance (0.5) here.",
   "weights_note": "Why the app still weights terrain features 60%: they carry the slope, relief and roughness values that operations planning needs, and the 0.6/0.4 split was set before this benchmark existed. Changing it now, after seeing these results, would tune the method on its own test set. V3 reports how the top 10 changes under other splits.",
-  "finding": "At 60 m the 20 interpretable terrain features alone recognise 1-3 km craters only weakly (AUC 0.63, about the same as relief alone at 0.63, random 0.55); the learned image embedding does much better (AUC 0.98, another crater in the top 10 for 86% of queries). Against hard negatives (non-crater patches from the other crater tiles) the embedding's AUC is 0.98 and the features' 0.54. With the Moon-target sigma the combined score reaches AUC 0.88. The app uses both: feature values to explain a match in physical units, and the embedding to rank landform shape.",
+  "finding": "At 60 m the 20 interpretable terrain features alone recognise 1-3 km craters only weakly (AUC 0.63, about the same as relief alone at 0.63, random 0.55); the learned image embedding does much better (AUC 0.98, another crater in the top 10 for 86% of queries). Against hard negatives (non-crater patches from the other crater tiles) the embedding's AUC is 0.98 and the features' 0.54. With the Moon-target sigma the combined score reaches AUC 0.89. The app uses both: feature values to explain a match in physical units, and the embedding to rank landform shape.",
   "revision_note": "An earlier version of this test also used the crater-centred patches as the relevant candidates. The embedding then ranked another crater first for every query (mean reciprocal rank 1.00, AUC 0.979), an artefact of exact centring that a real search never has. Candidates are now regular grid patches only; the positive rule above was fixed from geometry before this run.",
   "masked": {
-   "description": "Same test on the masked search index used by the app (1 query crater survives the masks; removed by the land-cover masks: Barringer (Meteor Crater), Lonar, New Quebec (Pingualuit), Tenoumer, Tswaing (formerly Pretoria Saltpan), Wolfe Creek). With fewer than three query craters these numbers are not meaningful; they are shown for completeness only.",
-   "n_craters": 1,
+   "description": "Same test on the masked search index used by the app (3 query craters survive the masks; removed by the land-cover masks: Lonar, New Quebec (Pingualuit), Tswaing (formerly Pretoria Saltpan), Wolfe Creek).",
+   "n_craters": 3,
    "rankers": [
     {
      "id": "random",
      "label": "Random",
-     "mean_auc": 0.22543570146488334,
-     "mrr": 3.737479443863059e-05,
+     "mean_auc": 0.3894807506774667,
+     "mrr": 4.396606101744402e-05,
      "hit_at_10": 0.0,
      "hit_at_50": 0.0,
-     "mean_auc_hard": 0.24045801526717558
+     "mean_auc_hard": 0.3855148703233075
     },
     {
      "id": "relief_only",
      "label": "One feature: relief only",
-     "mean_auc": 0.738231717908633,
-     "mrr": 0.00011058277120424638,
+     "mean_auc": 0.8846451220158366,
+     "mrr": 0.013507195541317787,
      "hit_at_10": 0.0,
-     "hit_at_50": 0.0,
-     "mean_auc_hard": 0.9152671755725191
+     "hit_at_50": 0.3333333333333333,
+     "mean_auc_hard": 0.9229566942888555
     },
     {
      "id": "features",
      "label": "Terrain features only",
-     "mean_auc": 0.5195414278269932,
-     "mrr": 6.0251852744471894e-05,
+     "mean_auc": 0.2315634256315676,
+     "mrr": 3.541243559417002e-05,
      "hit_at_10": 0.0,
      "hit_at_50": 0.0,
-     "mean_auc_hard": 0.7061068702290076
+     "mean_auc_hard": 0.13575716130083093
     },
     {
      "id": "embedding",
      "label": "Image embedding only",
-     "mean_auc": 1.0,
-     "mrr": 1.0,
-     "hit_at_10": 1.0,
-     "hit_at_50": 1.0,
-     "mean_auc_hard": 1.0
+     "mean_auc": 0.9816489333605084,
+     "mrr": 0.33654084465153167,
+     "hit_at_10": 0.3333333333333333,
+     "hit_at_50": 0.3333333333333333,
+     "mean_auc_hard": 0.9763900649544035
     },
     {
      "id": "combined",
      "label": "Combined, Earth-to-Earth sigma (0.16)",
-     "mean_auc": 0.9999420994731052,
-     "mrr": 0.3333333333333333,
-     "hit_at_10": 1.0,
-     "hit_at_50": 1.0,
-     "mean_auc_hard": 1.0
+     "mean_auc": 0.9801784840782654,
+     "mrr": 0.11429369993611478,
+     "hit_at_10": 0.3333333333333333,
+     "hit_at_50": 0.3333333333333333,
+     "mean_auc_hard": 0.975278332590225
     },
     {
      "id": "combined_moon_sigma",
-     "label": "Combined, Moon-target sigma (0.71)",
-     "mean_auc": 0.8268484743211163,
-     "mrr": 0.00016716817118020728,
+     "label": "Combined, Moon-target sigma (0.68)",
+     "mean_auc": 0.7293679150499909,
+     "mrr": 0.001222357640979857,
      "hit_at_10": 0.0,
      "hit_at_50": 0.0,
-     "mean_auc_hard": 0.9526717557251908
+     "mean_auc_hard": 0.7015101445417119
     }
    ]
   }
@@ -319,26 +319,26 @@
   "note": "Known analogs ranking high is consistent with, but not proof of, a good method: those sites were chosen for many reasons beyond terrain. Values are the percentile (100 = best) of each region's best patch among all searchable Earth patches, then the median over the regions in each set. This measure is saturated: with about 2,000 patches per region, almost any region's best patch lands in the top 1%, so it does not separate the two sets.",
   "targets": {
    "moon_site23_malapert": {
-    "well_studied_median": 99.57363903320532,
-    "discovery_median": 99.12468940591823,
+    "well_studied_median": 99.87669262210855,
+    "discovery_median": 99.27728175735848,
     "regions": [
      {
       "region_id": "meteor_crater",
       "name": "Meteor Crater, Arizona",
       "set": "well_studied",
-      "best_percentile": 97.39948046080868
+      "best_percentile": 97.60235654099971
      },
      {
       "region_id": "sp_crater",
       "name": "SP Crater, San Francisco volcanic field, Arizona",
       "set": "well_studied",
-      "best_percentile": 96.94488366839846
+      "best_percentile": 98.67787089260841
      },
      {
       "region_id": "haughton",
       "name": "Haughton crater, Devon Island",
       "set": "well_studied",
-      "best_percentile": 99.83623221142986
+      "best_percentile": 99.92921243121047
      },
      {
       "region_id": "atacama_yungay",
@@ -350,43 +350,43 @@
       "region_id": "death_valley",
       "name": "Death Valley, California",
       "set": "well_studied",
-      "best_percentile": 99.57363903320532
+      "best_percentile": 99.92007855136666
      },
      {
       "region_id": "hawaii_kilauea_maunakea",
       "name": "K\u012blauea and Mauna Kea, Hawai\u02bbi",
       "set": "well_studied",
-      "best_percentile": 99.99717641743844
+      "best_percentile": 99.99771653003904
      },
      {
       "region_id": "askja",
       "name": "Askja and the Icelandic highlands",
       "set": "well_studied",
-      "best_percentile": 99.85317370679918
+      "best_percentile": 99.87669262210855
      },
      {
       "region_id": "lanzarote_timanfaya",
       "name": "Lanzarote (Timanfaya lava fields)",
       "set": "well_studied",
-      "best_percentile": 96.95335441608313
+      "best_percentile": 98.52487840522458
      },
      {
       "region_id": "mcmurdo_dry_valleys",
       "name": "McMurdo Dry Valleys",
       "set": "well_studied",
-      "best_percentile": 99.97176417438446
+      "best_percentile": 99.97716530039047
      },
      {
       "region_id": "bockfjorden",
       "name": "Bockfjorden, Svalbard",
       "set": "well_studied",
-      "best_percentile": 90.99277162864242
+      "best_percentile": 91.3022629187313
      },
      {
       "region_id": "hanksville",
       "name": "Hanksville area (Mars Desert Research Station), Utah",
       "set": "well_studied",
-      "best_percentile": 97.82301784504179
+      "best_percentile": 98.90850135866462
      },
      {
       "region_id": "ries",
@@ -398,109 +398,109 @@
       "region_id": "tibesti",
       "name": "Tibesti massif",
       "set": "discovery",
-      "best_percentile": 99.76281906482946
+      "best_percentile": 99.79905464343616
      },
      {
       "region_id": "ahaggar",
       "name": "Ahaggar (Hoggar) mountains",
       "set": "discovery",
-      "best_percentile": 99.56234470295911
+      "best_percentile": 99.62779439636472
      },
      {
       "region_id": "danakil",
       "name": "Danakil Depression",
       "set": "discovery",
-      "best_percentile": 99.12468940591823
+      "best_percentile": 99.23732103304181
      },
      {
       "region_id": "puna_de_atacama",
       "name": "Puna de Atacama",
       "set": "discovery",
-      "best_percentile": 99.9689405918229
+      "best_percentile": 99.97488183042952
      },
      {
       "region_id": "lut",
       "name": "Lut Desert",
       "set": "discovery",
-      "best_percentile": 99.9011746103456
+      "best_percentile": 99.91551161144476
      },
      {
       "region_id": "qaidam",
       "name": "Qaidam Basin",
       "set": "discovery",
-      "best_percentile": 93.95753331827423
+      "best_percentile": 94.19998629918024
      },
      {
       "region_id": "upper_mustang",
       "name": "Upper Mustang",
       "set": "discovery",
-      "best_percentile": 98.53738423311498
+      "best_percentile": 98.6733039526865
      },
      {
       "region_id": "namib",
       "name": "Namib desert",
       "set": "discovery",
-      "best_percentile": 99.68093517054439
+      "best_percentile": 99.76023565409997
      },
      {
       "region_id": "pilbara",
       "name": "Pilbara",
       "set": "discovery",
-      "best_percentile": null
+      "best_percentile": 97.9836960244788
      },
      {
       "region_id": "harrat_khaybar",
       "name": "Harrat Khaybar",
       "set": "discovery",
-      "best_percentile": 98.7576236729162
+      "best_percentile": 98.88795012901605
      },
      {
       "region_id": "bayuda",
       "name": "Bayuda volcanic field",
       "set": "discovery",
-      "best_percentile": 95.70533092387622
+      "best_percentile": 95.9240061196995
      },
      {
       "region_id": "salar_de_uyuni",
       "name": "Salar de Uyuni margin",
       "set": "discovery",
-      "best_percentile": 70.11237858594986
+      "best_percentile": 99.31724248167515
      }
     ]
    },
    "moon_site04_shackleton_rim": {
-    "well_studied_median": 99.347752428281,
-    "discovery_median": 99.02021685114073,
+    "well_studied_median": 99.73740095449044,
+    "discovery_median": 99.2567305277099,
     "regions": [
      {
       "region_id": "meteor_crater",
       "name": "Meteor Crater, Arizona",
       "set": "well_studied",
-      "best_percentile": 89.21391461486334
+      "best_percentile": 95.94912428926997
      },
      {
       "region_id": "sp_crater",
       "name": "SP Crater, San Francisco volcanic field, Arizona",
       "set": "well_studied",
-      "best_percentile": 93.87000225886605
+      "best_percentile": 98.9724385175713
      },
      {
       "region_id": "haughton",
       "name": "Haughton crater, Devon Island",
       "set": "well_studied",
-      "best_percentile": 99.69787666591371
+      "best_percentile": 99.73740095449044
      },
      {
       "region_id": "atacama_yungay",
       "name": "Atacama Desert near Yungay",
       "set": "well_studied",
-      "best_percentile": 99.98305850463068
+      "best_percentile": 99.98629918023428
      },
      {
       "region_id": "death_valley",
       "name": "Death Valley, California",
       "set": "well_studied",
-      "best_percentile": 99.347752428281
+      "best_percentile": 99.81047199324092
      },
      {
       "region_id": "hawaii_kilauea_maunakea",
@@ -512,31 +512,31 @@
       "region_id": "askja",
       "name": "Askja and the Icelandic highlands",
       "set": "well_studied",
-      "best_percentile": 99.99717641743844
+      "best_percentile": 99.99771653003904
      },
      {
       "region_id": "lanzarote_timanfaya",
       "name": "Lanzarote (Timanfaya lava fields)",
       "set": "well_studied",
-      "best_percentile": 95.1406144115654
+      "best_percentile": 97.10912702943392
      },
      {
       "region_id": "mcmurdo_dry_valleys",
       "name": "McMurdo Dry Valleys",
       "set": "well_studied",
-      "best_percentile": 99.99435283487689
+      "best_percentile": 99.9954330600781
      },
      {
       "region_id": "bockfjorden",
       "name": "Bockfjorden, Svalbard",
       "set": "well_studied",
-      "best_percentile": 98.63338604020781
+      "best_percentile": 98.8034617404608
      },
      {
       "region_id": "hanksville",
       "name": "Hanksville area (Mars Desert Research Station), Utah",
       "set": "well_studied",
-      "best_percentile": 96.80652812288231
+      "best_percentile": 97.98141255451785
      },
      {
       "region_id": "ries",
@@ -548,109 +548,109 @@
       "region_id": "tibesti",
       "name": "Tibesti massif",
       "set": "discovery",
-      "best_percentile": 99.02021685114073
+      "best_percentile": 99.13456488479893
      },
      {
       "region_id": "ahaggar",
       "name": "Ahaggar (Hoggar) mountains",
       "set": "discovery",
-      "best_percentile": 99.30257510729614
+      "best_percentile": 99.37889617062088
      },
      {
       "region_id": "danakil",
       "name": "Danakil Depression",
       "set": "discovery",
-      "best_percentile": 98.66162186582336
+      "best_percentile": 98.82629644007034
      },
      {
       "region_id": "puna_de_atacama",
       "name": "Puna de Atacama",
       "set": "discovery",
-      "best_percentile": 99.99152925231533
+      "best_percentile": 99.99314959011714
      },
      {
       "region_id": "lut",
       "name": "Lut Desert",
       "set": "discovery",
-      "best_percentile": 99.70634741359838
+      "best_percentile": 99.7442513643733
      },
      {
       "region_id": "qaidam",
       "name": "Qaidam Basin",
       "set": "discovery",
-      "best_percentile": 87.1555229274904
+      "best_percentile": 88.35658666910237
      },
      {
       "region_id": "upper_mustang",
       "name": "Upper Mustang",
       "set": "discovery",
-      "best_percentile": 99.63011068443642
+      "best_percentile": 99.67118032562281
      },
      {
       "region_id": "namib",
       "name": "Namib desert",
       "set": "discovery",
-      "best_percentile": 99.73175965665236
+      "best_percentile": 99.76936953394379
      },
      {
       "region_id": "pilbara",
       "name": "Pilbara",
       "set": "discovery",
-      "best_percentile": null
+      "best_percentile": 97.54526979197588
      },
      {
       "region_id": "harrat_khaybar",
       "name": "Harrat Khaybar",
       "set": "discovery",
-      "best_percentile": 96.28698893155637
+      "best_percentile": 96.73692142579864
      },
      {
       "region_id": "bayuda",
       "name": "Bayuda volcanic field",
       "set": "discovery",
-      "best_percentile": 96.04133724870115
+      "best_percentile": 96.52227524946909
      },
      {
       "region_id": "salar_de_uyuni",
       "name": "Salar de Uyuni margin",
       "set": "discovery",
-      "best_percentile": 92.28314885927264
+      "best_percentile": 99.8310232228895
      }
     ]
    },
    "moon_site01_connecting_ridge": {
-    "well_studied_median": 98.94962728710188,
-    "discovery_median": 98.277614637452,
+    "well_studied_median": 99.71913319480282,
+    "discovery_median": 98.82172950014842,
     "regions": [
      {
       "region_id": "meteor_crater",
       "name": "Meteor Crater, Arizona",
       "set": "well_studied",
-      "best_percentile": 92.33962051050372
+      "best_percentile": 95.60432032516613
      },
      {
       "region_id": "sp_crater",
       "name": "SP Crater, San Francisco volcanic field, Arizona",
       "set": "well_studied",
-      "best_percentile": 91.65348994804609
+      "best_percentile": 97.90377457584546
      },
      {
       "region_id": "haughton",
       "name": "Haughton crater, Devon Island",
       "set": "well_studied",
-      "best_percentile": 99.66399367517506
+      "best_percentile": 99.71913319480282
      },
      {
       "region_id": "atacama_yungay",
       "name": "Atacama Desert near Yungay",
       "set": "well_studied",
-      "best_percentile": 99.99435283487689
+      "best_percentile": 99.9954330600781
      },
      {
       "region_id": "death_valley",
       "name": "Death Valley, California",
       "set": "well_studied",
-      "best_percentile": 98.94962728710188
+      "best_percentile": 99.84700751261617
      },
      {
       "region_id": "hawaii_kilauea_maunakea",
@@ -662,31 +662,31 @@
       "region_id": "askja",
       "name": "Askja and the Icelandic highlands",
       "set": "well_studied",
-      "best_percentile": 99.98870566975378
+      "best_percentile": 99.99086612015618
      },
      {
       "region_id": "lanzarote_timanfaya",
       "name": "Lanzarote (Timanfaya lava fields)",
       "set": "well_studied",
-      "best_percentile": 92.55985995030494
+      "best_percentile": 97.94944397506451
      },
      {
       "region_id": "mcmurdo_dry_valleys",
       "name": "McMurdo Dry Valleys",
       "set": "well_studied",
-      "best_percentile": 99.95482267901514
+      "best_percentile": 99.96346448062475
      },
      {
       "region_id": "bockfjorden",
       "name": "Bockfjorden, Svalbard",
       "set": "well_studied",
-      "best_percentile": 78.69324599051276
+      "best_percentile": 80.4101112049871
      },
      {
       "region_id": "hanksville",
       "name": "Hanksville area (Mars Desert Research Station), Utah",
       "set": "well_studied",
-      "best_percentile": 96.78958662751299
+      "best_percentile": 98.96558810768845
      },
      {
       "region_id": "ries",
@@ -698,115 +698,115 @@
       "region_id": "tibesti",
       "name": "Tibesti massif",
       "set": "discovery",
-      "best_percentile": 99.08233566749492
+      "best_percentile": 99.22133674331513
      },
      {
       "region_id": "ahaggar",
       "name": "Ahaggar (Hoggar) mountains",
       "set": "discovery",
-      "best_percentile": 99.02868759882539
+      "best_percentile": 99.17338387413514
      },
      {
       "region_id": "danakil",
       "name": "Danakil Depression",
       "set": "discovery",
-      "best_percentile": 98.00372712898125
+      "best_percentile": 98.21660996049597
      },
      {
       "region_id": "puna_de_atacama",
       "name": "Puna de Atacama",
       "set": "discovery",
-      "best_percentile": 99.88423311497628
+      "best_percentile": 99.90637773160094
      },
      {
       "region_id": "lut",
       "name": "Lut Desert",
       "set": "discovery",
-      "best_percentile": 99.77693697763722
+      "best_percentile": 99.81503893316284
      },
      {
       "region_id": "qaidam",
       "name": "Qaidam Basin",
       "set": "discovery",
-      "best_percentile": 95.459679241021
+      "best_percentile": 95.85778549083187
      },
      {
       "region_id": "upper_mustang",
       "name": "Upper Mustang",
       "set": "discovery",
-      "best_percentile": 98.277614637452
+      "best_percentile": 98.47007512616172
      },
      {
       "region_id": "namib",
       "name": "Namib desert",
       "set": "discovery",
-      "best_percentile": 98.9976281906483
+      "best_percentile": 99.6529125659352
      },
      {
       "region_id": "pilbara",
       "name": "Pilbara",
       "set": "discovery",
-      "best_percentile": null
+      "best_percentile": 94.42604982531455
      },
      {
       "region_id": "harrat_khaybar",
       "name": "Harrat Khaybar",
       "set": "discovery",
-      "best_percentile": 95.64603569008358
+      "best_percentile": 96.03817961774713
      },
      {
       "region_id": "bayuda",
       "name": "Bayuda volcanic field",
       "set": "discovery",
-      "best_percentile": 92.75751072961373
+      "best_percentile": 93.28659831479916
      },
      {
       "region_id": "salar_de_uyuni",
       "name": "Salar de Uyuni margin",
       "set": "discovery",
-      "best_percentile": 79.53467359385589
+      "best_percentile": 99.20991939351038
      }
     ]
    },
    "mars_jezero": {
-    "well_studied_median": 99.16421956177999,
-    "discovery_median": 99.89270386266094,
+    "well_studied_median": 99.60267622679423,
+    "discovery_median": 99.91208640650332,
     "regions": [
      {
       "region_id": "meteor_crater",
       "name": "Meteor Crater, Arizona",
       "set": "well_studied",
-      "best_percentile": 99.58210978089
+      "best_percentile": 99.89724385175712
      },
      {
       "region_id": "sp_crater",
       "name": "SP Crater, San Francisco volcanic field, Arizona",
       "set": "well_studied",
-      "best_percentile": 99.94917551389203
+      "best_percentile": 99.95889754070285
      },
      {
       "region_id": "haughton",
       "name": "Haughton crater, Devon Island",
       "set": "well_studied",
-      "best_percentile": 98.91292071380167
+      "best_percentile": 99.60267622679423
      },
      {
       "region_id": "atacama_yungay",
       "name": "Atacama Desert near Yungay",
       "set": "well_studied",
-      "best_percentile": 99.61599277162864
+      "best_percentile": 99.66204644577901
      },
      {
       "region_id": "death_valley",
       "name": "Death Valley, California",
       "set": "well_studied",
-      "best_percentile": 99.16421956177999
+      "best_percentile": 99.276140022378
      },
      {
       "region_id": "hawaii_kilauea_maunakea",
       "name": "K\u012blauea and Mauna Kea, Hawai\u02bbi",
       "set": "well_studied",
-      "best_percentile": 96.09216173480912
+      "best_percentile": 96.52227524946909
      },
      {
       "region_id": "askja",
@@ -818,25 +818,25 @@
       "region_id": "lanzarote_timanfaya",
       "name": "Lanzarote (Timanfaya lava fields)",
       "set": "well_studied",
-      "best_percentile": 97.2808899932234
+      "best_percentile": 97.45621446349874
      },
      {
       "region_id": "mcmurdo_dry_valleys",
       "name": "McMurdo Dry Valleys",
       "set": "well_studied",
-      "best_percentile": 95.61497628190648
+      "best_percentile": 95.95597469915283
      },
      {
       "region_id": "bockfjorden",
       "name": "Bockfjorden, Svalbard",
       "set": "well_studied",
-      "best_percentile": 60.28066410661848
+      "best_percentile": 90.35462288493595
      },
      {
       "region_id": "hanksville",
       "name": "Hanksville area (Mars Desert Research Station), Utah",
       "set": "well_studied",
-      "best_percentile": 99.97458775694601
+      "best_percentile": 99.97944877035142
      },
      {
       "region_id": "ries",
@@ -848,127 +848,127 @@
       "region_id": "tibesti",
       "name": "Tibesti massif",
       "set": "discovery",
-      "best_percentile": 99.62446351931331
+      "best_percentile": 99.67574726554473
      },
      {
       "region_id": "ahaggar",
       "name": "Ahaggar (Hoggar) mountains",
       "set": "discovery",
-      "best_percentile": 99.97741133950757
+      "best_percentile": 99.98173224031238
      },
      {
       "region_id": "danakil",
       "name": "Danakil Depression",
       "set": "discovery",
-      "best_percentile": 99.92941043596115
+      "best_percentile": 99.94976366085905
      },
      {
       "region_id": "puna_de_atacama",
       "name": "Puna de Atacama",
       "set": "discovery",
-      "best_percentile": 99.98588208719222
+      "best_percentile": 99.98858265019524
      },
      {
       "region_id": "lut",
       "name": "Lut Desert",
       "set": "discovery",
-      "best_percentile": 99.88988028009939
+      "best_percentile": 99.91094467152284
      },
      {
       "region_id": "qaidam",
       "name": "Qaidam Basin",
       "set": "discovery",
-      "best_percentile": 99.89270386266094
+      "best_percentile": 99.9132281414838
      },
      {
       "region_id": "upper_mustang",
       "name": "Upper Mustang",
       "set": "discovery",
-      "best_percentile": 84.96442285972442
+      "best_percentile": 85.46571369853629
      },
      {
       "region_id": "namib",
       "name": "Namib desert",
       "set": "discovery",
-      "best_percentile": 99.96329342669979
+      "best_percentile": 99.97031489050761
      },
      {
       "region_id": "pilbara",
       "name": "Pilbara",
       "set": "discovery",
-      "best_percentile": null
+      "best_percentile": 97.77590025803211
      },
      {
       "region_id": "harrat_khaybar",
       "name": "Harrat Khaybar",
       "set": "discovery",
-      "best_percentile": 99.99717641743844
+      "best_percentile": 99.99771653003904
      },
      {
       "region_id": "bayuda",
       "name": "Bayuda volcanic field",
       "set": "discovery",
-      "best_percentile": 99.04562909419471
+      "best_percentile": 99.14598223460371
      },
      {
       "region_id": "salar_de_uyuni",
       "name": "Salar de Uyuni margin",
       "set": "discovery",
-      "best_percentile": 80.07962502823582
+      "best_percentile": 98.19377526088644
      }
     ]
    },
    "moon_site11_de_gerlache_rim": {
-    "well_studied_median": 99.2009261350802,
-    "discovery_median": 98.8677433928168,
+    "well_studied_median": 99.32180942159705,
+    "discovery_median": 99.0261000616537,
     "regions": [
      {
       "region_id": "meteor_crater",
       "name": "Meteor Crater, Arizona",
       "set": "well_studied",
-      "best_percentile": 94.54766207363903
+      "best_percentile": 94.99006690566985
      },
      {
       "region_id": "sp_crater",
       "name": "SP Crater, San Francisco volcanic field, Arizona",
       "set": "well_studied",
-      "best_percentile": 94.36130562457646
+      "best_percentile": 97.06117416025393
      },
      {
       "region_id": "haughton",
       "name": "Haughton crater, Devon Island",
       "set": "well_studied",
-      "best_percentile": 99.2009261350802
+      "best_percentile": 99.32180942159705
      },
      {
       "region_id": "atacama_yungay",
       "name": "Atacama Desert near Yungay",
       "set": "well_studied",
-      "best_percentile": 99.98305850463068
+      "best_percentile": 99.98629918023428
      },
      {
       "region_id": "death_valley",
       "name": "Death Valley, California",
       "set": "well_studied",
-      "best_percentile": 99.29410435961148
+      "best_percentile": 99.40629781015231
      },
      {
       "region_id": "hawaii_kilauea_maunakea",
       "name": "K\u012blauea and Mauna Kea, Hawai\u02bbi",
       "set": "well_studied",
-      "best_percentile": 99.99717641743844
+      "best_percentile": 99.99771653003904
      },
      {
       "region_id": "askja",
       "name": "Askja and the Icelandic highlands",
       "set": "well_studied",
-      "best_percentile": 99.6611700926135
+      "best_percentile": 99.71228278491996
      },
      {
       "region_id": "lanzarote_timanfaya",
       "name": "Lanzarote (Timanfaya lava fields)",
       "set": "well_studied",
-      "best_percentile": 94.2483623221143
+      "best_percentile": 98.5385792249903
      },
      {
       "region_id": "mcmurdo_dry_valleys",
@@ -980,13 +980,13 @@
       "region_id": "bockfjorden",
       "name": "Bockfjorden, Svalbard",
       "set": "well_studied",
-      "best_percentile": 69.49683758753106
+      "best_percentile": 76.11033726851323
      },
      {
       "region_id": "hanksville",
       "name": "Hanksville area (Mars Desert Research Station), Utah",
       "set": "well_studied",
-      "best_percentile": 95.8408628868308
+      "best_percentile": 98.17322403123787
      },
      {
       "region_id": "ries",
@@ -998,109 +998,109 @@
       "region_id": "tibesti",
       "name": "Tibesti massif",
       "set": "discovery",
-      "best_percentile": 98.97221594759431
+      "best_percentile": 99.11401365515037
      },
      {
       "region_id": "ahaggar",
       "name": "Ahaggar (Hoggar) mountains",
       "set": "discovery",
-      "best_percentile": 98.88186130562458
+      "best_percentile": 99.03180873655607
      },
      {
       "region_id": "danakil",
       "name": "Danakil Depression",
       "set": "discovery",
-      "best_percentile": 98.8677433928168
+      "best_percentile": 99.02039138675131
      },
      {
       "region_id": "puna_de_atacama",
       "name": "Puna de Atacama",
       "set": "discovery",
-      "best_percentile": 99.89270386266094
+      "best_percentile": 99.9132281414838
      },
      {
       "region_id": "lut",
       "name": "Lut Desert",
       "set": "discovery",
-      "best_percentile": 98.66444544838491
+      "best_percentile": 98.8377137898751
      },
      {
       "region_id": "qaidam",
       "name": "Qaidam Basin",
       "set": "discovery",
-      "best_percentile": 91.13677433928169
+      "best_percentile": 91.85486264928186
      },
      {
       "region_id": "upper_mustang",
       "name": "Upper Mustang",
       "set": "discovery",
-      "best_percentile": 99.36751750621188
+      "best_percentile": 99.47251843901994
      },
      {
       "region_id": "namib",
       "name": "Namib desert",
       "set": "discovery",
-      "best_percentile": 99.15292523153377
+      "best_percentile": 99.27842349233896
      },
      {
       "region_id": "pilbara",
       "name": "Pilbara",
       "set": "discovery",
-      "best_percentile": null
+      "best_percentile": 95.31660311008609
      },
      {
       "region_id": "harrat_khaybar",
       "name": "Harrat Khaybar",
       "set": "discovery",
-      "best_percentile": 97.182064603569
+      "best_percentile": 97.45621446349874
      },
      {
       "region_id": "bayuda",
       "name": "Bayuda volcanic field",
       "set": "discovery",
-      "best_percentile": 95.70815450643777
+      "best_percentile": 96.05188043751285
      },
      {
       "region_id": "salar_de_uyuni",
       "name": "Salar de Uyuni margin",
       "set": "discovery",
-      "best_percentile": 79.2381974248927
+      "best_percentile": 99.88810997191332
      }
     ]
    },
    "moon_site20_leibnitz_beta": {
-    "well_studied_median": 99.23198554325728,
-    "discovery_median": 98.19573074316693,
+    "well_studied_median": 99.38803005046469,
+    "discovery_median": 98.46550818623982,
     "regions": [
      {
       "region_id": "meteor_crater",
       "name": "Meteor Crater, Arizona",
       "set": "well_studied",
-      "best_percentile": 90.88829907386491
+      "best_percentile": 94.6840819309022
      },
      {
       "region_id": "sp_crater",
       "name": "SP Crater, San Francisco volcanic field, Arizona",
       "set": "well_studied",
-      "best_percentile": 92.57680144567428
+      "best_percentile": 97.4676318133035
      },
      {
       "region_id": "haughton",
       "name": "Haughton crater, Devon Island",
       "set": "well_studied",
-      "best_percentile": 99.23198554325728
+      "best_percentile": 99.38803005046469
      },
      {
       "region_id": "atacama_yungay",
       "name": "Atacama Desert near Yungay",
       "set": "well_studied",
-      "best_percentile": 99.97176417438446
+      "best_percentile": 99.97716530039047
      },
      {
       "region_id": "death_valley",
       "name": "Death Valley, California",
       "set": "well_studied",
-      "best_percentile": 99.347752428281
+      "best_percentile": 99.82873975292856
      },
      {
       "region_id": "hawaii_kilauea_maunakea",
@@ -1112,31 +1112,31 @@
       "region_id": "askja",
       "name": "Askja and the Icelandic highlands",
       "set": "well_studied",
-      "best_percentile": 99.96611700926135
+      "best_percentile": 99.97259836046857
      },
      {
       "region_id": "lanzarote_timanfaya",
       "name": "Lanzarote (Timanfaya lava fields)",
       "set": "well_studied",
-      "best_percentile": 93.87564942398916
+      "best_percentile": 97.8535382367045
      },
      {
       "region_id": "mcmurdo_dry_valleys",
       "name": "McMurdo Dry Valleys",
       "set": "well_studied",
-      "best_percentile": 99.99717641743844
+      "best_percentile": 99.99771653003904
      },
      {
       "region_id": "bockfjorden",
       "name": "Bockfjorden, Svalbard",
       "set": "well_studied",
-      "best_percentile": 83.69381070702508
+      "best_percentile": 85.14374443404196
      },
      {
       "region_id": "hanksville",
       "name": "Hanksville area (Mars Desert Research Station), Utah",
       "set": "well_studied",
-      "best_percentile": 95.98768918003162
+      "best_percentile": 98.17322403123787
      },
      {
       "region_id": "ries",
@@ -1148,73 +1148,523 @@
       "region_id": "tibesti",
       "name": "Tibesti massif",
       "set": "discovery",
-      "best_percentile": 98.19573074316693
+      "best_percentile": 98.456374306396
      },
      {
       "region_id": "ahaggar",
       "name": "Ahaggar (Hoggar) mountains",
       "set": "discovery",
-      "best_percentile": 98.43291167833748
+      "best_percentile": 98.6733039526865
      },
      {
       "region_id": "danakil",
       "name": "Danakil Depression",
       "set": "discovery",
-      "best_percentile": 97.56042466681726
+      "best_percentile": 97.89235722604069
      },
      {
       "region_id": "puna_de_atacama",
       "name": "Puna de Atacama",
       "set": "discovery",
-      "best_percentile": 99.91529252315338
+      "best_percentile": 99.93149590117142
      },
      {
       "region_id": "lut",
       "name": "Lut Desert",
       "set": "discovery",
-      "best_percentile": 99.03715834651005
+      "best_percentile": 99.19850204370562
      },
      {
       "region_id": "qaidam",
       "name": "Qaidam Basin",
       "set": "discovery",
-      "best_percentile": 93.95188615315112
+      "best_percentile": 94.50140433402599
      },
      {
       "region_id": "upper_mustang",
       "name": "Upper Mustang",
       "set": "discovery",
-      "best_percentile": 98.44702959114524
+      "best_percentile": 98.68472130249127
      },
      {
       "region_id": "namib",
       "name": "Namib desert",
       "set": "discovery",
-      "best_percentile": 99.00609893833295
+      "best_percentile": 99.17110040417418
      },
      {
       "region_id": "pilbara",
       "name": "Pilbara",
       "set": "discovery",
-      "best_percentile": null
+      "best_percentile": 92.65407713561528
      },
      {
       "region_id": "harrat_khaybar",
       "name": "Harrat Khaybar",
       "set": "discovery",
-      "best_percentile": 96.37169640840298
+      "best_percentile": 96.76889000525198
      },
      {
       "region_id": "bayuda",
       "name": "Bayuda volcanic field",
       "set": "discovery",
-      "best_percentile": 91.02665461938108
+      "best_percentile": 91.71328751170279
      },
      {
       "region_id": "salar_de_uyuni",
       "name": "Salar de Uyuni margin",
       "set": "discovery",
-      "best_percentile": 76.63203072057827
+      "best_percentile": 98.47464206608362
+     }
+    ]
+   },
+   "moon_haworth": {
+    "well_studied_median": 99.78307035370949,
+    "discovery_median": 99.10944671522847,
+    "regions": [
+     {
+      "region_id": "meteor_crater",
+      "name": "Meteor Crater, Arizona",
+      "set": "well_studied",
+      "best_percentile": 99.25787226269038
+     },
+     {
+      "region_id": "sp_crater",
+      "name": "SP Crater, San Francisco volcanic field, Arizona",
+      "set": "well_studied",
+      "best_percentile": 99.42913250976183
+     },
+     {
+      "region_id": "haughton",
+      "name": "Haughton crater, Devon Island",
+      "set": "well_studied",
+      "best_percentile": 99.78307035370949
+     },
+     {
+      "region_id": "atacama_yungay",
+      "name": "Atacama Desert near Yungay",
+      "set": "well_studied",
+      "best_percentile": 99.94976366085905
+     },
+     {
+      "region_id": "death_valley",
+      "name": "Death Valley, California",
+      "set": "well_studied",
+      "best_percentile": 99.93149590117142
+     },
+     {
+      "region_id": "hawaii_kilauea_maunakea",
+      "name": "K\u012blauea and Mauna Kea, Hawai\u02bbi",
+      "set": "well_studied",
+      "best_percentile": 100.0
+     },
+     {
+      "region_id": "askja",
+      "name": "Askja and the Icelandic highlands",
+      "set": "well_studied",
+      "best_percentile": 99.94519672093713
+     },
+     {
+      "region_id": "lanzarote_timanfaya",
+      "name": "Lanzarote (Timanfaya lava fields)",
+      "set": "well_studied",
+      "best_percentile": 99.21448633343229
+     },
+     {
+      "region_id": "mcmurdo_dry_valleys",
+      "name": "McMurdo Dry Valleys",
+      "set": "well_studied",
+      "best_percentile": 99.98629918023428
+     },
+     {
+      "region_id": "bockfjorden",
+      "name": "Bockfjorden, Svalbard",
+      "set": "well_studied",
+      "best_percentile": 62.338729934007716
+     },
+     {
+      "region_id": "hanksville",
+      "name": "Hanksville area (Mars Desert Research Station), Utah",
+      "set": "well_studied",
+      "best_percentile": 98.96787157764939
+     },
+     {
+      "region_id": "ries",
+      "name": "Ries crater, Bavaria",
+      "set": "well_studied",
+      "best_percentile": null
+     },
+     {
+      "region_id": "tibesti",
+      "name": "Tibesti massif",
+      "set": "discovery",
+      "best_percentile": 99.21220286347133
+     },
+     {
+      "region_id": "ahaggar",
+      "name": "Ahaggar (Hoggar) mountains",
+      "set": "discovery",
+      "best_percentile": 99.07976160573608
+     },
+     {
+      "region_id": "danakil",
+      "name": "Danakil Depression",
+      "set": "discovery",
+      "best_percentile": 96.54967688900052
+     },
+     {
+      "region_id": "puna_de_atacama",
+      "name": "Puna de Atacama",
+      "set": "discovery",
+      "best_percentile": 99.87669262210855
+     },
+     {
+      "region_id": "lut",
+      "name": "Lut Desert",
+      "set": "discovery",
+      "best_percentile": 99.85842486242093
+     },
+     {
+      "region_id": "qaidam",
+      "name": "Qaidam Basin",
+      "set": "discovery",
+      "best_percentile": 98.8377137898751
+     },
+     {
+      "region_id": "upper_mustang",
+      "name": "Upper Mustang",
+      "set": "discovery",
+      "best_percentile": 98.2782636494417
+     },
+     {
+      "region_id": "namib",
+      "name": "Namib desert",
+      "set": "discovery",
+      "best_percentile": 99.81503893316284
+     },
+     {
+      "region_id": "pilbara",
+      "name": "Pilbara",
+      "set": "discovery",
+      "best_percentile": 94.14518302011737
+     },
+     {
+      "region_id": "harrat_khaybar",
+      "name": "Harrat Khaybar",
+      "set": "discovery",
+      "best_percentile": 99.180234284018
+     },
+     {
+      "region_id": "bayuda",
+      "name": "Bayuda volcanic field",
+      "set": "discovery",
+      "best_percentile": 96.76660653529103
+     },
+     {
+      "region_id": "salar_de_uyuni",
+      "name": "Salar de Uyuni margin",
+      "set": "discovery",
+      "best_percentile": 99.13913182472085
+     }
+    ]
+   },
+   "moon_site06_nobile_rim_1": {
+    "well_studied_median": 99.62094398648186,
+    "discovery_median": 98.73381590665176,
+    "regions": [
+     {
+      "region_id": "meteor_crater",
+      "name": "Meteor Crater, Arizona",
+      "set": "well_studied",
+      "best_percentile": 96.63188180759482
+     },
+     {
+      "region_id": "sp_crater",
+      "name": "SP Crater, San Francisco volcanic field, Arizona",
+      "set": "well_studied",
+      "best_percentile": 98.39928755737218
+     },
+     {
+      "region_id": "haughton",
+      "name": "Haughton crater, Devon Island",
+      "set": "well_studied",
+      "best_percentile": 99.62094398648186
+     },
+     {
+      "region_id": "atacama_yungay",
+      "name": "Atacama Desert near Yungay",
+      "set": "well_studied",
+      "best_percentile": 100.0
+     },
+     {
+      "region_id": "death_valley",
+      "name": "Death Valley, California",
+      "set": "well_studied",
+      "best_percentile": 99.65519603589615
+     },
+     {
+      "region_id": "hawaii_kilauea_maunakea",
+      "name": "K\u012blauea and Mauna Kea, Hawai\u02bbi",
+      "set": "well_studied",
+      "best_percentile": 99.9954330600781
+     },
+     {
+      "region_id": "askja",
+      "name": "Askja and the Icelandic highlands",
+      "set": "well_studied",
+      "best_percentile": 99.99314959011714
+     },
+     {
+      "region_id": "lanzarote_timanfaya",
+      "name": "Lanzarote (Timanfaya lava fields)",
+      "set": "well_studied",
+      "best_percentile": 97.99054643436166
+     },
+     {
+      "region_id": "mcmurdo_dry_valleys",
+      "name": "McMurdo Dry Valleys",
+      "set": "well_studied",
+      "best_percentile": 99.97031489050761
+     },
+     {
+      "region_id": "bockfjorden",
+      "name": "Bockfjorden, Svalbard",
+      "set": "well_studied",
+      "best_percentile": 90.30667001575594
+     },
+     {
+      "region_id": "hanksville",
+      "name": "Hanksville area (Mars Desert Research Station), Utah",
+      "set": "well_studied",
+      "best_percentile": 99.59354234695043
+     },
+     {
+      "region_id": "ries",
+      "name": "Ries crater, Bavaria",
+      "set": "well_studied",
+      "best_percentile": null
+     },
+     {
+      "region_id": "tibesti",
+      "name": "Tibesti massif",
+      "set": "discovery",
+      "best_percentile": 98.86283195944557
+     },
+     {
+      "region_id": "ahaggar",
+      "name": "Ahaggar (Hoggar) mountains",
+      "set": "discovery",
+      "best_percentile": 98.60479985385793
+     },
+     {
+      "region_id": "danakil",
+      "name": "Danakil Depression",
+      "set": "discovery",
+      "best_percentile": 97.33519055556825
+     },
+     {
+      "region_id": "puna_de_atacama",
+      "name": "Puna de Atacama",
+      "set": "discovery",
+      "best_percentile": 99.98401571027333
+     },
+     {
+      "region_id": "lut",
+      "name": "Lut Desert",
+      "set": "discovery",
+      "best_percentile": 99.71228278491996
+     },
+     {
+      "region_id": "qaidam",
+      "name": "Qaidam Basin",
+      "set": "discovery",
+      "best_percentile": 95.7253442330966
+     },
+     {
+      "region_id": "upper_mustang",
+      "name": "Upper Mustang",
+      "set": "discovery",
+      "best_percentile": 99.61637704655995
+     },
+     {
+      "region_id": "namib",
+      "name": "Namib desert",
+      "set": "discovery",
+      "best_percentile": 99.7351174845295
+     },
+     {
+      "region_id": "pilbara",
+      "name": "Pilbara",
+      "set": "discovery",
+      "best_percentile": 91.28627862900464
+     },
+     {
+      "region_id": "harrat_khaybar",
+      "name": "Harrat Khaybar",
+      "set": "discovery",
+      "best_percentile": 96.58849587833672
+     },
+     {
+      "region_id": "bayuda",
+      "name": "Bayuda volcanic field",
+      "set": "discovery",
+      "best_percentile": 88.49587833672048
+     },
+     {
+      "region_id": "salar_de_uyuni",
+      "name": "Salar de Uyuni margin",
+      "set": "discovery",
+      "best_percentile": 99.58897540702851
+     }
+    ]
+   },
+   "moon_dm2_nobile_rim_2": {
+    "well_studied_median": 99.68031420546663,
+    "discovery_median": 98.86054848948461,
+    "regions": [
+     {
+      "region_id": "meteor_crater",
+      "name": "Meteor Crater, Arizona",
+      "set": "well_studied",
+      "best_percentile": 96.55424382892242
+     },
+     {
+      "region_id": "sp_crater",
+      "name": "SP Crater, San Francisco volcanic field, Arizona",
+      "set": "well_studied",
+      "best_percentile": 97.60235654099971
+     },
+     {
+      "region_id": "haughton",
+      "name": "Haughton crater, Devon Island",
+      "set": "well_studied",
+      "best_percentile": 99.95889754070285
+     },
+     {
+      "region_id": "atacama_yungay",
+      "name": "Atacama Desert near Yungay",
+      "set": "well_studied",
+      "best_percentile": 99.99086612015618
+     },
+     {
+      "region_id": "death_valley",
+      "name": "Death Valley, California",
+      "set": "well_studied",
+      "best_percentile": 99.63464480624758
+     },
+     {
+      "region_id": "hawaii_kilauea_maunakea",
+      "name": "K\u012blauea and Mauna Kea, Hawai\u02bbi",
+      "set": "well_studied",
+      "best_percentile": 99.9954330600781
+     },
+     {
+      "region_id": "askja",
+      "name": "Askja and the Icelandic highlands",
+      "set": "well_studied",
+      "best_percentile": 100.0
+     },
+     {
+      "region_id": "lanzarote_timanfaya",
+      "name": "Lanzarote (Timanfaya lava fields)",
+      "set": "well_studied",
+      "best_percentile": 99.68031420546663
+     },
+     {
+      "region_id": "mcmurdo_dry_valleys",
+      "name": "McMurdo Dry Valleys",
+      "set": "well_studied",
+      "best_percentile": 99.99771653003904
+     },
+     {
+      "region_id": "bockfjorden",
+      "name": "Bockfjorden, Svalbard",
+      "set": "well_studied",
+      "best_percentile": 63.82298540862695
+     },
+     {
+      "region_id": "hanksville",
+      "name": "Hanksville area (Mars Desert Research Station), Utah",
+      "set": "well_studied",
+      "best_percentile": 97.92432580549404
+     },
+     {
+      "region_id": "ries",
+      "name": "Ries crater, Bavaria",
+      "set": "well_studied",
+      "best_percentile": null
+     },
+     {
+      "region_id": "tibesti",
+      "name": "Tibesti massif",
+      "set": "discovery",
+      "best_percentile": 98.94732034800082
+     },
+     {
+      "region_id": "ahaggar",
+      "name": "Ahaggar (Hoggar) mountains",
+      "set": "discovery",
+      "best_percentile": 98.77377663096841
+     },
+     {
+      "region_id": "danakil",
+      "name": "Danakil Depression",
+      "set": "discovery",
+      "best_percentile": 96.51542483958623
+     },
+     {
+      "region_id": "puna_de_atacama",
+      "name": "Puna de Atacama",
+      "set": "discovery",
+      "best_percentile": 99.95661407074189
+     },
+     {
+      "region_id": "lut",
+      "name": "Lut Desert",
+      "set": "discovery",
+      "best_percentile": 99.48165231886375
+     },
+     {
+      "region_id": "qaidam",
+      "name": "Qaidam Basin",
+      "set": "discovery",
+      "best_percentile": 99.04322608636083
+     },
+     {
+      "region_id": "upper_mustang",
+      "name": "Upper Mustang",
+      "set": "discovery",
+      "best_percentile": 99.23047062315895
+     },
+     {
+      "region_id": "namib",
+      "name": "Namib desert",
+      "set": "discovery",
+      "best_percentile": 99.66661338570091
+     },
+     {
+      "region_id": "pilbara",
+      "name": "Pilbara",
+      "set": "discovery",
+      "best_percentile": 92.96462905030484
+     },
+     {
+      "region_id": "harrat_khaybar",
+      "name": "Harrat Khaybar",
+      "set": "discovery",
+      "best_percentile": 97.1776311282625
+     },
+     {
+      "region_id": "bayuda",
+      "name": "Bayuda volcanic field",
+      "set": "discovery",
+      "best_percentile": 89.27225812344439
+     },
+     {
+      "region_id": "salar_de_uyuni",
+      "name": "Salar de Uyuni margin",
+      "set": "discovery",
+      "best_percentile": 98.31479916881693
      }
     ]
    }
@@ -1225,19 +1675,25 @@
    "moon_site01_connecting_ridge": "Connecting ridge",
    "mars_jezero": "Jezero crater (landing area and delta)",
    "moon_site11_de_gerlache_rim": "de Gerlache crater rim",
-   "moon_site20_leibnitz_beta": "Leibnitz beta plateau"
+   "moon_site20_leibnitz_beta": "Leibnitz beta plateau",
+   "moon_haworth": "Haworth",
+   "moon_site06_nobile_rim_1": "Nobile rim 1",
+   "moon_dm2_nobile_rim_2": "Nobile rim 2"
   }
  },
  "v3_robustness": {
   "resolution_90m": {
    "description": "Each target was rerun on a 90 m grid (43 x 90 m = 3.87 km patches). Spearman rank correlation of the best-patch score of the 60 m run's top-20 regions between the two runs.",
    "spearman_top20_regions": {
-    "moon_site23_malapert": 0.9263157894736842,
-    "moon_site04_shackleton_rim": 0.8917293233082706,
-    "moon_site01_connecting_ridge": 0.9548872180451128,
-    "mars_jezero": 0.801503759398496,
-    "moon_site11_de_gerlache_rim": 0.9413533834586465,
-    "moon_site20_leibnitz_beta": 0.9233082706766916
+    "moon_site23_malapert": 0.8721804511278194,
+    "moon_site04_shackleton_rim": 0.8676691729323308,
+    "moon_site01_connecting_ridge": 0.9744360902255638,
+    "mars_jezero": 0.7353383458646616,
+    "moon_site11_de_gerlache_rim": 0.9368421052631578,
+    "moon_site20_leibnitz_beta": 0.9097744360902256,
+    "moon_haworth": 0.8120300751879698,
+    "moon_site06_nobile_rim_1": 0.882706766917293,
+    "moon_dm2_nobile_rim_2": 0.875187969924812
    }
   },
   "weight_perturbation": {
@@ -1246,9 +1702,12 @@
     "moon_site23_malapert": 0.988,
     "moon_site04_shackleton_rim": 0.9739999999999999,
     "moon_site01_connecting_ridge": 0.9420000000000001,
-    "mars_jezero": 0.968,
-    "moon_site11_de_gerlache_rim": 0.9640000000000001,
-    "moon_site20_leibnitz_beta": 0.856
+    "mars_jezero": 0.9420000000000001,
+    "moon_site11_de_gerlache_rim": 0.9579999999999999,
+    "moon_site20_leibnitz_beta": 0.856,
+    "moon_haworth": 0.9339999999999999,
+    "moon_site06_nobile_rim_1": 0.8919999999999999,
+    "moon_dm2_nobile_rim_2": 0.9179999999999999
    }
   },
   "weight_split": {
@@ -1260,15 +1719,21 @@
      "moon_site01_connecting_ridge": 0.7,
      "mars_jezero": 0.6,
      "moon_site11_de_gerlache_rim": 0.6,
-     "moon_site20_leibnitz_beta": 0.7
+     "moon_site20_leibnitz_beta": 0.7,
+     "moon_haworth": 0.7,
+     "moon_site06_nobile_rim_1": 0.6,
+     "moon_dm2_nobile_rim_2": 0.5
     },
     "0.8/0.2": {
      "moon_site23_malapert": 0.8,
      "moon_site04_shackleton_rim": 0.8,
      "moon_site01_connecting_ridge": 1.0,
-     "mars_jezero": 0.8,
+     "mars_jezero": 0.9,
      "moon_site11_de_gerlache_rim": 0.9,
-     "moon_site20_leibnitz_beta": 0.6
+     "moon_site20_leibnitz_beta": 0.6,
+     "moon_haworth": 0.6,
+     "moon_site06_nobile_rim_1": 0.8,
+     "moon_dm2_nobile_rim_2": 0.6
     }
    }
   }
@@ -1277,12 +1742,12 @@
   {
    "check": "A target patch scored against itself returns 100",
    "passed": true,
-   "detail": "min 100.000000 over 473 target patches"
+   "detail": "min 100.000000 over 831 target patches"
   },
   {
    "check": "A target patch rotated 90 degrees is still its own top match (terrain features)",
    "passed": true,
-   "detail": "473 of 473 target patches"
+   "detail": "831 of 831 target patches"
   },
   {
    "check": "A flat plane has slope 0 and roughness 0",

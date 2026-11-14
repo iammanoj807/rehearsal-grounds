@@ -1,0 +1,52 @@
+{
+ "checks": [
+  {
+   "check": "A flat plane casts no shadow at a 1 degree Sun",
+   "passed": true,
+   "detail": "highest horizon angle -0.000 deg (curvature makes it slightly negative)"
+  },
+  {
+   "check": "A 100 m step casts a shadow of length h / tan(e) at a 10 degree Sun (within one 60 m pixel)",
+   "passed": true,
+   "detail": "9 px measured vs 9.45 px expected"
+  },
+  {
+   "check": "Lunar curvature drop at 10 km is d^2 / 2R = 28.8 m",
+   "passed": true,
+   "detail": "28.78 m (Earth: 7.85 m)"
+  },
+  {
+   "check": "Solar elevation matches the published NREL SPA example within 0.2 degrees",
+   "passed": true,
+   "detail": "39.872 deg true elevation vs 39.888 deg published (apparent, with refraction); Reda and Andreas 2004, NREL/TP-560-34302"
+  }
+ ],
+ "settings": {
+  "elevations_deg": [
+   1,
+   2,
+   3,
+   5,
+   10
+  ],
+  "n_azimuths": 36,
+  "margin_px": 64,
+  "preview_azimuth_deg": 315,
+  "sun_hours_year": 2025
+ },
+ "rules": {
+  "max_precip_mm_per_day": 1.0,
+  "min_t2m_min_c": -25,
+  "max_t2m_max_c": 35,
+  "n_best_months": 3
+ },
+ "limits": [
+  "Shadows are computed on the 60 m grid, so boulders, small craters and short slopes cast no shadow here.",
+  "The LOLA site maps are largely interpolated between laser tracks, so fine relief in the target is smoothed.",
+  "No atmospheric scattering, no regolith or rock reflectance and no Earthshine: a pixel is either lit or in shadow.",
+  "Cast shadows only see 3.84 km of terrain around each patch; sites marked edge-limited see less.",
+  "Earth Sun hours use the true Sun position on the 15th of each month and ignore clouds and local horizons."
+ ],
+ "refraction_note": "Near the horizon, refraction makes the Sun look higher than its true position. NOAA's sunrise and sunset calculations assume 0.833 degrees of atmospheric refraction. Our hours use the true (unrefracted) Sun, so real low-sun light lasts slightly longer than counted.",
+ "refraction_source_url": "https://gml.noaa.gov/grad/solcalc/calcdetails.html"
+}

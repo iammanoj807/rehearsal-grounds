@@ -16,7 +16,18 @@
   "sigma": 0.9339952645561209,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site23_malapert.png",
-  "data_note": "PGDA states Site23 does not yet have error estimates or clones."
+  "data_note": "PGDA states Site23 does not yet have error estimates or clones.",
+  "artemis_iii_region": "Malapert Massif",
+  "sun_band": {
+   "latitude_deg": -85.96161005801713,
+   "low_deg": 2.498389941982871,
+   "high_deg": 5.578389941982871,
+   "elevations_used": [
+    3.0,
+    5.0
+   ],
+   "preview_elevation_deg": 4.038389941982871
+  }
  },
  {
   "id": "moon_site04_shackleton_rim",
@@ -35,7 +46,17 @@
   "sigma": 0.7615492080824454,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site04_shackleton_rim.png",
-  "data_note": null
+  "data_note": null,
+  "artemis_iii_region": null,
+  "sun_band": {
+   "latitude_deg": -89.7358926416865,
+   "low_deg": 0.0,
+   "high_deg": 1.8041073583134954,
+   "elevations_used": [
+    1.0
+   ],
+   "preview_elevation_deg": 0.9020536791567477
+  }
  },
  {
   "id": "moon_site01_connecting_ridge",
@@ -54,7 +75,18 @@
   "sigma": 0.4638556997600279,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site01_connecting_ridge.png",
-  "data_note": null
+  "data_note": null,
+  "artemis_iii_region": null,
+  "sun_band": {
+   "latitude_deg": -89.44880744059729,
+   "low_deg": 0.0,
+   "high_deg": 2.0911925594027077,
+   "elevations_used": [
+    1.0,
+    2.0
+   ],
+   "preview_elevation_deg": 1.0455962797013538
+  }
  },
  {
   "id": "mars_jezero",
@@ -70,10 +102,12 @@
   "centre_lat": 18.477701551537177,
   "centre_lon": 77.41637926701536,
   "extent_km": 30.3,
-  "sigma": 0.1746741342354262,
+  "sigma": 0.17002014304778146,
   "n_sites": 50,
   "hillshade_png": "img/targets/mars_jezero.png",
-  "data_note": null
+  "data_note": null,
+  "artemis_iii_region": null,
+  "sun_band": null
  },
  {
   "id": "moon_site11_de_gerlache_rim",
@@ -92,7 +126,18 @@
   "sigma": 0.7114426539629215,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site11_de_gerlache_rim.png",
-  "data_note": null
+  "data_note": null,
+  "artemis_iii_region": null,
+  "sun_band": {
+   "latitude_deg": -88.66362845423687,
+   "low_deg": 0.0,
+   "high_deg": 2.8763715457631287,
+   "elevations_used": [
+    1.0,
+    2.0
+   ],
+   "preview_elevation_deg": 1.4381857728815644
+  }
  },
  {
   "id": "moon_site20_leibnitz_beta",
@@ -111,6 +156,104 @@
   "sigma": 0.5137491804827445,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site20_leibnitz_beta.png",
-  "data_note": null
+  "data_note": null,
+  "artemis_iii_region": null,
+  "sun_band": {
+   "latitude_deg": -85.4213947618764,
+   "low_deg": 3.0386052381236004,
+   "high_deg": 6.1186052381236005,
+   "elevations_used": [
+    5.0
+   ],
+   "preview_elevation_deg": 4.5786052381236
+  }
+ },
+ {
+  "id": "moon_haworth",
+  "name": "Haworth",
+  "body": "moon",
+  "description": "PGDA landing-site DEM \"Haworth\". NASA listed Haworth among nine candidate Artemis III landing regions near the lunar south pole (NASA release, 28 October 2024).",
+  "description_source_url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+  "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/",
+  "data_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Haworth/Haworth_final_adj_5mpp_surf.tif",
+  "citation": "Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",
+  "resolution_m": 60.0,
+  "n_patches": 196,
+  "centre_lat": -86.7323782494649,
+  "centre_lon": -22.930793554858127,
+  "extent_km": 29.76,
+  "sigma": 0.5112523315529125,
+  "n_sites": 50,
+  "hillshade_png": "img/targets/moon_haworth.png",
+  "data_note": null,
+  "artemis_iii_region": "Haworth",
+  "sun_band": {
+   "latitude_deg": -86.7323782494649,
+   "low_deg": 1.727621750535099,
+   "high_deg": 4.807621750535099,
+   "elevations_used": [
+    2.0,
+    3.0
+   ],
+   "preview_elevation_deg": 3.267621750535099
+  }
+ },
+ {
+  "id": "moon_site06_nobile_rim_1",
+  "name": "Nobile rim 1",
+  "body": "moon",
+  "description": "PGDA landing-site DEM Site06, \"Nobile rim 1\". NASA listed Nobile Rim 1 among nine candidate Artemis III landing regions near the lunar south pole (NASA release, 28 October 2024).",
+  "description_source_url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+  "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/",
+  "data_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site06/Site06_final_adj_5mpp_surf.tif",
+  "citation": "Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",
+  "resolution_m": 60.0,
+  "n_patches": 81,
+  "centre_lat": -85.43267725623075,
+  "centre_lon": 37.13466407530273,
+  "extent_km": 19.98,
+  "sigma": 0.930370644303108,
+  "n_sites": 50,
+  "hillshade_png": "img/targets/moon_site06_nobile_rim_1.png",
+  "data_note": null,
+  "artemis_iii_region": "Nobile Rim 1",
+  "sun_band": {
+   "latitude_deg": -85.43267725623075,
+   "low_deg": 3.027322743769253,
+   "high_deg": 6.107322743769253,
+   "elevations_used": [
+    5.0
+   ],
+   "preview_elevation_deg": 4.567322743769253
+  }
+ },
+ {
+  "id": "moon_dm2_nobile_rim_2",
+  "name": "Nobile rim 2",
+  "body": "moon",
+  "description": "PGDA landing-site DEM \"DM2\", named \"Nobile rim 2\" in the PGDA README. NASA listed Nobile Rim 2 among nine candidate Artemis III landing regions near the lunar south pole (NASA release, 28 October 2024).",
+  "description_source_url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+  "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/",
+  "data_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/DM2/DM2_final_adj_5mpp_surf.tif",
+  "citation": "Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",
+  "resolution_m": 60.0,
+  "n_patches": 81,
+  "centre_lat": -83.95624297723528,
+  "centre_lon": 58.65043447877767,
+  "extent_km": 19.98,
+  "sigma": 0.6409388332139061,
+  "n_sites": 50,
+  "hillshade_png": "img/targets/moon_dm2_nobile_rim_2.png",
+  "data_note": null,
+  "artemis_iii_region": "Nobile Rim 2",
+  "sun_band": {
+   "latitude_deg": -83.95624297723528,
+   "low_deg": 4.503757022764723,
+   "high_deg": 7.583757022764723,
+   "elevations_used": [
+    5.0
+   ],
+   "preview_elevation_deg": 6.043757022764723
+  }
  }
 ]

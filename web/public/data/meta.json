@@ -1,8 +1,8 @@
 {
- "generated_at": "2026-11-14T18:24:19+00:00",
- "config_hash": "0cbe69f070020b9f9c01e7a299717dbb0544c2fab4d309a0523614005775db55",
+ "generated_at": "2026-11-14T21:43:32+00:00",
+ "config_hash": "c8d09b9ca5bcc9be1c86a932d767433c1e8a4c3788f0ab0b0eee499c6eeec6e3",
  "n_earth_patches": 65555,
- "n_searchable": 35417,
+ "n_searchable": 43794,
  "resolution_m": 60.0,
  "patch_px": 64,
  "weights": {
@@ -10,7 +10,7 @@
   "embed": 0.4
  },
  "hillshade_stretch": [
-  0.4343,
-  0.8992
+  0.4517,
+  0.8894
  ]
 }

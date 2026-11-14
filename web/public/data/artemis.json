@@ -1,0 +1,23 @@
+{
+ "source_url": "https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/",
+ "release_date": "2024-10-28",
+ "regions": [
+  "Peak near Cabeus B",
+  "Haworth",
+  "Malapert Massif",
+  "Mons Mouton Plateau",
+  "Mons Mouton",
+  "Nobile Rim 1",
+  "Nobile Rim 2",
+  "de Gerlache Rim 2",
+  "Slater Plain"
+ ],
+ "covered": [
+  "Haworth",
+  "Malapert Massif",
+  "Nobile Rim 1",
+  "Nobile Rim 2"
+ ],
+ "n_regions": 9,
+ "n_covered": 4
+}
