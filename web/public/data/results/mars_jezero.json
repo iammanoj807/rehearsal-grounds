@@ -1,13 +1,13 @@
 {
  "target_id": "mars_jezero",
- "generated_at": "2026-11-14T16:08:37+00:00",
- "config_hash": "a3dab7a1123399ac5368fccf552d0c6f8416ff18bd3a32ae8ccc8bfb4cdab1d0",
- "sigma": 0.1677508133865667,
- "n_candidates": 49147,
+ "generated_at": "2026-11-14T18:12:34+00:00",
+ "config_hash": "0cbe69f070020b9f9c01e7a299717dbb0544c2fab4d309a0523614005775db55",
+ "sigma": 0.1746741342354262,
+ "n_candidates": 35417,
  "n_target_patches": 196,
  "target_coverage": {
   "share_close_90": 1.0,
-  "share_close_99": 0.9897959183673469,
+  "share_close_99": 0.9846938775510204,
   "median_best_percentile": 99.6
  },
  "matches": [
@@ -19,9 +19,9 @@
    "region_set": "well_studied",
    "lat": 65.4345803561958,
    "lon": -16.356818993336528,
-   "score": 76.267188433679,
-   "best_pair_score": 79.4039301812274,
-   "s_morph": 0.8137303714761595,
+   "score": 77.2501799611893,
+   "best_pair_score": 80.19219134823062,
+   "s_morph": 0.8268680575928798,
    "s_embed": 0.7645026973164459,
    "sub_scores": {
     "relief": 99.0,
@@ -66,6 +66,7 @@
    },
    "novelty": {
     "status": "well_studied",
+    "basis": "catalogue_distance",
     "nearest_known_analog": "Askja, Iceland",
     "distance_km": 48.86757414463048,
     "source_url": "https://en.wikipedia.org/wiki/Askja"
@@ -102,9 +103,9 @@
    "region_set": "discovery",
    "lat": 25.5622762328221,
    "lon": 40.20822552999209,
-   "score": 75.55668919811399,
-   "best_pair_score": 75.98968419645769,
-   "s_morph": 0.7663983636664022,
+   "score": 76.6255373496452,
+   "best_pair_score": 76.95017593446426,
+   "s_morph": 0.7824065592998449,
    "s_embed": 0.7501445594118388,
    "sub_scores": {
     "relief": 98.8,
@@ -149,9 +150,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3645.9924531444854,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 768.4228475219165,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.05 on the Mars target",
@@ -184,9 +186,9 @@
    "region_set": "discovery",
    "lat": 25.82639879069749,
    "lon": 39.52129285942125,
-   "score": 75.2361620163629,
-   "best_pair_score": 80.192506791309,
-   "s_morph": 0.8015506651644281,
+   "score": 76.26622826416417,
+   "best_pair_score": 81.02626780328556,
+   "s_morph": 0.8154466820307041,
    "s_embed": 0.8024866720360829,
    "sub_scores": {
     "relief": 99.4,
@@ -231,9 +233,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3581.248205757526,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 701.0149783866174,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 3.9 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
@@ -266,9 +269,9 @@
    "region_set": "discovery",
    "lat": 26.120742159658683,
    "lon": 39.618613002949445,
-   "score": 74.94890216762214,
-   "best_pair_score": 80.0538495815076,
-   "s_morph": 0.7628229625133518,
+   "score": 76.14129647705091,
+   "best_pair_score": 81.02684051268784,
+   "s_morph": 0.7790394780330223,
    "s_embed": 0.8571117957676626,
    "sub_scores": {
     "relief": 99.5,
@@ -313,9 +316,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3560.893211267275,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 682.7814770341628,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 38 m here vs 41 m on the Mars target",
@@ -342,96 +346,15 @@
   },
   {
    "rank": 5,
-   "site_id": "puna_de_atacama:256:1152",
-   "region_id": "puna_de_atacama",
-   "region_name": "Puna de Atacama",
-   "region_set": "discovery",
-   "lat": -23.162200666154877,
-   "lon": -67.15826103277328,
-   "score": 74.56025608554704,
-   "best_pair_score": 83.46473460738575,
-   "s_morph": 0.9190360405692118,
-   "s_embed": 0.7080643043308261,
-   "sub_scores": {
-    "relief": 99.6,
-    "slope": 99.1,
-    "roughness": 98.7,
-    "shape": 99.4,
-    "embedding": 92.5
-   },
-   "terrain": {
-    "relief_m": 41.9139404296875,
-    "slope_p50_deg": 1.2856100891006699,
-    "slope_p90_deg": 2.5424379358188176,
-    "rough_std_m": 4.605737544417316,
-    "bowl_index": -0.05993726849555969,
-    "tri_m": 1.2482659124558972,
-    "hypsometric_integral": 0.5312208533287048
-   },
-   "target_terrain": {
-    "relief_m": 41.447265625,
-    "slope_p50_deg": 1.2992129469628886,
-    "slope_p90_deg": 2.563157136120605,
-    "rough_std_m": 5.412386001112564,
-    "bowl_index": -0.056742142885923386,
-    "tri_m": 1.2972139562950173,
-    "hypsometric_integral": 0.5251647233963013
-   },
-   "target_patch_id": "mars_jezero:192:416",
-   "environment": {
-    "t2m_mean_c": 2.98,
-    "t2m_min_c": -16.4,
-    "t2m_max_c": 22.05,
-    "t2m_range_c": 17.13,
-    "precip_mm_per_day": 0.73,
-    "rh_pct": 31.46,
-    "solar_kwh_m2_day": 7.3733,
-    "bare_fraction": 1.0,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.0,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Atacama Desert, Chile",
-    "distance_km": 259.5987242759092,
-    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
-   },
-   "strong_match": [
-    "Relief (bar 100/100): height range (5th-95th pct) 42 m here vs 41 m on the Mars target",
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.06 on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
-    "Rain and snow: 0.73 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/puna_de_atacama_256_1152.png",
-    "target_hillshade": "img/patches/mars_jezero_192_416.png"
-   }
-  },
-  {
-   "rank": 6,
    "site_id": "harrat_khaybar:288:1440",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.994614951142996,
    "lon": 40.327701104916876,
-   "score": 74.49467895156035,
-   "best_pair_score": 82.75609820114863,
-   "s_morph": 0.8502805083315154,
+   "score": 75.57688811322303,
+   "best_pair_score": 83.40308713190926,
+   "s_morph": 0.8610636571775258,
    "s_embed": 0.7934816925314427,
    "sub_scores": {
     "relief": 99.6,
@@ -476,9 +399,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3614.901619377038,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 741.9895877151964,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 38 m here vs 39 m on the Mars target",
@@ -504,6 +428,88 @@
    }
   },
   {
+   "rank": 6,
+   "site_id": "puna_de_atacama:256:1152",
+   "region_id": "puna_de_atacama",
+   "region_name": "Puna de Atacama",
+   "region_set": "discovery",
+   "lat": -23.162200666154877,
+   "lon": -67.15826103277328,
+   "score": 75.35531681406594,
+   "best_pair_score": 83.8276691026665,
+   "s_morph": 0.9250849488238911,
+   "s_embed": 0.7080643043308261,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 99.1,
+    "roughness": 98.7,
+    "shape": 99.4,
+    "embedding": 92.5
+   },
+   "terrain": {
+    "relief_m": 41.9139404296875,
+    "slope_p50_deg": 1.2856100891006699,
+    "slope_p90_deg": 2.5424379358188176,
+    "rough_std_m": 4.605737544417316,
+    "bowl_index": -0.05993726849555969,
+    "tri_m": 1.2482659124558972,
+    "hypsometric_integral": 0.5312208533287048
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": {
+    "t2m_mean_c": 2.98,
+    "t2m_min_c": -16.4,
+    "t2m_max_c": 22.05,
+    "t2m_range_c": 17.13,
+    "precip_mm_per_day": 0.73,
+    "rh_pct": 31.46,
+    "solar_kwh_m2_day": 7.3733,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Licancabur, Chile and Bolivia",
+    "distance_km": 82.73439816049572,
+    "source_url": "https://en.wikipedia.org/wiki/Licancabur"
+   },
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 42 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Rain and snow: 0.73 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/puna_de_atacama_256_1152.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
    "rank": 7,
    "site_id": "harrat_khaybar:1216:224",
    "region_id": "harrat_khaybar",
@@ -511,9 +517,9 @@
    "region_set": "discovery",
    "lat": 25.496697009171665,
    "lon": 39.59627685737229,
-   "score": 72.12705217119019,
-   "best_pair_score": 87.8766473997039,
-   "s_morph": 0.8796159351339216,
+   "score": 73.36889187551776,
+   "best_pair_score": 88.40528467889159,
+   "s_morph": 0.8884265564537165,
    "s_embed": 0.8774922822917152,
    "sub_scores": {
     "relief": 99.5,
@@ -558,9 +564,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3615.175517189412,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 734.1475863023646,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 46 m here vs 41 m on the Mars target",
@@ -593,9 +600,9 @@
    "region_set": "discovery",
    "lat": 23.588886834003148,
    "lon": 5.237554694251111,
-   "score": 72.03081524806508,
-   "best_pair_score": 76.59748914007581,
-   "s_morph": 0.8451510713353355,
+   "score": 73.04420061058981,
+   "best_pair_score": 77.2647242963372,
+   "s_morph": 0.8562716572730256,
    "s_embed": 0.6472106214988917,
    "sub_scores": {
     "relief": 99.6,
@@ -640,6 +647,7 @@
    },
    "novelty": {
     "status": "less_studied",
+    "basis": null,
     "nearest_known_analog": "Lanzarote (Timanfaya)",
     "distance_km": 1987.347685430371,
     "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
@@ -673,9 +681,9 @@
    "region_set": "well_studied",
    "lat": 38.699416887595405,
    "lon": -110.28425794821204,
-   "score": 71.86645267354005,
-   "best_pair_score": 83.31428723861937,
-   "s_morph": 0.8947115617174763,
+   "score": 72.89778357182387,
+   "best_pair_score": 83.7803566878125,
+   "s_morph": 0.902479385870695,
    "s_embed": 0.74078983838927,
    "sub_scores": {
     "relief": 99.4,
@@ -719,7 +727,8 @@
     "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
    },
    "novelty": {
-    "status": "less_studied",
+    "status": "well_studied",
+    "basis": "well_studied_region",
     "nearest_known_analog": "Mars Desert Research Station, Utah",
     "distance_km": 54.861923975981995,
     "source_url": "https://en.wikipedia.org/wiki/Mars_Desert_Research_Station"
@@ -748,96 +757,15 @@
   },
   {
    "rank": 10,
-   "site_id": "askja:448:1408",
-   "region_id": "askja",
-   "region_name": "Askja and the Icelandic highlands",
-   "region_set": "well_studied",
-   "lat": 65.23049525582215,
-   "lon": -16.017744399893488,
-   "score": 71.46298974178825,
-   "best_pair_score": 78.6312336229063,
-   "s_morph": 0.8594444021995764,
-   "s_embed": 0.676614237273293,
-   "sub_scores": {
-    "relief": 99.6,
-    "slope": 96.5,
-    "roughness": 98.9,
-    "shape": 99.3,
-    "embedding": 89.0
-   },
-   "terrain": {
-    "relief_m": 58.44721984863281,
-    "slope_p50_deg": 1.242801789800458,
-    "slope_p90_deg": 3.2100329515006503,
-    "rough_std_m": 6.522412206384669,
-    "bowl_index": -0.0800313875079155,
-    "tri_m": 1.41329705777203,
-    "hypsometric_integral": 0.5852221250534058
-   },
-   "target_terrain": {
-    "relief_m": 55.43377685546875,
-    "slope_p50_deg": 1.4761068553761905,
-    "slope_p90_deg": 3.480167146043554,
-    "rough_std_m": 7.194606868302791,
-    "bowl_index": -0.07383175939321518,
-    "tri_m": 1.5618061299874806,
-    "hypsometric_integral": 0.5894836187362671
-   },
-   "target_patch_id": "mars_jezero:320:256",
-   "environment": {
-    "t2m_mean_c": -2.31,
-    "t2m_min_c": -24.59,
-    "t2m_max_c": 11.94,
-    "t2m_range_c": 4.43,
-    "precip_mm_per_day": 2.56,
-    "rh_pct": 93.82,
-    "solar_kwh_m2_day": 2.4878,
-    "bare_fraction": 0.9860979462875198,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.012890995260663507,
-    "water_fraction": 0.0010110584518167457,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "well_studied",
-    "nearest_known_analog": "Askja, Iceland",
-    "distance_km": 41.98504409941572,
-    "source_url": "https://en.wikipedia.org/wiki/Askja"
-   },
-   "strong_match": [
-    "Relief (bar 100/100): height range (5th-95th pct) 58 m here vs 55 m on the Mars target",
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.07 on the Mars target"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
-    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
-    "Rain and snow: 2.56 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Cold-weather equipment and power-system trials"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/askja_448_1408.png",
-    "target_hillshade": "img/patches/mars_jezero_320_256.png"
-   }
-  },
-  {
-   "rank": 11,
    "site_id": "harrat_khaybar:96:928",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 26.1011133221733,
    "lon": 40.02171659568415,
-   "score": 71.32027774113163,
-   "best_pair_score": 77.32883195554226,
-   "s_morph": 0.7533604645738287,
+   "score": 72.65172159028437,
+   "best_pair_score": 78.33454661171231,
+   "s_morph": 0.7701223755099963,
    "s_embed": 0.8031801020278135,
    "sub_scores": {
     "relief": 99.4,
@@ -882,9 +810,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3586.944259889323,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 712.0242590719425,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 44 m here vs 39 m on the Mars target",
@@ -911,6 +840,88 @@
    }
   },
   {
+   "rank": 11,
+   "site_id": "askja:448:1408",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 65.23049525582215,
+   "lon": -16.017744399893488,
+   "score": 72.45497580562908,
+   "best_pair_score": 79.24171724509313,
+   "s_morph": 0.8696191292360236,
+   "s_embed": 0.676614237273293,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 96.5,
+    "roughness": 98.9,
+    "shape": 99.3,
+    "embedding": 89.0
+   },
+   "terrain": {
+    "relief_m": 58.44721984863281,
+    "slope_p50_deg": 1.242801789800458,
+    "slope_p90_deg": 3.2100329515006503,
+    "rough_std_m": 6.522412206384669,
+    "bowl_index": -0.0800313875079155,
+    "tri_m": 1.41329705777203,
+    "hypsometric_integral": 0.5852221250534058
+   },
+   "target_terrain": {
+    "relief_m": 55.43377685546875,
+    "slope_p50_deg": 1.4761068553761905,
+    "slope_p90_deg": 3.480167146043554,
+    "rough_std_m": 7.194606868302791,
+    "bowl_index": -0.07383175939321518,
+    "tri_m": 1.5618061299874806,
+    "hypsometric_integral": 0.5894836187362671
+   },
+   "target_patch_id": "mars_jezero:320:256",
+   "environment": {
+    "t2m_mean_c": -2.31,
+    "t2m_min_c": -24.59,
+    "t2m_max_c": 11.94,
+    "t2m_range_c": 4.43,
+    "precip_mm_per_day": 2.56,
+    "rh_pct": 93.82,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.9860979462875198,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.012890995260663507,
+    "water_fraction": 0.0010110584518167457,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "basis": "catalogue_distance",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 41.98504409941572,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 58 m here vs 55 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.07 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Vegetation, cropland or buildings cover 1% of the 2 km surroundings (none on the Mars)",
+    "Rain and snow: 2.56 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Cold-weather equipment and power-system trials"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_448_1408.png",
+    "target_hillshade": "img/patches/mars_jezero_320_256.png"
+   }
+  },
+  {
    "rank": 12,
    "site_id": "askja:1152:160",
    "region_id": "askja",
@@ -918,9 +929,9 @@
    "region_set": "well_studied",
    "lat": 64.8325226156239,
    "lon": -17.58124170980753,
-   "score": 70.96414421824879,
-   "best_pair_score": 72.56399134850366,
-   "s_morph": 0.6952551532886446,
+   "score": 72.04504519565056,
+   "best_pair_score": 73.75891859858073,
+   "s_morph": 0.7151706074565959,
    "s_embed": 0.7712170537796246,
    "sub_scores": {
     "relief": 98.9,
@@ -965,6 +976,7 @@
    },
    "novelty": {
     "status": "well_studied",
+    "basis": "catalogue_distance",
     "nearest_known_analog": "Askja, Iceland",
     "distance_km": 43.71641086508766,
     "source_url": "https://en.wikipedia.org/wiki/Askja"
@@ -1000,9 +1012,9 @@
    "region_set": "discovery",
    "lat": -24.836564560261365,
    "lon": 15.674715185402679,
-   "score": 70.11847691306453,
-   "best_pair_score": 80.11582334112029,
-   "s_morph": 0.8288830917330754,
+   "score": 71.41301303922951,
+   "best_pair_score": 80.84636786042428,
+   "s_morph": 0.8410588337214755,
    "s_embed": 0.7595709459283939,
    "sub_scores": {
     "relief": 99.4,
@@ -1047,9 +1059,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Lanzarote (Timanfaya)",
-    "distance_km": 6763.411109774043,
-    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6490.532308885603,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 89 m here vs 88 m on the Mars target",
@@ -1083,9 +1096,9 @@
    "region_set": "discovery",
    "lat": 23.157436314308,
    "lon": 5.099088610111361,
-   "score": 69.84343207440669,
-   "best_pair_score": 73.52380520491403,
-   "s_morph": 0.6660967960249444,
+   "score": 71.17975710293184,
+   "best_pair_score": 74.80570296360824,
+   "s_morph": 0.6874617586698479,
    "s_embed": 0.8389499360854341,
    "sub_scores": {
     "relief": 98.9,
@@ -1130,6 +1143,7 @@
    },
    "novelty": {
     "status": "less_studied",
+    "basis": null,
     "nearest_known_analog": "Lanzarote (Timanfaya)",
     "distance_km": 1992.5076550197973,
     "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
@@ -1165,9 +1179,9 @@
    "region_set": "discovery",
    "lat": 25.999469633752085,
    "lon": 39.598792108087025,
-   "score": 69.56247393132674,
-   "best_pair_score": 70.69506880771247,
-   "s_morph": 0.6001526453467632,
+   "score": 71.03918030779452,
+   "best_pair_score": 72.15232205070842,
+   "s_morph": 0.6244401993966956,
    "s_embed": 0.867147752172667,
    "sub_scores": {
     "relief": 97.6,
@@ -1212,9 +1226,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3570.4775701562066,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 691.4935493384613,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 4.7 m here vs 4.6 m; ruggedness index 1.2 m here vs 1.2 m on the Mars target",
@@ -1247,9 +1262,9 @@
    "region_set": "well_studied",
    "lat": 35.7922835752387,
    "lon": -111.1882808173507,
-   "score": 68.45428183645335,
-   "best_pair_score": 80.45245198129844,
-   "s_morph": 0.8145519420288141,
+   "score": 69.80779560635203,
+   "best_pair_score": 81.23761517820614,
+   "s_morph": 0.8276379953106091,
    "s_embed": 0.7894833864892397,
    "sub_scores": {
     "relief": 99.2,
@@ -1294,6 +1309,7 @@
    },
    "novelty": {
     "status": "well_studied",
+    "basis": "catalogue_distance",
     "nearest_known_analog": "SP Crater, Arizona",
     "distance_km": 46.370239981877184,
     "source_url": "https://en.wikipedia.org/wiki/S_P_Crater"
@@ -1329,9 +1345,9 @@
    "region_set": "discovery",
    "lat": 25.965161549454823,
    "lon": 39.502723862200746,
-   "score": 68.3257381642938,
-   "best_pair_score": 70.63382351973331,
-   "s_morph": 0.6407949883970481,
+   "score": 69.75014174159838,
+   "best_pair_score": 71.98660689505164,
+   "s_morph": 0.663341377985687,
    "s_embed": 0.8046531053977604,
    "sub_scores": {
     "relief": 98.7,
@@ -1376,9 +1392,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3567.7719229317154,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 688.0551976112068,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Roughness (bar 100/100): plane-fit spread 3.8 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
@@ -1412,9 +1429,9 @@
    "region_set": "discovery",
    "lat": 25.858013609687518,
    "lon": 40.07709790914695,
-   "score": 68.24695383695375,
-   "best_pair_score": 76.21810086457754,
-   "s_morph": 0.7912642870100817,
+   "score": 69.56489357524605,
+   "best_pair_score": 77.08965873006706,
+   "s_morph": 0.8057902514349071,
    "s_embed": 0.7185560910993158,
    "sub_scores": {
     "relief": 98.8,
@@ -1459,9 +1476,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3611.8239794637534,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 735.3551981408401,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Roughness (bar 99/100): plane-fit spread 7.2 m here vs 7.7 m; ruggedness index 1.7 m here vs 1.7 m on the Mars target",
@@ -1488,176 +1506,15 @@
   },
   {
    "rank": 19,
-   "site_id": "danakil:864:1376",
-   "region_id": "danakil",
-   "region_name": "Danakil Depression",
-   "region_set": "discovery",
-   "lat": 14.205853656765349,
-   "lon": 40.619183328230086,
-   "score": 67.75615937087919,
-   "best_pair_score": 71.93610266025831,
-   "s_morph": 0.801399239608949,
-   "s_embed": 0.5963037070930345,
-   "sub_scores": {
-    "relief": 99.1,
-    "slope": 99.1,
-    "roughness": 98.8,
-    "shape": 99.2,
-    "embedding": 76.2
-   },
-   "terrain": {
-    "relief_m": 36.51838779449463,
-    "slope_p50_deg": 1.1240351812158766,
-    "slope_p90_deg": 2.8686952929648166,
-    "rough_std_m": 4.102516162326809,
-    "bowl_index": -0.02859269082546234,
-    "tri_m": 1.368170492234761,
-    "hypsometric_integral": 0.5304886698722839
-   },
-   "target_terrain": {
-    "relief_m": 34.3917236328125,
-    "slope_p50_deg": 1.235476487279463,
-    "slope_p90_deg": 2.64790220456228,
-    "rough_std_m": 3.4682410001404307,
-    "bowl_index": -0.018719585612416267,
-    "tri_m": 1.3431658074957522,
-    "hypsometric_integral": 0.5118603706359863
-   },
-   "target_patch_id": "mars_jezero:160:384",
-   "environment": {
-    "t2m_mean_c": 33.03,
-    "t2m_min_c": 16.81,
-    "t2m_max_c": 46.94,
-    "t2m_range_c": 12.49,
-    "precip_mm_per_day": 0.75,
-    "rh_pct": 41.16,
-    "solar_kwh_m2_day": 5.957,
-    "bare_fraction": 0.9999363503277958,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.00006364967220418815,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 4731.5295737078995,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
-   },
-   "strong_match": [
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.02 on the Mars target",
-    "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 34 m on the Mars target"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
-    "Rain and snow: 0.75 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/danakil_864_1376.png",
-    "target_hillshade": "img/patches/mars_jezero_160_384.png"
-   }
-  },
-  {
-   "rank": 20,
-   "site_id": "harrat_khaybar:1408:672",
-   "region_id": "harrat_khaybar",
-   "region_name": "Harrat Khaybar",
-   "region_set": "discovery",
-   "lat": 25.391345712861856,
-   "lon": 39.86297373762157,
-   "score": 67.55557744389249,
-   "best_pair_score": 74.85173192474429,
-   "s_morph": 0.7222196394268466,
-   "s_embed": 0.7879638389783371,
-   "sub_scores": {
-    "relief": 98.7,
-    "slope": 98.8,
-    "roughness": 97.89999999999999,
-    "shape": 99.4,
-    "embedding": 97.7
-   },
-   "terrain": {
-    "relief_m": 55.21087646484375,
-    "slope_p50_deg": 1.1717565201073357,
-    "slope_p90_deg": 2.645403132448839,
-    "rough_std_m": 4.337079777704858,
-    "bowl_index": -0.04655446112155914,
-    "tri_m": 1.2295332203050309,
-    "hypsometric_integral": 0.5248171091079712
-   },
-   "target_terrain": {
-    "relief_m": 41.447265625,
-    "slope_p50_deg": 1.2992129469628886,
-    "slope_p90_deg": 2.563157136120605,
-    "rough_std_m": 5.412386001112564,
-    "bowl_index": -0.056742142885923386,
-    "tri_m": 1.2972139562950173,
-    "hypsometric_integral": 0.5251647233963013
-   },
-   "target_patch_id": "mars_jezero:192:416",
-   "environment": {
-    "t2m_mean_c": 22.95,
-    "t2m_min_c": -5.75,
-    "t2m_max_c": 43.76,
-    "t2m_range_c": 15.8,
-    "precip_mm_per_day": 0.07,
-    "rh_pct": 26.16,
-    "solar_kwh_m2_day": 6.2054,
-    "bare_fraction": 1.0,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.0,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3640.5124223606726,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
-   },
-   "strong_match": [
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
-    "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 2.6° here vs 2.6° on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
-    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Long-duration dry, dusty-surface operations"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/harrat_khaybar_1408_672.png",
-    "target_hillshade": "img/patches/mars_jezero_192_416.png"
-   }
-  },
-  {
-   "rank": 21,
    "site_id": "harrat_khaybar:1216:416",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.49618619555524,
    "lon": 39.71089568434398,
-   "score": 67.50582436919176,
-   "best_pair_score": 74.43488988977364,
-   "s_morph": 0.6601628426405026,
+   "score": 69.0115388031226,
+   "best_pair_score": 75.73380165298396,
+   "s_morph": 0.681811372027341,
    "s_embed": 0.8706279832835874,
    "sub_scores": {
     "relief": 99.1,
@@ -1702,9 +1559,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3622.0576580438756,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 741.4176999308056,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 52 m here vs 41 m on the Mars target",
@@ -1730,6 +1588,169 @@
    }
   },
   {
+   "rank": 20,
+   "site_id": "harrat_khaybar:1408:672",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.391345712861856,
+   "lon": 39.86297373762157,
+   "score": 68.95691428034407,
+   "best_pair_score": 75.96141179405063,
+   "s_morph": 0.7407143039152857,
+   "s_embed": 0.7879638389783371,
+   "sub_scores": {
+    "relief": 98.7,
+    "slope": 98.8,
+    "roughness": 97.89999999999999,
+    "shape": 99.4,
+    "embedding": 97.7
+   },
+   "terrain": {
+    "relief_m": 55.21087646484375,
+    "slope_p50_deg": 1.1717565201073357,
+    "slope_p90_deg": 2.645403132448839,
+    "rough_std_m": 4.337079777704858,
+    "bowl_index": -0.04655446112155914,
+    "tri_m": 1.2295332203050309,
+    "hypsometric_integral": 0.5248171091079712
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 760.1159546429925,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
+    "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 2.6° here vs 2.6° on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1408_672.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 21,
+   "site_id": "danakil:864:1376",
+   "region_id": "danakil",
+   "region_name": "Danakil Depression",
+   "region_set": "discovery",
+   "lat": 14.205853656765349,
+   "lon": 40.619183328230086,
+   "score": 68.82436492286786,
+   "best_pair_score": 72.77042428628924,
+   "s_morph": 0.8153046000427976,
+   "s_embed": 0.5963037070930345,
+   "sub_scores": {
+    "relief": 99.1,
+    "slope": 99.1,
+    "roughness": 98.8,
+    "shape": 99.2,
+    "embedding": 76.2
+   },
+   "terrain": {
+    "relief_m": 36.51838779449463,
+    "slope_p50_deg": 1.1240351812158766,
+    "slope_p90_deg": 2.8686952929648166,
+    "rough_std_m": 4.102516162326809,
+    "bowl_index": -0.02859269082546234,
+    "tri_m": 1.368170492234761,
+    "hypsometric_integral": 0.5304886698722839
+   },
+   "target_terrain": {
+    "relief_m": 34.3917236328125,
+    "slope_p50_deg": 1.235476487279463,
+    "slope_p90_deg": 2.64790220456228,
+    "rough_std_m": 3.4682410001404307,
+    "bowl_index": -0.018719585612416267,
+    "tri_m": 1.3431658074957522,
+    "hypsometric_integral": 0.5118603706359863
+   },
+   "target_patch_id": "mars_jezero:160:384",
+   "environment": {
+    "t2m_mean_c": 33.03,
+    "t2m_min_c": 16.81,
+    "t2m_max_c": 46.94,
+    "t2m_range_c": 12.49,
+    "precip_mm_per_day": 0.75,
+    "rh_pct": 41.16,
+    "solar_kwh_m2_day": 5.957,
+    "bare_fraction": 0.9999363503277958,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.00006364967220418815,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 1914.814268036328,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.02 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 34 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Rain and snow: 0.75 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/danakil_864_1376.png",
+    "target_hillshade": "img/patches/mars_jezero_160_384.png"
+   }
+  },
+  {
    "rank": 22,
    "site_id": "harrat_khaybar:352:1280",
    "region_id": "harrat_khaybar",
@@ -1737,9 +1758,9 @@
    "region_set": "discovery",
    "lat": 25.960796791789736,
    "lon": 40.23144248303672,
-   "score": 67.24528512683546,
-   "best_pair_score": 72.02750852425655,
-   "s_morph": 0.7973750626832287,
+   "score": 68.52141825937348,
+   "best_pair_score": 72.8766826873557,
+   "s_morph": 0.8115279654015478,
    "s_embed": 0.6046251190815706,
    "sub_scores": {
     "relief": 99.0,
@@ -1784,9 +1805,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3612.053443868544,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 737.8438003579656,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Roughness (bar 99/100): plane-fit spread 4.0 m here vs 4.4 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target",
@@ -1811,97 +1833,15 @@
   },
   {
    "rank": 23,
-   "site_id": "crater_roter_kamm:96:128",
-   "region_id": "crater_roter_kamm",
-   "region_name": "Roter Kamm crater",
-   "region_set": "crater_benchmark",
-   "lat": -27.566978659556124,
-   "lon": 16.079913150946407,
-   "score": 66.95447238663053,
-   "best_pair_score": 78.53471278466161,
-   "s_morph": 0.8311165411902728,
-   "s_embed": 0.716693007831131,
-   "sub_scores": {
-    "relief": 99.6,
-    "slope": 96.2,
-    "roughness": 99.4,
-    "shape": 98.9,
-    "embedding": 93.30000000000001
-   },
-   "terrain": {
-    "relief_m": 39.59834289550781,
-    "slope_p50_deg": 1.1291042781077478,
-    "slope_p90_deg": 2.248330727573788,
-    "rough_std_m": 5.189725153549098,
-    "bowl_index": -0.043295156210660934,
-    "tri_m": 1.1986768883299257,
-    "hypsometric_integral": 0.5230668783187866
-   },
-   "target_terrain": {
-    "relief_m": 41.447265625,
-    "slope_p50_deg": 1.2992129469628886,
-    "slope_p90_deg": 2.563157136120605,
-    "rough_std_m": 5.412386001112564,
-    "bowl_index": -0.056742142885923386,
-    "tri_m": 1.2972139562950173,
-    "hypsometric_integral": 0.5251647233963013
-   },
-   "target_patch_id": "mars_jezero:192:416",
-   "environment": {
-    "t2m_mean_c": 19.34,
-    "t2m_min_c": -0.2,
-    "t2m_max_c": 42.99,
-    "t2m_range_c": 16.08,
-    "precip_mm_per_day": 0.19,
-    "rh_pct": 44.5,
-    "solar_kwh_m2_day": 6.4855,
-    "bare_fraction": 1.0,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.0,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Lanzarote (Timanfaya)",
-    "distance_km": 7047.886639935291,
-    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
-   },
-   "strong_match": [
-    "Relief (bar 100/100): height range (5th-95th pct) 40 m here vs 41 m on the Mars target",
-    "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.4 m; ruggedness index 1.2 m here vs 1.3 m on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 93% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
-    "Rain and snow: 0.19 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Long-duration dry, dusty-surface operations"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/crater_roter_kamm_96_128.png",
-    "target_hillshade": "img/patches/mars_jezero_192_416.png"
-   }
-  },
-  {
-   "rank": 24,
    "site_id": "namib:1024:288",
    "region_id": "namib",
    "region_name": "Namib desert",
    "region_set": "discovery",
    "lat": -24.87276474340339,
    "lon": 14.97164859206027,
-   "score": 66.86981908579484,
-   "best_pair_score": 72.47070045963564,
-   "s_morph": 0.7390696203300233,
+   "score": 68.18548842682704,
+   "best_pair_score": 73.52484389076086,
+   "s_morph": 0.7566386775154437,
    "s_embed": 0.703163080995856,
    "sub_scores": {
     "relief": 99.6,
@@ -1946,9 +1886,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Lanzarote (Timanfaya)",
-    "distance_km": 6732.299590928622,
-    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6518.226184003776,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 60 m here vs 63 m on the Mars target",
@@ -1974,6 +1915,89 @@
    }
   },
   {
+   "rank": 24,
+   "site_id": "crater_roter_kamm:96:128",
+   "region_id": "crater_roter_kamm",
+   "region_name": "Roter Kamm crater",
+   "region_set": "crater_benchmark",
+   "lat": -27.566978659556124,
+   "lon": 16.079913150946407,
+   "score": 68.10079058660949,
+   "best_pair_score": 79.25664733007582,
+   "s_morph": 0.843148783613843,
+   "s_embed": 0.716693007831131,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 96.2,
+    "roughness": 99.4,
+    "shape": 98.9,
+    "embedding": 93.30000000000001
+   },
+   "terrain": {
+    "relief_m": 39.59834289550781,
+    "slope_p50_deg": 1.1291042781077478,
+    "slope_p90_deg": 2.248330727573788,
+    "rough_std_m": 5.189725153549098,
+    "bowl_index": -0.043295156210660934,
+    "tri_m": 1.1986768883299257,
+    "hypsometric_integral": 0.5230668783187866
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": {
+    "t2m_mean_c": 19.34,
+    "t2m_min_c": -0.2,
+    "t2m_max_c": 42.99,
+    "t2m_range_c": 16.08,
+    "precip_mm_per_day": 0.19,
+    "rh_pct": 44.5,
+    "solar_kwh_m2_day": 6.4855,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6764.656124331622,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 40 m here vs 41 m on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.4 m; ruggedness index 1.2 m here vs 1.3 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 93% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.19 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/crater_roter_kamm_96_128.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
    "rank": 25,
    "site_id": "harrat_khaybar:768:256",
    "region_id": "harrat_khaybar",
@@ -1981,9 +2005,9 @@
    "region_set": "discovery",
    "lat": 25.73933941592742,
    "lon": 39.61662473832315,
-   "score": 66.6460865994599,
-   "best_pair_score": 71.8535819396574,
-   "s_morph": 0.6973062027624136,
+   "score": 68.04605271397234,
+   "best_pair_score": 73.04218500737349,
+   "s_morph": 0.7171162538910152,
    "s_embed": 0.7503802443478147,
    "sub_scores": {
     "relief": 98.9,
@@ -2028,9 +2052,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3594.7132960605877,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 714.5668180667369,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.04 on the Mars target",
@@ -2063,9 +2088,9 @@
    "region_set": "discovery",
    "lat": 25.912266840212766,
    "lon": 39.71337162182223,
-   "score": 66.57129467625487,
-   "best_pair_score": 72.4291166660238,
-   "s_morph": 0.7098039397145054,
+   "score": 67.92528069560441,
+   "best_pair_score": 73.57861090560738,
+   "s_morph": 0.7289621770408983,
    "s_embed": 0.746022007078837,
    "sub_scores": {
     "relief": 98.8,
@@ -2110,9 +2135,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3585.1096344935754,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 706.3482766550768,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.05 on the Mars target",
@@ -2145,9 +2171,9 @@
    "region_set": "discovery",
    "lat": 26.117276903293625,
    "lon": 40.17547333213705,
-   "score": 66.42867794580509,
-   "best_pair_score": 73.17117143019632,
-   "s_morph": 0.7846568783749854,
+   "score": 67.7249045070817,
+   "best_pair_score": 74.06669958868338,
+   "s_morph": 0.7995823476831031,
    "s_embed": 0.65229396819243,
    "sub_scores": {
     "relief": 98.9,
@@ -2192,9 +2218,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3594.8297930418908,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 721.5860835023279,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
@@ -2225,9 +2252,9 @@
    "region_set": "discovery",
    "lat": 25.878033661038263,
    "lon": 39.61734311599623,
-   "score": 66.21726916555048,
-   "best_pair_score": 79.27333582570762,
-   "s_morph": 0.7410196084125799,
+   "score": 67.60900929657141,
+   "best_pair_score": 80.32094224803514,
+   "s_morph": 0.7584797154513717,
    "s_embed": 0.8703039830238206,
    "sub_scores": {
     "relief": 99.0,
@@ -2272,9 +2299,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3582.3958088106992,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 702.8788705616846,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.03 here vs 0.03 on the Mars target",
@@ -2307,9 +2335,9 @@
    "region_set": "well_studied",
    "lat": 35.809001183266076,
    "lon": -111.42209113666726,
-   "score": 65.82762228410026,
-   "best_pair_score": 71.57056435244434,
-   "s_morph": 0.6676894381906867,
+   "score": 67.24739346500343,
+   "best_pair_score": 72.84785561634779,
+   "s_morph": 0.6889776259224111,
    "s_embed": 0.7877299515250782,
    "sub_scores": {
     "relief": 99.4,
@@ -2354,6 +2382,7 @@
    },
    "novelty": {
     "status": "well_studied",
+    "basis": "catalogue_distance",
     "nearest_known_analog": "SP Crater, Arizona",
     "distance_km": 31.536801824602215,
     "source_url": "https://en.wikipedia.org/wiki/S_P_Crater"
@@ -2383,97 +2412,15 @@
   },
   {
    "rank": 30,
-   "site_id": "lut:160:992",
-   "region_id": "lut",
-   "region_name": "Lut Desert",
-   "region_set": "discovery",
-   "lat": 30.95011193352691,
-   "lon": 59.19480230850359,
-   "score": 65.72530516752649,
-   "best_pair_score": 75.04669805959247,
-   "s_morph": 0.7251797837642334,
-   "s_embed": 0.7883977758434617,
-   "sub_scores": {
-    "relief": 98.9,
-    "slope": 98.0,
-    "roughness": 98.3,
-    "shape": 99.1,
-    "embedding": 97.7
-   },
-   "terrain": {
-    "relief_m": 37.47511291503906,
-    "slope_p50_deg": 1.3287879815978312,
-    "slope_p90_deg": 2.6095570164005517,
-    "rough_std_m": 5.654252923737774,
-    "bowl_index": 0.02017289213836193,
-    "tri_m": 1.2983172473252502,
-    "hypsometric_integral": 0.4984041750431061
-   },
-   "target_terrain": {
-    "relief_m": 41.7703857421875,
-    "slope_p50_deg": 1.324415943680356,
-    "slope_p90_deg": 2.664679975260429,
-    "rough_std_m": 6.867946942950044,
-    "bowl_index": 0.03086067922413349,
-    "tri_m": 1.3332592490808524,
-    "hypsometric_integral": 0.5187016129493713
-   },
-   "target_patch_id": "mars_jezero:224:384",
-   "environment": {
-    "t2m_mean_c": 22.61,
-    "t2m_min_c": -6.5,
-    "t2m_max_c": 47.28,
-    "t2m_range_c": 15.72,
-    "precip_mm_per_day": 0.21,
-    "rh_pct": 24.7,
-    "solar_kwh_m2_day": 5.9496,
-    "bare_fraction": 1.0,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.0,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Qaidam Basin, China",
-    "distance_km": 3300.982469333505,
-    "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
-   },
-   "strong_match": [
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.03 on the Mars target",
-    "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 42 m on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
-    "Rain and snow: 0.21 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Long-duration dry, dusty-surface operations"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/lut_160_992.png",
-    "target_hillshade": "img/patches/mars_jezero_224_384.png"
-   }
-  },
-  {
-   "rank": 31,
    "site_id": "qaidam:352:1280",
    "region_id": "qaidam",
    "region_name": "Qaidam Basin",
    "region_set": "discovery",
    "lat": 37.50524526921376,
    "lon": 94.77940168145324,
-   "score": 65.71005062594472,
-   "best_pair_score": 74.65852703229066,
-   "s_morph": 0.7438662096186823,
+   "score": 67.16297097884582,
+   "best_pair_score": 75.69655017077909,
+   "s_morph": 0.7611665952601562,
    "s_embed": 0.7506638613792431,
    "sub_scores": {
     "relief": 99.4,
@@ -2518,6 +2465,7 @@
    },
    "novelty": {
     "status": "well_studied",
+    "basis": "catalogue_distance",
     "nearest_known_analog": "Qaidam Basin, China",
     "distance_km": 39.37974728772259,
     "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
@@ -2547,73 +2495,73 @@
    }
   },
   {
-   "rank": 32,
-   "site_id": "askja:448:640",
-   "region_id": "askja",
-   "region_name": "Askja and the Icelandic highlands",
-   "region_set": "well_studied",
-   "lat": 65.22060047877162,
-   "lon": -17.00289541833486,
-   "score": 65.49696610638232,
-   "best_pair_score": 72.70948570543679,
-   "s_morph": 0.8488107686249984,
-   "s_embed": 0.5445209896984224,
+   "rank": 31,
+   "site_id": "lut:160:992",
+   "region_id": "lut",
+   "region_name": "Lut Desert",
+   "region_set": "discovery",
+   "lat": 30.95011193352691,
+   "lon": 59.19480230850359,
+   "score": 67.0651204863804,
+   "best_pair_score": 76.14674579176801,
+   "s_morph": 0.7435139126338256,
+   "s_embed": 0.7883977758434617,
    "sub_scores": {
-    "relief": 99.6,
-    "slope": 98.5,
-    "roughness": 98.8,
-    "shape": 98.9,
-    "embedding": 64.8
+    "relief": 98.9,
+    "slope": 98.0,
+    "roughness": 98.3,
+    "shape": 99.1,
+    "embedding": 97.7
    },
    "terrain": {
-    "relief_m": 34.33734893798828,
-    "slope_p50_deg": 0.8383867955038316,
-    "slope_p90_deg": 2.7564079326471003,
-    "rough_std_m": 5.040307667720377,
-    "bowl_index": -0.06464467197656631,
-    "tri_m": 1.0636780080884602,
-    "hypsometric_integral": 0.5477342009544373
+    "relief_m": 37.47511291503906,
+    "slope_p50_deg": 1.3287879815978312,
+    "slope_p90_deg": 2.6095570164005517,
+    "rough_std_m": 5.654252923737774,
+    "bowl_index": 0.02017289213836193,
+    "tri_m": 1.2983172473252502,
+    "hypsometric_integral": 0.4984041750431061
    },
    "target_terrain": {
-    "relief_m": 33.00909423828125,
-    "slope_p50_deg": 1.2060697821796658,
-    "slope_p90_deg": 2.5156788141048807,
-    "rough_std_m": 4.605127859607563,
-    "bowl_index": -0.04661061614751816,
-    "tri_m": 1.2183143385491189,
-    "hypsometric_integral": 0.5510073900222778
+    "relief_m": 41.7703857421875,
+    "slope_p50_deg": 1.324415943680356,
+    "slope_p90_deg": 2.664679975260429,
+    "rough_std_m": 6.867946942950044,
+    "bowl_index": 0.03086067922413349,
+    "tri_m": 1.3332592490808524,
+    "hypsometric_integral": 0.5187016129493713
    },
-   "target_patch_id": "mars_jezero:256:416",
+   "target_patch_id": "mars_jezero:224:384",
    "environment": {
-    "t2m_mean_c": -2.84,
-    "t2m_min_c": -23.83,
-    "t2m_max_c": 10.31,
-    "t2m_range_c": 4.1,
-    "precip_mm_per_day": 2.36,
-    "rh_pct": 94.09,
-    "solar_kwh_m2_day": 2.4878,
-    "bare_fraction": 0.5810998735777497,
+    "t2m_mean_c": 22.61,
+    "t2m_min_c": -6.5,
+    "t2m_max_c": 47.28,
+    "t2m_range_c": 15.72,
+    "precip_mm_per_day": 0.21,
+    "rh_pct": 24.7,
+    "solar_kwh_m2_day": 5.9496,
+    "bare_fraction": 1.0,
     "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.41890012642225033,
+    "vegetation_fraction": 0.0,
     "water_fraction": 0.0,
     "worldcover_available": true,
     "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
    },
    "novelty": {
-    "status": "well_studied",
-    "nearest_known_analog": "Askja, Iceland",
-    "distance_km": 23.25767228447641,
-    "source_url": "https://en.wikipedia.org/wiki/Askja"
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 2324.866912362173,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
-    "Relief (bar 100/100): height range (5th-95th pct) 34 m here vs 33 m on the Mars target",
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.05 on the Mars target"
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.03 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 42 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
    ],
    "breaks_down": [
     "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
-    "Image embedding bar 65/100: the shaded relief looks less alike than the terrain numbers suggest",
-    "Vegetation, cropland or buildings cover 42% of the 2 km surroundings (none on the Mars)",
-    "Rain and snow: 2.36 mm per day on average (NASA POWER)",
+    "Rain and snow: 0.21 mm per day on average (NASA POWER)",
     "Gravity: Earth's is about 2.6 times that of Mars.",
     "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
     "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
@@ -2621,24 +2569,25 @@
    "tests_suited": [
     "Rover mobility and traverse-planning trials",
     "Terrain-relative navigation and landing-hazard imaging tests",
-    "Cold-weather equipment and power-system trials"
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
    ],
    "images": {
-    "earth_hillshade": "img/patches/askja_448_640.png",
-    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+    "earth_hillshade": "img/patches/lut_160_992.png",
+    "target_hillshade": "img/patches/mars_jezero_224_384.png"
    }
   },
   {
-   "rank": 33,
+   "rank": 32,
    "site_id": "harrat_khaybar:1152:0",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.531855591529578,
    "lon": 39.46268424643571,
-   "score": 65.39625002313421,
-   "best_pair_score": 76.0623129281486,
-   "s_morph": 0.7793808583919947,
+   "score": 66.75528676351102,
+   "best_pair_score": 76.97680643325631,
+   "s_morph": 0.7946224168104565,
    "s_embed": 0.7324865356157231,
    "sub_scores": {
     "relief": 99.1,
@@ -2683,9 +2632,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3604.0748701076195,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 722.7700357538353,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.02 here vs -0.02 on the Mars target",
@@ -2711,99 +2661,16 @@
    }
   },
   {
-   "rank": 34,
-   "site_id": "meteor_crater:1600:1376",
-   "region_id": "meteor_crater",
-   "region_name": "Meteor Crater, Arizona",
-   "region_set": "well_studied",
-   "lat": 34.59550910956768,
-   "lon": -110.64730637320311,
-   "score": 65.22033214402346,
-   "best_pair_score": 69.29227497139662,
-   "s_morph": 0.6937499157354573,
-   "s_embed": 0.6916820006817295,
-   "sub_scores": {
-    "relief": 99.4,
-    "slope": 97.1,
-    "roughness": 98.1,
-    "shape": 98.3,
-    "embedding": 90.7
-   },
-   "terrain": {
-    "relief_m": 42.771484375,
-    "slope_p50_deg": 1.3502439734426082,
-    "slope_p90_deg": 2.690843204379039,
-    "rough_std_m": 4.736845575160081,
-    "bowl_index": -0.030301041901111603,
-    "tri_m": 1.3523920160426557,
-    "hypsometric_integral": 0.5242021083831787
-   },
-   "target_terrain": {
-    "relief_m": 39.37591552734375,
-    "slope_p50_deg": 1.366141385629195,
-    "slope_p90_deg": 2.838759257183238,
-    "rough_std_m": 3.7889836327286326,
-    "bowl_index": -0.04803335666656494,
-    "tri_m": 1.3833697951174924,
-    "hypsometric_integral": 0.5349811911582947
-   },
-   "target_patch_id": "mars_jezero:128:416",
-   "environment": {
-    "t2m_mean_c": 11.97,
-    "t2m_min_c": -22.05,
-    "t2m_max_c": 38.79,
-    "t2m_range_c": 14.74,
-    "precip_mm_per_day": 1.09,
-    "rh_pct": 47.3,
-    "solar_kwh_m2_day": 5.6599,
-    "bare_fraction": 0.0020371867421180275,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.9979628132578819,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Meteor Crater, Arizona",
-    "distance_km": 59.0915269767806,
-    "source_url": "https://en.wikipedia.org/wiki/Meteor_Crater"
-   },
-   "strong_match": [
-    "Relief (bar 99/100): height range (5th-95th pct) 43 m here vs 39 m on the Mars target",
-    "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.03 here vs -0.05 on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 91% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
-    "Vegetation, cropland or buildings cover 100% of the 2 km surroundings (none on the Mars)",
-    "Rain and snow: 1.09 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Cold-weather equipment and power-system trials"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/meteor_crater_1600_1376.png",
-    "target_hillshade": "img/patches/mars_jezero_128_416.png"
-   }
-  },
-  {
-   "rank": 35,
+   "rank": 33,
    "site_id": "harrat_khaybar:1088:1440",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.561284834074524,
    "lon": 40.32288585370782,
-   "score": 65.03786958685443,
-   "best_pair_score": 68.70349250900885,
-   "s_morph": 0.6941184871412849,
+   "score": 66.45655024353084,
+   "best_pair_score": 69.90191302261175,
+   "s_morph": 0.7140921623679998,
    "s_embed": 0.676409582013294,
    "sub_scores": {
     "relief": 99.4,
@@ -2848,9 +2715,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3652.994181413184,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 776.2778764389077,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 52 m here vs 55 m on the Mars target",
@@ -2874,16 +2742,16 @@
    }
   },
   {
-   "rank": 36,
+   "rank": 34,
    "site_id": "harrat_khaybar:1472:1408",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.353446828625497,
    "lon": 40.30153671457355,
-   "score": 64.73142900072692,
-   "best_pair_score": 73.50010639474061,
-   "s_morph": 0.7268082062971181,
+   "score": 66.16398958704407,
+   "best_pair_score": 74.59483260774597,
+   "s_morph": 0.745053643180541,
    "s_embed": 0.7472903504228379,
    "sub_scores": {
     "relief": 99.3,
@@ -2928,9 +2796,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3670.1929015949463,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 791.9625063355569,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 34 m here vs 33 m on the Mars target",
@@ -2956,16 +2825,16 @@
    }
   },
   {
-   "rank": 37,
+   "rank": 35,
    "site_id": "crater_roter_kamm:928:448",
    "region_id": "crater_roter_kamm",
    "region_name": "Roter Kamm crater",
    "region_set": "crater_benchmark",
    "lat": -28.01587475092207,
    "lon": 16.279639597781088,
-   "score": 64.48493313112097,
-   "best_pair_score": 69.88323688726472,
-   "s_morph": 0.7391652654630563,
+   "score": 65.84055407927089,
+   "best_pair_score": 70.93706021174505,
+   "s_morph": 0.7567289875377284,
    "s_embed": 0.6383330239870337,
    "sub_scores": {
     "relief": 99.5,
@@ -3010,9 +2879,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Lanzarote (Timanfaya)",
-    "distance_km": 7101.044240053417,
-    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6805.858483659343,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 36 m here vs 33 m on the Mars target",
@@ -3036,99 +2906,16 @@
    }
   },
   {
-   "rank": 38,
-   "site_id": "meteor_crater:448:800",
-   "region_id": "meteor_crater",
-   "region_name": "Meteor Crater, Arizona",
-   "region_set": "well_studied",
-   "lat": 35.219311378815746,
-   "lon": -111.02437686575207,
-   "score": 64.29275226249696,
-   "best_pair_score": 75.45524070590466,
-   "s_morph": 0.7857239269537551,
-   "s_embed": 0.7077951272169837,
-   "sub_scores": {
-    "relief": 98.7,
-    "slope": 98.6,
-    "roughness": 99.2,
-    "shape": 99.5,
-    "embedding": 92.4
-   },
-   "terrain": {
-    "relief_m": 39.83258056640625,
-    "slope_p50_deg": 1.3408084334778514,
-    "slope_p90_deg": 2.685863142076634,
-    "rough_std_m": 5.175145038535894,
-    "bowl_index": -0.09737411141395569,
-    "tri_m": 1.3964900156709827,
-    "hypsometric_integral": 0.622328519821167
-   },
-   "target_terrain": {
-    "relief_m": 38.8280029296875,
-    "slope_p50_deg": 1.296472222972295,
-    "slope_p90_deg": 2.6603747678511143,
-    "rough_std_m": 5.685476514325209,
-    "bowl_index": -0.09178222715854645,
-    "tri_m": 1.3383395049127902,
-    "hypsometric_integral": 0.5968107581138611
-   },
-   "target_patch_id": "mars_jezero:192:384",
-   "environment": {
-    "t2m_mean_c": 11.36,
-    "t2m_min_c": -22.36,
-    "t2m_max_c": 37.83,
-    "t2m_range_c": 14.49,
-    "precip_mm_per_day": 1.14,
-    "rh_pct": 47.71,
-    "solar_kwh_m2_day": 5.5637,
-    "bare_fraction": 0.4189163437718351,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.5810836562281649,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "well_studied",
-    "nearest_known_analog": "Meteor Crater, Arizona",
-    "distance_km": 21.266917888887576,
-    "source_url": "https://en.wikipedia.org/wiki/Meteor_Crater"
-   },
-   "strong_match": [
-    "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
-    "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.7 m; ruggedness index 1.4 m here vs 1.3 m on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (99/100)",
-    "Vegetation, cropland or buildings cover 58% of the 2 km surroundings (none on the Mars)",
-    "Rain and snow: 1.14 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Cold-weather equipment and power-system trials"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/meteor_crater_448_800.png",
-    "target_hillshade": "img/patches/mars_jezero_192_384.png"
-   }
-  },
-  {
-   "rank": 39,
+   "rank": 36,
    "site_id": "crater_roter_kamm:288:224",
    "region_id": "crater_roter_kamm",
    "region_name": "Roter Kamm crater",
    "region_set": "crater_benchmark",
    "lat": -27.670492448945744,
    "lon": 16.139328898385386,
-   "score": 64.15898051969599,
-   "best_pair_score": 69.94395056937601,
-   "s_morph": 0.7001871219157596,
+   "score": 65.45736741149123,
+   "best_pair_score": 71.12362561168759,
+   "s_morph": 0.7198483726209524,
    "s_embed": 0.698318081360761,
    "sub_scores": {
     "relief": 99.3,
@@ -3173,9 +2960,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Lanzarote (Timanfaya)",
-    "distance_km": 7060.790267454496,
-    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6773.725689676119,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
@@ -3201,16 +2989,16 @@
    }
   },
   {
-   "rank": 40,
+   "rank": 37,
    "site_id": "qaidam:160:480",
    "region_id": "qaidam",
    "region_name": "Qaidam Basin",
    "region_set": "discovery",
    "lat": 37.61598980698177,
    "lon": 94.23819754538499,
-   "score": 63.866769969678124,
-   "best_pair_score": 69.71928738111149,
-   "s_morph": 0.6583713321396709,
+   "score": 65.33816486367432,
+   "best_pair_score": 71.02328936970481,
+   "s_morph": 0.6801046986162261,
    "s_embed": 0.7554251863182809,
    "sub_scores": {
     "relief": 99.6,
@@ -3255,6 +3043,7 @@
    },
    "novelty": {
     "status": "well_studied",
+    "basis": "catalogue_distance",
     "nearest_known_analog": "Qaidam Basin, China",
     "distance_km": 43.109609538717436,
     "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
@@ -3284,96 +3073,16 @@
    }
   },
   {
-   "rank": 41,
-   "site_id": "harrat_khaybar:864:480",
-   "region_id": "harrat_khaybar",
-   "region_name": "Harrat Khaybar",
-   "region_set": "discovery",
-   "lat": 25.686700999384527,
-   "lon": 39.750289877327816,
-   "score": 63.48571108266368,
-   "best_pair_score": 75.01867800369388,
-   "s_morph": 0.7958884398703056,
-   "s_embed": 0.6816342902868886,
-   "sub_scores": {
-    "relief": 99.4,
-    "slope": 94.5,
-    "roughness": 99.2,
-    "shape": 99.4,
-    "embedding": 89.60000000000001
-   },
-   "terrain": {
-    "relief_m": 48.146270751953125,
-    "slope_p50_deg": 1.0204698486607602,
-    "slope_p90_deg": 2.241028724595342,
-    "rough_std_m": 5.163983585238789,
-    "bowl_index": -0.05052048712968826,
-    "tri_m": 1.15746038240399,
-    "hypsometric_integral": 0.5218287706375122
-   },
-   "target_terrain": {
-    "relief_m": 41.447265625,
-    "slope_p50_deg": 1.2992129469628886,
-    "slope_p90_deg": 2.563157136120605,
-    "rough_std_m": 5.412386001112564,
-    "bowl_index": -0.056742142885923386,
-    "tri_m": 1.2972139562950173,
-    "hypsometric_integral": 0.5251647233963013
-   },
-   "target_patch_id": "mars_jezero:192:416",
-   "environment": {
-    "t2m_mean_c": 22.95,
-    "t2m_min_c": -5.75,
-    "t2m_max_c": 43.76,
-    "t2m_range_c": 15.8,
-    "precip_mm_per_day": 0.07,
-    "rh_pct": 26.16,
-    "solar_kwh_m2_day": 6.2054,
-    "bare_fraction": 0.998249299719888,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.0017188693659281895,
-    "water_fraction": 0.00003183091418385536,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3607.4071948716155,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
-   },
-   "strong_match": [
-    "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (94/100)",
-    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Long-duration dry, dusty-surface operations"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/harrat_khaybar_864_480.png",
-    "target_hillshade": "img/patches/mars_jezero_192_416.png"
-   }
-  },
-  {
-   "rank": 42,
+   "rank": 38,
    "site_id": "harrat_khaybar:1056:736",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.58181718250093,
    "lon": 39.902567955379006,
-   "score": 63.46913431991117,
-   "best_pair_score": 67.41945209583248,
-   "s_morph": 0.5979724204604336,
+   "score": 65.00838496593279,
+   "best_pair_score": 68.88196929596072,
+   "s_morph": 0.6223477071292376,
    "s_embed": 0.7885276717051614,
    "sub_scores": {
     "relief": 99.0,
@@ -3418,9 +3127,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3625.882340819883,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 746.4814912272785,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 99/100): height range (5th-95th pct) 93 m here vs 74 m on the Mars target",
@@ -3446,16 +3156,97 @@
    }
   },
   {
-   "rank": 43,
+   "rank": 39,
+   "site_id": "harrat_khaybar:864:480",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.686700999384527,
+   "lon": 39.750289877327816,
+   "score": 64.87396314879999,
+   "best_pair_score": 75.87331657794333,
+   "s_morph": 0.8101324161077964,
+   "s_embed": 0.6816342902868886,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 94.5,
+    "roughness": 99.2,
+    "shape": 99.4,
+    "embedding": 89.60000000000001
+   },
+   "terrain": {
+    "relief_m": 48.146270751953125,
+    "slope_p50_deg": 1.0204698486607602,
+    "slope_p90_deg": 2.241028724595342,
+    "rough_std_m": 5.163983585238789,
+    "bowl_index": -0.05052048712968826,
+    "tri_m": 1.15746038240399,
+    "hypsometric_integral": 0.5218287706375122
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.998249299719888,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0017188693659281895,
+    "water_fraction": 0.00003183091418385536,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 727.6898606056199,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (94/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_864_480.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 40,
    "site_id": "qaidam:96:160",
    "region_id": "qaidam",
    "region_name": "Qaidam Basin",
    "region_set": "discovery",
    "lat": 37.65267811169004,
    "lon": 94.02115452104982,
-   "score": 63.413208249577984,
-   "best_pair_score": 67.95009657435749,
-   "s_morph": 0.7557478796961761,
+   "score": 64.72793771277892,
+   "best_pair_score": 68.94760394050508,
+   "s_morph": 0.7723730024653025,
    "s_embed": 0.5651305948146732,
    "sub_scores": {
     "relief": 99.4,
@@ -3500,6 +3291,7 @@
    },
    "novelty": {
     "status": "less_studied",
+    "basis": null,
     "nearest_known_analog": "Qaidam Basin, China",
     "distance_km": 57.22844244758801,
     "source_url": "https://en.wikipedia.org/wiki/Qaidam_Basin"
@@ -3528,16 +3320,99 @@
    }
   },
   {
-   "rank": 44,
+   "rank": 41,
+   "site_id": "harrat_khaybar:928:32",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.653157814701842,
+   "lon": 39.482279969371035,
+   "score": 64.63975930680654,
+   "best_pair_score": 73.5660333332474,
+   "s_morph": 0.6475131160958019,
+   "s_embed": 0.8678811591874821,
+   "sub_scores": {
+    "relief": 99.5,
+    "slope": 95.7,
+    "roughness": 97.0,
+    "shape": 98.1,
+    "embedding": 99.3
+   },
+   "terrain": {
+    "relief_m": 45.65570068359375,
+    "slope_p50_deg": 1.2261642961475863,
+    "slope_p90_deg": 2.19957189502619,
+    "rough_std_m": 4.0897651353054645,
+    "bowl_index": -0.0829453095793724,
+    "tri_m": 1.183530059242844,
+    "hypsometric_integral": 0.5292767882347107
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": {
+    "t2m_mean_c": 26.12,
+    "t2m_min_c": -1.78,
+    "t2m_max_c": 47.83,
+    "t2m_range_c": 16.0,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 24.0,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9992995415180845,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0007004584819154356,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 713.4206825579048,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 46 m here vs 41 m on the Mars target",
+    "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.08 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_928_32.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 42,
    "site_id": "harrat_khaybar:96:704",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 26.10200279724466,
    "lon": 39.88732387001497,
-   "score": 63.09058456897782,
-   "best_pair_score": 80.75918925876726,
-   "s_morph": 0.8617355985167611,
+   "score": 64.43203777386606,
+   "best_pair_score": 81.36047904315109,
+   "s_morph": 0.8717570949231582,
    "s_embed": 0.7263763336940396,
    "sub_scores": {
     "relief": 99.5,
@@ -3582,9 +3457,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3578.743689709547,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 702.6167683450944,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Relief (bar 100/100): height range (5th-95th pct) 67 m here vs 62 m on the Mars target",
@@ -3610,261 +3486,16 @@
    }
   },
   {
-   "rank": 45,
-   "site_id": "harrat_khaybar:864:0",
-   "region_id": "harrat_khaybar",
-   "region_name": "Harrat Khaybar",
-   "region_set": "discovery",
-   "lat": 25.68789484256599,
-   "lon": 39.46328535143679,
-   "score": 63.03709939764323,
-   "best_pair_score": 71.11204842171834,
-   "s_morph": 0.7398443361591337,
-   "s_embed": 0.6680347063042582,
-   "sub_scores": {
-    "relief": 99.4,
-    "slope": 96.0,
-    "roughness": 96.6,
-    "shape": 99.4,
-    "embedding": 87.9
-   },
-   "terrain": {
-    "relief_m": 31.356292724609375,
-    "slope_p50_deg": 0.966808111867903,
-    "slope_p90_deg": 2.599456831228069,
-    "rough_std_m": 4.759169397983546,
-    "bowl_index": 0.11056338995695114,
-    "tri_m": 1.1123551320086904,
-    "hypsometric_integral": 0.45136454701423645
-   },
-   "target_terrain": {
-    "relief_m": 32.52252197265625,
-    "slope_p50_deg": 1.2951565388043078,
-    "slope_p90_deg": 2.6791560090263014,
-    "rough_std_m": 3.6267560559334315,
-    "bowl_index": 0.10116186738014221,
-    "tri_m": 1.3360156675531267,
-    "hypsometric_integral": 0.4397399127483368
-   },
-   "target_patch_id": "mars_jezero:160:416",
-   "environment": {
-    "t2m_mean_c": 26.12,
-    "t2m_min_c": -1.78,
-    "t2m_max_c": 47.83,
-    "t2m_range_c": 16.0,
-    "precip_mm_per_day": 0.07,
-    "rh_pct": 24.0,
-    "solar_kwh_m2_day": 6.2054,
-    "bare_fraction": 0.9973773428004862,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.002622657199513849,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3590.1508325132386,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
-   },
-   "strong_match": [
-    "Relief (bar 99/100): height range (5th-95th pct) 31 m here vs 33 m on the Mars target",
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.10 on the Mars target"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
-    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Long-duration dry, dusty-surface operations"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/harrat_khaybar_864_0.png",
-    "target_hillshade": "img/patches/mars_jezero_160_416.png"
-   }
-  },
-  {
-   "rank": 46,
-   "site_id": "sp_crater:512:32",
-   "region_id": "sp_crater",
-   "region_name": "SP Crater, San Francisco volcanic field, Arizona",
-   "region_set": "well_studied",
-   "lat": 35.735062167567705,
-   "lon": -112.14357685024683,
-   "score": 63.00745761573811,
-   "best_pair_score": 77.12934918392848,
-   "s_morph": 0.8209648815893983,
-   "s_embed": 0.6967864072141149,
-   "sub_scores": {
-    "relief": 99.2,
-    "slope": 96.7,
-    "roughness": 99.0,
-    "shape": 99.4,
-    "embedding": 91.3
-   },
-   "terrain": {
-    "relief_m": 41.052825927734375,
-    "slope_p50_deg": 1.2542446293034597,
-    "slope_p90_deg": 3.2781310250125286,
-    "rough_std_m": 4.738748811083431,
-    "bowl_index": 0.024941664189100266,
-    "tri_m": 1.4402143178695694,
-    "hypsometric_integral": 0.4894106388092041
-   },
-   "target_terrain": {
-    "relief_m": 37.31475830078125,
-    "slope_p50_deg": 1.3762016188721273,
-    "slope_p90_deg": 2.6393745535584694,
-    "rough_std_m": 4.225074259068211,
-    "bowl_index": 0.02287994883954525,
-    "tri_m": 1.3295845246091718,
-    "hypsometric_integral": 0.47383058071136475
-   },
-   "target_patch_id": "mars_jezero:160:288",
-   "environment": {
-    "t2m_mean_c": 10.17,
-    "t2m_min_c": -21.21,
-    "t2m_max_c": 37.0,
-    "t2m_range_c": 14.18,
-    "precip_mm_per_day": 1.02,
-    "rh_pct": 47.94,
-    "solar_kwh_m2_day": 5.543,
-    "bare_fraction": 0.003018172575930868,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.9969818274240692,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "well_studied",
-    "nearest_known_analog": "SP Crater, Arizona",
-    "distance_km": 49.259739953009735,
-    "source_url": "https://en.wikipedia.org/wiki/S_P_Crater"
-   },
-   "strong_match": [
-    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.02 on the Mars target",
-    "Relief (bar 99/100): height range (5th-95th pct) 41 m here vs 37 m on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 91% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
-    "Vegetation, cropland or buildings cover 100% of the 2 km surroundings (none on the Mars)",
-    "Rain and snow: 1.02 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Cold-weather equipment and power-system trials"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/sp_crater_512_32.png",
-    "target_hillshade": "img/patches/mars_jezero_160_288.png"
-   }
-  },
-  {
-   "rank": 47,
-   "site_id": "askja:224:704",
-   "region_id": "askja",
-   "region_name": "Askja and the Icelandic highlands",
-   "region_set": "well_studied",
-   "lat": 65.34219309691154,
-   "lon": -16.92962380897972,
-   "score": 62.83231460148005,
-   "best_pair_score": 73.34196799723365,
-   "s_morph": 0.6698210727734886,
-   "s_embed": 0.8288175907706082,
-   "sub_scores": {
-    "relief": 99.5,
-    "slope": 98.6,
-    "roughness": 97.8,
-    "shape": 97.89999999999999,
-    "embedding": 98.8
-   },
-   "terrain": {
-    "relief_m": 38.81451416015625,
-    "slope_p50_deg": 1.2422248360942874,
-    "slope_p90_deg": 3.3970812437027,
-    "rough_std_m": 6.2213930605874115,
-    "bowl_index": 0.09291407465934753,
-    "tri_m": 1.488319729418958,
-    "hypsometric_integral": 0.3351074457168579
-   },
-   "target_terrain": {
-    "relief_m": 42.62286376953125,
-    "slope_p50_deg": 1.3239662755345518,
-    "slope_p90_deg": 3.148496316645663,
-    "rough_std_m": 4.921975652138655,
-    "bowl_index": 0.06432460993528366,
-    "tri_m": 1.4747978234266268,
-    "hypsometric_integral": 0.3383171260356903
-   },
-   "target_patch_id": "mars_jezero:128:384",
-   "environment": {
-    "t2m_mean_c": -0.96,
-    "t2m_min_c": -24.61,
-    "t2m_max_c": 18.16,
-    "t2m_range_c": 5.11,
-    "precip_mm_per_day": 2.72,
-    "rh_pct": 91.76,
-    "solar_kwh_m2_day": 2.4878,
-    "bare_fraction": 0.9987731991192199,
-    "snow_ice_fraction": 0.0,
-    "vegetation_fraction": 0.0012268008807801195,
-    "water_fraction": 0.0,
-    "worldcover_available": true,
-    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
-   },
-   "novelty": {
-    "status": "well_studied",
-    "nearest_known_analog": "Askja, Iceland",
-    "distance_km": 35.054895950774004,
-    "source_url": "https://en.wikipedia.org/wiki/Askja"
-   },
-   "strong_match": [
-    "Relief (bar 100/100): height range (5th-95th pct) 39 m here vs 43 m on the Mars target",
-    "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 3.4° here vs 3.1° on the Mars target",
-    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
-   ],
-   "breaks_down": [
-    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
-    "Rain and snow: 2.72 mm per day on average (NASA POWER)",
-    "Gravity: Earth's is about 2.6 times that of Mars.",
-    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
-    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
-   ],
-   "tests_suited": [
-    "Rover mobility and traverse-planning trials",
-    "Terrain-relative navigation and landing-hazard imaging tests",
-    "Camera-based navigation and mapping tests on similar-looking terrain",
-    "Cold-weather equipment and power-system trials"
-   ],
-   "images": {
-    "earth_hillshade": "img/patches/askja_224_704.png",
-    "target_hillshade": "img/patches/mars_jezero_128_384.png"
-   }
-  },
-  {
-   "rank": 48,
+   "rank": 43,
    "site_id": "harrat_khaybar:1312:1152",
    "region_id": "harrat_khaybar",
    "region_name": "Harrat Khaybar",
    "region_set": "discovery",
    "lat": 25.441393205566015,
    "lon": 40.14973723604433,
-   "score": 62.74921480978852,
-   "best_pair_score": 71.76511661940079,
-   "s_morph": 0.6731885774352638,
+   "score": 64.31269546600653,
+   "best_pair_score": 73.0263730876627,
+   "s_morph": 0.6942095185729626,
    "s_embed": 0.7843450493321238,
    "sub_scores": {
     "relief": 98.4,
@@ -3909,9 +3540,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Nördlinger Ries, Germany",
-    "distance_km": 3653.231959803624,
-    "source_url": "https://en.wikipedia.org/wiki/N%C3%B6rdlinger_Ries"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 774.5411132579833,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
@@ -3937,16 +3569,180 @@
    }
   },
   {
-   "rank": 49,
+   "rank": 44,
+   "site_id": "askja:224:704",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 65.34219309691154,
+   "lon": -16.92962380897972,
+   "score": 64.20225815831668,
+   "best_pair_score": 74.62755542700275,
+   "s_morph": 0.6818747974133306,
+   "s_embed": 0.8428766895550728,
+   "sub_scores": {
+    "relief": 98.7,
+    "slope": 94.8,
+    "roughness": 97.6,
+    "shape": 99.5,
+    "embedding": 99.0
+   },
+   "terrain": {
+    "relief_m": 38.81451416015625,
+    "slope_p50_deg": 1.2422248360942874,
+    "slope_p90_deg": 3.3970812437027,
+    "rough_std_m": 6.2213930605874115,
+    "bowl_index": 0.09291407465934753,
+    "tri_m": 1.488319729418958,
+    "hypsometric_integral": 0.3351074457168579
+   },
+   "target_terrain": {
+    "relief_m": 48.8912353515625,
+    "slope_p50_deg": 1.5016418926958752,
+    "slope_p90_deg": 3.8499688250007456,
+    "rough_std_m": 7.523521755550986,
+    "bowl_index": 0.09857259690761566,
+    "tri_m": 1.7098266490416274,
+    "hypsometric_integral": 0.32042768597602844
+   },
+   "target_patch_id": "mars_jezero:96:416",
+   "environment": {
+    "t2m_mean_c": -0.96,
+    "t2m_min_c": -24.61,
+    "t2m_max_c": 18.16,
+    "t2m_range_c": 5.11,
+    "precip_mm_per_day": 2.72,
+    "rh_pct": 91.76,
+    "solar_kwh_m2_day": 2.4878,
+    "bare_fraction": 0.9987731991192199,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0012268008807801195,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "well_studied",
+    "basis": "catalogue_distance",
+    "nearest_known_analog": "Askja, Iceland",
+    "distance_km": 35.054895950774004,
+    "source_url": "https://en.wikipedia.org/wiki/Askja"
+   },
+   "strong_match": [
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.09 here vs 0.10 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 39 m here vs 49 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Rain and snow: 2.72 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Cold-weather equipment and power-system trials"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_224_704.png",
+    "target_hillshade": "img/patches/mars_jezero_96_416.png"
+   }
+  },
+  {
+   "rank": 45,
+   "site_id": "harrat_khaybar:1600:576",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.287647417477228,
+   "lon": 39.80502765048148,
+   "score": 64.07389084091348,
+   "best_pair_score": 66.71221279003217,
+   "s_morph": 0.6600415207865807,
+   "s_embed": 0.6777430385709332,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 96.5,
+    "roughness": 98.5,
+    "shape": 97.5,
+    "embedding": 89.1
+   },
+   "terrain": {
+    "relief_m": 35.587646484375,
+    "slope_p50_deg": 1.0762424059080289,
+    "slope_p90_deg": 2.3215290766757866,
+    "rough_std_m": 3.8366493063933236,
+    "bowl_index": 0.013103103265166283,
+    "tri_m": 1.1385313742614809,
+    "hypsometric_integral": 0.5112557411193848
+   },
+   "target_terrain": {
+    "relief_m": 34.3917236328125,
+    "slope_p50_deg": 1.235476487279463,
+    "slope_p90_deg": 2.64790220456228,
+    "rough_std_m": 3.4682410001404307,
+    "bowl_index": -0.018719585612416267,
+    "tri_m": 1.3431658074957522,
+    "hypsometric_integral": 0.5118603706359863
+   },
+   "target_patch_id": "mars_jezero:160:384",
+   "environment": {
+    "t2m_mean_c": 22.95,
+    "t2m_min_c": -5.75,
+    "t2m_max_c": 43.76,
+    "t2m_range_c": 15.8,
+    "precip_mm_per_day": 0.07,
+    "rh_pct": 26.16,
+    "solar_kwh_m2_day": 6.2054,
+    "bare_fraction": 0.9991990003524398,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0008009996475601551,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 765.397384255541,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 36 m here vs 34 m on the Mars target",
+    "Roughness (bar 98/100): plane-fit spread 3.8 m here vs 3.5 m; ruggedness index 1.1 m here vs 1.3 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.07 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1600_576.png",
+    "target_hillshade": "img/patches/mars_jezero_160_384.png"
+   }
+  },
+  {
+   "rank": 46,
    "site_id": "namib:1056:672",
    "region_id": "namib",
    "region_name": "Namib desert",
    "region_set": "discovery",
    "lat": -24.88997371557083,
    "lon": 15.199764595144238,
-   "score": 62.68492620677239,
-   "best_pair_score": 80.46604375157752,
-   "s_morph": 0.9028988881690863,
+   "score": 63.95153852506218,
+   "best_pair_score": 80.89771532665641,
+   "s_morph": 0.9100934144204011,
    "s_embed": 0.6573027615358085,
    "sub_scores": {
     "relief": 99.4,
@@ -3991,9 +3787,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Lanzarote (Timanfaya)",
-    "distance_km": 6745.13037540179,
-    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6512.18852363348,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
    },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.03 here vs -0.03 on the Mars target",
@@ -4017,16 +3814,16 @@
    }
   },
   {
-   "rank": 50,
+   "rank": 47,
    "site_id": "puna_de_atacama:1152:1024",
    "region_id": "puna_de_atacama",
    "region_name": "Puna de Atacama",
    "region_set": "discovery",
    "lat": -23.64844010207714,
    "lon": -67.22679828320648,
-   "score": 62.64453826544718,
-   "best_pair_score": 77.74511862706352,
-   "s_morph": 0.8693683970364267,
+   "score": 63.93777553306148,
+   "best_pair_score": 78.31558968027909,
+   "s_morph": 0.8788762479233528,
    "s_embed": 0.6395753701219478,
    "sub_scores": {
     "relief": 99.3,
@@ -4071,9 +3868,10 @@
    },
    "novelty": {
     "status": "less_studied",
-    "nearest_known_analog": "Atacama Desert, Chile",
-    "distance_km": 226.17236789642038,
-    "source_url": "https://en.wikipedia.org/wiki/Atacama_Desert"
+    "basis": null,
+    "nearest_known_analog": "Licancabur, Chile and Bolivia",
+    "distance_km": 112.7252961308295,
+    "source_url": "https://en.wikipedia.org/wiki/Licancabur"
    },
    "strong_match": [
     "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.11 here vs 0.11 on the Mars target",
@@ -4093,6 +3891,255 @@
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1152_1024.png",
     "target_hillshade": "img/patches/mars_jezero_320_224.png"
+   }
+  },
+  {
+   "rank": 48,
+   "site_id": "harrat_khaybar:64:32",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 26.121256354279133,
+   "lon": 39.48418556121808,
+   "score": 63.838010332839325,
+   "best_pair_score": 76.23945891911951,
+   "s_morph": 0.7778354322200637,
+   "s_embed": 0.7392333246478922,
+   "sub_scores": {
+    "relief": 99.2,
+    "slope": 99.2,
+    "roughness": 99.4,
+    "shape": 98.6,
+    "embedding": 95.1
+   },
+   "terrain": {
+    "relief_m": 35.78251647949219,
+    "slope_p50_deg": 1.2660111277833588,
+    "slope_p90_deg": 2.5400515208254504,
+    "rough_std_m": 4.742739829097682,
+    "bowl_index": -0.060369040817022324,
+    "tri_m": 1.3468197515926301,
+    "hypsometric_integral": 0.4895786941051483
+   },
+   "target_terrain": {
+    "relief_m": 31.88848876953125,
+    "slope_p50_deg": 1.2345208097902411,
+    "slope_p90_deg": 2.6189901946556553,
+    "rough_std_m": 4.428138610767946,
+    "bowl_index": -0.043027136474847794,
+    "tri_m": 1.3211959854745219,
+    "hypsometric_integral": 0.4742199778556824
+   },
+   "target_patch_id": "mars_jezero:160:352",
+   "environment": {
+    "t2m_mean_c": 25.22,
+    "t2m_min_c": -3.02,
+    "t2m_max_c": 47.03,
+    "t2m_range_c": 16.18,
+    "precip_mm_per_day": 0.08,
+    "rh_pct": 23.77,
+    "solar_kwh_m2_day": 6.354,
+    "bare_fraction": 0.9973036416698389,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.002696358330161147,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 673.7656094641397,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Roughness (bar 99/100): plane-fit spread 4.7 m here vs 4.4 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 36 m here vs 32 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 95% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is shape (99/100)",
+    "Rain and snow: 0.08 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_64_32.png",
+    "target_hillshade": "img/patches/mars_jezero_160_352.png"
+   }
+  },
+  {
+   "rank": 49,
+   "site_id": "ahaggar:864:96",
+   "region_id": "ahaggar",
+   "region_name": "Ahaggar (Hoggar) mountains",
+   "region_set": "discovery",
+   "lat": 23.261176451769195,
+   "lon": 5.119473004215969,
+   "score": 63.805251853951425,
+   "best_pair_score": 80.22889953484412,
+   "s_morph": 0.84878482407148,
+   "s_embed": 0.7325452522638829,
+   "sub_scores": {
+    "relief": 99.1,
+    "slope": 98.3,
+    "roughness": 99.6,
+    "shape": 99.4,
+    "embedding": 94.6
+   },
+   "terrain": {
+    "relief_m": 35.705657958984375,
+    "slope_p50_deg": 1.574207219328795,
+    "slope_p90_deg": 3.6432946315104937,
+    "rough_std_m": 8.079106176077163,
+    "bowl_index": -0.1103757843375206,
+    "tri_m": 1.7435917134835743,
+    "hypsometric_integral": 0.4902522563934326
+   },
+   "target_terrain": {
+    "relief_m": 33.00555419921875,
+    "slope_p50_deg": 1.530306418195707,
+    "slope_p90_deg": 3.8673632956582615,
+    "rough_std_m": 8.246775854989133,
+    "bowl_index": -0.10153800994157791,
+    "tri_m": 1.717346096138056,
+    "hypsometric_integral": 0.4714395999908447
+   },
+   "target_patch_id": "mars_jezero:384:384",
+   "environment": {
+    "t2m_mean_c": 24.92,
+    "t2m_min_c": -1.33,
+    "t2m_max_c": 44.46,
+    "t2m_range_c": 14.35,
+    "precip_mm_per_day": 0.24,
+    "rh_pct": 19.26,
+    "solar_kwh_m2_day": 6.3499,
+    "bare_fraction": 0.9964990451941439,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.003500954805856143,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Lanzarote (Timanfaya)",
+    "distance_km": 1989.9486916972935,
+    "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park"
+   },
+   "strong_match": [
+    "Roughness (bar 100/100): plane-fit spread 8.1 m here vs 8.2 m; ruggedness index 1.7 m here vs 1.7 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.11 here vs -0.10 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 95% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Rain and snow: 0.24 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/ahaggar_864_96.png",
+    "target_hillshade": "img/patches/mars_jezero_384_384.png"
+   }
+  },
+  {
+   "rank": 50,
+   "site_id": "crater_roter_kamm:800:32",
+   "region_id": "crater_roter_kamm",
+   "region_name": "Roter Kamm crater",
+   "region_set": "crater_benchmark",
+   "lat": -27.948685320795256,
+   "lon": 16.025137350540945,
+   "score": 63.7708172594349,
+   "best_pair_score": 70.45446984767858,
+   "s_morph": 0.6886974596342882,
+   "s_embed": 0.7283155567405323,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 96.2,
+    "roughness": 99.3,
+    "shape": 97.89999999999999,
+    "embedding": 94.19999999999999
+   },
+   "terrain": {
+    "relief_m": 31.136402130126953,
+    "slope_p50_deg": 1.1728033426843232,
+    "slope_p90_deg": 2.3341204390265347,
+    "rough_std_m": 3.954627545073717,
+    "bowl_index": 0.1292530596256256,
+    "tri_m": 1.2643612296970776,
+    "hypsometric_integral": 0.45209017395973206
+   },
+   "target_terrain": {
+    "relief_m": 32.52252197265625,
+    "slope_p50_deg": 1.2951565388043078,
+    "slope_p90_deg": 2.6791560090263014,
+    "rough_std_m": 3.6267560559334315,
+    "bowl_index": 0.10116186738014221,
+    "tri_m": 1.3360156675531267,
+    "hypsometric_integral": 0.4397399127483368
+   },
+   "target_patch_id": "mars_jezero:160:416",
+   "environment": {
+    "t2m_mean_c": 18.29,
+    "t2m_min_c": 3.65,
+    "t2m_max_c": 40.65,
+    "t2m_range_c": 13.01,
+    "precip_mm_per_day": 0.18,
+    "rh_pct": 58.04,
+    "solar_kwh_m2_day": 6.4855,
+    "bare_fraction": 1.0,
+    "snow_ice_fraction": 0.0,
+    "vegetation_fraction": 0.0,
+    "water_fraction": 0.0,
+    "worldcover_available": true,
+    "power_source": "NASA POWER climatology API v2 (MERRA-2 / CERES, 2001-2025), community RE"
+   },
+   "novelty": {
+    "status": "less_studied",
+    "basis": null,
+    "nearest_known_analog": "Makhtesh Ramon (D-MARS, AMADEE-20), Israel",
+    "distance_km": 6806.6232694192295,
+    "source_url": "https://en.wikipedia.org/wiki/D-MARS"
+   },
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 31 m here vs 33 m on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 4.0 m here vs 3.6 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 94% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Rain and snow: 0.18 mm per day on average (NASA POWER)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain",
+    "Long-duration dry, dusty-surface operations"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/crater_roter_kamm_800_32.png",
+    "target_hillshade": "img/patches/mars_jezero_160_416.png"
    }
   }
  ]

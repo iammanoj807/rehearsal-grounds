@@ -13,7 +13,7 @@
   "centre_lat": -85.96161005801713,
   "centre_lon": -0.6553109718085901,
   "extent_km": 21.0,
-  "sigma": 0.639906113184995,
+  "sigma": 0.9339952645561209,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site23_malapert.png",
   "data_note": "PGDA states Site23 does not yet have error estimates or clones."
@@ -32,7 +32,7 @@
   "centre_lat": -89.7358926416865,
   "centre_lon": -16.012041688449102,
   "extent_km": 15.96,
-  "sigma": 0.7088911204910967,
+  "sigma": 0.7615492080824454,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site04_shackleton_rim.png",
   "data_note": null
@@ -51,7 +51,7 @@
   "centre_lat": -89.44880744059729,
   "centre_lon": -135.90397428541604,
   "extent_km": 15.96,
-  "sigma": 0.43670314848888886,
+  "sigma": 0.4638556997600279,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site01_connecting_ridge.png",
   "data_note": null
@@ -70,7 +70,7 @@
   "centre_lat": 18.477701551537177,
   "centre_lon": 77.41637926701536,
   "extent_km": 30.3,
-  "sigma": 0.1677508133865667,
+  "sigma": 0.1746741342354262,
   "n_sites": 50,
   "hillshade_png": "img/targets/mars_jezero.png",
   "data_note": null
@@ -89,7 +89,7 @@
   "centre_lat": -88.66362845423687,
   "centre_lon": -67.684605362941,
   "extent_km": 15.96,
-  "sigma": 0.561008041957069,
+  "sigma": 0.7114426539629215,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site11_de_gerlache_rim.png",
   "data_note": null
@@ -108,7 +108,7 @@
   "centre_lat": -85.4213947618764,
   "centre_lon": 31.56099133879923,
   "extent_km": 15.96,
-  "sigma": 0.48184630835995595,
+  "sigma": 0.5137491804827445,
   "n_sites": 50,
   "hillshade_png": "img/targets/moon_site20_leibnitz_beta.png",
   "data_note": null

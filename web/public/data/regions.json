@@ -9,7 +9,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Meteor_Crater",
   "note": null,
   "n_patches": 2390,
-  "n_searchable": 1707,
+  "n_searchable": 545,
   "worldcover_available": true
  },
  {
@@ -22,7 +22,7 @@
   "source_url": "https://en.wikipedia.org/wiki/S_P_Crater",
   "note": "Box centred on SP Crater. The Black Point lava flow is not located separately.",
   "n_patches": 2345,
-  "n_searchable": 1232,
+  "n_searchable": 520,
   "worldcover_available": true
  },
  {
@@ -35,7 +35,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Haughton_impact_crater",
   "note": null,
   "n_patches": 2520,
-  "n_searchable": 2084,
+  "n_searchable": 607,
   "worldcover_available": true
  },
  {
@@ -61,7 +61,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Death_Valley",
   "note": null,
   "n_patches": 2600,
-  "n_searchable": 2472,
+  "n_searchable": 1946,
   "worldcover_available": true
  },
  {
@@ -74,7 +74,7 @@
   "source_url": "https://en.wikipedia.org/wiki/K%C4%ABlauea",
   "note": "Midpoint of the K\u012blauea (19.42109747, -155.28676243) and Mauna Kea (19.82055556, -155.46805556) coordinates; the box covers both.",
   "n_patches": 2510,
-  "n_searchable": 1140,
+  "n_searchable": 410,
   "worldcover_available": true
  },
  {
@@ -87,7 +87,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Askja",
   "note": null,
   "n_patches": 2542,
-  "n_searchable": 2336,
+  "n_searchable": 1418,
   "worldcover_available": true
  },
  {
@@ -100,7 +100,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Timanfaya_National_Park",
   "note": null,
   "n_patches": 2144,
-  "n_searchable": 221,
+  "n_searchable": 115,
   "worldcover_available": true
  },
  {
@@ -126,7 +126,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Bockfjorden",
   "note": null,
   "n_patches": 2533,
-  "n_searchable": 1404,
+  "n_searchable": 314,
   "worldcover_available": true
  },
  {
@@ -139,7 +139,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Mars_Desert_Research_Station",
   "note": null,
   "n_patches": 2597,
-  "n_searchable": 2295,
+  "n_searchable": 1646,
   "worldcover_available": true
  },
  {
@@ -191,7 +191,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Danakil_Depression",
   "note": null,
   "n_patches": 2547,
-  "n_searchable": 2169,
+  "n_searchable": 1876,
   "worldcover_available": true
  },
  {
@@ -204,7 +204,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Puna_de_Atacama",
   "note": null,
   "n_patches": 2534,
-  "n_searchable": 2401,
+  "n_searchable": 2299,
   "worldcover_available": true
  },
  {
@@ -243,7 +243,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Upper_Mustang",
   "note": null,
   "n_patches": 2520,
-  "n_searchable": 2441,
+  "n_searchable": 1157,
   "worldcover_available": true
  },
  {
@@ -256,7 +256,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Namib",
   "note": null,
   "n_patches": 2550,
-  "n_searchable": 2483,
+  "n_searchable": 2130,
   "worldcover_available": true
  },
  {
@@ -269,7 +269,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Pilbara",
   "note": null,
   "n_patches": 2531,
-  "n_searchable": 2514,
+  "n_searchable": 0,
   "worldcover_available": true
  },
  {
@@ -308,7 +308,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Salar_de_Uyuni",
   "note": null,
   "n_patches": 2538,
-  "n_searchable": 554,
+  "n_searchable": 116,
   "worldcover_available": true
  },
  {
@@ -347,7 +347,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Wolfe_Creek_Crater",
   "note": null,
   "n_patches": 889,
-  "n_searchable": 777,
+  "n_searchable": 0,
   "worldcover_available": true
  },
  {
@@ -360,7 +360,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Pingualuit_crater",
   "note": null,
   "n_patches": 890,
-  "n_searchable": 224,
+  "n_searchable": 1,
   "worldcover_available": true
  },
  {
@@ -373,7 +373,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Roter_Kamm_crater",
   "note": null,
   "n_patches": 890,
-  "n_searchable": 890,
+  "n_searchable": 854,
   "worldcover_available": true
  },
  {
@@ -386,7 +386,7 @@
   "source_url": "https://en.wikipedia.org/wiki/Tswaing_crater",
   "note": null,
   "n_patches": 891,
-  "n_searchable": 340,
+  "n_searchable": 0,
   "worldcover_available": true
  }
 ]
