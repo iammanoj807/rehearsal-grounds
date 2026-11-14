@@ -19,3 +19,8 @@ data/res90/
 web/node_modules/
 web/dist/
 .DS_Store
+
+# Pipeline logs and intermediate outputs
+data/*.log
+data/validation.json
+data/work/
