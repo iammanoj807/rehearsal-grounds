@@ -111,8 +111,10 @@ Wikipedia and PANGAEA coordinates. See [`DATA_LICENSES.md`](DATA_LICENSES.md) fo
 - Earth cannot reproduce lunar or martian gravity, vacuum or thin CO₂ air, radiation, regolith or polar lighting.
 - A 60 m grid cannot see boulders or small craters. The LOLA site maps are largely interpolated between laser tracks.
 - Copernicus DEM is a surface model, so vegetation and lakes distort it. Land-cover masks remove the worst cases.
-- The steepest target slopes have no close Earth match: Earth has a close terrain match for 73% of Malapert's
-  patches and 69% of Shackleton rim's (96–100% for the other four targets).
+- The steepest target slopes have no close Earth match. Earth has a close terrain match for 73% of Malapert's
+  patches and 69% of Shackleton rim's (96–100% for the other four targets). The unmatched patches are the steep,
+  high-relief ones: for Malapert, their median 90th-percentile slope is 27.7° and relief 1,622 m, against 21.8° and
+  1,030 m for the matched patches. For Shackleton rim the figures are 32.4° and 2,139 m against 25.9° and 859 m.
 - The novelty catalogue is a set of points (21 sites), not a complete census of analog research.
 - Crater benchmark: seven craters, so the metrics carry wide uncertainty.
 

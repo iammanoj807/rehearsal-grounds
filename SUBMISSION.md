@@ -17,6 +17,8 @@ Rehearsal Grounds: finding where on Earth to rehearse the Moon and Mars
 ## Links
 
 - Demo video (30 s): **[ADD LINK]**
+- Backup demo, 7-slide deck (use this if there is no video):
+  https://github.com/iammanoj807/rehearsal-grounds/blob/main/docs/rehearsal-grounds-slides.pdf
 - Live app: https://iammanoj807.github.io/rehearsal-grounds/
 - Code: https://github.com/iammanoj807/rehearsal-grounds
 
@@ -27,12 +29,13 @@ analog screening works at tens of kilometres; Rehearsal Grounds works at the sca
 turns NASA LRO LOLA lunar terrain, USGS Mars CTX terrain and ESA Copernicus Earth elevation into 3.84 km terrain
 fingerprints, adds a learned image embedding, and searches 49,147 Earth patches for the closest matches. Each
 candidate gets a scorecard of what matches, where the analogy breaks down, and which tests it suits. The method
-finds impact craters across continents with a mean ROC AUC of 0.976.
+finds impact craters across continents with a mean ROC AUC of 0.976 (learned image embedding; terrain features
+alone 0.63).
 
 ## Project details
 
-**What it does.** A field-test planner picks one of six targets, such as the Malapert massif (one of NASA's candidate Artemis
-III landing regions) or the Jezero landing area. The app shows the 50 best-matching Earth sites on a map and in a
+**What it does.** A field-test planner picks one of six targets, such as the Malapert massif (named among NASA's candidate Artemis
+III landing regions, October 2024) or the Jezero landing area. The app shows the 50 best-matching Earth sites on a map and in a
 ranked list, each at least 10 km from the next. Every site opens a dossier with:
 
 - the target patch and the Earth patch as hillshades at the same scale;
@@ -163,6 +166,7 @@ listed and our own pipeline runs.
 
 ## Still to do before submitting
 
-- [ ] Record the 30-second video and add its public link above.
+- [ ] Record the 30-second video and add its public link above, or submit the 7-slide PDF deck
+      (`docs/rehearsal-grounds-slides.pdf`, built by `scripts/make_slides.py` from the exported data) as the demo.
 - [ ] Confirm the live URL loads on a phone after the GitHub Pages deploy.
 - [ ] Recheck the 2026 submission guide for any changed limits or a dedicated AI-disclosure field.
