@@ -47,7 +47,7 @@ All numbers are read from [`web/public/data/validation.json`](web/public/data/va
 **V1, crater retrieval (headline).** Seven PASSC impact craters 0.8–3.5 km across, exposed and younger than 10 Ma.
 Each crater-centred patch is used as a query against 65,407 regular grid patches from the other regions. A hit is a
 patch whose window fully contains another crater. Hard negatives are only the non-crater patches of the other
-crater tiles (about 6,500 per query): dry, open land like the craters' own surroundings.
+crater tiles (about 6,500 per query): non-crater terrain from the same landscapes as the other benchmark craters.
 
 | Ranker | Mean ROC AUC | AUC, hard negatives | Mean reciprocal rank | Hit rate @10 |
 | --- | --- | --- | --- | --- |
@@ -59,7 +59,8 @@ crater tiles (about 6,500 per query): dry, open land like the craters' own surro
 | Combined, Moon-target σ (0.71) | 0.885 | 0.842 | 0.019 | 0% |
 
 The finding: at 60 m the readable terrain features alone recognise 1–3 km craters only weakly, while the image
-embedding does much better, also against hard negatives, so it recognises craters and not just dry terrain. The
+embedding does much better, also against hard negatives, so it recognises the craters themselves, not just the
+landscapes around them. The
 Earth-to-Earth combined row tracks the embedding because its σ drives the terrain term to near zero. At the Moon
 targets' σ (median 0.71, the closer match to how the app ranks Moon targets) the combined score still separates
 craters from other terrain (AUC 0.885), but another crater rarely reaches the top 10: patches with similar slope and

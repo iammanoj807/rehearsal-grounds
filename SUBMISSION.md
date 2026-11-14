@@ -30,8 +30,8 @@ turns NASA LRO LOLA lunar terrain, USGS Mars CTX terrain and ESA Copernicus Eart
 fingerprints, adds a learned image embedding, and searches 35,417 Earth patches for the closest matches. Each
 candidate gets a scorecard of what matches, where the analogy breaks down, and which tests it suits. The image
 embedding finds impact craters across continents with a mean ROC AUC of 0.976, also against hard negatives from
-other crater landscapes; the terrain features alone reach 0.63, and the combined score as used for the Moon
-targets reaches 0.885.
+other crater landscapes; the terrain features alone reach 0.63, and the combined score at the Moon targets' σ
+reaches 0.885.
 
 ## Project details
 
@@ -70,7 +70,7 @@ against 16.5° on the Moon. It scores 89.1 of 100.
   Database. Each crater's patch searches 65,407 grid patches from other regions.
   - The image embedding reaches a mean ROC AUC of 0.976 and puts another crater in the top 10 for 86% of queries.
     Against hard negatives (non-crater patches from the other crater tiles) it also reaches 0.976, so it
-    recognises craters, not just dry terrain.
+    recognises the craters themselves, not just their surrounding landscapes.
   - The 20 readable terrain features alone reach 0.632, about the same as relief alone (0.629).
   - The combined score at the Moon targets' σ, the closer match to the app's ranker, reaches 0.885, but another
     crater rarely reaches its top 10. We keep 60% terrain features because they carry the slope and roughness

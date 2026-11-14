@@ -12,7 +12,7 @@ Earth-to-Earth sigma, and combined at the Moon-target sigma (the median of the
 five Moon targets' sigma from step 08), which is closer to the app's ranker.
 Hard-negative AUC: the same queries, but negatives are only the non-crater
 patches of the other crater tiles (benchmark tiles and Meteor Crater), so the
-test asks whether a ranker finds craters rather than just dry terrain.
+test asks whether a ranker finds the craters rather than their surrounding landscapes.
 Primary index: all valid Earth patches (no land-cover masks), because the
 masks remove the lake-filled and farmland craters; the masked index is
 reported too.
@@ -429,9 +429,9 @@ def main() -> int:
                          "the app's ranker.",
         "hard_negative_note": "Hard negatives: only the non-crater patches (more than 5 km from any benchmark "
                               "crater) of the other crater tiles, on average "
-                              f"{v1['hard_negatives']['mean_per_query']:,.0f} per query. These are dry, open "
-                              "landscapes like the craters' own surroundings, so a ranker that only recognised "
-                              "'desert' would score about 0.5 here.",
+                              f"{v1['hard_negatives']['mean_per_query']:,.0f} per query. These are non-crater "
+                              "terrain from the same landscapes as the other benchmark craters, so a ranker that "
+                              "only recognised the landscape type would score close to chance (0.5) here.",
         "weights_note": "Why the app still weights terrain features 60%: they carry the slope, relief and "
                         "roughness values that operations planning needs, and the 0.6/0.4 split was set before "
                         "this benchmark existed. Changing it now, after seeing these results, would tune the "
