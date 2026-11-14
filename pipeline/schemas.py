@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Literal, Optional
+from typing import Any, Literal, Optional
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -31,6 +31,27 @@ class Target(Strict):
     n_sites: int
     hillshade_png: str
     data_note: Optional[str] = None
+    artemis_iii_region: Optional[str] = None
+    sun_band: Optional["SunBand"] = None
+
+
+class SunBand(Strict):
+    """Noon Sun elevations over a year at the target's latitude (Moon targets only)."""
+    latitude_deg: float
+    low_deg: float
+    high_deg: float
+    elevations_used: list[float]
+    preview_elevation_deg: float
+
+
+class ArtemisCoverage(Strict):
+    """Which of NASA's named Artemis III candidate regions have a target here."""
+    source_url: str
+    release_date: str
+    regions: list[str]
+    covered: list[str]
+    n_regions: int
+    n_covered: int
 
 
 class Region(Strict):
@@ -45,6 +66,12 @@ class Region(Strict):
     n_patches: int
     n_searchable: int
     worldcover_available: bool
+    before_you_go: Optional[list["SourcedNote"]] = None
+
+
+class SourcedNote(Strict):
+    text: str
+    source_url: str
 
 
 class SubScores(Strict):
@@ -74,6 +101,8 @@ class Environment(Strict):
     rh_pct: Optional[float] = None
     solar_kwh_m2_day: Optional[float] = None
     bare_fraction: Optional[float] = None
+    dense_veg_fraction: Optional[float] = None
+    sparse_veg_fraction: Optional[float] = None
     snow_ice_fraction: Optional[float] = None
     vegetation_fraction: Optional[float] = None
     water_fraction: Optional[float] = None
@@ -92,6 +121,33 @@ class Novelty(Strict):
 class Images(Strict):
     earth_hillshade: str
     target_hillshade: str
+    lowsun_earth: Optional[str] = None
+    lowsun_target: Optional[str] = None
+
+
+class ShadowPoint(Strict):
+    elevation_deg: float
+    target: float = Field(ge=0, le=1)
+    earth: float = Field(ge=0, le=1)
+
+
+class Lighting(Strict):
+    """Low-sun shadow comparison; a separate panel, never part of the similarity score."""
+    similarity: float = Field(ge=0, le=100)
+    elevations: list[float]
+    shadow: list[ShadowPoint]
+    edge_limited_target: bool
+    edge_limited_earth: bool
+    footprint_matched: bool = False
+
+
+class MonthCal(Strict):
+    month: int = Field(ge=1, le=12)
+    daylight_h: float = Field(ge=0, le=24)
+    low_sun_h: Optional[float] = Field(default=None, ge=0, le=24)
+    t2m_min_c: Optional[float] = None
+    t2m_max_c: Optional[float] = None
+    precip_mm_per_day: Optional[float] = None
 
 
 class Match(Strict):
@@ -116,6 +172,10 @@ class Match(Strict):
     breaks_down: list[str]
     tests_suited: list[str]
     images: Images
+    lighting: Optional[Lighting] = None
+    calendar: Optional[list[MonthCal]] = None
+    best_months: Optional[list[int]] = None
+    best_months_rule: Optional[str] = None
 
 
 class Results(Strict):
@@ -144,3 +204,77 @@ class Dataset(Strict):
 class Sources(Strict):
     generated_at: str
     datasets: list[Dataset]
+
+
+class UsualRegion(Strict):
+    """Best patch of one well-studied region for one target, masks on and off."""
+    region_id: str
+    name: str
+    best_score: Optional[float] = Field(default=None, ge=0, le=100)
+    rank: Optional[int] = None
+    best_patch_id: Optional[str] = None
+    n_candidates: int
+    best_score_masks_off: float = Field(ge=0, le=100)
+    rank_masks_off: int
+    n_candidates_masks_off: int
+    best_patch_masked: bool
+    field_test: Optional[str] = None
+
+
+class Outranking(Strict):
+    rank: int
+    site_id: str
+    region_id: str
+    score: float = Field(ge=0, le=100)
+    sub_scores: SubScores
+    closer_groups: list[str]
+
+
+class FieldTestCompare(Strict):
+    region_id: str
+    best_patch_id: str
+    score: float = Field(ge=0, le=100)
+    rank: int
+    sub_scores: SubScores
+    outranked_by: list[Outranking]
+
+
+class UsualTarget(Strict):
+    sigma: float
+    regions: list[UsualRegion]
+    field_test: Optional[FieldTestCompare] = None
+
+
+class FieldTestInfo(Strict):
+    name: str
+    when: str
+    where: str
+    summary: str
+    source_urls: list[str]
+
+
+class UsualSites(Strict):
+    field_test: Optional[FieldTestInfo] = None
+    field_test_region_id: Optional[str] = None
+    targets: dict[str, UsualTarget]
+
+
+class LightingCheck(Strict):
+    check: str
+    passed: bool
+    detail: str
+
+
+class LightingInfo(Strict):
+    """Lighting self-checks, settings, rules and limits for the Validation and About pages."""
+    checks: list[LightingCheck]
+    settings: dict[str, Any]
+    rules: dict[str, Any]
+    limits: list[str]
+    refraction_note: str
+    refraction_source_url: str
+
+
+Target.model_rebuild()
+Region.model_rebuild()
+

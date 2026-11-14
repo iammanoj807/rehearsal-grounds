@@ -32,7 +32,8 @@ from PIL import Image
 from common import (SOURCES_MD, config_hash, export_dir, get_logger, grids_dir, load_config, load_yaml, now_iso,
                     patches_dir, results_dir, run_dir, selected_regions, selected_targets)
 from render import hillshade_image, shade_array, shared_stretch
-from schemas import Dataset, Environment, Images, Match, Novelty, Region, Results, Sources, SubScores, Target, Terrain
+from schemas import (ArtemisCoverage, Dataset, Environment, Images, Lighting, LightingInfo, Match, MonthCal, Novelty,
+                     Region, Results, Sources, SubScores, SunBand, Target, Terrain, UsualSites)
 
 log = get_logger("11_export")
 
@@ -106,7 +107,31 @@ def group_line(group: str, row: pd.Series, body_label: str) -> str:
     return f"{label} (bar {row[f'sub_{group}']:.0f}/100): {values} on the {body_label} target"
 
 
-def explain(row: pd.Series, body: str, env: Environment | None, rules: list[dict[str, Any]]) -> tuple[list[str], list[str], list[str]]:
+def vegetation_lines(env: Environment, body_label: str, humid_mm: float) -> list[str]:
+    """Breaks-down lines for land cover, separating dense cover from dryland shrub and grass."""
+    if env.dense_veg_fraction is None or env.sparse_veg_fraction is None:
+        if env.vegetation_fraction is not None and env.vegetation_fraction > 0.005:
+            return [f"Vegetation, cropland or buildings cover {100 * env.vegetation_fraction:.0f}% of the "
+                    f"2 km surroundings (none on the {body_label})"]
+        return []
+    lines = []
+    if env.dense_veg_fraction > 0.005:
+        lines.append(f"Trees, crops, buildings or wetland cover {100 * env.dense_veg_fraction:.0f}% of the 2 km "
+                     f"surroundings (none on the {body_label})")
+    if env.sparse_veg_fraction > 0.005:
+        annual = env.precip_mm_per_day * 365.25 if env.precip_mm_per_day is not None else None
+        if annual is not None and annual <= humid_mm:
+            lines.append(f"WorldCover labels {100 * env.sparse_veg_fraction:.0f}% of the 2 km surroundings as shrub, "
+                         f"grass or moss; with about {annual:.0f} mm of rain a year this is sparse dryland cover "
+                         f"(none on the {body_label})")
+        else:
+            lines.append(f"Shrub, grass or moss cover {100 * env.sparse_veg_fraction:.0f}% of the 2 km surroundings "
+                         f"(none on the {body_label})")
+    return lines
+
+
+def explain(row: pd.Series, body: str, env: Environment | None, rules: list[dict[str, Any]],
+            humid_mm: float = 500.0) -> tuple[list[str], list[str], list[str]]:
     """Strong-match, breaks-down and tests-suited lines for one site."""
     body_label = "Moon" if body == "moon" else "Mars"
     groups = sorted(GROUP_TEXT, key=lambda g: row[f"sub_{g}"], reverse=True)
@@ -124,9 +149,7 @@ def explain(row: pd.Series, body: str, env: Environment | None, rules: list[dict
         breaks.append(f"Image embedding bar {row['sub_embedding']:.0f}/100: the shaded relief looks less alike "
                       "than the terrain numbers suggest")
     if env is not None:
-        if env.vegetation_fraction is not None and env.vegetation_fraction > 0.005:
-            breaks.append(f"Vegetation, cropland or buildings cover {100 * env.vegetation_fraction:.0f}% of the "
-                          f"2 km surroundings (none on the {body_label})")
+        breaks.extend(vegetation_lines(env, body_label, humid_mm))
         if env.precip_mm_per_day is not None and env.precip_mm_per_day > 0:
             breaks.append(f"Rain and snow: {env.precip_mm_per_day:.2f} mm per day on average (NASA POWER)")
         if env.water_fraction is not None and env.water_fraction > 0.005:
@@ -201,6 +224,55 @@ def env_for(site_id: str, env: pd.DataFrame | None) -> Environment | None:
     return Environment(**clean)
 
 
+LIGHTING_LIMITS = [
+    "Shadows are computed on the 60 m grid, so boulders, small craters and short slopes cast no shadow here.",
+    "The LOLA site maps are largely interpolated between laser tracks, so fine relief in the target is smoothed.",
+    "No atmospheric scattering, no regolith or rock reflectance and no Earthshine: a pixel is either lit or in shadow.",
+    "Cast shadows only see 3.84 km of terrain around each patch; sites marked edge-limited see less.",
+    "Earth Sun hours use the true Sun position on the 15th of each month and ignore clouds and local horizons.",
+]
+
+
+def load_lighting() -> dict[str, Any] | None:
+    """Step 09b output, if present."""
+    path = results_dir() / "lighting.json"
+    return json.loads(path.read_text()) if path.exists() else None
+
+
+def lowsun_stretch(lighting: dict[str, Any] | None) -> tuple[float, float] | None:
+    """One shared 1st-99th percentile stretch over every low-sun preview array."""
+    files = sorted((run_dir() / "lighting").glob("lowsun_*.npy")) if lighting else []
+    if not files:
+        return None
+    lo, hi = np.percentile(np.concatenate([np.load(f).ravel() for f in files]), [1, 99])
+    return float(lo), float(max(hi, lo + 1e-6))
+
+
+def lowsun_png(pid: str, stretch: tuple[float, float], out: Path) -> str | None:
+    """Render one low-sun preview (cast shadows black) with the shared stretch and a 1 km scale bar."""
+    src = run_dir() / "lighting" / f"lowsun_{safe_name(pid)}.npy"
+    if not src.exists():
+        return None
+    rel = f"img/lowsun/{safe_name(pid)}.png"
+    if not (out / rel).exists():
+        from render import OUT_PX, ImageDraw, ImageFont  # noqa: PLC0415
+        lo, hi = stretch
+        a = np.clip((np.load(src) - lo) / (hi - lo), 0.0, 1.0)
+        img = Image.fromarray(np.uint8(np.round(a * 255)), mode="L").resize((OUT_PX, OUT_PX), Image.BILINEAR).convert("RGB")
+        draw = ImageDraw.Draw(img)
+        bar = int(round(1000.0 / (3840.0 / OUT_PX)))
+        x0, y0 = 10, OUT_PX - 14
+        draw.rectangle([x0 - 4, y0 - 16, x0 + bar + 6, y0 + 7], fill=(255, 255, 255))
+        draw.rectangle([x0, y0, x0 + bar, y0 + 3], fill=(20, 20, 20))
+        try:
+            font = ImageFont.load_default(size=12)
+        except TypeError:
+            font = ImageFont.load_default()
+        draw.text((x0, y0 - 15), "1 km", fill=(20, 20, 20), font=font)
+        save_png(img, out / rel)
+    return rel
+
+
 def main() -> int:
     """Export the full data contract for the web app."""
     cfg = load_config()
@@ -212,6 +284,8 @@ def main() -> int:
     regions_cfg = {r["id"]: r for r in load_yaml("regions.yaml")["regions"]}
     rules = load_yaml("tests_suited.yaml")["rules"]
     env_table, nov_table = load_environment()
+    lighting = load_lighting()
+    lstretch = lowsun_stretch(lighting)
     cache: dict[str, np.ndarray] = {}
     res = float(cfg["resolution_m"])
 
@@ -248,7 +322,11 @@ def main() -> int:
                 novelty = Novelty(status=n["status"], basis=basis if isinstance(basis, str) else None,
                                   nearest_known_analog=n["nearest_known_analog"],
                                   distance_km=float(n["distance_km"]), source_url=n["source_url"])
-            strong, breaks, tests = explain(row, target["body"], env, rules)
+            strong, breaks, tests = explain(row, target["body"], env, rules, float(cfg["mask_sparse_veg_humid_mm"]))
+            lrec = (lighting or {}).get("sites", {}).get(tid, {}).get(row["site_id"], {})
+            if lstretch and lrec.get("lighting"):
+                images["lowsun_earth"] = lowsun_png(row["site_id"], lstretch, out)
+                images["lowsun_target"] = lowsun_png(row["target_patch_id"], lstretch, out)
             region = regions_cfg[row["region_id"]]
             matches.append(Match(
                 rank=int(row["rank"]), site_id=row["site_id"], region_id=row["region_id"],
@@ -259,6 +337,9 @@ def main() -> int:
                 terrain=terrain_of(row, "earth"), target_terrain=terrain_of(row, "target"),
                 target_patch_id=row["target_patch_id"], environment=env, novelty=novelty,
                 strong_match=strong, breaks_down=breaks, tests_suited=tests, images=Images(**images),
+                lighting=Lighting(**lrec["lighting"]) if lrec.get("lighting") else None,
+                calendar=[MonthCal(**c) for c in lrec["calendar"]] if lrec.get("calendar") else None,
+                best_months=lrec.get("best_months"), best_months_rule=lrec.get("best_months_rule"),
             ))
         results = Results(target_id=tid, generated_at=summary["generated_at"], config_hash=summary["config_hash"],
                           sigma=tsum["sigma"], n_candidates=tsum["n_candidates"],
@@ -272,7 +353,9 @@ def main() -> int:
             data_url=target["url"], citation=target["citation"], resolution_m=res, n_patches=len(tmeta),
             centre_lat=float(tmeta["lat"].mean()), centre_lon=float(tmeta["lon"].mean()),
             extent_km=extent["extent_km"], sigma=tsum["sigma"], n_sites=len(matches), hillshade_png=overview,
-            data_note=target.get("data_note"),
+            data_note=target.get("data_note"), artemis_iii_region=target.get("artemis_iii_region"),
+            sun_band=SunBand(**{k: v for k, v in (lighting or {}).get("targets", {}).get(tid, {}).items()
+                                if k != "applicable"}) if (lighting or {}).get("targets", {}).get(tid, {}).get("applicable") else None,
         ))
         log.info("%s: exported %d matches", tid, len(matches))
 
@@ -284,10 +367,28 @@ def main() -> int:
             lat=region["lat"], lon=region["lon"], source_url=region["source_url"], note=region.get("note"),
             n_patches=len(rmeta), n_searchable=int(rmeta["search_ok"].sum()),
             worldcover_available=bool(rmeta["wc_available"].iloc[0]) if len(rmeta) else False,
+            before_you_go=[{"text": " ".join(n["text"].split()), "source_url": n["source_url"]}
+                           for n in region.get("before_you_go", [])] or None,
         ))
     (out / "targets.json").write_text(json.dumps([t.model_dump() for t in targets_out], indent=1))
     (out / "regions.json").write_text(json.dumps([r.model_dump() for r in regions_out], indent=1))
     (out / "sources.json").write_text(build_sources().model_dump_json(indent=1))
+    art = load_yaml("targets.yaml")["artemis_iii"]
+    covered = sorted({t.artemis_iii_region for t in targets_out if t.artemis_iii_region},
+                     key=art["regions"].index)
+    (out / "artemis.json").write_text(ArtemisCoverage(
+        source_url=art["source_url"], release_date=str(art["release_date"]), regions=art["regions"], covered=covered,
+        n_regions=len(art["regions"]), n_covered=len(covered)).model_dump_json(indent=1))
+    if lighting:
+        lcfg = load_yaml("lighting.yaml")
+        (out / "lighting_info.json").write_text(LightingInfo(
+            checks=lighting["checks"], settings=lighting["settings"], rules=lighting["rules"], limits=LIGHTING_LIMITS,
+            refraction_note=" ".join(lcfg["refraction_note"].split()),
+            refraction_source_url=lcfg["refraction_source_url"]).model_dump_json(indent=1))
+    usual = results_dir() / "usual_sites.json"
+    if usual.exists():
+        doc = UsualSites.model_validate_json(usual.read_text())
+        (out / "usual_sites.json").write_text(doc.model_dump_json(indent=1))
     validation = run_dir() / "validation.json"
     if validation.exists():
         shutil.copyfile(validation, out / "validation.json")

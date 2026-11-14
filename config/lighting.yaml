@@ -1,0 +1,15 @@
+# Low-sun lighting analog (step 09b). Geometry constants are physical; the rest are our choices.
+moon_obliquity_deg: 1.54        # lunar spin-axis tilt used for the noon Sun band (geometry)
+radius_moon_m: 1737400          # mean lunar radius (geometry)
+radius_earth_m: 6371000         # mean Earth radius (geometry)
+elevations_deg: [1, 2, 3, 5, 10]  # our choice: Sun elevations of the shadow fingerprint
+n_azimuths: 36                  # our choice: Sun azimuths in 10-degree steps
+margin_px: 64                   # our choice: context around each patch for cast shadows (64 x 60 m = 3.84 km)
+preview_azimuth_deg: 315        # same light direction as the hillshades
+sun_hours_year: 2025            # year used for the 15th-of-month Sun positions (Earth orbit repeats closely)
+sun_hours_step_min: 5           # time step for counting daylight and low-sun hours
+refraction_note: >-
+  Near the horizon, refraction makes the Sun look higher than its true position. NOAA's sunrise and
+  sunset calculations assume 0.833 degrees of atmospheric refraction. Our hours use the true
+  (unrefracted) Sun, so real low-sun light lasts slightly longer than counted.
+refraction_source_url: https://gml.noaa.gov/grad/solcalc/calcdetails.html

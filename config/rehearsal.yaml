@@ -1,0 +1,8 @@
+# "Suggested months" rules (step 09b). These are our rules for planning a rehearsal,
+# not safety advice: check local conditions, permits and safety before any field work.
+max_precip_mm_per_day: 1.0      # our choice: a month counts as "dry enough" at or below this NASA POWER mean
+min_t2m_min_c: -25              # our choice: skip months whose mean daily minimum (NASA POWER) is colder
+max_t2m_max_c: 35               # our choice: skip months whose mean daily maximum (NASA POWER) is hotter
+n_best_months: 3                # how many months to suggest
+# Moon targets: rank dry-enough months by low-sun hours per day (Sun between 0 and the
+# target's band upper limit). Mars target: rank dry-enough months by daylight hours.

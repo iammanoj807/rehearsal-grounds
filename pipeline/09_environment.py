@@ -29,7 +29,7 @@ import pandas as pd
 import rasterio
 from rasterio.windows import from_bounds
 
-from common import CACHE_DIR, RAW_DIR, WORLDCOVER_VEG_BUILT, get_logger, load_config, load_yaml, record_source, results_dir, selected_targets
+from common import CACHE_DIR, RAW_DIR, WORLDCOVER_DENSE, WORLDCOVER_SPARSE, WORLDCOVER_VEG_BUILT, get_logger, load_config, load_yaml, record_source, results_dir, selected_targets
 from grids import haversine_km
 from power import API, PowerError, annual_values, fetch_climatology
 
@@ -62,6 +62,8 @@ def worldcover_shares(region_id: str, lat: float, lon: float, radius_km: float) 
         "bare_fraction": float(np.mean(vals == 60)),
         "snow_ice_fraction": float(np.mean(vals == 70)),
         "vegetation_fraction": float(np.isin(vals, VEG_CLASSES).mean()),
+        "dense_veg_fraction": float(np.isin(vals, WORLDCOVER_DENSE).mean()),
+        "sparse_veg_fraction": float(np.isin(vals, WORLDCOVER_SPARSE).mean()),
         "water_fraction": float(np.mean(vals == 80)),
     }
 

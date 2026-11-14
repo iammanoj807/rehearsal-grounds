@@ -1,6 +1,6 @@
 PY ?= .venv/bin/python
 STEPS = 01_fetch_targets 02_fetch_earth 03_reproject 04_patches 05_features \
-        06_embed 07_index 08_query 09_environment 10_validate 11_export
+        06_embed 07_index 08_query 08b_usual_sites 09_environment 09b_lighting 10_validate 11_export
 CORE_STEPS = 03_reproject 04_patches 05_features 06_embed 07_index 08_query
 
 .PHONY: setup pipeline pipeline-small res90 test web web-build clean-small

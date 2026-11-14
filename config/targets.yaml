@@ -8,12 +8,24 @@
 # Mars: USGS Astrogeology Mars 2020 TRN CTX DTM mosaic (CC0), cite
 # Fergason et al. 2020, https://doi.org/10.5066/P906QQT8.
 # The two last targets were stretch items, switched on after the MVP was complete.
+#
+# artemis_iii_region: set only when the PGDA site name matches a region named in
+# NASA's 28 October 2024 release (https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/).
+# Site11 "de Gerlache rim" is left unlabelled: NASA lists "de Gerlache Rim 2" and
+# PGDA does not number its site, so the match is ambiguous.
+
+artemis_iii:
+  source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+  release_date: '2024-10-28'
+  regions: [Peak near Cabeus B, Haworth, Malapert Massif, Mons Mouton Plateau, Mons Mouton, Nobile Rim 1,
+            Nobile Rim 2, de Gerlache Rim 2, Slater Plain]
 
 targets:
   - id: moon_site23_malapert
     name: Malapert massif
     body: moon
     enabled: true
+    artemis_iii_region: Malapert Massif
     url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site23/Site23_final_adj_5mpp_surf.tif
     product_url: https://pgda.gsfc.nasa.gov/products/78
     description: >-
@@ -80,4 +92,44 @@ targets:
       PGDA landing-site DEM Site20, "Leibnitz beta plateau", one of the LOLA
       south pole landing-site DEMs.
     description_source_url: https://pgda.gsfc.nasa.gov/products/78
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+  # ---- Artemis III candidate regions with a PGDA LOLA 5 m DEM (added 14 Nov, phase 1) ----
+  - id: moon_haworth
+    name: Haworth
+    body: moon
+    enabled: true
+    artemis_iii_region: Haworth
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Haworth/Haworth_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/
+    description: >-
+      PGDA landing-site DEM "Haworth". NASA listed Haworth among nine candidate
+      Artemis III landing regions near the lunar south pole (NASA release,
+      28 October 2024).
+    description_source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+  - id: moon_site06_nobile_rim_1
+    name: Nobile rim 1
+    body: moon
+    enabled: true
+    artemis_iii_region: Nobile Rim 1
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/Site06/Site06_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/
+    description: >-
+      PGDA landing-site DEM Site06, "Nobile rim 1". NASA listed Nobile Rim 1
+      among nine candidate Artemis III landing regions near the lunar south pole
+      (NASA release, 28 October 2024).
+    description_source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
+    citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119
+  - id: moon_dm2_nobile_rim_2
+    name: Nobile rim 2
+    body: moon
+    enabled: true
+    artemis_iii_region: Nobile Rim 2
+    url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/DM2/DM2_final_adj_5mpp_surf.tif
+    product_url: https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/
+    description: >-
+      PGDA landing-site DEM "DM2", named "Nobile rim 2" in the PGDA README. NASA
+      listed Nobile Rim 2 among nine candidate Artemis III landing regions near
+      the lunar south pole (NASA release, 28 October 2024).
+    description_source_url: https://www.nasa.gov/news-release/nasa-provides-update-on-artemis-iii-moon-landing-regions/
     citation: Barker, M.K. et al. (2021) Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119

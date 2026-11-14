@@ -25,6 +25,18 @@ regions:
     lon: -111.6318207
     source_url: https://en.wikipedia.org/wiki/S_P_Crater
     note: Box centred on SP Crater. The Black Point lava flow is not located separately.
+    field_test:
+      name: NASA JETT5 Artemis III field test
+      when: 13-17 May 2024
+      where: San Francisco Volcanic Field, northern Arizona
+      summary: >-
+        NASA's Joint EVA and Human Surface Mobility Test Team Field Test 5 rehearsed Artemis III
+        moonwalks in the San Francisco Volcanic Field; some EVAs ran at night to test a variety of
+        lighting conditions, because the lighting at the lunar south pole is dynamic.
+      source_urls:
+        - https://www.usgs.gov/centers/astrogeology-science-center/news/artemis-iii-mission-tests-san-francisco-volcanic-field
+        - https://www.nasa.gov/image-article/a-moonlit-moonwalk
+        - https://svs.gsfc.nasa.gov/14583
   - id: haughton
     name: Haughton crater, Devon Island
     country: Canada
@@ -42,6 +54,10 @@ regions:
     note: Yungay hyperarid soil site (Pfeiffer, Amundson and Jordan 2021, PANGAEA dataset metadata).
   - id: death_valley
     name: Death Valley, California
+    before_you_go:
+      - text: >-
+          Death Valley National Park: "researchers must obtain advance approval in the form of a permit". The park "is the homeland of the Timbisha Shoshone and other tribes", and some proposals involve tribal consultation.
+        source_url: https://www.nps.gov/deva/scientific-research-permits.htm
     country: United States
     set: well_studied
     lat: 36.24694444
@@ -49,6 +65,10 @@ regions:
     source_url: https://en.wikipedia.org/wiki/Death_Valley
   - id: hawaii_kilauea_maunakea
     name: Kīlauea and Mauna Kea, Hawaiʻi
+    before_you_go:
+      - text: >-
+          This region includes Maunakea. Office of Hawaiian Affairs: "Maunakea is a deeply sacred place that is revered in Hawaiian traditions."
+        source_url: https://www.oha.org/aina/mauna-kea/
     country: United States
     set: well_studied
     lat: 19.62082652
@@ -72,6 +92,10 @@ regions:
     source_url: https://en.wikipedia.org/wiki/Timanfaya_National_Park
   - id: mcmurdo_dry_valleys
     name: McMurdo Dry Valleys
+    before_you_go:
+      - text: >-
+          The Protocol on Environmental Protection to the Antarctic Treaty designates Antarctica as a "natural reserve, devoted to peace and science". Check your national Antarctic programme's requirements before any activity.
+        source_url: https://www.ats.aq/e/protocol.html
     country: Antarctica
     set: well_studied
     lat: -77.46666667
