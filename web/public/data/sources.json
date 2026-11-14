@@ -1,0 +1,115 @@
+{
+ "generated_at": "2026-11-14T13:32:37+00:00",
+ "datasets": [
+  {
+   "id": "lola_site_dems",
+   "name": "LOLA 5 m/pix south pole landing-site DEMs",
+   "agency": "NASA GSFC Planetary Geology, Geophysics and Geochemistry Lab (PGDA)",
+   "url": "https://pgda.gsfc.nasa.gov/products/78",
+   "used_for": "Moon target terrain (Malapert massif, Shackleton rim, Connecting ridge)",
+   "licence": "NASA open data",
+   "attribution": "LOLA data: NASA GSFC PGDA, Barker et al. (2021)",
+   "citation": "Barker, M.K. et al. (2021). Improved LOLA Elevation Maps for South Pole Landing Sites: Error Estimates and Their Impact on Illumination Conditions. Planetary and Space Science 203, 105119. doi:10.1016/j.pss.2020.105119",
+   "downloaded": "2026-11-14T12:33:04+00:00"
+  },
+  {
+   "id": "mars2020_trn_ctx_dtm",
+   "name": "Mars 2020 Terrain Relative Navigation CTX DTM mosaic",
+   "agency": "USGS Astrogeology Science Center",
+   "url": "https://astrogeology.usgs.gov/search/map/mars_2020_terrain_relative_navigation_ctx_dtm_mosaic",
+   "used_for": "Mars target terrain (Jezero crater landing area)",
+   "licence": "CC0 / public domain",
+   "attribution": "CTX DTM: USGS Astrogeology, Fergason et al. (2020)",
+   "citation": "Fergason, R.L. et al. (2020). Mars 2020 Terrain Relative Navigation CTX DTM Mosaic. USGS Astrogeology Science Center. doi:10.5066/P906QQT8",
+   "downloaded": "2026-11-14T12:34:08+00:00"
+  },
+  {
+   "id": "copernicus_dem",
+   "name": "Copernicus DEM GLO-30",
+   "agency": "ESA / European Union Copernicus programme",
+   "url": "https://registry.opendata.aws/copernicus-dem/",
+   "used_for": "Earth terrain for every indexed region (read as Cloud-Optimised GeoTIFFs)",
+   "licence": "Copernicus DEM licence (free use with attribution)",
+   "attribution": "Produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved",
+   "citation": null,
+   "downloaded": "2026-11-14T12:34:18+00:00"
+  },
+  {
+   "id": "esa_worldcover",
+   "name": "ESA WorldCover 10 m 2021 v200",
+   "agency": "ESA",
+   "url": "https://registry.opendata.aws/esa-worldcover-vito/",
+   "used_for": "Land-cover masks (vegetation, cropland, built-up, water) and bare / snow-ice fractions",
+   "licence": "CC-BY 4.0",
+   "attribution": "© ESA WorldCover project 2021 / Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium",
+   "citation": "Zanaga, D. et al. (2022). ESA WorldCover 10 m 2021 v200. doi:10.5281/zenodo.7254221",
+   "downloaded": "2026-11-14T12:34:18+00:00"
+  },
+  {
+   "id": "nasa_power",
+   "name": "NASA POWER climatology API",
+   "agency": "NASA Langley Research Center",
+   "url": "https://power.larc.nasa.gov/",
+   "used_for": "Climate of each candidate site (temperature, range, precipitation, humidity, sunlight)",
+   "licence": "NASA open data",
+   "attribution": "These data were obtained from the NASA Langley Research Center (LaRC) POWER Project funded through the NASA Earth Science/Applied Science Program.",
+   "citation": null,
+   "downloaded": null
+  },
+  {
+   "id": "nasa_gibs",
+   "name": "NASA Global Imagery Browse Services (GIBS)",
+   "agency": "NASA EOSDIS",
+   "url": "https://www.earthdata.nasa.gov/engage/open-data-services-software/earthdata-developer-portal/gibs-api",
+   "used_for": "World basemap tiles in the web app",
+   "licence": "NASA open data",
+   "attribution": "We acknowledge the use of imagery provided by services from NASA's Global Imagery Browse Services (GIBS), part of NASA's Earth Science Data and Information System (ESDIS).",
+   "citation": null,
+   "downloaded": null
+  },
+  {
+   "id": "passc_eid",
+   "name": "Earth Impact Database",
+   "agency": "Planetary and Space Science Centre (PASSC), University of New Brunswick",
+   "url": "http://web.archive.org/web/20260209113007/http://www.passc.net/EarthImpactDatabase/New%20website_05-2018/Diametersort.html",
+   "used_for": "Benchmark crater list, diameters and ages (read from Internet Archive snapshots; passc.net is offline)",
+   "licence": "Cited reference data",
+   "attribution": "Earth Impact Database, Planetary and Space Science Centre, University of New Brunswick",
+   "citation": null,
+   "downloaded": null
+  },
+  {
+   "id": "wikipedia_geodata",
+   "name": "Wikipedia article coordinates (GeoData)",
+   "agency": "Wikimedia Foundation",
+   "url": "https://en.wikipedia.org/w/api.php?action=query&prop=coordinates",
+   "used_for": "Region and crater centre coordinates (each region lists its article)",
+   "licence": "CC BY-SA 4.0",
+   "attribution": "Coordinates from the cited Wikipedia articles",
+   "citation": null,
+   "downloaded": null
+  },
+  {
+   "id": "pangaea_yungay",
+   "name": "Yungay hyperarid site soil data (site coordinates)",
+   "agency": "PANGAEA",
+   "url": "https://doi.org/10.1594/PANGAEA.929560",
+   "used_for": "Centre of the Atacama (Yungay) region",
+   "licence": "CC-BY 4.0",
+   "attribution": "Pfeiffer, M., Amundson, R., Jordan, T.E. (2021), PANGAEA",
+   "citation": null,
+   "downloaded": null
+  },
+  {
+   "id": "resnet18",
+   "name": "torchvision ResNet-18 (ImageNet weights)",
+   "agency": "PyTorch / torchvision",
+   "url": "https://pytorch.org/vision/stable/models/generated/torchvision.models.resnet18.html",
+   "used_for": "Pretrained image embedding of terrain patches (no training)",
+   "licence": "BSD-3-Clause (torchvision)",
+   "attribution": "He, K. et al. (2016). Deep Residual Learning for Image Recognition. CVPR.",
+   "citation": null,
+   "downloaded": null
+  }
+ ]
+}

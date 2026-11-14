@@ -1,0 +1,27 @@
+# "Tests suited" rules. Each rule fires when every listed explanation bar
+# (0-100 percentile versus random Earth patch pairs) reaches its threshold,
+# and every optional terrain/environment condition holds.
+# These thresholds are our own scoring choices, stated as such on the
+# methods page. They are not engineering limits for any vehicle or suit.
+
+rules:
+  - id: rover_mobility
+    text: Rover mobility and traverse-planning trials
+    min_sub_scores: {slope: 75, roughness: 75}
+  - id: trn_landing_hazard
+    text: Terrain-relative navigation and landing-hazard imaging tests
+    min_sub_scores: {relief: 75, shape: 75}
+  - id: steep_slope_ops
+    text: Steep-slope operations (crew or rover work on slopes like the target's)
+    min_sub_scores: {slope: 80}
+    min_terrain: {slope_p90_deg: 15}
+  - id: vision_navigation
+    text: Camera-based navigation and mapping tests on similar-looking terrain
+    min_sub_scores: {embedding: 90}
+  - id: cold_operations
+    text: Cold-weather equipment and power-system trials
+    max_environment: {t2m_min_c: -20}
+  - id: dry_dust_operations
+    text: Long-duration dry, dusty-surface operations
+    max_environment: {precip_mm_per_day: 0.3}
+    min_environment: {bare_fraction: 0.5}

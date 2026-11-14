@@ -1,0 +1,3041 @@
+{
+ "target_id": "mars_jezero",
+ "generated_at": "2026-11-14T13:31:39+00:00",
+ "config_hash": "933cf45527a4d04c8eeec6b50b71315ff61df829f0c01c96e78d3408d738a614",
+ "sigma": 0.1677508133865667,
+ "n_candidates": 49147,
+ "n_target_patches": 196,
+ "target_coverage": {
+  "share_close_90": 1.0,
+  "share_close_99": 0.9897959183673469,
+  "median_best_percentile": 99.6
+ },
+ "matches": [
+  {
+   "rank": 1,
+   "site_id": "askja:64:1152",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 65.4345803561958,
+   "lon": -16.356818993336528,
+   "score": 76.267188433679,
+   "best_pair_score": 79.4039301812274,
+   "s_morph": 0.8137303714761595,
+   "s_embed": 0.7645026973164459,
+   "sub_scores": {
+    "relief": 99.0,
+    "slope": 99.0,
+    "roughness": 99.0,
+    "shape": 99.4,
+    "embedding": 96.6
+   },
+   "terrain": {
+    "relief_m": 41.82057189941406,
+    "slope_p50_deg": 1.2496168896043143,
+    "slope_p90_deg": 2.549893590122175,
+    "rough_std_m": 5.259114445685098,
+    "bowl_index": -0.05371370539069176,
+    "tri_m": 1.2640736368518715,
+    "hypsometric_integral": 0.5542821884155273
+   },
+   "target_terrain": {
+    "relief_m": 33.00909423828125,
+    "slope_p50_deg": 1.2060697821796658,
+    "slope_p90_deg": 2.5156788141048807,
+    "rough_std_m": 4.605127859607563,
+    "bowl_index": -0.04661061614751816,
+    "tri_m": 1.2183143385491189,
+    "hypsometric_integral": 0.5510073900222778
+   },
+   "target_patch_id": "mars_jezero:256:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.05 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 42 m here vs 33 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 97% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_64_1152.png",
+    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+   }
+  },
+  {
+   "rank": 2,
+   "site_id": "harrat_khaybar:1088:1248",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.5622762328221,
+   "lon": 40.20822552999209,
+   "score": 75.55668919811399,
+   "best_pair_score": 75.98968419645769,
+   "s_morph": 0.7663983636664022,
+   "s_embed": 0.7501445594118388,
+   "sub_scores": {
+    "relief": 98.8,
+    "slope": 98.7,
+    "roughness": 99.2,
+    "shape": 99.3,
+    "embedding": 95.8
+   },
+   "terrain": {
+    "relief_m": 43.340240478515625,
+    "slope_p50_deg": 1.143255617140413,
+    "slope_p90_deg": 2.7019008956793447,
+    "rough_std_m": 5.128606917778826,
+    "bowl_index": -0.04990096390247345,
+    "tri_m": 1.2254429439104062,
+    "hypsometric_integral": 0.5552204847335815
+   },
+   "target_terrain": {
+    "relief_m": 33.00909423828125,
+    "slope_p50_deg": 1.2060697821796658,
+    "slope_p90_deg": 2.5156788141048807,
+    "rough_std_m": 4.605127859607563,
+    "bowl_index": -0.04661061614751816,
+    "tri_m": 1.2183143385491189,
+    "hypsometric_integral": 0.5510073900222778
+   },
+   "target_patch_id": "mars_jezero:256:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.05 on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 5.1 m here vs 4.6 m; ruggedness index 1.2 m here vs 1.2 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (99/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1088_1248.png",
+    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+   }
+  },
+  {
+   "rank": 3,
+   "site_id": "harrat_khaybar:608:96",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.82639879069749,
+   "lon": 39.52129285942125,
+   "score": 75.2361620163629,
+   "best_pair_score": 80.192506791309,
+   "s_morph": 0.8015506651644281,
+   "s_embed": 0.8024866720360829,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 97.89999999999999,
+    "roughness": 99.5,
+    "shape": 98.7,
+    "embedding": 98.2
+   },
+   "terrain": {
+    "relief_m": 42.035552978515625,
+    "slope_p50_deg": 1.366104128945422,
+    "slope_p90_deg": 2.4893739583203596,
+    "rough_std_m": 3.9005093843442324,
+    "bowl_index": -0.028376219794154167,
+    "tri_m": 1.3311160521254206,
+    "hypsometric_integral": 0.5223233699798584
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Roughness (bar 100/100): plane-fit spread 3.9 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 42 m here vs 39 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_608_96.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 4,
+   "site_id": "harrat_khaybar:64:256",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 26.120742159658683,
+   "lon": 39.618613002949445,
+   "score": 74.94890216762214,
+   "best_pair_score": 80.0538495815076,
+   "s_morph": 0.7628229625133518,
+   "s_embed": 0.8571117957676626,
+   "sub_scores": {
+    "relief": 99.5,
+    "slope": 94.8,
+    "roughness": 97.1,
+    "shape": 99.5,
+    "embedding": 99.2
+   },
+   "terrain": {
+    "relief_m": 37.985076904296875,
+    "slope_p50_deg": 1.1758055022359568,
+    "slope_p90_deg": 2.1147826205582394,
+    "rough_std_m": 4.198135630129668,
+    "bowl_index": -0.0512639656662941,
+    "tri_m": 1.124826768682601,
+    "hypsometric_integral": 0.5213772654533386
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 38 m here vs 41 m on the Mars target",
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_64_256.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 5,
+   "site_id": "puna_de_atacama:256:1152",
+   "region_id": "puna_de_atacama",
+   "region_name": "Puna de Atacama",
+   "region_set": "discovery",
+   "lat": -23.162200666154877,
+   "lon": -67.15826103277328,
+   "score": 74.56025608554704,
+   "best_pair_score": 83.46473460738575,
+   "s_morph": 0.9190360405692118,
+   "s_embed": 0.7080643043308261,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 99.1,
+    "roughness": 98.7,
+    "shape": 99.4,
+    "embedding": 92.5
+   },
+   "terrain": {
+    "relief_m": 41.9139404296875,
+    "slope_p50_deg": 1.2856100891006699,
+    "slope_p90_deg": 2.5424379358188176,
+    "rough_std_m": 4.605737544417316,
+    "bowl_index": -0.05993726849555969,
+    "tri_m": 1.2482659124558972,
+    "hypsometric_integral": 0.5312208533287048
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 42 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/puna_de_atacama_256_1152.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 6,
+   "site_id": "harrat_khaybar:288:1440",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.994614951142996,
+   "lon": 40.327701104916876,
+   "score": 74.49467895156035,
+   "best_pair_score": 82.75609820114863,
+   "s_morph": 0.8502805083315154,
+   "s_embed": 0.7934816925314427,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 96.6,
+    "roughness": 99.5,
+    "shape": 99.0,
+    "embedding": 97.89999999999999
+   },
+   "terrain": {
+    "relief_m": 37.559814453125,
+    "slope_p50_deg": 1.238591791533931,
+    "slope_p90_deg": 2.588501199687808,
+    "rough_std_m": 3.724919515860473,
+    "bowl_index": -0.06193246319890022,
+    "tri_m": 1.317391311216801,
+    "hypsometric_integral": 0.530613362789154
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 38 m here vs 39 m on the Mars target",
+    "Roughness (bar 100/100): plane-fit spread 3.7 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_288_1440.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 7,
+   "site_id": "harrat_khaybar:1216:224",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.496697009171665,
+   "lon": 39.59627685737229,
+   "score": 72.12705217119019,
+   "best_pair_score": 87.8766473997039,
+   "s_morph": 0.8796159351339216,
+   "s_embed": 0.8774922822917152,
+   "sub_scores": {
+    "relief": 99.5,
+    "slope": 97.7,
+    "roughness": 99.1,
+    "shape": 99.3,
+    "embedding": 99.4
+   },
+   "terrain": {
+    "relief_m": 46.170379638671875,
+    "slope_p50_deg": 1.252633368390628,
+    "slope_p90_deg": 2.2924059790856384,
+    "rough_std_m": 5.733283113154436,
+    "bowl_index": -0.04711182788014412,
+    "tri_m": 1.1569382948384201,
+    "hypsometric_integral": 0.5205385684967041
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 46 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1216_224.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 8,
+   "site_id": "ahaggar:256:288",
+   "region_id": "ahaggar",
+   "region_name": "Ahaggar (Hoggar) mountains",
+   "region_set": "discovery",
+   "lat": 23.588886834003148,
+   "lon": 5.237554694251111,
+   "score": 72.03081524806508,
+   "best_pair_score": 76.59748914007581,
+   "s_morph": 0.8451510713353355,
+   "s_embed": 0.6472106214988917,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 98.0,
+    "roughness": 99.0,
+    "shape": 98.9,
+    "embedding": 85.0
+   },
+   "terrain": {
+    "relief_m": 39.27008056640625,
+    "slope_p50_deg": 1.2859995637542396,
+    "slope_p90_deg": 3.092691840124032,
+    "rough_std_m": 5.025848639087363,
+    "bowl_index": -0.03924768418073654,
+    "tri_m": 1.4555101940460682,
+    "hypsometric_integral": 0.5204736590385437
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 39 m here vs 41 m on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 5.0 m here vs 5.4 m; ruggedness index 1.5 m here vs 1.3 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/ahaggar_256_288.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 9,
+   "site_id": "hanksville:256:1536",
+   "region_id": "hanksville",
+   "region_name": "Hanksville area (Mars Desert Research Station), Utah",
+   "region_set": "well_studied",
+   "lat": 38.699416887595405,
+   "lon": -110.28425794821204,
+   "score": 71.86645267354005,
+   "best_pair_score": 83.31428723861937,
+   "s_morph": 0.8947115617174763,
+   "s_embed": 0.74078983838927,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 98.0,
+    "roughness": 99.0,
+    "shape": 99.5,
+    "embedding": 95.19999999999999
+   },
+   "terrain": {
+    "relief_m": 58.46356201171875,
+    "slope_p50_deg": 1.4596248162892789,
+    "slope_p90_deg": 2.591371254156777,
+    "rough_std_m": 7.047561052010385,
+    "bowl_index": -0.07005982846021652,
+    "tri_m": 1.3700110468234281,
+    "hypsometric_integral": 0.5886132121086121
+   },
+   "target_terrain": {
+    "relief_m": 50.584228515625,
+    "slope_p50_deg": 1.3978656590312482,
+    "slope_p90_deg": 2.7139629606758082,
+    "rough_std_m": 7.978730154046508,
+    "bowl_index": -0.06797526776790619,
+    "tri_m": 1.3445400988274137,
+    "hypsometric_integral": 0.5878861546516418
+   },
+   "target_patch_id": "mars_jezero:288:256",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.07 here vs -0.07 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 58 m here vs 51 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 95% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/hanksville_256_1536.png",
+    "target_hillshade": "img/patches/mars_jezero_288_256.png"
+   }
+  },
+  {
+   "rank": 10,
+   "site_id": "askja:448:1408",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 65.23049525582215,
+   "lon": -16.017744399893488,
+   "score": 71.46298974178825,
+   "best_pair_score": 78.6312336229063,
+   "s_morph": 0.8594444021995764,
+   "s_embed": 0.676614237273293,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 96.5,
+    "roughness": 98.9,
+    "shape": 99.3,
+    "embedding": 89.0
+   },
+   "terrain": {
+    "relief_m": 58.44721984863281,
+    "slope_p50_deg": 1.242801789800458,
+    "slope_p90_deg": 3.2100329515006503,
+    "rough_std_m": 6.522412206384669,
+    "bowl_index": -0.0800313875079155,
+    "tri_m": 1.41329705777203,
+    "hypsometric_integral": 0.5852221250534058
+   },
+   "target_terrain": {
+    "relief_m": 55.43377685546875,
+    "slope_p50_deg": 1.4761068553761905,
+    "slope_p90_deg": 3.480167146043554,
+    "rough_std_m": 7.194606868302791,
+    "bowl_index": -0.07383175939321518,
+    "tri_m": 1.5618061299874806,
+    "hypsometric_integral": 0.5894836187362671
+   },
+   "target_patch_id": "mars_jezero:320:256",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 58 m here vs 55 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.07 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_448_1408.png",
+    "target_hillshade": "img/patches/mars_jezero_320_256.png"
+   }
+  },
+  {
+   "rank": 11,
+   "site_id": "harrat_khaybar:96:928",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 26.1011133221733,
+   "lon": 40.02171659568415,
+   "score": 71.32027774113163,
+   "best_pair_score": 77.32883195554226,
+   "s_morph": 0.7533604645738287,
+   "s_embed": 0.8031801020278135,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 95.7,
+    "roughness": 98.3,
+    "shape": 99.0,
+    "embedding": 98.2
+   },
+   "terrain": {
+    "relief_m": 44.139617919921875,
+    "slope_p50_deg": 1.1834822211738494,
+    "slope_p90_deg": 2.3751357094128265,
+    "rough_std_m": 3.3492893915401094,
+    "bowl_index": -0.03337742015719414,
+    "tri_m": 1.1639932955961199,
+    "hypsometric_integral": 0.5426154732704163
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 44 m here vs 39 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.05 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_96_928.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 12,
+   "site_id": "askja:1152:160",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 64.8325226156239,
+   "lon": -17.58124170980753,
+   "score": 70.96414421824879,
+   "best_pair_score": 72.56399134850366,
+   "s_morph": 0.6952551532886446,
+   "s_embed": 0.7712170537796246,
+   "sub_scores": {
+    "relief": 98.9,
+    "slope": 97.5,
+    "roughness": 97.5,
+    "shape": 99.2,
+    "embedding": 96.89999999999999
+   },
+   "terrain": {
+    "relief_m": 44.87318420410156,
+    "slope_p50_deg": 1.2239813632264536,
+    "slope_p90_deg": 3.2142035440559438,
+    "rough_std_m": 6.004241434146279,
+    "bowl_index": -0.0795726627111435,
+    "tri_m": 1.307644265499373,
+    "hypsometric_integral": 0.5766904950141907
+   },
+   "target_terrain": {
+    "relief_m": 55.43377685546875,
+    "slope_p50_deg": 1.4761068553761905,
+    "slope_p90_deg": 3.480167146043554,
+    "rough_std_m": 7.194606868302791,
+    "bowl_index": -0.07383175939321518,
+    "tri_m": 1.5618061299874806,
+    "hypsometric_integral": 0.5894836187362671
+   },
+   "target_patch_id": "mars_jezero:320:256",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.07 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 45 m here vs 55 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 97% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_1152_160.png",
+    "target_hillshade": "img/patches/mars_jezero_320_256.png"
+   }
+  },
+  {
+   "rank": 13,
+   "site_id": "namib:960:1472",
+   "region_id": "namib",
+   "region_name": "Namib desert",
+   "region_set": "discovery",
+   "lat": -24.836564560261365,
+   "lon": 15.674715185402679,
+   "score": 70.11847691306453,
+   "best_pair_score": 80.11582334112029,
+   "s_morph": 0.8288830917330754,
+   "s_embed": 0.7595709459283939,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 98.1,
+    "roughness": 98.9,
+    "shape": 99.1,
+    "embedding": 96.3
+   },
+   "terrain": {
+    "relief_m": 89.08833312988281,
+    "slope_p50_deg": 3.6179968615228555,
+    "slope_p90_deg": 7.09396153723163,
+    "rough_std_m": 13.760805775279577,
+    "bowl_index": -0.07726582884788513,
+    "tri_m": 3.4868967788648657,
+    "hypsometric_integral": 0.5165415406227112
+   },
+   "target_terrain": {
+    "relief_m": 88.38623046875,
+    "slope_p50_deg": 3.6174408430836804,
+    "slope_p90_deg": 7.410448015157762,
+    "rough_std_m": 12.112997366060114,
+    "bowl_index": -0.06278761476278305,
+    "tri_m": 3.5540565784466254,
+    "hypsometric_integral": 0.5294704437255859
+   },
+   "target_patch_id": "mars_jezero:32:320",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 89 m here vs 88 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.08 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/namib_960_1472.png",
+    "target_hillshade": "img/patches/mars_jezero_32_320.png"
+   }
+  },
+  {
+   "rank": 14,
+   "site_id": "ahaggar:1056:64",
+   "region_id": "ahaggar",
+   "region_name": "Ahaggar (Hoggar) mountains",
+   "region_set": "discovery",
+   "lat": 23.157436314308,
+   "lon": 5.099088610111361,
+   "score": 69.84343207440669,
+   "best_pair_score": 73.52380520491403,
+   "s_morph": 0.6660967960249444,
+   "s_embed": 0.8389499360854341,
+   "sub_scores": {
+    "relief": 98.9,
+    "slope": 98.5,
+    "roughness": 98.7,
+    "shape": 98.3,
+    "embedding": 99.0
+   },
+   "terrain": {
+    "relief_m": 30.838531494140625,
+    "slope_p50_deg": 1.4144664661057589,
+    "slope_p90_deg": 2.812844886610729,
+    "rough_std_m": 4.448205805969704,
+    "bowl_index": -0.025016896426677704,
+    "tri_m": 1.463270745093815,
+    "hypsometric_integral": 0.5286738276481628
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 31 m here vs 39 m on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 4.4 m here vs 3.8 m; ruggedness index 1.5 m here vs 1.4 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is shape (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/ahaggar_1056_64.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 15,
+   "site_id": "harrat_khaybar:288:224",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.999469633752085,
+   "lon": 39.598792108087025,
+   "score": 69.56247393132674,
+   "best_pair_score": 70.69506880771247,
+   "s_morph": 0.6001526453467632,
+   "s_embed": 0.867147752172667,
+   "sub_scores": {
+    "relief": 97.6,
+    "slope": 98.9,
+    "roughness": 99.6,
+    "shape": 99.3,
+    "embedding": 99.3
+   },
+   "terrain": {
+    "relief_m": 50.41302490234375,
+    "slope_p50_deg": 1.2847899480646259,
+    "slope_p90_deg": 2.3458058206807717,
+    "rough_std_m": 4.735184861921361,
+    "bowl_index": -0.042516227811574936,
+    "tri_m": 1.2492880409391565,
+    "hypsometric_integral": 0.5592317581176758
+   },
+   "target_terrain": {
+    "relief_m": 33.00909423828125,
+    "slope_p50_deg": 1.2060697821796658,
+    "slope_p90_deg": 2.5156788141048807,
+    "rough_std_m": 4.605127859607563,
+    "bowl_index": -0.04661061614751816,
+    "tri_m": 1.2183143385491189,
+    "hypsometric_integral": 0.5510073900222778
+   },
+   "target_patch_id": "mars_jezero:256:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Roughness (bar 100/100): plane-fit spread 4.7 m here vs 4.6 m; ruggedness index 1.2 m here vs 1.2 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.05 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is relief (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_288_224.png",
+    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+   }
+  },
+  {
+   "rank": 16,
+   "site_id": "sp_crater:416:1472",
+   "region_id": "sp_crater",
+   "region_name": "SP Crater, San Francisco volcanic field, Arizona",
+   "region_set": "well_studied",
+   "lat": 35.7922835752387,
+   "lon": -111.1882808173507,
+   "score": 68.45428183645335,
+   "best_pair_score": 80.45245198129844,
+   "s_morph": 0.8145519420288141,
+   "s_embed": 0.7894833864892397,
+   "sub_scores": {
+    "relief": 99.2,
+    "slope": 98.5,
+    "roughness": 98.2,
+    "shape": 99.4,
+    "embedding": 97.7
+   },
+   "terrain": {
+    "relief_m": 56.957733154296875,
+    "slope_p50_deg": 1.5586972305376983,
+    "slope_p90_deg": 3.733708938653768,
+    "rough_std_m": 9.085476575082938,
+    "bowl_index": 0.11483553051948547,
+    "tri_m": 1.594265901087226,
+    "hypsometric_integral": 0.38468581438064575
+   },
+   "target_terrain": {
+    "relief_m": 62.18218994140625,
+    "slope_p50_deg": 1.6814646794755674,
+    "slope_p90_deg": 3.8713310064751267,
+    "rough_std_m": 7.690519081195593,
+    "bowl_index": 0.12464161217212677,
+    "tri_m": 1.7447934185428997,
+    "hypsometric_integral": 0.3687199056148529
+   },
+   "target_patch_id": "mars_jezero:288:224",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.12 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 57 m here vs 62 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/sp_crater_416_1472.png",
+    "target_hillshade": "img/patches/mars_jezero_288_224.png"
+   }
+  },
+  {
+   "rank": 17,
+   "site_id": "harrat_khaybar:352:64",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.965161549454823,
+   "lon": 39.502723862200746,
+   "score": 68.3257381642938,
+   "best_pair_score": 70.63382351973331,
+   "s_morph": 0.6407949883970481,
+   "s_embed": 0.8046531053977604,
+   "sub_scores": {
+    "relief": 98.7,
+    "slope": 97.0,
+    "roughness": 99.5,
+    "shape": 98.3,
+    "embedding": 98.2
+   },
+   "terrain": {
+    "relief_m": 49.85719299316406,
+    "slope_p50_deg": 1.3464812476026973,
+    "slope_p90_deg": 2.437049871856638,
+    "rough_std_m": 3.844413169742574,
+    "bowl_index": -0.023618483915925026,
+    "tri_m": 1.2962910992545962,
+    "hypsometric_integral": 0.5205371975898743
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Roughness (bar 100/100): plane-fit spread 3.8 m here vs 3.8 m; ruggedness index 1.3 m here vs 1.4 m on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 50 m here vs 39 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_352_64.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 18,
+   "site_id": "harrat_khaybar:544:1024",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.858013609687518,
+   "lon": 40.07709790914695,
+   "score": 68.24695383695375,
+   "best_pair_score": 76.21810086457754,
+   "s_morph": 0.7912642870100817,
+   "s_embed": 0.7185560910993158,
+   "sub_scores": {
+    "relief": 98.8,
+    "slope": 98.1,
+    "roughness": 99.4,
+    "shape": 99.4,
+    "embedding": 93.39999999999999
+   },
+   "terrain": {
+    "relief_m": 72.71591186523438,
+    "slope_p50_deg": 1.6215451810605654,
+    "slope_p90_deg": 3.7925580181852063,
+    "rough_std_m": 7.172488932385718,
+    "bowl_index": 0.12920673191547394,
+    "tri_m": 1.6762987944635714,
+    "hypsometric_integral": 0.38818585872650146
+   },
+   "target_terrain": {
+    "relief_m": 62.18218994140625,
+    "slope_p50_deg": 1.6814646794755674,
+    "slope_p90_deg": 3.8713310064751267,
+    "rough_std_m": 7.690519081195593,
+    "bowl_index": 0.12464161217212677,
+    "tri_m": 1.7447934185428997,
+    "hypsometric_integral": 0.3687199056148529
+   },
+   "target_patch_id": "mars_jezero:288:224",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Roughness (bar 99/100): plane-fit spread 7.2 m here vs 7.7 m; ruggedness index 1.7 m here vs 1.7 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.13 here vs 0.12 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 93% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_544_1024.png",
+    "target_hillshade": "img/patches/mars_jezero_288_224.png"
+   }
+  },
+  {
+   "rank": 19,
+   "site_id": "danakil:864:1376",
+   "region_id": "danakil",
+   "region_name": "Danakil Depression",
+   "region_set": "discovery",
+   "lat": 14.205853656765349,
+   "lon": 40.619183328230086,
+   "score": 67.75615937087919,
+   "best_pair_score": 71.93610266025831,
+   "s_morph": 0.801399239608949,
+   "s_embed": 0.5963037070930345,
+   "sub_scores": {
+    "relief": 99.1,
+    "slope": 99.1,
+    "roughness": 98.8,
+    "shape": 99.2,
+    "embedding": 76.2
+   },
+   "terrain": {
+    "relief_m": 36.51838779449463,
+    "slope_p50_deg": 1.1240351812158766,
+    "slope_p90_deg": 2.8686952929648166,
+    "rough_std_m": 4.102516162326809,
+    "bowl_index": -0.02859269082546234,
+    "tri_m": 1.368170492234761,
+    "hypsometric_integral": 0.5304886698722839
+   },
+   "target_terrain": {
+    "relief_m": 34.3917236328125,
+    "slope_p50_deg": 1.235476487279463,
+    "slope_p90_deg": 2.64790220456228,
+    "rough_std_m": 3.4682410001404307,
+    "bowl_index": -0.018719585612416267,
+    "tri_m": 1.3431658074957522,
+    "hypsometric_integral": 0.5118603706359863
+   },
+   "target_patch_id": "mars_jezero:160:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.02 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 34 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (99/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/danakil_864_1376.png",
+    "target_hillshade": "img/patches/mars_jezero_160_384.png"
+   }
+  },
+  {
+   "rank": 20,
+   "site_id": "harrat_khaybar:1408:672",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.391345712861856,
+   "lon": 39.86297373762157,
+   "score": 67.55557744389249,
+   "best_pair_score": 74.85173192474429,
+   "s_morph": 0.7222196394268466,
+   "s_embed": 0.7879638389783371,
+   "sub_scores": {
+    "relief": 98.7,
+    "slope": 98.8,
+    "roughness": 97.89999999999999,
+    "shape": 99.4,
+    "embedding": 97.7
+   },
+   "terrain": {
+    "relief_m": 55.21087646484375,
+    "slope_p50_deg": 1.1717565201073357,
+    "slope_p90_deg": 2.645403132448839,
+    "rough_std_m": 4.337079777704858,
+    "bowl_index": -0.04655446112155914,
+    "tri_m": 1.2295332203050309,
+    "hypsometric_integral": 0.5248171091079712
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
+    "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 2.6° here vs 2.6° on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1408_672.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 21,
+   "site_id": "harrat_khaybar:1216:416",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.49618619555524,
+   "lon": 39.71089568434398,
+   "score": 67.50582436919176,
+   "best_pair_score": 74.43488988977364,
+   "s_morph": 0.6601628426405026,
+   "s_embed": 0.8706279832835874,
+   "sub_scores": {
+    "relief": 99.1,
+    "slope": 95.89999999999999,
+    "roughness": 96.7,
+    "shape": 99.1,
+    "embedding": 99.3
+   },
+   "terrain": {
+    "relief_m": 51.5450439453125,
+    "slope_p50_deg": 1.2041331292899553,
+    "slope_p90_deg": 2.2535846354233975,
+    "rough_std_m": 4.044443651331554,
+    "bowl_index": -0.04288383573293686,
+    "tri_m": 1.1589907944884683,
+    "hypsometric_integral": 0.5222273468971252
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 52 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1216_416.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 22,
+   "site_id": "harrat_khaybar:352:1280",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.960796791789736,
+   "lon": 40.23144248303672,
+   "score": 67.24528512683546,
+   "best_pair_score": 72.02750852425655,
+   "s_morph": 0.7973750626832287,
+   "s_embed": 0.6046251190815706,
+   "sub_scores": {
+    "relief": 99.0,
+    "slope": 98.1,
+    "roughness": 99.3,
+    "shape": 99.3,
+    "embedding": 77.8
+   },
+   "terrain": {
+    "relief_m": 36.864105224609375,
+    "slope_p50_deg": 1.261453976776445,
+    "slope_p90_deg": 2.5029019458380963,
+    "rough_std_m": 4.004945514850029,
+    "bowl_index": -0.04495833069086075,
+    "tri_m": 1.3120666130772491,
+    "hypsometric_integral": 0.49132975935935974
+   },
+   "target_terrain": {
+    "relief_m": 31.88848876953125,
+    "slope_p50_deg": 1.2345208097902411,
+    "slope_p90_deg": 2.6189901946556553,
+    "rough_std_m": 4.428138610767946,
+    "bowl_index": -0.043027136474847794,
+    "tri_m": 1.3211959854745219,
+    "hypsometric_integral": 0.4742199778556824
+   },
+   "target_patch_id": "mars_jezero:160:352",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Roughness (bar 99/100): plane-fit spread 4.0 m here vs 4.4 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.04 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_352_1280.png",
+    "target_hillshade": "img/patches/mars_jezero_160_352.png"
+   }
+  },
+  {
+   "rank": 23,
+   "site_id": "crater_roter_kamm:96:128",
+   "region_id": "crater_roter_kamm",
+   "region_name": "Roter Kamm crater",
+   "region_set": "crater_benchmark",
+   "lat": -27.566978659556124,
+   "lon": 16.079913150946407,
+   "score": 66.95447238663053,
+   "best_pair_score": 78.53471278466161,
+   "s_morph": 0.8311165411902728,
+   "s_embed": 0.716693007831131,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 96.2,
+    "roughness": 99.4,
+    "shape": 98.9,
+    "embedding": 93.30000000000001
+   },
+   "terrain": {
+    "relief_m": 39.59834289550781,
+    "slope_p50_deg": 1.1291042781077478,
+    "slope_p90_deg": 2.248330727573788,
+    "rough_std_m": 5.189725153549098,
+    "bowl_index": -0.043295156210660934,
+    "tri_m": 1.1986768883299257,
+    "hypsometric_integral": 0.5230668783187866
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 40 m here vs 41 m on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.4 m; ruggedness index 1.2 m here vs 1.3 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 93% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/crater_roter_kamm_96_128.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 24,
+   "site_id": "namib:1024:288",
+   "region_id": "namib",
+   "region_name": "Namib desert",
+   "region_set": "discovery",
+   "lat": -24.87276474340339,
+   "lon": 14.97164859206027,
+   "score": 66.86981908579484,
+   "best_pair_score": 72.47070045963564,
+   "s_morph": 0.7390696203300233,
+   "s_embed": 0.703163080995856,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 93.0,
+    "roughness": 99.6,
+    "shape": 99.1,
+    "embedding": 92.0
+   },
+   "terrain": {
+    "relief_m": 59.80809783935547,
+    "slope_p50_deg": 2.3335365788662776,
+    "slope_p90_deg": 5.762505005814218,
+    "rough_std_m": 11.868636719667633,
+    "bowl_index": -0.00584449851885438,
+    "tri_m": 2.5222812964194277,
+    "hypsometric_integral": 0.4225376546382904
+   },
+   "target_terrain": {
+    "relief_m": 62.85296630859375,
+    "slope_p50_deg": 2.0208899852602165,
+    "slope_p90_deg": 6.522822738876611,
+    "rough_std_m": 11.495413769065635,
+    "bowl_index": 0.000582647044211626,
+    "tri_m": 2.5326616920367986,
+    "hypsometric_integral": 0.4227742552757263
+   },
+   "target_patch_id": "mars_jezero:64:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 60 m here vs 63 m on the Mars target",
+    "Roughness (bar 100/100): plane-fit spread 11.9 m here vs 11.5 m; ruggedness index 2.5 m here vs 2.5 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (93/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/namib_1024_288.png",
+    "target_hillshade": "img/patches/mars_jezero_64_384.png"
+   }
+  },
+  {
+   "rank": 25,
+   "site_id": "harrat_khaybar:768:256",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.73933941592742,
+   "lon": 39.61662473832315,
+   "score": 66.6460865994599,
+   "best_pair_score": 71.8535819396574,
+   "s_morph": 0.6973062027624136,
+   "s_embed": 0.7503802443478147,
+   "sub_scores": {
+    "relief": 98.9,
+    "slope": 96.8,
+    "roughness": 98.1,
+    "shape": 99.1,
+    "embedding": 95.8
+   },
+   "terrain": {
+    "relief_m": 31.511245727539062,
+    "slope_p50_deg": 1.1538547766907656,
+    "slope_p90_deg": 2.429446337161002,
+    "rough_std_m": 5.492235315447155,
+    "bowl_index": -0.05845274776220322,
+    "tri_m": 1.283317675079441,
+    "hypsometric_integral": 0.4513346254825592
+   },
+   "target_terrain": {
+    "relief_m": 31.88848876953125,
+    "slope_p50_deg": 1.2345208097902411,
+    "slope_p90_deg": 2.6189901946556553,
+    "rough_std_m": 4.428138610767946,
+    "bowl_index": -0.043027136474847794,
+    "tri_m": 1.3211959854745219,
+    "hypsometric_integral": 0.4742199778556824
+   },
+   "target_patch_id": "mars_jezero:160:352",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.04 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 32 m here vs 32 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_768_256.png",
+    "target_hillshade": "img/patches/mars_jezero_160_352.png"
+   }
+  },
+  {
+   "rank": 26,
+   "site_id": "harrat_khaybar:448:416",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.912266840212766,
+   "lon": 39.71337162182223,
+   "score": 66.57129467625487,
+   "best_pair_score": 72.4291166660238,
+   "s_morph": 0.7098039397145054,
+   "s_embed": 0.746022007078837,
+   "sub_scores": {
+    "relief": 98.8,
+    "slope": 97.2,
+    "roughness": 98.9,
+    "shape": 99.1,
+    "embedding": 95.5
+   },
+   "terrain": {
+    "relief_m": 49.9736328125,
+    "slope_p50_deg": 1.1156170819180369,
+    "slope_p90_deg": 2.748214290173543,
+    "rough_std_m": 3.76650268880834,
+    "bowl_index": -0.04021163657307625,
+    "tri_m": 1.1873397866843518,
+    "hypsometric_integral": 0.5215245485305786
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.04 here vs -0.05 on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 3.8 m here vs 3.8 m; ruggedness index 1.2 m here vs 1.4 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_448_416.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 27,
+   "site_id": "harrat_khaybar:64:1184",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 26.117276903293625,
+   "lon": 40.17547333213705,
+   "score": 66.42867794580509,
+   "best_pair_score": 73.17117143019632,
+   "s_morph": 0.7846568783749854,
+   "s_embed": 0.65229396819243,
+   "sub_scores": {
+    "relief": 98.9,
+    "slope": 97.7,
+    "roughness": 99.3,
+    "shape": 99.4,
+    "embedding": 85.8
+   },
+   "terrain": {
+    "relief_m": 47.888153076171875,
+    "slope_p50_deg": 1.1116865581195066,
+    "slope_p90_deg": 2.9602802645475625,
+    "rough_std_m": 6.223340739970192,
+    "bowl_index": -0.09992614388465881,
+    "tri_m": 1.3188959850108835,
+    "hypsometric_integral": 0.5831546783447266
+   },
+   "target_terrain": {
+    "relief_m": 38.8280029296875,
+    "slope_p50_deg": 1.296472222972295,
+    "slope_p90_deg": 2.6603747678511143,
+    "rough_std_m": 5.685476514325209,
+    "bowl_index": -0.09178222715854645,
+    "tri_m": 1.3383395049127902,
+    "hypsometric_integral": 0.5968107581138611
+   },
+   "target_patch_id": "mars_jezero:192:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 6.2 m here vs 5.7 m; ruggedness index 1.3 m here vs 1.3 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_64_1184.png",
+    "target_hillshade": "img/patches/mars_jezero_192_384.png"
+   }
+  },
+  {
+   "rank": 28,
+   "site_id": "harrat_khaybar:512:256",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.878033661038263,
+   "lon": 39.61734311599623,
+   "score": 66.21726916555048,
+   "best_pair_score": 79.27333582570762,
+   "s_morph": 0.7410196084125799,
+   "s_embed": 0.8703039830238206,
+   "sub_scores": {
+    "relief": 99.0,
+    "slope": 99.1,
+    "roughness": 96.89999999999999,
+    "shape": 99.5,
+    "embedding": 99.3
+   },
+   "terrain": {
+    "relief_m": 46.497711181640625,
+    "slope_p50_deg": 1.3076355620773494,
+    "slope_p90_deg": 2.605686893996802,
+    "rough_std_m": 5.188899733364644,
+    "bowl_index": 0.02896752953529358,
+    "tri_m": 1.2570966131109105,
+    "hypsometric_integral": 0.4992552399635315
+   },
+   "target_terrain": {
+    "relief_m": 41.7703857421875,
+    "slope_p50_deg": 1.324415943680356,
+    "slope_p90_deg": 2.664679975260429,
+    "rough_std_m": 6.867946942950044,
+    "bowl_index": 0.03086067922413349,
+    "tri_m": 1.3332592490808524,
+    "hypsometric_integral": 0.5187016129493713
+   },
+   "target_patch_id": "mars_jezero:224:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.03 here vs 0.03 on the Mars target",
+    "Slope (bar 99/100): median 1.3° here vs 1.3°; 90th percentile 2.6° here vs 2.7° on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_512_256.png",
+    "target_hillshade": "img/patches/mars_jezero_224_384.png"
+   }
+  },
+  {
+   "rank": 29,
+   "site_id": "sp_crater:384:1120",
+   "region_id": "sp_crater",
+   "region_name": "SP Crater, San Francisco volcanic field, Arizona",
+   "region_set": "well_studied",
+   "lat": 35.809001183266076,
+   "lon": -111.42209113666726,
+   "score": 65.82762228410026,
+   "best_pair_score": 71.57056435244434,
+   "s_morph": 0.6676894381906867,
+   "s_embed": 0.7877299515250782,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 94.6,
+    "roughness": 97.0,
+    "shape": 98.9,
+    "embedding": 97.7
+   },
+   "terrain": {
+    "relief_m": 46.4127197265625,
+    "slope_p50_deg": 1.1653121910477995,
+    "slope_p90_deg": 2.1731392272525305,
+    "rough_std_m": 4.1063961222921925,
+    "bowl_index": -0.04629247263073921,
+    "tri_m": 1.1638558275617745,
+    "hypsometric_integral": 0.5313183665275574
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 46 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/sp_crater_384_1120.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 30,
+   "site_id": "lut:160:992",
+   "region_id": "lut",
+   "region_name": "Lut Desert",
+   "region_set": "discovery",
+   "lat": 30.95011193352691,
+   "lon": 59.19480230850359,
+   "score": 65.72530516752649,
+   "best_pair_score": 75.04669805959247,
+   "s_morph": 0.7251797837642334,
+   "s_embed": 0.7883977758434617,
+   "sub_scores": {
+    "relief": 98.9,
+    "slope": 98.0,
+    "roughness": 98.3,
+    "shape": 99.1,
+    "embedding": 97.7
+   },
+   "terrain": {
+    "relief_m": 37.47511291503906,
+    "slope_p50_deg": 1.3287879815978312,
+    "slope_p90_deg": 2.6095570164005517,
+    "rough_std_m": 5.654252923737774,
+    "bowl_index": 0.02017289213836193,
+    "tri_m": 1.2983172473252502,
+    "hypsometric_integral": 0.4984041750431061
+   },
+   "target_terrain": {
+    "relief_m": 41.7703857421875,
+    "slope_p50_deg": 1.324415943680356,
+    "slope_p90_deg": 2.664679975260429,
+    "rough_std_m": 6.867946942950044,
+    "bowl_index": 0.03086067922413349,
+    "tri_m": 1.3332592490808524,
+    "hypsometric_integral": 0.5187016129493713
+   },
+   "target_patch_id": "mars_jezero:224:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.03 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 37 m here vs 42 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/lut_160_992.png",
+    "target_hillshade": "img/patches/mars_jezero_224_384.png"
+   }
+  },
+  {
+   "rank": 31,
+   "site_id": "qaidam:352:1280",
+   "region_id": "qaidam",
+   "region_name": "Qaidam Basin",
+   "region_set": "discovery",
+   "lat": 37.50524526921376,
+   "lon": 94.77940168145324,
+   "score": 65.71005062594472,
+   "best_pair_score": 74.65852703229066,
+   "s_morph": 0.7438662096186823,
+   "s_embed": 0.7506638613792431,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 94.39999999999999,
+    "roughness": 98.4,
+    "shape": 99.2,
+    "embedding": 95.8
+   },
+   "terrain": {
+    "relief_m": 55.70843505859375,
+    "slope_p50_deg": 1.9957251931942228,
+    "slope_p90_deg": 5.370959025056923,
+    "rough_std_m": 10.108082359620116,
+    "bowl_index": 0.0003462152380961925,
+    "tri_m": 2.2677078723411284,
+    "hypsometric_integral": 0.42824193835258484
+   },
+   "target_terrain": {
+    "relief_m": 62.85296630859375,
+    "slope_p50_deg": 2.0208899852602165,
+    "slope_p90_deg": 6.522822738876611,
+    "rough_std_m": 11.495413769065635,
+    "bowl_index": 0.000582647044211626,
+    "tri_m": 2.5326616920367986,
+    "hypsometric_integral": 0.4227742552757263
+   },
+   "target_patch_id": "mars_jezero:64:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 56 m here vs 63 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.00 here vs 0.00 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (94/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/qaidam_352_1280.png",
+    "target_hillshade": "img/patches/mars_jezero_64_384.png"
+   }
+  },
+  {
+   "rank": 32,
+   "site_id": "askja:448:640",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 65.22060047877162,
+   "lon": -17.00289541833486,
+   "score": 65.49696610638232,
+   "best_pair_score": 72.70948570543679,
+   "s_morph": 0.8488107686249984,
+   "s_embed": 0.5445209896984224,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 98.5,
+    "roughness": 98.8,
+    "shape": 98.9,
+    "embedding": 64.8
+   },
+   "terrain": {
+    "relief_m": 34.33734893798828,
+    "slope_p50_deg": 0.8383867955038316,
+    "slope_p90_deg": 2.7564079326471003,
+    "rough_std_m": 5.040307667720377,
+    "bowl_index": -0.06464467197656631,
+    "tri_m": 1.0636780080884602,
+    "hypsometric_integral": 0.5477342009544373
+   },
+   "target_terrain": {
+    "relief_m": 33.00909423828125,
+    "slope_p50_deg": 1.2060697821796658,
+    "slope_p90_deg": 2.5156788141048807,
+    "rough_std_m": 4.605127859607563,
+    "bowl_index": -0.04661061614751816,
+    "tri_m": 1.2183143385491189,
+    "hypsometric_integral": 0.5510073900222778
+   },
+   "target_patch_id": "mars_jezero:256:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 34 m here vs 33 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.06 here vs -0.05 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Image embedding bar 65/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_448_640.png",
+    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+   }
+  },
+  {
+   "rank": 33,
+   "site_id": "harrat_khaybar:1152:0",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.531855591529578,
+   "lon": 39.46268424643571,
+   "score": 65.39625002313421,
+   "best_pair_score": 76.0623129281486,
+   "s_morph": 0.7793808583919947,
+   "s_embed": 0.7324865356157231,
+   "sub_scores": {
+    "relief": 99.1,
+    "slope": 96.39999999999999,
+    "roughness": 98.5,
+    "shape": 99.4,
+    "embedding": 94.6
+   },
+   "terrain": {
+    "relief_m": 34.328277587890625,
+    "slope_p50_deg": 1.1055814382650144,
+    "slope_p90_deg": 2.250624766442863,
+    "rough_std_m": 3.7813634440088166,
+    "bowl_index": -0.016396576538681984,
+    "tri_m": 1.1271257827234813,
+    "hypsometric_integral": 0.49219682812690735
+   },
+   "target_terrain": {
+    "relief_m": 34.3917236328125,
+    "slope_p50_deg": 1.235476487279463,
+    "slope_p90_deg": 2.64790220456228,
+    "rough_std_m": 3.4682410001404307,
+    "bowl_index": -0.018719585612416267,
+    "tri_m": 1.3431658074957522,
+    "hypsometric_integral": 0.5118603706359863
+   },
+   "target_patch_id": "mars_jezero:160:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.02 here vs -0.02 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 34 m here vs 34 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 95% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1152_0.png",
+    "target_hillshade": "img/patches/mars_jezero_160_384.png"
+   }
+  },
+  {
+   "rank": 34,
+   "site_id": "meteor_crater:1600:1376",
+   "region_id": "meteor_crater",
+   "region_name": "Meteor Crater, Arizona",
+   "region_set": "well_studied",
+   "lat": 34.59550910956768,
+   "lon": -110.64730637320311,
+   "score": 65.22033214402346,
+   "best_pair_score": 69.29227497139662,
+   "s_morph": 0.6937499157354573,
+   "s_embed": 0.6916820006817295,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 97.1,
+    "roughness": 98.1,
+    "shape": 98.3,
+    "embedding": 90.7
+   },
+   "terrain": {
+    "relief_m": 42.771484375,
+    "slope_p50_deg": 1.3502439734426082,
+    "slope_p90_deg": 2.690843204379039,
+    "rough_std_m": 4.736845575160081,
+    "bowl_index": -0.030301041901111603,
+    "tri_m": 1.3523920160426557,
+    "hypsometric_integral": 0.5242021083831787
+   },
+   "target_terrain": {
+    "relief_m": 39.37591552734375,
+    "slope_p50_deg": 1.366141385629195,
+    "slope_p90_deg": 2.838759257183238,
+    "rough_std_m": 3.7889836327286326,
+    "bowl_index": -0.04803335666656494,
+    "tri_m": 1.3833697951174924,
+    "hypsometric_integral": 0.5349811911582947
+   },
+   "target_patch_id": "mars_jezero:128:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 43 m here vs 39 m on the Mars target",
+    "Shape (bar 98/100): bowl index (+ bowl, - dome) -0.03 here vs -0.05 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 91% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/meteor_crater_1600_1376.png",
+    "target_hillshade": "img/patches/mars_jezero_128_416.png"
+   }
+  },
+  {
+   "rank": 35,
+   "site_id": "harrat_khaybar:1088:1440",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.561284834074524,
+   "lon": 40.32288585370782,
+   "score": 65.03786958685443,
+   "best_pair_score": 68.70349250900885,
+   "s_morph": 0.6941184871412849,
+   "s_embed": 0.676409582013294,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 95.0,
+    "roughness": 97.1,
+    "shape": 99.1,
+    "embedding": 89.0
+   },
+   "terrain": {
+    "relief_m": 51.515625,
+    "slope_p50_deg": 1.3060773214647914,
+    "slope_p90_deg": 3.2703580885944046,
+    "rough_std_m": 9.378876201047477,
+    "bowl_index": -0.08658439666032791,
+    "tri_m": 1.5678856181800676,
+    "hypsometric_integral": 0.6009859442710876
+   },
+   "target_terrain": {
+    "relief_m": 55.43377685546875,
+    "slope_p50_deg": 1.4761068553761905,
+    "slope_p90_deg": 3.480167146043554,
+    "rough_std_m": 7.194606868302791,
+    "bowl_index": -0.07383175939321518,
+    "tri_m": 1.5618061299874806,
+    "hypsometric_integral": 0.5894836187362671
+   },
+   "target_patch_id": "mars_jezero:320:256",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 52 m here vs 55 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.09 here vs -0.07 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (95/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1088_1440.png",
+    "target_hillshade": "img/patches/mars_jezero_320_256.png"
+   }
+  },
+  {
+   "rank": 36,
+   "site_id": "harrat_khaybar:1472:1408",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.353446828625497,
+   "lon": 40.30153671457355,
+   "score": 64.73142900072692,
+   "best_pair_score": 73.50010639474061,
+   "s_morph": 0.7268082062971181,
+   "s_embed": 0.7472903504228379,
+   "sub_scores": {
+    "relief": 99.3,
+    "slope": 95.6,
+    "roughness": 97.1,
+    "shape": 99.3,
+    "embedding": 95.6
+   },
+   "terrain": {
+    "relief_m": 33.8238525390625,
+    "slope_p50_deg": 1.0574754933180972,
+    "slope_p90_deg": 2.2918877521378667,
+    "rough_std_m": 4.575886698708392,
+    "bowl_index": 0.11006730794906616,
+    "tri_m": 1.108947511766257,
+    "hypsometric_integral": 0.45366618037223816
+   },
+   "target_terrain": {
+    "relief_m": 32.52252197265625,
+    "slope_p50_deg": 1.2951565388043078,
+    "slope_p90_deg": 2.6791560090263014,
+    "rough_std_m": 3.6267560559334315,
+    "bowl_index": 0.10116186738014221,
+    "tri_m": 1.3360156675531267,
+    "hypsometric_integral": 0.4397399127483368
+   },
+   "target_patch_id": "mars_jezero:160:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 34 m here vs 33 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.10 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1472_1408.png",
+    "target_hillshade": "img/patches/mars_jezero_160_416.png"
+   }
+  },
+  {
+   "rank": 37,
+   "site_id": "crater_roter_kamm:928:448",
+   "region_id": "crater_roter_kamm",
+   "region_name": "Roter Kamm crater",
+   "region_set": "crater_benchmark",
+   "lat": -28.01587475092207,
+   "lon": 16.279639597781088,
+   "score": 64.48493313112097,
+   "best_pair_score": 69.88323688726472,
+   "s_morph": 0.7391652654630563,
+   "s_embed": 0.6383330239870337,
+   "sub_scores": {
+    "relief": 99.5,
+    "slope": 98.6,
+    "roughness": 97.2,
+    "shape": 98.6,
+    "embedding": 83.6
+   },
+   "terrain": {
+    "relief_m": 35.74247741699219,
+    "slope_p50_deg": 1.294601186169554,
+    "slope_p90_deg": 2.538313020613224,
+    "rough_std_m": 6.036305792795099,
+    "bowl_index": -0.06791184842586517,
+    "tri_m": 1.2610161540163418,
+    "hypsometric_integral": 0.5533210039138794
+   },
+   "target_terrain": {
+    "relief_m": 33.00909423828125,
+    "slope_p50_deg": 1.2060697821796658,
+    "slope_p90_deg": 2.5156788141048807,
+    "rough_std_m": 4.605127859607563,
+    "bowl_index": -0.04661061614751816,
+    "tri_m": 1.2183143385491189,
+    "hypsometric_integral": 0.5510073900222778
+   },
+   "target_patch_id": "mars_jezero:256:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 36 m here vs 33 m on the Mars target",
+    "Slope (bar 99/100): median 1.3° here vs 1.2°; 90th percentile 2.5° here vs 2.5° on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/crater_roter_kamm_928_448.png",
+    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+   }
+  },
+  {
+   "rank": 38,
+   "site_id": "meteor_crater:448:800",
+   "region_id": "meteor_crater",
+   "region_name": "Meteor Crater, Arizona",
+   "region_set": "well_studied",
+   "lat": 35.219311378815746,
+   "lon": -111.02437686575207,
+   "score": 64.29275226249696,
+   "best_pair_score": 75.45524070590466,
+   "s_morph": 0.7857239269537551,
+   "s_embed": 0.7077951272169837,
+   "sub_scores": {
+    "relief": 98.7,
+    "slope": 98.6,
+    "roughness": 99.2,
+    "shape": 99.5,
+    "embedding": 92.4
+   },
+   "terrain": {
+    "relief_m": 39.83258056640625,
+    "slope_p50_deg": 1.3408084334778514,
+    "slope_p90_deg": 2.685863142076634,
+    "rough_std_m": 5.175145038535894,
+    "bowl_index": -0.09737411141395569,
+    "tri_m": 1.3964900156709827,
+    "hypsometric_integral": 0.622328519821167
+   },
+   "target_terrain": {
+    "relief_m": 38.8280029296875,
+    "slope_p50_deg": 1.296472222972295,
+    "slope_p90_deg": 2.6603747678511143,
+    "rough_std_m": 5.685476514325209,
+    "bowl_index": -0.09178222715854645,
+    "tri_m": 1.3383395049127902,
+    "hypsometric_integral": 0.5968107581138611
+   },
+   "target_patch_id": "mars_jezero:192:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.7 m; ruggedness index 1.4 m here vs 1.3 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (99/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/meteor_crater_448_800.png",
+    "target_hillshade": "img/patches/mars_jezero_192_384.png"
+   }
+  },
+  {
+   "rank": 39,
+   "site_id": "crater_roter_kamm:288:224",
+   "region_id": "crater_roter_kamm",
+   "region_name": "Roter Kamm crater",
+   "region_set": "crater_benchmark",
+   "lat": -27.670492448945744,
+   "lon": 16.139328898385386,
+   "score": 64.15898051969599,
+   "best_pair_score": 69.94395056937601,
+   "s_morph": 0.7001871219157596,
+   "s_embed": 0.698318081360761,
+   "sub_scores": {
+    "relief": 99.3,
+    "slope": 98.5,
+    "roughness": 97.3,
+    "shape": 98.6,
+    "embedding": 91.5
+   },
+   "terrain": {
+    "relief_m": 48.13136291503906,
+    "slope_p50_deg": 1.1096233062925038,
+    "slope_p90_deg": 2.5183910747169693,
+    "rough_std_m": 4.226030821471365,
+    "bowl_index": -0.034615833312273026,
+    "tri_m": 1.1421583634137362,
+    "hypsometric_integral": 0.5197252035140991
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.03 here vs -0.06 on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 92% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/crater_roter_kamm_288_224.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 40,
+   "site_id": "qaidam:160:480",
+   "region_id": "qaidam",
+   "region_name": "Qaidam Basin",
+   "region_set": "discovery",
+   "lat": 37.61598980698177,
+   "lon": 94.23819754538499,
+   "score": 63.866769969678124,
+   "best_pair_score": 69.71928738111149,
+   "s_morph": 0.6583713321396709,
+   "s_embed": 0.7554251863182809,
+   "sub_scores": {
+    "relief": 99.6,
+    "slope": 99.0,
+    "roughness": 99.0,
+    "shape": 97.3,
+    "embedding": 96.1
+   },
+   "terrain": {
+    "relief_m": 31.7283935546875,
+    "slope_p50_deg": 1.194485826049898,
+    "slope_p90_deg": 2.3991749996539884,
+    "rough_std_m": 3.998501941462823,
+    "bowl_index": -0.022799409925937653,
+    "tri_m": 1.2374893093208368,
+    "hypsometric_integral": 0.5521504282951355
+   },
+   "target_terrain": {
+    "relief_m": 33.00909423828125,
+    "slope_p50_deg": 1.2060697821796658,
+    "slope_p90_deg": 2.5156788141048807,
+    "rough_std_m": 4.605127859607563,
+    "bowl_index": -0.04661061614751816,
+    "tri_m": 1.2183143385491189,
+    "hypsometric_integral": 0.5510073900222778
+   },
+   "target_patch_id": "mars_jezero:256:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 32 m here vs 33 m on the Mars target",
+    "Slope (bar 99/100): median 1.2° here vs 1.2°; 90th percentile 2.4° here vs 2.5° on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 96% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is shape (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/qaidam_160_480.png",
+    "target_hillshade": "img/patches/mars_jezero_256_416.png"
+   }
+  },
+  {
+   "rank": 41,
+   "site_id": "harrat_khaybar:864:480",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.686700999384527,
+   "lon": 39.750289877327816,
+   "score": 63.48571108266368,
+   "best_pair_score": 75.01867800369388,
+   "s_morph": 0.7958884398703056,
+   "s_embed": 0.6816342902868886,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 94.5,
+    "roughness": 99.2,
+    "shape": 99.4,
+    "embedding": 89.60000000000001
+   },
+   "terrain": {
+    "relief_m": 48.146270751953125,
+    "slope_p50_deg": 1.0204698486607602,
+    "slope_p90_deg": 2.241028724595342,
+    "rough_std_m": 5.163983585238789,
+    "bowl_index": -0.05052048712968826,
+    "tri_m": 1.15746038240399,
+    "hypsometric_integral": 0.5218287706375122
+   },
+   "target_terrain": {
+    "relief_m": 41.447265625,
+    "slope_p50_deg": 1.2992129469628886,
+    "slope_p90_deg": 2.563157136120605,
+    "rough_std_m": 5.412386001112564,
+    "bowl_index": -0.056742142885923386,
+    "tri_m": 1.2972139562950173,
+    "hypsometric_integral": 0.5251647233963013
+   },
+   "target_patch_id": "mars_jezero:192:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 48 m here vs 41 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.05 here vs -0.06 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (94/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_864_480.png",
+    "target_hillshade": "img/patches/mars_jezero_192_416.png"
+   }
+  },
+  {
+   "rank": 42,
+   "site_id": "harrat_khaybar:1056:736",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.58181718250093,
+   "lon": 39.902567955379006,
+   "score": 63.46913431991117,
+   "best_pair_score": 67.41945209583248,
+   "s_morph": 0.5979724204604336,
+   "s_embed": 0.7885276717051614,
+   "sub_scores": {
+    "relief": 99.0,
+    "slope": 95.5,
+    "roughness": 98.9,
+    "shape": 97.89999999999999,
+    "embedding": 97.7
+   },
+   "terrain": {
+    "relief_m": 93.15396118164062,
+    "slope_p50_deg": 1.9715794764540469,
+    "slope_p90_deg": 4.853816259669355,
+    "rough_std_m": 9.543690949101757,
+    "bowl_index": 0.10158596187829971,
+    "tri_m": 2.123756210216002,
+    "hypsometric_integral": 0.4203851819038391
+   },
+   "target_terrain": {
+    "relief_m": 74.22088623046875,
+    "slope_p50_deg": 1.8810011970492977,
+    "slope_p90_deg": 3.8627242207878574,
+    "rough_std_m": 9.105437252560774,
+    "bowl_index": 0.11425000429153442,
+    "tri_m": 1.8772794106252235,
+    "hypsometric_integral": 0.42140617966651917
+   },
+   "target_patch_id": "mars_jezero:320:224",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 93 m here vs 74 m on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 9.5 m here vs 9.1 m; ruggedness index 2.1 m here vs 1.9 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1056_736.png",
+    "target_hillshade": "img/patches/mars_jezero_320_224.png"
+   }
+  },
+  {
+   "rank": 43,
+   "site_id": "qaidam:96:160",
+   "region_id": "qaidam",
+   "region_name": "Qaidam Basin",
+   "region_set": "discovery",
+   "lat": 37.65267811169004,
+   "lon": 94.02115452104982,
+   "score": 63.413208249577984,
+   "best_pair_score": 67.95009657435749,
+   "s_morph": 0.7557478796961761,
+   "s_embed": 0.5651305948146732,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 95.7,
+    "roughness": 98.8,
+    "shape": 98.9,
+    "embedding": 69.6
+   },
+   "terrain": {
+    "relief_m": 42.13372802734375,
+    "slope_p50_deg": 0.9275210953546615,
+    "slope_p90_deg": 3.7817272339729424,
+    "rough_std_m": 6.602186481912454,
+    "bowl_index": -0.11041272431612015,
+    "tri_m": 1.3261850299497797,
+    "hypsometric_integral": 0.5860315561294556
+   },
+   "target_terrain": {
+    "relief_m": 38.8280029296875,
+    "slope_p50_deg": 1.296472222972295,
+    "slope_p90_deg": 2.6603747678511143,
+    "rough_std_m": 5.685476514325209,
+    "bowl_index": -0.09178222715854645,
+    "tri_m": 1.3383395049127902,
+    "hypsometric_integral": 0.5968107581138611
+   },
+   "target_patch_id": "mars_jezero:192:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 42 m here vs 39 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.11 here vs -0.09 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Image embedding bar 70/100: the shaded relief looks less alike than the terrain numbers suggest",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/qaidam_96_160.png",
+    "target_hillshade": "img/patches/mars_jezero_192_384.png"
+   }
+  },
+  {
+   "rank": 44,
+   "site_id": "harrat_khaybar:96:704",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 26.10200279724466,
+   "lon": 39.88732387001497,
+   "score": 63.09058456897782,
+   "best_pair_score": 80.75918925876726,
+   "s_morph": 0.8617355985167611,
+   "s_embed": 0.7263763336940396,
+   "sub_scores": {
+    "relief": 99.5,
+    "slope": 97.39999999999999,
+    "roughness": 99.5,
+    "shape": 99.0,
+    "embedding": 94.10000000000001
+   },
+   "terrain": {
+    "relief_m": 66.76235961914062,
+    "slope_p50_deg": 1.5106241980995432,
+    "slope_p90_deg": 3.652295350218869,
+    "rough_std_m": 7.533888918413897,
+    "bowl_index": 0.1382530927658081,
+    "tri_m": 1.6572334694440605,
+    "hypsometric_integral": 0.37431466579437256
+   },
+   "target_terrain": {
+    "relief_m": 62.18218994140625,
+    "slope_p50_deg": 1.6814646794755674,
+    "slope_p90_deg": 3.8713310064751267,
+    "rough_std_m": 7.690519081195593,
+    "bowl_index": 0.12464161217212677,
+    "tri_m": 1.7447934185428997,
+    "hypsometric_integral": 0.3687199056148529
+   },
+   "target_patch_id": "mars_jezero:288:224",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 67 m here vs 62 m on the Mars target",
+    "Roughness (bar 100/100): plane-fit spread 7.5 m here vs 7.7 m; ruggedness index 1.7 m here vs 1.7 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 94% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_96_704.png",
+    "target_hillshade": "img/patches/mars_jezero_288_224.png"
+   }
+  },
+  {
+   "rank": 45,
+   "site_id": "harrat_khaybar:864:0",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.68789484256599,
+   "lon": 39.46328535143679,
+   "score": 63.03709939764323,
+   "best_pair_score": 71.11204842171834,
+   "s_morph": 0.7398443361591337,
+   "s_embed": 0.6680347063042582,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 96.0,
+    "roughness": 96.6,
+    "shape": 99.4,
+    "embedding": 87.9
+   },
+   "terrain": {
+    "relief_m": 31.356292724609375,
+    "slope_p50_deg": 0.966808111867903,
+    "slope_p90_deg": 2.599456831228069,
+    "rough_std_m": 4.759169397983546,
+    "bowl_index": 0.11056338995695114,
+    "tri_m": 1.1123551320086904,
+    "hypsometric_integral": 0.45136454701423645
+   },
+   "target_terrain": {
+    "relief_m": 32.52252197265625,
+    "slope_p50_deg": 1.2951565388043078,
+    "slope_p90_deg": 2.6791560090263014,
+    "rough_std_m": 3.6267560559334315,
+    "bowl_index": 0.10116186738014221,
+    "tri_m": 1.3360156675531267,
+    "hypsometric_integral": 0.4397399127483368
+   },
+   "target_patch_id": "mars_jezero:160:416",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 99/100): height range (5th-95th pct) 31 m here vs 33 m on the Mars target",
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.11 here vs 0.10 on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (96/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_864_0.png",
+    "target_hillshade": "img/patches/mars_jezero_160_416.png"
+   }
+  },
+  {
+   "rank": 46,
+   "site_id": "sp_crater:512:32",
+   "region_id": "sp_crater",
+   "region_name": "SP Crater, San Francisco volcanic field, Arizona",
+   "region_set": "well_studied",
+   "lat": 35.735062167567705,
+   "lon": -112.14357685024683,
+   "score": 63.00745761573811,
+   "best_pair_score": 77.12934918392848,
+   "s_morph": 0.8209648815893983,
+   "s_embed": 0.6967864072141149,
+   "sub_scores": {
+    "relief": 99.2,
+    "slope": 96.7,
+    "roughness": 99.0,
+    "shape": 99.4,
+    "embedding": 91.3
+   },
+   "terrain": {
+    "relief_m": 41.052825927734375,
+    "slope_p50_deg": 1.2542446293034597,
+    "slope_p90_deg": 3.2781310250125286,
+    "rough_std_m": 4.738748811083431,
+    "bowl_index": 0.024941664189100266,
+    "tri_m": 1.4402143178695694,
+    "hypsometric_integral": 0.4894106388092041
+   },
+   "target_terrain": {
+    "relief_m": 37.31475830078125,
+    "slope_p50_deg": 1.3762016188721273,
+    "slope_p90_deg": 2.6393745535584694,
+    "rough_std_m": 4.225074259068211,
+    "bowl_index": 0.02287994883954525,
+    "tri_m": 1.3295845246091718,
+    "hypsometric_integral": 0.47383058071136475
+   },
+   "target_patch_id": "mars_jezero:160:288",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) 0.02 here vs 0.02 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 41 m here vs 37 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 91% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/sp_crater_512_32.png",
+    "target_hillshade": "img/patches/mars_jezero_160_288.png"
+   }
+  },
+  {
+   "rank": 47,
+   "site_id": "askja:224:704",
+   "region_id": "askja",
+   "region_name": "Askja and the Icelandic highlands",
+   "region_set": "well_studied",
+   "lat": 65.34219309691154,
+   "lon": -16.92962380897972,
+   "score": 62.83231460148005,
+   "best_pair_score": 73.34196799723365,
+   "s_morph": 0.6698210727734886,
+   "s_embed": 0.8288175907706082,
+   "sub_scores": {
+    "relief": 99.5,
+    "slope": 98.6,
+    "roughness": 97.8,
+    "shape": 97.89999999999999,
+    "embedding": 98.8
+   },
+   "terrain": {
+    "relief_m": 38.81451416015625,
+    "slope_p50_deg": 1.2422248360942874,
+    "slope_p90_deg": 3.3970812437027,
+    "rough_std_m": 6.2213930605874115,
+    "bowl_index": 0.09291407465934753,
+    "tri_m": 1.488319729418958,
+    "hypsometric_integral": 0.3351074457168579
+   },
+   "target_terrain": {
+    "relief_m": 42.62286376953125,
+    "slope_p50_deg": 1.3239662755345518,
+    "slope_p90_deg": 3.148496316645663,
+    "rough_std_m": 4.921975652138655,
+    "bowl_index": 0.06432460993528366,
+    "tri_m": 1.4747978234266268,
+    "hypsometric_integral": 0.3383171260356903
+   },
+   "target_patch_id": "mars_jezero:128:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Relief (bar 100/100): height range (5th-95th pct) 39 m here vs 43 m on the Mars target",
+    "Slope (bar 99/100): median 1.2° here vs 1.3°; 90th percentile 3.4° here vs 3.1° on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 99% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is roughness (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/askja_224_704.png",
+    "target_hillshade": "img/patches/mars_jezero_128_384.png"
+   }
+  },
+  {
+   "rank": 48,
+   "site_id": "harrat_khaybar:1312:1152",
+   "region_id": "harrat_khaybar",
+   "region_name": "Harrat Khaybar",
+   "region_set": "discovery",
+   "lat": 25.441393205566015,
+   "lon": 40.14973723604433,
+   "score": 62.74921480978852,
+   "best_pair_score": 71.76511661940079,
+   "s_morph": 0.6731885774352638,
+   "s_embed": 0.7843450493321238,
+   "sub_scores": {
+    "relief": 98.4,
+    "slope": 97.7,
+    "roughness": 98.6,
+    "shape": 99.3,
+    "embedding": 97.5
+   },
+   "terrain": {
+    "relief_m": 50.04766845703125,
+    "slope_p50_deg": 1.2154963974362358,
+    "slope_p90_deg": 2.3788677177744066,
+    "rough_std_m": 5.167874317290654,
+    "bowl_index": -0.09788763523101807,
+    "tri_m": 1.1453033748948238,
+    "hypsometric_integral": 0.6162098050117493
+   },
+   "target_terrain": {
+    "relief_m": 38.8280029296875,
+    "slope_p50_deg": 1.296472222972295,
+    "slope_p90_deg": 2.6603747678511143,
+    "rough_std_m": 5.685476514325209,
+    "bowl_index": -0.09178222715854645,
+    "tri_m": 1.3383395049127902,
+    "hypsometric_integral": 0.5968107581138611
+   },
+   "target_patch_id": "mars_jezero:192:384",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 99/100): bowl index (+ bowl, - dome) -0.10 here vs -0.09 on the Mars target",
+    "Roughness (bar 99/100): plane-fit spread 5.2 m here vs 5.7 m; ruggedness index 1.1 m here vs 1.3 m on the Mars target",
+    "Image embedding: the shaded-relief texture is closer than 98% of random Earth patch pairs"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests",
+    "Camera-based navigation and mapping tests on similar-looking terrain"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/harrat_khaybar_1312_1152.png",
+    "target_hillshade": "img/patches/mars_jezero_192_384.png"
+   }
+  },
+  {
+   "rank": 49,
+   "site_id": "namib:1056:672",
+   "region_id": "namib",
+   "region_name": "Namib desert",
+   "region_set": "discovery",
+   "lat": -24.88997371557083,
+   "lon": 15.199764595144238,
+   "score": 62.68492620677239,
+   "best_pair_score": 80.46604375157752,
+   "s_morph": 0.9028988881690863,
+   "s_embed": 0.6573027615358085,
+   "sub_scores": {
+    "relief": 99.4,
+    "slope": 97.5,
+    "roughness": 99.1,
+    "shape": 99.5,
+    "embedding": 86.5
+   },
+   "terrain": {
+    "relief_m": 66.42251586914062,
+    "slope_p50_deg": 3.403055396726038,
+    "slope_p90_deg": 8.566060853451077,
+    "rough_std_m": 16.094504106668523,
+    "bowl_index": -0.03137834370136261,
+    "tri_m": 3.6441327292514765,
+    "hypsometric_integral": 0.44139641523361206
+   },
+   "target_terrain": {
+    "relief_m": 72.770751953125,
+    "slope_p50_deg": 3.3356826387912637,
+    "slope_p90_deg": 8.302712611926754,
+    "rough_std_m": 17.94359626442465,
+    "bowl_index": -0.033935096114873886,
+    "tri_m": 3.542420068715043,
+    "hypsometric_integral": 0.4496612250804901
+   },
+   "target_patch_id": "mars_jezero:96:256",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) -0.03 here vs -0.03 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 66 m here vs 73 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (98/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/namib_1056_672.png",
+    "target_hillshade": "img/patches/mars_jezero_96_256.png"
+   }
+  },
+  {
+   "rank": 50,
+   "site_id": "puna_de_atacama:1152:1024",
+   "region_id": "puna_de_atacama",
+   "region_name": "Puna de Atacama",
+   "region_set": "discovery",
+   "lat": -23.64844010207714,
+   "lon": -67.22679828320648,
+   "score": 62.64453826544718,
+   "best_pair_score": 77.74511862706352,
+   "s_morph": 0.8693683970364267,
+   "s_embed": 0.6395753701219478,
+   "sub_scores": {
+    "relief": 99.3,
+    "slope": 97.2,
+    "roughness": 99.0,
+    "shape": 99.6,
+    "embedding": 83.8
+   },
+   "terrain": {
+    "relief_m": 73.8731689453125,
+    "slope_p50_deg": 2.0201428056702753,
+    "slope_p90_deg": 4.373091609044847,
+    "rough_std_m": 10.171234544576981,
+    "bowl_index": 0.1141829788684845,
+    "tri_m": 1.9918011715955466,
+    "hypsometric_integral": 0.40583565831184387
+   },
+   "target_terrain": {
+    "relief_m": 74.22088623046875,
+    "slope_p50_deg": 1.8810011970492977,
+    "slope_p90_deg": 3.8627242207878574,
+    "rough_std_m": 9.105437252560774,
+    "bowl_index": 0.11425000429153442,
+    "tri_m": 1.8772794106252235,
+    "hypsometric_integral": 0.42140617966651917
+   },
+   "target_patch_id": "mars_jezero:320:224",
+   "environment": null,
+   "novelty": null,
+   "strong_match": [
+    "Shape (bar 100/100): bowl index (+ bowl, - dome) 0.11 here vs 0.11 on the Mars target",
+    "Relief (bar 99/100): height range (5th-95th pct) 74 m here vs 74 m on the Mars target"
+   ],
+   "breaks_down": [
+    "All four terrain groups score at least 75/100; the weakest is slope (97/100)",
+    "Gravity: Earth's is about 2.6 times that of Mars.",
+    "Thin air: Mars' surface pressure is under 1% of Earth's and the air is mostly carbon dioxide.",
+    "Radiation: Earth's atmosphere and magnetic field block most of the radiation that reaches Mars' surface."
+   ],
+   "tests_suited": [
+    "Rover mobility and traverse-planning trials",
+    "Terrain-relative navigation and landing-hazard imaging tests"
+   ],
+   "images": {
+    "earth_hillshade": "img/patches/puna_de_atacama_1152_1024.png",
+    "target_hillshade": "img/patches/mars_jezero_320_224.png"
+   }
+  }
+ ]
+}
