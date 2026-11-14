@@ -123,8 +123,12 @@ img {
   position: absolute;
   width: 1px;
   height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   white-space: nowrap;
 }
 
@@ -695,6 +699,9 @@ main:focus {
   margin-bottom: 10px;
 }
 .results-list {
+  /* Positioned so the hidden link labels stay inside the scrolling list
+     instead of stretching the page below the footer. */
+  position: relative;
   list-style: none;
   margin: 8px 0 0;
   padding: 0;
