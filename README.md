@@ -118,11 +118,6 @@ Wikipedia and PANGAEA coordinates. See [`DATA_LICENSES.md`](DATA_LICENSES.md) fo
 - The novelty catalogue is a set of points (21 sites), not a complete census of analog research.
 - Crater benchmark: seven craters, so the metrics carry wide uncertainty.
 
-## Use of AI
-
-We used an AI coding assistant to help write the code and documentation, under our direction and review. All data,
-results and scores come from the open datasets listed and our own pipeline runs.
-
 ## Licence
 
 Code: MIT (see `LICENSE`). Data: see `DATA_LICENSES.md`.
