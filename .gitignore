@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data (raw and intermediate stay local; only web/public/data is committed)
+data/raw/
+data/patches/
+data/cache/
+data/work/
+data/small/
+data/res90/
+*.npy
+*.joblib
+*.parquet
+
+# Web
+web/node_modules/
+web/dist/
+.DS_Store

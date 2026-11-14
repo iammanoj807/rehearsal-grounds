@@ -1,0 +1,26 @@
+# Rehearsal Grounds pipeline settings. Every script reads this file.
+resolution_m: 60          # common grid for every body
+patch_px: 64              # 64 x 60 m = 3.84 km window
+stride_px: 32             # 50% overlap
+min_valid_fraction: 0.95  # drop patches with more nodata
+mask_max_veg_built_crop: 0.20   # WorldCover classes 10,40,50 share
+mask_max_water: 0.05            # WorldCover class 80
+min_relief_m: 5           # drop near-flat patches (sea, lakes, salt pans) from the analog search
+top_k_sites: 50
+nms_km: 10                # keep matches at least 10 km apart
+weights: {morph: 0.6, embed: 0.4}
+seed: 42
+
+# Earth region extraction: a square box centred on the cited region centre.
+region_half_km: 50        # 100 km x 100 km box per analog region
+crater_half_km: 30        # 60 km x 60 km box per crater benchmark tile
+
+# Fast smoke run used by `make pipeline-small` (1 target, 2 regions).
+small:
+  targets: [moon_site23_malapert]
+  regions: [meteor_crater, tibesti]
+
+# Per-profile overrides (selected with RG_PROFILE). The 90 m robustness
+# rerun keeps the physical window close to 3.84 km (43 x 90 m = 3.87 km).
+profiles:
+  res90: {resolution_m: 90, patch_px: 43, stride_px: 21}
