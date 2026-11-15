@@ -1,6 +1,7 @@
 # Rehearsal Grounds pipeline settings. Every script reads this file.
 resolution_m: 60          # common grid for every body
 patch_px: 64              # 64 x 60 m = 3.84 km window
+display_resolution_m: 30  # pictures only: patch images are drawn from the original maps at 30 m; every score uses resolution_m
 stride_px: 32             # 50% overlap
 min_valid_fraction: 0.95  # drop patches with more nodata
 mask_max_veg_built_crop: 0.20   # share of WorldCover 10,40,50,90,95 (trees, crops, built-up, wetland, mangrove),

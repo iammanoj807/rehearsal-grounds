@@ -31,6 +31,7 @@ from PIL import Image
 
 from common import (SOURCES_MD, config_hash, export_dir, get_logger, grids_dir, load_config, load_yaml, now_iso,
                     patches_dir, results_dir, run_dir, selected_regions, selected_targets)
+from display import DisplayWindows
 from render import hillshade_image, shade_array, shared_stretch
 from schemas import (ArtemisCoverage, Dataset, Environment, Images, Lighting, LightingInfo, Match, MonthCal, Novelty,
                      Region, Results, Sources, SubScores, SunBand, Target, Terrain, UsualSites)
@@ -239,25 +240,64 @@ def load_lighting() -> dict[str, Any] | None:
     return json.loads(path.read_text()) if path.exists() else None
 
 
-def lowsun_stretch(lighting: dict[str, Any] | None) -> tuple[float, float] | None:
+def lowsun_arrays(lighting: dict[str, Any] | None, meta: pd.DataFrame, dw: DisplayWindows | None,
+                  cfg: dict[str, Any]) -> dict[str, np.ndarray]:
+    """Low-Sun previews (cast shadows black) for every exported Moon-target site and its target patch.
+
+    Drawn at the display resolution from the original maps, with 3.84 km of surroundings,
+    the Sun at the middle of the target's band and the hillshade azimuth. Falls back to the
+    60 m arrays written by step 09b when no display resolution is configured.
+    """
+    if not lighting:
+        return {}
+    if dw is None:
+        return {f.stem.removeprefix("lowsun_"): np.load(f) for f in (run_dir() / "lighting").glob("lowsun_*.npy")}
+    from lighting import R_EARTH_M, R_MOON_M, cast_shadow_mask  # noqa: PLC0415
+    from features import hillshade  # noqa: PLC0415
+
+    az = float(load_yaml("lighting.yaml")["preview_azimuth_deg"])
+    rows = meta.set_index("patch_id", drop=False)
+    out: dict[str, np.ndarray] = {}
+    for tid, sites in lighting.get("sites", {}).items():
+        band = lighting["targets"].get(tid, {})
+        if not band.get("applicable"):
+            continue
+        elev = float(band["preview_elevation_deg"])
+        res_df = pd.read_parquet(results_dir() / f"{tid}.parquet")
+        for r in res_df.itertuples():
+            if r.site_id not in sites or "lighting" not in sites[r.site_id]:
+                continue
+            for pid, radius in ((r.site_id, R_EARTH_M), (r.target_patch_id, R_MOON_M)):
+                key = safe_name(pid)
+                if key in out:
+                    continue
+                window = dw.window(rows.loc[pid].to_dict(), dw.patch)
+                filled = np.where(np.isfinite(window), window, np.nanmedian(window))
+                core = filled[dw.patch:2 * dw.patch, dw.patch:2 * dw.patch]
+                shade = hillshade(core, dw.res, azimuth_deg=az, altitude_deg=elev)
+                dark = cast_shadow_mask(window, dw.res, radius, dw.patch, dw.patch, az, elev)
+                out[key] = np.where(dark, 0.0, shade).astype(np.float32)
+    return out
+
+
+def lowsun_stretch(arrays: dict[str, np.ndarray]) -> tuple[float, float] | None:
     """One shared 1st-99th percentile stretch over every low-sun preview array."""
-    files = sorted((run_dir() / "lighting").glob("lowsun_*.npy")) if lighting else []
-    if not files:
+    if not arrays:
         return None
-    lo, hi = np.percentile(np.concatenate([np.load(f).ravel() for f in files]), [1, 99])
+    lo, hi = np.percentile(np.concatenate([a.ravel() for a in arrays.values()]), [1, 99])
     return float(lo), float(max(hi, lo + 1e-6))
 
 
-def lowsun_png(pid: str, stretch: tuple[float, float], out: Path) -> str | None:
-    """Render one low-sun preview (cast shadows black) with the shared stretch and a 1 km scale bar."""
-    src = run_dir() / "lighting" / f"lowsun_{safe_name(pid)}.npy"
-    if not src.exists():
+def lowsun_png(pid: str, arrays: dict[str, np.ndarray], stretch: tuple[float, float], out: Path) -> str | None:
+    """Render one low-sun preview with the shared stretch and a 1 km scale bar."""
+    a0 = arrays.get(safe_name(pid))
+    if a0 is None:
         return None
     rel = f"img/lowsun/{safe_name(pid)}.png"
     if not (out / rel).exists():
         from render import OUT_PX, ImageDraw, ImageFont  # noqa: PLC0415
         lo, hi = stretch
-        a = np.clip((np.load(src) - lo) / (hi - lo), 0.0, 1.0)
+        a = np.clip((a0 - lo) / (hi - lo), 0.0, 1.0)
         img = Image.fromarray(np.uint8(np.round(a * 255)), mode="L").resize((OUT_PX, OUT_PX), Image.BILINEAR).convert("RGB")
         draw = ImageDraw.Draw(img)
         bar = int(round(1000.0 / (3840.0 / OUT_PX)))
@@ -285,9 +325,18 @@ def main() -> int:
     rules = load_yaml("tests_suited.yaml")["rules"]
     env_table, nov_table = load_environment()
     lighting = load_lighting()
-    lstretch = lowsun_stretch(lighting)
     cache: dict[str, np.ndarray] = {}
     res = float(cfg["resolution_m"])
+    # Pictures only: drawn from the original maps at display_resolution_m when configured.
+    dw = DisplayWindows(cfg) if cfg.get("display_resolution_m") else None
+    dres = dw.res if dw else res
+    rows_by_id = meta.set_index("patch_id", drop=False)
+
+    def display_patch(pid: str) -> np.ndarray:
+        return dw.window(rows_by_id.loc[pid].to_dict()) if dw else load_patch(pid, meta, cache)
+
+    larrays = lowsun_arrays(lighting, meta, dw, cfg)
+    lstretch = lowsun_stretch(larrays)
 
     # One shared contrast stretch over every patch image that will be exported.
     all_targets = selected_targets(load_yaml("targets.yaml")["targets"])
@@ -296,7 +345,7 @@ def main() -> int:
         s = pd.read_parquet(results_dir() / f"{target['id']}.parquet")
         patch_ids += list(s["site_id"]) + list(s["target_patch_id"])
     patch_ids = list(dict.fromkeys(patch_ids))
-    stretch = shared_stretch([shade_array(load_patch(pid, meta, cache), res) for pid in patch_ids])
+    stretch = shared_stretch([shade_array(display_patch(pid), dres) for pid in patch_ids])
     log.info("shared hillshade stretch over %d patches: %.3f-%.3f", len(patch_ids), *stretch)
 
     targets_out = []
@@ -312,7 +361,7 @@ def main() -> int:
             for kind, pid in (("earth_hillshade", row["site_id"]), ("target_hillshade", row["target_patch_id"])):
                 rel = f"img/patches/{safe_name(pid)}.png"
                 if not (out / rel).exists():
-                    save_png(hillshade_image(load_patch(pid, meta, cache), res, stretch_range=stretch), out / rel)
+                    save_png(hillshade_image(display_patch(pid), dres, stretch_range=stretch), out / rel)
                 images[kind] = rel
             env = env_for(row["site_id"], env_table)
             novelty = None
@@ -325,8 +374,8 @@ def main() -> int:
             strong, breaks, tests = explain(row, target["body"], env, rules, float(cfg["mask_sparse_veg_humid_mm"]))
             lrec = (lighting or {}).get("sites", {}).get(tid, {}).get(row["site_id"], {})
             if lstretch and lrec.get("lighting"):
-                images["lowsun_earth"] = lowsun_png(row["site_id"], lstretch, out)
-                images["lowsun_target"] = lowsun_png(row["target_patch_id"], lstretch, out)
+                images["lowsun_earth"] = lowsun_png(row["site_id"], larrays, lstretch, out)
+                images["lowsun_target"] = lowsun_png(row["target_patch_id"], larrays, lstretch, out)
             region = regions_cfg[row["region_id"]]
             matches.append(Match(
                 rank=int(row["rank"]), site_id=row["site_id"], region_id=row["region_id"],

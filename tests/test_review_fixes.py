@@ -85,3 +85,18 @@ def test_sparse_cover_counts_only_in_humid_climates() -> None:
     for name in ("tree", "crop", "built", "wetland", "mangrove"):
         dry = _shares(**{name: 0.5, "bare": 0.5}).assign(precip_mm_yr=100.0)
         assert not patches.landcover_ok(dry, cfg).iloc[0], name
+
+
+def test_display_window_has_the_same_footprint_as_the_60m_patch() -> None:
+    from rasterio.transform import from_origin
+
+    from display import display_transform
+
+    grid60 = from_origin(500_000.0, 7_300_000.0, 60.0, 60.0)
+    tf, n = display_transform(grid60, row=10, col=20, res60=60.0, patch60=64, res=30.0, margin_px=0)
+    assert n == 128
+    assert (tf.c, tf.f) == (500_000.0 + 20 * 60.0, 7_300_000.0 - 10 * 60.0)
+    assert tf.a == 30.0 and tf.e == -30.0
+    tf_m, n_m = display_transform(grid60, row=10, col=20, res60=60.0, patch60=64, res=30.0, margin_px=128)
+    assert n_m == 384 and tf_m.c == tf.c - 3840.0 and tf_m.f == tf.f + 3840.0
+
