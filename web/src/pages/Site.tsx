@@ -249,7 +249,8 @@ export default function SitePage() {
           )}
           {mode !== 'lowsun' && (
             <p className="small muted center">
-              Both views: 3.84 km across on a 60 m grid, light from the north-west at 45°, no vertical exaggeration.
+              Both views: 3.84 km across, drawn at 30 m from the original maps (all scores use the 60 m grid), light
+              from the north-west at 45°, no vertical exaggeration.
               Every patch image uses the same contrast stretch, so brightness and texture compare directly between the
               two views. Scale bars are 1 km.
             </p>

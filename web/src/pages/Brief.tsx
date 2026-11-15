@@ -75,7 +75,7 @@ export default function BriefPage() {
             </>
           )}
         </div>
-        <p className="brief-fine">All patches 3.84 km across on a 60 m grid, light from the north-west, one shared contrast stretch per view type.</p>
+        <p className="brief-fine">All patches 3.84 km across, drawn at 30 m from the original maps (scores use the 60 m grid), light from the north-west, one shared contrast stretch per view type.</p>
         <div className="brief-cols">
           <section>
             <h2>What matches</h2>

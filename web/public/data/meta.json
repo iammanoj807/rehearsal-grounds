@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-15T06:15:53+00:00",
- "config_hash": "c8d09b9ca5bcc9be1c86a932d767433c1e8a4c3788f0ab0b0eee499c6eeec6e3",
+ "generated_at": "2026-11-15T06:34:11+00:00",
+ "config_hash": "dd5750c9db20bb99af014ed6b768b149a987b13e6795cec93154a0a859abcca0",
  "n_earth_patches": 65555,
  "n_searchable": 43794,
  "resolution_m": 60.0,
@@ -10,7 +10,7 @@
   "embed": 0.4
  },
  "hillshade_stretch": [
-  0.4517,
-  0.8894
+  0.4386,
+  0.8947
  ]
 }
