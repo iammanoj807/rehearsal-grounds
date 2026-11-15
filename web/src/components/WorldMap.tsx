@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react'
 import L from 'leaflet'
 import { AttributionControl, MapContainer, Marker, TileLayer, Tooltip, useMap } from 'react-leaflet'
 import type { Match } from '../types.ts'
-import { BLUE_MARBLE, GIBS_ATTRIBUTION, LANDSAT_WELD, WORLD_BOUNDS } from './gibs.ts'
+import { BLUE_MARBLE, GIBS_ATTRIBUTION, LANDSAT_WELD, WORLD_BOUNDS, hideEmptyTile } from './gibs.ts'
 
 interface Props {
   matches: Match[]
@@ -64,8 +64,17 @@ export default function WorldMap({ matches, selected, onSelect, fitKey }: Props)
       attributionControl={false}
     >
       <AttributionControl prefix='<a href="https://leafletjs.com">Leaflet</a>' />
-      <TileLayer url={BLUE_MARBLE.url} maxNativeZoom={BLUE_MARBLE.maxNativeZoom} maxZoom={8} noWrap bounds={WORLD_BOUNDS} attribution={GIBS_ATTRIBUTION} />
-      <TileLayer url={LANDSAT_WELD.url} maxNativeZoom={LANDSAT_WELD.maxNativeZoom} minZoom={9} maxZoom={12} noWrap bounds={WORLD_BOUNDS} />
+      <TileLayer url={BLUE_MARBLE.url} maxNativeZoom={BLUE_MARBLE.maxNativeZoom} maxZoom={12} noWrap bounds={WORLD_BOUNDS} attribution={GIBS_ATTRIBUTION} />
+      <TileLayer
+        url={LANDSAT_WELD.url}
+        maxNativeZoom={LANDSAT_WELD.maxNativeZoom}
+        minZoom={9}
+        maxZoom={12}
+        noWrap
+        bounds={WORLD_BOUNDS}
+        crossOrigin="anonymous"
+        eventHandlers={{ tileload: hideEmptyTile }}
+      />
       <FitToMatches matches={matches} fitKey={fitKey} />
       <PanToSelected matches={matches} selected={selected} />
       {ordered.map((m) => (

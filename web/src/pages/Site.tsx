@@ -335,7 +335,9 @@ export default function SitePage() {
 
             <h2>Where it is</h2>
             <SiteInset lat={m.lat} lon={m.lon} sizeKm={3.84} />
-            <p className="small muted">Landsat WELD true-colour annual composite (year 2000) from NASA GIBS. The box marks the matched 3.84 km patch.</p>
+            <p className="small muted">Landsat WELD true-colour annual composite (year 2000) from NASA GIBS. Where Landsat WELD has no imagery, for
+              example in Antarctica and Svalbard, the map shows the lower-resolution Blue Marble layer instead. The box
+              marks the matched 3.84 km patch.</p>
           </section>
         </div>
 

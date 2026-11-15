@@ -1,5 +1,5 @@
 import { AttributionControl, MapContainer, Rectangle, TileLayer } from 'react-leaflet'
-import { BLUE_MARBLE, GIBS_ATTRIBUTION, LANDSAT_WELD, WORLD_BOUNDS } from './gibs.ts'
+import { BLUE_MARBLE, GIBS_ATTRIBUTION, LANDSAT_WELD, WORLD_BOUNDS, hideEmptyTile } from './gibs.ts'
 
 /** Close-up of one site on Landsat imagery with the matched 3.84 km patch outlined. */
 export default function SiteInset({ lat, lon, sizeKm }: { lat: number; lon: number; sizeKm: number }) {
@@ -22,8 +22,16 @@ export default function SiteInset({ lat, lon, sizeKm }: { lat: number; lon: numb
       attributionControl={false}
     >
       <AttributionControl prefix='<a href="https://leafletjs.com">Leaflet</a>' />
-      <TileLayer url={BLUE_MARBLE.url} maxNativeZoom={BLUE_MARBLE.maxNativeZoom} maxZoom={8} noWrap attribution={GIBS_ATTRIBUTION} />
-      <TileLayer url={LANDSAT_WELD.url} maxNativeZoom={LANDSAT_WELD.maxNativeZoom} minZoom={9} maxZoom={13} noWrap />
+      <TileLayer url={BLUE_MARBLE.url} maxNativeZoom={BLUE_MARBLE.maxNativeZoom} maxZoom={13} noWrap attribution={GIBS_ATTRIBUTION} />
+      <TileLayer
+        url={LANDSAT_WELD.url}
+        maxNativeZoom={LANDSAT_WELD.maxNativeZoom}
+        minZoom={9}
+        maxZoom={13}
+        noWrap
+        crossOrigin="anonymous"
+        eventHandlers={{ tileload: hideEmptyTile }}
+      />
       <Rectangle bounds={box} pathOptions={{ color: '#7A3D1A', weight: 2, fill: false }} />
     </MapContainer>
   )

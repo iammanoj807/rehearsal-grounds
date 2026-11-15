@@ -22,3 +22,27 @@ export const WORLD_BOUNDS: [[number, number], [number, number]] = [
   [-84.9, -179.9],
   [84.9, 179.9],
 ]
+
+/**
+ * Landsat WELD has no imagery in some places (Antarctica, Svalbard): GIBS then serves
+ * an all-black tile. Hide such tiles so the Blue Marble layer underneath shows instead.
+ * GIBS sends Access-Control-Allow-Origin: *, so the tile can be read with crossOrigin set.
+ */
+export function hideEmptyTile(e: { tile: HTMLElement }) {
+  const img = e.tile as HTMLImageElement
+  try {
+    const c = document.createElement('canvas')
+    c.width = 16
+    c.height = 16
+    const ctx = c.getContext('2d', { willReadFrequently: true })
+    if (!ctx) return
+    ctx.drawImage(img, 0, 0, 16, 16)
+    const px = ctx.getImageData(0, 0, 16, 16).data
+    let max = 0
+    for (let i = 0; i < px.length; i += 4) max = Math.max(max, px[i], px[i + 1], px[i + 2])
+    if (max < 8) img.style.visibility = 'hidden'
+  } catch {
+    // A tile that cannot be read stays visible.
+  }
+}
+
