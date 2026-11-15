@@ -100,3 +100,11 @@ def test_display_window_has_the_same_footprint_as_the_60m_patch() -> None:
     tf_m, n_m = display_transform(grid60, row=10, col=20, res60=60.0, patch60=64, res=30.0, margin_px=128)
     assert n_m == 384 and tf_m.c == tf.c - 3840.0 and tf_m.f == tf.f + 3840.0
 
+
+def test_target_picture_turn_matches_the_embedding_convention() -> None:
+    # Step 06 embeds np.rot90(target, k); the picture must use exactly the same turn.
+    z = np.arange(12.0).reshape(3, 4)
+    for k in range(4):
+        assert np.array_equal(export.turn(z, k), np.rot90(z, k))
+    assert export.display_key("a:1:2", 0) == "a_1_2" and export.display_key("a:1:2", 3) == "a_1_2_r3"
+

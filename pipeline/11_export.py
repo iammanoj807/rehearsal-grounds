@@ -32,8 +32,10 @@ from PIL import Image
 from common import (SOURCES_MD, config_hash, export_dir, get_logger, grids_dir, load_config, load_yaml, now_iso,
                     patches_dir, results_dir, run_dir, selected_regions, selected_targets)
 from display import DisplayWindows
+from features import SLOPE_BINS_DEG
 from render import hillshade_image, shade_array, shared_stretch
-from schemas import (ArtemisCoverage, Dataset, Environment, Images, Lighting, LightingInfo, Match, MonthCal, Novelty,
+from schemas import (ArtemisCoverage, Dataset, Environment, Fingerprint, Images, Lighting, LightingInfo, Match, MonthCal,
+                     Novelty,
                      Region, Results, Sources, SubScores, SunBand, Target, Terrain, UsualSites)
 
 log = get_logger("11_export")
@@ -240,8 +242,31 @@ def load_lighting() -> dict[str, Any] | None:
     return json.loads(path.read_text()) if path.exists() else None
 
 
+def earth_rotation(index: Any, target_row: int, earth_row: int) -> int:
+    """Quarter turns k of the target patch that best match the Earth patch in the embedding (0-3).
+
+    Step 06 embeds np.rot90(target, k) for k = 0..3, each lit from the north-west, and the score
+    keeps the best. The pair the embedding judged is therefore np.rot90(target, k) beside the
+    Earth patch as it is, which is how the pictures are shown (display only).
+    """
+    rots = index.rot.get(int(target_row))
+    if rots is None:
+        return 0
+    return int(np.argmax(rots @ index.emb[int(earth_row)]))
+
+
+def display_key(pid: str, k: int) -> str:
+    """Image name of a patch shown turned by k anticlockwise quarter turns."""
+    return safe_name(pid) + (f"_r{k}" if k else "")
+
+
+def turn(z: np.ndarray, k: int) -> np.ndarray:
+    """np.rot90(z, k): k quarter turns anticlockwise, exactly as step 06 rotates target patches."""
+    return np.rot90(z, k) if k else z
+
+
 def lowsun_arrays(lighting: dict[str, Any] | None, meta: pd.DataFrame, dw: DisplayWindows | None,
-                  cfg: dict[str, Any]) -> dict[str, np.ndarray]:
+                  cfg: dict[str, Any], rot_k: dict[tuple[str, str], int] | None = None) -> dict[str, np.ndarray]:
     """Low-Sun previews (cast shadows black) for every exported Moon-target site and its target patch.
 
     Drawn at the display resolution from the original maps, with 3.84 km of surroundings,
@@ -267,11 +292,12 @@ def lowsun_arrays(lighting: dict[str, Any] | None, meta: pd.DataFrame, dw: Displ
         for r in res_df.itertuples():
             if r.site_id not in sites or "lighting" not in sites[r.site_id]:
                 continue
-            for pid, radius in ((r.site_id, R_EARTH_M), (r.target_patch_id, R_MOON_M)):
-                key = safe_name(pid)
+            k_target = (rot_k or {}).get((tid, r.site_id), 0)
+            for pid, radius, k in ((r.site_id, R_EARTH_M, 0), (r.target_patch_id, R_MOON_M, k_target)):
+                key = display_key(pid, k)
                 if key in out:
                     continue
-                window = dw.window(rows.loc[pid].to_dict(), dw.patch)
+                window = turn(dw.window(rows.loc[pid].to_dict(), dw.patch), k)
                 filled = np.where(np.isfinite(window), window, np.nanmedian(window))
                 core = filled[dw.patch:2 * dw.patch, dw.patch:2 * dw.patch]
                 shade = hillshade(core, dw.res, azimuth_deg=az, altitude_deg=elev)
@@ -288,12 +314,12 @@ def lowsun_stretch(arrays: dict[str, np.ndarray]) -> tuple[float, float] | None:
     return float(lo), float(max(hi, lo + 1e-6))
 
 
-def lowsun_png(pid: str, arrays: dict[str, np.ndarray], stretch: tuple[float, float], out: Path) -> str | None:
+def lowsun_png(key: str, arrays: dict[str, np.ndarray], stretch: tuple[float, float], out: Path) -> str | None:
     """Render one low-sun preview with the shared stretch and a 1 km scale bar."""
-    a0 = arrays.get(safe_name(pid))
+    a0 = arrays.get(key)
     if a0 is None:
         return None
-    rel = f"img/lowsun/{safe_name(pid)}.png"
+    rel = f"img/lowsun/{key}.png"
     if not (out / rel).exists():
         from render import OUT_PX, ImageDraw, ImageFont  # noqa: PLC0415
         lo, hi = stretch
@@ -332,20 +358,32 @@ def main() -> int:
     dres = dw.res if dw else res
     rows_by_id = meta.set_index("patch_id", drop=False)
 
-    def display_patch(pid: str) -> np.ndarray:
-        return dw.window(rows_by_id.loc[pid].to_dict()) if dw else load_patch(pid, meta, cache)
+    def display_patch(pid: str, k: int = 0) -> np.ndarray:
+        z = dw.window(rows_by_id.loc[pid].to_dict()) if dw else load_patch(pid, meta, cache)
+        return turn(z, k)
 
-    larrays = lowsun_arrays(lighting, meta, dw, cfg)
+    # Display only: show each target picture at the quarter turn the image embedding matched.
+    from scoring import load_index  # noqa: PLC0415
+    index = load_index()
+    rot_k: dict[tuple[str, str], int] = {}
+    for target in selected_targets(load_yaml("targets.yaml")["targets"]):
+        s = pd.read_parquet(results_dir() / f"{target['id']}.parquet")
+        for r in s.itertuples():
+            rot_k[(target["id"], r.site_id)] = earth_rotation(index, r.target_row, r.earth_row)
+    log.info("display rotations: %s", pd.Series(list(rot_k.values())).value_counts().sort_index().to_dict())
+
+    larrays = lowsun_arrays(lighting, meta, dw, cfg, rot_k)
     lstretch = lowsun_stretch(larrays)
 
     # One shared contrast stretch over every patch image that will be exported.
     all_targets = selected_targets(load_yaml("targets.yaml")["targets"])
-    patch_ids: list[str] = []
+    patch_ids: list[tuple[str, int]] = []
     for target in all_targets:
         s = pd.read_parquet(results_dir() / f"{target['id']}.parquet")
-        patch_ids += list(s["site_id"]) + list(s["target_patch_id"])
+        patch_ids += [(sid, 0) for sid in s["site_id"]] + [
+            (pid, rot_k[(target["id"], sid)]) for sid, pid in zip(s["site_id"], s["target_patch_id"])]
     patch_ids = list(dict.fromkeys(patch_ids))
-    stretch = shared_stretch([shade_array(display_patch(pid), dres) for pid in patch_ids])
+    stretch = shared_stretch([shade_array(display_patch(pid, k), dres) for pid, k in patch_ids])
     log.info("shared hillshade stretch over %d patches: %.3f-%.3f", len(patch_ids), *stretch)
 
     targets_out = []
@@ -357,11 +395,12 @@ def main() -> int:
         tmeta = meta[meta["source_id"] == tid]
         matches = []
         for _, row in sites.iterrows():
-            images = {}
-            for kind, pid in (("earth_hillshade", row["site_id"]), ("target_hillshade", row["target_patch_id"])):
-                rel = f"img/patches/{safe_name(pid)}.png"
+            images: dict[str, Any] = {}
+            k_target = rot_k[(tid, row["site_id"])]
+            for kind, pid, k in (("earth_hillshade", row["site_id"], 0), ("target_hillshade", row["target_patch_id"], k_target)):
+                rel = f"img/patches/{display_key(pid, k)}.png"
                 if not (out / rel).exists():
-                    save_png(hillshade_image(display_patch(pid), dres, stretch_range=stretch), out / rel)
+                    save_png(hillshade_image(display_patch(pid, k), dres, stretch_range=stretch), out / rel)
                 images[kind] = rel
             env = env_for(row["site_id"], env_table)
             novelty = None
@@ -374,8 +413,14 @@ def main() -> int:
             strong, breaks, tests = explain(row, target["body"], env, rules, float(cfg["mask_sparse_veg_humid_mm"]))
             lrec = (lighting or {}).get("sites", {}).get(tid, {}).get(row["site_id"], {})
             if lstretch and lrec.get("lighting"):
-                images["lowsun_earth"] = lowsun_png(row["site_id"], larrays, lstretch, out)
-                images["lowsun_target"] = lowsun_png(row["target_patch_id"], larrays, lstretch, out)
+                images["lowsun_earth"] = lowsun_png(display_key(row["site_id"], 0), larrays, lstretch, out)
+                images["lowsun_target"] = lowsun_png(display_key(row["target_patch_id"], k_target), larrays, lstretch, out)
+            images["target_rotation_deg"] = 90 * k_target
+            hist_cols = [f"slope_hist_{i}" for i in range(len(SLOPE_BINS_DEG) - 1)]
+            h_t = [float(meta.at[int(row["target_row"]), c]) for c in hist_cols]
+            h_e = [float(meta.at[int(row["earth_row"]), c]) for c in hist_cols]
+            fingerprint = Fingerprint(slope_bins_deg=list(SLOPE_BINS_DEG), target=h_t, earth=h_e,
+                                      overlap=float(min(1.0, sum(min(a, b) for a, b in zip(h_t, h_e)))))
             region = regions_cfg[row["region_id"]]
             matches.append(Match(
                 rank=int(row["rank"]), site_id=row["site_id"], region_id=row["region_id"],
@@ -386,7 +431,7 @@ def main() -> int:
                 terrain=terrain_of(row, "earth"), target_terrain=terrain_of(row, "target"),
                 target_patch_id=row["target_patch_id"], environment=env, novelty=novelty,
                 strong_match=strong, breaks_down=breaks, tests_suited=tests, images=Images(**images),
-                lighting=Lighting(**lrec["lighting"]) if lrec.get("lighting") else None,
+                lighting=Lighting(**lrec["lighting"]) if lrec.get("lighting") else None, fingerprint=fingerprint,
                 calendar=[MonthCal(**c) for c in lrec["calendar"]] if lrec.get("calendar") else None,
                 best_months=lrec.get("best_months"), best_months_rule=lrec.get("best_months_rule"),
             ))

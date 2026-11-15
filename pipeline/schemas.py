@@ -125,6 +125,15 @@ class Images(Strict):
     target_hillshade: str
     lowsun_earth: Optional[str] = None
     lowsun_target: Optional[str] = None
+    target_rotation_deg: int = 0  # display only: target picture turned anticlockwise to the orientation the image embedding matched
+
+
+class Fingerprint(Strict):
+    """Slope histograms (share of each 60 m patch per slope bin) that the terrain fingerprint compares."""
+    slope_bins_deg: list[float]
+    target: list[float]
+    earth: list[float]
+    overlap: float = Field(ge=0, le=1)  # sum over bins of min(target, earth): shared share of the two distributions
 
 
 class ShadowPoint(Strict):
@@ -175,6 +184,7 @@ class Match(Strict):
     tests_suited: list[str]
     images: Images
     lighting: Optional[Lighting] = None
+    fingerprint: Optional[Fingerprint] = None
     calendar: Optional[list[MonthCal]] = None
     best_months: Optional[list[int]] = None
     best_months_rule: Optional[str] = None
