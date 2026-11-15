@@ -16,9 +16,9 @@
    "detail": "28.78 m (Earth: 7.85 m)"
   },
   {
-   "check": "Solar elevation matches the published NREL SPA example within 0.2 degrees",
+   "check": "Solar elevation matches the published NREL SPA example (unrefracted) within 0.05 degrees",
    "passed": true,
-   "detail": "39.872 deg true elevation vs 39.888 deg published (apparent, with refraction); Reda and Andreas 2004, NREL/TP-560-34302"
+   "detail": "ours 39.8721 deg true elevation; NREL SPA e0 = 39.8720 deg topocentric without refraction (39.8884 deg with refraction); Reda and Andreas 2004, NREL/TP-560-34302"
   }
  ],
  "settings": {
@@ -38,6 +38,7 @@
   "max_precip_mm_per_day": 1.0,
   "min_t2m_min_c": -25,
   "max_t2m_max_c": 35,
+  "min_gain_min": 10,
   "n_best_months": 3
  },
  "limits": [

@@ -138,107 +138,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 10.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.72,
-     "t2m_max_c": 25.99,
+     "daylight_h": 10.95,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 15.21,
+     "t2m_max_avg_c": 24.94,
      "precip_mm_per_day": 4.01
     },
     {
      "month": 2,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 12.75,
-     "t2m_max_c": 25.99,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 14.85,
+     "t2m_max_avg_c": 24.68,
      "precip_mm_per_day": 5.05
     },
     {
      "month": 3,
      "daylight_h": 11.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.3,
-     "t2m_max_c": 26.88,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.38,
+     "t2m_max_avg_c": 25.05,
      "precip_mm_per_day": 6.11
     },
     {
      "month": 4,
-     "daylight_h": 12.416666666666666,
-     "low_sun_h": 0.16666666666666666,
-     "t2m_min_c": 14.07,
-     "t2m_max_c": 26.32,
+     "daylight_h": 12.483333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 16.31,
+     "t2m_max_avg_c": 24.99,
      "precip_mm_per_day": 5.5
     },
     {
      "month": 5,
-     "daylight_h": 13.0,
+     "daylight_h": 12.966666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 16.09,
-     "t2m_max_c": 27.44,
+     "t2m_min_avg_c": 17.31,
+     "t2m_max_avg_c": 25.86,
      "precip_mm_per_day": 3.92
     },
     {
      "month": 6,
-     "daylight_h": 13.25,
+     "daylight_h": 13.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.12,
-     "t2m_max_c": 28.08,
+     "t2m_min_avg_c": 18.0,
+     "t2m_max_avg_c": 26.11,
      "precip_mm_per_day": 3.08
     },
     {
      "month": 7,
      "daylight_h": 13.083333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.32,
-     "t2m_max_c": 28.07,
+     "t2m_min_avg_c": 18.46,
+     "t2m_max_avg_c": 26.89,
      "precip_mm_per_day": 3.55
     },
     {
      "month": 8,
      "daylight_h": 12.666666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 17.6,
-     "t2m_max_c": 28.67,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 18.96,
+     "t2m_max_avg_c": 27.21,
      "precip_mm_per_day": 4.03
     },
     {
      "month": 9,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.76,
-     "t2m_max_c": 28.65,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 18.91,
+     "t2m_max_avg_c": 27.08,
      "precip_mm_per_day": 3.54
     },
     {
      "month": 10,
-     "daylight_h": 11.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.56,
-     "t2m_max_c": 28.47,
+     "daylight_h": 11.566666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 18.64,
+     "t2m_max_avg_c": 27.03,
      "precip_mm_per_day": 4.16
     },
     {
      "month": 11,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.72,
-     "t2m_max_c": 27.67,
+     "daylight_h": 11.066666666666666,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 17.42,
+     "t2m_max_avg_c": 26.17,
      "precip_mm_per_day": 5.09
     },
     {
      "month": 12,
-     "daylight_h": 10.75,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 14.46,
-     "t2m_max_c": 26.5,
+     "daylight_h": 10.8,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 16.39,
+     "t2m_max_avg_c": 25.2,
      "precip_mm_per_day": 4.87
     }
    ],
-   "best_months": [
-    6,
-    7,
-    9
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 2,
@@ -365,107 +361,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 10.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.83,
-     "t2m_max_c": 26.27,
+     "daylight_h": 10.966666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 10.83,
+     "t2m_max_avg_c": 22.86,
      "precip_mm_per_day": 4.74
     },
     {
      "month": 2,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.96,
-     "t2m_max_c": 25.05,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 10.69,
+     "t2m_max_avg_c": 22.88,
      "precip_mm_per_day": 5.48
     },
     {
      "month": 3,
      "daylight_h": 11.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.03,
-     "t2m_max_c": 25.32,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.56,
+     "t2m_max_avg_c": 23.22,
      "precip_mm_per_day": 7.23
     },
     {
      "month": 4,
-     "daylight_h": 12.416666666666666,
-     "low_sun_h": 0.16666666666666666,
-     "t2m_min_c": 10.91,
-     "t2m_max_c": 24.55,
+     "daylight_h": 12.483333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.76,
+     "t2m_max_avg_c": 23.59,
      "precip_mm_per_day": 6.41
     },
     {
      "month": 5,
-     "daylight_h": 12.916666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.92,
-     "t2m_max_c": 26.07,
+     "daylight_h": 12.933333333333334,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.44,
+     "t2m_max_avg_c": 24.76,
      "precip_mm_per_day": 4.45
     },
     {
      "month": 6,
      "daylight_h": 13.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.04,
-     "t2m_max_c": 27.04,
+     "t2m_min_avg_c": 14.41,
+     "t2m_max_avg_c": 25.19,
      "precip_mm_per_day": 3.54
     },
     {
      "month": 7,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.11,
-     "t2m_max_c": 26.93,
+     "daylight_h": 13.05,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.68,
+     "t2m_max_avg_c": 25.99,
      "precip_mm_per_day": 3.87
     },
     {
      "month": 8,
-     "daylight_h": 12.666666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.42,
-     "t2m_max_c": 28.49,
+     "daylight_h": 12.65,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.25,
+     "t2m_max_avg_c": 26.2,
      "precip_mm_per_day": 4.51
     },
     {
      "month": 9,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.46,
-     "t2m_max_c": 27.84,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.17,
+     "t2m_max_avg_c": 25.78,
      "precip_mm_per_day": 3.97
     },
     {
      "month": 10,
-     "daylight_h": 11.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.33,
-     "t2m_max_c": 26.31,
+     "daylight_h": 11.566666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.66,
+     "t2m_max_avg_c": 25.31,
      "precip_mm_per_day": 4.37
     },
     {
      "month": 11,
-     "daylight_h": 11.083333333333334,
+     "daylight_h": 11.1,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.44,
-     "t2m_max_c": 25.74,
+     "t2m_min_avg_c": 13.29,
+     "t2m_max_avg_c": 24.35,
      "precip_mm_per_day": 5.64
     },
     {
      "month": 12,
      "daylight_h": 10.833333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.97,
-     "t2m_max_c": 24.45,
+     "t2m_min_avg_c": 12.17,
+     "t2m_max_avg_c": 23.08,
      "precip_mm_per_day": 5.51
     }
    ],
-   "best_months": [
-    6,
-    7,
-    9
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 3,
@@ -595,105 +587,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.7,
-     "t2m_max_c": 32.89,
+     "t2m_min_avg_c": 8.66,
+     "t2m_max_avg_c": 30.49,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.09,
-     "t2m_max_c": 32.71,
+     "daylight_h": 12.766666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 8.7,
+     "t2m_max_avg_c": 30.3,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 6.21,
-     "t2m_max_c": 32.19,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.73,
+     "t2m_max_avg_c": 30.0,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.66,
-     "t2m_max_c": 31.21,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 5.57,
+     "t2m_max_avg_c": 28.79,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.59,
-     "t2m_max_c": 29.88,
+     "t2m_min_avg_c": 2.68,
+     "t2m_max_avg_c": 27.39,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.7,
-     "t2m_max_c": 31.08,
+     "t2m_min_avg_c": 0.97,
+     "t2m_max_avg_c": 26.6,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.633333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -3.62,
-     "t2m_max_c": 31.46,
+     "t2m_min_avg_c": -0.41,
+     "t2m_max_avg_c": 26.46,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -4.47,
-     "t2m_max_c": 31.53,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 0.71,
+     "t2m_max_avg_c": 28.34,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -1.3,
-     "t2m_max_c": 31.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 1.89,
+     "t2m_max_avg_c": 28.98,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.6,
-     "t2m_max_c": 32.47,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 4.07,
+     "t2m_max_avg_c": 29.69,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.25,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.63,
-     "t2m_max_c": 32.7,
+     "t2m_min_avg_c": 5.69,
+     "t2m_max_avg_c": 30.36,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 5.56,
-     "t2m_max_c": 32.35,
+     "t2m_min_avg_c": 7.0,
+     "t2m_max_avg_c": 30.44,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    5,
-    10
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 4,
@@ -821,106 +809,102 @@
     {
      "month": 1,
      "daylight_h": 4.583333333333333,
-     "low_sun_h": 1.5,
-     "t2m_min_c": -21.73,
-     "t2m_max_c": 4.81,
-     "precip_mm_per_day": 3.07
+     "low_sun_h": 1.4666666666666666,
+     "t2m_min_avg_c": -17.44,
+     "t2m_max_avg_c": 2.55,
+     "precip_mm_per_day": 2.56
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -22.73,
-     "t2m_max_c": 3.18,
-     "precip_mm_per_day": 2.83
+     "daylight_h": 8.216666666666667,
+     "low_sun_h": 0.8,
+     "t2m_min_avg_c": -17.99,
+     "t2m_max_avg_c": 2.13,
+     "precip_mm_per_day": 2.34
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
+     "daylight_h": 11.45,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -20.4,
-     "t2m_max_c": 3.87,
-     "precip_mm_per_day": 2.68
+     "t2m_min_avg_c": -16.95,
+     "t2m_max_avg_c": 2.2,
+     "precip_mm_per_day": 2.28
     },
     {
      "month": 4,
-     "daylight_h": 14.916666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -19.09,
-     "t2m_max_c": 9.65,
-     "precip_mm_per_day": 2.5
+     "daylight_h": 14.95,
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -14.9,
+     "t2m_max_avg_c": 2.62,
+     "precip_mm_per_day": 2.11
     },
     {
      "month": 5,
-     "daylight_h": 18.333333333333332,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -14.25,
-     "t2m_max_c": 13.35,
-     "precip_mm_per_day": 2.41
+     "daylight_h": 18.366666666666667,
+     "low_sun_h": 0.9666666666666667,
+     "t2m_min_avg_c": -9.91,
+     "t2m_max_avg_c": 4.99,
+     "precip_mm_per_day": 2.17
     },
     {
      "month": 6,
-     "daylight_h": 21.083333333333332,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -5.19,
-     "t2m_max_c": 15.06,
-     "precip_mm_per_day": 2.2
+     "daylight_h": 21.05,
+     "low_sun_h": 1.5333333333333334,
+     "t2m_min_avg_c": -3.3,
+     "t2m_max_avg_c": 7.4,
+     "precip_mm_per_day": 1.91
     },
     {
      "month": 7,
      "daylight_h": 19.666666666666668,
-     "low_sun_h": 1.25,
-     "t2m_min_c": -1.77,
-     "t2m_max_c": 17.05,
-     "precip_mm_per_day": 3.02
+     "low_sun_h": 1.1833333333333333,
+     "t2m_min_avg_c": -0.51,
+     "t2m_max_avg_c": 8.35,
+     "precip_mm_per_day": 2.67
     },
     {
      "month": 8,
-     "daylight_h": 16.25,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -3.58,
-     "t2m_max_c": 17.42,
-     "precip_mm_per_day": 2.92
+     "daylight_h": 16.266666666666666,
+     "low_sun_h": 0.7666666666666667,
+     "t2m_min_avg_c": -2.04,
+     "t2m_max_avg_c": 7.57,
+     "precip_mm_per_day": 2.59
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
+     "daylight_h": 12.8,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -11.43,
-     "t2m_max_c": 11.84,
-     "precip_mm_per_day": 3.44
+     "t2m_min_avg_c": -5.95,
+     "t2m_max_avg_c": 6.27,
+     "precip_mm_per_day": 3.01
     },
     {
      "month": 10,
      "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -17.7,
-     "t2m_max_c": 8.75,
-     "precip_mm_per_day": 3.54
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -12.47,
+     "t2m_max_avg_c": 4.24,
+     "precip_mm_per_day": 3.06
     },
     {
      "month": 11,
-     "daylight_h": 5.833333333333333,
-     "low_sun_h": 1.0833333333333333,
-     "t2m_min_c": -22.01,
-     "t2m_max_c": 5.65,
-     "precip_mm_per_day": 3.53
+     "daylight_h": 5.816666666666666,
+     "low_sun_h": 1.1,
+     "t2m_min_avg_c": -15.81,
+     "t2m_max_avg_c": 2.85,
+     "precip_mm_per_day": 3.16
     },
     {
      "month": 12,
-     "daylight_h": 2.9166666666666665,
-     "low_sun_h": 2.9166666666666665,
-     "t2m_min_c": -24.83,
-     "t2m_max_c": 4.41,
-     "precip_mm_per_day": 3.18
+     "daylight_h": 2.9833333333333334,
+     "low_sun_h": 2.9833333333333334,
+     "t2m_min_avg_c": -18.02,
+     "t2m_max_avg_c": 2.87,
+     "precip_mm_per_day": 2.9
     }
    ],
-   "best_months": [
-    1,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 5,
@@ -1048,107 +1032,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 10.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.83,
-     "t2m_max_c": 26.27,
+     "daylight_h": 10.95,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 10.83,
+     "t2m_max_avg_c": 22.86,
      "precip_mm_per_day": 4.74
     },
     {
      "month": 2,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.96,
-     "t2m_max_c": 25.05,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 10.69,
+     "t2m_max_avg_c": 22.88,
      "precip_mm_per_day": 5.48
     },
     {
      "month": 3,
      "daylight_h": 11.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.03,
-     "t2m_max_c": 25.32,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.56,
+     "t2m_max_avg_c": 23.22,
      "precip_mm_per_day": 7.23
     },
     {
      "month": 4,
-     "daylight_h": 12.416666666666666,
-     "low_sun_h": 0.16666666666666666,
-     "t2m_min_c": 10.91,
-     "t2m_max_c": 24.55,
+     "daylight_h": 12.483333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.76,
+     "t2m_max_avg_c": 23.59,
      "precip_mm_per_day": 6.41
     },
     {
      "month": 5,
-     "daylight_h": 12.916666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.92,
-     "t2m_max_c": 26.07,
+     "daylight_h": 12.933333333333334,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.44,
+     "t2m_max_avg_c": 24.76,
      "precip_mm_per_day": 4.45
     },
     {
      "month": 6,
-     "daylight_h": 13.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 13.04,
-     "t2m_max_c": 27.04,
+     "daylight_h": 13.183333333333334,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 14.41,
+     "t2m_max_avg_c": 25.19,
      "precip_mm_per_day": 3.54
     },
     {
      "month": 7,
      "daylight_h": 13.083333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.11,
-     "t2m_max_c": 26.93,
+     "t2m_min_avg_c": 14.68,
+     "t2m_max_avg_c": 25.99,
      "precip_mm_per_day": 3.87
     },
     {
      "month": 8,
      "daylight_h": 12.666666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 13.42,
-     "t2m_max_c": 28.49,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.25,
+     "t2m_max_avg_c": 26.2,
      "precip_mm_per_day": 4.51
     },
     {
      "month": 9,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.46,
-     "t2m_max_c": 27.84,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.17,
+     "t2m_max_avg_c": 25.78,
      "precip_mm_per_day": 3.97
     },
     {
      "month": 10,
-     "daylight_h": 11.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.33,
-     "t2m_max_c": 26.31,
+     "daylight_h": 11.566666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.66,
+     "t2m_max_avg_c": 25.31,
      "precip_mm_per_day": 4.37
     },
     {
      "month": 11,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.44,
-     "t2m_max_c": 25.74,
+     "daylight_h": 11.066666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.29,
+     "t2m_max_avg_c": 24.35,
      "precip_mm_per_day": 5.64
     },
     {
      "month": 12,
      "daylight_h": 10.833333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.97,
-     "t2m_max_c": 24.45,
+     "t2m_min_avg_c": 12.17,
+     "t2m_max_avg_c": 23.08,
      "precip_mm_per_day": 5.51
     }
    ],
-   "best_months": [
-    7,
-    9,
-    10
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 6,
@@ -1278,105 +1258,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 14.47,
-     "t2m_max_c": 26.09,
+     "t2m_min_avg_c": 15.66,
+     "t2m_max_avg_c": 24.5,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.57,
-     "t2m_max_c": 25.72,
+     "daylight_h": 12.766666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 16.56,
+     "t2m_max_avg_c": 24.79,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 14.87,
-     "t2m_max_c": 25.75,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.85,
+     "t2m_max_avg_c": 24.4,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.07,
-     "t2m_max_c": 26.34,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 14.12,
+     "t2m_max_avg_c": 23.65,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 10.97,
-     "t2m_max_c": 26.88,
+     "t2m_min_avg_c": 12.66,
+     "t2m_max_avg_c": 23.86,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.7,
-     "t2m_max_c": 26.49,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 11.43,
+     "t2m_max_avg_c": 23.7,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 7.42,
-     "t2m_max_c": 27.33,
+     "daylight_h": 10.633333333333333,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 9.78,
+     "t2m_max_avg_c": 23.3,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 7.93,
-     "t2m_max_c": 25.94,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 9.99,
+     "t2m_max_avg_c": 23.65,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 8.16,
-     "t2m_max_c": 26.84,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 10.13,
+     "t2m_max_avg_c": 22.57,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 10.0,
-     "t2m_max_c": 24.61,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 11.37,
+     "t2m_max_avg_c": 21.82,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.25,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.04,
-     "t2m_max_c": 23.16,
+     "t2m_min_avg_c": 12.47,
+     "t2m_max_avg_c": 21.52,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 12.65,
-     "t2m_max_c": 23.84,
+     "t2m_min_avg_c": 13.81,
+     "t2m_max_avg_c": 22.56,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    5,
-    7
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 7,
@@ -1506,105 +1482,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 14.47,
-     "t2m_max_c": 26.09,
+     "t2m_min_avg_c": 15.66,
+     "t2m_max_avg_c": 24.5,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.57,
-     "t2m_max_c": 25.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 16.56,
+     "t2m_max_avg_c": 24.79,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 14.87,
-     "t2m_max_c": 25.75,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.85,
+     "t2m_max_avg_c": 24.4,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.07,
-     "t2m_max_c": 26.34,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.12,
+     "t2m_max_avg_c": 23.65,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 10.97,
-     "t2m_max_c": 26.88,
+     "t2m_min_avg_c": 12.66,
+     "t2m_max_avg_c": 23.86,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.7,
-     "t2m_max_c": 26.49,
+     "t2m_min_avg_c": 11.43,
+     "t2m_max_avg_c": 23.7,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.65,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.42,
-     "t2m_max_c": 27.33,
+     "t2m_min_avg_c": 9.78,
+     "t2m_max_avg_c": 23.3,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 7.93,
-     "t2m_max_c": 25.94,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 9.99,
+     "t2m_max_avg_c": 23.65,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 8.16,
-     "t2m_max_c": 26.84,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 10.13,
+     "t2m_max_avg_c": 22.57,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 10.0,
-     "t2m_max_c": 24.61,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 11.37,
+     "t2m_max_avg_c": 21.82,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
      "daylight_h": 13.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.04,
-     "t2m_max_c": 23.16,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 12.47,
+     "t2m_max_avg_c": 21.52,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 12.65,
-     "t2m_max_c": 23.84,
+     "t2m_min_avg_c": 13.81,
+     "t2m_max_avg_c": 22.56,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    5,
-    10
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 8,
@@ -1734,105 +1706,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.7,
-     "t2m_max_c": 32.89,
+     "t2m_min_avg_c": 8.66,
+     "t2m_max_avg_c": 30.49,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.09,
-     "t2m_max_c": 32.71,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 8.7,
+     "t2m_max_avg_c": 30.3,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 6.21,
-     "t2m_max_c": 32.19,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.73,
+     "t2m_max_avg_c": 30.0,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.66,
-     "t2m_max_c": 31.21,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 5.57,
+     "t2m_max_avg_c": 28.79,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.59,
-     "t2m_max_c": 29.88,
+     "t2m_min_avg_c": 2.68,
+     "t2m_max_avg_c": 27.39,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.7,
-     "t2m_max_c": 31.08,
+     "t2m_min_avg_c": 0.97,
+     "t2m_max_avg_c": 26.6,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -3.62,
-     "t2m_max_c": 31.46,
+     "daylight_h": 10.65,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -0.41,
+     "t2m_max_avg_c": 26.46,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -4.47,
-     "t2m_max_c": 31.53,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 0.71,
+     "t2m_max_avg_c": 28.34,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -1.3,
-     "t2m_max_c": 31.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 1.89,
+     "t2m_max_avg_c": 28.98,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.6,
-     "t2m_max_c": 32.47,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 4.07,
+     "t2m_max_avg_c": 29.69,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.25,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.63,
-     "t2m_max_c": 32.7,
+     "t2m_min_avg_c": 5.69,
+     "t2m_max_avg_c": 30.36,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 5.56,
-     "t2m_max_c": 32.35,
+     "t2m_min_avg_c": 7.0,
+     "t2m_max_avg_c": 30.44,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    5,
-    10
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 9,
@@ -1962,105 +1930,101 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -25.71,
-     "t2m_max_c": -6.28,
-     "precip_mm_per_day": 0.38
+     "t2m_min_avg_c": -26.51,
+     "t2m_max_avg_c": -10.71,
+     "precip_mm_per_day": 0.27
     },
     {
      "month": 2,
-     "daylight_h": 23.5,
+     "daylight_h": 23.45,
      "low_sun_h": 4.083333333333333,
-     "t2m_min_c": -35.88,
-     "t2m_max_c": -9.28,
-     "precip_mm_per_day": 0.54
+     "t2m_min_avg_c": -34.97,
+     "t2m_max_avg_c": -15.46,
+     "precip_mm_per_day": 0.33
     },
     {
      "month": 3,
      "daylight_h": 13.25,
-     "low_sun_h": 1.25,
-     "t2m_min_c": -44.57,
-     "t2m_max_c": -14.39,
-     "precip_mm_per_day": 0.29
+     "low_sun_h": 1.2833333333333334,
+     "t2m_min_avg_c": -43.15,
+     "t2m_max_avg_c": -22.16,
+     "precip_mm_per_day": 0.2
     },
     {
      "month": 4,
-     "daylight_h": 5.333333333333333,
+     "daylight_h": 5.35,
      "low_sun_h": 2.5,
-     "t2m_min_c": -50.43,
-     "t2m_max_c": -16.24,
+     "t2m_min_avg_c": -46.66,
+     "t2m_max_avg_c": -25.01,
      "precip_mm_per_day": 0.25
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -51.52,
-     "t2m_max_c": -16.67,
-     "precip_mm_per_day": 0.23
+     "t2m_min_avg_c": -47.24,
+     "t2m_max_avg_c": -24.04,
+     "precip_mm_per_day": 0.22
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -53.28,
-     "t2m_max_c": -19.21,
-     "precip_mm_per_day": 0.28
+     "t2m_min_avg_c": -49.18,
+     "t2m_max_avg_c": -24.44,
+     "precip_mm_per_day": 0.25
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -54.25,
-     "t2m_max_c": -18.22,
-     "precip_mm_per_day": 0.16
+     "t2m_min_avg_c": -50.59,
+     "t2m_max_avg_c": -27.03,
+     "precip_mm_per_day": 0.15
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -51.31,
-     "t2m_max_c": -19.19,
-     "precip_mm_per_day": 0.28
+     "t2m_min_avg_c": -50.68,
+     "t2m_max_avg_c": -26.36,
+     "precip_mm_per_day": 0.27
     },
     {
      "month": 9,
-     "daylight_h": 10.166666666666666,
+     "daylight_h": 10.216666666666667,
      "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -49.89,
-     "t2m_max_c": -19.77,
+     "t2m_min_avg_c": -48.74,
+     "t2m_max_avg_c": -25.38,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 10,
-     "daylight_h": 17.583333333333332,
+     "daylight_h": 17.55,
      "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -47.96,
-     "t2m_max_c": -13.2,
-     "precip_mm_per_day": 0.3
+     "t2m_min_avg_c": -44.38,
+     "t2m_max_avg_c": -22.2,
+     "precip_mm_per_day": 0.26
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -40.32,
-     "t2m_max_c": -11.17,
-     "precip_mm_per_day": 0.25
+     "t2m_min_avg_c": -35.66,
+     "t2m_max_avg_c": -15.85,
+     "precip_mm_per_day": 0.19
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -29.47,
-     "t2m_max_c": -5.96,
-     "precip_mm_per_day": 0.34
+     "t2m_min_avg_c": -27.04,
+     "t2m_max_avg_c": -11.37,
+     "precip_mm_per_day": 0.26
     }
    ],
-   "best_months": [
-    2,
-    4,
-    10
-   ],
-   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too cold: no month has a mean daily low of -25 °C or warmer)."
   },
   {
    "rank": 10,
@@ -2189,107 +2153,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 10.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.9,
-     "t2m_max_c": 25.63,
+     "daylight_h": 10.966666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 16.95,
+     "t2m_max_avg_c": 24.57,
      "precip_mm_per_day": 6.2
     },
     {
      "month": 2,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.34,
-     "t2m_max_c": 26.66,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 16.57,
+     "t2m_max_avg_c": 24.38,
      "precip_mm_per_day": 6.47
     },
     {
      "month": 3,
      "daylight_h": 11.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.8,
-     "t2m_max_c": 26.53,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 16.96,
+     "t2m_max_avg_c": 24.64,
      "precip_mm_per_day": 8.78
     },
     {
      "month": 4,
-     "daylight_h": 12.416666666666666,
-     "low_sun_h": 0.16666666666666666,
-     "t2m_min_c": 15.96,
-     "t2m_max_c": 27.45,
+     "daylight_h": 12.483333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 17.84,
+     "t2m_max_avg_c": 24.49,
      "precip_mm_per_day": 8.03
     },
     {
      "month": 5,
-     "daylight_h": 12.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.77,
-     "t2m_max_c": 26.29,
+     "daylight_h": 12.933333333333334,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 18.57,
+     "t2m_max_avg_c": 25.05,
      "precip_mm_per_day": 5.64
     },
     {
      "month": 6,
      "daylight_h": 13.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.38,
-     "t2m_max_c": 26.4,
+     "t2m_min_avg_c": 19.14,
+     "t2m_max_avg_c": 24.95,
      "precip_mm_per_day": 4.4
     },
     {
      "month": 7,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.52,
-     "t2m_max_c": 27.73,
+     "daylight_h": 13.05,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 19.59,
+     "t2m_max_avg_c": 25.74,
      "precip_mm_per_day": 4.91
     },
     {
      "month": 8,
-     "daylight_h": 12.666666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.96,
-     "t2m_max_c": 27.94,
+     "daylight_h": 12.65,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 20.12,
+     "t2m_max_avg_c": 26.19,
      "precip_mm_per_day": 5.41
     },
     {
      "month": 9,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.81,
-     "t2m_max_c": 29.05,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 20.09,
+     "t2m_max_avg_c": 26.29,
      "precip_mm_per_day": 5.54
     },
     {
      "month": 10,
-     "daylight_h": 11.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 19.12,
-     "t2m_max_c": 28.25,
+     "daylight_h": 11.566666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 19.93,
+     "t2m_max_avg_c": 26.17,
      "precip_mm_per_day": 5.92
     },
     {
      "month": 11,
-     "daylight_h": 11.083333333333334,
+     "daylight_h": 11.1,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.43,
-     "t2m_max_c": 27.36,
+     "t2m_min_avg_c": 18.87,
+     "t2m_max_avg_c": 25.45,
      "precip_mm_per_day": 7.19
     },
     {
      "month": 12,
      "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 17.01,
-     "t2m_max_c": 26.01,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 18.01,
+     "t2m_max_avg_c": 24.85,
      "precip_mm_per_day": 7.11
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 11,
@@ -2418,107 +2378,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 4.583333333333333,
-     "low_sun_h": 1.5,
-     "t2m_min_c": -21.98,
-     "t2m_max_c": 4.2,
+     "daylight_h": 4.6,
+     "low_sun_h": 1.4666666666666666,
+     "t2m_min_avg_c": -17.85,
+     "t2m_max_avg_c": 1.95,
      "precip_mm_per_day": 2.32
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -20.85,
-     "t2m_max_c": 3.35,
+     "daylight_h": 8.216666666666667,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -18.21,
+     "t2m_max_avg_c": 1.63,
      "precip_mm_per_day": 2.21
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -21.8,
-     "t2m_max_c": 3.78,
+     "daylight_h": 11.45,
+     "low_sun_h": 0.65,
+     "t2m_min_avg_c": -17.94,
+     "t2m_max_avg_c": 1.66,
      "precip_mm_per_day": 2.16
     },
     {
      "month": 4,
-     "daylight_h": 14.916666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -19.78,
-     "t2m_max_c": 3.33,
+     "daylight_h": 14.95,
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -15.58,
+     "t2m_max_avg_c": 1.9,
      "precip_mm_per_day": 1.96
     },
     {
      "month": 5,
-     "daylight_h": 18.333333333333332,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -16.24,
-     "t2m_max_c": 6.76,
+     "daylight_h": 18.366666666666667,
+     "low_sun_h": 0.9833333333333333,
+     "t2m_min_avg_c": -10.76,
+     "t2m_max_avg_c": 3.15,
      "precip_mm_per_day": 1.96
     },
     {
      "month": 6,
-     "daylight_h": 21.083333333333332,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -7.83,
-     "t2m_max_c": 8.54,
+     "daylight_h": 21.05,
+     "low_sun_h": 1.5333333333333334,
+     "t2m_min_avg_c": -3.84,
+     "t2m_max_avg_c": 6.02,
      "precip_mm_per_day": 1.73
     },
     {
      "month": 7,
-     "daylight_h": 19.583333333333332,
+     "daylight_h": 19.65,
      "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -2.56,
-     "t2m_max_c": 10.58,
+     "t2m_min_avg_c": -1.17,
+     "t2m_max_avg_c": 7.13,
      "precip_mm_per_day": 2.45
     },
     {
      "month": 8,
-     "daylight_h": 16.25,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -4.88,
-     "t2m_max_c": 12.19,
+     "daylight_h": 16.266666666666666,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -2.69,
+     "t2m_max_avg_c": 6.88,
      "precip_mm_per_day": 2.39
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
+     "daylight_h": 12.8,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -11.69,
-     "t2m_max_c": 7.19,
+     "t2m_min_avg_c": -7.01,
+     "t2m_max_avg_c": 5.36,
      "precip_mm_per_day": 2.87
     },
     {
      "month": 10,
-     "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -16.46,
-     "t2m_max_c": 5.41,
+     "daylight_h": 9.433333333333334,
+     "low_sun_h": 0.7166666666666667,
+     "t2m_min_avg_c": -13.09,
+     "t2m_max_avg_c": 3.45,
      "precip_mm_per_day": 2.77
     },
     {
      "month": 11,
-     "daylight_h": 5.833333333333333,
-     "low_sun_h": 1.0833333333333333,
-     "t2m_min_c": -21.81,
-     "t2m_max_c": 3.77,
+     "daylight_h": 5.816666666666666,
+     "low_sun_h": 1.1,
+     "t2m_min_avg_c": -16.31,
+     "t2m_max_avg_c": 2.25,
      "precip_mm_per_day": 2.84
     },
     {
      "month": 12,
      "daylight_h": 3.0,
      "low_sun_h": 3.0,
-     "t2m_min_c": -23.6,
-     "t2m_max_c": 3.65,
+     "t2m_min_avg_c": -18.42,
+     "t2m_max_avg_c": 2.34,
      "precip_mm_per_day": 2.66
     }
    ],
-   "best_months": [
-    1,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 12,
@@ -2646,107 +2602,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 4.583333333333333,
-     "low_sun_h": 1.5,
-     "t2m_min_c": -21.82,
-     "t2m_max_c": 5.12,
+     "daylight_h": 4.6,
+     "low_sun_h": 1.4666666666666666,
+     "t2m_min_avg_c": -17.47,
+     "t2m_max_avg_c": 2.45,
      "precip_mm_per_day": 2.3
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -21.04,
-     "t2m_max_c": 3.78,
+     "daylight_h": 8.216666666666667,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -17.94,
+     "t2m_max_avg_c": 2.03,
      "precip_mm_per_day": 2.12
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -20.91,
-     "t2m_max_c": 4.52,
+     "daylight_h": 11.45,
+     "low_sun_h": 0.65,
+     "t2m_min_avg_c": -17.24,
+     "t2m_max_avg_c": 2.18,
      "precip_mm_per_day": 2.1
     },
     {
      "month": 4,
-     "daylight_h": 14.916666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -18.95,
-     "t2m_max_c": 3.82,
+     "daylight_h": 14.95,
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -14.97,
+     "t2m_max_avg_c": 2.3,
      "precip_mm_per_day": 1.93
     },
     {
      "month": 5,
-     "daylight_h": 18.333333333333332,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -15.35,
-     "t2m_max_c": 6.84,
+     "daylight_h": 18.366666666666667,
+     "low_sun_h": 0.9833333333333333,
+     "t2m_min_avg_c": -10.2,
+     "t2m_max_avg_c": 3.64,
      "precip_mm_per_day": 2.0
     },
     {
      "month": 6,
-     "daylight_h": 21.083333333333332,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -6.77,
-     "t2m_max_c": 8.66,
+     "daylight_h": 21.05,
+     "low_sun_h": 1.55,
+     "t2m_min_avg_c": -3.68,
+     "t2m_max_avg_c": 5.62,
      "precip_mm_per_day": 1.74
     },
     {
      "month": 7,
-     "daylight_h": 19.583333333333332,
+     "daylight_h": 19.65,
      "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -3.04,
-     "t2m_max_c": 9.42,
+     "t2m_min_avg_c": -0.94,
+     "t2m_max_avg_c": 6.64,
      "precip_mm_per_day": 2.46
     },
     {
      "month": 8,
-     "daylight_h": 16.25,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -4.42,
-     "t2m_max_c": 10.31,
+     "daylight_h": 16.266666666666666,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -2.4,
+     "t2m_max_avg_c": 6.17,
      "precip_mm_per_day": 2.4
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
+     "daylight_h": 12.8,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -10.28,
-     "t2m_max_c": 6.96,
+     "t2m_min_avg_c": -6.47,
+     "t2m_max_avg_c": 5.35,
      "precip_mm_per_day": 2.82
     },
     {
      "month": 10,
-     "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -16.43,
-     "t2m_max_c": 5.52,
+     "daylight_h": 9.45,
+     "low_sun_h": 0.7333333333333333,
+     "t2m_min_avg_c": -12.64,
+     "t2m_max_avg_c": 3.69,
      "precip_mm_per_day": 2.79
     },
     {
      "month": 11,
-     "daylight_h": 5.833333333333333,
+     "daylight_h": 5.816666666666666,
      "low_sun_h": 1.0833333333333333,
-     "t2m_min_c": -20.41,
-     "t2m_max_c": 4.25,
+     "t2m_min_avg_c": -15.91,
+     "t2m_max_avg_c": 2.69,
      "precip_mm_per_day": 2.91
     },
     {
      "month": 12,
      "daylight_h": 3.0,
      "low_sun_h": 3.0,
-     "t2m_min_c": -23.83,
-     "t2m_max_c": 4.4,
+     "t2m_min_avg_c": -17.95,
+     "t2m_max_avg_c": 2.82,
      "precip_mm_per_day": 2.71
     }
    ],
-   "best_months": [
-    1,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 13,
@@ -2876,105 +2828,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.13,
-     "t2m_max_c": 32.15,
-     "precip_mm_per_day": 0.02
+     "t2m_min_avg_c": 17.21,
+     "t2m_max_avg_c": 24.2,
+     "precip_mm_per_day": 0.01
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.04,
-     "t2m_max_c": 32.76,
-     "precip_mm_per_day": 0.06
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 18.1,
+     "t2m_max_avg_c": 24.6,
+     "precip_mm_per_day": 0.03
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 10.03,
-     "t2m_max_c": 32.39,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 17.16,
+     "t2m_max_avg_c": 24.13,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.49,
-     "t2m_max_c": 32.88,
-     "precip_mm_per_day": 0.01
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.49,
+     "t2m_max_avg_c": 22.87,
+     "precip_mm_per_day": 0.0
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.816666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.06,
-     "t2m_max_c": 30.66,
-     "precip_mm_per_day": 0.01
+     "t2m_min_avg_c": 14.04,
+     "t2m_max_avg_c": 21.97,
+     "precip_mm_per_day": 0.0
     },
     {
      "month": 6,
      "daylight_h": 10.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.75,
-     "t2m_max_c": 30.74,
+     "t2m_min_avg_c": 12.73,
+     "t2m_max_avg_c": 21.99,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.65,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.35,
-     "t2m_max_c": 32.6,
+     "t2m_min_avg_c": 11.74,
+     "t2m_max_avg_c": 21.64,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -0.64,
-     "t2m_max_c": 32.93,
+     "t2m_min_avg_c": 11.79,
+     "t2m_max_avg_c": 21.36,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 2.29,
-     "t2m_max_c": 32.64,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.97,
+     "t2m_max_avg_c": 20.25,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 4.79,
-     "t2m_max_c": 32.49,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 12.75,
+     "t2m_max_avg_c": 20.35,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
      "daylight_h": 13.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 4.07,
-     "t2m_max_c": 31.17,
-     "precip_mm_per_day": 0.01
+     "t2m_min_avg_c": 13.92,
+     "t2m_max_avg_c": 21.15,
+     "precip_mm_per_day": 0.0
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 8.79,
-     "t2m_max_c": 32.64,
+     "t2m_min_avg_c": 15.35,
+     "t2m_max_avg_c": 22.51,
      "precip_mm_per_day": 0.02
     }
    ],
-   "best_months": [
-    4,
-    5,
-    10
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 14,
@@ -3101,107 +3049,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 10.916666666666666,
+     "daylight_h": 10.966666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.83,
-     "t2m_max_c": 26.27,
+     "t2m_min_avg_c": 10.83,
+     "t2m_max_avg_c": 22.86,
      "precip_mm_per_day": 4.74
     },
     {
      "month": 2,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.96,
-     "t2m_max_c": 25.05,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 10.69,
+     "t2m_max_avg_c": 22.88,
      "precip_mm_per_day": 5.48
     },
     {
      "month": 3,
      "daylight_h": 11.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.03,
-     "t2m_max_c": 25.32,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.56,
+     "t2m_max_avg_c": 23.22,
      "precip_mm_per_day": 7.23
     },
     {
      "month": 4,
-     "daylight_h": 12.416666666666666,
-     "low_sun_h": 0.16666666666666666,
-     "t2m_min_c": 10.91,
-     "t2m_max_c": 24.55,
+     "daylight_h": 12.483333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.76,
+     "t2m_max_avg_c": 23.59,
      "precip_mm_per_day": 6.41
     },
     {
      "month": 5,
-     "daylight_h": 12.916666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.92,
-     "t2m_max_c": 26.07,
+     "daylight_h": 12.933333333333334,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.44,
+     "t2m_max_avg_c": 24.76,
      "precip_mm_per_day": 4.45
     },
     {
      "month": 6,
-     "daylight_h": 13.166666666666666,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.04,
-     "t2m_max_c": 27.04,
+     "t2m_min_avg_c": 14.41,
+     "t2m_max_avg_c": 25.19,
      "precip_mm_per_day": 3.54
     },
     {
      "month": 7,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.11,
-     "t2m_max_c": 26.93,
+     "daylight_h": 13.05,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.68,
+     "t2m_max_avg_c": 25.99,
      "precip_mm_per_day": 3.87
     },
     {
      "month": 8,
      "daylight_h": 12.666666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.42,
-     "t2m_max_c": 28.49,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 15.25,
+     "t2m_max_avg_c": 26.2,
      "precip_mm_per_day": 4.51
     },
     {
      "month": 9,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.46,
-     "t2m_max_c": 27.84,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.17,
+     "t2m_max_avg_c": 25.78,
      "precip_mm_per_day": 3.97
     },
     {
      "month": 10,
-     "daylight_h": 11.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.33,
-     "t2m_max_c": 26.31,
+     "daylight_h": 11.566666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.66,
+     "t2m_max_avg_c": 25.31,
      "precip_mm_per_day": 4.37
     },
     {
      "month": 11,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.44,
-     "t2m_max_c": 25.74,
+     "daylight_h": 11.066666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.29,
+     "t2m_max_avg_c": 24.35,
      "precip_mm_per_day": 5.64
     },
     {
      "month": 12,
      "daylight_h": 10.833333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.97,
-     "t2m_max_c": 24.45,
+     "t2m_min_avg_c": 12.17,
+     "t2m_max_avg_c": 23.08,
      "precip_mm_per_day": 5.51
     }
    ],
-   "best_months": [
-    6,
-    7,
-    9
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 15,
@@ -3327,107 +3271,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.07,
-     "t2m_max_c": 21.75,
+     "t2m_min_avg_c": -5.45,
+     "t2m_max_avg_c": 20.02,
      "precip_mm_per_day": 2.1
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.51,
-     "t2m_max_c": 21.08,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.87,
+     "t2m_max_avg_c": 19.21,
      "precip_mm_per_day": 2.02
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.52,
-     "t2m_max_c": 19.84,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.04,
+     "t2m_max_avg_c": 18.85,
      "precip_mm_per_day": 1.28
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -11.03,
-     "t2m_max_c": 17.97,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.18,
+     "t2m_max_avg_c": 16.54,
      "precip_mm_per_day": 0.44
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.866666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -13.97,
-     "t2m_max_c": 15.2,
+     "t2m_min_avg_c": -8.87,
+     "t2m_max_avg_c": 13.31,
      "precip_mm_per_day": 0.1
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.566666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.45,
-     "t2m_max_c": 13.52,
+     "t2m_min_avg_c": -10.87,
+     "t2m_max_avg_c": 11.41,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -16.4,
-     "t2m_max_c": 13.12,
+     "t2m_min_avg_c": -12.34,
+     "t2m_max_avg_c": 11.38,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -13.46,
-     "t2m_max_c": 16.1,
+     "t2m_min_avg_c": -10.02,
+     "t2m_max_avg_c": 13.26,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.83,
-     "t2m_max_c": 18.49,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.59,
+     "t2m_max_avg_c": 15.8,
      "precip_mm_per_day": 0.08
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -11.21,
-     "t2m_max_c": 19.75,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.65,
+     "t2m_max_avg_c": 18.05,
      "precip_mm_per_day": 0.38
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.116666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.4,
-     "t2m_max_c": 22.05,
+     "t2m_min_avg_c": -7.61,
+     "t2m_max_avg_c": 19.47,
      "precip_mm_per_day": 0.64
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.19,
-     "t2m_max_c": 21.32,
+     "t2m_min_avg_c": -7.08,
+     "t2m_max_avg_c": 20.1,
      "precip_mm_per_day": 1.61
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 16,
@@ -3553,107 +3493,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.3,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.55,
-     "t2m_max_c": 22.27,
+     "t2m_min_avg_c": -5.49,
+     "t2m_max_avg_c": 18.95,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 2,
      "daylight_h": 12.75,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.6,
-     "t2m_max_c": 19.95,
+     "t2m_min_avg_c": -5.62,
+     "t2m_max_avg_c": 17.9,
      "precip_mm_per_day": 1.85
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 19.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.93,
+     "t2m_max_avg_c": 17.59,
      "precip_mm_per_day": 1.19
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.48,
-     "t2m_max_c": 17.35,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.7,
+     "t2m_max_avg_c": 14.98,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 5,
      "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.2,
-     "t2m_max_c": 14.28,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -9.26,
+     "t2m_max_avg_c": 12.05,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.29,
-     "t2m_max_c": 13.58,
+     "daylight_h": 10.55,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -11.26,
+     "t2m_max_avg_c": 10.64,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.683333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -17.95,
-     "t2m_max_c": 12.35,
+     "t2m_min_avg_c": -12.43,
+     "t2m_max_avg_c": 10.07,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -13.86,
-     "t2m_max_c": 16.63,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -10.79,
+     "t2m_max_avg_c": 12.3,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.3,
-     "t2m_max_c": 17.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.79,
+     "t2m_max_avg_c": 13.93,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.81,
-     "t2m_max_c": 19.52,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.14,
+     "t2m_max_avg_c": 16.24,
      "precip_mm_per_day": 0.3
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.86,
-     "t2m_max_c": 19.72,
+     "daylight_h": 13.133333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.99,
+     "t2m_max_avg_c": 17.45,
      "precip_mm_per_day": 0.56
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 20.48,
+     "daylight_h": 13.466666666666667,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -6.6,
+     "t2m_max_avg_c": 18.71,
      "precip_mm_per_day": 1.51
     }
    ],
-   "best_months": [
-    5,
-    6,
-    7
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 18 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 17,
@@ -3781,105 +3717,103 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -18.2,
-     "t2m_max_c": -0.87,
+     "t2m_min_avg_c": -15.49,
+     "t2m_max_avg_c": -3.34,
      "precip_mm_per_day": 0.41
     },
     {
      "month": 2,
      "daylight_h": 22.583333333333332,
      "low_sun_h": 3.3333333333333335,
-     "t2m_min_c": -27.33,
-     "t2m_max_c": -2.93,
+     "t2m_min_avg_c": -22.51,
+     "t2m_max_avg_c": -7.38,
      "precip_mm_per_day": 0.66
     },
     {
      "month": 3,
-     "daylight_h": 13.166666666666666,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -35.42,
-     "t2m_max_c": -8.65,
+     "daylight_h": 13.216666666666667,
+     "low_sun_h": 1.25,
+     "t2m_min_avg_c": -31.71,
+     "t2m_max_avg_c": -13.11,
      "precip_mm_per_day": 0.39
     },
     {
      "month": 4,
-     "daylight_h": 5.5,
-     "low_sun_h": 2.4166666666666665,
-     "t2m_min_c": -41.5,
-     "t2m_max_c": -10.33,
+     "daylight_h": 5.483333333333333,
+     "low_sun_h": 2.4,
+     "t2m_min_avg_c": -36.1,
+     "t2m_max_avg_c": -16.29,
      "precip_mm_per_day": 0.29
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.8,
-     "t2m_max_c": -10.15,
+     "t2m_min_avg_c": -36.88,
+     "t2m_max_avg_c": -15.24,
      "precip_mm_per_day": 0.26
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.61,
-     "t2m_max_c": -12.82,
+     "t2m_min_avg_c": -38.43,
+     "t2m_max_avg_c": -15.93,
      "precip_mm_per_day": 0.32
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.18,
-     "t2m_max_c": -11.33,
+     "t2m_min_avg_c": -39.47,
+     "t2m_max_avg_c": -17.89,
      "precip_mm_per_day": 0.2
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.05,
-     "t2m_max_c": -12.49,
+     "t2m_min_avg_c": -39.53,
+     "t2m_max_avg_c": -17.61,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 9,
-     "daylight_h": 10.25,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -42.46,
-     "t2m_max_c": -12.75,
+     "daylight_h": 10.233333333333333,
+     "low_sun_h": 1.3166666666666667,
+     "t2m_min_avg_c": -38.09,
+     "t2m_max_avg_c": -16.98,
      "precip_mm_per_day": 0.27
     },
     {
      "month": 10,
-     "daylight_h": 17.5,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -39.92,
-     "t2m_max_c": -6.75,
+     "daylight_h": 17.483333333333334,
+     "low_sun_h": 1.5666666666666667,
+     "t2m_min_avg_c": -32.89,
+     "t2m_max_avg_c": -13.04,
      "precip_mm_per_day": 0.32
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -31.1,
-     "t2m_max_c": -5.12,
+     "t2m_min_avg_c": -24.9,
+     "t2m_max_avg_c": -7.38,
      "precip_mm_per_day": 0.27
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -20.82,
-     "t2m_max_c": -1.16,
+     "t2m_min_avg_c": -16.3,
+     "t2m_max_avg_c": -3.76,
      "precip_mm_per_day": 0.33
     }
    ],
    "best_months": [
-    2,
-    4,
-    10
+    2
    ],
-   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: months with at most 1 mm of rain a day, a mean daily low of at least -25 °C and a mean daily high of at most 35 °C, and at least 10 more minutes of low-sun time a day than the median such month."
   },
   {
    "rank": 18,
@@ -4008,107 +3942,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 4.75,
-     "low_sun_h": 1.5,
-     "t2m_min_c": -21.98,
-     "t2m_max_c": 4.2,
+     "daylight_h": 4.716666666666667,
+     "low_sun_h": 1.4,
+     "t2m_min_avg_c": -17.85,
+     "t2m_max_avg_c": 1.95,
      "precip_mm_per_day": 2.32
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -20.85,
-     "t2m_max_c": 3.35,
+     "daylight_h": 8.266666666666667,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -18.21,
+     "t2m_max_avg_c": 1.63,
      "precip_mm_per_day": 2.21
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
+     "daylight_h": 11.466666666666667,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -21.8,
-     "t2m_max_c": 3.78,
+     "t2m_min_avg_c": -17.94,
+     "t2m_max_avg_c": 1.66,
      "precip_mm_per_day": 2.16
     },
     {
      "month": 4,
      "daylight_h": 14.916666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -19.78,
-     "t2m_max_c": 3.33,
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -15.58,
+     "t2m_max_avg_c": 1.9,
      "precip_mm_per_day": 1.96
     },
     {
      "month": 5,
-     "daylight_h": 18.333333333333332,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -16.24,
-     "t2m_max_c": 6.76,
+     "daylight_h": 18.266666666666666,
+     "low_sun_h": 0.9666666666666667,
+     "t2m_min_avg_c": -10.76,
+     "t2m_max_avg_c": 3.15,
      "precip_mm_per_day": 1.96
     },
     {
      "month": 6,
-     "daylight_h": 20.833333333333332,
-     "low_sun_h": 1.4166666666666667,
-     "t2m_min_c": -7.83,
-     "t2m_max_c": 8.54,
+     "daylight_h": 20.85,
+     "low_sun_h": 1.4666666666666666,
+     "t2m_min_avg_c": -3.84,
+     "t2m_max_avg_c": 6.02,
      "precip_mm_per_day": 1.73
     },
     {
      "month": 7,
-     "daylight_h": 19.583333333333332,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -2.56,
-     "t2m_max_c": 10.58,
+     "daylight_h": 19.516666666666666,
+     "low_sun_h": 1.1333333333333333,
+     "t2m_min_avg_c": -1.17,
+     "t2m_max_avg_c": 7.13,
      "precip_mm_per_day": 2.45
     },
     {
      "month": 8,
-     "daylight_h": 16.166666666666668,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -4.88,
-     "t2m_max_c": 12.19,
+     "daylight_h": 16.2,
+     "low_sun_h": 0.7666666666666667,
+     "t2m_min_avg_c": -2.69,
+     "t2m_max_avg_c": 6.88,
      "precip_mm_per_day": 2.39
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -11.69,
-     "t2m_max_c": 7.19,
+     "daylight_h": 12.783333333333333,
+     "low_sun_h": 0.65,
+     "t2m_min_avg_c": -7.01,
+     "t2m_max_avg_c": 5.36,
      "precip_mm_per_day": 2.87
     },
     {
      "month": 10,
-     "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -16.46,
-     "t2m_max_c": 5.41,
+     "daylight_h": 9.45,
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -13.09,
+     "t2m_max_avg_c": 3.45,
      "precip_mm_per_day": 2.77
     },
     {
      "month": 11,
      "daylight_h": 5.916666666666667,
-     "low_sun_h": 1.0833333333333333,
-     "t2m_min_c": -21.81,
-     "t2m_max_c": 3.77,
+     "low_sun_h": 1.0666666666666667,
+     "t2m_min_avg_c": -16.31,
+     "t2m_max_avg_c": 2.25,
      "precip_mm_per_day": 2.84
     },
     {
      "month": 12,
-     "daylight_h": 3.25,
-     "low_sun_h": 3.25,
-     "t2m_min_c": -23.6,
-     "t2m_max_c": 3.65,
+     "daylight_h": 3.183333333333333,
+     "low_sun_h": 3.183333333333333,
+     "t2m_min_avg_c": -18.42,
+     "t2m_max_avg_c": 2.34,
      "precip_mm_per_day": 2.66
     }
    ],
-   "best_months": [
-    1,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 19,
@@ -4233,107 +4163,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.55,
-     "t2m_max_c": 22.27,
+     "daylight_h": 13.283333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -5.49,
+     "t2m_max_avg_c": 18.95,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.6,
-     "t2m_max_c": 19.95,
+     "daylight_h": 12.733333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -5.62,
+     "t2m_max_avg_c": 17.9,
      "precip_mm_per_day": 1.85
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 19.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.93,
+     "t2m_max_avg_c": 17.59,
      "precip_mm_per_day": 1.19
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.48,
-     "t2m_max_c": 17.35,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.7,
+     "t2m_max_avg_c": 14.98,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.85,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.2,
-     "t2m_max_c": 14.28,
+     "t2m_min_avg_c": -9.26,
+     "t2m_max_avg_c": 12.05,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.566666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.29,
-     "t2m_max_c": 13.58,
+     "t2m_min_avg_c": -11.26,
+     "t2m_max_avg_c": 10.64,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.683333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -17.95,
-     "t2m_max_c": 12.35,
+     "t2m_min_avg_c": -12.43,
+     "t2m_max_avg_c": 10.07,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -13.86,
-     "t2m_max_c": 16.63,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -10.79,
+     "t2m_max_avg_c": 12.3,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.3,
-     "t2m_max_c": 17.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.79,
+     "t2m_max_avg_c": 13.93,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.81,
-     "t2m_max_c": 19.52,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.14,
+     "t2m_max_avg_c": 16.24,
      "precip_mm_per_day": 0.3
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.133333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.86,
-     "t2m_max_c": 19.72,
+     "t2m_min_avg_c": -6.99,
+     "t2m_max_avg_c": 17.45,
      "precip_mm_per_day": 0.56
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 20.48,
+     "t2m_min_avg_c": -6.6,
+     "t2m_max_avg_c": 18.71,
      "precip_mm_per_day": 1.51
     }
    ],
-   "best_months": [
-    5,
-    6,
-    7
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 20,
@@ -4463,103 +4389,103 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -15.12,
-     "t2m_max_c": 1.83,
+     "t2m_min_avg_c": -11.74,
+     "t2m_max_avg_c": -0.38,
      "precip_mm_per_day": 0.15
     },
     {
      "month": 2,
-     "daylight_h": 24.0,
-     "low_sun_h": 4.416666666666667,
-     "t2m_min_c": -22.74,
-     "t2m_max_c": -0.91,
+     "daylight_h": 23.966666666666665,
+     "low_sun_h": 4.366666666666666,
+     "t2m_min_avg_c": -18.71,
+     "t2m_max_avg_c": -4.21,
      "precip_mm_per_day": 0.36
     },
     {
      "month": 3,
-     "daylight_h": 13.25,
-     "low_sun_h": 1.25,
-     "t2m_min_c": -34.65,
-     "t2m_max_c": -7.32,
+     "daylight_h": 13.266666666666667,
+     "low_sun_h": 1.2833333333333334,
+     "t2m_min_avg_c": -29.78,
+     "t2m_max_avg_c": -9.89,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 4,
-     "daylight_h": 5.166666666666667,
-     "low_sun_h": 2.75,
-     "t2m_min_c": -40.52,
-     "t2m_max_c": -8.77,
+     "daylight_h": 5.183333333333334,
+     "low_sun_h": 2.7333333333333334,
+     "t2m_min_avg_c": -34.95,
+     "t2m_max_avg_c": -13.75,
      "precip_mm_per_day": 0.14
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.91,
-     "t2m_max_c": -7.69,
+     "t2m_min_avg_c": -35.66,
+     "t2m_max_avg_c": -12.64,
      "precip_mm_per_day": 0.11
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -44.62,
-     "t2m_max_c": -9.98,
+     "t2m_min_avg_c": -36.74,
+     "t2m_max_avg_c": -13.47,
      "precip_mm_per_day": 0.12
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.85,
-     "t2m_max_c": -9.24,
+     "t2m_min_avg_c": -37.97,
+     "t2m_max_avg_c": -16.22,
      "precip_mm_per_day": 0.09
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.23,
-     "t2m_max_c": -8.9,
+     "t2m_min_avg_c": -37.65,
+     "t2m_max_avg_c": -15.04,
      "precip_mm_per_day": 0.16
     },
     {
      "month": 9,
-     "daylight_h": 10.166666666666666,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -40.91,
-     "t2m_max_c": -10.45,
+     "daylight_h": 10.183333333333334,
+     "low_sun_h": 1.3666666666666667,
+     "t2m_min_avg_c": -35.92,
+     "t2m_max_avg_c": -14.38,
      "precip_mm_per_day": 0.12
     },
     {
      "month": 10,
-     "daylight_h": 17.666666666666668,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -37.98,
-     "t2m_max_c": -5.21,
+     "daylight_h": 17.683333333333334,
+     "low_sun_h": 1.6166666666666667,
+     "t2m_min_avg_c": -31.28,
+     "t2m_max_avg_c": -10.68,
      "precip_mm_per_day": 0.14
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -29.23,
-     "t2m_max_c": -2.76,
+     "t2m_min_avg_c": -22.71,
+     "t2m_max_avg_c": -4.49,
      "precip_mm_per_day": 0.11
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -15.9,
-     "t2m_max_c": 1.3,
+     "t2m_min_avg_c": -12.91,
+     "t2m_max_avg_c": -0.86,
      "precip_mm_per_day": 0.12
     }
    ],
    "best_months": [
     2
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: months with at most 1 mm of rain a day, a mean daily low of at least -25 °C and a mean daily high of at most 35 °C, and at least 10 more minutes of low-sun time a day than the median such month."
   },
   {
    "rank": 21,
@@ -4686,107 +4612,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.85,
-     "t2m_max_c": 21.18,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 18.07,
      "precip_mm_per_day": 1.23
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.04,
-     "t2m_max_c": 19.85,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.77,
+     "t2m_max_avg_c": 17.1,
      "precip_mm_per_day": 1.21
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.72,
-     "t2m_max_c": 18.27,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.84,
+     "t2m_max_avg_c": 16.84,
      "precip_mm_per_day": 0.76
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.15,
-     "t2m_max_c": 16.62,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.94,
+     "t2m_max_avg_c": 14.46,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.866666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.98,
-     "t2m_max_c": 13.47,
+     "t2m_min_avg_c": -9.74,
+     "t2m_max_avg_c": 11.35,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 6,
      "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.19,
-     "t2m_max_c": 12.62,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -11.99,
+     "t2m_max_avg_c": 9.93,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -18.16,
-     "t2m_max_c": 11.29,
+     "t2m_min_avg_c": -13.11,
+     "t2m_max_avg_c": 9.42,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.21,
-     "t2m_max_c": 15.57,
+     "t2m_min_avg_c": -11.83,
+     "t2m_max_avg_c": 11.47,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.27,
-     "t2m_max_c": 16.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.48,
+     "t2m_max_avg_c": 13.11,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -10.37,
-     "t2m_max_c": 18.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.29,
+     "t2m_max_avg_c": 15.32,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.116666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.61,
-     "t2m_max_c": 18.68,
+     "t2m_min_avg_c": -7.02,
+     "t2m_max_avg_c": 16.53,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.16,
-     "t2m_max_c": 19.23,
+     "daylight_h": 13.433333333333334,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -6.73,
+     "t2m_max_avg_c": 17.73,
      "precip_mm_per_day": 0.98
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 22,
@@ -4912,107 +4834,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 10.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.83,
-     "t2m_max_c": 26.27,
+     "daylight_h": 10.966666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 10.83,
+     "t2m_max_avg_c": 22.86,
      "precip_mm_per_day": 4.74
     },
     {
      "month": 2,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.96,
-     "t2m_max_c": 25.05,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 10.69,
+     "t2m_max_avg_c": 22.88,
      "precip_mm_per_day": 5.48
     },
     {
      "month": 3,
      "daylight_h": 11.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.03,
-     "t2m_max_c": 25.32,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.56,
+     "t2m_max_avg_c": 23.22,
      "precip_mm_per_day": 7.23
     },
     {
      "month": 4,
-     "daylight_h": 12.416666666666666,
-     "low_sun_h": 0.16666666666666666,
-     "t2m_min_c": 10.91,
-     "t2m_max_c": 24.55,
+     "daylight_h": 12.483333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.76,
+     "t2m_max_avg_c": 23.59,
      "precip_mm_per_day": 6.41
     },
     {
      "month": 5,
-     "daylight_h": 12.916666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.92,
-     "t2m_max_c": 26.07,
+     "daylight_h": 12.933333333333334,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.44,
+     "t2m_max_avg_c": 24.76,
      "precip_mm_per_day": 4.45
     },
     {
      "month": 6,
      "daylight_h": 13.166666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.04,
-     "t2m_max_c": 27.04,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 14.41,
+     "t2m_max_avg_c": 25.19,
      "precip_mm_per_day": 3.54
     },
     {
      "month": 7,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.11,
-     "t2m_max_c": 26.93,
+     "daylight_h": 13.05,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.68,
+     "t2m_max_avg_c": 25.99,
      "precip_mm_per_day": 3.87
     },
     {
      "month": 8,
      "daylight_h": 12.666666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.42,
-     "t2m_max_c": 28.49,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 15.25,
+     "t2m_max_avg_c": 26.2,
      "precip_mm_per_day": 4.51
     },
     {
      "month": 9,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.46,
-     "t2m_max_c": 27.84,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.17,
+     "t2m_max_avg_c": 25.78,
      "precip_mm_per_day": 3.97
     },
     {
      "month": 10,
-     "daylight_h": 11.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.33,
-     "t2m_max_c": 26.31,
+     "daylight_h": 11.566666666666666,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 14.66,
+     "t2m_max_avg_c": 25.31,
      "precip_mm_per_day": 4.37
     },
     {
      "month": 11,
      "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.44,
-     "t2m_max_c": 25.74,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 13.29,
+     "t2m_max_avg_c": 24.35,
      "precip_mm_per_day": 5.64
     },
     {
      "month": 12,
      "daylight_h": 10.833333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.97,
-     "t2m_max_c": 24.45,
+     "t2m_min_avg_c": 12.17,
+     "t2m_max_avg_c": 23.08,
      "precip_mm_per_day": 5.51
     }
    ],
-   "best_months": [
-    6,
-    7,
-    9
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 23,
@@ -5137,107 +5055,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.55,
-     "t2m_max_c": 22.27,
+     "t2m_min_avg_c": -5.49,
+     "t2m_max_avg_c": 18.95,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.6,
-     "t2m_max_c": 19.95,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.62,
+     "t2m_max_avg_c": 17.9,
      "precip_mm_per_day": 1.85
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 19.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.93,
+     "t2m_max_avg_c": 17.59,
      "precip_mm_per_day": 1.19
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.48,
-     "t2m_max_c": 17.35,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.7,
+     "t2m_max_avg_c": 14.98,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.2,
-     "t2m_max_c": 14.28,
+     "daylight_h": 10.85,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -9.26,
+     "t2m_max_avg_c": 12.05,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.566666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.29,
-     "t2m_max_c": 13.58,
+     "t2m_min_avg_c": -11.26,
+     "t2m_max_avg_c": 10.64,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.7,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -17.95,
-     "t2m_max_c": 12.35,
+     "t2m_min_avg_c": -12.43,
+     "t2m_max_avg_c": 10.07,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -13.86,
-     "t2m_max_c": 16.63,
+     "t2m_min_avg_c": -10.79,
+     "t2m_max_avg_c": 12.3,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.3,
-     "t2m_max_c": 17.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.79,
+     "t2m_max_avg_c": 13.93,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.81,
-     "t2m_max_c": 19.52,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.14,
+     "t2m_max_avg_c": 16.24,
      "precip_mm_per_day": 0.3
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.86,
-     "t2m_max_c": 19.72,
+     "daylight_h": 13.116666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.99,
+     "t2m_max_avg_c": 17.45,
      "precip_mm_per_day": 0.56
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 20.48,
+     "t2m_min_avg_c": -6.6,
+     "t2m_max_avg_c": 18.71,
      "precip_mm_per_day": 1.51
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 24,
@@ -5365,106 +5279,102 @@
     {
      "month": 1,
      "daylight_h": 9.833333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": -5.71,
-     "t2m_max_c": 25.44,
+     "low_sun_h": 0.38333333333333336,
+     "t2m_min_avg_c": -2.86,
+     "t2m_max_avg_c": 20.43,
      "precip_mm_per_day": 0.64
     },
     {
      "month": 2,
-     "daylight_h": 10.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -4.82,
-     "t2m_max_c": 26.47,
+     "daylight_h": 10.766666666666667,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": -1.93,
+     "t2m_max_avg_c": 23.5,
      "precip_mm_per_day": 0.77
     },
     {
      "month": 3,
-     "daylight_h": 11.833333333333334,
+     "daylight_h": 11.816666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -3.17,
-     "t2m_max_c": 32.03,
+     "t2m_min_avg_c": 0.13,
+     "t2m_max_avg_c": 28.44,
      "precip_mm_per_day": 0.41
     },
     {
      "month": 4,
-     "daylight_h": 12.916666666666666,
+     "daylight_h": 12.983333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.04,
-     "t2m_max_c": 36.77,
+     "t2m_min_avg_c": 3.42,
+     "t2m_max_avg_c": 33.43,
      "precip_mm_per_day": 0.27
     },
     {
      "month": 5,
-     "daylight_h": 14.0,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 4.99,
-     "t2m_max_c": 43.07,
+     "daylight_h": 13.95,
+     "low_sun_h": 0.38333333333333336,
+     "t2m_min_avg_c": 8.17,
+     "t2m_max_avg_c": 38.7,
      "precip_mm_per_day": 0.14
     },
     {
      "month": 6,
-     "daylight_h": 14.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 8.82,
-     "t2m_max_c": 46.3,
+     "daylight_h": 14.45,
+     "low_sun_h": 0.38333333333333336,
+     "t2m_min_avg_c": 12.88,
+     "t2m_max_avg_c": 42.74,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 7,
-     "daylight_h": 14.25,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 15.85,
-     "t2m_max_c": 46.72,
+     "daylight_h": 14.216666666666667,
+     "low_sun_h": 0.38333333333333336,
+     "t2m_min_avg_c": 18.57,
+     "t2m_max_avg_c": 44.82,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 8,
-     "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 15.53,
-     "t2m_max_c": 46.21,
+     "daylight_h": 13.383333333333333,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 18.16,
+     "t2m_max_avg_c": 42.89,
      "precip_mm_per_day": 0.31
     },
     {
      "month": 9,
-     "daylight_h": 12.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 8.14,
-     "t2m_max_c": 44.44,
+     "daylight_h": 12.266666666666667,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 12.77,
+     "t2m_max_avg_c": 40.41,
      "precip_mm_per_day": 0.26
     },
     {
      "month": 10,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -0.59,
-     "t2m_max_c": 37.68,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 5.85,
+     "t2m_max_avg_c": 34.29,
      "precip_mm_per_day": 0.37
     },
     {
      "month": 11,
-     "daylight_h": 10.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -4.46,
-     "t2m_max_c": 29.82,
+     "daylight_h": 10.1,
+     "low_sun_h": 0.4,
+     "t2m_min_avg_c": -0.21,
+     "t2m_max_avg_c": 26.81,
      "precip_mm_per_day": 0.34
     },
     {
      "month": 12,
-     "daylight_h": 9.583333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": -4.86,
-     "t2m_max_c": 23.65,
+     "daylight_h": 9.566666666666666,
+     "low_sun_h": 0.4,
+     "t2m_min_avg_c": -2.94,
+     "t2m_max_avg_c": 20.32,
      "precip_mm_per_day": 0.7
     }
    ],
-   "best_months": [
-    1,
-    11,
-    12
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 22 min a day in the months that pass our rain and temperature rules (Jan, Feb, Mar, Apr, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 25,
@@ -5592,105 +5502,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.7,
-     "t2m_max_c": 32.89,
+     "t2m_min_avg_c": 8.66,
+     "t2m_max_avg_c": 30.49,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.09,
-     "t2m_max_c": 32.71,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 8.7,
+     "t2m_max_avg_c": 30.3,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 6.21,
-     "t2m_max_c": 32.19,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.73,
+     "t2m_max_avg_c": 30.0,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.66,
-     "t2m_max_c": 31.21,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 5.57,
+     "t2m_max_avg_c": 28.79,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.59,
-     "t2m_max_c": 29.88,
+     "daylight_h": 10.8,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 2.68,
+     "t2m_max_avg_c": 27.39,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.7,
-     "t2m_max_c": 31.08,
+     "t2m_min_avg_c": 0.97,
+     "t2m_max_avg_c": 26.6,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.65,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -3.62,
-     "t2m_max_c": 31.46,
+     "t2m_min_avg_c": -0.41,
+     "t2m_max_avg_c": 26.46,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -4.47,
-     "t2m_max_c": 31.53,
+     "daylight_h": 11.15,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 0.71,
+     "t2m_max_avg_c": 28.34,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -1.3,
-     "t2m_max_c": 31.2,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 1.89,
+     "t2m_max_avg_c": 28.98,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.6,
-     "t2m_max_c": 32.47,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 4.07,
+     "t2m_max_avg_c": 29.69,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
      "daylight_h": 13.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 0.63,
-     "t2m_max_c": 32.7,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 5.69,
+     "t2m_max_avg_c": 30.36,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 5.56,
-     "t2m_max_c": 32.35,
+     "t2m_min_avg_c": 7.0,
+     "t2m_max_avg_c": 30.44,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    5,
-    10
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 26,
@@ -5820,105 +5726,101 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -19.93,
-     "t2m_max_c": -2.13,
+     "t2m_min_avg_c": -18.11,
+     "t2m_max_avg_c": -4.21,
      "precip_mm_per_day": 0.28
     },
     {
      "month": 2,
      "daylight_h": 24.0,
-     "low_sun_h": 4.0,
-     "t2m_min_c": -31.09,
-     "t2m_max_c": -4.34,
+     "low_sun_h": 3.966666666666667,
+     "t2m_min_avg_c": -27.02,
+     "t2m_max_avg_c": -8.9,
      "precip_mm_per_day": 0.35
     },
     {
      "month": 3,
-     "daylight_h": 13.333333333333334,
+     "daylight_h": 13.316666666666666,
      "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -41.67,
-     "t2m_max_c": -12.75,
+     "t2m_min_avg_c": -36.44,
+     "t2m_max_avg_c": -15.67,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 4,
-     "daylight_h": 4.833333333333333,
-     "low_sun_h": 3.3333333333333335,
-     "t2m_min_c": -45.51,
-     "t2m_max_c": -11.98,
+     "daylight_h": 4.85,
+     "low_sun_h": 3.3666666666666667,
+     "t2m_min_avg_c": -40.38,
+     "t2m_max_avg_c": -18.09,
      "precip_mm_per_day": 0.26
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -47.29,
-     "t2m_max_c": -12.41,
+     "t2m_min_avg_c": -40.98,
+     "t2m_max_avg_c": -17.21,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -48.31,
-     "t2m_max_c": -15.29,
+     "t2m_min_avg_c": -42.62,
+     "t2m_max_avg_c": -18.37,
      "precip_mm_per_day": 0.24
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -48.12,
-     "t2m_max_c": -14.63,
+     "t2m_min_avg_c": -43.8,
+     "t2m_max_avg_c": -21.2,
      "precip_mm_per_day": 0.15
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -47.69,
-     "t2m_max_c": -14.06,
+     "t2m_min_avg_c": -43.96,
+     "t2m_max_avg_c": -20.16,
      "precip_mm_per_day": 0.27
     },
     {
      "month": 9,
-     "daylight_h": 10.166666666666666,
-     "low_sun_h": 1.5,
-     "t2m_min_c": -45.85,
-     "t2m_max_c": -14.84,
+     "daylight_h": 10.116666666666667,
+     "low_sun_h": 1.4166666666666667,
+     "t2m_min_avg_c": -42.19,
+     "t2m_max_avg_c": -19.33,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 10,
-     "daylight_h": 17.916666666666668,
-     "low_sun_h": 1.75,
-     "t2m_min_c": -43.02,
-     "t2m_max_c": -10.58,
+     "daylight_h": 17.933333333333334,
+     "low_sun_h": 1.7333333333333334,
+     "t2m_min_avg_c": -36.87,
+     "t2m_max_avg_c": -15.83,
      "precip_mm_per_day": 0.24
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -35.81,
-     "t2m_max_c": -6.7,
+     "t2m_min_avg_c": -28.46,
+     "t2m_max_avg_c": -9.49,
      "precip_mm_per_day": 0.17
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -22.39,
-     "t2m_max_c": -1.71,
+     "t2m_min_avg_c": -18.68,
+     "t2m_max_avg_c": -4.97,
      "precip_mm_per_day": 0.23
     }
    ],
-   "best_months": [
-    2,
-    4,
-    10
-   ],
-   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 0 min a day in the months that pass our rain and temperature rules (Jan, Dec); no month stands out by 10 min."
   },
   {
    "rank": 27,
@@ -6047,106 +5949,102 @@
     {
      "month": 1,
      "daylight_h": 10.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -5.13,
-     "t2m_max_c": 27.73,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -0.94,
+     "t2m_max_avg_c": 24.78,
      "precip_mm_per_day": 0.39
     },
     {
      "month": 2,
      "daylight_h": 11.0,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -5.45,
-     "t2m_max_c": 33.8,
+     "t2m_min_avg_c": -0.14,
+     "t2m_max_avg_c": 27.99,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 3,
-     "daylight_h": 11.833333333333334,
+     "daylight_h": 11.85,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -0.92,
-     "t2m_max_c": 38.36,
+     "t2m_min_avg_c": 4.71,
+     "t2m_max_avg_c": 33.69,
      "precip_mm_per_day": 0.49
     },
     {
      "month": 4,
-     "daylight_h": 12.75,
+     "daylight_h": 12.783333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 3.7,
-     "t2m_max_c": 40.96,
+     "t2m_min_avg_c": 10.51,
+     "t2m_max_avg_c": 39.12,
      "precip_mm_per_day": 0.28
     },
     {
      "month": 5,
-     "daylight_h": 13.583333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 9.25,
-     "t2m_max_c": 46.73,
+     "daylight_h": 13.566666666666666,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 18.04,
+     "t2m_max_avg_c": 43.46,
      "precip_mm_per_day": 0.09
     },
     {
      "month": 6,
-     "daylight_h": 13.916666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.68,
-     "t2m_max_c": 48.22,
+     "daylight_h": 13.966666666666667,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 21.15,
+     "t2m_max_avg_c": 46.53,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 7,
-     "daylight_h": 13.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.72,
-     "t2m_max_c": 48.54,
+     "daylight_h": 13.783333333333333,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 22.37,
+     "t2m_max_avg_c": 46.87,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.116666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 18.18,
-     "t2m_max_c": 48.19,
+     "t2m_min_avg_c": 20.28,
+     "t2m_max_avg_c": 45.48,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
-     "daylight_h": 12.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.09,
-     "t2m_max_c": 44.94,
+     "daylight_h": 12.216666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 16.63,
+     "t2m_max_avg_c": 42.13,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 11.25,
+     "daylight_h": 11.3,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.6,
-     "t2m_max_c": 40.76,
+     "t2m_min_avg_c": 12.46,
+     "t2m_max_avg_c": 38.39,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 11,
-     "daylight_h": 10.416666666666666,
+     "daylight_h": 10.466666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.93,
-     "t2m_max_c": 34.75,
+     "t2m_min_avg_c": 5.59,
+     "t2m_max_avg_c": 31.3,
      "precip_mm_per_day": 0.17
     },
     {
      "month": 12,
-     "daylight_h": 10.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -4.61,
-     "t2m_max_c": 30.91,
+     "daylight_h": 10.05,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 0.41,
+     "t2m_max_avg_c": 25.95,
      "precip_mm_per_day": 0.21
     }
    ],
-   "best_months": [
-    1,
-    11,
-    12
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Jan, Feb, Mar, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 28,
@@ -6272,107 +6170,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.85,
-     "t2m_max_c": 21.18,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 18.07,
      "precip_mm_per_day": 1.23
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.04,
-     "t2m_max_c": 19.85,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.77,
+     "t2m_max_avg_c": 17.1,
      "precip_mm_per_day": 1.21
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.72,
-     "t2m_max_c": 18.27,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.84,
+     "t2m_max_avg_c": 16.84,
      "precip_mm_per_day": 0.76
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.15,
-     "t2m_max_c": 16.62,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.94,
+     "t2m_max_avg_c": 14.46,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -14.98,
-     "t2m_max_c": 13.47,
+     "daylight_h": 10.866666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -9.74,
+     "t2m_max_avg_c": 11.35,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.6,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.19,
-     "t2m_max_c": 12.62,
+     "t2m_min_avg_c": -11.99,
+     "t2m_max_avg_c": 9.93,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -18.16,
-     "t2m_max_c": 11.29,
+     "t2m_min_avg_c": -13.11,
+     "t2m_max_avg_c": 9.42,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.21,
-     "t2m_max_c": 15.57,
+     "daylight_h": 11.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -11.83,
+     "t2m_max_avg_c": 11.47,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.27,
-     "t2m_max_c": 16.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.48,
+     "t2m_max_avg_c": 13.11,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -10.37,
-     "t2m_max_c": 18.47,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.29,
+     "t2m_max_avg_c": 15.32,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.61,
-     "t2m_max_c": 18.68,
+     "daylight_h": 13.1,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.02,
+     "t2m_max_avg_c": 16.53,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.4,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.16,
-     "t2m_max_c": 19.23,
+     "t2m_min_avg_c": -6.73,
+     "t2m_max_avg_c": 17.73,
      "precip_mm_per_day": 0.98
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day in the months that pass our rain and temperature rules (Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 29,
@@ -6500,105 +6394,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.7,
-     "t2m_max_c": 32.89,
+     "t2m_min_avg_c": 8.66,
+     "t2m_max_avg_c": 30.49,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.09,
-     "t2m_max_c": 32.71,
+     "daylight_h": 12.766666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 8.7,
+     "t2m_max_avg_c": 30.3,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 6.21,
-     "t2m_max_c": 32.19,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.73,
+     "t2m_max_avg_c": 30.0,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.66,
-     "t2m_max_c": 31.21,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 5.57,
+     "t2m_max_avg_c": 28.79,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.59,
-     "t2m_max_c": 29.88,
+     "t2m_min_avg_c": 2.68,
+     "t2m_max_avg_c": 27.39,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": -1.7,
-     "t2m_max_c": 31.08,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 0.97,
+     "t2m_max_avg_c": 26.6,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.616666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -3.62,
-     "t2m_max_c": 31.46,
+     "t2m_min_avg_c": -0.41,
+     "t2m_max_avg_c": 26.46,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -4.47,
-     "t2m_max_c": 31.53,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 0.71,
+     "t2m_max_avg_c": 28.34,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -1.3,
-     "t2m_max_c": 31.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 1.89,
+     "t2m_max_avg_c": 28.98,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.6,
-     "t2m_max_c": 32.47,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 4.07,
+     "t2m_max_avg_c": 29.69,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.25,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.63,
-     "t2m_max_c": 32.7,
+     "t2m_min_avg_c": 5.69,
+     "t2m_max_avg_c": 30.36,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
-     "daylight_h": 13.583333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 5.56,
-     "t2m_max_c": 32.35,
+     "daylight_h": 13.516666666666667,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 7.0,
+     "t2m_max_avg_c": 30.44,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 30,
@@ -6724,107 +6614,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.3,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.13,
-     "t2m_max_c": 32.15,
+     "t2m_min_avg_c": 11.75,
+     "t2m_max_avg_c": 30.56,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.04,
-     "t2m_max_c": 32.76,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 12.14,
+     "t2m_max_avg_c": 30.43,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 10.03,
-     "t2m_max_c": 32.39,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.14,
+     "t2m_max_avg_c": 30.27,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.49,
-     "t2m_max_c": 32.88,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 9.29,
+     "t2m_max_avg_c": 29.0,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
      "daylight_h": 10.833333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.06,
-     "t2m_max_c": 30.66,
+     "t2m_min_avg_c": 6.71,
+     "t2m_max_avg_c": 28.31,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.533333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.75,
-     "t2m_max_c": 30.74,
+     "t2m_min_avg_c": 5.15,
+     "t2m_max_avg_c": 28.11,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 7,
      "daylight_h": 10.666666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.35,
-     "t2m_max_c": 32.6,
+     "t2m_min_avg_c": 3.68,
+     "t2m_max_avg_c": 27.89,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -0.64,
-     "t2m_max_c": 32.93,
+     "t2m_min_avg_c": 4.54,
+     "t2m_max_avg_c": 29.71,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 2.29,
-     "t2m_max_c": 32.64,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 5.48,
+     "t2m_max_avg_c": 29.75,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 4.79,
-     "t2m_max_c": 32.49,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.31,
+     "t2m_max_avg_c": 29.34,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 4.07,
-     "t2m_max_c": 31.17,
+     "daylight_h": 13.15,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 8.71,
+     "t2m_max_avg_c": 29.33,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.466666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 8.79,
-     "t2m_max_c": 32.64,
+     "t2m_min_avg_c": 10.06,
+     "t2m_max_avg_c": 29.98,
      "precip_mm_per_day": 0.02
     }
    ],
-   "best_months": [
-    1,
-    4,
-    5
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 31,
@@ -6953,106 +6839,102 @@
     {
      "month": 1,
      "daylight_h": 4.75,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -23.73,
-     "t2m_max_c": 2.58,
+     "low_sun_h": 1.3666666666666667,
+     "t2m_min_avg_c": -19.54,
+     "t2m_max_avg_c": 0.93,
      "precip_mm_per_day": 10.54
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -23.1,
-     "t2m_max_c": 2.11,
+     "daylight_h": 8.283333333333333,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -19.67,
+     "t2m_max_avg_c": 0.46,
      "precip_mm_per_day": 10.55
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
+     "daylight_h": 11.466666666666667,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -23.33,
-     "t2m_max_c": 2.3,
+     "t2m_min_avg_c": -19.61,
+     "t2m_max_avg_c": 0.57,
      "precip_mm_per_day": 8.68
     },
     {
      "month": 4,
      "daylight_h": 14.916666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -21.53,
-     "t2m_max_c": 2.69,
+     "low_sun_h": 0.7,
+     "t2m_min_avg_c": -16.92,
+     "t2m_max_avg_c": 1.04,
      "precip_mm_per_day": 7.29
     },
     {
      "month": 5,
-     "daylight_h": 18.166666666666668,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -18.35,
-     "t2m_max_c": 7.51,
+     "daylight_h": 18.233333333333334,
+     "low_sun_h": 0.9333333333333333,
+     "t2m_min_avg_c": -12.3,
+     "t2m_max_avg_c": 2.17,
      "precip_mm_per_day": 4.63
     },
     {
      "month": 6,
-     "daylight_h": 20.75,
-     "low_sun_h": 1.4166666666666667,
-     "t2m_min_c": -9.51,
-     "t2m_max_c": 5.88,
+     "daylight_h": 20.783333333333335,
+     "low_sun_h": 1.45,
+     "t2m_min_avg_c": -5.96,
+     "t2m_max_avg_c": 3.2,
      "precip_mm_per_day": 3.87
     },
     {
      "month": 7,
-     "daylight_h": 19.416666666666668,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -4.99,
-     "t2m_max_c": 8.29,
+     "daylight_h": 19.483333333333334,
+     "low_sun_h": 1.1333333333333333,
+     "t2m_min_avg_c": -3.19,
+     "t2m_max_avg_c": 4.23,
      "precip_mm_per_day": 4.65
     },
     {
      "month": 8,
-     "daylight_h": 16.166666666666668,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -5.91,
-     "t2m_max_c": 8.83,
+     "daylight_h": 16.2,
+     "low_sun_h": 0.7666666666666667,
+     "t2m_min_avg_c": -4.34,
+     "t2m_max_avg_c": 4.38,
      "precip_mm_per_day": 5.52
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -11.63,
-     "t2m_max_c": 5.82,
+     "daylight_h": 12.783333333333333,
+     "low_sun_h": 0.65,
+     "t2m_min_avg_c": -8.5,
+     "t2m_max_avg_c": 3.88,
      "precip_mm_per_day": 9.46
     },
     {
      "month": 10,
-     "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -17.17,
-     "t2m_max_c": 4.71,
+     "daylight_h": 9.483333333333333,
+     "low_sun_h": 0.7333333333333333,
+     "t2m_min_avg_c": -13.9,
+     "t2m_max_avg_c": 2.62,
      "precip_mm_per_day": 8.8
     },
     {
      "month": 11,
-     "daylight_h": 5.916666666666667,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -21.88,
-     "t2m_max_c": 2.92,
+     "daylight_h": 5.933333333333334,
+     "low_sun_h": 1.05,
+     "t2m_min_avg_c": -17.53,
+     "t2m_max_avg_c": 1.42,
      "precip_mm_per_day": 8.94
     },
     {
      "month": 12,
      "daylight_h": 3.25,
      "low_sun_h": 3.25,
-     "t2m_min_c": -25.86,
-     "t2m_max_c": 2.39,
+     "t2m_min_avg_c": -20.19,
+     "t2m_max_avg_c": 1.29,
      "precip_mm_per_day": 10.38
     }
    ],
-   "best_months": [
-    1,
-    6,
-    7
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 32,
@@ -7180,107 +7062,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 4.583333333333333,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -21.98,
-     "t2m_max_c": 4.2,
+     "daylight_h": 4.65,
+     "low_sun_h": 1.4333333333333333,
+     "t2m_min_avg_c": -17.85,
+     "t2m_max_avg_c": 1.95,
      "precip_mm_per_day": 2.32
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -20.85,
-     "t2m_max_c": 3.35,
+     "daylight_h": 8.233333333333333,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -18.21,
+     "t2m_max_avg_c": 1.63,
      "precip_mm_per_day": 2.21
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
+     "daylight_h": 11.466666666666667,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -21.8,
-     "t2m_max_c": 3.78,
+     "t2m_min_avg_c": -17.94,
+     "t2m_max_avg_c": 1.66,
      "precip_mm_per_day": 2.16
     },
     {
      "month": 4,
-     "daylight_h": 14.916666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -19.78,
-     "t2m_max_c": 3.33,
+     "daylight_h": 14.95,
+     "low_sun_h": 0.7166666666666667,
+     "t2m_min_avg_c": -15.58,
+     "t2m_max_avg_c": 1.9,
      "precip_mm_per_day": 1.96
     },
     {
      "month": 5,
-     "daylight_h": 18.333333333333332,
-     "low_sun_h": 1.0,
-     "t2m_min_c": -16.24,
-     "t2m_max_c": 6.76,
+     "daylight_h": 18.316666666666666,
+     "low_sun_h": 0.9666666666666667,
+     "t2m_min_avg_c": -10.76,
+     "t2m_max_avg_c": 3.15,
      "precip_mm_per_day": 1.96
     },
     {
      "month": 6,
-     "daylight_h": 20.916666666666668,
+     "daylight_h": 20.95,
      "low_sun_h": 1.5,
-     "t2m_min_c": -7.83,
-     "t2m_max_c": 8.54,
+     "t2m_min_avg_c": -3.84,
+     "t2m_max_avg_c": 6.02,
      "precip_mm_per_day": 1.73
     },
     {
      "month": 7,
      "daylight_h": 19.583333333333332,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -2.56,
-     "t2m_max_c": 10.58,
+     "low_sun_h": 1.15,
+     "t2m_min_avg_c": -1.17,
+     "t2m_max_avg_c": 7.13,
      "precip_mm_per_day": 2.45
     },
     {
      "month": 8,
-     "daylight_h": 16.25,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -4.88,
-     "t2m_max_c": 12.19,
+     "daylight_h": 16.233333333333334,
+     "low_sun_h": 0.7666666666666667,
+     "t2m_min_avg_c": -2.69,
+     "t2m_max_avg_c": 6.88,
      "precip_mm_per_day": 2.39
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
+     "daylight_h": 12.8,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -11.69,
-     "t2m_max_c": 7.19,
+     "t2m_min_avg_c": -7.01,
+     "t2m_max_avg_c": 5.36,
      "precip_mm_per_day": 2.87
     },
     {
      "month": 10,
-     "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -16.46,
-     "t2m_max_c": 5.41,
+     "daylight_h": 9.45,
+     "low_sun_h": 0.7333333333333333,
+     "t2m_min_avg_c": -13.09,
+     "t2m_max_avg_c": 3.45,
      "precip_mm_per_day": 2.77
     },
     {
      "month": 11,
-     "daylight_h": 5.916666666666667,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -21.81,
-     "t2m_max_c": 3.77,
+     "daylight_h": 5.866666666666666,
+     "low_sun_h": 1.0833333333333333,
+     "t2m_min_avg_c": -16.31,
+     "t2m_max_avg_c": 2.25,
      "precip_mm_per_day": 2.84
     },
     {
      "month": 12,
      "daylight_h": 3.0833333333333335,
      "low_sun_h": 3.0833333333333335,
-     "t2m_min_c": -23.6,
-     "t2m_max_c": 3.65,
+     "t2m_min_avg_c": -18.42,
+     "t2m_max_avg_c": 2.34,
      "precip_mm_per_day": 2.66
     }
    ],
-   "best_months": [
-    1,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 33,
@@ -7410,105 +7288,101 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -23.26,
-     "t2m_max_c": -4.43,
+     "t2m_min_avg_c": -21.58,
+     "t2m_max_avg_c": -6.82,
      "precip_mm_per_day": 0.25
     },
     {
      "month": 2,
      "daylight_h": 24.0,
-     "low_sun_h": 4.416666666666667,
-     "t2m_min_c": -33.95,
-     "t2m_max_c": -6.96,
+     "low_sun_h": 4.35,
+     "t2m_min_avg_c": -29.78,
+     "t2m_max_avg_c": -11.47,
      "precip_mm_per_day": 0.37
     },
     {
      "month": 3,
-     "daylight_h": 13.333333333333334,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -41.76,
-     "t2m_max_c": -13.3,
+     "daylight_h": 13.283333333333333,
+     "low_sun_h": 1.3,
+     "t2m_min_avg_c": -38.13,
+     "t2m_max_avg_c": -17.96,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 4,
-     "daylight_h": 5.166666666666667,
-     "low_sun_h": 2.8333333333333335,
-     "t2m_min_c": -47.08,
-     "t2m_max_c": -14.73,
+     "daylight_h": 5.15,
+     "low_sun_h": 2.8,
+     "t2m_min_avg_c": -42.22,
+     "t2m_max_avg_c": -20.7,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -50.09,
-     "t2m_max_c": -14.27,
+     "t2m_min_avg_c": -42.91,
+     "t2m_max_avg_c": -19.58,
      "precip_mm_per_day": 0.18
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -52.01,
-     "t2m_max_c": -17.0,
+     "t2m_min_avg_c": -44.56,
+     "t2m_max_avg_c": -20.35,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -51.31,
-     "t2m_max_c": -15.55,
+     "t2m_min_avg_c": -45.96,
+     "t2m_max_avg_c": -22.91,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -50.03,
-     "t2m_max_c": -16.82,
+     "t2m_min_avg_c": -45.82,
+     "t2m_max_avg_c": -22.21,
      "precip_mm_per_day": 0.25
     },
     {
      "month": 9,
-     "daylight_h": 10.166666666666666,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -49.23,
-     "t2m_max_c": -17.62,
+     "daylight_h": 10.183333333333334,
+     "low_sun_h": 1.3833333333333333,
+     "t2m_min_avg_c": -44.19,
+     "t2m_max_avg_c": -21.16,
      "precip_mm_per_day": 0.21
     },
     {
      "month": 10,
-     "daylight_h": 17.75,
-     "low_sun_h": 1.6666666666666667,
-     "t2m_min_c": -45.17,
-     "t2m_max_c": -11.14,
+     "daylight_h": 17.7,
+     "low_sun_h": 1.6333333333333333,
+     "t2m_min_avg_c": -39.58,
+     "t2m_max_avg_c": -17.98,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -38.81,
-     "t2m_max_c": -9.42,
+     "t2m_min_avg_c": -31.09,
+     "t2m_max_avg_c": -11.73,
      "precip_mm_per_day": 0.17
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -26.97,
-     "t2m_max_c": -3.79,
+     "t2m_min_avg_c": -22.17,
+     "t2m_max_avg_c": -7.51,
      "precip_mm_per_day": 0.22
     }
    ],
-   "best_months": [
-    2,
-    4,
-    10
-   ],
-   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 0 min a day in the months that pass our rain and temperature rules (Jan, Dec); no month stands out by 10 min."
   },
   {
    "rank": 34,
@@ -7633,107 +7507,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.55,
-     "t2m_max_c": 22.27,
+     "t2m_min_avg_c": -5.49,
+     "t2m_max_avg_c": 18.95,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.6,
-     "t2m_max_c": 19.95,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.62,
+     "t2m_max_avg_c": 17.9,
      "precip_mm_per_day": 1.85
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 19.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.93,
+     "t2m_max_avg_c": 17.59,
      "precip_mm_per_day": 1.19
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.48,
-     "t2m_max_c": 17.35,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.7,
+     "t2m_max_avg_c": 14.98,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.866666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.2,
-     "t2m_max_c": 14.28,
+     "t2m_min_avg_c": -9.26,
+     "t2m_max_avg_c": 12.05,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.566666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.29,
-     "t2m_max_c": 13.58,
+     "t2m_min_avg_c": -11.26,
+     "t2m_max_avg_c": 10.64,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.7,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -17.95,
-     "t2m_max_c": 12.35,
+     "t2m_min_avg_c": -12.43,
+     "t2m_max_avg_c": 10.07,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -13.86,
-     "t2m_max_c": 16.63,
+     "t2m_min_avg_c": -10.79,
+     "t2m_max_avg_c": 12.3,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.3,
-     "t2m_max_c": 17.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.79,
+     "t2m_max_avg_c": 13.93,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.81,
-     "t2m_max_c": 19.52,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.14,
+     "t2m_max_avg_c": 16.24,
      "precip_mm_per_day": 0.3
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.86,
-     "t2m_max_c": 19.72,
+     "daylight_h": 13.116666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.99,
+     "t2m_max_avg_c": 17.45,
      "precip_mm_per_day": 0.56
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 20.48,
+     "t2m_min_avg_c": -6.6,
+     "t2m_max_avg_c": 18.71,
      "precip_mm_per_day": 1.51
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 35,
@@ -7863,105 +7733,103 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -18.2,
-     "t2m_max_c": -0.87,
+     "t2m_min_avg_c": -15.49,
+     "t2m_max_avg_c": -3.34,
      "precip_mm_per_day": 0.41
     },
     {
      "month": 2,
      "daylight_h": 23.416666666666668,
-     "low_sun_h": 4.0,
-     "t2m_min_c": -27.33,
-     "t2m_max_c": -2.93,
+     "low_sun_h": 4.066666666666666,
+     "t2m_min_avg_c": -22.51,
+     "t2m_max_avg_c": -7.38,
      "precip_mm_per_day": 0.66
     },
     {
      "month": 3,
      "daylight_h": 13.25,
-     "low_sun_h": 1.25,
-     "t2m_min_c": -35.42,
-     "t2m_max_c": -8.65,
+     "low_sun_h": 1.2833333333333334,
+     "t2m_min_avg_c": -31.71,
+     "t2m_max_avg_c": -13.11,
      "precip_mm_per_day": 0.39
     },
     {
      "month": 4,
-     "daylight_h": 5.416666666666667,
+     "daylight_h": 5.383333333333334,
      "low_sun_h": 2.5,
-     "t2m_min_c": -41.5,
-     "t2m_max_c": -10.33,
+     "t2m_min_avg_c": -36.1,
+     "t2m_max_avg_c": -16.29,
      "precip_mm_per_day": 0.29
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.8,
-     "t2m_max_c": -10.15,
+     "t2m_min_avg_c": -36.88,
+     "t2m_max_avg_c": -15.24,
      "precip_mm_per_day": 0.26
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.61,
-     "t2m_max_c": -12.82,
+     "t2m_min_avg_c": -38.43,
+     "t2m_max_avg_c": -15.93,
      "precip_mm_per_day": 0.32
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.18,
-     "t2m_max_c": -11.33,
+     "t2m_min_avg_c": -39.47,
+     "t2m_max_avg_c": -17.89,
      "precip_mm_per_day": 0.2
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.05,
-     "t2m_max_c": -12.49,
+     "t2m_min_avg_c": -39.53,
+     "t2m_max_avg_c": -17.61,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 9,
-     "daylight_h": 10.166666666666666,
+     "daylight_h": 10.216666666666667,
      "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -42.46,
-     "t2m_max_c": -12.75,
+     "t2m_min_avg_c": -38.09,
+     "t2m_max_avg_c": -16.98,
      "precip_mm_per_day": 0.27
     },
     {
      "month": 10,
-     "daylight_h": 17.583333333333332,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -39.92,
-     "t2m_max_c": -6.75,
+     "daylight_h": 17.533333333333335,
+     "low_sun_h": 1.5666666666666667,
+     "t2m_min_avg_c": -32.89,
+     "t2m_max_avg_c": -13.04,
      "precip_mm_per_day": 0.32
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -31.1,
-     "t2m_max_c": -5.12,
+     "t2m_min_avg_c": -24.9,
+     "t2m_max_avg_c": -7.38,
      "precip_mm_per_day": 0.27
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -20.82,
-     "t2m_max_c": -1.16,
+     "t2m_min_avg_c": -16.3,
+     "t2m_max_avg_c": -3.76,
      "precip_mm_per_day": 0.33
     }
    ],
    "best_months": [
-    2,
-    4,
-    10
+    2
    ],
-   "best_months_rule": "Our rule: no month has a mean daily low at least -25 °C and high at most 35 °C, so all months, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: months with at most 1 mm of rain a day, a mean daily low of at least -25 °C and a mean daily high of at most 35 °C, and at least 10 more minutes of low-sun time a day than the median such month."
   },
   {
    "rank": 36,
@@ -8086,107 +7954,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.3,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.55,
-     "t2m_max_c": 22.27,
+     "t2m_min_avg_c": -5.49,
+     "t2m_max_avg_c": 18.95,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.6,
-     "t2m_max_c": 19.95,
+     "daylight_h": 12.733333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -5.62,
+     "t2m_max_avg_c": 17.9,
      "precip_mm_per_day": 1.85
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 19.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.93,
+     "t2m_max_avg_c": 17.59,
      "precip_mm_per_day": 1.19
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.48,
-     "t2m_max_c": 17.35,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.7,
+     "t2m_max_avg_c": 14.98,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.85,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.2,
-     "t2m_max_c": 14.28,
+     "t2m_min_avg_c": -9.26,
+     "t2m_max_avg_c": 12.05,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.29,
-     "t2m_max_c": 13.58,
+     "daylight_h": 10.566666666666666,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -11.26,
+     "t2m_max_avg_c": 10.64,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.683333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -17.95,
-     "t2m_max_c": 12.35,
+     "t2m_min_avg_c": -12.43,
+     "t2m_max_avg_c": 10.07,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -13.86,
-     "t2m_max_c": 16.63,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -10.79,
+     "t2m_max_avg_c": 12.3,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.3,
-     "t2m_max_c": 17.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.79,
+     "t2m_max_avg_c": 13.93,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.81,
-     "t2m_max_c": 19.52,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.14,
+     "t2m_max_avg_c": 16.24,
      "precip_mm_per_day": 0.3
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.133333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.86,
-     "t2m_max_c": 19.72,
+     "t2m_min_avg_c": -6.99,
+     "t2m_max_avg_c": 17.45,
      "precip_mm_per_day": 0.56
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 20.48,
+     "t2m_min_avg_c": -6.6,
+     "t2m_max_avg_c": 18.71,
      "precip_mm_per_day": 1.51
     }
    ],
-   "best_months": [
-    5,
-    6,
-    7
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 37,
@@ -8316,103 +8180,103 @@
      "month": 1,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -15.12,
-     "t2m_max_c": 1.83,
+     "t2m_min_avg_c": -11.74,
+     "t2m_max_avg_c": -0.38,
      "precip_mm_per_day": 0.15
     },
     {
      "month": 2,
      "daylight_h": 24.0,
-     "low_sun_h": 4.25,
-     "t2m_min_c": -22.74,
-     "t2m_max_c": -0.91,
+     "low_sun_h": 4.283333333333333,
+     "t2m_min_avg_c": -18.71,
+     "t2m_max_avg_c": -4.21,
      "precip_mm_per_day": 0.36
     },
     {
      "month": 3,
-     "daylight_h": 13.333333333333334,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -34.65,
-     "t2m_max_c": -7.32,
+     "daylight_h": 13.283333333333333,
+     "low_sun_h": 1.3,
+     "t2m_min_avg_c": -29.78,
+     "t2m_max_avg_c": -9.89,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 4,
-     "daylight_h": 5.083333333333333,
-     "low_sun_h": 2.8333333333333335,
-     "t2m_min_c": -40.52,
-     "t2m_max_c": -8.77,
+     "daylight_h": 5.116666666666666,
+     "low_sun_h": 2.8666666666666667,
+     "t2m_min_avg_c": -34.95,
+     "t2m_max_avg_c": -13.75,
      "precip_mm_per_day": 0.14
     },
     {
      "month": 5,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.91,
-     "t2m_max_c": -7.69,
+     "t2m_min_avg_c": -35.66,
+     "t2m_max_avg_c": -12.64,
      "precip_mm_per_day": 0.11
     },
     {
      "month": 6,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -44.62,
-     "t2m_max_c": -9.98,
+     "t2m_min_avg_c": -36.74,
+     "t2m_max_avg_c": -13.47,
      "precip_mm_per_day": 0.12
     },
     {
      "month": 7,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.85,
-     "t2m_max_c": -9.24,
+     "t2m_min_avg_c": -37.97,
+     "t2m_max_avg_c": -16.22,
      "precip_mm_per_day": 0.09
     },
     {
      "month": 8,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -42.23,
-     "t2m_max_c": -8.9,
+     "t2m_min_avg_c": -37.65,
+     "t2m_max_avg_c": -15.04,
      "precip_mm_per_day": 0.16
     },
     {
      "month": 9,
      "daylight_h": 10.166666666666666,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -40.91,
-     "t2m_max_c": -10.45,
+     "low_sun_h": 1.3833333333333333,
+     "t2m_min_avg_c": -35.92,
+     "t2m_max_avg_c": -14.38,
      "precip_mm_per_day": 0.12
     },
     {
      "month": 10,
-     "daylight_h": 17.75,
-     "low_sun_h": 1.6666666666666667,
-     "t2m_min_c": -37.98,
-     "t2m_max_c": -5.21,
+     "daylight_h": 17.733333333333334,
+     "low_sun_h": 1.6333333333333333,
+     "t2m_min_avg_c": -31.28,
+     "t2m_max_avg_c": -10.68,
      "precip_mm_per_day": 0.14
     },
     {
      "month": 11,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -29.23,
-     "t2m_max_c": -2.76,
+     "t2m_min_avg_c": -22.71,
+     "t2m_max_avg_c": -4.49,
      "precip_mm_per_day": 0.11
     },
     {
      "month": 12,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -15.9,
-     "t2m_max_c": 1.3,
+     "t2m_min_avg_c": -12.91,
+     "t2m_max_avg_c": -0.86,
      "precip_mm_per_day": 0.12
     }
    ],
    "best_months": [
     2
    ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months_rule": "Our rule: months with at most 1 mm of rain a day, a mean daily low of at least -25 °C and a mean daily high of at most 35 °C, and at least 10 more minutes of low-sun time a day than the median such month."
   },
   {
    "rank": 38,
@@ -8542,105 +8406,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.13,
-     "t2m_max_c": 32.15,
+     "t2m_min_avg_c": 11.75,
+     "t2m_max_avg_c": 30.56,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.04,
-     "t2m_max_c": 32.76,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.14,
+     "t2m_max_avg_c": 30.43,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 10.03,
-     "t2m_max_c": 32.39,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.14,
+     "t2m_max_avg_c": 30.27,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.49,
-     "t2m_max_c": 32.88,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 9.29,
+     "t2m_max_avg_c": 29.0,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.816666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.06,
-     "t2m_max_c": 30.66,
+     "t2m_min_avg_c": 6.71,
+     "t2m_max_avg_c": 28.31,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 2.75,
-     "t2m_max_c": 30.74,
+     "daylight_h": 10.533333333333333,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 5.15,
+     "t2m_max_avg_c": 28.11,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.65,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.35,
-     "t2m_max_c": 32.6,
+     "t2m_min_avg_c": 3.68,
+     "t2m_max_avg_c": 27.89,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -0.64,
-     "t2m_max_c": 32.93,
+     "t2m_min_avg_c": 4.54,
+     "t2m_max_avg_c": 29.71,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 2.29,
-     "t2m_max_c": 32.64,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 5.48,
+     "t2m_max_avg_c": 29.75,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 4.79,
-     "t2m_max_c": 32.49,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.31,
+     "t2m_max_avg_c": 29.34,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 4.07,
-     "t2m_max_c": 31.17,
+     "daylight_h": 13.15,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 8.71,
+     "t2m_max_avg_c": 29.33,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 8.79,
-     "t2m_max_c": 32.64,
+     "daylight_h": 13.483333333333333,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 10.06,
+     "t2m_max_avg_c": 29.98,
      "precip_mm_per_day": 0.02
     }
    ],
-   "best_months": [
-    4,
-    5,
-    6
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 39,
@@ -8765,107 +8625,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.85,
-     "t2m_max_c": 21.18,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 18.07,
      "precip_mm_per_day": 1.23
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.04,
-     "t2m_max_c": 19.85,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.77,
+     "t2m_max_avg_c": 17.1,
      "precip_mm_per_day": 1.21
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.72,
-     "t2m_max_c": 18.27,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.84,
+     "t2m_max_avg_c": 16.84,
      "precip_mm_per_day": 0.76
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.15,
-     "t2m_max_c": 16.62,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.94,
+     "t2m_max_avg_c": 14.46,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -14.98,
-     "t2m_max_c": 13.47,
+     "daylight_h": 10.866666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -9.74,
+     "t2m_max_avg_c": 11.35,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.6,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.19,
-     "t2m_max_c": 12.62,
+     "t2m_min_avg_c": -11.99,
+     "t2m_max_avg_c": 9.93,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -18.16,
-     "t2m_max_c": 11.29,
+     "t2m_min_avg_c": -13.11,
+     "t2m_max_avg_c": 9.42,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.21,
-     "t2m_max_c": 15.57,
+     "daylight_h": 11.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -11.83,
+     "t2m_max_avg_c": 11.47,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.27,
-     "t2m_max_c": 16.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.48,
+     "t2m_max_avg_c": 13.11,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -10.37,
-     "t2m_max_c": 18.47,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.29,
+     "t2m_max_avg_c": 15.32,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.61,
-     "t2m_max_c": 18.68,
+     "daylight_h": 13.1,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.02,
+     "t2m_max_avg_c": 16.53,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.4,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.16,
-     "t2m_max_c": 19.23,
+     "t2m_min_avg_c": -6.73,
+     "t2m_max_avg_c": 17.73,
      "precip_mm_per_day": 0.98
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day in the months that pass our rain and temperature rules (Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 40,
@@ -8990,107 +8846,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.55,
-     "t2m_max_c": 22.27,
+     "t2m_min_avg_c": -5.49,
+     "t2m_max_avg_c": 18.95,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.6,
-     "t2m_max_c": 19.95,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.62,
+     "t2m_max_avg_c": 17.9,
      "precip_mm_per_day": 1.85
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 19.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.93,
+     "t2m_max_avg_c": 17.59,
      "precip_mm_per_day": 1.19
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.48,
-     "t2m_max_c": 17.35,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.7,
+     "t2m_max_avg_c": 14.98,
      "precip_mm_per_day": 0.47
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.866666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.2,
-     "t2m_max_c": 14.28,
+     "t2m_min_avg_c": -9.26,
+     "t2m_max_avg_c": 12.05,
      "precip_mm_per_day": 0.13
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.566666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.29,
-     "t2m_max_c": 13.58,
+     "t2m_min_avg_c": -11.26,
+     "t2m_max_avg_c": 10.64,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.7,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -17.95,
-     "t2m_max_c": 12.35,
+     "t2m_min_avg_c": -12.43,
+     "t2m_max_avg_c": 10.07,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -13.86,
-     "t2m_max_c": 16.63,
+     "t2m_min_avg_c": -10.79,
+     "t2m_max_avg_c": 12.3,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.3,
-     "t2m_max_c": 17.72,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.79,
+     "t2m_max_avg_c": 13.93,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -9.81,
-     "t2m_max_c": 19.52,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.14,
+     "t2m_max_avg_c": 16.24,
      "precip_mm_per_day": 0.3
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.86,
-     "t2m_max_c": 19.72,
+     "daylight_h": 13.116666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -6.99,
+     "t2m_max_avg_c": 17.45,
      "precip_mm_per_day": 0.56
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.41,
-     "t2m_max_c": 20.48,
+     "t2m_min_avg_c": -6.6,
+     "t2m_max_avg_c": 18.71,
      "precip_mm_per_day": 1.51
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct, Nov); no month stands out by 10 min."
   },
   {
    "rank": 41,
@@ -9222,104 +9074,101 @@
      "month": 1,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -49.32,
-     "t2m_max_c": -7.74,
+     "t2m_min_avg_c": -41.42,
+     "t2m_max_avg_c": -18.75,
      "precip_mm_per_day": 0.35
     },
     {
      "month": 2,
-     "daylight_h": 4.75,
-     "low_sun_h": 2.6666666666666665,
-     "t2m_min_c": -46.81,
-     "t2m_max_c": -7.63,
+     "daylight_h": 4.683333333333334,
+     "low_sun_h": 2.6,
+     "t2m_min_avg_c": -42.26,
+     "t2m_max_avg_c": -20.23,
      "precip_mm_per_day": 0.36
     },
     {
      "month": 3,
      "daylight_h": 11.083333333333334,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -49.29,
-     "t2m_max_c": -3.69,
+     "low_sun_h": 1.1,
+     "t2m_min_avg_c": -41.51,
+     "t2m_max_avg_c": -13.85,
      "precip_mm_per_day": 0.49
     },
     {
      "month": 4,
      "daylight_h": 17.5,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -40.67,
-     "t2m_max_c": -2.95,
+     "low_sun_h": 1.35,
+     "t2m_min_avg_c": -32.02,
+     "t2m_max_avg_c": -7.53,
      "precip_mm_per_day": 0.54
     },
     {
      "month": 5,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -23.8,
-     "t2m_max_c": 1.79,
+     "t2m_min_avg_c": -19.19,
+     "t2m_max_avg_c": -0.29,
      "precip_mm_per_day": 0.73
     },
     {
      "month": 6,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -10.1,
-     "t2m_max_c": 15.27,
+     "t2m_min_avg_c": -6.09,
+     "t2m_max_avg_c": 10.5,
      "precip_mm_per_day": 1.33
     },
     {
      "month": 7,
      "daylight_h": 24.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -2.36,
-     "t2m_max_c": 17.32,
+     "t2m_min_avg_c": -0.08,
+     "t2m_max_avg_c": 14.02,
      "precip_mm_per_day": 1.83
     },
     {
      "month": 8,
-     "daylight_h": 20.833333333333332,
-     "low_sun_h": 2.1666666666666665,
-     "t2m_min_c": -8.9,
-     "t2m_max_c": 16.07,
+     "daylight_h": 20.816666666666666,
+     "low_sun_h": 2.1166666666666667,
+     "t2m_min_avg_c": -3.92,
+     "t2m_max_avg_c": 11.18,
      "precip_mm_per_day": 1.82
     },
     {
      "month": 9,
-     "daylight_h": 13.333333333333334,
-     "low_sun_h": 1.0833333333333333,
-     "t2m_min_c": -18.55,
-     "t2m_max_c": 5.89,
+     "daylight_h": 13.366666666666667,
+     "low_sun_h": 1.1,
+     "t2m_min_avg_c": -14.44,
+     "t2m_max_avg_c": 2.97,
      "precip_mm_per_day": 1.22
     },
     {
      "month": 10,
-     "daylight_h": 7.25,
-     "low_sun_h": 1.3333333333333333,
-     "t2m_min_c": -32.1,
-     "t2m_max_c": -0.16,
+     "daylight_h": 7.3,
+     "low_sun_h": 1.4333333333333333,
+     "t2m_min_avg_c": -26.55,
+     "t2m_max_avg_c": -2.93,
      "precip_mm_per_day": 0.96
     },
     {
      "month": 11,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -44.35,
-     "t2m_max_c": -5.64,
+     "t2m_min_avg_c": -34.51,
+     "t2m_max_avg_c": -11.13,
      "precip_mm_per_day": 0.53
     },
     {
      "month": 12,
      "daylight_h": 0.0,
      "low_sun_h": 0.0,
-     "t2m_min_c": -43.41,
-     "t2m_max_c": -7.87,
+     "t2m_min_avg_c": -38.65,
+     "t2m_max_avg_c": -14.75,
      "precip_mm_per_day": 0.46
     }
    ],
-   "best_months": [
-    8,
-    9
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 0 min a day in the months that pass our rain and temperature rules (May); no month stands out by 10 min."
   },
   {
    "rank": 42,
@@ -9446,107 +9295,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.333333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 15.83,
-     "t2m_max_c": 25.61,
+     "daylight_h": 13.316666666666666,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 17.21,
+     "t2m_max_avg_c": 24.2,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 2,
      "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 16.95,
-     "t2m_max_c": 25.99,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 18.1,
+     "t2m_max_avg_c": 24.6,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 16.3,
-     "t2m_max_c": 25.38,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 17.16,
+     "t2m_max_avg_c": 24.13,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 14.31,
-     "t2m_max_c": 24.69,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 15.49,
+     "t2m_max_avg_c": 22.87,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.816666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.19,
-     "t2m_max_c": 24.98,
+     "t2m_min_avg_c": 14.04,
+     "t2m_max_avg_c": 21.97,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 11.26,
-     "t2m_max_c": 24.7,
+     "daylight_h": 10.533333333333333,
+     "low_sun_h": 0.36666666666666664,
+     "t2m_min_avg_c": 12.73,
+     "t2m_max_avg_c": 21.99,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.65,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.85,
-     "t2m_max_c": 24.84,
+     "t2m_min_avg_c": 11.74,
+     "t2m_max_avg_c": 21.64,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 10.02,
-     "t2m_max_c": 24.8,
+     "t2m_min_avg_c": 11.79,
+     "t2m_max_avg_c": 21.36,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 10.33,
-     "t2m_max_c": 24.49,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.97,
+     "t2m_max_avg_c": 20.25,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.56,
-     "t2m_max_c": 22.37,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.75,
+     "t2m_max_avg_c": 20.35,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 13.17,
-     "t2m_max_c": 21.93,
+     "daylight_h": 13.15,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 13.92,
+     "t2m_max_avg_c": 21.15,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.97,
-     "t2m_max_c": 23.52,
+     "daylight_h": 13.483333333333333,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 15.35,
+     "t2m_max_avg_c": 22.51,
      "precip_mm_per_day": 0.02
     }
    ],
-   "best_months": [
-    4,
-    5,
-    6
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 43,
@@ -9675,107 +9520,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.3,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 16.69,
-     "t2m_max_c": 26.65,
+     "t2m_min_avg_c": 18.0,
+     "t2m_max_avg_c": 24.56,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 2,
      "daylight_h": 12.75,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 17.51,
-     "t2m_max_c": 26.38,
+     "t2m_min_avg_c": 18.85,
+     "t2m_max_avg_c": 24.82,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 16.56,
-     "t2m_max_c": 25.86,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 17.53,
+     "t2m_max_avg_c": 24.11,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 14.57,
-     "t2m_max_c": 24.27,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 15.76,
+     "t2m_max_avg_c": 22.67,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
      "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.07,
-     "t2m_max_c": 22.55,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 14.29,
+     "t2m_max_avg_c": 21.2,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.533333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.61,
-     "t2m_max_c": 23.89,
+     "t2m_min_avg_c": 12.96,
+     "t2m_max_avg_c": 20.74,
      "precip_mm_per_day": 0.08
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.683333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 10.98,
-     "t2m_max_c": 23.83,
+     "t2m_min_avg_c": 11.93,
+     "t2m_max_avg_c": 20.2,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 10.22,
-     "t2m_max_c": 25.0,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 11.9,
+     "t2m_max_avg_c": 20.0,
      "precip_mm_per_day": 0.05
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 10.56,
-     "t2m_max_c": 24.6,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 12.15,
+     "t2m_max_avg_c": 19.49,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 11.7,
-     "t2m_max_c": 22.17,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 13.12,
+     "t2m_max_avg_c": 19.74,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 13.6,
-     "t2m_max_c": 22.37,
+     "daylight_h": 13.133333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 14.38,
+     "t2m_max_avg_c": 21.06,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.466666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 14.86,
-     "t2m_max_c": 23.66,
+     "t2m_min_avg_c": 16.07,
+     "t2m_max_avg_c": 22.81,
      "precip_mm_per_day": 0.02
     }
    ],
-   "best_months": [
-    4,
-    5,
-    11
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 44,
@@ -9904,105 +9745,101 @@
      "month": 1,
      "daylight_h": 13.333333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.7,
-     "t2m_max_c": 32.89,
+     "t2m_min_avg_c": 8.66,
+     "t2m_max_avg_c": 30.49,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.09,
-     "t2m_max_c": 32.71,
+     "daylight_h": 12.766666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 8.7,
+     "t2m_max_avg_c": 30.3,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 6.21,
-     "t2m_max_c": 32.19,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 7.73,
+     "t2m_max_avg_c": 30.0,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 2.66,
-     "t2m_max_c": 31.21,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 5.57,
+     "t2m_max_avg_c": 28.79,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.59,
-     "t2m_max_c": 29.88,
+     "t2m_min_avg_c": 2.68,
+     "t2m_max_avg_c": 27.39,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 6,
      "daylight_h": 10.5,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -1.7,
-     "t2m_max_c": 31.08,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 0.97,
+     "t2m_max_avg_c": 26.6,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.633333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -3.62,
-     "t2m_max_c": 31.46,
+     "t2m_min_avg_c": -0.41,
+     "t2m_max_avg_c": 26.46,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -4.47,
-     "t2m_max_c": 31.53,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 0.71,
+     "t2m_max_avg_c": 28.34,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -1.3,
-     "t2m_max_c": 31.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 1.89,
+     "t2m_max_avg_c": 28.98,
      "precip_mm_per_day": 0.0
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.6,
-     "t2m_max_c": 32.47,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 4.07,
+     "t2m_max_avg_c": 29.69,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 11,
-     "daylight_h": 13.25,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.63,
-     "t2m_max_c": 32.7,
+     "t2m_min_avg_c": 5.69,
+     "t2m_max_avg_c": 30.36,
      "precip_mm_per_day": 0.01
     },
     {
      "month": 12,
      "daylight_h": 13.5,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 5.56,
-     "t2m_max_c": 32.35,
+     "t2m_min_avg_c": 7.0,
+     "t2m_max_avg_c": 30.44,
      "precip_mm_per_day": 0.03
     }
    ],
-   "best_months": [
-    4,
-    5,
-    10
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day all year; no month stands out by 10 min."
   },
   {
    "rank": 45,
@@ -10127,107 +9964,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.3,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.41,
-     "t2m_max_c": 22.57,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 21.03,
      "precip_mm_per_day": 3.57
     },
     {
      "month": 2,
      "daylight_h": 12.75,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -10.9,
-     "t2m_max_c": 21.77,
+     "t2m_min_avg_c": -5.87,
+     "t2m_max_avg_c": 19.76,
      "precip_mm_per_day": 3.63
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -10.96,
-     "t2m_max_c": 20.65,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.5,
+     "t2m_max_avg_c": 19.43,
      "precip_mm_per_day": 2.42
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.87,
-     "t2m_max_c": 19.17,
+     "daylight_h": 11.4,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.09,
+     "t2m_max_avg_c": 17.06,
      "precip_mm_per_day": 0.99
     },
     {
      "month": 5,
      "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -12.2,
-     "t2m_max_c": 16.23,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -8.11,
+     "t2m_max_avg_c": 14.22,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.533333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -13.1,
-     "t2m_max_c": 15.8,
+     "t2m_min_avg_c": -9.77,
+     "t2m_max_avg_c": 12.55,
      "precip_mm_per_day": 0.08
     },
     {
      "month": 7,
-     "daylight_h": 10.666666666666666,
+     "daylight_h": 10.683333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.12,
-     "t2m_max_c": 14.59,
+     "t2m_min_avg_c": -10.67,
+     "t2m_max_avg_c": 12.67,
      "precip_mm_per_day": 0.06
     },
     {
      "month": 8,
      "daylight_h": 11.166666666666666,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.14,
-     "t2m_max_c": 18.34,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.85,
+     "t2m_max_avg_c": 14.88,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -10.45,
-     "t2m_max_c": 19.75,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.25,
+     "t2m_max_avg_c": 17.08,
      "precip_mm_per_day": 0.11
     },
     {
      "month": 10,
-     "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -8.05,
-     "t2m_max_c": 21.27,
+     "daylight_h": 12.516666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.17,
+     "t2m_max_avg_c": 19.42,
      "precip_mm_per_day": 0.64
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -11.87,
-     "t2m_max_c": 23.13,
+     "daylight_h": 13.133333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.77,
+     "t2m_max_avg_c": 20.79,
      "precip_mm_per_day": 1.17
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.466666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.37,
-     "t2m_max_c": 22.8,
+     "t2m_min_avg_c": -7.11,
+     "t2m_max_avg_c": 21.37,
      "precip_mm_per_day": 3.0
     }
    ],
-   "best_months": [
-    5,
-    6,
-    7
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 18 min a day in the months that pass our rain and temperature rules (Apr, May, Jun, Jul, Aug, Sep, Oct); no month stands out by 10 min."
   },
   {
    "rank": 46,
@@ -10352,107 +10185,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.85,
-     "t2m_max_c": 21.18,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 18.07,
      "precip_mm_per_day": 1.23
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.04,
-     "t2m_max_c": 19.85,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.77,
+     "t2m_max_avg_c": 17.1,
      "precip_mm_per_day": 1.21
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.72,
-     "t2m_max_c": 18.27,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.84,
+     "t2m_max_avg_c": 16.84,
      "precip_mm_per_day": 0.76
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.15,
-     "t2m_max_c": 16.62,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.94,
+     "t2m_max_avg_c": 14.46,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.866666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.98,
-     "t2m_max_c": 13.47,
+     "t2m_min_avg_c": -9.74,
+     "t2m_max_avg_c": 11.35,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 6,
      "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.19,
-     "t2m_max_c": 12.62,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -11.99,
+     "t2m_max_avg_c": 9.93,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -18.16,
-     "t2m_max_c": 11.29,
+     "t2m_min_avg_c": -13.11,
+     "t2m_max_avg_c": 9.42,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.21,
-     "t2m_max_c": 15.57,
+     "t2m_min_avg_c": -11.83,
+     "t2m_max_avg_c": 11.47,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.27,
-     "t2m_max_c": 16.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.48,
+     "t2m_max_avg_c": 13.11,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -10.37,
-     "t2m_max_c": 18.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.29,
+     "t2m_max_avg_c": 15.32,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.116666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.61,
-     "t2m_max_c": 18.68,
+     "t2m_min_avg_c": -7.02,
+     "t2m_max_avg_c": 16.53,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.16,
-     "t2m_max_c": 19.23,
+     "daylight_h": 13.433333333333334,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -6.73,
+     "t2m_max_avg_c": 17.73,
      "precip_mm_per_day": 0.98
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 47,
@@ -10582,106 +10411,102 @@
     {
      "month": 1,
      "daylight_h": 4.5,
-     "low_sun_h": 1.5833333333333333,
-     "t2m_min_c": -21.69,
-     "t2m_max_c": 5.32,
+     "low_sun_h": 1.5166666666666666,
+     "t2m_min_avg_c": -17.44,
+     "t2m_max_avg_c": 2.55,
      "precip_mm_per_day": 2.56
     },
     {
      "month": 2,
-     "daylight_h": 8.25,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -21.37,
-     "t2m_max_c": 3.85,
+     "daylight_h": 8.183333333333334,
+     "low_sun_h": 0.8,
+     "t2m_min_avg_c": -17.99,
+     "t2m_max_avg_c": 2.13,
      "precip_mm_per_day": 2.34
     },
     {
      "month": 3,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -20.13,
-     "t2m_max_c": 3.89,
+     "daylight_h": 11.45,
+     "low_sun_h": 0.6833333333333333,
+     "t2m_min_avg_c": -16.95,
+     "t2m_max_avg_c": 2.2,
      "precip_mm_per_day": 2.28
     },
     {
      "month": 4,
-     "daylight_h": 15.0,
-     "low_sun_h": 0.75,
-     "t2m_min_c": -18.5,
-     "t2m_max_c": 5.93,
+     "daylight_h": 14.983333333333333,
+     "low_sun_h": 0.7166666666666667,
+     "t2m_min_avg_c": -14.9,
+     "t2m_max_avg_c": 2.62,
      "precip_mm_per_day": 2.11
     },
     {
      "month": 5,
-     "daylight_h": 18.5,
+     "daylight_h": 18.433333333333334,
      "low_sun_h": 1.0,
-     "t2m_min_c": -14.63,
-     "t2m_max_c": 9.14,
+     "t2m_min_avg_c": -9.91,
+     "t2m_max_avg_c": 4.99,
      "precip_mm_per_day": 2.17
     },
     {
      "month": 6,
-     "daylight_h": 21.25,
-     "low_sun_h": 1.6666666666666667,
-     "t2m_min_c": -5.84,
-     "t2m_max_c": 10.94,
+     "daylight_h": 21.216666666666665,
+     "low_sun_h": 1.6,
+     "t2m_min_avg_c": -3.3,
+     "t2m_max_avg_c": 7.4,
      "precip_mm_per_day": 1.91
     },
     {
      "month": 7,
      "daylight_h": 19.75,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -2.87,
-     "t2m_max_c": 11.41,
+     "low_sun_h": 1.2,
+     "t2m_min_avg_c": -0.51,
+     "t2m_max_avg_c": 8.35,
      "precip_mm_per_day": 2.67
     },
     {
      "month": 8,
-     "daylight_h": 16.333333333333332,
-     "low_sun_h": 0.8333333333333334,
-     "t2m_min_c": -4.02,
-     "t2m_max_c": 11.94,
+     "daylight_h": 16.3,
+     "low_sun_h": 0.7833333333333333,
+     "t2m_min_avg_c": -2.04,
+     "t2m_max_avg_c": 7.57,
      "precip_mm_per_day": 2.59
     },
     {
      "month": 9,
-     "daylight_h": 12.75,
+     "daylight_h": 12.8,
      "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -10.08,
-     "t2m_max_c": 7.97,
+     "t2m_min_avg_c": -5.95,
+     "t2m_max_avg_c": 6.27,
      "precip_mm_per_day": 3.01
     },
     {
      "month": 10,
      "daylight_h": 9.416666666666666,
-     "low_sun_h": 0.6666666666666666,
-     "t2m_min_c": -16.94,
-     "t2m_max_c": 6.46,
+     "low_sun_h": 0.7333333333333333,
+     "t2m_min_avg_c": -12.47,
+     "t2m_max_avg_c": 4.24,
      "precip_mm_per_day": 3.06
     },
     {
      "month": 11,
      "daylight_h": 5.75,
-     "low_sun_h": 1.1666666666666667,
-     "t2m_min_c": -20.3,
-     "t2m_max_c": 4.48,
+     "low_sun_h": 1.1166666666666667,
+     "t2m_min_avg_c": -15.81,
+     "t2m_max_avg_c": 2.85,
      "precip_mm_per_day": 3.16
     },
     {
      "month": 12,
      "daylight_h": 2.8333333333333335,
      "low_sun_h": 2.8333333333333335,
-     "t2m_min_c": -24.59,
-     "t2m_max_c": 4.31,
+     "t2m_min_avg_c": -18.02,
+     "t2m_max_avg_c": 2.87,
      "precip_mm_per_day": 2.9
     }
    ],
-   "best_months": [
-    1,
-    6,
-    12
-   ],
-   "best_months_rule": "Our rule: no month is that dry, so months with a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No month passes our rules (too wet: no month averages 1 mm of rain a day or less)."
   },
   {
    "rank": 48,
@@ -10808,107 +10633,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.85,
-     "t2m_max_c": 21.18,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 18.07,
      "precip_mm_per_day": 1.23
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.04,
-     "t2m_max_c": 19.85,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.77,
+     "t2m_max_avg_c": 17.1,
      "precip_mm_per_day": 1.21
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.72,
-     "t2m_max_c": 18.27,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.84,
+     "t2m_max_avg_c": 16.84,
      "precip_mm_per_day": 0.76
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.15,
-     "t2m_max_c": 16.62,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.94,
+     "t2m_max_avg_c": 14.46,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.866666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.98,
-     "t2m_max_c": 13.47,
+     "t2m_min_avg_c": -9.74,
+     "t2m_max_avg_c": 11.35,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.566666666666666,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.19,
-     "t2m_max_c": 12.62,
+     "t2m_min_avg_c": -11.99,
+     "t2m_max_avg_c": 9.93,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -18.16,
-     "t2m_max_c": 11.29,
+     "t2m_min_avg_c": -13.11,
+     "t2m_max_avg_c": 9.42,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
+     "daylight_h": 11.2,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.21,
-     "t2m_max_c": 15.57,
+     "t2m_min_avg_c": -11.83,
+     "t2m_max_avg_c": 11.47,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.27,
-     "t2m_max_c": 16.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.48,
+     "t2m_max_avg_c": 13.11,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -10.37,
-     "t2m_max_c": 18.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -7.29,
+     "t2m_max_avg_c": 15.32,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
+     "daylight_h": 13.116666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.61,
-     "t2m_max_c": 18.68,
+     "t2m_min_avg_c": -7.02,
+     "t2m_max_avg_c": 16.53,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 12,
-     "daylight_h": 13.416666666666666,
+     "daylight_h": 13.433333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.16,
-     "t2m_max_c": 19.23,
+     "t2m_min_avg_c": -6.73,
+     "t2m_max_avg_c": 17.73,
      "precip_mm_per_day": 0.98
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 49,
@@ -11035,107 +10856,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.25,
+     "daylight_h": 13.266666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -7.85,
-     "t2m_max_c": 21.18,
+     "t2m_min_avg_c": -5.57,
+     "t2m_max_avg_c": 18.07,
      "precip_mm_per_day": 1.23
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.04,
-     "t2m_max_c": 19.85,
+     "daylight_h": 12.716666666666667,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.77,
+     "t2m_max_avg_c": 17.1,
      "precip_mm_per_day": 1.21
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -7.72,
-     "t2m_max_c": 18.27,
+     "daylight_h": 12.1,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -5.84,
+     "t2m_max_avg_c": 16.84,
      "precip_mm_per_day": 0.76
     },
     {
      "month": 4,
      "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.15,
-     "t2m_max_c": 16.62,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -6.94,
+     "t2m_max_avg_c": 14.46,
      "precip_mm_per_day": 0.23
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -14.98,
-     "t2m_max_c": 13.47,
+     "daylight_h": 10.866666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -9.74,
+     "t2m_max_avg_c": 11.35,
      "precip_mm_per_day": 0.07
     },
     {
      "month": 6,
-     "daylight_h": 10.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -15.19,
-     "t2m_max_c": 12.62,
+     "daylight_h": 10.6,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -11.99,
+     "t2m_max_avg_c": 9.93,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.75,
+     "daylight_h": 10.716666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -18.16,
-     "t2m_max_c": 11.29,
+     "t2m_min_avg_c": -13.11,
+     "t2m_max_avg_c": 9.42,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 8,
-     "daylight_h": 11.25,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -14.21,
-     "t2m_max_c": 15.57,
+     "daylight_h": 11.2,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -11.83,
+     "t2m_max_avg_c": 11.47,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": -12.27,
-     "t2m_max_c": 16.47,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": -8.48,
+     "t2m_max_avg_c": 13.11,
      "precip_mm_per_day": 0.04
     },
     {
      "month": 10,
      "daylight_h": 12.5,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -10.37,
-     "t2m_max_c": 18.47,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.29,
+     "t2m_max_avg_c": 15.32,
      "precip_mm_per_day": 0.22
     },
     {
      "month": 11,
-     "daylight_h": 13.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -8.61,
-     "t2m_max_c": 18.68,
+     "daylight_h": 13.1,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": -7.02,
+     "t2m_max_avg_c": 16.53,
      "precip_mm_per_day": 0.33
     },
     {
      "month": 12,
      "daylight_h": 13.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": -9.16,
-     "t2m_max_c": 19.23,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": -6.73,
+     "t2m_max_avg_c": 17.73,
      "precip_mm_per_day": 0.98
     }
    ],
-   "best_months": [
-    6,
-    7,
-    8
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 19 min a day in the months that pass our rain and temperature rules (Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec); no month stands out by 10 min."
   },
   {
    "rank": 50,
@@ -11262,106 +11079,103 @@
    "calendar": [
     {
      "month": 1,
-     "daylight_h": 13.333333333333334,
+     "daylight_h": 13.35,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 9.6,
-     "t2m_max_c": 42.86,
+     "t2m_min_avg_c": 14.02,
+     "t2m_max_avg_c": 40.1,
      "precip_mm_per_day": 0.44
     },
     {
      "month": 2,
-     "daylight_h": 12.75,
+     "daylight_h": 12.783333333333333,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 11.15,
-     "t2m_max_c": 42.83,
+     "t2m_min_avg_c": 14.46,
+     "t2m_max_avg_c": 39.79,
      "precip_mm_per_day": 0.79
     },
     {
      "month": 3,
-     "daylight_h": 12.083333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 9.4,
-     "t2m_max_c": 41.13,
+     "daylight_h": 12.116666666666667,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 13.43,
+     "t2m_max_avg_c": 38.52,
      "precip_mm_per_day": 0.48
     },
     {
      "month": 4,
-     "daylight_h": 11.416666666666666,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.56,
-     "t2m_max_c": 38.07,
+     "daylight_h": 11.383333333333333,
+     "low_sun_h": 0.3,
+     "t2m_min_avg_c": 10.37,
+     "t2m_max_avg_c": 35.68,
      "precip_mm_per_day": 0.46
     },
     {
      "month": 5,
-     "daylight_h": 10.833333333333334,
+     "daylight_h": 10.8,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 4.59,
-     "t2m_max_c": 35.22,
+     "t2m_min_avg_c": 8.26,
+     "t2m_max_avg_c": 33.37,
      "precip_mm_per_day": 0.11
     },
     {
      "month": 6,
      "daylight_h": 10.5,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 1.94,
-     "t2m_max_c": 32.66,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 5.01,
+     "t2m_max_avg_c": 30.38,
      "precip_mm_per_day": 0.02
     },
     {
      "month": 7,
-     "daylight_h": 10.583333333333334,
+     "daylight_h": 10.616666666666667,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 1.07,
-     "t2m_max_c": 32.99,
+     "t2m_min_avg_c": 4.11,
+     "t2m_max_avg_c": 30.18,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 8,
-     "daylight_h": 11.083333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 0.9,
-     "t2m_max_c": 35.41,
+     "daylight_h": 11.133333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 3.67,
+     "t2m_max_avg_c": 32.62,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 9,
      "daylight_h": 11.833333333333334,
-     "low_sun_h": 0.25,
-     "t2m_min_c": 2.6,
-     "t2m_max_c": 39.28,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 6.24,
+     "t2m_max_avg_c": 36.76,
      "precip_mm_per_day": 0.03
     },
     {
      "month": 10,
-     "daylight_h": 12.583333333333334,
-     "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 5.17,
-     "t2m_max_c": 41.17,
+     "daylight_h": 12.533333333333333,
+     "low_sun_h": 0.31666666666666665,
+     "t2m_min_avg_c": 7.77,
+     "t2m_max_avg_c": 39.11,
      "precip_mm_per_day": 0.09
     },
     {
      "month": 11,
-     "daylight_h": 13.25,
+     "daylight_h": 13.183333333333334,
      "low_sun_h": 0.3333333333333333,
-     "t2m_min_c": 7.76,
-     "t2m_max_c": 42.11,
+     "t2m_min_avg_c": 10.37,
+     "t2m_max_avg_c": 39.76,
      "precip_mm_per_day": 0.14
     },
     {
      "month": 12,
-     "daylight_h": 13.583333333333334,
-     "low_sun_h": 0.4166666666666667,
-     "t2m_min_c": 9.5,
-     "t2m_max_c": 41.77,
+     "daylight_h": 13.516666666666667,
+     "low_sun_h": 0.35,
+     "t2m_min_avg_c": 12.05,
+     "t2m_max_avg_c": 39.55,
      "precip_mm_per_day": 0.11
     }
    ],
-   "best_months": [
-    6,
-    7
-   ],
-   "best_months_rule": "Our rule: months with at most 1 mm of rain per day and a mean daily low at least -25 °C and high at most 35 °C, ranked by low-sun hours per day."
+   "best_months": [],
+   "best_months_rule": "No suggested month: low-sun time is about 20 min a day in the months that pass our rain and temperature rules (May, Jun, Jul, Aug); no month stands out by 10 min."
   }
  ]
 }
