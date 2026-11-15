@@ -42,6 +42,8 @@ class SunBand(Strict):
     high_deg: float
     elevations_used: list[float]
     preview_elevation_deg: float
+    jett5_region_id: Optional[str] = None
+    jett5_low_sun_min: Optional[list[float]] = None
 
 
 class ArtemisCoverage(Strict):
@@ -145,8 +147,8 @@ class MonthCal(Strict):
     month: int = Field(ge=1, le=12)
     daylight_h: float = Field(ge=0, le=24)
     low_sun_h: Optional[float] = Field(default=None, ge=0, le=24)
-    t2m_min_c: Optional[float] = None
-    t2m_max_c: Optional[float] = None
+    t2m_min_avg_c: Optional[float] = None  # mean daily low (NASA POWER T2M_MIN_AVG)
+    t2m_max_avg_c: Optional[float] = None  # mean daily high (NASA POWER T2M_MAX_AVG)
     precip_mm_per_day: Optional[float] = None
 
 

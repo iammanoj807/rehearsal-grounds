@@ -127,53 +127,56 @@ def read_window(grid: np.ndarray, row: int, col: int, patch: int, margin: int) -
 
 
 # ---------------------------------------------------------------- Earth sun position (NOAA)
-def _julian_century(t: dt.datetime) -> float:
-    jd = t.timestamp() / 86400.0 + 2440587.5
-    return (jd - 2451545.0) / 36525.0
-
-
-def solar_elevation(lat_deg: float, lon_deg: float, t_utc: dt.datetime) -> float:
-    """True (unrefracted) solar elevation in degrees, NOAA solar calculator equations."""
-    jc = _julian_century(t_utc)
+def solar_elevation_array(lat_deg: float, lon_deg: float, t_unix_s: np.ndarray) -> np.ndarray:
+    """True (unrefracted) solar elevation in degrees for an array of UTC Unix times, NOAA equations."""
+    t_unix_s = np.asarray(t_unix_s, dtype=np.float64)
+    jc = (t_unix_s / 86400.0 + 2440587.5 - 2451545.0) / 36525.0
     l0 = (280.46646 + jc * (36000.76983 + jc * 0.0003032)) % 360.0
     m = 357.52911 + jc * (35999.05029 - 0.0001537 * jc)
     ecc = 0.016708634 - jc * (0.000042037 + 0.0000001267 * jc)
     mr = np.radians(m)
     center = (np.sin(mr) * (1.914602 - jc * (0.004817 + 0.000014 * jc)) + np.sin(2 * mr) * (0.019993 - 0.000101 * jc)
               + np.sin(3 * mr) * 0.000289)
-    true_long = l0 + center
     omega = 125.04 - 1934.136 * jc
-    app_long = true_long - 0.00569 - 0.00478 * np.sin(np.radians(omega))
+    app_long = l0 + center - 0.00569 - 0.00478 * np.sin(np.radians(omega))
     obliq0 = 23.0 + (26.0 + (21.448 - jc * (46.815 + jc * (0.00059 - jc * 0.001813))) / 60.0) / 60.0
     obliq = obliq0 + 0.00256 * np.cos(np.radians(omega))
-    decl = np.degrees(np.arcsin(np.sin(np.radians(obliq)) * np.sin(np.radians(app_long))))
+    decl = np.arcsin(np.sin(np.radians(obliq)) * np.sin(np.radians(app_long)))
     y = np.tan(np.radians(obliq / 2.0)) ** 2
     l0r = np.radians(l0)
     eq_time = 4.0 * np.degrees(y * np.sin(2 * l0r) - 2 * ecc * np.sin(mr) + 4 * ecc * y * np.sin(mr) * np.cos(2 * l0r)
                                - 0.5 * y * y * np.sin(4 * l0r) - 1.25 * ecc * ecc * np.sin(2 * mr))
-    minutes = t_utc.hour * 60.0 + t_utc.minute + t_utc.second / 60.0
+    minutes = (t_unix_s % 86400.0) / 60.0
     true_solar = (minutes + eq_time + 4.0 * lon_deg) % 1440.0
-    hour_angle = true_solar / 4.0 - 180.0 if true_solar / 4.0 >= 0 else true_solar / 4.0 + 180.0
-    lat, dec, ha = np.radians(lat_deg), np.radians(decl), np.radians(hour_angle)
-    cos_zen = np.sin(lat) * np.sin(dec) + np.cos(lat) * np.cos(dec) * np.cos(ha)
-    return float(90.0 - np.degrees(np.arccos(np.clip(cos_zen, -1.0, 1.0))))
+    ha = np.radians(true_solar / 4.0 - 180.0)
+    lat = np.radians(lat_deg)
+    cos_zen = np.sin(lat) * np.sin(decl) + np.cos(lat) * np.cos(decl) * np.cos(ha)
+    return 90.0 - np.degrees(np.arccos(np.clip(cos_zen, -1.0, 1.0)))
+
+
+def solar_elevation(lat_deg: float, lon_deg: float, t_utc: dt.datetime) -> float:
+    """True (unrefracted) solar elevation in degrees at one UTC time, NOAA solar calculator equations."""
+    return float(solar_elevation_array(lat_deg, lon_deg, np.array([t_utc.timestamp()]))[0])
+
+
+def day_sun_hours(lat_deg: float, lon_deg: float, day: dt.date, upper_deg: float,
+                  step_s: float = 60.0) -> tuple[float, float]:
+    """(daylight hours, hours with 0 < elevation <= upper_deg) for one local day.
+
+    The 24 h window is centred on local solar midnight so the day is counted whole;
+    samples are ``step_s`` seconds apart.
+    """
+    start = dt.datetime(day.year, day.month, day.day, tzinfo=dt.timezone.utc).timestamp() - 4.0 * lon_deg * 60.0
+    e = solar_elevation_array(lat_deg, lon_deg, start + np.arange(0.0, 86400.0, step_s))
+    lit = e > 0.0
+    return float(lit.sum()) * step_s / 3600.0, float((lit & (e <= upper_deg)).sum()) * step_s / 3600.0
 
 
 def monthly_sun_hours(lat_deg: float, lon_deg: float, year: int, upper_deg: float,
-                      step_min: int = 5) -> list[dict[str, Any]]:
+                      step_min: int = 1) -> list[dict[str, Any]]:
     """For the 15th of each month: daylight hours and hours with 0 < elevation <= upper_deg."""
     out = []
     for month in range(1, 13):
-        start = dt.datetime(year, month, 15, tzinfo=dt.timezone.utc)
-        # Centre the 24 h window on local solar midnight so one local day is counted whole.
-        offset = dt.timedelta(minutes=-4.0 * lon_deg)
-        day, low = 0, 0
-        for k in range(0, 24 * 60, step_min):
-            t = start + offset + dt.timedelta(minutes=k)
-            e = solar_elevation(lat_deg, lon_deg, t)
-            if e > 0.0:
-                day += 1
-                if e <= upper_deg:
-                    low += 1
-        out.append({"month": month, "daylight_h": day * step_min / 60.0, "low_sun_h": low * step_min / 60.0})
+        day_h, low_h = day_sun_hours(lat_deg, lon_deg, dt.date(year, month, 15), upper_deg, 60.0 * step_min)
+        out.append({"month": month, "daylight_h": day_h, "low_sun_h": low_h})
     return out

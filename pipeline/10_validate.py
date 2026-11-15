@@ -447,8 +447,8 @@ def main() -> int:
                            f"crater{'' if v1m['n_craters'] == 1 else 's'} survive{'s' if v1m['n_craters'] == 1 else ''} "
                            f"the masks; removed by the land-cover masks: "
                            f"{', '.join(crater_names[c] for c in v1m['craters_missing']) or 'none'})."
-                           + (" With fewer than three query craters these numbers are not meaningful; they are "
-                              "shown for completeness only." if v1m["n_craters"] < 3 else ""),
+                           + (" Three or fewer query craters are too few to interpret; these numbers are "
+                              "shown for completeness only." if v1m["n_craters"] <= 3 else ""),
             "n_craters": v1m["n_craters"], "rankers": v1m["rankers"],
         },
     })

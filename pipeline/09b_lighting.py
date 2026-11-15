@@ -36,11 +36,11 @@ import numpy as np
 import pandas as pd
 import rasterio
 
-from common import CACHE_DIR, get_logger, grids_dir, load_config, load_yaml, results_dir, run_dir, selected_targets
+from common import CACHE_DIR, RAW_DIR, get_logger, grids_dir, load_config, load_yaml, results_dir, run_dir, selected_targets
 from features import hillshade
 from lighting import (R_EARTH_M, R_MOON_M, band_elevations, cast_shadow_mask, horizon_angles, lighting_similarity,
                       monthly_sun_hours, read_window, shadow_fractions, solar_elevation, sun_band)
-from power import PowerError, fetch_climatology
+from precip import fetch_regional, nearest_monthly
 
 log = get_logger("09b_lighting")
 MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
@@ -72,52 +72,77 @@ def patch_window(meta: pd.DataFrame, patch_id: str, grids: Grids, patch: int, ma
     return read_window(grids.get(row["source_id"]), int(row["row"]), int(row["col"]), patch, margin)
 
 
-def monthly_climate(lat: float, lon: float) -> list[dict[str, float | None]]:
-    """NASA POWER monthly T2M_MIN, T2M_MAX and PRECTOTCORR (cached by step 09; refetched only if missing)."""
-    try:
-        data = fetch_climatology(lat, lon, CACHE_DIR / "power")
-    except PowerError as exc:
-        log.error("%s", exc)
-        return [{"t2m_min_c": None, "t2m_max_c": None, "precip_mm_per_day": None} for _ in MONTHS]
-    p = data["properties"]["parameter"]
+def monthly_climate(region_id: str, lat: float, lon: float) -> list[dict[str, float | None]]:
+    """NASA POWER monthly climatology at the grid cell nearest a site: mean daily low and high, and rain.
 
-    def val(name: str, mon: str) -> float | None:
-        v = p.get(name, {}).get(mon)
-        return None if v is None or v == -999.0 else float(v)
+    T2M_MIN_AVG / T2M_MAX_AVG are the monthly means of the daily minimum and maximum
+    (T2M_MIN / T2M_MAX would be the coldest and warmest hour of the month). The regional
+    endpoint takes one parameter per request, so each is fetched and cached per region:
+    data/cache/power_regional (rain, shared with step 04) and power_regional_<PARAM>.
+    """
+    bounds = json.loads((RAW_DIR / "earth" / "fetch_log.json").read_text())[region_id]["bounds"]
 
-    return [{"t2m_min_c": val("T2M_MIN", m), "t2m_max_c": val("T2M_MAX", m), "precip_mm_per_day": val("PRECTOTCORR", m)}
-            for m in MONTHS]
+    def grid(param: str) -> dict[str, Any]:
+        folder = "power_regional" if param == "PRECTOTCORR" else f"power_regional_{param}"
+        return fetch_regional(region_id, bounds, CACHE_DIR / folder, parameters=param)
+
+    lows = nearest_monthly(grid("T2M_MIN_AVG"), lat, lon, "T2M_MIN_AVG")
+    highs = nearest_monthly(grid("T2M_MAX_AVG"), lat, lon, "T2M_MAX_AVG")
+    rain = nearest_monthly(grid("PRECTOTCORR"), lat, lon, "PRECTOTCORR")
+    return [{"t2m_min_avg_c": lo, "t2m_max_avg_c": hi, "precip_mm_per_day": r} for lo, hi, r in zip(lows, highs, rain)]
 
 
 def best_months(calendar: list[dict[str, Any]], rules: dict[str, Any], key: str) -> tuple[list[int], str]:
-    """Suggested months under config/rehearsal.yaml, and a one-line statement of the rule applied."""
+    """Suggested months under config/rehearsal.yaml, and a one-line statement of the outcome.
+
+    A month is eligible when it passes BOTH the rain and the temperature rule. Months are
+    suggested only when the best eligible month has at least ``min_gain_min`` more minutes
+    of ``key`` (low-sun or daylight time) per day than the median eligible month; then the
+    eligible months that clear that bar, best first, up to ``n_best_months``. There is no
+    fallback: otherwise no month is suggested and the reason is stated.
+    """
     limit = float(rules["max_precip_mm_per_day"])
     tmin, tmax = float(rules["min_t2m_min_c"]), float(rules["max_t2m_max_c"])
-    n = int(rules["n_best_months"])
-
-    def temp_ok(c: dict[str, Any]) -> bool:
-        return ((c["t2m_min_c"] is None or c["t2m_min_c"] >= tmin)
-                and (c["t2m_max_c"] is None or c["t2m_max_c"] <= tmax))
+    gain, n = float(rules["min_gain_min"]), int(rules["n_best_months"])
+    label = "low-sun time" if key == "low_sun_h" else "daylight"
 
     def dry(c: dict[str, Any]) -> bool:
         return c["precip_mm_per_day"] is not None and c["precip_mm_per_day"] <= limit
 
-    if key == "low_sun_h":  # a month with no low-sun hours is no use for a low-Sun rehearsal
-        calendar = [c for c in calendar if (c["low_sun_h"] or 0.0) > 0.0]
-        if not calendar:
-            return [], "Our rule: no month has any low-sun hours at this site."
-    temps = f"mean daily low at least {tmin:g} °C and high at most {tmax:g} °C"
-    both = [c for c in calendar if dry(c) and temp_ok(c)]
-    warm_enough = [c for c in calendar if temp_ok(c)]
-    if both:
-        pool, note = both, f"months with at most {limit:g} mm of rain per day and a {temps}"
-    elif warm_enough:
-        pool, note = warm_enough, f"no month is that dry, so months with a {temps}"
-    else:
-        pool, note = calendar, f"no month has a {temps}, so all months"
-    ranked = sorted(pool, key=lambda c: (-(c[key] or 0.0), c["precip_mm_per_day"] or 0.0))
-    label = "low-sun hours" if key == "low_sun_h" else "daylight hours"
-    return sorted(c["month"] for c in ranked[:n]), f"Our rule: {note}, ranked by {label} per day."
+    def not_cold(c: dict[str, Any]) -> bool:
+        return c["t2m_min_avg_c"] is not None and c["t2m_min_avg_c"] >= tmin
+
+    def not_hot(c: dict[str, Any]) -> bool:
+        return c["t2m_max_avg_c"] is not None and c["t2m_max_avg_c"] <= tmax
+
+    eligible = [c for c in calendar if dry(c) and not_cold(c) and not_hot(c)]
+    if not eligible:
+        reasons = []
+        if not any(dry(c) for c in calendar):
+            reasons.append(f"too wet: no month averages {limit:g} mm of rain a day or less")
+        if not any(not_cold(c) for c in calendar):
+            reasons.append(f"too cold: no month has a mean daily low of {tmin:g} °C or warmer")
+        if not any(not_hot(c) for c in calendar):
+            reasons.append(f"too hot: no month has a mean daily high of {tmax:g} °C or cooler")
+        if not reasons:
+            reasons.append("the dry months are too cold or too hot")
+        return [], f"No month passes our rules ({'; '.join(reasons)})."
+    minutes = {c["month"]: 60.0 * (c[key] or 0.0) for c in calendar}
+    vals = np.array([minutes[c["month"]] for c in eligible])
+    med = float(np.median(vals))
+    if vals.max() - med < gain:
+        names = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+        when = ("all year" if len(eligible) == 12 else
+                "in the months that pass our rain and temperature rules ("
+                + ", ".join(names[c["month"] - 1] for c in eligible) + ")")
+        return [], (f"No suggested month: {label} is about {med:.0f} min a day {when}; no month stands out by "
+                    f"{gain:g} min.")
+    ranked = sorted((c for c in eligible if minutes[c["month"]] - med >= gain),
+                    key=lambda c: (-minutes[c["month"]], c["precip_mm_per_day"]))
+    return (sorted(c["month"] for c in ranked[:n]),
+            f"Our rule: months with at most {limit:g} mm of rain a day, a mean daily low of at least {tmin:g} °C and "
+            f"a mean daily high of at most {tmax:g} °C, and at least {gain:g} more minutes of {label} a day than the "
+            "median such month.")
 
 
 def self_checks(lcfg: dict[str, Any]) -> list[dict[str, Any]]:
@@ -140,10 +165,10 @@ def self_checks(lcfg: dict[str, Any]) -> list[dict[str, Any]]:
     checks.append({"check": "Lunar curvature drop at 10 km is d^2 / 2R = 28.8 m", "passed": bool(abs(drop - 28.78) < 0.05),
                    "detail": f"{drop:.2f} m (Earth: {10_000.0**2 / (2 * R_EARTH_M):.2f} m)"})
     e = solar_elevation(39.742476, -105.1786, dt.datetime(2003, 10, 17, 19, 30, 30, tzinfo=dt.timezone.utc))
-    checks.append({"check": "Solar elevation matches the published NREL SPA example within 0.2 degrees",
-                   "passed": bool(abs(e - 39.88838) <= 0.2),
-                   "detail": f"{e:.3f} deg true elevation vs 39.888 deg published (apparent, with refraction); "
-                             "Reda and Andreas 2004, NREL/TP-560-34302"})
+    checks.append({"check": "Solar elevation matches the published NREL SPA example (unrefracted) within 0.05 degrees",
+                   "passed": bool(abs(e - 39.872046) <= 0.05),
+                   "detail": f"ours {e:.4f} deg true elevation; NREL SPA e0 = 39.8720 deg topocentric without refraction "
+                             "(39.8884 deg with refraction); Reda and Andreas 2004, NREL/TP-560-34302"})
     return checks
 
 
@@ -189,6 +214,7 @@ def main() -> int:
         np.save(lowsun_dir() / f"lowsun_{pid.replace(':', '_')}.npy", np.where(dark, 0.0, shade).astype(np.float32))
         previews.add(pid)
 
+    jett5 = next((r for r in load_yaml("regions.yaml")["regions"] if r.get("field_test")), None)
     for t in selected_targets(load_yaml("targets.yaml")["targets"]):
         tid = t["id"]
         sites = pd.read_parquet(results_dir() / f"{tid}.parquet").sort_values("rank")
@@ -201,6 +227,10 @@ def main() -> int:
             used = band_elevations(band, elevs)
             tinfo.update(latitude_deg=lat, low_deg=band[0], high_deg=band[1], elevations_used=used,
                          preview_elevation_deg=float(np.clip((band[0] + band[1]) / 2.0, 0.5, None)))
+        if moon and jett5 is not None:
+            hrs = monthly_sun_hours(jett5["lat"], jett5["lon"], int(lcfg["sun_hours_year"]), tinfo["high_deg"],
+                                    int(lcfg["sun_hours_step_min"]))
+            tinfo.update(jett5_region_id=jett5["id"], jett5_low_sun_min=[60.0 * h["low_sun_h"] for h in hrs])
         doc["targets"][tid] = tinfo
         out_sites: dict[str, Any] = {}
         for r in sites.itertuples():
@@ -220,7 +250,7 @@ def main() -> int:
             upper = tinfo["high_deg"] if moon else 0.0
             hours = monthly_sun_hours(float(r.lat), float(r.lon), int(lcfg["sun_hours_year"]), upper,
                                       int(lcfg["sun_hours_step_min"]))
-            clim = monthly_climate(float(r.lat), float(r.lon))
+            clim = monthly_climate(r.region_id, float(r.lat), float(r.lon))
             cal = [{**h, **c, "low_sun_h": h["low_sun_h"] if moon else None} for h, c in zip(hours, clim)]
             months, rule = best_months(cal, rules, "low_sun_h" if moon else "daylight_h")
             rec.update(calendar=cal, best_months=months, best_months_rule=rule)

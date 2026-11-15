@@ -65,12 +65,12 @@ def test_lighting_similarity_bounds() -> None:
 
 
 def test_solar_elevation_matches_published_spa_example() -> None:
-    # NREL Solar Position Algorithm example (Reda and Andreas 2004, NREL/TP-560-34302, table A5.1):
-    # 2003-10-17 12:30:30 local time (UTC-7) at 39.742476 N, 105.1786 W gives a topocentric
-    # zenith angle of 50.11162 degrees with refraction, i.e. an apparent elevation of 39.88838.
+    # NREL Solar Position Algorithm example (Reda and Andreas 2004, NREL/TP-560-34302): 2003-10-17
+    # 12:30:30 local time (UTC-7) at 39.742476 N, 105.1786 W. The report gives the topocentric
+    # elevation without refraction e0 = 39.872046 deg (and 39.888378 deg with refraction).
     t = dt.datetime(2003, 10, 17, 19, 30, 30, tzinfo=dt.timezone.utc)
     e = lighting.solar_elevation(39.742476, -105.1786, t)
-    assert e == pytest.approx(39.88838, abs=0.2)
+    assert e == pytest.approx(39.872046, abs=0.05)
 
 
 def test_monthly_sun_hours_shape_and_polar_night() -> None:
@@ -78,6 +78,20 @@ def test_monthly_sun_hours_shape_and_polar_night() -> None:
     assert [h["month"] for h in hours] == list(range(1, 13))
     assert hours[11]["daylight_h"] == 0.0  # Svalbard in December: polar night
     assert all(0.0 <= h["low_sun_h"] <= h["daylight_h"] <= 24.0 for h in hours)
+
+
+def test_low_sun_minutes_are_not_quantised() -> None:
+    # Mid-latitude site (the JETT5 area, 35.6 N): low-sun time changes smoothly from day to day,
+    # and the 1-minute sampling agrees with a 10-second reference within 2 minutes.
+    lat, lon, upper = 35.58, -111.63, 5.58
+    days = [dt.date(2025, 3, d) for d in range(10, 21)]
+    lows = [lighting.day_sun_hours(lat, lon, d, upper, 60.0)[1] * 60.0 for d in days]
+    assert max(abs(a - b) for a, b in zip(lows, lows[1:])) < 2.0
+    for month in (1, 4, 7, 10):
+        d = dt.date(2025, month, 15)
+        coarse = lighting.day_sun_hours(lat, lon, d, upper, 60.0)[1] * 60.0
+        fine = lighting.day_sun_hours(lat, lon, d, upper, 10.0)[1] * 60.0
+        assert abs(coarse - fine) < 2.0
 
 
 def test_read_window_flags_edges() -> None:

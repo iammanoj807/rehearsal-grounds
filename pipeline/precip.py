@@ -41,16 +41,17 @@ def request_box(bounds: list[float], min_span: float = MIN_SPAN_DEG) -> tuple[fl
     return (round(cx - half_x, 3), round(south, 3), round(cx + half_x, 3), round(north, 3))
 
 
-def fetch_regional(region_id: str, bounds: list[float], cache_dir: Path, *, retries: int = 3, backoff_s: float = 2.0,
+def fetch_regional(region_id: str, bounds: list[float], cache_dir: Path, *, parameters: str = "PRECTOTCORR",
+                   retries: int = 3, backoff_s: float = 2.0,
                    timeout_s: float = 120.0, get: Callable[..., Any] = requests.get,
                    sleep: Callable[[float], None] = time.sleep) -> dict[str, Any]:
-    """PRECTOTCORR climatology for every grid cell around a region, cached per region."""
+    """Climatology of ``parameters`` for every grid cell around a region, cached per region."""
     cache_dir.mkdir(parents=True, exist_ok=True)
     path = cache_dir / f"{region_id}.json"
     if path.exists():
         return json.loads(path.read_text())
     w, s, e, n = request_box(bounds)
-    params = {"parameters": "PRECTOTCORR", "community": "RE", "longitude-min": f"{w:.3f}",
+    params = {"parameters": parameters, "community": "RE", "longitude-min": f"{w:.3f}",
               "longitude-max": f"{e:.3f}", "latitude-min": f"{s:.3f}", "latitude-max": f"{n:.3f}", "format": "JSON"}
     last: Exception | None = None
     for attempt in range(1, retries + 1):
@@ -89,3 +90,16 @@ def nearest_annual_mm(lats: np.ndarray, lons: np.ndarray, cells: np.ndarray) -> 
     dx = (np.asarray(lons, dtype=float)[:, None] - cells[None, :, 0]) * coslat
     dy = np.asarray(lats, dtype=float)[:, None] - cells[None, :, 1]
     return cells[np.argmin(dx**2 + dy**2, axis=1), 2]
+
+
+MONTHS = ("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
+
+
+def nearest_monthly(data: dict[str, Any], lat: float, lon: float, parameter: str) -> list[float | None]:
+    """Twelve monthly values of ``parameter`` at the grid cell nearest to (lat, lon)."""
+    feats = data["features"]
+    coords = np.array([f["geometry"]["coordinates"][:2] for f in feats], dtype=float)
+    d2 = ((coords[:, 0] - lon) * np.cos(np.radians(lat))) ** 2 + (coords[:, 1] - lat) ** 2
+    vals = feats[int(np.argmin(d2))]["properties"]["parameter"][parameter]
+    return [None if vals.get(m) in (None, FILL) else float(vals[m]) for m in MONTHS]
+
