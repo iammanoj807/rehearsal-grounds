@@ -75,7 +75,7 @@ export default function BriefPage() {
             </>
           )}
         </div>
-        <p className="brief-fine">All patches 3.84 km across, drawn at 30 m from the original maps (scores use the 60 m grid), light from the north-west, one shared contrast stretch per view type.</p>
+        <p className="brief-fine">All patches 3.84 km across, drawn at 30 m from the original maps (scores use the 60 m grid), light from the north-west, one shared contrast stretch per view type.{m.images.target_rotation_deg ? ` The ${body} patch is turned ${m.images.target_rotation_deg}° anticlockwise, as the image embedding matched it.` : ''}{m.fingerprint ? ` Slope distributions overlap ${(m.fingerprint.overlap * 100).toFixed(0)}%.` : ''}</p>
         <div className="brief-cols">
           <section>
             <h2>What matches</h2>

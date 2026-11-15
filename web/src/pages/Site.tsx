@@ -4,6 +4,7 @@ import LoadState from '../components/LoadState.tsx'
 import ScoreBars from '../components/ScoreBars.tsx'
 import SiteInset from '../components/SiteInset.tsx'
 import TerrainTwin from '../components/TerrainTwin.tsx'
+import FingerprintChart from '../components/FingerprintChart.tsx'
 import { bodyLabel, dataUrl, fmt, latLon, pct, useJson } from '../data.ts'
 import { monthNames } from '../exportShortlist.ts'
 import type { LightingInfo, Match, Region, Results, Target, Terrain } from '../types.ts'
@@ -255,11 +256,30 @@ export default function SitePage() {
               two views. Scale bars are 1 km.
             </p>
           )}
+          {!!m.images.target_rotation_deg && (
+            <p className="small center rotation-note">
+              The {body} patch is shown turned {m.images.target_rotation_deg}° anticlockwise: the orientation in which the
+              image embedding matched it. The terrain fingerprint ignores orientation (see the rotation check on the
+              Validation page).
+            </p>
+          )}
+          <details className="why-different">
+            <summary>Why don’t the two patches look identical?</summary>
+            <p className="small">
+              The score compares the terrain’s character, not its picture: how the ground is spread across slope bands,
+              its relief, roughness and bowl-or-dome shape, plus an image embedding of the shaded relief. Two patches can
+              share that fingerprint while their ridges and gullies sit in different places, the way two forests can have
+              the same mix of trees without the same layout. The {body} maps are also smoother than Earth’s, because
+              much of the LOLA surface is filled in between laser tracks. The chart under “Why it matches” shows the
+              slope part of the fingerprint for both patches.
+            </p>
+          </details>
         </section>
 
         <div className="site-grid">
           <section className="card" aria-labelledby="why">
             <h2 id="why">Why it matches</h2>
+            <FingerprintChart m={m} target={target} />
             <ScoreBars scores={m.sub_scores} />
             <p className="small muted">
               Bars: how close this pair is compared with random pairs of Earth patches from different regions (100 =

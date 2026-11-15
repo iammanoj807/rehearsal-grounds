@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T06:34:11+00:00",
+ "generated_at": "2026-11-15T06:51:53+00:00",
  "config_hash": "dd5750c9db20bb99af014ed6b768b149a987b13e6795cec93154a0a859abcca0",
  "n_earth_patches": 65555,
  "n_searchable": 43794,
@@ -10,7 +10,7 @@
   "embed": 0.4
  },
  "hillshade_stretch": [
-  0.4386,
-  0.8947
+  0.4441,
+  0.8969
  ]
 }

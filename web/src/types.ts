@@ -114,7 +114,14 @@ export interface Match {
   strong_match: string[]
   breaks_down: string[]
   tests_suited: string[]
-  images: { earth_hillshade: string; target_hillshade: string; lowsun_earth?: string | null; lowsun_target?: string | null }
+  images: {
+    earth_hillshade: string
+    target_hillshade: string
+    lowsun_earth?: string | null
+    lowsun_target?: string | null
+    target_rotation_deg?: number
+  }
+  fingerprint?: { slope_bins_deg: number[]; target: number[]; earth: number[]; overlap: number } | null
   lighting?: Lighting | null
   calendar?: MonthCal[] | null
   best_months?: number[] | null

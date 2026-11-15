@@ -94,9 +94,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1568_192.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1568_192.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 89.630126953125,
@@ -133,6 +134,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.044677734375,
+     0.2314453125,
+     0.325439453125,
+     0.2421875,
+     0.094482421875,
+     0.061767578125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.05078125,
+     0.18701171875,
+     0.41455078125,
+     0.205810546875,
+     0.099365234375,
+     0.04248046875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.89990234375
    },
    "calendar": [
     {
@@ -318,9 +353,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_352_672.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_128.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_128_r3.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_352_672.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_128.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_128_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.47699652777779,
@@ -357,6 +393,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.003173828125,
+     0.02685546875,
+     0.25341796875,
+     0.43408203125,
+     0.264892578125,
+     0.017578125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.003662109375,
+     0.021484375,
+     0.229248046875,
+     0.452880859375,
+     0.252685546875,
+     0.0400390625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.958251953125
    },
    "calendar": [
     {
@@ -544,7 +614,8 @@
     "earth_hillshade": "img/patches/askja_480_1024.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
     "lowsun_earth": "img/lowsun/askja_480_1024.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 83.5903591579861,
@@ -581,6 +652,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.22705078125,
+     0.11279296875,
+     0.361328125,
+     0.25927734375,
+     0.03369140625,
+     0.005615234375,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.767578125
    },
    "calendar": [
     {
@@ -764,9 +869,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1536_128.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1536_128.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.04296875,
@@ -803,6 +909,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.084716796875,
+     0.18896484375,
+     0.30126953125,
+     0.302978515625,
+     0.11083984375,
+     0.01123046875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.92236328125
    },
    "calendar": [
     {
@@ -988,9 +1128,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1280_1344.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_192.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_192_r2.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1280_1344.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_192.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_192_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 89.42735460069444,
@@ -1027,6 +1168,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.04296875,
+     0.25244140625,
+     0.452392578125,
+     0.198486328125,
+     0.051025390625,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03173828125,
+     0.43603515625,
+     0.387451171875,
+     0.081787109375,
+     0.0400390625,
+     0.02294921875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.796142578125
    },
    "calendar": [
     {
@@ -1211,9 +1386,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_0_672.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_0_672.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 92.61067708333333,
@@ -1250,6 +1426,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.044677734375,
+     0.2314453125,
+     0.325439453125,
+     0.2421875,
+     0.094482421875,
+     0.061767578125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.064697265625,
+     0.2001953125,
+     0.314697265625,
+     0.20166015625,
+     0.12548828125,
+     0.09326171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.91748046875
    },
    "calendar": [
     {
@@ -1433,9 +1643,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_608_320.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_608_320.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 96.37722439236111,
@@ -1472,6 +1683,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.008056640625,
+     0.22412109375,
+     0.507080078125,
+     0.208251953125,
+     0.03857421875,
+     0.013916015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.922119140625
    },
    "calendar": [
     {
@@ -1656,9 +1901,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_128_864.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_128_864.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 83.06003146701389,
@@ -1695,6 +1941,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.06005859375,
+     0.27783203125,
+     0.4296875,
+     0.197265625,
+     0.03076171875,
+     0.00439453125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.953125
    },
    "calendar": [
     {
@@ -1881,9 +2161,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_256_928.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_256_928.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.71351453993056,
@@ -1920,6 +2201,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07470703125,
+     0.359130859375,
+     0.475341796875,
+     0.072265625,
+     0.016357421875,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.1640625,
+     0.388427734375,
+     0.2919921875,
+     0.100830078125,
+     0.040771484375,
+     0.013916015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.816650390625
    },
    "calendar": [
     {
@@ -2103,9 +2418,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1280_160.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1280_160.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 91.67073567708333,
@@ -2142,6 +2458,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.044677734375,
+     0.2314453125,
+     0.325439453125,
+     0.2421875,
+     0.094482421875,
+     0.061767578125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.070068359375,
+     0.271728515625,
+     0.384765625,
+     0.21044921875,
+     0.06298828125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.875
    },
    "calendar": [
     {
@@ -2326,9 +2676,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1152_992.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1152_992.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.65738932291667,
@@ -2365,6 +2716,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.078857421875,
+     0.247802734375,
+     0.430908203125,
+     0.1630859375,
+     0.037109375,
+     0.0400390625,
+     0.002197265625,
+     0.0
+    ],
+    "overlap": 0.91357421875
    },
    "calendar": [
     {
@@ -2551,9 +2936,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_608_352.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_96.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_96_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_608_352.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_96.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_96_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.5834689670139,
@@ -2590,6 +2976,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.021728515625,
+     0.1611328125,
+     0.367919921875,
+     0.3623046875,
+     0.0869140625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.076904296875,
+     0.26708984375,
+     0.424560546875,
+     0.191650390625,
+     0.037353515625,
+     0.00244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.77978515625
    },
    "calendar": [
     {
@@ -2774,9 +3194,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1376_384.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1376_384.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.32644314236111,
@@ -2813,6 +3234,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.044677734375,
+     0.2314453125,
+     0.325439453125,
+     0.2421875,
+     0.094482421875,
+     0.061767578125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03271484375,
+     0.282470703125,
+     0.387451171875,
+     0.204345703125,
+     0.076904296875,
+     0.01611328125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.886962890625
    },
    "calendar": [
     {
@@ -2997,9 +3452,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_864_1216.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_64_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_864_1216.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 96.14529079861111,
@@ -3036,6 +3492,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.04296875,
+     0.286865234375,
+     0.3779296875,
+     0.25,
+     0.0419921875,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03564453125,
+     0.29248046875,
+     0.39794921875,
+     0.183349609375,
+     0.046875,
+     0.043701171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.926025390625
    },
    "calendar": [
     {
@@ -3223,9 +3713,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1568_800.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1568_800.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 96.49793836805556,
@@ -3262,6 +3753,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0009765625,
+     0.228515625,
+     0.506103515625,
+     0.17236328125,
+     0.071533203125,
+     0.0205078125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.883544921875
    },
    "calendar": [
     {
@@ -3448,7 +3973,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_928_672.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_96.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_928_672.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_96.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 99.072265625,
@@ -3485,6 +4011,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.021484375,
+     0.0791015625,
+     0.25146484375,
+     0.32373046875,
+     0.2939453125,
+     0.0302734375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.034423828125,
+     0.071044921875,
+     0.17236328125,
+     0.3603515625,
+     0.314697265625,
+     0.047119140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.912841796875
    },
    "calendar": [
     {
@@ -3669,9 +4229,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1536_1600.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1536_1600.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 83.82297092013889,
@@ -3708,6 +4269,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.142333984375,
+     0.184326171875,
+     0.48486328125,
+     0.182373046875,
+     0.005859375,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.853271484375
    },
    "calendar": [
     {
@@ -3892,9 +4487,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1408_1344.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_128_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_128_64_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1408_1344.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_128_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_128_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 92.8466796875,
@@ -3931,6 +4527,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.037841796875,
+     0.23974609375,
+     0.310302734375,
+     0.205078125,
+     0.117431640625,
+     0.089599609375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.003173828125,
+     0.156494140625,
+     0.417724609375,
+     0.209716796875,
+     0.134521484375,
+     0.078125,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.87060546875
    },
    "calendar": [
     {
@@ -4117,7 +4747,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_768_736.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_768_736.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 94.01312934027777,
@@ -4154,6 +4785,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.109619140625,
+     0.221435546875,
+     0.307861328125,
+     0.23095703125,
+     0.11572265625,
+     0.014404296875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.86572265625
    },
    "calendar": [
     {
@@ -4339,7 +5004,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1152_416.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1152_416.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 94.29185655381944,
@@ -4376,6 +5042,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07470703125,
+     0.359130859375,
+     0.475341796875,
+     0.072265625,
+     0.016357421875,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.075927734375,
+     0.45654296875,
+     0.431640625,
+     0.0322265625,
+     0.00341796875,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.9013671875
    },
    "calendar": [
     {
@@ -4560,9 +5260,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_704_64.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_704_64.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 84.69102647569444,
@@ -4599,6 +5300,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.021728515625,
+     0.322509765625,
+     0.5,
+     0.139404296875,
+     0.015869140625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.88232421875
    },
    "calendar": [
     {
@@ -4782,9 +5517,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1056_128.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_96.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_96_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1056_128.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_96.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_96_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.42409939236111,
@@ -4821,6 +5557,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.021728515625,
+     0.1611328125,
+     0.367919921875,
+     0.3623046875,
+     0.0869140625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.135986328125,
+     0.21728515625,
+     0.275390625,
+     0.2109375,
+     0.11669921875,
+     0.04248046875,
+     0.001220703125,
+     0.0
+    ],
+    "overlap": 0.756103515625
    },
    "calendar": [
     {
@@ -5004,9 +5774,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1184_512.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1184_512.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 92.59101019965277,
@@ -5043,6 +5814,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.142822265625,
+     0.188720703125,
+     0.286865234375,
+     0.23876953125,
+     0.122802734375,
+     0.02001953125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.843505859375
    },
    "calendar": [
     {
@@ -5227,9 +6032,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_1248_1248.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224_r2.png",
     "lowsun_earth": "img/lowsun/askja_1248_1248.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 99.55512152777779,
@@ -5266,6 +6072,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07470703125,
+     0.359130859375,
+     0.475341796875,
+     0.072265625,
+     0.016357421875,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.149658203125,
+     0.361572265625,
+     0.35595703125,
+     0.094970703125,
+     0.020751953125,
+     0.01708984375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.880615234375
    },
    "calendar": [
     {
@@ -5450,7 +6290,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1376_576.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1376_576.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.51014539930556,
@@ -5487,6 +6328,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.042236328125,
+     0.23046875,
+     0.37451171875,
+     0.210693359375,
+     0.09765625,
+     0.04345703125,
+     0.0009765625,
+     0.0
+    ],
+    "overlap": 0.864990234375
    },
    "calendar": [
     {
@@ -5671,9 +6546,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_352_800.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_352_800.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 96.90483940972223,
@@ -5710,6 +6586,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00439453125,
+     0.35498046875,
+     0.38037109375,
+     0.1943359375,
+     0.05615234375,
+     0.009765625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.87548828125
    },
    "calendar": [
     {
@@ -5893,9 +6803,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1376_704.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_32.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_32_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1376_704.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_32_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 90.313720703125,
@@ -5932,6 +6843,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.034912109375,
+     0.177978515625,
+     0.236328125,
+     0.396240234375,
+     0.128662109375,
+     0.02587890625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.002197265625,
+     0.041748046875,
+     0.41748046875,
+     0.30419921875,
+     0.184326171875,
+     0.050048828125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.739013671875
    },
    "calendar": [
     {
@@ -6115,9 +7060,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1056_224.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1056_224.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 92.87109375,
@@ -6154,6 +7100,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.055419921875,
+     0.267578125,
+     0.3603515625,
+     0.20947265625,
+     0.0791015625,
+     0.028076171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.84814453125
    },
    "calendar": [
     {
@@ -6338,9 +7318,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_576_832.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_576_832.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 92.11357964409723,
@@ -6377,6 +7358,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.04443359375,
+     0.300048828125,
+     0.370361328125,
+     0.188720703125,
+     0.07568359375,
+     0.020751953125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.890869140625
    },
    "calendar": [
     {
@@ -6561,7 +7576,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_224_448.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_224_448.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.5791015625,
@@ -6598,6 +7614,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.034423828125,
+     0.29296875,
+     0.34619140625,
+     0.186767578125,
+     0.104736328125,
+     0.033447265625,
+     0.00146484375,
+     0.0
+    ],
+    "overlap": 0.841064453125
    },
    "calendar": [
     {
@@ -6779,9 +7829,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1536_832.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1536_832.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 90.08653428819444,
@@ -6818,6 +7869,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.08740234375,
+     0.333740234375,
+     0.30126953125,
+     0.168212890625,
+     0.070068359375,
+     0.039306640625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.80126953125
    },
    "calendar": [
     {
@@ -7001,9 +8086,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_672_64.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_64_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_672_64.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 95.39998372395833,
@@ -7040,6 +8126,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.04296875,
+     0.286865234375,
+     0.3779296875,
+     0.25,
+     0.0419921875,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.13037109375,
+     0.203369140625,
+     0.245849609375,
+     0.2578125,
+     0.13037109375,
+     0.0322265625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.784423828125
    },
    "calendar": [
     {
@@ -7221,9 +8341,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1344_768.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1344_768.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 92.27837456597223,
@@ -7260,6 +8381,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.08544921875,
+     0.3369140625,
+     0.336669921875,
+     0.161376953125,
+     0.0654296875,
+     0.01416015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.829833984375
    },
    "calendar": [
     {
@@ -7444,7 +8599,8 @@
     "earth_hillshade": "img/patches/askja_1312_224.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_64.png",
     "lowsun_earth": "img/lowsun/askja_1312_224.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.94395616319444,
@@ -7481,6 +8637,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.04296875,
+     0.286865234375,
+     0.3779296875,
+     0.25,
+     0.0419921875,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.14599609375,
+     0.251708984375,
+     0.339111328125,
+     0.162353515625,
+     0.070068359375,
+     0.03076171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.83837890625
    },
    "calendar": [
     {
@@ -7663,9 +8853,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_448_64.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_448_64.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 95.26163736979166,
@@ -7702,6 +8893,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.015380859375,
+     0.17919921875,
+     0.56787109375,
+     0.16845703125,
+     0.0478515625,
+     0.021240234375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8447265625
    },
    "calendar": [
     {
@@ -7887,9 +9112,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_640_288.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224_r2.png",
     "lowsun_earth": "img/lowsun/askja_640_288.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 99.82977973090279,
@@ -7926,6 +9152,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07470703125,
+     0.359130859375,
+     0.475341796875,
+     0.072265625,
+     0.016357421875,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.17724609375,
+     0.337158203125,
+     0.31298828125,
+     0.1015625,
+     0.0400390625,
+     0.031005859375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.815673828125
    },
    "calendar": [
     {
@@ -8107,9 +9367,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_544_608.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_0_224_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_544_608.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_0_224_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 89.68505859375,
@@ -8146,6 +9407,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07470703125,
+     0.359130859375,
+     0.475341796875,
+     0.072265625,
+     0.016357421875,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.140869140625,
+     0.269287109375,
+     0.40966796875,
+     0.156005859375,
+     0.020751953125,
+     0.00341796875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.844482421875
    },
    "calendar": [
     {
@@ -8326,9 +9621,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_960_320.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_960_320.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 92.41672092013889,
@@ -8365,6 +9661,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0,
+     0.031005859375,
+     0.62548828125,
+     0.339599609375,
+     0.00390625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.703125
    },
    "calendar": [
     {
@@ -8547,9 +9877,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1024_352.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_96.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_96_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1024_352.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_96.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_96_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.85186089409721,
@@ -8586,6 +9917,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.021728515625,
+     0.1611328125,
+     0.367919921875,
+     0.3623046875,
+     0.0869140625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.013427734375,
+     0.12451171875,
+     0.561279296875,
+     0.185791015625,
+     0.073974609375,
+     0.039794921875,
+     0.001220703125,
+     0.0
+    ],
+    "overlap": 0.765625
    },
    "calendar": [
     {
@@ -8769,9 +10134,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_352_896.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_352_896.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 84.027099609375,
@@ -8808,6 +10174,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0390625,
+     0.31591796875,
+     0.413330078125,
+     0.1396484375,
+     0.052001953125,
+     0.039306640625,
+     0.000732421875,
+     0.0
+    ],
+    "overlap": 0.884765625
    },
    "calendar": [
     {
@@ -8992,9 +10392,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/namib_896_800.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/namib_896_800.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 99.29945203993056,
@@ -9031,6 +10432,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.040283203125,
+     0.255859375,
+     0.361328125,
+     0.193115234375,
+     0.087646484375,
+     0.060302734375,
+     0.00146484375,
+     0.0
+    ],
+    "overlap": 0.882080078125
    },
    "calendar": [
     {
@@ -9215,9 +10650,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_768_416.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_768_416.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 92.28651258680556,
@@ -9254,6 +10690,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0234375,
+     0.414794921875,
+     0.408447265625,
+     0.08251953125,
+     0.056884765625,
+     0.013916015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.810791015625
    },
    "calendar": [
     {
@@ -9438,9 +10908,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_288_640.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_96_64_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_288_640.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_96_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 99.48323567708333,
@@ -9477,6 +10948,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.044677734375,
+     0.2314453125,
+     0.325439453125,
+     0.2421875,
+     0.094482421875,
+     0.061767578125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0380859375,
+     0.176513671875,
+     0.35888671875,
+     0.2255859375,
+     0.136474609375,
+     0.064453125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.921875
    },
    "calendar": [
     {
@@ -9659,9 +11164,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/lut_352_1568.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_192.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_192_r1.png",
     "lowsun_earth": "img/lowsun/lut_352_1568.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_192.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_192_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.0090603298611,
@@ -9698,6 +11204,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.046142578125,
+     0.295654296875,
+     0.487060546875,
+     0.1220703125,
+     0.0400390625,
+     0.009033203125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.109375,
+     0.41650390625,
+     0.38916015625,
+     0.080322265625,
+     0.00439453125,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.81591796875
    },
    "calendar": [
     {
@@ -9882,7 +11422,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_352_1280.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_352_1280.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 88.45893012152779,
@@ -9919,6 +11460,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.049560546875,
+     0.336669921875,
+     0.442138671875,
+     0.13037109375,
+     0.0390625,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.904296875
    },
    "calendar": [
     {
@@ -10102,9 +11677,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1024_416.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1024_416.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 95.10769314236111,
@@ -10141,6 +11717,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.021484375,
+     0.3583984375,
+     0.33251953125,
+     0.183349609375,
+     0.089111328125,
+     0.01513671875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.833740234375
    },
    "calendar": [
     {
@@ -10324,9 +11934,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_896_608.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_32.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_32_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_896_608.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_32_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 99.44118923611111,
@@ -10363,6 +11974,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.034912109375,
+     0.177978515625,
+     0.236328125,
+     0.396240234375,
+     0.128662109375,
+     0.02587890625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.12060546875,
+     0.23681640625,
+     0.208984375,
+     0.22412109375,
+     0.15478515625,
+     0.0546875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.800537109375
    },
    "calendar": [
     {
@@ -10547,9 +12192,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_864_1440.png",
-    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64.png",
+    "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_64_r2.png",
     "lowsun_earth": "img/lowsun/askja_864_1440.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_64_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 87.03070746527779,
@@ -10586,6 +12232,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.260009765625,
+     0.4453125,
+     0.222900390625,
+     0.036376953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.220458984375,
+     0.255615234375,
+     0.304443359375,
+     0.147705078125,
+     0.047607421875,
+     0.024169921875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.779541015625
    },
    "calendar": [
     {
@@ -10770,7 +12450,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_480_832.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_32_32.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_480_832.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_32_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 84.6096462673611,
@@ -10807,6 +12488,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.032470703125,
+     0.19775390625,
+     0.327392578125,
+     0.345703125,
+     0.0947265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.198974609375,
+     0.250732421875,
+     0.23095703125,
+     0.22607421875,
+     0.05908203125,
+     0.0341796875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.748291015625
    },
    "calendar": [
     {
@@ -10992,7 +12707,8 @@
     "earth_hillshade": "img/patches/death_valley_960_1088.png",
     "target_hillshade": "img/patches/moon_site06_nobile_rim_1_64_64.png",
     "lowsun_earth": "img/lowsun/death_valley_960_1088.png",
-    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64.png"
+    "lowsun_target": "img/lowsun/moon_site06_nobile_rim_1_64_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.36968315972223,
@@ -11029,6 +12745,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.04296875,
+     0.286865234375,
+     0.3779296875,
+     0.25,
+     0.0419921875,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00244140625,
+     0.223876953125,
+     0.5185546875,
+     0.172607421875,
+     0.06591796875,
+     0.0166015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.819091796875
    },
    "calendar": [
     {

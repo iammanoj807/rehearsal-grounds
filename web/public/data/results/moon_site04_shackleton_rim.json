@@ -96,7 +96,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1344_1312.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1344_1312.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 76.60115559895834,
@@ -133,6 +134,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.065673828125,
+     0.2177734375,
+     0.435791015625,
+     0.218017578125,
+     0.05322265625,
+     0.009033203125,
+     0.00048828125,
+     0.0
+    ],
+    "overlap": 0.844970703125
    },
    "calendar": [
     {
@@ -318,9 +353,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_480_1024.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r2.png",
     "lowsun_earth": "img/lowsun/askja_480_1024.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 88.9614529079861,
@@ -357,6 +393,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.22705078125,
+     0.11279296875,
+     0.361328125,
+     0.25927734375,
+     0.03369140625,
+     0.005615234375,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.79248046875
    },
    "calendar": [
     {
@@ -543,7 +613,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_928_672.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_32_32.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_928_672.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_32.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 86.60617404513889,
@@ -580,6 +651,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0,
+     0.0009765625,
+     0.13037109375,
+     0.402587890625,
+     0.343994140625,
+     0.1220703125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.034423828125,
+     0.071044921875,
+     0.17236328125,
+     0.3603515625,
+     0.314697265625,
+     0.047119140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.853515625
    },
    "calendar": [
     {
@@ -765,7 +870,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1376_576.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1376_576.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 95.95201280381946,
@@ -802,6 +908,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.042236328125,
+     0.23046875,
+     0.37451171875,
+     0.210693359375,
+     0.09765625,
+     0.04345703125,
+     0.0009765625,
+     0.0
+    ],
+    "overlap": 0.803955078125
    },
    "calendar": [
     {
@@ -986,7 +1126,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_608_384.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_608_384.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 97.85224066840279,
@@ -1023,6 +1164,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.032958984375,
+     0.221435546875,
+     0.491455078125,
+     0.209716796875,
+     0.043212890625,
+     0.001220703125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.87451171875
    },
    "calendar": [
     {
@@ -1206,9 +1381,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_672_256.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_672_256.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 87.80449761284721,
@@ -1245,6 +1421,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0009765625,
+     0.23828125,
+     0.360107421875,
+     0.2744140625,
+     0.0859375,
+     0.038818359375,
+     0.00146484375,
+     0.0
+    ],
+    "overlap": 0.871826171875
    },
    "calendar": [
     {
@@ -1429,7 +1639,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1216_192.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1216_192.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.59605577256946,
@@ -1466,6 +1677,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.021728515625,
+     0.249755859375,
+     0.423828125,
+     0.241455078125,
+     0.060791015625,
+     0.00244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.855224609375
    },
    "calendar": [
     {
@@ -1650,9 +1895,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1280_1280.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_0_96.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_0_96_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1280_1280.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_0_96.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_0_96_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 88.72477213541666,
@@ -1689,6 +1935,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.006103515625,
+     0.044921875,
+     0.095458984375,
+     0.09716796875,
+     0.17041015625,
+     0.490966796875,
+     0.094970703125,
+     0.0
+    ],
+    "earth": [
+     0.01806640625,
+     0.087158203125,
+     0.176513671875,
+     0.116943359375,
+     0.063720703125,
+     0.356201171875,
+     0.181396484375,
+     0.0
+    ],
+    "overlap": 0.758544921875
    },
    "calendar": [
     {
@@ -1875,9 +2155,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_992_448.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_128_192.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_128_192_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_992_448.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_128_192.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_128_192_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.44292534722221,
@@ -1914,6 +2195,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0,
+     0.001220703125,
+     0.049072265625,
+     0.131591796875,
+     0.052490234375,
+     0.580078125,
+     0.185546875,
+     0.0
+    ],
+    "earth": [
+     0.037353515625,
+     0.045654296875,
+     0.07861328125,
+     0.117919921875,
+     0.12451171875,
+     0.35205078125,
+     0.243408203125,
+     0.00048828125
+    ],
+    "overlap": 0.75830078125
    },
    "calendar": [
     {
@@ -2099,9 +2414,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1536_128.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1536_128.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 97.96549479166666,
@@ -2138,6 +2454,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.084716796875,
+     0.18896484375,
+     0.30126953125,
+     0.302978515625,
+     0.11083984375,
+     0.01123046875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.865478515625
    },
    "calendar": [
     {
@@ -2322,9 +2672,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1248_384.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1248_384.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.43562825520834,
@@ -2361,6 +2712,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.007568359375,
+     0.30322265625,
+     0.35400390625,
+     0.21630859375,
+     0.09033203125,
+     0.028564453125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.772705078125
    },
    "calendar": [
     {
@@ -2546,7 +2931,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_128_384.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_128_384.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.03474934895833,
@@ -2583,6 +2969,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.07666015625,
+     0.1796875,
+     0.343017578125,
+     0.263671875,
+     0.10400390625,
+     0.031982421875,
+     0.0009765625,
+     0.0
+    ],
+    "overlap": 0.825439453125
    },
    "calendar": [
     {
@@ -2768,7 +3188,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_320_1408.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_320_1408.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 97.40261501736111,
@@ -2805,6 +3226,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.174072265625,
+     0.1689453125,
+     0.3076171875,
+     0.215087890625,
+     0.11181640625,
+     0.0224609375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.73779296875
    },
    "calendar": [
     {
@@ -2988,9 +3443,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1600_160.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1600_160.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 93.32004123263889,
@@ -3027,6 +3483,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.04638671875,
+     0.142333984375,
+     0.3046875,
+     0.30859375,
+     0.172119140625,
+     0.02587890625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.843505859375
    },
    "calendar": [
     {
@@ -3213,7 +3703,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_864_1216.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_864_1216.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.99346245659721,
@@ -3250,6 +3741,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03564453125,
+     0.29248046875,
+     0.39794921875,
+     0.183349609375,
+     0.046875,
+     0.043701171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.783203125
    },
    "calendar": [
     {
@@ -3438,7 +3963,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1600_800.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1600_800.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 83.58629014756946,
@@ -3475,6 +4001,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.003173828125,
+     0.231689453125,
+     0.49365234375,
+     0.17041015625,
+     0.07421875,
+     0.02685546875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.862060546875
    },
    "calendar": [
     {
@@ -3659,9 +4219,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_576_832.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_576_832.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.427490234375,
@@ -3698,6 +4259,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.04443359375,
+     0.300048828125,
+     0.370361328125,
+     0.188720703125,
+     0.07568359375,
+     0.020751953125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.7724609375
    },
    "calendar": [
     {
@@ -3884,7 +4479,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1024_352.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1024_352.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 89.2367892795139,
@@ -3921,6 +4517,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.013427734375,
+     0.12451171875,
+     0.561279296875,
+     0.185791015625,
+     0.073974609375,
+     0.039794921875,
+     0.001220703125,
+     0.0
+    ],
+    "overlap": 0.902099609375
    },
    "calendar": [
     {
@@ -4105,9 +4735,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1152_992.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1152_992.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 97.4609375,
@@ -4144,6 +4775,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.078857421875,
+     0.247802734375,
+     0.430908203125,
+     0.1630859375,
+     0.037109375,
+     0.0400390625,
+     0.002197265625,
+     0.0
+    ],
+    "overlap": 0.81396484375
    },
    "calendar": [
     {
@@ -4331,9 +4996,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_352_736.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_160_32.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_160_32_r3.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_352_736.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_160_32.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_160_32_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 84.54386393229166,
@@ -4370,6 +5036,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0126953125,
+     0.041015625,
+     0.261962890625,
+     0.42724609375,
+     0.195556640625,
+     0.0615234375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00537109375,
+     0.038330078125,
+     0.239013671875,
+     0.382080078125,
+     0.25927734375,
+     0.075927734375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.921875
    },
    "calendar": [
     {
@@ -4555,9 +5255,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_672_192.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_672_192.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 97.23849826388889,
@@ -4594,6 +5295,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00537109375,
+     0.221435546875,
+     0.41259765625,
+     0.22314453125,
+     0.103515625,
+     0.033935546875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8359375
    },
    "calendar": [
     {
@@ -4776,9 +5511,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1184_512.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1184_512.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.62890625,
@@ -4815,6 +5551,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.142822265625,
+     0.188720703125,
+     0.286865234375,
+     0.23876953125,
+     0.122802734375,
+     0.02001953125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.786865234375
    },
    "calendar": [
     {
@@ -4999,7 +5769,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_480_832.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_480_832.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 82.94338650173611,
@@ -5036,6 +5807,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.198974609375,
+     0.250732421875,
+     0.23095703125,
+     0.22607421875,
+     0.05908203125,
+     0.0341796875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.671142578125
    },
    "calendar": [
     {
@@ -5222,7 +6027,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_768_704.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_768_704.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.97447374131946,
@@ -5259,6 +6065,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.05126953125,
+     0.260986328125,
+     0.36962890625,
+     0.23095703125,
+     0.081787109375,
+     0.00537109375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.798583984375
    },
    "calendar": [
     {
@@ -5445,7 +6285,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_640_32.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_32_96.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_640_32.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_96.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 79.07579210069444,
@@ -5482,6 +6323,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.00439453125,
+     0.02783203125,
+     0.066162109375,
+     0.125732421875,
+     0.141845703125,
+     0.30029296875,
+     0.333740234375,
+     0.0
+    ],
+    "earth": [
+     0.01025390625,
+     0.026123046875,
+     0.1904296875,
+     0.137451171875,
+     0.10595703125,
+     0.298095703125,
+     0.228759765625,
+     0.0029296875
+    ],
+    "overlap": 0.855224609375
    },
    "calendar": [
     {
@@ -5666,7 +6541,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1152_512.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_32_0.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1152_512.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_0.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 94.94764539930554,
@@ -5703,6 +6579,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.013671875,
+     0.085693359375,
+     0.385986328125,
+     0.498046875,
+     0.0166015625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0,
+     0.00341796875,
+     0.432373046875,
+     0.558837890625,
+     0.00537109375,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.892822265625
    },
    "calendar": [
     {
@@ -5885,7 +6795,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_0_512.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_0_512.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 94.317626953125,
@@ -5922,6 +6833,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0263671875,
+     0.08984375,
+     0.415771484375,
+     0.3505859375,
+     0.09814453125,
+     0.019287109375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.024169921875,
+     0.136474609375,
+     0.3310546875,
+     0.281005859375,
+     0.174072265625,
+     0.052490234375,
+     0.000732421875,
+     0.0
+    ],
+    "overlap": 0.843505859375
    },
    "calendar": [
     {
@@ -6106,7 +7051,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_960_320.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_32_0.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_960_320.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_0.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 94.8330349392361,
@@ -6143,6 +7089,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.013671875,
+     0.085693359375,
+     0.385986328125,
+     0.498046875,
+     0.0166015625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0,
+     0.031005859375,
+     0.62548828125,
+     0.339599609375,
+     0.00390625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.760498046875
    },
    "calendar": [
     {
@@ -6325,9 +7305,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_32_736.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_32_736.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 86.64143880208334,
@@ -6364,6 +7345,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.025390625,
+     0.152099609375,
+     0.36669921875,
+     0.255615234375,
+     0.15771484375,
+     0.0419921875,
+     0.00048828125,
+     0.0
+    ],
+    "overlap": 0.841064453125
    },
    "calendar": [
     {
@@ -6547,9 +7562,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_1216_0.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/askja_1216_0.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 90.83184136284721,
@@ -6586,6 +7602,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.058349609375,
+     0.267578125,
+     0.415283203125,
+     0.152099609375,
+     0.06689453125,
+     0.039306640625,
+     0.00048828125,
+     0.0
+    ],
+    "overlap": 0.7861328125
    },
    "calendar": [
     {
@@ -6768,9 +7818,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1376_704.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_32_96.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_32_96_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1376_704.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_96.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_32_96_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 84.60557725694444,
@@ -6807,6 +7858,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.00439453125,
+     0.02783203125,
+     0.066162109375,
+     0.125732421875,
+     0.141845703125,
+     0.30029296875,
+     0.333740234375,
+     0.0
+    ],
+    "earth": [
+     0.00390625,
+     0.022216796875,
+     0.122314453125,
+     0.130126953125,
+     0.137939453125,
+     0.326904296875,
+     0.2529296875,
+     0.003662109375
+    ],
+    "overlap": 0.9091796875
    },
    "calendar": [
     {
@@ -6988,9 +8073,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1344_800.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1344_800.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 98.55007595486111,
@@ -7027,6 +8113,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00439453125,
+     0.097412109375,
+     0.4609375,
+     0.283935546875,
+     0.092529296875,
+     0.05712890625,
+     0.003662109375,
+     0.0
+    ],
+    "overlap": 0.92578125
    },
    "calendar": [
     {
@@ -7213,7 +8333,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1344_1440.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1344_1440.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 97.77018229166667,
@@ -7250,6 +8371,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.040771484375,
+     0.1181640625,
+     0.4169921875,
+     0.2490234375,
+     0.114990234375,
+     0.06005859375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.884765625
    },
    "calendar": [
     {
@@ -7432,9 +8587,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1504_800.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1504_800.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 95.36878797743056,
@@ -7471,6 +8627,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.094970703125,
+     0.2353515625,
+     0.324462890625,
+     0.201171875,
+     0.091064453125,
+     0.052978515625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.744384765625
    },
    "calendar": [
     {
@@ -7654,9 +8844,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1024_416.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1024_416.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 99.35099283854167,
@@ -7693,6 +8884,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.021484375,
+     0.3583984375,
+     0.33251953125,
+     0.183349609375,
+     0.089111328125,
+     0.01513671875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.72119140625
    },
    "calendar": [
     {
@@ -7877,9 +9102,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1600_448.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_96_192.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_96_192_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1600_448.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_96_192.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_96_192_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 97.71592881944444,
@@ -7916,6 +9142,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.000244140625,
+     0.021728515625,
+     0.14892578125,
+     0.207275390625,
+     0.06982421875,
+     0.48974609375,
+     0.062255859375,
+     0.0
+    ],
+    "earth": [
+     0.185546875,
+     0.08056640625,
+     0.090087890625,
+     0.080322265625,
+     0.060791015625,
+     0.3662109375,
+     0.136474609375,
+     0.0
+    ],
+    "overlap": 0.681640625
    },
    "calendar": [
     {
@@ -8100,9 +9360,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1536_1600.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1536_1600.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 85.31358506944444,
@@ -8139,6 +9400,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.142333984375,
+     0.184326171875,
+     0.48486328125,
+     0.182373046875,
+     0.005859375,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8017578125
    },
    "calendar": [
     {
@@ -8324,9 +9619,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_1440_128.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/askja_1440_128.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 93.75745985243056,
@@ -8363,6 +9659,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.023193359375,
+     0.115478515625,
+     0.461181640625,
+     0.268310546875,
+     0.091552734375,
+     0.03759765625,
+     0.002685546875,
+     0.0
+    ],
+    "overlap": 0.947509765625
    },
    "calendar": [
     {
@@ -8547,9 +9877,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_128_864.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_128_864.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 83.87383355034721,
@@ -8586,6 +9917,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.06005859375,
+     0.27783203125,
+     0.4296875,
+     0.197265625,
+     0.03076171875,
+     0.00439453125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.841796875
    },
    "calendar": [
     {
@@ -8769,9 +10134,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_896_32.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_896_32.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 93.60758463541666,
@@ -8808,6 +10174,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0263671875,
+     0.08984375,
+     0.415771484375,
+     0.3505859375,
+     0.09814453125,
+     0.019287109375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001953125,
+     0.04931640625,
+     0.4072265625,
+     0.355712890625,
+     0.152099609375,
+     0.03369140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.926513671875
    },
    "calendar": [
     {
@@ -8991,7 +10391,8 @@
     "earth_hillshade": "img/patches/salar_de_uyuni_352_512.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/salar_de_uyuni_352_512.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 79.73904079861111,
@@ -9028,6 +10429,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.13916015625,
+     0.094970703125,
+     0.370361328125,
+     0.23681640625,
+     0.133056640625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8154296875
    },
    "calendar": [
     {
@@ -9211,9 +10646,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/salar_de_uyuni_160_384.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/salar_de_uyuni_160_384.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 95.47051323784721,
@@ -9250,6 +10686,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.1953125,
+     0.218017578125,
+     0.268798828125,
+     0.194580078125,
+     0.094970703125,
+     0.0283203125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.68212890625
    },
    "calendar": [
     {
@@ -9433,9 +10903,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/death_valley_960_1088.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r1.png",
     "lowsun_earth": "img/lowsun/death_valley_960_1088.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 86.43731011284721,
@@ -9472,6 +10943,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00244140625,
+     0.223876953125,
+     0.5185546875,
+     0.172607421875,
+     0.06591796875,
+     0.0166015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.868408203125
    },
    "calendar": [
     {
@@ -9653,9 +11158,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_288_960.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_64_0_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_288_960.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_64_0_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 98.95562065972221,
@@ -9692,6 +11198,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02490234375,
+     0.17333984375,
+     0.4150390625,
+     0.32373046875,
+     0.0625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.07080078125,
+     0.236572265625,
+     0.38623046875,
+     0.239013671875,
+     0.0576171875,
+     0.009765625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.881591796875
    },
    "calendar": [
     {
@@ -9874,9 +11414,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_832_0.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_832_0.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 99.1360134548611,
@@ -9913,6 +11454,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.035400390625,
+     0.205078125,
+     0.41259765625,
+     0.23876953125,
+     0.078125,
+     0.029541015625,
+     0.00048828125,
+     0.0
+    ],
+    "overlap": 0.8701171875
    },
    "calendar": [
     {
@@ -10098,7 +11673,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1408_0.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1408_0.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 92.12307400173611,
@@ -10135,6 +11711,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.108154296875,
+     0.232177734375,
+     0.2646484375,
+     0.18310546875,
+     0.15234375,
+     0.0595703125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.66650390625
    },
    "calendar": [
     {
@@ -10320,7 +11930,8 @@
     "earth_hillshade": "img/patches/namib_896_800.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/namib_896_800.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.0080837673611,
@@ -10357,6 +11968,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.040283203125,
+     0.255859375,
+     0.361328125,
+     0.193115234375,
+     0.087646484375,
+     0.060302734375,
+     0.00146484375,
+     0.0
+    ],
+    "overlap": 0.773193359375
    },
    "calendar": [
     {
@@ -10540,7 +12185,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_32_1600.png",
     "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_32_1600.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.94951714409721,
@@ -10577,6 +12223,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.02392578125,
+     0.10498046875,
+     0.508056640625,
+     0.273193359375,
+     0.063720703125,
+     0.026123046875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.04150390625,
+     0.279541015625,
+     0.42236328125,
+     0.14013671875,
+     0.08837890625,
+     0.028076171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.78125
    },
    "calendar": [
     {
@@ -10759,9 +12439,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_192_576.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_192_576.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 99.03632269965279,
@@ -10798,6 +12479,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0263671875,
+     0.08984375,
+     0.415771484375,
+     0.3505859375,
+     0.09814453125,
+     0.019287109375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.078369140625,
+     0.18505859375,
+     0.306396484375,
+     0.29541015625,
+     0.12255859375,
+     0.01220703125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.828369140625
    },
    "calendar": [
     {
@@ -10983,9 +12698,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1440_224.png",
-    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32.png",
+    "target_hillshade": "img/patches/moon_site04_shackleton_rim_192_32_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1440_224.png",
-    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32.png"
+    "lowsun_target": "img/lowsun/moon_site04_shackleton_rim_192_32_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 98.06450737847221,
@@ -11022,6 +12738,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0263671875,
+     0.08984375,
+     0.415771484375,
+     0.3505859375,
+     0.09814453125,
+     0.019287109375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.018310546875,
+     0.140625,
+     0.4765625,
+     0.26318359375,
+     0.092041015625,
+     0.00927734375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.888427734375
    },
    "calendar": [
     {

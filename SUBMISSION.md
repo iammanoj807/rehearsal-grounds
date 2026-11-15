@@ -42,7 +42,8 @@ each at least 10 km from the next, and how the usual analog regions rank. Every 
 
 - a swipe comparison of the target and Earth patches at the same scale, with a "Low sun" mode showing cast shadows
   at the middle of the target's noon Sun band;
-- five explanation bars (relief, slope, roughness, shape, image embedding) and a terrain table;
+- a slope-fingerprint chart of what the score compares (Malapert's top match: 92% of the two slope distributions
+  overlap), five explanation bars (relief, slope, roughness, shape, image embedding) and a terrain table;
 - a lighting similarity: the share of each patch in shadow at the target's low Sun elevations, compared;
 - a 12-month calendar of low-sun minutes, daylight, NASA POWER mean daily low and high and rain, with suggested
   months only where our rules find a clear best month (74 of 450 sites);

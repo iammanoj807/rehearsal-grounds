@@ -94,7 +94,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1120_352.png",
     "target_hillshade": "img/patches/moon_haworth_288_96.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1120_352.png",
-    "lowsun_target": "img/lowsun/moon_haworth_288_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_288_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.04416232638889,
@@ -132,6 +133,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0078125,
+     0.112548828125,
+     0.71728515625,
+     0.154296875,
+     0.008056640625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001220703125,
+     0.104736328125,
+     0.73974609375,
+     0.15380859375,
+     0.00048828125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.9775390625
    },
    "calendar": [
     {
@@ -315,9 +350,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_896_352.png",
-    "target_hillshade": "img/patches/moon_haworth_160_320.png",
+    "target_hillshade": "img/patches/moon_haworth_160_320_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_896_352.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_320.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_320_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 97.3361545138889,
@@ -355,6 +391,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.022216796875,
+     0.155029296875,
+     0.725341796875,
+     0.093017578125,
+     0.004150390625,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00341796875,
+     0.191650390625,
+     0.706298828125,
+     0.097900390625,
+     0.000732421875,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.95849609375
    },
    "calendar": [
     {
@@ -538,9 +608,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1056_544.png",
-    "target_hillshade": "img/patches/moon_haworth_192_320.png",
+    "target_hillshade": "img/patches/moon_haworth_192_320_r2.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1056_544.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_320.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_320_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 96.29889594184029,
@@ -578,6 +649,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01806640625,
+     0.122802734375,
+     0.756591796875,
+     0.100830078125,
+     0.001708984375,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00146484375,
+     0.103515625,
+     0.7763671875,
+     0.11767578125,
+     0.0009765625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.96337890625
    },
    "calendar": [
     {
@@ -764,7 +869,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1024_1216.png",
     "target_hillshade": "img/patches/moon_haworth_160_32.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1024_1216.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_32.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 95.72279188368056,
@@ -802,6 +908,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0615234375,
+     0.229248046875,
+     0.608154296875,
+     0.10107421875,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.079345703125,
+     0.261474609375,
+     0.57568359375,
+     0.08349609375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.949951171875
    },
    "calendar": [
     {
@@ -987,9 +1127,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_448_704.png",
-    "target_hillshade": "img/patches/moon_haworth_320_96.png",
+    "target_hillshade": "img/patches/moon_haworth_320_96_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_448_704.png",
-    "lowsun_target": "img/lowsun/moon_haworth_320_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_320_96_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 96.722412109375,
@@ -1027,6 +1168,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.007568359375,
+     0.100341796875,
+     0.703369140625,
+     0.18310546875,
+     0.005615234375,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00146484375,
+     0.062744140625,
+     0.705078125,
+     0.19287109375,
+     0.02880859375,
+     0.009033203125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.956298828125
    },
    "calendar": [
     {
@@ -1211,9 +1386,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_704_64.png",
-    "target_hillshade": "img/patches/moon_haworth_160_32.png",
+    "target_hillshade": "img/patches/moon_haworth_160_32_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_704_64.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_32.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_32_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 99.14449055989584,
@@ -1251,6 +1427,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0615234375,
+     0.229248046875,
+     0.608154296875,
+     0.10107421875,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.021728515625,
+     0.322509765625,
+     0.5,
+     0.139404296875,
+     0.015869140625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.85205078125
    },
    "calendar": [
     {
@@ -1435,9 +1645,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1536_1568.png",
-    "target_hillshade": "img/patches/moon_haworth_192_192.png",
+    "target_hillshade": "img/patches/moon_haworth_192_192_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1536_1568.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_192.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_192_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 84.86192491319444,
@@ -1475,6 +1686,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.1474609375,
+     0.593017578125,
+     0.223388671875,
+     0.000732421875,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0390625,
+     0.18896484375,
+     0.499755859375,
+     0.26611328125,
+     0.005859375,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.90673828125
    },
    "calendar": [
     {
@@ -1657,9 +1902,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1248_640.png",
-    "target_hillshade": "img/patches/moon_haworth_224_288.png",
+    "target_hillshade": "img/patches/moon_haworth_224_288_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1248_640.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_288.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_288_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 89.0289306640625,
@@ -1697,6 +1943,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.122802734375,
+     0.376708984375,
+     0.418212890625,
+     0.069580078125,
+     0.0126953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0654296875,
+     0.4541015625,
+     0.40234375,
+     0.05859375,
+     0.016845703125,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.915771484375
    },
    "calendar": [
     {
@@ -1883,7 +2163,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1248_192.png",
     "target_hillshade": "img/patches/moon_haworth_256_160.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1248_192.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_160.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_160.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 95.86079915364583,
@@ -1921,6 +2202,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01318359375,
+     0.134765625,
+     0.77587890625,
+     0.070068359375,
+     0.006103515625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00048828125,
+     0.24462890625,
+     0.75,
+     0.0048828125,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.89013671875
    },
    "calendar": [
     {
@@ -2106,9 +2421,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_416_960.png",
-    "target_hillshade": "img/patches/moon_haworth_160_32.png",
+    "target_hillshade": "img/patches/moon_haworth_160_32_r3.png",
     "lowsun_earth": "img/lowsun/askja_416_960.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_32.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_32_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 99.43305121527779,
@@ -2146,6 +2462,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0615234375,
+     0.229248046875,
+     0.608154296875,
+     0.10107421875,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.010009765625,
+     0.302001953125,
+     0.669677734375,
+     0.018310546875,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.86572265625
    },
    "calendar": [
     {
@@ -2332,7 +2682,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_960_736.png",
     "target_hillshade": "img/patches/moon_haworth_288_192.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_960_736.png",
-    "lowsun_target": "img/lowsun/moon_haworth_288_192.png"
+    "lowsun_target": "img/lowsun/moon_haworth_288_192.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.36968315972221,
@@ -2370,6 +2721,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.049560546875,
+     0.272705078125,
+     0.636962890625,
+     0.035400390625,
+     0.00537109375,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001708984375,
+     0.270751953125,
+     0.72119140625,
+     0.00634765625,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.915771484375
    },
    "calendar": [
     {
@@ -2553,9 +2938,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/death_valley_960_1120.png",
-    "target_hillshade": "img/patches/moon_haworth_224_64.png",
+    "target_hillshade": "img/patches/moon_haworth_224_64_r1.png",
     "lowsun_earth": "img/lowsun/death_valley_960_1120.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.07585991753471,
@@ -2593,6 +2979,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.116943359375,
+     0.4248046875,
+     0.40966796875,
+     0.03125,
+     0.012939453125,
+     0.00439453125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001953125,
+     0.573974609375,
+     0.328369140625,
+     0.063720703125,
+     0.025146484375,
+     0.0068359375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8037109375
    },
    "calendar": [
     {
@@ -2778,9 +3198,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1344_1312.png",
-    "target_hillshade": "img/patches/moon_haworth_160_64.png",
+    "target_hillshade": "img/patches/moon_haworth_160_64_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1344_1312.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 96.10866970486111,
@@ -2818,6 +3239,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0947265625,
+     0.2138671875,
+     0.49072265625,
+     0.177001953125,
+     0.02294921875,
+     0.000732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.065673828125,
+     0.2177734375,
+     0.435791015625,
+     0.218017578125,
+     0.05322265625,
+     0.009033203125,
+     0.00048828125,
+     0.0
+    ],
+    "overlap": 0.916015625
    },
    "calendar": [
     {
@@ -3000,9 +3455,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_256_1536.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_256_1536.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 92.13799370659721,
@@ -3040,6 +3496,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.02685546875,
+     0.490478515625,
+     0.33935546875,
+     0.090087890625,
+     0.041015625,
+     0.01220703125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8251953125
    },
    "calendar": [
     {
@@ -3224,9 +3714,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_992_416.png",
-    "target_hillshade": "img/patches/moon_haworth_160_32.png",
+    "target_hillshade": "img/patches/moon_haworth_160_32_r3.png",
     "lowsun_earth": "img/lowsun/askja_992_416.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_32.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_32_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.41324869791666,
@@ -3264,6 +3755,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0615234375,
+     0.229248046875,
+     0.608154296875,
+     0.10107421875,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.082763671875,
+     0.380126953125,
+     0.488037109375,
+     0.049072265625,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.827880859375
    },
    "calendar": [
     {
@@ -3449,7 +3974,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1056_736.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1056_736.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.15512424045139,
@@ -3487,6 +4013,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.191162109375,
+     0.443359375,
+     0.331787109375,
+     0.030517578125,
+     0.003173828125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.88427734375
    },
    "calendar": [
     {
@@ -3671,9 +4231,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_96_288.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_96_288.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 86.76079644097221,
@@ -3711,6 +4272,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.123046875,
+     0.423583984375,
+     0.350341796875,
+     0.072998046875,
+     0.021240234375,
+     0.0087890625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.904296875
    },
    "calendar": [
     {
@@ -3895,7 +4490,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_608_64.png",
     "target_hillshade": "img/patches/moon_haworth_160_320.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_608_64.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_320.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_320.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.95638020833334,
@@ -3933,6 +4529,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.022216796875,
+     0.155029296875,
+     0.725341796875,
+     0.093017578125,
+     0.004150390625,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.000732421875,
+     0.27197265625,
+     0.641357421875,
+     0.057861328125,
+     0.01806640625,
+     0.010009765625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.859375
    },
    "calendar": [
     {
@@ -4120,7 +4750,8 @@
     "earth_hillshade": "img/patches/askja_800_96.png",
     "target_hillshade": "img/patches/moon_haworth_224_288.png",
     "lowsun_earth": "img/lowsun/askja_800_96.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_288.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_288.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.37361653645833,
@@ -4158,6 +4789,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.122802734375,
+     0.376708984375,
+     0.418212890625,
+     0.069580078125,
+     0.0126953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.092041015625,
+     0.31787109375,
+     0.49609375,
+     0.0859375,
+     0.006591796875,
+     0.00146484375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.904296875
    },
    "calendar": [
     {
@@ -4344,7 +5009,8 @@
     "earth_hillshade": "img/patches/askja_736_1376.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/askja_736_1376.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 97.33852810329861,
@@ -4382,6 +5048,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.125244140625,
+     0.5205078125,
+     0.3330078125,
+     0.021240234375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.876220703125
    },
    "calendar": [
     {
@@ -4566,9 +5266,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/lut_992_288.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r2.png",
     "lowsun_earth": "img/lowsun/lut_992_288.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 93.48924424913194,
@@ -4606,6 +5307,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.21875,
+     0.36572265625,
+     0.296875,
+     0.068603515625,
+     0.029296875,
+     0.020751953125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.95654296875
    },
    "calendar": [
     {
@@ -4791,7 +5526,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1280_448.png",
     "target_hillshade": "img/patches/moon_haworth_256_160.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1280_448.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_160.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_160.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.4375,
@@ -4829,6 +5565,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01318359375,
+     0.134765625,
+     0.77587890625,
+     0.070068359375,
+     0.006103515625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00048828125,
+     0.076416015625,
+     0.82177734375,
+     0.10107421875,
+     0.000244140625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.923095703125
    },
    "calendar": [
     {
@@ -5015,7 +5785,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1504_800.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1504_800.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.02008734809029,
@@ -5053,6 +5824,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.018310546875,
+     0.393798828125,
+     0.5361328125,
+     0.050537109375,
+     0.001220703125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.89013671875
    },
    "calendar": [
     {
@@ -5237,9 +6042,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1536_832.png",
-    "target_hillshade": "img/patches/moon_haworth_256_64.png",
+    "target_hillshade": "img/patches/moon_haworth_256_64_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1536_832.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 90.33949110243056,
@@ -5277,6 +6083,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0947265625,
+     0.367919921875,
+     0.454345703125,
+     0.07080078125,
+     0.009521484375,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0068359375,
+     0.54248046875,
+     0.33984375,
+     0.06640625,
+     0.03759765625,
+     0.0068359375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.793212890625
    },
    "calendar": [
     {
@@ -5461,9 +6301,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1120_1440.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1120_1440.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 84.90770128038194,
@@ -5501,6 +6342,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.048583984375,
+     0.572509765625,
+     0.262939453125,
+     0.093505859375,
+     0.01953125,
+     0.0029296875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.803955078125
    },
    "calendar": [
     {
@@ -5688,7 +6563,8 @@
     "earth_hillshade": "img/patches/askja_384_320.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/askja_384_320.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.13727484809029,
@@ -5726,6 +6602,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.114990234375,
+     0.42724609375,
+     0.372802734375,
+     0.08251953125,
+     0.00244140625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.92578125
    },
    "calendar": [
     {
@@ -5912,7 +6822,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_992_288.png",
     "target_hillshade": "img/patches/moon_haworth_416_96.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_992_288.png",
-    "lowsun_target": "img/lowsun/moon_haworth_416_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_416_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 92.87821451822917,
@@ -5950,6 +6861,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.05859375,
+     0.31982421875,
+     0.51904296875,
+     0.095703125,
+     0.005859375,
+     0.0009765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.026611328125,
+     0.339599609375,
+     0.533447265625,
+     0.086181640625,
+     0.01416015625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.95751953125
    },
    "calendar": [
     {
@@ -6135,7 +7080,8 @@
     "earth_hillshade": "img/patches/namib_288_1568.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/namib_288_1568.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 95.39082845052083,
@@ -6173,6 +7119,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.201416015625,
+     0.42333984375,
+     0.30810546875,
+     0.0556640625,
+     0.011474609375,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.861083984375
    },
    "calendar": [
     {
@@ -6357,9 +7337,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1472_1408.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1472_1408.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 84.36381022135417,
@@ -6397,6 +7378,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.21533203125,
+     0.46826171875,
+     0.18017578125,
+     0.09765625,
+     0.03125,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.877197265625
    },
    "calendar": [
     {
@@ -6582,7 +7597,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_224_992.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_224_992.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 99.06209309895834,
@@ -6620,6 +7636,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.139404296875,
+     0.508056640625,
+     0.333740234375,
+     0.015869140625,
+     0.0029296875,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.87158203125
    },
    "calendar": [
     {
@@ -6803,9 +7853,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_800_1600.png",
-    "target_hillshade": "img/patches/moon_haworth_128_352.png",
+    "target_hillshade": "img/patches/moon_haworth_128_352_r1.png",
     "lowsun_earth": "img/lowsun/askja_800_1600.png",
-    "lowsun_target": "img/lowsun/moon_haworth_128_352.png"
+    "lowsun_target": "img/lowsun/moon_haworth_128_352_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.8525390625,
@@ -6843,6 +7894,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07958984375,
+     0.27392578125,
+     0.448486328125,
+     0.1875,
+     0.01025390625,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.064208984375,
+     0.274658203125,
+     0.51318359375,
+     0.119384765625,
+     0.023681640625,
+     0.0048828125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.91650390625
    },
    "calendar": [
     {
@@ -7027,9 +8112,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1376_352.png",
-    "target_hillshade": "img/patches/moon_haworth_128_352.png",
+    "target_hillshade": "img/patches/moon_haworth_128_352_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1376_352.png",
-    "lowsun_target": "img/lowsun/moon_haworth_128_352.png"
+    "lowsun_target": "img/lowsun/moon_haworth_128_352_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.25082736545139,
@@ -7067,6 +8153,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07958984375,
+     0.27392578125,
+     0.448486328125,
+     0.1875,
+     0.01025390625,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.017333984375,
+     0.306396484375,
+     0.473388671875,
+     0.14208984375,
+     0.052001953125,
+     0.0087890625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.892333984375
    },
    "calendar": [
     {
@@ -7253,9 +8373,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/haughton_1568_384.png",
-    "target_hillshade": "img/patches/moon_haworth_224_288.png",
+    "target_hillshade": "img/patches/moon_haworth_224_288_r3.png",
     "lowsun_earth": "img/lowsun/haughton_1568_384.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_288.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_288_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 92.55540635850694,
@@ -7293,6 +8414,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.122802734375,
+     0.376708984375,
+     0.418212890625,
+     0.069580078125,
+     0.0126953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.126953125,
+     0.44873046875,
+     0.33544921875,
+     0.066650390625,
+     0.018310546875,
+     0.00390625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.914306640625
    },
    "calendar": [
     {
@@ -7476,9 +8631,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_544_608.png",
-    "target_hillshade": "img/patches/moon_haworth_416_352.png",
+    "target_hillshade": "img/patches/moon_haworth_416_352_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_544_608.png",
-    "lowsun_target": "img/lowsun/moon_haworth_416_352.png"
+    "lowsun_target": "img/lowsun/moon_haworth_416_352_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 93.89546712239583,
@@ -7516,6 +8672,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0966796875,
+     0.310302734375,
+     0.401123046875,
+     0.181396484375,
+     0.010009765625,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.140869140625,
+     0.269287109375,
+     0.40966796875,
+     0.156005859375,
+     0.020751953125,
+     0.00341796875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.93359375
    },
    "calendar": [
     {
@@ -7698,9 +8888,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_160_1344.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_160_1344.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 84.52996148003471,
@@ -7738,6 +8929,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.000732421875,
+     0.5498046875,
+     0.344482421875,
+     0.0458984375,
+     0.03759765625,
+     0.021484375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.7548828125
    },
    "calendar": [
     {
@@ -7922,7 +9147,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_864_1312.png",
     "target_hillshade": "img/patches/moon_haworth_160_32.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_864_1312.png",
-    "lowsun_target": "img/lowsun/moon_haworth_160_32.png"
+    "lowsun_target": "img/lowsun/moon_haworth_160_32.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.32187228732639,
@@ -7960,6 +9186,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0615234375,
+     0.229248046875,
+     0.608154296875,
+     0.10107421875,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.14501953125,
+     0.22802734375,
+     0.563720703125,
+     0.06201171875,
+     0.001220703125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.915283203125
    },
    "calendar": [
     {
@@ -8146,9 +9406,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1184_256.png",
-    "target_hillshade": "img/patches/moon_haworth_224_288.png",
+    "target_hillshade": "img/patches/moon_haworth_224_288_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1184_256.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_288.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_288_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 82.60565863715279,
@@ -8186,6 +9447,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.122802734375,
+     0.376708984375,
+     0.418212890625,
+     0.069580078125,
+     0.0126953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.086669921875,
+     0.355712890625,
+     0.4052734375,
+     0.123046875,
+     0.02197265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.929931640625
    },
    "calendar": [
     {
@@ -8373,7 +9668,8 @@
     "earth_hillshade": "img/patches/askja_448_160.png",
     "target_hillshade": "img/patches/moon_haworth_256_224.png",
     "lowsun_earth": "img/lowsun/askja_448_160.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_224.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_224.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 97.47890896267361,
@@ -8411,6 +9707,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.109619140625,
+     0.412353515625,
+     0.447021484375,
+     0.031005859375,
+     0.0,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.1533203125,
+     0.342041015625,
+     0.403564453125,
+     0.0869140625,
+     0.010986328125,
+     0.003173828125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.88623046875
    },
    "calendar": [
     {
@@ -8594,7 +9924,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_608_320.png",
     "target_hillshade": "img/patches/moon_haworth_352_352.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_608_320.png",
-    "lowsun_target": "img/lowsun/moon_haworth_352_352.png"
+    "lowsun_target": "img/lowsun/moon_haworth_352_352.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 92.19428168402777,
@@ -8632,6 +9963,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.038818359375,
+     0.2001953125,
+     0.44921875,
+     0.255859375,
+     0.055419921875,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.008056640625,
+     0.22412109375,
+     0.507080078125,
+     0.208251953125,
+     0.03857421875,
+     0.013916015625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.90478515625
    },
    "calendar": [
     {
@@ -8816,9 +10181,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1152_64.png",
-    "target_hillshade": "img/patches/moon_haworth_288_128.png",
+    "target_hillshade": "img/patches/moon_haworth_288_128_r3.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1152_64.png",
-    "lowsun_target": "img/lowsun/moon_haworth_288_128.png"
+    "lowsun_target": "img/lowsun/moon_haworth_288_128_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 95.00291612413194,
@@ -8856,6 +10222,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01220703125,
+     0.1396484375,
+     0.703125,
+     0.1357421875,
+     0.00927734375,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.042236328125,
+     0.06787109375,
+     0.646240234375,
+     0.17431640625,
+     0.0439453125,
+     0.025390625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.871337890625
    },
    "calendar": [
     {
@@ -9038,9 +10438,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_608_672.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_608_672.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.38849555121529,
@@ -9078,6 +10479,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.055419921875,
+     0.58154296875,
+     0.276611328125,
+     0.05908203125,
+     0.025634765625,
+     0.001708984375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.790771484375
    },
    "calendar": [
     {
@@ -9262,9 +10697,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_128_864.png",
-    "target_hillshade": "img/patches/moon_haworth_384_352.png",
+    "target_hillshade": "img/patches/moon_haworth_384_352_r1.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_128_864.png",
-    "lowsun_target": "img/lowsun/moon_haworth_384_352.png"
+    "lowsun_target": "img/lowsun/moon_haworth_384_352_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 85.62689887152779,
@@ -9302,6 +10738,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07861328125,
+     0.25927734375,
+     0.47705078125,
+     0.177001953125,
+     0.007568359375,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.06005859375,
+     0.27783203125,
+     0.4296875,
+     0.197265625,
+     0.03076171875,
+     0.00439453125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.93408203125
    },
    "calendar": [
     {
@@ -9486,9 +10956,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_352_224.png",
-    "target_hillshade": "img/patches/moon_haworth_224_64.png",
+    "target_hillshade": "img/patches/moon_haworth_224_64_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_352_224.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_64_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.248291015625,
@@ -9526,6 +10997,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.116943359375,
+     0.4248046875,
+     0.40966796875,
+     0.03125,
+     0.012939453125,
+     0.00439453125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0673828125,
+     0.5234375,
+     0.322265625,
+     0.067138671875,
+     0.018310546875,
+     0.00146484375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.860107421875
    },
    "calendar": [
     {
@@ -9708,9 +11213,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1312_1216.png",
-    "target_hillshade": "img/patches/moon_haworth_192_96.png",
+    "target_hillshade": "img/patches/moon_haworth_192_96_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1312_1216.png",
-    "lowsun_target": "img/lowsun/moon_haworth_192_96.png"
+    "lowsun_target": "img/lowsun/moon_haworth_192_96_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 95.50984700520833,
@@ -9748,6 +11254,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.2001953125,
+     0.380126953125,
+     0.302978515625,
+     0.091552734375,
+     0.017822265625,
+     0.00732421875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.19921875,
+     0.425537109375,
+     0.279541015625,
+     0.07666015625,
+     0.016845703125,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.95458984375
    },
    "calendar": [
     {
@@ -9933,7 +11473,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1120_1024.png",
     "target_hillshade": "img/patches/moon_haworth_256_64.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1120_1024.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 90.76402452256944,
@@ -9971,6 +11512,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0947265625,
+     0.367919921875,
+     0.454345703125,
+     0.07080078125,
+     0.009521484375,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0615234375,
+     0.37158203125,
+     0.516845703125,
+     0.042724609375,
+     0.006103515625,
+     0.001220703125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.933837890625
    },
    "calendar": [
     {
@@ -10157,7 +11732,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_864_736.png",
     "target_hillshade": "img/patches/moon_haworth_224_64.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_864_736.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.70130750868056,
@@ -10195,6 +11771,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.116943359375,
+     0.4248046875,
+     0.40966796875,
+     0.03125,
+     0.012939453125,
+     0.00439453125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.020751953125,
+     0.52392578125,
+     0.3466796875,
+     0.079345703125,
+     0.01904296875,
+     0.01025390625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8408203125
    },
    "calendar": [
     {
@@ -10381,7 +11991,8 @@
     "earth_hillshade": "img/patches/askja_1280_0.png",
     "target_hillshade": "img/patches/moon_haworth_256_64.png",
     "lowsun_earth": "img/lowsun/askja_1280_0.png",
-    "lowsun_target": "img/lowsun/moon_haworth_256_64.png"
+    "lowsun_target": "img/lowsun/moon_haworth_256_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 90.72367350260416,
@@ -10419,6 +12030,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0947265625,
+     0.367919921875,
+     0.454345703125,
+     0.07080078125,
+     0.009521484375,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.146484375,
+     0.3388671875,
+     0.3720703125,
+     0.104248046875,
+     0.029052734375,
+     0.00927734375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.888671875
    },
    "calendar": [
     {
@@ -10601,9 +12246,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_352_1280.png",
-    "target_hillshade": "img/patches/moon_haworth_384_352.png",
+    "target_hillshade": "img/patches/moon_haworth_384_352_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_352_1280.png",
-    "lowsun_target": "img/lowsun/moon_haworth_384_352.png"
+    "lowsun_target": "img/lowsun/moon_haworth_384_352_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 92.17936197916666,
@@ -10641,6 +12287,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.07861328125,
+     0.25927734375,
+     0.47705078125,
+     0.177001953125,
+     0.007568359375,
+     0.00048828125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.049560546875,
+     0.336669921875,
+     0.442138671875,
+     0.13037109375,
+     0.0390625,
+     0.002197265625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.889404296875
    },
    "calendar": [
     {
@@ -10824,9 +12504,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1184_480.png",
-    "target_hillshade": "img/patches/moon_haworth_224_288.png",
+    "target_hillshade": "img/patches/moon_haworth_224_288_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1184_480.png",
-    "lowsun_target": "img/lowsun/moon_haworth_224_288.png"
+    "lowsun_target": "img/lowsun/moon_haworth_224_288_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 83.89417860243056,
@@ -10864,6 +12545,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.122802734375,
+     0.376708984375,
+     0.418212890625,
+     0.069580078125,
+     0.0126953125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.087646484375,
+     0.338623046875,
+     0.4306640625,
+     0.105224609375,
+     0.02783203125,
+     0.010009765625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.9267578125
    },
    "calendar": [
     {
@@ -11049,9 +12764,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1600_352.png",
-    "target_hillshade": "img/patches/moon_haworth_320_192.png",
+    "target_hillshade": "img/patches/moon_haworth_320_192_r3.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1600_352.png",
-    "lowsun_target": "img/lowsun/moon_haworth_320_192.png"
+    "lowsun_target": "img/lowsun/moon_haworth_320_192_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 94.00566948784721,
@@ -11089,6 +12805,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0341796875,
+     0.216064453125,
+     0.47705078125,
+     0.197509765625,
+     0.06982421875,
+     0.00537109375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03466796875,
+     0.262451171875,
+     0.419677734375,
+     0.172607421875,
+     0.075439453125,
+     0.034423828125,
+     0.000732421875,
+     0.0
+    ],
+    "overlap": 0.917724609375
    },
    "calendar": [
     {

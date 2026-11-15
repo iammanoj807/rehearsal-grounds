@@ -94,9 +94,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1568_160.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1568_160.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 93.41837565104166,
@@ -134,6 +135,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.040283203125,
+     0.124267578125,
+     0.343017578125,
+     0.327392578125,
+     0.1416015625,
+     0.0234375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.918212890625
    },
    "calendar": [
     {
@@ -319,9 +354,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_352_608.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_160_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_160_160_r3.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_352_608.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_160_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_160_160_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 98.37985568576389,
@@ -359,6 +395,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.014404296875,
+     0.095703125,
+     0.2333984375,
+     0.246337890625,
+     0.36669921875,
+     0.04345703125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001953125,
+     0.0380859375,
+     0.268310546875,
+     0.28466796875,
+     0.3515625,
+     0.055419921875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.914794921875
    },
    "calendar": [
     {
@@ -544,7 +614,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1376_384.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1376_384.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 94.62314181857639,
@@ -582,6 +653,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03271484375,
+     0.282470703125,
+     0.387451171875,
+     0.204345703125,
+     0.076904296875,
+     0.01611328125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8427734375
    },
    "calendar": [
     {
@@ -768,7 +873,8 @@
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1536_1568.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_256.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1536_1568.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.81430392795139,
@@ -806,6 +912,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.165771484375,
+     0.36669921875,
+     0.325927734375,
+     0.066162109375,
+     0.0400390625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0390625,
+     0.18896484375,
+     0.499755859375,
+     0.26611328125,
+     0.005859375,
+     0.000244140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.840087890625
    },
    "calendar": [
     {
@@ -990,7 +1130,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_0_672.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_0_672.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 98.6568874782986,
@@ -1028,6 +1169,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.064697265625,
+     0.2001953125,
+     0.314697265625,
+     0.20166015625,
+     0.12548828125,
+     0.09326171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.825439453125
    },
    "calendar": [
     {
@@ -1213,9 +1388,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_1312_160.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1312_160.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 83.43098958333333,
@@ -1253,6 +1429,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0302734375,
+     0.121337890625,
+     0.347412109375,
+     0.2998046875,
+     0.15966796875,
+     0.04150390625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.921875
    },
    "calendar": [
     {
@@ -1435,9 +1645,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_288_928.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_288_928.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 98.48259819878471,
@@ -1475,6 +1686,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.070068359375,
+     0.183837890625,
+     0.302490234375,
+     0.249267578125,
+     0.141357421875,
+     0.052978515625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.799560546875
    },
    "calendar": [
     {
@@ -1659,9 +1904,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1408_1344.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1408_1344.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 83.03053114149304,
@@ -1699,6 +1945,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.003173828125,
+     0.156494140625,
+     0.417724609375,
+     0.209716796875,
+     0.134521484375,
+     0.078125,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.91650390625
    },
    "calendar": [
     {
@@ -1884,7 +2164,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1600_352.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1600_352.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.68918185763889,
@@ -1922,6 +2203,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.03466796875,
+     0.262451171875,
+     0.419677734375,
+     0.172607421875,
+     0.075439453125,
+     0.034423828125,
+     0.000732421875,
+     0.0
+    ],
+    "overlap": 0.84033203125
    },
    "calendar": [
     {
@@ -2106,9 +2421,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_928_672.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_256_0.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_256_0_r3.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_928_672.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_256_0.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_256_0_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 91.92165798611111,
@@ -2146,6 +2462,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.00146484375,
+     0.014892578125,
+     0.142333984375,
+     0.4541015625,
+     0.273193359375,
+     0.114013671875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.034423828125,
+     0.071044921875,
+     0.17236328125,
+     0.3603515625,
+     0.314697265625,
+     0.047119140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.83935546875
    },
    "calendar": [
     {
@@ -2330,9 +2680,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_736_736.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_736_736.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 98.20081922743056,
@@ -2370,6 +2721,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.083984375,
+     0.225830078125,
+     0.322265625,
+     0.22509765625,
+     0.125732421875,
+     0.01708984375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.795166015625
    },
    "calendar": [
     {
@@ -2554,7 +2939,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_64_480.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_64_480.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 84.15459526909721,
@@ -2592,6 +2978,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.01806640625,
+     0.0869140625,
+     0.341552734375,
+     0.37890625,
+     0.1416015625,
+     0.032958984375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8798828125
    },
    "calendar": [
     {
@@ -2775,9 +3195,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/haughton_1600_1376.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_160_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_160_256_r3.png",
     "lowsun_earth": "img/lowsun/haughton_1600_1376.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_160_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_160_256_r3.png",
+    "target_rotation_deg": 270
    },
    "lighting": {
     "similarity": 97.61115180121529,
@@ -2815,6 +3236,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.048095703125,
+     0.203125,
+     0.32080078125,
+     0.2685546875,
+     0.114501953125,
+     0.044921875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.057373046875,
+     0.310302734375,
+     0.3466796875,
+     0.19140625,
+     0.067626953125,
+     0.0263671875,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.857421875
    },
    "calendar": [
     {
@@ -2998,9 +3453,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/death_valley_992_1088.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/death_valley_992_1088.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 91.67073567708334,
@@ -3038,6 +3494,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0048828125,
+     0.096923828125,
+     0.5556640625,
+     0.2275390625,
+     0.084228515625,
+     0.03076171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.829345703125
    },
    "calendar": [
     {
@@ -3223,9 +3713,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/lut_576_1504.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_160_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_160_256_r2.png",
     "lowsun_earth": "img/lowsun/lut_576_1504.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_160_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_160_256_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 86.01582845052083,
@@ -3263,6 +3754,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.048095703125,
+     0.203125,
+     0.32080078125,
+     0.2685546875,
+     0.114501953125,
+     0.044921875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.056640625,
+     0.208984375,
+     0.3515625,
+     0.218505859375,
+     0.100830078125,
+     0.06103515625,
+     0.00244140625,
+     0.0
+    ],
+    "overlap": 0.936279296875
    },
    "calendar": [
     {
@@ -3449,7 +3974,8 @@
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_512_672.png",
     "target_hillshade": "img/patches/moon_site23_malapert_160_96.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_512_672.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_160_96.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_160_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.77204047309029,
@@ -3487,6 +4013,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.0078125,
+     0.04443359375,
+     0.17431640625,
+     0.226806640625,
+     0.3984375,
+     0.148193359375,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001953125,
+     0.03564453125,
+     0.189453125,
+     0.317138671875,
+     0.3251953125,
+     0.130615234375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.89453125
    },
    "calendar": [
     {
@@ -3670,9 +4230,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_768_160.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_768_160.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 86.41221788194444,
@@ -3710,6 +4271,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.044921875,
+     0.216552734375,
+     0.272705078125,
+     0.236083984375,
+     0.148193359375,
+     0.080078125,
+     0.00146484375,
+     0.0
+    ],
+    "overlap": 0.823486328125
    },
    "calendar": [
     {
@@ -3893,7 +4488,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1152_608.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1152_608.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.49534776475694,
@@ -3931,6 +4527,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.009765625,
+     0.267822265625,
+     0.475341796875,
+     0.187255859375,
+     0.048583984375,
+     0.01123046875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8037109375
    },
    "calendar": [
     {
@@ -4114,9 +4744,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1344_1408.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1344_1408.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 91.69413248697916,
@@ -4154,6 +4785,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.002685546875,
+     0.113525390625,
+     0.52294921875,
+     0.227783203125,
+     0.089111328125,
+     0.0439453125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.867431640625
    },
    "calendar": [
     {
@@ -4337,9 +5002,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1216_64.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1216_64.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 96.87466091579861,
@@ -4377,6 +5043,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.06640625,
+     0.165283203125,
+     0.557373046875,
+     0.160888671875,
+     0.041259765625,
+     0.0087890625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.739990234375
    },
    "calendar": [
     {
@@ -4560,9 +5260,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/askja_480_992.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_224.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_224_r1.png",
     "lowsun_earth": "img/lowsun/askja_480_992.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_224.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_224_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.13062879774306,
@@ -4600,6 +5301,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.031982421875,
+     0.13720703125,
+     0.408935546875,
+     0.3623046875,
+     0.052490234375,
+     0.007080078125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.050537109375,
+     0.052734375,
+     0.614013671875,
+     0.2509765625,
+     0.028564453125,
+     0.0029296875,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.776123046875
    },
    "calendar": [
     {
@@ -4780,9 +5515,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_320_640.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_320_640.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 84.283447265625,
@@ -4820,6 +5556,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.035400390625,
+     0.166015625,
+     0.3505859375,
+     0.24365234375,
+     0.14697265625,
+     0.057373046875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.842041015625
    },
    "calendar": [
     {
@@ -5002,9 +5772,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/death_valley_1088_1280.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/death_valley_1088_1280.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 94.22980414496527,
@@ -5042,6 +5813,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.006591796875,
+     0.221923828125,
+     0.469482421875,
+     0.201904296875,
+     0.084716796875,
+     0.015380859375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.85546875
    },
    "calendar": [
     {
@@ -5226,7 +6031,8 @@
     "earth_hillshade": "img/patches/haughton_1120_1280.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/haughton_1120_1280.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 96.35348849826389,
@@ -5264,6 +6070,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.077880859375,
+     0.279052734375,
+     0.351318359375,
+     0.161865234375,
+     0.07958984375,
+     0.04833984375,
+     0.001953125,
+     0.0
+    ],
+    "overlap": 0.7763671875
    },
    "calendar": [
     {
@@ -5446,9 +6286,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1344_864.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_256_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1344_864.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 92.50996907552084,
@@ -5486,6 +6327,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.165771484375,
+     0.36669921875,
+     0.325927734375,
+     0.066162109375,
+     0.0400390625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.066650390625,
+     0.28466796875,
+     0.3203125,
+     0.169677734375,
+     0.09619140625,
+     0.0625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.79736328125
    },
    "calendar": [
     {
@@ -5670,9 +6545,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_896_640.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_896_640.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 81.79355197482639,
@@ -5710,6 +6586,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.00439453125,
+     0.248046875,
+     0.258056640625,
+     0.288818359375,
+     0.159912109375,
+     0.040771484375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.784912109375
    },
    "calendar": [
     {
@@ -5894,7 +6804,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_416_800.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_416_800.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 92.89109971788194,
@@ -5932,6 +6843,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.027587890625,
+     0.13623046875,
+     0.400146484375,
+     0.255859375,
+     0.125,
+     0.054443359375,
+     0.000732421875,
+     0.0
+    ],
+    "overlap": 0.962646484375
    },
    "calendar": [
     {
@@ -6112,9 +7057,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_864_320.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_864_320.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 96.9424777560764,
@@ -6152,6 +7098,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.050537109375,
+     0.261962890625,
+     0.37841796875,
+     0.23388671875,
+     0.06298828125,
+     0.011962890625,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.800048828125
    },
    "calendar": [
     {
@@ -6336,9 +7316,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_320_928.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_320_928.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 97.67964680989583,
@@ -6376,6 +7357,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.01513671875,
+     0.197265625,
+     0.503173828125,
+     0.177978515625,
+     0.04541015625,
+     0.0556640625,
+     0.00537109375,
+     0.0
+    ],
+    "overlap": 0.81103515625
    },
    "calendar": [
     {
@@ -6564,7 +7579,8 @@
     "earth_hillshade": "img/patches/death_valley_480_320.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/death_valley_480_320.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 91.56358506944444,
@@ -6602,6 +7618,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.018310546875,
+     0.298583984375,
+     0.319091796875,
+     0.202392578125,
+     0.12109375,
+     0.03955078125,
+     0.0009765625,
+     0.0
+    ],
+    "overlap": 0.82470703125
    },
    "calendar": [
     {
@@ -6786,7 +7836,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1408_704.png",
     "target_hillshade": "img/patches/moon_site23_malapert_256_64.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1408_704.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_256_64.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_256_64.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 91.83688693576389,
@@ -6824,6 +7875,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.020751953125,
+     0.048583984375,
+     0.12890625,
+     0.35400390625,
+     0.271728515625,
+     0.176025390625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.001953125,
+     0.014892578125,
+     0.2578125,
+     0.268310546875,
+     0.256591796875,
+     0.199462890625,
+     0.0009765625,
+     0.0
+    ],
+    "overlap": 0.8466796875
    },
    "calendar": [
     {
@@ -7006,7 +8091,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_608_640.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_608_640.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 93.22136773003471,
@@ -7044,6 +8130,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.025390625,
+     0.180908203125,
+     0.30078125,
+     0.255126953125,
+     0.181884765625,
+     0.0556640625,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.8037109375
    },
    "calendar": [
     {
@@ -7227,9 +8347,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1312_1312.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_256_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1312_1312.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 95.751953125,
@@ -7267,6 +8388,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.165771484375,
+     0.36669921875,
+     0.325927734375,
+     0.066162109375,
+     0.0400390625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.01806640625,
+     0.276611328125,
+     0.44091796875,
+     0.2109375,
+     0.0498046875,
+     0.003662109375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.81494140625
    },
    "calendar": [
     {
@@ -7450,7 +8605,8 @@
     "earth_hillshade": "img/patches/tibesti_768_640.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/tibesti_768_640.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 99.542236328125,
@@ -7488,6 +8644,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.15966796875,
+     0.22802734375,
+     0.26904296875,
+     0.19580078125,
+     0.10205078125,
+     0.04443359375,
+     0.0009765625,
+     0.0
+    ],
+    "overlap": 0.75048828125
    },
    "calendar": [
     {
@@ -7670,9 +8860,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/mcmurdo_dry_valleys_1248_608.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_64_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_64_256_r2.png",
     "lowsun_earth": "img/lowsun/mcmurdo_dry_valleys_1248_608.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_64_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_64_256_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 97.91971842447917,
@@ -7710,6 +8901,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.006103515625,
+     0.04833984375,
+     0.175537109375,
+     0.423095703125,
+     0.234130859375,
+     0.11279296875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0009765625,
+     0.0283203125,
+     0.2578125,
+     0.398681640625,
+     0.204833984375,
+     0.10595703125,
+     0.00341796875,
+     0.0
+    ],
+    "overlap": 0.914306640625
    },
    "calendar": [
     {
@@ -7891,9 +9116,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1248_1216.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1248_1216.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 96.392822265625,
@@ -7931,6 +9157,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.103515625,
+     0.2998046875,
+     0.349853515625,
+     0.17626953125,
+     0.057373046875,
+     0.012939453125,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.75439453125
    },
    "calendar": [
     {
@@ -8116,7 +9376,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_608_896.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_608_896.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 95.7366943359375,
@@ -8154,6 +9415,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.010009765625,
+     0.298583984375,
+     0.42431640625,
+     0.184326171875,
+     0.07080078125,
+     0.011962890625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.823974609375
    },
    "calendar": [
     {
@@ -8337,7 +9632,8 @@
     "earth_hillshade": "img/patches/puna_de_atacama_1024_1344.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1024_1344.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 87.76685926649306,
@@ -8375,6 +9671,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.009033203125,
+     0.117919921875,
+     0.328369140625,
+     0.308837890625,
+     0.17529296875,
+     0.060546875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8798828125
    },
    "calendar": [
     {
@@ -8562,7 +9892,8 @@
     "earth_hillshade": "img/patches/namib_256_1248.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/namib_256_1248.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 91.09632703993056,
@@ -8600,6 +9931,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.05078125,
+     0.217529296875,
+     0.39111328125,
+     0.2265625,
+     0.07861328125,
+     0.035400390625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.8798828125
    },
    "calendar": [
     {
@@ -8780,9 +10145,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_1184_416.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_256_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_1184_416.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 99.01089138454861,
@@ -8820,6 +10186,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.165771484375,
+     0.36669921875,
+     0.325927734375,
+     0.066162109375,
+     0.0400390625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.007080078125,
+     0.12158203125,
+     0.619384765625,
+     0.249755859375,
+     0.002197265625,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.747314453125
    },
    "calendar": [
     {
@@ -9007,7 +10407,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_672_544.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_672_544.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 85.5953640407986,
@@ -9045,6 +10446,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.005126953125,
+     0.10693359375,
+     0.347412109375,
+     0.355712890625,
+     0.1533203125,
+     0.031494140625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.92431640625
    },
    "calendar": [
     {
@@ -9229,7 +10664,8 @@
     "earth_hillshade": "img/patches/tibesti_704_480.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/tibesti_704_480.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 87.91978624131944,
@@ -9267,6 +10703,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.068359375,
+     0.16455078125,
+     0.329345703125,
+     0.26953125,
+     0.129638671875,
+     0.03857421875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.912109375
    },
    "calendar": [
     {
@@ -9452,7 +10922,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_1056_448.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_96.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_1056_448.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_96.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 86.62584092881944,
@@ -9490,6 +10961,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01806640625,
+     0.0888671875,
+     0.28271484375,
+     0.3388671875,
+     0.221923828125,
+     0.049560546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.004150390625,
+     0.0810546875,
+     0.3369140625,
+     0.293212890625,
+     0.2158203125,
+     0.06884765625,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.926513671875
    },
    "calendar": [
     {
@@ -9673,9 +11178,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/atacama_yungay_448_256.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_448_256.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 85.9130859375,
@@ -9713,6 +11219,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.003662109375,
+     0.185546875,
+     0.422607421875,
+     0.2265625,
+     0.117919921875,
+     0.043701171875,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.871826171875
    },
    "calendar": [
     {
@@ -9895,9 +11435,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/namib_704_864.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_256_r2.png",
     "lowsun_earth": "img/lowsun/namib_704_864.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_256_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 86.06194390190971,
@@ -9935,6 +11476,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.035400390625,
+     0.165771484375,
+     0.36669921875,
+     0.325927734375,
+     0.066162109375,
+     0.0400390625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.055419921875,
+     0.197998046875,
+     0.336181640625,
+     0.224853515625,
+     0.12255859375,
+     0.061767578125,
+     0.001220703125,
+     0.0
+    ],
+    "overlap": 0.868408203125
    },
    "calendar": [
     {
@@ -10115,9 +11690,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_1536_288.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_160.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_160_r2.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_1536_288.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_160_r2.png",
+    "target_rotation_deg": 180
    },
    "lighting": {
     "similarity": 86.40509711371529,
@@ -10155,6 +11731,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01416015625,
+     0.10791015625,
+     0.4130859375,
+     0.339111328125,
+     0.123046875,
+     0.002685546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0185546875,
+     0.116943359375,
+     0.317138671875,
+     0.315185546875,
+     0.176025390625,
+     0.055908203125,
+     0.000244140625,
+     0.0
+    ],
+    "overlap": 0.880126953125
    },
    "calendar": [
     {
@@ -10337,9 +11947,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/hawaii_kilauea_maunakea_992_352.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_96_256.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_96_256_r1.png",
     "lowsun_earth": "img/lowsun/hawaii_kilauea_maunakea_992_352.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_96_256.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_96_256_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 98.69011773003471,
@@ -10377,6 +11988,40 @@
     "edge_limited_target": true,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.003173828125,
+     0.033447265625,
+     0.271484375,
+     0.562744140625,
+     0.127197265625,
+     0.001953125,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.0,
+     0.00146484375,
+     0.527099609375,
+     0.46826171875,
+     0.003173828125,
+     0.0,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.744384765625
    },
    "calendar": [
     {
@@ -10558,9 +12203,10 @@
    ],
    "images": {
     "earth_hillshade": "img/patches/puna_de_atacama_672_352.png",
-    "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
+    "target_hillshade": "img/patches/moon_site23_malapert_128_128_r1.png",
     "lowsun_earth": "img/lowsun/puna_de_atacama_672_352.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128_r1.png",
+    "target_rotation_deg": 90
    },
    "lighting": {
     "similarity": 84.22444661458334,
@@ -10598,6 +12244,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.056396484375,
+     0.1748046875,
+     0.344482421875,
+     0.22900390625,
+     0.115966796875,
+     0.079345703125,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.873046875
    },
    "calendar": [
     {
@@ -10781,7 +12461,8 @@
     "earth_hillshade": "img/patches/lut_1184_1600.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_128.png",
     "lowsun_earth": "img/lowsun/lut_1184_1600.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_128.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 84.70391167534721,
@@ -10819,6 +12500,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": true,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.019775390625,
+     0.13818359375,
+     0.40869140625,
+     0.276611328125,
+     0.131103515625,
+     0.025634765625,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.036865234375,
+     0.17919921875,
+     0.3798828125,
+     0.23828125,
+     0.1103515625,
+     0.05322265625,
+     0.002197265625,
+     0.0
+    ],
+    "overlap": 0.912109375
    },
    "calendar": [
     {
@@ -11003,7 +12718,8 @@
     "earth_hillshade": "img/patches/atacama_yungay_992_160.png",
     "target_hillshade": "img/patches/moon_site23_malapert_128_96.png",
     "lowsun_earth": "img/lowsun/atacama_yungay_992_160.png",
-    "lowsun_target": "img/lowsun/moon_site23_malapert_128_96.png"
+    "lowsun_target": "img/lowsun/moon_site23_malapert_128_96.png",
+    "target_rotation_deg": 0
    },
    "lighting": {
     "similarity": 84.28446451822916,
@@ -11041,6 +12757,40 @@
     "edge_limited_target": false,
     "edge_limited_earth": false,
     "footprint_matched": true
+   },
+   "fingerprint": {
+    "slope_bins_deg": [
+     0.0,
+     2.0,
+     5.0,
+     10.0,
+     15.0,
+     20.0,
+     30.0,
+     45.0,
+     90.0
+    ],
+    "target": [
+     0.01806640625,
+     0.0888671875,
+     0.28271484375,
+     0.3388671875,
+     0.221923828125,
+     0.049560546875,
+     0.0,
+     0.0
+    ],
+    "earth": [
+     0.071044921875,
+     0.1650390625,
+     0.25,
+     0.234130859375,
+     0.196044921875,
+     0.083740234375,
+     0.0,
+     0.0
+    ],
+    "overlap": 0.836669921875
    },
    "calendar": [
     {

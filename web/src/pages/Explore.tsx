@@ -165,9 +165,17 @@ function Preview({ m, target, targetId }: { m: Match; target: Target; targetId: 
         targetName={target.name}
         earthName={m.region_name}
       />
-      <p className="small muted twin-hint">Drag the divider to compare. Both views: 3.84 km across, same scale and contrast.</p>
+      <p className="small muted twin-hint">
+        Drag the divider to compare. Both views: 3.84 km across, same scale and contrast
+        {m.images.target_rotation_deg ? `; the ${bodyLabel(target.body)} patch is turned ${m.images.target_rotation_deg}° to the orientation the match used` : ''}.
+      </p>
       <ScoreBars scores={m.sub_scores} compact />
       <div className="preview-extra">
+        {m.fingerprint && (
+          <span className="chip-static">
+            Slope overlap <strong>{(m.fingerprint.overlap * 100).toFixed(0)}%</strong>
+          </span>
+        )}
         {m.lighting && (
           <span className="chip-static">
             Low-sun shadows <strong>{m.lighting.similarity.toFixed(1)}</strong>/100
@@ -285,6 +293,26 @@ export default function Explore() {
       </section>
 
       <div className="page explore-body">
+        <ol className="start-here" aria-label="How to use Rehearsal Grounds">
+          <li>
+            <span className="start-n">1</span>
+            <span>
+              <strong>Pick a target</strong> — an Artemis III region or Jezero.
+            </span>
+          </li>
+          <li>
+            <span className="start-n">2</span>
+            <span>
+              <strong>Compare</strong> — drag the swipe divider; in a dossier, try <em>Low sun</em>.
+            </span>
+          </li>
+          <li>
+            <span className="start-n">3</span>
+            <span>
+              <strong>Plan</strong> — open the dossier, print the field-test brief, or download the shortlist.
+            </span>
+          </li>
+        </ol>
         <div className="section-head">
           <p className="eyebrow">Step 1</p>
           <h2>Choose a target</h2>

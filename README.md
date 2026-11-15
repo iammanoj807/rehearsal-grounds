@@ -47,7 +47,10 @@ Locations that Analog the Permanent Moon Base Locations and Mars*.
    `S = 100 × (0.6 · exp(−d² / 2σ²) + 0.4 · (1 + cos) / 2)`, where d is the fingerprint distance with equal weight
    per feature group, and σ is the median distance from the target's patches to their nearest Earth patch. Sites are
    kept at least 10 km apart. The patch pictures in the app are drawn at 30 m from the original maps with the
-   same footprint; every score uses the 60 m grid.
+   same footprint; every score uses the 60 m grid. The target picture is shown at the quarter turn the image
+   embedding matched, and a slope-fingerprint chart shows both patches' slope distributions (they overlap by a
+   median of 88% across all exported sites, 92% for Malapert's top match), because matched patches share a
+   terrain character, not an identical layout.
 5. **Explain.** Explanation bars give each feature group's closeness as a percentile against random Earth patch
    pairs. The dossier adds NASA POWER climate, WorldCover land cover within 2 km, a novelty flag and rule-based
    "tests suited" lines. The flag reads "Near a known analog" when the site is within 50 km of a catalogue entry

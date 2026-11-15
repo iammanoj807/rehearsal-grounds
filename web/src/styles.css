@@ -1669,6 +1669,133 @@ main:focus {
   margin-bottom: 8px;
 }
 
+/* ---------- fingerprint chart, notes, start strip ---------- */
+.fingerprint {
+  margin: 0 0 16px;
+  padding: 14px 16px 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-2);
+}
+.fp-title {
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-weight: 600;
+}
+.fp-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin: 0 0 10px;
+  color: var(--ink-2);
+}
+.fp-plot {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 6px;
+  height: 150px;
+  align-items: end;
+  border-bottom: 1px solid var(--line-2);
+  background-image: linear-gradient(var(--line) 1px, transparent 1px);
+  background-size: 100% 25%;
+}
+.fp-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+}
+.fp-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.fp-bar {
+  width: min(16px, 42%);
+  min-height: 1px;
+  border-radius: 4px 4px 0 0;
+}
+.fp-moon {
+  background: var(--moon);
+}
+.fp-mars {
+  background: var(--mars);
+}
+.fp-earth {
+  background: var(--earth);
+}
+.fp-bar:hover {
+  filter: brightness(1.25);
+}
+.fp-label {
+  font: 500 0.66rem/1.2 var(--mono);
+  color: var(--muted);
+  margin-top: 6px;
+  position: relative;
+  top: 22px;
+  height: 0;
+  white-space: nowrap;
+}
+.fingerprint .fp-plot {
+  margin-bottom: 26px;
+}
+.rotation-note {
+  color: var(--moon-text);
+  margin: 6px 0 0;
+}
+.why-different {
+  margin-top: 10px;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+.why-different summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+.why-different p {
+  margin: 8px 0 0;
+  max-width: 90ch;
+}
+.start-here {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.start-here li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 0.92rem;
+}
+.start-here strong {
+  color: var(--ink);
+}
+.start-n {
+  flex: 0 0 auto;
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--bg);
+  font: 700 0.8rem/1 var(--mono);
+}
+
 /* ---------- lighting & calendar ---------- */
 .lighting,
 .calendar,
@@ -1966,6 +2093,9 @@ main:focus {
 }
 
 @media (max-width: 640px) {
+  .start-here {
+    grid-template-columns: minmax(0, 1fr);
+  }
   .usual-head,
   .brief-cols {
     grid-template-columns: minmax(0, 1fr);
