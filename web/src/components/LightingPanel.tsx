@@ -1,5 +1,6 @@
 import { fmt } from '../data.ts'
 import { monthNames } from '../exportShortlist.ts'
+import { bandSentence, duration, jett5Typical, peakLowSun } from '../lowSun.ts'
 import type { LightingInfo, Match, Target } from '../types.ts'
 
 const MONTH = ['J', 'F', 'M', 'A', 'M', 'J', 'J', 'A', 'S', 'O', 'N', 'D']
@@ -30,14 +31,13 @@ export default function LightingPanel({ m, target, info }: { m: Match; target: T
       ) : (
         <>
           <p>
-            At {Math.abs(band.latitude_deg).toFixed(1)}° S the noon Sun at {target.name} stays between{' '}
-            <strong>{band.low_deg.toFixed(1)}°</strong> and <strong>{band.high_deg.toFixed(1)}°</strong> above the horizon
-            all year (the Moon’s axis is tilted about 1.54°). For each Sun elevation we march rays toward the Sun from
+            {bandSentence(target.name, band)} (the Moon’s axis is tilted about 1.54°). For each Sun elevation we march rays toward the Sun from
             36 directions and count the share of the 3.84 km patch in shadow, cast or attached, with the body’s
             curvature included. The score compares the two shadow shares at the elevations inside the band (
             {m.lighting.elevations.map((e) => `${e}°`).join(', ')}). It is a separate panel and never changes the
             similarity score.
           </p>
+          <Jett5Line m={m} target={target} />
           <div className="table-scroll">
             <table className="metric-table shadow-table">
               <thead>
@@ -89,6 +89,20 @@ export default function LightingPanel({ m, target, info }: { m: Match; target: T
   )
 }
 
+/** JETT5 area vs this site: how long the Sun is as low as at the target. */
+export function Jett5Line({ m, target }: { m: Match; target: Target }) {
+  const band = target.sun_band
+  const typical = band ? jett5Typical(band) : null
+  const peak = peakLowSun(m)
+  if (!band || typical == null || !peak) return null
+  return (
+    <p className="jett5-line">
+      <strong>JETT5 area</strong> (San Francisco Volcanic Field): about {duration(typical)} a day of Sun this low (0–
+      {band.high_deg.toFixed(1)}°). <strong>This site</strong>: up to {duration(peak.min)} a day in {peak.month}.
+    </p>
+  )
+}
+
 /** Twelve months of Sun hours and climate at the Earth site, with the suggested months. */
 export function CalendarStrip({ m, target, info }: { m: Match; target: Target; info: LightingInfo | null }) {
   const cal = m.calendar ?? []
@@ -99,11 +113,17 @@ export function CalendarStrip({ m, target, info }: { m: Match; target: Target; i
     <section className="calendar card" aria-labelledby="calendar-title">
       <p className="eyebrow">Rehearsal window</p>
       <h2 id="calendar-title">When to go</h2>
-      {m.best_months && m.best_months.length > 0 && (
+      {m.best_months && m.best_months.length > 0 ? (
         <p className="best-months">
           Best months: <strong>{monthNames(m.best_months)}</strong>
           <span className="muted small"> · {m.best_months_rule} Our rules, not safety advice.</span>
         </p>
+      ) : (
+        m.best_months_rule && (
+          <p className="best-months">
+            {m.best_months_rule} <span className="muted small">Our rules, not safety advice.</span>
+          </p>
+        )
       )}
       <div className="table-scroll">
         <table className="metric-table calendar-table">
@@ -120,13 +140,13 @@ export function CalendarStrip({ m, target, info }: { m: Match; target: Target; i
           <tbody>
             {moon && (
               <tr>
-                <th scope="row">Low-sun hours / day</th>
+                <th scope="row">Low-sun minutes / day</th>
                 {cal.map((c) => (
                   <td key={c.month} className={best.has(c.month) ? 'is-best' : ''}>
                     <span className="cal-bar" aria-hidden="true">
                       <span style={{ height: `${((c.low_sun_h ?? 0) / maxLow) * 100}%` }} />
                     </span>
-                    {fmt(c.low_sun_h, 1)}
+                    {c.low_sun_h != null ? Math.round(60 * c.low_sun_h) : '–'}
                   </td>
                 ))}
               </tr>
@@ -138,10 +158,10 @@ export function CalendarStrip({ m, target, info }: { m: Match; target: Target; i
               ))}
             </tr>
             <tr>
-              <th scope="row">Min / max °C</th>
+              <th scope="row">Mean daily low / high °C</th>
               {cal.map((c) => (
                 <td key={c.month} className={best.has(c.month) ? 'is-best' : ''}>
-                  {fmt(c.t2m_min_c, 0)}/{fmt(c.t2m_max_c, 0)}
+                  {fmt(c.t2m_min_avg_c, 0)}/{fmt(c.t2m_max_avg_c, 0)}
                 </td>
               ))}
             </tr>
@@ -156,9 +176,10 @@ export function CalendarStrip({ m, target, info }: { m: Match; target: Target; i
       </div>
       <p className="small muted">
         {moon
-          ? `Low-sun hours: daylight with the true Sun between 0° and ${target.sun_band!.high_deg.toFixed(1)}° (the top of the target's band), on the 15th of each month, 5-minute steps. `
-          : 'Daylight hours on the 15th of each month, 5-minute steps. '}
-        Temperatures and rain: NASA POWER monthly climatology (2001–2025).{' '}
+          ? `Low-sun minutes: daylight with the true Sun between 0° and ${target.sun_band!.high_deg.toFixed(1)}° (the top of the target's band), on the 15th of each month, 1-minute steps. `
+          : 'Daylight hours on the 15th of each month, 1-minute steps. '}
+        Mean daily low and high (T2M_MIN_AVG, T2M_MAX_AVG) and rain: NASA POWER monthly climatology (2001–2025),
+        nearest grid cell.{' '}
         {info && (
           <>
             {info.refraction_note} <a href={info.refraction_source_url}>NOAA</a>

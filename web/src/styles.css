@@ -1647,6 +1647,28 @@ main:focus {
   color: var(--ink);
 }
 
+.jett5-line {
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(138, 134, 230, 0.35);
+  background: rgba(138, 134, 230, 0.08);
+  color: var(--ink-2);
+}
+.jett5-line strong {
+  color: var(--ink);
+}
+.usual-all {
+  margin-top: 12px;
+}
+.usual-all summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
 /* ---------- lighting & calendar ---------- */
 .lighting,
 .calendar,

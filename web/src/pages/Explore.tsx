@@ -334,8 +334,8 @@ export default function Explore() {
           </section>
         )}
 
-        {usual.data && results.data && (
-          <UsualSitesPanel data={usual.data} targetId={targetId} matches={results.data.matches} />
+        {usual.data && results.data && target && (
+          <UsualSitesPanel data={usual.data} targetId={targetId} matches={results.data.matches} target={target} />
         )}
 
         <div className="section-head">

@@ -89,7 +89,7 @@ export default function BriefPage() {
             <ul>{m.breaks_down.map((s) => <li key={s}>{s}</li>)}</ul>
             <h2>When to go</h2>
             <p>
-              {m.best_months?.length ? <>Best months: <strong>{monthNames(m.best_months)}</strong>. {m.best_months_rule}</> : 'No suggestion.'}{' '}
+              {m.best_months?.length ? <>Best months: <strong>{monthNames(m.best_months)}</strong>. {m.best_months_rule}</> : (m.best_months_rule ?? 'No suggestion.')}{' '}
               Our rules, not safety advice.
             </p>
             <h2>Before you go</h2>

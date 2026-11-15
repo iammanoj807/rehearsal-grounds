@@ -44,7 +44,8 @@ each at least 10 km from the next, and how the usual analog regions rank. Every 
   at the middle of the target's noon Sun band;
 - five explanation bars (relief, slope, roughness, shape, image embedding) and a terrain table;
 - a lighting similarity: the share of each patch in shadow at the target's low Sun elevations, compared;
-- a 12-month calendar of low-sun hours, daylight, NASA POWER temperature and rain, with suggested months;
+- a 12-month calendar of low-sun minutes, daylight, NASA POWER mean daily low and high and rain, with suggested
+  months only where our rules find a clear best month (74 of 450 sites);
 - NASA POWER climate and ESA WorldCover land cover;
 - a novelty flag ("Near a known analog" or "Outside our analog catalogue", from 24 sourced analog sites);
 - strong-match, breaks-down and tests-suited lines, and a "Before you go" box;
@@ -67,8 +68,9 @@ each at least 10 km from the next, and how the usual analog regions rank. Every 
 patches, the answer is a specific slope or ridge that a team can drive, walk and image. Example: the top match for
 Malapert massif, an Artemis III candidate region, is a slope near Yungay in the Atacama with a 90th-percentile slope
 of 16.4° against 16.5° on the Moon. It scores 89.1 of 100. At Malapert the noon Sun stays between 2.5° and 5.6° all
-year; at 3° and 5° the two patches have a lighting similarity of 93.4, and our rule suggests May, November and
-December for a rehearsal there.
+year; at 3° and 5° the two patches have a lighting similarity of 93.4. Low-sun time at that Atacama site is about
+52 min a day all year, so our rules suggest no particular month. A Sun as low as Malapert's lasts about 58 min a day
+at the JETT5 area, but up to 7 h 32 min a day in February at McMurdo (#10, the most on Malapert's shortlist).
 
 **How the usual sites compare.** On the same score, the best searchable patch of the SP Crater region, in the
 volcanic field where JETT5 ran, ranks #580 for Malapert, and its best patch overall is one our land-cover masks remove
@@ -96,7 +98,7 @@ terrain similarity.
 - **Sanity checks.** All four pass.
 - **Lighting checks.** All four pass: no shadow on a flat plane; a 100 m step casts a shadow of h / tan(e) within
   one pixel; the lunar curvature drop at 10 km is 28.78 m; solar elevation matches the published NREL SPA example
-  (39.872° against 39.888°).
+  (39.8721° against the report's 39.8720°, both without refraction).
 - **Rediscovery of known analogs.** Saturated, so it is reported as context only.
 
 **What is new compared with regional screening.**
@@ -126,7 +128,8 @@ terrain similarity.
   their dossiers warn that the patch may be glacier ice.
 - Lighting: a 60 m grid misses small shadows; no atmosphere scattering, regolith reflectance or Earthshine; at 1–2°
   most rough terrain is largely in shadow on both bodies, so lighting scores bunch near the top (medians 92–95).
-- Suggested months are our rule (dry, −25 to 35 °C, most low-sun hours), not safety advice.
+- Suggested months are our rule (dry, mean daily low and high within −25 to 35 °C, a clear low-sun peak), not
+  safety advice; most sites get none.
 
 **Tools used.** Python, rasterio/GDAL, NumPy, SciPy, pandas, scikit-learn, PyTorch and torchvision (ResNet-18), FAISS,
 Pydantic, React, TypeScript, Vite, Leaflet, GitHub Pages.
@@ -182,7 +185,7 @@ Every spoken number comes from the exported data of this run.
 | 0–6 s | JETT5 night-EVA image (NASA, "A Moonlit Moonwalk") or the slide 2 text | "In 2024 NASA rehearsed Artemis III moonwalks in Arizona, some at night, to test the south pole's changing light." |
 | 6–12 s | Screen recording: pick Malapert massif (Artemis III region badge), the map fills | "Pick an Artemis III region. We match its terrain against 43,794 Earth patches at 60 metres." |
 | 12–20 s | Open the top match (Atacama near Yungay, 89.1); swipe the divider; switch to Low sun | "The best match scores 89.1. Under Malapert's low noon Sun, 3 to 5 degrees up, the shadows agree at 93.4." |
-| 20–25 s | Scroll to "When to go" (May, Nov, Dec) and back to "How the usual analog sites compare" | "It suggests the best months, and shows how the usual sites, including the JETT5 area, rank on the same fingerprint." |
+| 20–25 s | The low-Sun line in "How the usual analog sites compare" | "At NASA's JETT5 test area a Sun this low lasts about 58 minutes a day. At McMurdo it lasts up to 7 hours 32 minutes in February." |
 | 25–30 s | Data credits and URL | "Built on NASA, USGS and ESA open data. Try it at iammanoj807.github.io/rehearsal-grounds." |
 
 ## Backup slide deck (7 slides including title)
@@ -193,7 +196,7 @@ Every spoken number comes from the exported data of this run.
 3. The targets: eight LOLA south-pole sites, four of NASA's nine Artemis III candidate regions, and Jezero.
 4. How it works: the five-stage pipeline, now with the low-Sun analog and monthly Sun hours.
 5. Artemis III example: Malapert massif vs Atacama near Yungay (89.1), the swipe pair and the low-Sun pair, lighting
-   similarity 93.4, best months.
+   similarity 93.4, and how long a Sun this low lasts at the JETT5 area and at McMurdo.
 6. Validation: crater benchmark (AUC 0.976 embedding, 0.976 against hard negatives, 0.632 features, 0.889 combined at
    the Moon σ, 0.546 random), robustness, lighting checks.
 7. Impact: planner outputs, the usual sites on the same score (JETT5 area #580 for Malapert), next steps, credits.

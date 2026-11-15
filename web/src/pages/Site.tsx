@@ -42,14 +42,18 @@ function dossierMarkdown(t: Target, m: Match): string {
     '## Environment (Earth site)',
     env
       ? [
-          `- Mean / min / max temperature: ${fmt(env.t2m_mean_c, 1, ' °C')} / ${fmt(env.t2m_min_c, 1, ' °C')} / ${fmt(env.t2m_max_c, 1, ' °C')}`,
+          `- Mean temperature: ${fmt(env.t2m_mean_c, 1, ' °C')}; coldest / warmest hour (NASA POWER climatology): ${fmt(env.t2m_min_c, 1, ' °C')} / ${fmt(env.t2m_max_c, 1, ' °C')}`,
           `- Precipitation: ${fmt(env.precip_mm_per_day, 2, ' mm/day')}`,
           `- Bare ground / snow-ice (2 km): ${pct(env.bare_fraction)} / ${pct(env.snow_ice_fraction)}`,
         ].join('\n')
       : '- Not available',
     '',
     m.lighting ? `- Low-sun shadow similarity (separate panel): ${m.lighting.similarity.toFixed(0)}/100` : '- Low-sun shadow similarity: not applicable',
-    m.best_months?.length ? `- Best months (our rules, not safety advice): ${monthNames(m.best_months)}. ${m.best_months_rule ?? ''}` : '',
+    m.best_months?.length
+      ? `- Best months (our rules, not safety advice): ${monthNames(m.best_months)}. ${m.best_months_rule ?? ''}`
+      : m.best_months_rule
+        ? `- Best months: ${m.best_months_rule}`
+        : '',
     '',
     '## Strong match',
     ...m.strong_match.map((s) => `- ${s}`),
@@ -111,7 +115,7 @@ export default function SitePage() {
   const envTiles = env
     ? [
         { label: 'Mean temperature', value: fmt(env.t2m_mean_c, 1, ' °C') },
-        { label: 'Coldest / warmest monthly extreme', value: `${fmt(env.t2m_min_c, 1, '°')} / ${fmt(env.t2m_max_c, 1, ' °C')}` },
+        { label: 'Coldest / warmest hour (climatology)', value: `${fmt(env.t2m_min_c, 1, '°')} / ${fmt(env.t2m_max_c, 1, ' °C')}` },
         { label: 'Mean daily temperature range', value: fmt(env.t2m_range_c, 1, ' °C') },
         { label: 'Precipitation', value: fmt(env.precip_mm_per_day, 2, ' mm/day') },
         { label: 'Relative humidity', value: fmt(env.rh_pct, 0, '%') },
@@ -243,11 +247,13 @@ export default function SitePage() {
               </figure>
             </div>
           )}
-          <p className="small muted center">
-            Both views: 3.84 km across on a 60 m grid, light from the north-west at 45°, no vertical exaggeration. Every
-            patch image uses the same contrast stretch, so brightness and texture compare directly between the two
-            views. Scale bars are 1 km.
-          </p>
+          {mode !== 'lowsun' && (
+            <p className="small muted center">
+              Both views: 3.84 km across on a 60 m grid, light from the north-west at 45°, no vertical exaggeration.
+              Every patch image uses the same contrast stretch, so brightness and texture compare directly between the
+              two views. Scale bars are 1 km.
+            </p>
+          )}
         </section>
 
         <div className="site-grid">

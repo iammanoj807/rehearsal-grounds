@@ -45,6 +45,28 @@ def main(out: Path) -> None:
     tmal = next(t for t in targets if t["id"] == "moon_site23_malapert")
     sp_mal = next(r for r in usual["targets"]["moon_site23_malapert"]["regions"] if r["region_id"] == usual["field_test_region_id"])
     month_names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+    long_months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+                   "November", "December"]
+    j5 = sorted(tmal["sun_band"]["jett5_low_sun_min"])
+    j5_med = (j5[5] + j5[6]) / 2
+
+    def dur(minutes: float) -> str:
+        h, m_ = divmod(round(minutes), 60)
+        return f"{h} h {m_} min" if h else f"{m_} min"
+
+    peaks = [(max(c["low_sun_h"] or 0 for c in m["calendar"]) * 60, m) for m in mal["matches"] if m.get("calendar")]
+    # The shortlisted site with the most low-sun time (the same figure the app's usual-sites panel shows).
+    mc = max(peaks, key=lambda x: x[0], default=None)
+    top0 = mal["matches"][0]
+    if top0["best_months"]:
+        low_sun_line = (f"<b>Best months:</b> {', '.join(month_names[m - 1] for m in top0['best_months'])} "
+                        f"(our rules, not safety advice).")
+    else:
+        low_sun_line = f"<b>When:</b> {html.escape(top0['best_months_rule'])}"
+    if mc:
+        pk = max(mc[1]["calendar"], key=lambda c: c["low_sun_h"] or 0)
+        low_sun_line += (f" <b>Low Sun:</b> about {dur(j5_med)} a day at the JETT5 area; up to {dur(mc[0])} a day in "
+                         f"{long_months[pk['month'] - 1]} at {html.escape(mc[1]['region_name'])} (#{mc[1]['rank']}).")
     top = mal["matches"][0]
     shack = results["moon_site04_shackleton_rim"]["matches"]
     jez = results["mars_jezero"]["matches"]
@@ -108,7 +130,7 @@ def main(out: Path) -> None:
 <figure class="moonp"><img src="{img(top["images"]["lowsun_target"])}" alt=""><figcaption>Moon, low sun {tmal["sun_band"]["preview_elevation_deg"]:.1f}°</figcaption></figure>
 <figure class="earthp"><img src="{img(top["images"]["lowsun_earth"])}" alt=""><figcaption>Earth, same low sun</figcaption></figure></div>
 <div class="card"><p class="score">{top["score"]:.1f}<span> similarity score (0-100)</span></p><p class="score2">{top["lighting"]["similarity"]:.1f}<span> low-sun shadow similarity, a separate panel</span></p>{bars}
-<p class="small"><b>Best months:</b> {", ".join(month_names[m - 1] for m in top["best_months"])} (our rule: dry months within −25 to 35 °C with the most low-sun hours).</p>
+<p class="small">{low_sun_line}</p>
 <p class="small">90th-percentile slope {top["target_terrain"]["slope_p90_deg"]:.1f}° (Moon) vs {top["terrain"]["slope_p90_deg"]:.1f}° (Earth) · relief {top["target_terrain"]["relief_m"]:.0f} m vs {top["terrain"]["relief_m"]:.0f} m</p>
 <p class="small"><b>Breaks down:</b> gravity, vacuum, radiation, polar light; Earth matches {100 * cov_mal:.0f}% of Malapert's patches, but not its steepest faces.</p></div></div></section>''',
         # 6 Validation

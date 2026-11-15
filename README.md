@@ -9,7 +9,8 @@ patch at 60 m, and **where and when does the real Sun cast south-pole-like shado
 For each target (8 LOLA south-pole sites, 4 of them NASA Artemis III candidate regions, and the Jezero landing area
 on Mars) it ranks 43,794 Earth patches. Every candidate analog gets a dossier: a swipe comparison of the two terrains,
 including a low-Sun view with cast shadows, what matches, where the analogy breaks down, a lighting similarity, a
-12-month rehearsal calendar with suggested months, whether it is near a known analog, and which tests it suits.
+12-month rehearsal calendar (with suggested months only where our rules find a clear best month), whether it is
+near a known analog, and which tests it suits.
 
 **Live app:** https://iammanoj807.github.io/rehearsal-grounds/ · 2026 NASA Space Apps Challenge, *Identify Earth
 Locations that Analog the Permanent Moon Base Locations and Mars*.
@@ -56,17 +57,21 @@ Locations that Analog the Permanent Moon Base Locations and Mars*.
    score, with and without the land-cover masks. The SP Crater region lies in the San Francisco Volcanic Field where
    JETT5 ran; for the eight Moon targets its best searchable patch ranks between #251 and #1,288, and its best patch
    overall is one the masks remove (with masks off it ranks between #104 and #330). For Jezero it ranks #19.
-7. **Low-sun lighting analog.** At the lunar south pole the noon Sun stays within 1.54° of 90° − |latitude| all
-   year: 0–1.8° at Shackleton rim, 2.5–5.6° at Malapert. For both the target patch and the Earth patch we march rays
+7. **Low-sun lighting analog.** The Moon's axis is tilted about 1.54°, so near the south pole the Sun stays low all
+   year: at Malapert the noon Sun stays between 2.5° and 5.6°; at Shackleton rim it never rises more than 1.8°, and
+   for part of the year it stays below the horizon. On Earth, a Sun as low as Malapert's lasts about 58 min a day at
+   the JETT5 area, but up to 7 h 32 min a day in February at McMurdo (#10, the most on Malapert's shortlist). For both the target patch and the Earth patch we march rays
    toward the Sun from 36 directions across 3.84 km of surrounding terrain, include the body's curvature (d²/2R), and
    count the share of the patch in cast or attached shadow at 1, 2, 3, 5 and 10°. The Earth patch is given the same
    visible surroundings as its target patch, because the LOLA site maps are small. Lighting similarity = 100 × (1 −
    mean difference) at the elevations inside the target's band. It is a separate panel and never changes the
    similarity score. Medians are 92–95 across the Moon targets.
-8. **Rehearsal window.** For every Earth site: daylight and low-sun hours on the 15th of each month (NOAA
-   solar-position equations), NASA POWER monthly temperature and rain, and up to three suggested months from a
-   stated rule (config/rehearsal.yaml): dry months (≤ 1 mm/day) with a mean daily low of at least −25 °C and high of
-   at most 35 °C, ranked by low-sun hours. Planner outputs: CSV, GeoJSON and KML of the shortlist, a printable
+8. **Rehearsal window.** For every Earth site: daylight and low-sun minutes on the 15th of each month (NOAA
+   solar-position equations, 1-minute steps), NASA POWER mean daily low and high (T2M_MIN_AVG, T2M_MAX_AVG) and
+   rain. Months are suggested (config/rehearsal.yaml) only when at least one month passes both the rain rule
+   (≤ 1 mm/day) and the temperature rule (mean daily low ≥ −25 °C, high ≤ 35 °C), and the best such month has at
+   least 10 more low-sun minutes a day than the median such month. Otherwise the dossier says why; 74 of the 450
+   exported sites get a suggestion. Planner outputs: CSV, GeoJSON and KML of the shortlist, a printable
    field-test brief per site, and a "Before you go" box with sourced notes where an official source exists.
 
 ## Validation
@@ -111,7 +116,8 @@ the top 10. The terrain/embedding split matters more: at 0.4/0.6, 50–80% of ea
 
 **Lighting checks.** All four pass: a flat plane casts no shadow at a 1° Sun; a 100 m step casts a shadow of
 h / tan(e) within one 60 m pixel (9 px against 9.45 expected at 10°); the lunar curvature drop at 10 km is 28.78 m;
-and the solar elevation matches the published NREL SPA example (39.872° true against 39.888° apparent).
+and the solar elevation matches the published NREL SPA example (39.8721° ours against the report's 39.8720°, both
+without refraction).
 
 **V4, sanity checks.** All four pass: self-match = 100, 90° rotation keeps its own top match, flat plane = slope 0,
 gradient 0.1 = 5.71°.

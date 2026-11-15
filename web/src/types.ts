@@ -30,6 +30,8 @@ export interface SunBand {
   high_deg: number
   elevations_used: number[]
   preview_elevation_deg: number
+  jett5_region_id?: string | null
+  jett5_low_sun_min?: number[] | null
 }
 
 export interface Region {
@@ -131,8 +133,8 @@ export interface MonthCal {
   month: number
   daylight_h: number
   low_sun_h?: number | null
-  t2m_min_c?: number | null
-  t2m_max_c?: number | null
+  t2m_min_avg_c?: number | null
+  t2m_max_avg_c?: number | null
   precip_mm_per_day?: number | null
 }
 
