@@ -75,6 +75,18 @@ export default function About() {
         and the terrain numbers explain each match in units a geologist can check. See the Validation page.
       </p>
 
+      <h2>Simulated lunar craters</h2>
+      <p>
+        Moon matches have a “Lunar craters (simulated)” view: the Earth patch with small impact craters added at the
+        target’s density, to show what the terrain match leaves out. Each crater of rim diameter D is a parabolic bowl
+        of depth 0.196 D<sup>1.01</sup> (D in km) with a rim 0.036 D high (Pike 1977), and ejecta falling as
+        (r/R)<sup>−3</sup> beyond the rim (McGetchin, Settle and Head 1973). Each crater is softened by linear
+        diffusion at the lunar rate of about 5.5 m²/Myr (Fassett and Thomson 2014) for a random age up to 3 billion
+        years. Sizes run from 240 m to 2 km with the equilibrium size distribution of small lunar craters (Minton et
+        al. 2019), at each target’s density from the Robbins (2019) crater catalogue, a lower bound because the
+        catalogue is complete only above about 1–2 km. The picture is an illustration; no score uses it.
+      </p>
+
       <h2>What Earth cannot reproduce</h2>
       <ul>
         <li>Gravity: Earth’s is about six times the Moon’s and about 2.6 times that of Mars.</li>

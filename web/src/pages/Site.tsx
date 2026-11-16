@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useSearchParams } from 'react-router-dom'
 import LoadState from '../components/LoadState.tsx'
 import ScoreBars from '../components/ScoreBars.tsx'
 import SiteInset from '../components/SiteInset.tsx'
@@ -7,7 +7,7 @@ import TerrainTwin from '../components/TerrainTwin.tsx'
 import FingerprintChart from '../components/FingerprintChart.tsx'
 import { bodyLabel, dataUrl, fmt, latLon, pct, useJson } from '../data.ts'
 import { monthNames } from '../exportShortlist.ts'
-import type { LightingInfo, Match, Region, Results, Target, Terrain } from '../types.ts'
+import type { LightingInfo, Match, Region, Results, SimulatedCraters, Target, Terrain } from '../types.ts'
 import LightingPanel, { CalendarStrip } from '../components/LightingPanel.tsx'
 import { NoveltyBadge, noveltyLabel, regionSetLabel } from './Explore.tsx'
 
@@ -90,8 +90,12 @@ export default function SitePage() {
   const prev = idx > 0 ? matches[idx - 1] : null
   const next = idx >= 0 && idx < matches.length - 1 ? matches[idx + 1] : null
   const back = `/?target=${targetId}`
-  const [mode, setMode] = useState<'swipe' | 'side' | 'lowsun'>('swipe')
+  const [params] = useSearchParams()
+  const [mode, setMode] = useState<'swipe' | 'side' | 'lowsun' | 'craters'>(params.get('view') === 'craters' ? 'craters' : 'swipe')
+  const sim = useJson<SimulatedCraters>('simulated_craters.json')
   const regions = useJson<Region[]>('regions.json')
+  const simTarget = target?.body === 'moon' ? sim.data?.targets[targetId] : undefined
+  const simSite = m && simTarget ? simTarget.sites[m.site_id] : undefined
   const linfo = useJson<LightingInfo>('lighting_info.json')
 
   if (targets.error || results.error || targets.loading || results.loading) {
@@ -185,6 +189,11 @@ export default function SitePage() {
                   Low sun
                 </button>
               )}
+              {simSite && (
+                <button type="button" className="chip" aria-pressed={mode === 'craters'} onClick={() => setMode('craters')}>
+                  Lunar craters (simulated)
+                </button>
+              )}
             </div>
           </div>
           {mode === 'lowsun' && m.images.lowsun_earth && m.images.lowsun_target && target.sun_band ? (
@@ -207,6 +216,29 @@ export default function SitePage() {
                 can show a few more distant shadows than the score counts.
                 {target.sun_band.preview_elevation_deg < 1.5 &&
                   ' At a Sun this low, most of both patches is in shadow: that is the honest result, not a rendering fault.'}
+              </p>
+            </>
+          ) : mode === 'craters' && simSite && simTarget ? (
+            <>
+              <TerrainTwin
+                size="lg"
+                targetSrc={dataUrl(m.images.target_hillshade)}
+                earthSrc={dataUrl(simSite.image)}
+                targetAlt={`Shaded relief of the ${target.name} target patch, 3.84 km across`}
+                earthAlt={`Simulated picture: the Earth patch in ${m.region_name} with lunar craters added at ${target.name}'s density`}
+                body={target.body}
+                targetName={target.name}
+                earthName="Simulated craters"
+              />
+              <p className="small muted center">
+                <strong>Simulated, not real terrain.</strong> The right side is the same Earth patch with small impact
+                craters added at {target.name}’s average density: about {simTarget.density_ge_240m_per_km2.toFixed(2)} craters
+                of 240 m or more per km² (95% range {simTarget.density_95_interval[0].toFixed(2)}–
+                {simTarget.density_95_interval[1].toFixed(2)}), from the {simTarget.craters_ge_1km} catalogued craters of
+                1 km or more in the target map (Robbins 2019), extended to smaller sizes; {simSite.craters_in_view}{' '}
+                craters fall in this view. It shows what the terrain match leaves out: Earth’s surface lacks the Moon’s
+                small craters. A single Moon patch can have more or fewer craters than the target’s average. Crater shapes follow Pike (1977) and McGetchin et al. (1973), softened by lunar erosion
+                (Fassett and Thomson 2014). No score uses this picture.
               </p>
             </>
           ) : mode === 'swipe' ? (

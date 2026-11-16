@@ -1,0 +1,1700 @@
+{
+ "generated_at": "2026-11-16T00:40:06+00:00",
+ "method": {
+  "profile": "parabolic bowl: depth 0.196 D^1.01 (km) and rim height 0.036 D (Pike 1977); ejecta (r/R)^-3 outside the rim (McGetchin, Settle and Head 1973), cut at 5 R",
+  "degradation": "linear diffusion, kappa 5.5 m2/Myr (Fassett and Thomson 2014), random age 0-3000 Myr per crater",
+  "sizes": "240 m-2 km, cumulative slope 2.0 (equilibrium of small lunar craters, Minton et al. 2019)",
+  "density": "Robbins (2019) craters >= 1 km in each target map, extrapolated to >= 240 m; a lower bound",
+  "note": "Illustration only: the Earth patch with the target's crater density added. No score uses it."
+ },
+ "targets": {
+  "moon_site23_malapert": {
+   "craters_ge_1km": 16,
+   "area_km2": 441.0,
+   "density_ge_240m_per_km2": 0.63,
+   "density_95_interval": [
+    0.36,
+    1.023
+   ],
+   "sites": {
+    "atacama_yungay:1568:160": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1568_160.png",
+     "craters_in_view": 9
+    },
+    "hawaii_kilauea_maunakea:352:608": {
+     "image": "img/simulated/moon_site23_malapert/hawaii_kilauea_maunakea_352_608.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:1376:384": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1376_384.png",
+     "craters_in_view": 11
+    },
+    "mcmurdo_dry_valleys:1536:1568": {
+     "image": "img/simulated/moon_site23_malapert/mcmurdo_dry_valleys_1536_1568.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:0:672": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_0_672.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:1312:160": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1312_160.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:288:928": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_288_928.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:1408:1344": {
+     "image": "img/simulated/moon_site23_malapert/mcmurdo_dry_valleys_1408_1344.png",
+     "craters_in_view": 6
+    },
+    "atacama_yungay:1600:352": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1600_352.png",
+     "craters_in_view": 7
+    },
+    "mcmurdo_dry_valleys:928:672": {
+     "image": "img/simulated/moon_site23_malapert/mcmurdo_dry_valleys_928_672.png",
+     "craters_in_view": 7
+    },
+    "atacama_yungay:736:736": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_736_736.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:64:480": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_64_480.png",
+     "craters_in_view": 12
+    },
+    "haughton:1600:1376": {
+     "image": "img/simulated/moon_site23_malapert/haughton_1600_1376.png",
+     "craters_in_view": 16
+    },
+    "death_valley:992:1088": {
+     "image": "img/simulated/moon_site23_malapert/death_valley_992_1088.png",
+     "craters_in_view": 10
+    },
+    "lut:576:1504": {
+     "image": "img/simulated/moon_site23_malapert/lut_576_1504.png",
+     "craters_in_view": 7
+    },
+    "hawaii_kilauea_maunakea:512:672": {
+     "image": "img/simulated/moon_site23_malapert/hawaii_kilauea_maunakea_512_672.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:768:160": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_768_160.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1152:608": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1152_608.png",
+     "craters_in_view": 4
+    },
+    "puna_de_atacama:1344:1408": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_1344_1408.png",
+     "craters_in_view": 11
+    },
+    "puna_de_atacama:1216:64": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_1216_64.png",
+     "craters_in_view": 3
+    },
+    "askja:480:992": {
+     "image": "img/simulated/moon_site23_malapert/askja_480_992.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:320:640": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_320_640.png",
+     "craters_in_view": 15
+    },
+    "death_valley:1088:1280": {
+     "image": "img/simulated/moon_site23_malapert/death_valley_1088_1280.png",
+     "craters_in_view": 12
+    },
+    "haughton:1120:1280": {
+     "image": "img/simulated/moon_site23_malapert/haughton_1120_1280.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:1344:864": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_1344_864.png",
+     "craters_in_view": 9
+    },
+    "atacama_yungay:896:640": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_896_640.png",
+     "craters_in_view": 11
+    },
+    "puna_de_atacama:416:800": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_416_800.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:864:320": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_864_320.png",
+     "craters_in_view": 8
+    },
+    "mcmurdo_dry_valleys:320:928": {
+     "image": "img/simulated/moon_site23_malapert/mcmurdo_dry_valleys_320_928.png",
+     "craters_in_view": 10
+    },
+    "death_valley:480:320": {
+     "image": "img/simulated/moon_site23_malapert/death_valley_480_320.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:1408:704": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1408_704.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:608:640": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_608_640.png",
+     "craters_in_view": 13
+    },
+    "hawaii_kilauea_maunakea:1312:1312": {
+     "image": "img/simulated/moon_site23_malapert/hawaii_kilauea_maunakea_1312_1312.png",
+     "craters_in_view": 8
+    },
+    "tibesti:768:640": {
+     "image": "img/simulated/moon_site23_malapert/tibesti_768_640.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:1248:608": {
+     "image": "img/simulated/moon_site23_malapert/mcmurdo_dry_valleys_1248_608.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:1248:1216": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_1248_1216.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:608:896": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_608_896.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:1024:1344": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_1024_1344.png",
+     "craters_in_view": 21
+    },
+    "namib:256:1248": {
+     "image": "img/simulated/moon_site23_malapert/namib_256_1248.png",
+     "craters_in_view": 5
+    },
+    "hawaii_kilauea_maunakea:1184:416": {
+     "image": "img/simulated/moon_site23_malapert/hawaii_kilauea_maunakea_1184_416.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:672:544": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_672_544.png",
+     "craters_in_view": 8
+    },
+    "tibesti:704:480": {
+     "image": "img/simulated/moon_site23_malapert/tibesti_704_480.png",
+     "craters_in_view": 9
+    },
+    "atacama_yungay:1056:448": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_1056_448.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:448:256": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_448_256.png",
+     "craters_in_view": 9
+    },
+    "namib:704:864": {
+     "image": "img/simulated/moon_site23_malapert/namib_704_864.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:1536:288": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_1536_288.png",
+     "craters_in_view": 8
+    },
+    "hawaii_kilauea_maunakea:992:352": {
+     "image": "img/simulated/moon_site23_malapert/hawaii_kilauea_maunakea_992_352.png",
+     "craters_in_view": 5
+    },
+    "puna_de_atacama:672:352": {
+     "image": "img/simulated/moon_site23_malapert/puna_de_atacama_672_352.png",
+     "craters_in_view": 11
+    },
+    "lut:1184:1600": {
+     "image": "img/simulated/moon_site23_malapert/lut_1184_1600.png",
+     "craters_in_view": 14
+    },
+    "atacama_yungay:992:160": {
+     "image": "img/simulated/moon_site23_malapert/atacama_yungay_992_160.png",
+     "craters_in_view": 8
+    }
+   }
+  },
+  "moon_site04_shackleton_rim": {
+   "craters_ge_1km": 9,
+   "area_km2": 254.7,
+   "density_ge_240m_per_km2": 0.613,
+   "density_95_interval": [
+    0.28,
+    1.164
+   ],
+   "sites": {
+    "hawaii_kilauea_maunakea:1344:1312": {
+     "image": "img/simulated/moon_site04_shackleton_rim/hawaii_kilauea_maunakea_1344_1312.png",
+     "craters_in_view": 6
+    },
+    "askja:480:1024": {
+     "image": "img/simulated/moon_site04_shackleton_rim/askja_480_1024.png",
+     "craters_in_view": 8
+    },
+    "mcmurdo_dry_valleys:928:672": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_928_672.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:1376:576": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1376_576.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:608:384": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_608_384.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:672:256": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_672_256.png",
+     "craters_in_view": 3
+    },
+    "atacama_yungay:1216:192": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1216_192.png",
+     "craters_in_view": 8
+    },
+    "mcmurdo_dry_valleys:1280:1280": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_1280_1280.png",
+     "craters_in_view": 8
+    },
+    "mcmurdo_dry_valleys:992:448": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_992_448.png",
+     "craters_in_view": 4
+    },
+    "puna_de_atacama:1536:128": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1536_128.png",
+     "craters_in_view": 15
+    },
+    "atacama_yungay:1248:384": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1248_384.png",
+     "craters_in_view": 13
+    },
+    "puna_de_atacama:128:384": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_128_384.png",
+     "craters_in_view": 5
+    },
+    "puna_de_atacama:320:1408": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_320_1408.png",
+     "craters_in_view": 5
+    },
+    "atacama_yungay:1600:160": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1600_160.png",
+     "craters_in_view": 12
+    },
+    "mcmurdo_dry_valleys:864:1216": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_864_1216.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:1600:800": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1600_800.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:576:832": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_576_832.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:1024:352": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1024_352.png",
+     "craters_in_view": 14
+    },
+    "mcmurdo_dry_valleys:1152:992": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_1152_992.png",
+     "craters_in_view": 9
+    },
+    "hawaii_kilauea_maunakea:352:736": {
+     "image": "img/simulated/moon_site04_shackleton_rim/hawaii_kilauea_maunakea_352_736.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:672:192": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_672_192.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:1184:512": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1184_512.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:480:832": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_480_832.png",
+     "craters_in_view": 7
+    },
+    "atacama_yungay:768:704": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_768_704.png",
+     "craters_in_view": 14
+    },
+    "mcmurdo_dry_valleys:640:32": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_640_32.png",
+     "craters_in_view": 7
+    },
+    "hawaii_kilauea_maunakea:1152:512": {
+     "image": "img/simulated/moon_site04_shackleton_rim/hawaii_kilauea_maunakea_1152_512.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:0:512": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_0_512.png",
+     "craters_in_view": 6
+    },
+    "hawaii_kilauea_maunakea:960:320": {
+     "image": "img/simulated/moon_site04_shackleton_rim/hawaii_kilauea_maunakea_960_320.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:32:736": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_32_736.png",
+     "craters_in_view": 5
+    },
+    "askja:1216:0": {
+     "image": "img/simulated/moon_site04_shackleton_rim/askja_1216_0.png",
+     "craters_in_view": 10
+    },
+    "mcmurdo_dry_valleys:1376:704": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_1376_704.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:1344:800": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1344_800.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:1344:1440": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1344_1440.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:1504:800": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1504_800.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1024:416": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1024_416.png",
+     "craters_in_view": 10
+    },
+    "mcmurdo_dry_valleys:1600:448": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_1600_448.png",
+     "craters_in_view": 14
+    },
+    "mcmurdo_dry_valleys:1536:1600": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_1536_1600.png",
+     "craters_in_view": 8
+    },
+    "askja:1440:128": {
+     "image": "img/simulated/moon_site04_shackleton_rim/askja_1440_128.png",
+     "craters_in_view": 11
+    },
+    "mcmurdo_dry_valleys:128:864": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_128_864.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:896:32": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_896_32.png",
+     "craters_in_view": 8
+    },
+    "salar_de_uyuni:352:512": {
+     "image": "img/simulated/moon_site04_shackleton_rim/salar_de_uyuni_352_512.png",
+     "craters_in_view": 4
+    },
+    "salar_de_uyuni:160:384": {
+     "image": "img/simulated/moon_site04_shackleton_rim/salar_de_uyuni_160_384.png",
+     "craters_in_view": 10
+    },
+    "death_valley:960:1088": {
+     "image": "img/simulated/moon_site04_shackleton_rim/death_valley_960_1088.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:288:960": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_288_960.png",
+     "craters_in_view": 6
+    },
+    "mcmurdo_dry_valleys:832:0": {
+     "image": "img/simulated/moon_site04_shackleton_rim/mcmurdo_dry_valleys_832_0.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:1408:0": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_1408_0.png",
+     "craters_in_view": 10
+    },
+    "namib:896:800": {
+     "image": "img/simulated/moon_site04_shackleton_rim/namib_896_800.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:32:1600": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_32_1600.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:192:576": {
+     "image": "img/simulated/moon_site04_shackleton_rim/puna_de_atacama_192_576.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1440:224": {
+     "image": "img/simulated/moon_site04_shackleton_rim/atacama_yungay_1440_224.png",
+     "craters_in_view": 9
+    }
+   }
+  },
+  "moon_site01_connecting_ridge": {
+   "craters_ge_1km": 19,
+   "area_km2": 254.7,
+   "density_ge_240m_per_km2": 1.295,
+   "density_95_interval": [
+    0.78,
+    2.022
+   ],
+   "sites": {
+    "hawaii_kilauea_maunakea:480:704": {
+     "image": "img/simulated/moon_site01_connecting_ridge/hawaii_kilauea_maunakea_480_704.png",
+     "craters_in_view": 19
+    },
+    "hawaii_kilauea_maunakea:1184:416": {
+     "image": "img/simulated/moon_site01_connecting_ridge/hawaii_kilauea_maunakea_1184_416.png",
+     "craters_in_view": 23
+    },
+    "atacama_yungay:1376:352": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1376_352.png",
+     "craters_in_view": 11
+    },
+    "askja:800:1600": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_800_1600.png",
+     "craters_in_view": 20
+    },
+    "hawaii_kilauea_maunakea:704:64": {
+     "image": "img/simulated/moon_site01_connecting_ridge/hawaii_kilauea_maunakea_704_64.png",
+     "craters_in_view": 21
+    },
+    "atacama_yungay:1504:224": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1504_224.png",
+     "craters_in_view": 31
+    },
+    "atacama_yungay:1216:160": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1216_160.png",
+     "craters_in_view": 15
+    },
+    "atacama_yungay:1280:800": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1280_800.png",
+     "craters_in_view": 19
+    },
+    "mcmurdo_dry_valleys:448:64": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_448_64.png",
+     "craters_in_view": 22
+    },
+    "hawaii_kilauea_maunakea:1312:1312": {
+     "image": "img/simulated/moon_site01_connecting_ridge/hawaii_kilauea_maunakea_1312_1312.png",
+     "craters_in_view": 16
+    },
+    "askja:800:96": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_800_96.png",
+     "craters_in_view": 25
+    },
+    "askja:832:704": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_832_704.png",
+     "craters_in_view": 22
+    },
+    "atacama_yungay:992:288": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_992_288.png",
+     "craters_in_view": 27
+    },
+    "hawaii_kilauea_maunakea:928:352": {
+     "image": "img/simulated/moon_site01_connecting_ridge/hawaii_kilauea_maunakea_928_352.png",
+     "craters_in_view": 25
+    },
+    "puna_de_atacama:352:1280": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_352_1280.png",
+     "craters_in_view": 17
+    },
+    "puna_de_atacama:1152:64": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_1152_64.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:128:864": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_128_864.png",
+     "craters_in_view": 14
+    },
+    "askja:1248:32": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_1248_32.png",
+     "craters_in_view": 13
+    },
+    "puna_de_atacama:864:320": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_864_320.png",
+     "craters_in_view": 18
+    },
+    "mcmurdo_dry_valleys:832:1280": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_832_1280.png",
+     "craters_in_view": 14
+    },
+    "puna_de_atacama:288:960": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_288_960.png",
+     "craters_in_view": 16
+    },
+    "hawaii_kilauea_maunakea:1056:544": {
+     "image": "img/simulated/moon_site01_connecting_ridge/hawaii_kilauea_maunakea_1056_544.png",
+     "craters_in_view": 23
+    },
+    "puna_de_atacama:608:320": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_608_320.png",
+     "craters_in_view": 21
+    },
+    "death_valley:992:1120": {
+     "image": "img/simulated/moon_site01_connecting_ridge/death_valley_992_1120.png",
+     "craters_in_view": 20
+    },
+    "atacama_yungay:1184:608": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1184_608.png",
+     "craters_in_view": 21
+    },
+    "mcmurdo_dry_valleys:1568:1600": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_1568_1600.png",
+     "craters_in_view": 24
+    },
+    "lut:864:1312": {
+     "image": "img/simulated/moon_site01_connecting_ridge/lut_864_1312.png",
+     "craters_in_view": 23
+    },
+    "puna_de_atacama:0:512": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_0_512.png",
+     "craters_in_view": 21
+    },
+    "atacama_yungay:1568:800": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1568_800.png",
+     "craters_in_view": 19
+    },
+    "atacama_yungay:480:800": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_480_800.png",
+     "craters_in_view": 20
+    },
+    "askja:1408:160": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_1408_160.png",
+     "craters_in_view": 11
+    },
+    "askja:1024:448": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_1024_448.png",
+     "craters_in_view": 30
+    },
+    "mcmurdo_dry_valleys:928:672": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_928_672.png",
+     "craters_in_view": 18
+    },
+    "puna_de_atacama:576:64": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_576_64.png",
+     "craters_in_view": 17
+    },
+    "mcmurdo_dry_valleys:352:896": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_352_896.png",
+     "craters_in_view": 23
+    },
+    "puna_de_atacama:928:672": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_928_672.png",
+     "craters_in_view": 15
+    },
+    "mcmurdo_dry_valleys:1024:1216": {
+     "image": "img/simulated/moon_site01_connecting_ridge/mcmurdo_dry_valleys_1024_1216.png",
+     "craters_in_view": 22
+    },
+    "atacama_yungay:736:736": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_736_736.png",
+     "craters_in_view": 26
+    },
+    "puna_de_atacama:32:64": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_32_64.png",
+     "craters_in_view": 24
+    },
+    "puna_de_atacama:576:608": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_576_608.png",
+     "craters_in_view": 18
+    },
+    "haughton:1600:1280": {
+     "image": "img/simulated/moon_site01_connecting_ridge/haughton_1600_1280.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:736:192": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_736_192.png",
+     "craters_in_view": 17
+    },
+    "atacama_yungay:128:128": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_128_128.png",
+     "craters_in_view": 19
+    },
+    "atacama_yungay:1408:672": {
+     "image": "img/simulated/moon_site01_connecting_ridge/atacama_yungay_1408_672.png",
+     "craters_in_view": 19
+    },
+    "puna_de_atacama:1280:1184": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_1280_1184.png",
+     "craters_in_view": 21
+    },
+    "puna_de_atacama:288:640": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_288_640.png",
+     "craters_in_view": 21
+    },
+    "askja:480:992": {
+     "image": "img/simulated/moon_site01_connecting_ridge/askja_480_992.png",
+     "craters_in_view": 20
+    },
+    "puna_de_atacama:384:800": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_384_800.png",
+     "craters_in_view": 24
+    },
+    "puna_de_atacama:64:768": {
+     "image": "img/simulated/moon_site01_connecting_ridge/puna_de_atacama_64_768.png",
+     "craters_in_view": 24
+    },
+    "namib:320:1376": {
+     "image": "img/simulated/moon_site01_connecting_ridge/namib_320_1376.png",
+     "craters_in_view": 16
+    }
+   }
+  },
+  "moon_site11_de_gerlache_rim": {
+   "craters_ge_1km": 7,
+   "area_km2": 254.7,
+   "density_ge_240m_per_km2": 0.477,
+   "density_95_interval": [
+    0.192,
+    0.983
+   ],
+   "sites": {
+    "mcmurdo_dry_valleys:928:672": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/mcmurdo_dry_valleys_928_672.png",
+     "craters_in_view": 4
+    },
+    "hawaii_kilauea_maunakea:352:736": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/hawaii_kilauea_maunakea_352_736.png",
+     "craters_in_view": 4
+    },
+    "hawaii_kilauea_maunakea:416:544": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/hawaii_kilauea_maunakea_416_544.png",
+     "craters_in_view": 5
+    },
+    "atacama_yungay:1600:160": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1600_160.png",
+     "craters_in_view": 7
+    },
+    "hawaii_kilauea_maunakea:1152:512": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/hawaii_kilauea_maunakea_1152_512.png",
+     "craters_in_view": 5
+    },
+    "atacama_yungay:1376:704": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1376_704.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:1184:384": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1184_384.png",
+     "craters_in_view": 2
+    },
+    "hawaii_kilauea_maunakea:992:352": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/hawaii_kilauea_maunakea_992_352.png",
+     "craters_in_view": 4
+    },
+    "puna_de_atacama:1568:320": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_1568_320.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:960:736": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_960_736.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:32:704": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_32_704.png",
+     "craters_in_view": 7
+    },
+    "salar_de_uyuni:320:480": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/salar_de_uyuni_320_480.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:1344:1408": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/mcmurdo_dry_valleys_1344_1408.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:800:448": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/mcmurdo_dry_valleys_800_448.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:32:512": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_32_512.png",
+     "craters_in_view": 6
+    },
+    "mcmurdo_dry_valleys:1248:608": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/mcmurdo_dry_valleys_1248_608.png",
+     "craters_in_view": 7
+    },
+    "atacama_yungay:1408:224": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1408_224.png",
+     "craters_in_view": 1
+    },
+    "puna_de_atacama:160:384": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_160_384.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:256:608": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_256_608.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:608:1600": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_608_1600.png",
+     "craters_in_view": 6
+    },
+    "puna_de_atacama:1440:0": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_1440_0.png",
+     "craters_in_view": 8
+    },
+    "salar_de_uyuni:0:288": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/salar_de_uyuni_0_288.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:608:1024": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_608_1024.png",
+     "craters_in_view": 6
+    },
+    "puna_de_atacama:640:640": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_640_640.png",
+     "craters_in_view": 8
+    },
+    "mcmurdo_dry_valleys:704:640": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/mcmurdo_dry_valleys_704_640.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1600:768": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1600_768.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:1312:512": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1312_512.png",
+     "craters_in_view": 6
+    },
+    "puna_de_atacama:288:928": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_288_928.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:1216:128": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_1216_128.png",
+     "craters_in_view": 13
+    },
+    "puna_de_atacama:992:0": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_992_0.png",
+     "craters_in_view": 2
+    },
+    "atacama_yungay:1120:160": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1120_160.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:768:736": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_768_736.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:960:384": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_960_384.png",
+     "craters_in_view": 7
+    },
+    "askja:480:1024": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/askja_480_1024.png",
+     "craters_in_view": 7
+    },
+    "atacama_yungay:1120:608": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_1120_608.png",
+     "craters_in_view": 3
+    },
+    "hawaii_kilauea_maunakea:1312:1344": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/hawaii_kilauea_maunakea_1312_1344.png",
+     "craters_in_view": 5
+    },
+    "puna_de_atacama:448:832": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_448_832.png",
+     "craters_in_view": 4
+    },
+    "mcmurdo_dry_valleys:448:64": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/mcmurdo_dry_valleys_448_64.png",
+     "craters_in_view": 5
+    },
+    "puna_de_atacama:1504:800": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_1504_800.png",
+     "craters_in_view": 6
+    },
+    "askja:1440:128": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/askja_1440_128.png",
+     "craters_in_view": 5
+    },
+    "atacama_yungay:672:544": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_672_544.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:1216:1440": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_1216_1440.png",
+     "craters_in_view": 6
+    },
+    "atacama_yungay:672:192": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_672_192.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:896:64": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_896_64.png",
+     "craters_in_view": 7
+    },
+    "atacama_yungay:832:896": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_832_896.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:672:256": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_672_256.png",
+     "craters_in_view": 7
+    },
+    "upper_mustang:608:1344": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/upper_mustang_608_1344.png",
+     "craters_in_view": 9
+    },
+    "atacama_yungay:384:256": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/atacama_yungay_384_256.png",
+     "craters_in_view": 6
+    },
+    "puna_de_atacama:1504:160": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_1504_160.png",
+     "craters_in_view": 6
+    },
+    "puna_de_atacama:96:1376": {
+     "image": "img/simulated/moon_site11_de_gerlache_rim/puna_de_atacama_96_1376.png",
+     "craters_in_view": 9
+    }
+   }
+  },
+  "moon_site20_leibnitz_beta": {
+   "craters_ge_1km": 29,
+   "area_km2": 254.7,
+   "density_ge_240m_per_km2": 1.977,
+   "density_95_interval": [
+    1.324,
+    2.839
+   ],
+   "sites": {
+    "hawaii_kilauea_maunakea:448:704": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_448_704.png",
+     "craters_in_view": 31
+    },
+    "mcmurdo_dry_valleys:448:64": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_448_64.png",
+     "craters_in_view": 25
+    },
+    "hawaii_kilauea_maunakea:1120:352": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_1120_352.png",
+     "craters_in_view": 27
+    },
+    "hawaii_kilauea_maunakea:896:352": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_896_352.png",
+     "craters_in_view": 37
+    },
+    "hawaii_kilauea_maunakea:704:64": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_704_64.png",
+     "craters_in_view": 27
+    },
+    "atacama_yungay:1216:192": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_1216_192.png",
+     "craters_in_view": 23
+    },
+    "askja:1024:448": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/askja_1024_448.png",
+     "craters_in_view": 24
+    },
+    "atacama_yungay:1504:224": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_1504_224.png",
+     "craters_in_view": 21
+    },
+    "mcmurdo_dry_valleys:1536:1568": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_1536_1568.png",
+     "craters_in_view": 38
+    },
+    "atacama_yungay:1408:384": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_1408_384.png",
+     "craters_in_view": 17
+    },
+    "hawaii_kilauea_maunakea:1088:640": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_1088_640.png",
+     "craters_in_view": 44
+    },
+    "atacama_yungay:1280:672": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_1280_672.png",
+     "craters_in_view": 25
+    },
+    "askja:448:960": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/askja_448_960.png",
+     "craters_in_view": 21
+    },
+    "mcmurdo_dry_valleys:128:864": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_128_864.png",
+     "craters_in_view": 34
+    },
+    "puna_de_atacama:1152:64": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_1152_64.png",
+     "craters_in_view": 32
+    },
+    "puna_de_atacama:576:64": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_576_64.png",
+     "craters_in_view": 33
+    },
+    "askja:800:1600": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/askja_800_1600.png",
+     "craters_in_view": 34
+    },
+    "mcmurdo_dry_valleys:1344:1408": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_1344_1408.png",
+     "craters_in_view": 34
+    },
+    "hawaii_kilauea_maunakea:1248:480": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_1248_480.png",
+     "craters_in_view": 21
+    },
+    "puna_de_atacama:608:320": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_608_320.png",
+     "craters_in_view": 31
+    },
+    "hawaii_kilauea_maunakea:1344:1312": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_1344_1312.png",
+     "craters_in_view": 33
+    },
+    "mcmurdo_dry_valleys:608:384": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_608_384.png",
+     "craters_in_view": 31
+    },
+    "hawaii_kilauea_maunakea:960:512": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_960_512.png",
+     "craters_in_view": 32
+    },
+    "death_valley:992:1120": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/death_valley_992_1120.png",
+     "craters_in_view": 31
+    },
+    "mcmurdo_dry_valleys:832:1280": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_832_1280.png",
+     "craters_in_view": 29
+    },
+    "atacama_yungay:1568:800": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_1568_800.png",
+     "craters_in_view": 31
+    },
+    "puna_de_atacama:352:1280": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_352_1280.png",
+     "craters_in_view": 28
+    },
+    "mcmurdo_dry_valleys:320:896": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_320_896.png",
+     "craters_in_view": 23
+    },
+    "atacama_yungay:960:288": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_960_288.png",
+     "craters_in_view": 23
+    },
+    "atacama_yungay:736:736": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_736_736.png",
+     "craters_in_view": 41
+    },
+    "askja:800:96": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/askja_800_96.png",
+     "craters_in_view": 26
+    },
+    "puna_de_atacama:256:192": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_256_192.png",
+     "craters_in_view": 27
+    },
+    "puna_de_atacama:288:960": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_288_960.png",
+     "craters_in_view": 27
+    },
+    "mcmurdo_dry_valleys:1024:1216": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_1024_1216.png",
+     "craters_in_view": 26
+    },
+    "puna_de_atacama:1536:128": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_1536_128.png",
+     "craters_in_view": 32
+    },
+    "puna_de_atacama:384:800": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_384_800.png",
+     "craters_in_view": 33
+    },
+    "puna_de_atacama:1024:384": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_1024_384.png",
+     "craters_in_view": 23
+    },
+    "puna_de_atacama:1280:1152": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_1280_1152.png",
+     "craters_in_view": 26
+    },
+    "mcmurdo_dry_valleys:1152:992": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/mcmurdo_dry_valleys_1152_992.png",
+     "craters_in_view": 35
+    },
+    "puna_de_atacama:800:800": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_800_800.png",
+     "craters_in_view": 26
+    },
+    "puna_de_atacama:512:608": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_512_608.png",
+     "craters_in_view": 32
+    },
+    "puna_de_atacama:1376:576": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_1376_576.png",
+     "craters_in_view": 25
+    },
+    "puna_de_atacama:832:288": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_832_288.png",
+     "craters_in_view": 37
+    },
+    "hawaii_kilauea_maunakea:928:704": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/hawaii_kilauea_maunakea_928_704.png",
+     "craters_in_view": 32
+    },
+    "askja:1408:160": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/askja_1408_160.png",
+     "craters_in_view": 25
+    },
+    "atacama_yungay:576:832": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_576_832.png",
+     "craters_in_view": 34
+    },
+    "atacama_yungay:160:96": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/atacama_yungay_160_96.png",
+     "craters_in_view": 33
+    },
+    "askja:832:704": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/askja_832_704.png",
+     "craters_in_view": 22
+    },
+    "death_valley:352:768": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/death_valley_352_768.png",
+     "craters_in_view": 23
+    },
+    "puna_de_atacama:64:480": {
+     "image": "img/simulated/moon_site20_leibnitz_beta/puna_de_atacama_64_480.png",
+     "craters_in_view": 24
+    }
+   }
+  },
+  "moon_haworth": {
+   "craters_ge_1km": 42,
+   "area_km2": 885.7,
+   "density_ge_240m_per_km2": 0.823,
+   "density_95_interval": [
+    0.593,
+    1.113
+   ],
+   "sites": {
+    "hawaii_kilauea_maunakea:1120:352": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_1120_352.png",
+     "craters_in_view": 11
+    },
+    "hawaii_kilauea_maunakea:896:352": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_896_352.png",
+     "craters_in_view": 19
+    },
+    "hawaii_kilauea_maunakea:1056:544": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_1056_544.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:1024:1216": {
+     "image": "img/simulated/moon_haworth/mcmurdo_dry_valleys_1024_1216.png",
+     "craters_in_view": 14
+    },
+    "hawaii_kilauea_maunakea:448:704": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_448_704.png",
+     "craters_in_view": 14
+    },
+    "hawaii_kilauea_maunakea:704:64": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_704_64.png",
+     "craters_in_view": 11
+    },
+    "mcmurdo_dry_valleys:1536:1568": {
+     "image": "img/simulated/moon_haworth/mcmurdo_dry_valleys_1536_1568.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:1248:640": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1248_640.png",
+     "craters_in_view": 12
+    },
+    "hawaii_kilauea_maunakea:1248:192": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_1248_192.png",
+     "craters_in_view": 10
+    },
+    "askja:416:960": {
+     "image": "img/simulated/moon_haworth/askja_416_960.png",
+     "craters_in_view": 10
+    },
+    "hawaii_kilauea_maunakea:960:736": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_960_736.png",
+     "craters_in_view": 12
+    },
+    "death_valley:960:1120": {
+     "image": "img/simulated/moon_haworth/death_valley_960_1120.png",
+     "craters_in_view": 14
+    },
+    "hawaii_kilauea_maunakea:1344:1312": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_1344_1312.png",
+     "craters_in_view": 9
+    },
+    "atacama_yungay:256:1536": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_256_1536.png",
+     "craters_in_view": 17
+    },
+    "askja:992:416": {
+     "image": "img/simulated/moon_haworth/askja_992_416.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:1056:736": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_1056_736.png",
+     "craters_in_view": 14
+    },
+    "atacama_yungay:96:288": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_96_288.png",
+     "craters_in_view": 16
+    },
+    "puna_de_atacama:608:64": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_608_64.png",
+     "craters_in_view": 13
+    },
+    "askja:800:96": {
+     "image": "img/simulated/moon_haworth/askja_800_96.png",
+     "craters_in_view": 14
+    },
+    "askja:736:1376": {
+     "image": "img/simulated/moon_haworth/askja_736_1376.png",
+     "craters_in_view": 12
+    },
+    "lut:992:288": {
+     "image": "img/simulated/moon_haworth/lut_992_288.png",
+     "craters_in_view": 10
+    },
+    "hawaii_kilauea_maunakea:1280:448": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_1280_448.png",
+     "craters_in_view": 10
+    },
+    "hawaii_kilauea_maunakea:1504:800": {
+     "image": "img/simulated/moon_haworth/hawaii_kilauea_maunakea_1504_800.png",
+     "craters_in_view": 9
+    },
+    "atacama_yungay:1536:832": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1536_832.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:1120:1440": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1120_1440.png",
+     "craters_in_view": 14
+    },
+    "askja:384:320": {
+     "image": "img/simulated/moon_haworth/askja_384_320.png",
+     "craters_in_view": 16
+    },
+    "atacama_yungay:992:288": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_992_288.png",
+     "craters_in_view": 22
+    },
+    "namib:288:1568": {
+     "image": "img/simulated/moon_haworth/namib_288_1568.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:1472:1408": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1472_1408.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:224:992": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_224_992.png",
+     "craters_in_view": 10
+    },
+    "askja:800:1600": {
+     "image": "img/simulated/moon_haworth/askja_800_1600.png",
+     "craters_in_view": 18
+    },
+    "atacama_yungay:1376:352": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1376_352.png",
+     "craters_in_view": 12
+    },
+    "haughton:1568:384": {
+     "image": "img/simulated/moon_haworth/haughton_1568_384.png",
+     "craters_in_view": 18
+    },
+    "puna_de_atacama:544:608": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_544_608.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:160:1344": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_160_1344.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:864:1312": {
+     "image": "img/simulated/moon_haworth/mcmurdo_dry_valleys_864_1312.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:1184:256": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1184_256.png",
+     "craters_in_view": 12
+    },
+    "askja:448:160": {
+     "image": "img/simulated/moon_haworth/askja_448_160.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:608:320": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_608_320.png",
+     "craters_in_view": 20
+    },
+    "puna_de_atacama:1152:64": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_1152_64.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:608:672": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_608_672.png",
+     "craters_in_view": 16
+    },
+    "mcmurdo_dry_valleys:128:864": {
+     "image": "img/simulated/moon_haworth/mcmurdo_dry_valleys_128_864.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:352:224": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_352_224.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:1312:1216": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_1312_1216.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:1120:1024": {
+     "image": "img/simulated/moon_haworth/mcmurdo_dry_valleys_1120_1024.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:864:736": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_864_736.png",
+     "craters_in_view": 18
+    },
+    "askja:1280:0": {
+     "image": "img/simulated/moon_haworth/askja_1280_0.png",
+     "craters_in_view": 11
+    },
+    "puna_de_atacama:352:1280": {
+     "image": "img/simulated/moon_haworth/puna_de_atacama_352_1280.png",
+     "craters_in_view": 10
+    },
+    "mcmurdo_dry_valleys:1184:480": {
+     "image": "img/simulated/moon_haworth/mcmurdo_dry_valleys_1184_480.png",
+     "craters_in_view": 17
+    },
+    "atacama_yungay:1600:352": {
+     "image": "img/simulated/moon_haworth/atacama_yungay_1600_352.png",
+     "craters_in_view": 13
+    }
+   }
+  },
+  "moon_site06_nobile_rim_1": {
+   "craters_ge_1km": 22,
+   "area_km2": 399.2,
+   "density_ge_240m_per_km2": 0.957,
+   "density_95_interval": [
+    0.6,
+    1.449
+   ],
+   "sites": {
+    "atacama_yungay:1568:192": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1568_192.png",
+     "craters_in_view": 16
+    },
+    "hawaii_kilauea_maunakea:352:672": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/hawaii_kilauea_maunakea_352_672.png",
+     "craters_in_view": 9
+    },
+    "askja:480:1024": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/askja_480_1024.png",
+     "craters_in_view": 13
+    },
+    "puna_de_atacama:1536:128": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1536_128.png",
+     "craters_in_view": 16
+    },
+    "hawaii_kilauea_maunakea:1280:1344": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/hawaii_kilauea_maunakea_1280_1344.png",
+     "craters_in_view": 18
+    },
+    "puna_de_atacama:0:672": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_0_672.png",
+     "craters_in_view": 18
+    },
+    "puna_de_atacama:608:320": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_608_320.png",
+     "craters_in_view": 12
+    },
+    "mcmurdo_dry_valleys:128:864": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_128_864.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:256:928": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_256_928.png",
+     "craters_in_view": 15
+    },
+    "atacama_yungay:1280:160": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1280_160.png",
+     "craters_in_view": 19
+    },
+    "mcmurdo_dry_valleys:1152:992": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_1152_992.png",
+     "craters_in_view": 12
+    },
+    "mcmurdo_dry_valleys:608:352": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_608_352.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:1376:384": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1376_384.png",
+     "craters_in_view": 10
+    },
+    "mcmurdo_dry_valleys:864:1216": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_864_1216.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1568:800": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1568_800.png",
+     "craters_in_view": 15
+    },
+    "mcmurdo_dry_valleys:928:672": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_928_672.png",
+     "craters_in_view": 13
+    },
+    "mcmurdo_dry_valleys:1536:1600": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_1536_1600.png",
+     "craters_in_view": 17
+    },
+    "mcmurdo_dry_valleys:1408:1344": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_1408_1344.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:768:736": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_768_736.png",
+     "craters_in_view": 16
+    },
+    "hawaii_kilauea_maunakea:1152:416": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/hawaii_kilauea_maunakea_1152_416.png",
+     "craters_in_view": 14
+    },
+    "hawaii_kilauea_maunakea:704:64": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/hawaii_kilauea_maunakea_704_64.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:1056:128": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1056_128.png",
+     "craters_in_view": 9
+    },
+    "puna_de_atacama:1184:512": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1184_512.png",
+     "craters_in_view": 10
+    },
+    "askja:1248:1248": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/askja_1248_1248.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:1376:576": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1376_576.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:352:800": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_352_800.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:1376:704": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1376_704.png",
+     "craters_in_view": 19
+    },
+    "atacama_yungay:1056:224": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1056_224.png",
+     "craters_in_view": 19
+    },
+    "atacama_yungay:576:832": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_576_832.png",
+     "craters_in_view": 19
+    },
+    "puna_de_atacama:224:448": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_224_448.png",
+     "craters_in_view": 17
+    },
+    "puna_de_atacama:1536:832": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1536_832.png",
+     "craters_in_view": 17
+    },
+    "atacama_yungay:672:64": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_672_64.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:1344:768": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1344_768.png",
+     "craters_in_view": 15
+    },
+    "askja:1312:224": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/askja_1312_224.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:448:64": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_448_64.png",
+     "craters_in_view": 13
+    },
+    "askja:640:288": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/askja_640_288.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:544:608": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_544_608.png",
+     "craters_in_view": 11
+    },
+    "hawaii_kilauea_maunakea:960:320": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/hawaii_kilauea_maunakea_960_320.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:1024:352": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_1024_352.png",
+     "craters_in_view": 14
+    },
+    "mcmurdo_dry_valleys:352:896": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_352_896.png",
+     "craters_in_view": 19
+    },
+    "namib:896:800": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/namib_896_800.png",
+     "craters_in_view": 15
+    },
+    "mcmurdo_dry_valleys:768:416": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/mcmurdo_dry_valleys_768_416.png",
+     "craters_in_view": 8
+    },
+    "puna_de_atacama:288:640": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_288_640.png",
+     "craters_in_view": 19
+    },
+    "lut:352:1568": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/lut_352_1568.png",
+     "craters_in_view": 16
+    },
+    "puna_de_atacama:352:1280": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_352_1280.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1024:416": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_1024_416.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:896:608": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/atacama_yungay_896_608.png",
+     "craters_in_view": 15
+    },
+    "askja:864:1440": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/askja_864_1440.png",
+     "craters_in_view": 16
+    },
+    "puna_de_atacama:480:832": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/puna_de_atacama_480_832.png",
+     "craters_in_view": 20
+    },
+    "death_valley:960:1088": {
+     "image": "img/simulated/moon_site06_nobile_rim_1/death_valley_960_1088.png",
+     "craters_in_view": 9
+    }
+   }
+  },
+  "moon_dm2_nobile_rim_2": {
+   "craters_ge_1km": 18,
+   "area_km2": 399.2,
+   "density_ge_240m_per_km2": 0.783,
+   "density_95_interval": [
+    0.464,
+    1.237
+   ],
+   "sites": {
+    "askja:640:288": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_640_288.png",
+     "craters_in_view": 5
+    },
+    "mcmurdo_dry_valleys:768:384": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_768_384.png",
+     "craters_in_view": 17
+    },
+    "hawaii_kilauea_maunakea:1312:1312": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_1312_1312.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:1536:1568": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_1536_1568.png",
+     "craters_in_view": 16
+    },
+    "atacama_yungay:1248:160": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1248_160.png",
+     "craters_in_view": 8
+    },
+    "atacama_yungay:1184:608": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1184_608.png",
+     "craters_in_view": 15
+    },
+    "mcmurdo_dry_valleys:1312:1376": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_1312_1376.png",
+     "craters_in_view": 14
+    },
+    "askja:832:1568": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_832_1568.png",
+     "craters_in_view": 12
+    },
+    "askja:800:96": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_800_96.png",
+     "craters_in_view": 17
+    },
+    "hawaii_kilauea_maunakea:704:64": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_704_64.png",
+     "craters_in_view": 6
+    },
+    "mcmurdo_dry_valleys:864:1184": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_864_1184.png",
+     "craters_in_view": 11
+    },
+    "hawaii_kilauea_maunakea:992:544": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_992_544.png",
+     "craters_in_view": 12
+    },
+    "haughton:1568:224": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/haughton_1568_224.png",
+     "craters_in_view": 14
+    },
+    "puna_de_atacama:608:320": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_608_320.png",
+     "craters_in_view": 14
+    },
+    "mcmurdo_dry_valleys:128:864": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_128_864.png",
+     "craters_in_view": 10
+    },
+    "atacama_yungay:1024:288": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1024_288.png",
+     "craters_in_view": 9
+    },
+    "hawaii_kilauea_maunakea:960:320": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_960_320.png",
+     "craters_in_view": 13
+    },
+    "hawaii_kilauea_maunakea:1152:448": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_1152_448.png",
+     "craters_in_view": 8
+    },
+    "askja:1056:480": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_1056_480.png",
+     "craters_in_view": 11
+    },
+    "mcmurdo_dry_valleys:320:896": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_320_896.png",
+     "craters_in_view": 13
+    },
+    "askja:1280:0": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_1280_0.png",
+     "craters_in_view": 9
+    },
+    "askja:992:1408": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_992_1408.png",
+     "craters_in_view": 12
+    },
+    "askja:1280:1248": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_1280_1248.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:1248:768": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1248_768.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:1568:160": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1568_160.png",
+     "craters_in_view": 6
+    },
+    "askja:480:1024": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_480_1024.png",
+     "craters_in_view": 12
+    },
+    "atacama_yungay:1344:352": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1344_352.png",
+     "craters_in_view": 12
+    },
+    "haughton:32:704": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/haughton_32_704.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:1184:480": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_1184_480.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:1216:64": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_1216_64.png",
+     "craters_in_view": 5
+    },
+    "puna_de_atacama:512:608": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_512_608.png",
+     "craters_in_view": 12
+    },
+    "puna_de_atacama:352:1280": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_352_1280.png",
+     "craters_in_view": 16
+    },
+    "atacama_yungay:256:1536": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_256_1536.png",
+     "craters_in_view": 14
+    },
+    "puna_de_atacama:384:800": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_384_800.png",
+     "craters_in_view": 15
+    },
+    "hawaii_kilauea_maunakea:1568:736": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_1568_736.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:1536:352": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1536_352.png",
+     "craters_in_view": 11
+    },
+    "haughton:704:1600": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/haughton_704_1600.png",
+     "craters_in_view": 20
+    },
+    "mcmurdo_dry_valleys:704:0": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_704_0.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:1152:992": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_1152_992.png",
+     "craters_in_view": 6
+    },
+    "askja:480:160": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_480_160.png",
+     "craters_in_view": 7
+    },
+    "hawaii_kilauea_maunakea:1280:320": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_1280_320.png",
+     "craters_in_view": 9
+    },
+    "mcmurdo_dry_valleys:512:960": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/mcmurdo_dry_valleys_512_960.png",
+     "craters_in_view": 15
+    },
+    "hawaii_kilauea_maunakea:384:640": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/hawaii_kilauea_maunakea_384_640.png",
+     "craters_in_view": 11
+    },
+    "atacama_yungay:1408:896": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1408_896.png",
+     "craters_in_view": 10
+    },
+    "puna_de_atacama:1280:1184": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_1280_1184.png",
+     "craters_in_view": 13
+    },
+    "askja:800:672": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/askja_800_672.png",
+     "craters_in_view": 7
+    },
+    "puna_de_atacama:1472:1344": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/puna_de_atacama_1472_1344.png",
+     "craters_in_view": 9
+    },
+    "lanzarote_timanfaya:672:1216": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/lanzarote_timanfaya_672_1216.png",
+     "craters_in_view": 13
+    },
+    "atacama_yungay:1568:800": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/atacama_yungay_1568_800.png",
+     "craters_in_view": 9
+    },
+    "namib:1504:1440": {
+     "image": "img/simulated/moon_dm2_nobile_rim_2/namib_1504_1440.png",
+     "craters_in_view": 10
+    }
+   }
+  }
+ }
+}

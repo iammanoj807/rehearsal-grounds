@@ -1,6 +1,6 @@
 import LoadState from '../components/LoadState.tsx'
 import { fmt, useJson } from '../data.ts'
-import type { LightingInfo } from '../types.ts'
+import type { LightingInfo, ModelComparison } from '../types.ts'
 
 interface RankerRow {
   id: string
@@ -102,6 +102,7 @@ function RankerTable({ rows, caption }: { rows: RankerRow[]; caption: string }) 
 export default function ValidationPage() {
   const v = useJson<ValidationFile>('validation.json')
   const linfo = useJson<LightingInfo>('lighting_info.json')
+  const mc = useJson<ModelComparison>('model_comparison.json')
   if (v.error?.startsWith('404')) {
     return (
       <article className="page narrow">
@@ -328,6 +329,59 @@ export default function ValidationPage() {
               {linfo.data.refraction_note} <a href={linfo.data.refraction_source_url}>NOAA</a>
             </li>
           </ul>
+        </section>
+      )}
+
+      {mc.data && (
+        <section aria-labelledby="models">
+          <h2 id="models">Terrain-trained models we tested (not adopted)</h2>
+          <p>
+            We asked whether a model trained on Moon and Earth terrain would match landforms better than the ImageNet
+            ResNet-18 the app uses. We trained several (self-supervised, VICReg) on about 162,000 Moon and 135,000
+            Earth patches, fixed the tests and the adoption rule in advance, chose every model on validation data
+            and tested each once on held-out data.
+          </p>
+          <p>
+            <strong>Result: the app keeps the ImageNet model.</strong> Training made the models much steadier under
+            rotation, Sun direction and resampling, but they recognised impact craters less well: the Earth crater
+            test fell from 0.976 to 0.69–0.84. The rule required no drop above 0.02 and a clear gain on Moon-to-Earth
+            craters, and no trained model met it. Adding Moon terrain to training helped (better than Earth-only), and
+            same-place 30 m / 60 m training pairs gave the best trained model.
+          </p>
+          <div className="table-scroll">
+            <table className="metric-table">
+              <caption>
+                Held-out test results (ROC AUC or top-10 rate; 95% interval in brackets). Crater queries: {mc.data.arms[0].e1_n};
+                Earth craters: {mc.data.arms[0].e2_n_craters}; crater-invariance queries: {mc.data.arms[0].e6_n}.
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col">Moon crater → Moon craters</th>
+                  <th scope="col">Earth crater benchmark</th>
+                  <th scope="col">Moon crater → Earth craters</th>
+                  <th scope="col">Same place after rotation, Sun change, blur</th>
+                  <th scope="col">Same place after adding small craters</th>
+                </tr>
+              </thead>
+              <tbody>
+                {mc.data.arms.map((a) => (
+                  <tr key={a.arm} className={a.arm.startsWith('B1') ? 'is-headline' : ''}>
+                    <th scope="row">{a.label}</th>
+                    <td>{fmt(a.e1_moon_craters_auc[0], 3)} <span className="muted">({fmt(a.e1_moon_craters_auc[1], 2)}–{fmt(a.e1_moon_craters_auc[2], 2)})</span></td>
+                    <td>{fmt(a.e2_earth_craters_auc, 3)}</td>
+                    <td>{fmt(a.e3_moon_to_earth_auc[0], 3)} <span className="muted">({fmt(a.e3_moon_to_earth_auc[1], 2)}–{fmt(a.e3_moon_to_earth_auc[2], 2)})</span></td>
+                    <td>{fmt(a.e4_invariance_top10 * 100, 1, '%')}</td>
+                    <td>{fmt(a.e6_crater_invariance_top10[0] * 100, 0, '%')} <span className="muted">({fmt(a.e6_crater_invariance_top10[1] * 100, 0)}–{fmt(a.e6_crater_invariance_top10[2] * 100, 0)}%)</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="small muted">
+            Adoption rules, fixed before training: a terrain-trained model {mc.data.rules.encoder_F}. The
+            crater-ignoring model {mc.data.rules.encoder_L}. Source: {mc.data.source}.
+          </p>
         </section>
       )}
 

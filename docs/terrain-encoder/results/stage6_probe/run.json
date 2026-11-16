@@ -1,0 +1,24 @@
+{
+ "config": {
+  "density_max": 1.9765588086060326,
+  "n_train": 3000,
+  "n_val": 1000
+ },
+ "git_experiment": "16ec6a68a50a28b2e5dabd1c0b1b2ca49da0a674",
+ "git_main": "ee11ca7fd002efb7a19c156fe430978613789ace",
+ "inputs": {},
+ "metrics": {
+  "B1": {
+   "r2_val": 0.5817,
+   "alpha": 1.0
+  },
+  "F": {
+   "r2_val": 0.6284,
+   "alpha": 0.31622776601683794
+  },
+  "L": {
+   "r2_val": 0.3341,
+   "alpha": 0.03162277660168379
+  }
+ }
+}

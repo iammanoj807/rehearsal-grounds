@@ -247,3 +247,42 @@ export interface LightingInfo {
   refraction_source_url: string
 }
 
+
+export interface SimulatedCraters {
+  generated_at: string
+  method: Record<string, string>
+  targets: Record<
+    string,
+    {
+      craters_ge_1km: number
+      area_km2: number
+      density_ge_240m_per_km2: number
+      density_95_interval: [number, number]
+      sites: Record<string, { image: string; craters_in_view: number }>
+    }
+  >
+}
+
+export interface ModelComparisonArm {
+  arm: string
+  label: string
+  e1_moon_craters_auc: [number, number, number]
+  e1_n: number
+  e2_earth_craters_auc: number
+  e2_n_craters: number
+  e3_moon_to_earth_auc: [number, number, number]
+  e3_n: number
+  e4_invariance_top10: number
+  e6_crater_invariance_top10: [number, number, number]
+  e6_n: number
+  e7_slope_p90_diff_deg: number
+  e7_relief_diff_m: number
+}
+
+export interface ModelComparison {
+  source: string
+  verdict: { adopt_encoder_F: boolean; offer_encoder_L: boolean }
+  arms: ModelComparisonArm[]
+  crater_probe_r2: Record<string, number>
+  rules: Record<string, string>
+}

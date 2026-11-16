@@ -1,0 +1,180 @@
+{
+ "source": "docs/terrain-encoder/RESULTS.md in the code repository",
+ "verdict": {
+  "adopt_encoder_F": false,
+  "offer_encoder_L": false
+ },
+ "arms": [
+  {
+   "arm": "B1_imagenet_resnet18",
+   "label": "ImageNet ResNet-18 (in the app)",
+   "e1_moon_craters_auc": [
+    0.5667,
+    0.5475,
+    0.5853
+   ],
+   "e1_n": 65,
+   "e2_earth_craters_auc": 0.976,
+   "e2_n_craters": 7,
+   "e3_moon_to_earth_auc": [
+    0.6246,
+    0.5788,
+    0.6676
+   ],
+   "e3_n": 65,
+   "e4_invariance_top10": 0.769,
+   "e6_crater_invariance_top10": [
+    0.498,
+    0.4544,
+    0.5417
+   ],
+   "e6_n": 500,
+   "e7_slope_p90_diff_deg": 1.12,
+   "e7_relief_diff_m": 58.6
+  },
+  {
+   "arm": "Encoder_F",
+   "label": "Encoder-F (terrain-trained)",
+   "e1_moon_craters_auc": [
+    0.5313,
+    0.502,
+    0.5617
+   ],
+   "e1_n": 65,
+   "e2_earth_craters_auc": 0.833,
+   "e2_n_craters": 7,
+   "e3_moon_to_earth_auc": [
+    0.5643,
+    0.5124,
+    0.6098
+   ],
+   "e3_n": 65,
+   "e4_invariance_top10": 0.995,
+   "e6_crater_invariance_top10": [
+    0.418,
+    0.3756,
+    0.4617
+   ],
+   "e6_n": 500,
+   "e7_slope_p90_diff_deg": 1.13,
+   "e7_relief_diff_m": 48.3
+  },
+  {
+   "arm": "Encoder_L",
+   "label": "Encoder-L (trained to ignore small craters)",
+   "e1_moon_craters_auc": [
+    0.5059,
+    0.4765,
+    0.5354
+   ],
+   "e1_n": 65,
+   "e2_earth_craters_auc": 0.745,
+   "e2_n_craters": 7,
+   "e3_moon_to_earth_auc": [
+    0.2768,
+    0.2589,
+    0.2935
+   ],
+   "e3_n": 65,
+   "e4_invariance_top10": 0.992,
+   "e6_crater_invariance_top10": [
+    0.952,
+    0.9296,
+    0.9675
+   ],
+   "e6_n": 500,
+   "e7_slope_p90_diff_deg": 1.08,
+   "e7_relief_diff_m": 47.9
+  },
+  {
+   "arm": "Encoder_F_multiscale",
+   "label": "Encoder-F + 30/60 m pairs",
+   "e1_moon_craters_auc": [
+    0.7299,
+    0.6782,
+    0.7801
+   ],
+   "e1_n": 65,
+   "e2_earth_craters_auc": 0.843,
+   "e2_n_craters": 7,
+   "e3_moon_to_earth_auc": [
+    0.5927,
+    0.5495,
+    0.6365
+   ],
+   "e3_n": 65,
+   "e4_invariance_top10": 0.989,
+   "e6_crater_invariance_top10": [
+    0.414,
+    0.3716,
+    0.4577
+   ],
+   "e6_n": 500,
+   "e7_slope_p90_diff_deg": 1.17,
+   "e7_relief_diff_m": 48.6
+  },
+  {
+   "arm": "Encoder_F_scratch",
+   "label": "Encoder-F from scratch",
+   "e1_moon_craters_auc": [
+    0.6371,
+    0.6054,
+    0.6706
+   ],
+   "e1_n": 65,
+   "e2_earth_craters_auc": 0.688,
+   "e2_n_craters": 7,
+   "e3_moon_to_earth_auc": [
+    0.4051,
+    0.3708,
+    0.4404
+   ],
+   "e3_n": 65,
+   "e4_invariance_top10": 0.992,
+   "e6_crater_invariance_top10": [
+    0.486,
+    0.4425,
+    0.5297
+   ],
+   "e6_n": 500,
+   "e7_slope_p90_diff_deg": 1.16,
+   "e7_relief_diff_m": 45.5
+  },
+  {
+   "arm": "Encoder_F_earthonly",
+   "label": "Encoder-F, Earth data only",
+   "e1_moon_craters_auc": [
+    0.5414,
+    0.5224,
+    0.5602
+   ],
+   "e1_n": 65,
+   "e2_earth_craters_auc": 0.779,
+   "e2_n_craters": 7,
+   "e3_moon_to_earth_auc": [
+    0.5129,
+    0.4859,
+    0.5391
+   ],
+   "e3_n": 65,
+   "e4_invariance_top10": 0.99,
+   "e6_crater_invariance_top10": [
+    0.47,
+    0.4266,
+    0.5138
+   ],
+   "e6_n": 500,
+   "e7_slope_p90_diff_deg": 1.11,
+   "e7_relief_diff_m": 55.8
+  }
+ ],
+ "crater_probe_r2": {
+  "B1": 0.5817,
+  "F": 0.6284,
+  "L": 0.3341
+ },
+ "rules": {
+  "encoder_F": "replaces the ImageNet model only if, on held-out data, Moon-to-Earth crater matching clearly improves (95% interval of the gain above 0), the Moon and Earth crater tests drop by no more than 0.02, and steadiness and slope and relief agreement are not worse",
+  "encoder_L": "is offered only if it finds the same place after adding small craters clearly more often than both other models (non-overlapping 95% intervals), and Moon-to-Earth crater matching and slope and relief agreement are not worse"
+ }
+}

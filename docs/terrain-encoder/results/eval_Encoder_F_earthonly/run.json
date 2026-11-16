@@ -1,0 +1,542 @@
+{
+ "config": {
+  "arm": "Encoder_F_earthonly",
+  "info": {
+   "checkpoint": "cache/stage5/F_earthonly_best_backbone.pt",
+   "pca": "64, fitted on 20,000 Earth TRAIN patches",
+   "inference_sun": "315/45 (E4 sun view 135/45)"
+  },
+  "seed": 42
+ },
+ "git_experiment": "16ec6a68a50a28b2e5dabd1c0b1b2ca49da0a674",
+ "git_main": "ee11ca7fd002efb7a19c156fe430978613789ace",
+ "inputs": {},
+ "metrics": {
+  "arm": "Encoder_F_earthonly",
+  "info": {
+   "checkpoint": "cache/stage5/F_earthonly_best_backbone.pt",
+   "pca": "64, fitted on 20,000 Earth TRAIN patches",
+   "inference_sun": "315/45 (E4 sun view 135/45)"
+  },
+  "E1": {
+   "val": {
+    "n_queries": 29,
+    "auc": [
+     0.5337,
+     0.4741,
+     0.5952
+    ],
+    "rr": [
+     0.1621,
+     0.0842,
+     0.2624
+    ],
+    "hit10": [
+     0.4483,
+     0.2759,
+     0.6207
+    ],
+    "hit50": [
+     0.7931,
+     0.6552,
+     0.931
+    ],
+    "mean_pos": null
+   },
+   "test": {
+    "n_queries": 65,
+    "auc": [
+     0.5414,
+     0.5224,
+     0.5602
+    ],
+    "rr": [
+     0.4066,
+     0.319,
+     0.4985
+    ],
+    "hit10": [
+     0.7692,
+     0.6615,
+     0.8615
+    ],
+    "hit50": [
+     0.9538,
+     0.8923,
+     1.0
+    ],
+    "mean_pos": null
+   }
+  },
+  "E2": {
+   "mean_auc": 0.7793,
+   "mean_auc_hard": 0.8254,
+   "mrr": 0.0756,
+   "hit_at_10": 0.2857,
+   "hit_at_50": 0.4286,
+   "n_craters": 7,
+   "extended_set": "skipped: the Earth Impact Database site (passc.net) no longer serves the database, so its terms cannot be read"
+  },
+  "E3": {
+   "n_queries": 65,
+   "auc": [
+    0.5129,
+    0.4859,
+    0.5391
+   ],
+   "rr": [
+    0.0001,
+    0.0001,
+    0.0002
+   ],
+   "hit10": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "hit50": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "n_pos": 11,
+   "n_cand": 65418
+  },
+  "E4": {
+   "val": {
+    "per_transform": {
+     "earth/rot90": {
+      "top1": [
+       0.9867,
+       0.9662,
+       0.9948
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/flip": {
+      "top1": [
+       0.9867,
+       0.9662,
+       0.9948
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/sun": {
+      "top1": [
+       1.0,
+       0.9874,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/down_up_2x": {
+      "top1": [
+       0.9967,
+       0.9814,
+       0.9994
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/noise": {
+      "top1": [
+       0.9967,
+       0.9814,
+       0.9994
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/shift_4px": {
+      "top1": [
+       0.8103,
+       0.7613,
+       0.8513
+      ],
+      "top10": [
+       0.9759,
+       0.951,
+       0.9883
+      ]
+     },
+     "moon/rot90": {
+      "top1": [
+       0.9242,
+       0.8804,
+       0.9528
+      ],
+      "top10": [
+       1.0,
+       0.9821,
+       1.0
+      ]
+     },
+     "moon/flip": {
+      "top1": [
+       0.9621,
+       0.927,
+       0.9807
+      ],
+      "top10": [
+       1.0,
+       0.9821,
+       1.0
+      ]
+     },
+     "moon/sun": {
+      "top1": [
+       1.0,
+       0.9821,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.9821,
+       1.0
+      ]
+     },
+     "moon/down_up_2x": {
+      "top1": [
+       1.0,
+       0.9821,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.9821,
+       1.0
+      ]
+     },
+     "moon/noise": {
+      "top1": [
+       1.0,
+       0.9821,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.9821,
+       1.0
+      ]
+     },
+     "moon/shift_4px": {
+      "top1": [
+       0.6872,
+       0.6218,
+       0.7459
+      ],
+      "top10": [
+       0.981,
+       0.9523,
+       0.9926
+      ]
+     }
+    },
+    "gallery": 6618,
+    "aggregate_top10": 0.9964
+   },
+   "test": {
+    "per_transform": {
+     "earth/rot90": {
+      "top1": [
+       0.95,
+       0.9192,
+       0.9695
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/flip": {
+      "top1": [
+       0.9833,
+       0.9616,
+       0.9929
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/sun": {
+      "top1": [
+       1.0,
+       0.9874,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/down_up_2x": {
+      "top1": [
+       0.9967,
+       0.9814,
+       0.9994
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/noise": {
+      "top1": [
+       1.0,
+       0.9874,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.9874,
+       1.0
+      ]
+     },
+     "earth/shift_4px": {
+      "top1": [
+       0.6837,
+       0.6284,
+       0.7342
+      ],
+      "top10": [
+       0.9388,
+       0.9053,
+       0.9609
+      ]
+     },
+     "moon/rot90": {
+      "top1": [
+       0.8844,
+       0.8505,
+       0.9115
+      ],
+      "top10": [
+       0.9976,
+       0.9868,
+       0.9996
+      ]
+     },
+     "moon/flip": {
+      "top1": [
+       0.9009,
+       0.8688,
+       0.9259
+      ],
+      "top10": [
+       1.0,
+       0.991,
+       1.0
+      ]
+     },
+     "moon/sun": {
+      "top1": [
+       0.9906,
+       0.976,
+       0.9963
+      ],
+      "top10": [
+       1.0,
+       0.991,
+       1.0
+      ]
+     },
+     "moon/down_up_2x": {
+      "top1": [
+       1.0,
+       0.991,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.991,
+       1.0
+      ]
+     },
+     "moon/noise": {
+      "top1": [
+       1.0,
+       0.991,
+       1.0
+      ],
+      "top10": [
+       1.0,
+       0.991,
+       1.0
+      ]
+     },
+     "moon/shift_4px": {
+      "top1": [
+       0.6274,
+       0.5804,
+       0.672
+      ],
+      "top10": [
+       0.941,
+       0.9144,
+       0.9597
+      ]
+     }
+    },
+    "gallery": 9680,
+    "aggregate_top10": 0.9899
+   }
+  },
+  "E5": {
+   "val": {
+    "n": 211,
+    "top1": [
+     1.0,
+     0.9821,
+     1.0
+    ],
+    "top10": [
+     1.0,
+     0.9821,
+     1.0
+    ],
+    "median_rank": 1.0,
+    "gallery": 66386
+   },
+   "test": {
+    "n": 424,
+    "top1": [
+     1.0,
+     0.991,
+     1.0
+    ],
+    "top10": [
+     1.0,
+     0.991,
+     1.0
+    ],
+    "median_rank": 1.0,
+    "gallery": 66386
+   }
+  },
+  "E7": {
+   "per_target": {
+    "moon_dm2_nobile_rim_2": {
+     "slope_p90": 1.143,
+     "share_le15": 0.0222,
+     "relief_m": 51.7441
+    },
+    "moon_haworth": {
+     "slope_p90": 0.5475,
+     "share_le15": 0.0156,
+     "relief_m": 36.7388
+    },
+    "moon_site01_connecting_ridge": {
+     "slope_p90": 0.9127,
+     "share_le15": 0.0246,
+     "relief_m": 61.5649
+    },
+    "moon_site04_shackleton_rim": {
+     "slope_p90": 1.636,
+     "share_le15": 0.0474,
+     "relief_m": 77.3641
+    },
+    "moon_site06_nobile_rim_1": {
+     "slope_p90": 1.3326,
+     "share_le15": 0.0373,
+     "relief_m": 57.4406
+    },
+    "moon_site11_de_gerlache_rim": {
+     "slope_p90": 1.5515,
+     "share_le15": 0.0492,
+     "relief_m": 97.0196
+    },
+    "moon_site20_leibnitz_beta": {
+     "slope_p90": 1.1325,
+     "share_le15": 0.0335,
+     "relief_m": 45.7617
+    },
+    "moon_site23_malapert": {
+     "slope_p90": 1.2153,
+     "share_le15": 0.0373,
+     "relief_m": 82.1895
+    },
+    "mars_jezero": {
+     "slope_p90": 0.1705,
+     "share_le15": 0.0,
+     "relief_m": 5.9084
+    }
+   },
+   "val": {
+    "slope_p90": 1.3033,
+    "share_le15": 0.0362,
+    "relief_m": 76.9844
+   },
+   "test": {
+    "slope_p90": 1.1123,
+    "share_le15": 0.0317,
+    "relief_m": 55.774
+   },
+   "mars": {
+    "slope_p90": 0.1705,
+    "share_le15": 0.0,
+    "relief_m": 5.9084
+   }
+  },
+  "E8": {
+   "cv_auc": 0.998,
+   "note": "diagnostic only, never optimised"
+  },
+  "counts": {
+   "crater_windows": {
+    "val": 29,
+    "test": 65
+   },
+   "e1_pos_grid": 30,
+   "e1_neg_grid": 504,
+   "earth_val_regions": [
+    "atacama_yungay",
+    "namib",
+    "qaidam"
+   ]
+  },
+  "E6": {
+   "n": 500,
+   "top1": [
+    0.316,
+    0.2768,
+    0.358
+   ],
+   "top10": [
+    0.47,
+    0.4266,
+    0.5138
+   ],
+   "median_rank": 17.5,
+   "densities_used": [
+    0.8233053797163451,
+    1.294986805638435,
+    0.6134148026708377,
+    0.9567737017408913,
+    1.9765588086060326
+   ]
+  }
+ }
+}

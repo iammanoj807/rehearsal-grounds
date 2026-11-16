@@ -126,6 +126,15 @@ without refraction).
 **V4, sanity checks.** All four pass: self-match = 100, 90° rotation keeps its own top match, flat plane = slope 0,
 gradient 0.1 = 5.71°.
 
+**What we trained and how we tested it.** We also tested whether models trained on Moon and Earth terrain
+(self-supervised VICReg on about 162,000 Moon and 135,000 Earth patches) match landforms better than the ImageNet
+ResNet-18 used here. The tests and adoption rule were fixed in advance; every model was chosen on validation data
+and tested once on held-out data. Training made the models much steadier under rotation, Sun direction and
+resampling, but they recognised impact craters less well (Earth crater benchmark 0.69-0.84 instead of 0.976), so no
+trained model met the rule and the app keeps the ImageNet model. The full table is on the Validation page
+(`model_comparison.json`, exported by `scripts/export_model_comparison.py`); the write-up, pre-registration, every
+deviation and the result records are in `docs/terrain-encoder/`.
+
 ## Quick start
 
 ```bash
@@ -155,6 +164,7 @@ The web app only reads the static files in `web/public/data/`. There is no serve
 | 09b | `09b_lighting.py` | Sun band, shadow fingerprints, lighting similarity, low-sun previews, monthly Sun hours, suggested months |
 | 10 | `10_validate.py` | `validation.json` (V1–V4) |
 | 11 | `11_export.py` | JSON + hillshade PNGs validated against `pipeline/schemas.py` |
+| 11c | `11c_simulated_craters.py` | "Earth with lunar craters (simulated)" pictures for every Moon match, from the Robbins (2019) crater density of each target (illustration only; no score uses them) |
 
 Configuration lives in `config/`: `pipeline.yaml`, plus regions, targets, craters, known analogs, the tests-suited
 rules, `lighting.yaml` and `rehearsal.yaml`, each entry with its source URL or marked as our choice.
