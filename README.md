@@ -8,7 +8,8 @@ patch at 60 m, and **where and when does the real Sun cast south-pole-like shado
 
 For each target (8 LOLA south-pole sites, 4 of them NASA Artemis III candidate regions, and the Jezero landing area
 on Mars) it ranks 43,794 Earth patches. Every candidate analog gets a dossier: a swipe comparison of the two terrains,
-including a low-Sun view with cast shadows, what matches, where the analogy breaks down, a lighting similarity, a
+including a low-Sun view with cast shadows and, for Moon targets, an "Earth with lunar craters (simulated)" view
+that shows what the terrain match leaves out; what matches, where the analogy breaks down, a lighting similarity, a
 12-month rehearsal calendar (with suggested months only where our rules find a clear best month), whether it is
 near a known analog, and which tests it suits.
 

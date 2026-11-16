@@ -42,6 +42,10 @@ each at least 10 km from the next, and how the usual analog regions rank. Every 
 
 - a swipe comparison of the target and Earth patches at the same scale, with a "Low sun" mode showing cast shadows
   at the middle of the target's noon Sun band;
+- for Moon targets, a "Lunar craters (simulated)" mode: the same Earth patch with the target's own small-crater
+  density added (Robbins 2019 catalogue; crater shapes from Pike 1977 and McGetchin et al. 1973, softened at the
+  lunar erosion rate of Fassett and Thomson 2014), clearly labelled simulated, to show what the terrain match leaves
+  out;
 - a slope-fingerprint chart of what the score compares (Malapert's top match: 92% of the two slope distributions
   overlap), five explanation bars (relief, slope, roughness, shape, image embedding) and a terrain table;
 - a lighting similarity: the share of each patch in shadow at the target's low Sun elevations, compared;
@@ -112,6 +116,12 @@ terrain similarity.
 - A low-Sun lighting analog, kept separate from the terrain score, and a rehearsal calendar per site.
 - The usual analog sites, including the JETT5 area, ranked on the same fingerprint.
 - A benchmark with clean ground truth, plus an honest ablation.
+- A simulated-craters view that makes the Moon-Earth difference visible: the landform matches, but Earth lacks the
+  Moon's small impact craters.
+- A tested alternative, reported honestly: we trained terrain-specific models (self-supervised, on about 162,000
+  Moon and 135,000 Earth patches) under rules fixed in advance. They became steadier under rotation and Sun direction
+  but recognised craters less well (Earth crater benchmark 0.69-0.84 instead of 0.976), so the app keeps its current
+  model. The Validation page shows every result.
 - Sites outside our analog catalogue, flagged by distance to a sourced catalogue. Examples: Puna de Atacama for
   Shackleton rim (#4, 112 km from Licancabur, the nearest catalogued analog); Harrat Khaybar for Jezero (#2,
   768 km from Makhtesh Ramon, where the D-MARS and AMADEE-20 analog missions ran).
